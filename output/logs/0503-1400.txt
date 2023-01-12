@@ -1,0 +1,2109 @@
+run:
+[INFO] Start extracting configurations from default conf file.
+[INFO] Configurations extracted. Writing to file.
+[INFO] Configurations from default conf file are extracted and written successfully.
+=======================================================================================
+[INFO] Start loading source file.
+[INFO] Source file is loaded. Starting further anaylsis.
+=======================================================================================
+[INFO] Start extracting all sub classes of main conf class.
+[INFO] All sub classes of main conf class are extracted.
+=======================================================================================
+[INFO] Intersted classes are specified. Start extracting callsites.
+[INFO] Callsite extraction finished.
+[INFO] Number of callsites found: 562
+=======================================================================================
+[INFO] Start analyzing details of callsites.
+Callsite No. 1: 
+Content: getPort()
+Callsite No. 2: 
+Content: getClass("httpfs.authenticator.class",KerberosDelegationTokenAuthenticator.class,DelegationTokenAuthenticator.class)
+Parameter: "httpfs.authenticator.class". Inferred value: "httpfs.authenticator.class"
+Parameter: KerberosDelegationTokenAuthenticator.class
+Parameter: DelegationTokenAuthenticator.class
+Callsite No. 3: 
+Content: conf.getTrimmed(DFSConfigKeys.DFS_NAMENODE_HTTPS_ADDRESS_KEY,DFSConfigKeys.DFS_NAMENODE_HTTPS_ADDRESS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_HTTPS_ADDRESS_KEY. Inferred value: "dfs.namenode.https-address"
+Parameter: DFSConfigKeys.DFS_NAMENODE_HTTPS_ADDRESS_DEFAULT
+Callsite No. 4: 
+Content: conf.getInt(DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_SIZE_KEY,DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_SIZE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_SIZE_KEY. Inferred value: "dfs.client.read.shortcircuit.streams.cache.size"
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_SIZE_DEFAULT
+Callsite No. 5: 
+Content: conf.getLong(DFSConfigKeys.DFS_CLIENT_SLOW_IO_WARNING_THRESHOLD_KEY,DFSConfigKeys.DFS_CLIENT_SLOW_IO_WARNING_THRESHOLD_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_SLOW_IO_WARNING_THRESHOLD_KEY. Inferred value: "dfs.client.slow.io.warning.threshold.ms"
+Parameter: DFSConfigKeys.DFS_CLIENT_SLOW_IO_WARNING_THRESHOLD_DEFAULT
+Callsite No. 6: 
+Content: conf.getTrimmed(DFSConfigKeys.DFS_DOMAIN_SOCKET_PATH_KEY,DFSConfigKeys.DFS_DOMAIN_SOCKET_PATH_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DOMAIN_SOCKET_PATH_KEY. Inferred value: "dfs.domain.socket.path"
+Parameter: DFSConfigKeys.DFS_DOMAIN_SOCKET_PATH_DEFAULT. Inferred value: ""
+Callsite No. 7: 
+Content: conf.getStringCollection(DFS_NAMENODE_AUDIT_LOGGERS_KEY)
+Parameter: DFS_NAMENODE_AUDIT_LOGGERS_KEY. Inferred value: "dfs.namenode.audit.loggers"
+Callsite No. 8: 
+Content: conf.get(FS_DEFAULT_NAME_KEY)
+Parameter: FS_DEFAULT_NAME_KEY
+Callsite No. 9: 
+Content: conf.get(DFS_NAMENODE_STARTUP_KEY,StartupOption.REGULAR.toString())
+Parameter: DFS_NAMENODE_STARTUP_KEY. Inferred value: "dfs.namenode.startup"
+Parameter: StartupOption.REGULAR.toString()
+Callsite No. 10: 
+Content: conf.get(DFS_NAMENODE_SHARED_EDITS_DIR_KEY)
+Parameter: DFS_NAMENODE_SHARED_EDITS_DIR_KEY. Inferred value: "dfs.namenode.shared.edits.dir"
+Callsite No. 11: 
+Content: conf.getInt(DFSConfigKeys.DFS_DATANODE_FAILED_VOLUMES_TOLERATED_KEY,DFSConfigKeys.DFS_DATANODE_FAILED_VOLUMES_TOLERATED_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_FAILED_VOLUMES_TOLERATED_KEY. Inferred value: "dfs.datanode.failed.volumes.tolerated"
+Parameter: DFSConfigKeys.DFS_DATANODE_FAILED_VOLUMES_TOLERATED_DEFAULT
+Callsite No. 12: 
+Content: conf.getInt(DFSConfigKeys.DFS_SHORT_CIRCUIT_SHARED_MEMORY_WATCHER_INTERRUPT_CHECK_MS,DFSConfigKeys.DFS_SHORT_CIRCUIT_SHARED_MEMORY_WATCHER_INTERRUPT_CHECK_MS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_SHORT_CIRCUIT_SHARED_MEMORY_WATCHER_INTERRUPT_CHECK_MS. Inferred value: "dfs.short.circuit.shared.memory.watcher.interrupt.check.ms"
+Parameter: DFSConfigKeys.DFS_SHORT_CIRCUIT_SHARED_MEMORY_WATCHER_INTERRUPT_CHECK_MS_DEFAULT
+Callsite No. 13: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_IMAGE_COMPRESS_KEY,DFSConfigKeys.DFS_IMAGE_COMPRESS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_IMAGE_COMPRESS_KEY. Inferred value: "dfs.image.compress"
+Parameter: DFSConfigKeys.DFS_IMAGE_COMPRESS_DEFAULT
+Callsite No. 14: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_HEARTBEAT_RECHECK_INTERVAL_KEY,DFSConfigKeys.DFS_NAMENODE_HEARTBEAT_RECHECK_INTERVAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_HEARTBEAT_RECHECK_INTERVAL_KEY. Inferred value: "dfs.namenode.heartbeat.recheck-interval"
+Parameter: DFSConfigKeys.DFS_NAMENODE_HEARTBEAT_RECHECK_INTERVAL_DEFAULT
+Callsite No. 15: 
+Content: getLong(DFS_DATANODE_CACHE_REVOCATION_TIMEOUT_MS,DFS_DATANODE_CACHE_REVOCATION_TIMEOUT_MS_DEFAULT)
+Parameter: DFS_DATANODE_CACHE_REVOCATION_TIMEOUT_MS. Inferred value: "dfs.datanode.cache.revocation.timeout.ms"
+Parameter: DFS_DATANODE_CACHE_REVOCATION_TIMEOUT_MS_DEFAULT
+Callsite No. 16: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_MAX_XATTRS_PER_INODE_KEY,DFSConfigKeys.DFS_NAMENODE_MAX_XATTRS_PER_INODE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_MAX_XATTRS_PER_INODE_KEY. Inferred value: "dfs.namenode.fs-limits.max-xattrs-per-inode"
+Parameter: DFSConfigKeys.DFS_NAMENODE_MAX_XATTRS_PER_INODE_DEFAULT
+Callsite No. 17: 
+Content: getProxy()
+Callsite No. 18: 
+Content: conf.getTrimmed(DFS_NAMENODE_SERVICE_RPC_BIND_HOST_KEY)
+Parameter: DFS_NAMENODE_SERVICE_RPC_BIND_HOST_KEY. Inferred value: "dfs.namenode.servicerpc-bind-host"
+Callsite No. 19: 
+Content: getInt(DFSConfigKeys.DFS_DATANODE_FSDATASETCACHE_MAX_THREADS_PER_VOLUME_KEY,DFSConfigKeys.DFS_DATANODE_FSDATASETCACHE_MAX_THREADS_PER_VOLUME_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_FSDATASETCACHE_MAX_THREADS_PER_VOLUME_KEY. Inferred value: "dfs.datanode.fsdatasetcache.max.threads.per.volume"
+Parameter: DFSConfigKeys.DFS_DATANODE_FSDATASETCACHE_MAX_THREADS_PER_VOLUME_DEFAULT
+Callsite No. 20: 
+Content: getInt(DFSConfigKeys.DFS_REPLICATION_KEY,DFSConfigKeys.DFS_REPLICATION_DEFAULT)
+Parameter: DFSConfigKeys.DFS_REPLICATION_KEY. Inferred value: "dfs.replication"
+Parameter: DFSConfigKeys.DFS_REPLICATION_DEFAULT
+Callsite No. 21: 
+Content: getTrimmed(key)
+Parameter: key
+Callsite No. 22: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_KEY,DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_KEY. Inferred value: "dfs.client.read.shortcircuit"
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_DEFAULT
+Callsite No. 23: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_REPLICATION_PENDING_TIMEOUT_SEC_KEY,DFSConfigKeys.DFS_NAMENODE_REPLICATION_PENDING_TIMEOUT_SEC_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_REPLICATION_PENDING_TIMEOUT_SEC_KEY. Inferred value: "dfs.namenode.replication.pending.timeout-sec"
+Parameter: DFSConfigKeys.DFS_NAMENODE_REPLICATION_PENDING_TIMEOUT_SEC_DEFAULT
+Callsite No. 24: 
+Content: config.get(DFS_DATANODE_DNS_NAMESERVER_KEY,DFS_DATANODE_DNS_NAMESERVER_DEFAULT)
+Parameter: DFS_DATANODE_DNS_NAMESERVER_KEY. Inferred value: "dfs.datanode.dns.nameserver"
+Parameter: DFS_DATANODE_DNS_NAMESERVER_DEFAULT. Inferred value: "default"
+Callsite No. 25: 
+Content: conf.get(spnegoUserNameKey)
+Parameter: spnegoUserNameKey
+Callsite No. 26: 
+Content: getPort()
+Callsite No. 27: 
+Content: conf.getLong(DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_KEY,DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_KEY. Inferred value: "dfs.heartbeat.interval"
+Parameter: DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_DEFAULT
+Callsite No. 28: 
+Content: conf.getLong(DFS_HEARTBEAT_INTERVAL_KEY,DFS_HEARTBEAT_INTERVAL_DEFAULT)
+Parameter: DFS_HEARTBEAT_INTERVAL_KEY. Inferred value: "dfs.heartbeat.interval"
+Parameter: DFS_HEARTBEAT_INTERVAL_DEFAULT
+Callsite No. 29: 
+Content: conf.getTrimmedStringCollection(DFSConfigKeys.DFS_NAMENODE_CHECKED_VOLUMES_KEY)
+Parameter: DFSConfigKeys.DFS_NAMENODE_CHECKED_VOLUMES_KEY. Inferred value: "dfs.namenode.resource.checked.volumes"
+Callsite No. 30: 
+Content: conf.getInt(DFS_NAMENODE_LIST_CACHE_POOLS_NUM_RESPONSES,DFS_NAMENODE_LIST_CACHE_POOLS_NUM_RESPONSES_DEFAULT)
+Parameter: DFS_NAMENODE_LIST_CACHE_POOLS_NUM_RESPONSES. Inferred value: "dfs.namenode.list.cache.pools.num.responses"
+Parameter: DFS_NAMENODE_LIST_CACHE_POOLS_NUM_RESPONSES_DEFAULT
+Callsite No. 31: 
+Content: conf.getBoolean(DFS_SUPPORT_APPEND_KEY,DFS_SUPPORT_APPEND_DEFAULT)
+Parameter: DFS_SUPPORT_APPEND_KEY. Inferred value: "dfs.support.append"
+Parameter: DFS_SUPPORT_APPEND_DEFAULT
+Callsite No. 32: 
+Content: confCopy.getBoolean(CommonConfigurationKeys.HADOOP_SECURITY_AUTHORIZATION,false)
+Parameter: CommonConfigurationKeys.HADOOP_SECURITY_AUTHORIZATION
+Parameter: false
+Callsite No. 33: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_NAMENODE_AVOID_STALE_DATANODE_FOR_WRITE_KEY,DFSConfigKeys.DFS_NAMENODE_AVOID_STALE_DATANODE_FOR_WRITE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_AVOID_STALE_DATANODE_FOR_WRITE_KEY. Inferred value: "dfs.namenode.avoid.write.stale.datanode"
+Parameter: DFSConfigKeys.DFS_NAMENODE_AVOID_STALE_DATANODE_FOR_WRITE_DEFAULT
+Callsite No. 34: 
+Content: conf.getFloat(DFS_DATANODE_AVAILABLE_SPACE_VOLUME_CHOOSING_POLICY_BALANCED_SPACE_PREFERENCE_FRACTION_KEY,DFS_DATANODE_AVAILABLE_SPACE_VOLUME_CHOOSING_POLICY_BALANCED_SPACE_PREFERENCE_FRACTION_DEFAULT)
+Parameter: DFS_DATANODE_AVAILABLE_SPACE_VOLUME_CHOOSING_POLICY_BALANCED_SPACE_PREFERENCE_FRACTION_KEY. Inferred value: "dfs.datanode.available-space-volume-choosing-policy.balanced-space-preference-fraction"
+Parameter: DFS_DATANODE_AVAILABLE_SPACE_VOLUME_CHOOSING_POLICY_BALANCED_SPACE_PREFERENCE_FRACTION_DEFAULT
+Callsite No. 35: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_PERMISSIONS_ENABLED_KEY,DFSConfigKeys.DFS_PERMISSIONS_ENABLED_DEFAULT)
+Parameter: DFSConfigKeys.DFS_PERMISSIONS_ENABLED_KEY. Inferred value: "dfs.permissions.enabled"
+Parameter: DFSConfigKeys.DFS_PERMISSIONS_ENABLED_DEFAULT
+Callsite No. 36: 
+Content: conf.getLong(DFS_NAMENODE_DELEGATION_KEY_UPDATE_INTERVAL_KEY,DFS_NAMENODE_DELEGATION_KEY_UPDATE_INTERVAL_DEFAULT)
+Parameter: DFS_NAMENODE_DELEGATION_KEY_UPDATE_INTERVAL_KEY. Inferred value: "dfs.namenode.delegation.key.update-interval"
+Parameter: DFS_NAMENODE_DELEGATION_KEY_UPDATE_INTERVAL_DEFAULT
+Callsite No. 37: 
+Content: conf.getClass(HADOOP_SECURITY_SASL_PROPS_RESOLVER_CLASS,SaslPropertiesResolver.class,SaslPropertiesResolver.class)
+Parameter: HADOOP_SECURITY_SASL_PROPS_RESOLVER_CLASS
+Parameter: SaslPropertiesResolver.class
+Parameter: SaslPropertiesResolver.class
+Callsite No. 38: 
+Content: conf.getBoolean(FILE_SYSTEM_SERVICE_CREATED,false)
+Parameter: FILE_SYSTEM_SERVICE_CREATED. Inferred value: "FileSystemAccessService.created"
+Parameter: false
+Callsite No. 39: 
+Content: conf.getLong(DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_COUNT_RESET_TIME_PERIOD_MS_KEY,DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_COUNT_RESET_TIME_PERIOD_MS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_COUNT_RESET_TIME_PERIOD_MS_KEY. Inferred value: "dfs.client.write.byte-array-manager.count-reset-time-period-ms"
+Parameter: DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_COUNT_RESET_TIME_PERIOD_MS_DEFAULT
+Callsite No. 40: 
+Content: conf.get(key)
+Parameter: key
+Callsite No. 41: 
+Content: conf.get(addKeySuffixes(key,nameserviceId))
+Parameter: addKeySuffixes(key, nameserviceId)
+Callsite No. 42: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_CLIENT_DOMAIN_SOCKET_DATA_TRAFFIC,DFSConfigKeys.DFS_CLIENT_DOMAIN_SOCKET_DATA_TRAFFIC_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_DOMAIN_SOCKET_DATA_TRAFFIC. Inferred value: "dfs.client.domain.socket.data.traffic"
+Parameter: DFSConfigKeys.DFS_CLIENT_DOMAIN_SOCKET_DATA_TRAFFIC_DEFAULT
+Callsite No. 43: 
+Content: conf.getInt(DFSConfigKeys.DFS_QJOURNAL_NEW_EPOCH_TIMEOUT_KEY,DFSConfigKeys.DFS_QJOURNAL_NEW_EPOCH_TIMEOUT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_QJOURNAL_NEW_EPOCH_TIMEOUT_KEY. Inferred value: "dfs.qjournal.new-epoch.timeout.ms"
+Parameter: DFSConfigKeys.DFS_QJOURNAL_NEW_EPOCH_TIMEOUT_DEFAULT
+Callsite No. 44: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_CLIENT_WRITE_REPLACE_DATANODE_ON_FAILURE_ENABLE_KEY,DFSConfigKeys.DFS_CLIENT_WRITE_REPLACE_DATANODE_ON_FAILURE_ENABLE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_WRITE_REPLACE_DATANODE_ON_FAILURE_ENABLE_KEY. Inferred value: "dfs.client.block.write.replace-datanode-on-failure.enable"
+Parameter: DFSConfigKeys.DFS_CLIENT_WRITE_REPLACE_DATANODE_ON_FAILURE_ENABLE_DEFAULT
+Callsite No. 45: 
+Content: getInt("httpfs.buffer.size",4096)
+Parameter: "httpfs.buffer.size". Inferred value: "httpfs.buffer.size"
+Parameter: 4096
+Callsite No. 46: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_NAMENODE_DATANODE_REGISTRATION_IP_HOSTNAME_CHECK_KEY,DFSConfigKeys.DFS_NAMENODE_DATANODE_REGISTRATION_IP_HOSTNAME_CHECK_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_DATANODE_REGISTRATION_IP_HOSTNAME_CHECK_KEY. Inferred value: "dfs.namenode.datanode.registration.ip-hostname-check"
+Parameter: DFSConfigKeys.DFS_NAMENODE_DATANODE_REGISTRATION_IP_HOSTNAME_CHECK_DEFAULT
+Callsite No. 47: 
+Content: conf.get(DFSConfigKeys.DFS_METRICS_SESSION_ID_KEY)
+Parameter: DFSConfigKeys.DFS_METRICS_SESSION_ID_KEY. Inferred value: "dfs.metrics.session-id"
+Callsite No. 48: 
+Content: config.getInt(DFS_CLIENT_RETRY_MAX_ATTEMPTS_KEY,DFS_CLIENT_RETRY_MAX_ATTEMPTS_DEFAULT)
+Parameter: DFS_CLIENT_RETRY_MAX_ATTEMPTS_KEY. Inferred value: "dfs.client.retry.max.attempts"
+Parameter: DFS_CLIENT_RETRY_MAX_ATTEMPTS_DEFAULT
+Callsite No. 49: 
+Content: conf.get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY,"")
+Parameter: DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY. Inferred value: "dfs.namenode.kerberos.principal"
+Parameter: "". Inferred value: ""
+Callsite No. 50: 
+Content: conf.getTrimmed(DFS_HA_NAMENODE_ID_KEY)
+Parameter: DFS_HA_NAMENODE_ID_KEY. Inferred value: "dfs.ha.namenode.id"
+Callsite No. 51: 
+Content: conf.getLong(DFSConfigKeys.DFS_NAMENODE_PATH_BASED_CACHE_RETRY_INTERVAL_MS,DFSConfigKeys.DFS_NAMENODE_PATH_BASED_CACHE_RETRY_INTERVAL_MS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_PATH_BASED_CACHE_RETRY_INTERVAL_MS. Inferred value: "dfs.namenode.path.based.cache.retry.interval.ms"
+Parameter: DFSConfigKeys.DFS_NAMENODE_PATH_BASED_CACHE_RETRY_INTERVAL_MS_DEFAULT
+Callsite No. 52: 
+Content: conf.get(DFSConfigKeys.DFS_JOURNALNODE_RPC_ADDRESS_KEY,DFSConfigKeys.DFS_JOURNALNODE_RPC_ADDRESS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_JOURNALNODE_RPC_ADDRESS_KEY. Inferred value: "dfs.journalnode.rpc-address"
+Parameter: DFSConfigKeys.DFS_JOURNALNODE_RPC_ADDRESS_DEFAULT
+Callsite No. 53: 
+Content: conf.getBoolean("dfs.ha.allow.stale.reads",false)
+Parameter: "dfs.ha.allow.stale.reads". Inferred value: "dfs.ha.allow.stale.reads"
+Parameter: false
+Callsite No. 54: 
+Content: conf.getInt(DFSConfigKeys.DFS_CLIENT_RETRY_TIMES_GET_LAST_BLOCK_LENGTH,DFSConfigKeys.DFS_CLIENT_RETRY_TIMES_GET_LAST_BLOCK_LENGTH_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_RETRY_TIMES_GET_LAST_BLOCK_LENGTH. Inferred value: "dfs.client.retry.times.get-last-block-length"
+Parameter: DFSConfigKeys.DFS_CLIENT_RETRY_TIMES_GET_LAST_BLOCK_LENGTH_DEFAULT
+Callsite No. 55: 
+Content: conf.getTrimmed(DFSConfigKeys.DFS_DOMAIN_SOCKET_PATH_KEY,DFSConfigKeys.DFS_DOMAIN_SOCKET_PATH_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DOMAIN_SOCKET_PATH_KEY. Inferred value: "dfs.domain.socket.path"
+Parameter: DFSConfigKeys.DFS_DOMAIN_SOCKET_PATH_DEFAULT. Inferred value: ""
+Callsite No. 56: 
+Content: conf.get(DFSConfigKeys.DFS_NAMENODE_SHARED_EDITS_DIR_KEY)
+Parameter: DFSConfigKeys.DFS_NAMENODE_SHARED_EDITS_DIR_KEY. Inferred value: "dfs.namenode.shared.edits.dir"
+Callsite No. 57: 
+Content: conf.getInts(NfsConfigKeys.NFS_METRICS_PERCENTILES_INTERVALS_KEY)
+Parameter: NfsConfigKeys.NFS_METRICS_PERCENTILES_INTERVALS_KEY. Inferred value: "nfs.metrics.percentiles.intervals"
+Callsite No. 58: 
+Content: conf.getLong(DFSConfigKeys.DFS_NAMENODE_REPLICATION_INTERVAL_KEY,DFSConfigKeys.DFS_NAMENODE_REPLICATION_INTERVAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_REPLICATION_INTERVAL_KEY. Inferred value: "dfs.namenode.replication.interval"
+Parameter: DFSConfigKeys.DFS_NAMENODE_REPLICATION_INTERVAL_DEFAULT
+Callsite No. 59: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_NAMENODE_ACLS_ENABLED_KEY,DFSConfigKeys.DFS_NAMENODE_ACLS_ENABLED_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_ACLS_ENABLED_KEY. Inferred value: "dfs.namenode.acls.enabled"
+Parameter: DFSConfigKeys.DFS_NAMENODE_ACLS_ENABLED_DEFAULT
+Callsite No. 60: 
+Content: conf.getLong(DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_KEY,DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_KEY. Inferred value: "dfs.heartbeat.interval"
+Parameter: DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_DEFAULT
+Callsite No. 61: 
+Content: conf.get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY,"")
+Parameter: DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY. Inferred value: "dfs.namenode.kerberos.principal"
+Parameter: "". Inferred value: ""
+Callsite No. 62: 
+Content: conf.getLong(DFS_NAMENODE_DELEGATION_TOKEN_RENEW_INTERVAL_KEY,DFS_NAMENODE_DELEGATION_TOKEN_RENEW_INTERVAL_DEFAULT)
+Parameter: DFS_NAMENODE_DELEGATION_TOKEN_RENEW_INTERVAL_KEY. Inferred value: "dfs.namenode.delegation.token.renew-interval"
+Parameter: DFS_NAMENODE_DELEGATION_TOKEN_RENEW_INTERVAL_DEFAULT
+Callsite No. 63: 
+Content: conf.get(DFSConfigKeys.NNTOP_BUCKETS_PER_WINDOW_KEY)
+Parameter: DFSConfigKeys.NNTOP_BUCKETS_PER_WINDOW_KEY. Inferred value: "dfs.namenode.top.window.num.buckets"
+Callsite No. 64: 
+Content: conf.getBoolean(DFS_QUOTA_BY_STORAGETYPE_ENABLED_KEY,DFS_QUOTA_BY_STORAGETYPE_ENABLED_DEFAULT)
+Parameter: DFS_QUOTA_BY_STORAGETYPE_ENABLED_KEY. Inferred value: "dfs.quota.by.storage.type.enabled"
+Parameter: DFS_QUOTA_BY_STORAGETYPE_ENABLED_DEFAULT
+Callsite No. 65: 
+Content: conf.get(DFSConfigKeys.DFS_WEB_AUTHENTICATION_SIMPLE_ANONYMOUS_ALLOWED)
+Parameter: DFSConfigKeys.DFS_WEB_AUTHENTICATION_SIMPLE_ANONYMOUS_ALLOWED. Inferred value: "dfs.web.authentication.simple.anonymous.allowed"
+Callsite No. 66: 
+Content: getProxy()
+Callsite No. 67: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_MAX_EXTRA_EDITS_SEGMENTS_RETAINED_KEY,DFSConfigKeys.DFS_NAMENODE_MAX_EXTRA_EDITS_SEGMENTS_RETAINED_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_MAX_EXTRA_EDITS_SEGMENTS_RETAINED_KEY. Inferred value: "dfs.namenode.max.extra.edits.segments.retained"
+Parameter: DFSConfigKeys.DFS_NAMENODE_MAX_EXTRA_EDITS_SEGMENTS_RETAINED_DEFAULT
+Callsite No. 68: 
+Content: getProxy()
+Callsite No. 69: 
+Content: conf.get(DFSConfigKeys.DFS_JOURNALNODE_EDITS_DIR_KEY,DFSConfigKeys.DFS_JOURNALNODE_EDITS_DIR_DEFAULT)
+Parameter: DFSConfigKeys.DFS_JOURNALNODE_EDITS_DIR_KEY. Inferred value: "dfs.journalnode.edits.dir"
+Parameter: DFSConfigKeys.DFS_JOURNALNODE_EDITS_DIR_DEFAULT. Inferred value: "/tmp/hadoop/dfs/journalnode/"
+Callsite No. 70: 
+Content: conf.get(DFSConfigKeys.DFS_WEBHDFS_USER_PATTERN_KEY,DFSConfigKeys.DFS_WEBHDFS_USER_PATTERN_DEFAULT)
+Parameter: DFSConfigKeys.DFS_WEBHDFS_USER_PATTERN_KEY. Inferred value: "dfs.webhdfs.user.provider.user.pattern"
+Parameter: DFSConfigKeys.DFS_WEBHDFS_USER_PATTERN_DEFAULT. Inferred value: "^[A-Za-z_][A-Za-z0-9._-]*[$]?$"
+Callsite No. 71: 
+Content: conf.getInt(DFSConfigKeys.DFS_IMAGE_TRANSFER_CHUNKSIZE_KEY,DFSConfigKeys.DFS_IMAGE_TRANSFER_CHUNKSIZE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_IMAGE_TRANSFER_CHUNKSIZE_KEY. Inferred value: "dfs.image.transfer.chunksize"
+Parameter: DFSConfigKeys.DFS_IMAGE_TRANSFER_CHUNKSIZE_DEFAULT
+Callsite No. 72: 
+Content: conf.getLong(DFS_BLOCKREPORT_SPLIT_THRESHOLD_KEY,DFS_BLOCKREPORT_SPLIT_THRESHOLD_DEFAULT)
+Parameter: DFS_BLOCKREPORT_SPLIT_THRESHOLD_KEY. Inferred value: "dfs.blockreport.split.threshold"
+Parameter: DFS_BLOCKREPORT_SPLIT_THRESHOLD_DEFAULT
+Callsite No. 73: 
+Content: conf.get(DFS_NAMENODE_RPC_ADDRESS_KEY)
+Parameter: DFS_NAMENODE_RPC_ADDRESS_KEY. Inferred value: "dfs.namenode.rpc-address"
+Callsite No. 74: 
+Content: conf.getTrimmed(DFS_NAMENODE_HTTP_ADDRESS_KEY,DFS_NAMENODE_HTTP_ADDRESS_DEFAULT)
+Parameter: DFS_NAMENODE_HTTP_ADDRESS_KEY. Inferred value: "dfs.namenode.http-address"
+Parameter: DFS_NAMENODE_HTTP_ADDRESS_DEFAULT
+Callsite No. 75: 
+Content: conf.get(DFSConfigKeys.DFS_DATA_ENCRYPTION_ALGORITHM_KEY)
+Parameter: DFSConfigKeys.DFS_DATA_ENCRYPTION_ALGORITHM_KEY. Inferred value: "dfs.encrypt.data.transfer.algorithm"
+Callsite No. 76: 
+Content: conf.get(DFSConfigKeys.DFS_NAMENODE_MIN_SUPPORTED_DATANODE_VERSION_KEY,DFSConfigKeys.DFS_NAMENODE_MIN_SUPPORTED_DATANODE_VERSION_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_MIN_SUPPORTED_DATANODE_VERSION_KEY. Inferred value: "dfs.namenode.min.supported.datanode.version"
+Parameter: DFSConfigKeys.DFS_NAMENODE_MIN_SUPPORTED_DATANODE_VERSION_DEFAULT. Inferred value: "2.1.0-beta"
+Callsite No. 77: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_HDFS_BLOCKS_METADATA_ENABLED,DFSConfigKeys.DFS_HDFS_BLOCKS_METADATA_ENABLED_DEFAULT)
+Parameter: DFSConfigKeys.DFS_HDFS_BLOCKS_METADATA_ENABLED. Inferred value: "dfs.datanode.hdfs-blocks-metadata.enabled"
+Parameter: DFSConfigKeys.DFS_HDFS_BLOCKS_METADATA_ENABLED_DEFAULT
+Callsite No. 78: 
+Content: get(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY)
+Parameter: CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY
+Callsite No. 79: 
+Content: conf.getBoolean(DFS_DATANODE_TRANSFERTO_ALLOWED_KEY,DFS_DATANODE_TRANSFERTO_ALLOWED_DEFAULT)
+Parameter: DFS_DATANODE_TRANSFERTO_ALLOWED_KEY. Inferred value: "dfs.datanode.transferTo.allowed"
+Parameter: DFS_DATANODE_TRANSFERTO_ALLOWED_DEFAULT
+Callsite No. 80: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_LIST_ENCRYPTION_ZONES_NUM_RESPONSES,DFSConfigKeys.DFS_NAMENODE_LIST_ENCRYPTION_ZONES_NUM_RESPONSES_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_LIST_ENCRYPTION_ZONES_NUM_RESPONSES. Inferred value: "dfs.namenode.list.encryption.zones.num.responses"
+Parameter: DFSConfigKeys.DFS_NAMENODE_LIST_ENCRYPTION_ZONES_NUM_RESPONSES_DEFAULT
+Callsite No. 81: 
+Content: this.conf.getInt(DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_ON_SOCKET_TIMEOUTS_KEY,DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_ON_SOCKET_TIMEOUTS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_ON_SOCKET_TIMEOUTS_KEY. Inferred value: "dfs.client.failover.connection.retries.on.timeouts"
+Parameter: DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_ON_SOCKET_TIMEOUTS_DEFAULT
+Callsite No. 82: 
+Content: conf.getInt(DFS_CLIENT_RETRY_MAX_ATTEMPTS_KEY,DFS_CLIENT_RETRY_MAX_ATTEMPTS_DEFAULT)
+Parameter: DFS_CLIENT_RETRY_MAX_ATTEMPTS_KEY. Inferred value: "dfs.client.retry.max.attempts"
+Parameter: DFS_CLIENT_RETRY_MAX_ATTEMPTS_DEFAULT
+Callsite No. 83: 
+Content: conf.getTrimmed(DFSConfigKeys.DFS_DATANODE_HTTP_ADDRESS_KEY,DFSConfigKeys.DFS_DATANODE_HTTP_ADDRESS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_HTTP_ADDRESS_KEY. Inferred value: "dfs.datanode.http.address"
+Parameter: DFSConfigKeys.DFS_DATANODE_HTTP_ADDRESS_DEFAULT
+Callsite No. 84: 
+Content: conf.getInt(DFS_CLIENT_WRITE_PACKET_SIZE_KEY,DFS_CLIENT_WRITE_PACKET_SIZE_DEFAULT)
+Parameter: DFS_CLIENT_WRITE_PACKET_SIZE_KEY. Inferred value: "dfs.client-write-packet-size"
+Parameter: DFS_CLIENT_WRITE_PACKET_SIZE_DEFAULT
+Callsite No. 85: 
+Content: conf.getInt(DFSConfigKeys.DFS_DATANODE_BALANCE_MAX_NUM_CONCURRENT_MOVES_KEY,DFSConfigKeys.DFS_DATANODE_BALANCE_MAX_NUM_CONCURRENT_MOVES_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_BALANCE_MAX_NUM_CONCURRENT_MOVES_KEY. Inferred value: "dfs.datanode.balance.max.concurrent.moves"
+Parameter: DFSConfigKeys.DFS_DATANODE_BALANCE_MAX_NUM_CONCURRENT_MOVES_DEFAULT
+Callsite No. 86: 
+Content: conf.getInt(DFS_CLIENT_SOCKET_TIMEOUT_KEY,HdfsServerConstants.READ_TIMEOUT)
+Parameter: DFS_CLIENT_SOCKET_TIMEOUT_KEY. Inferred value: "dfs.client.socket-timeout"
+Parameter: HdfsServerConstants.READ_TIMEOUT
+Callsite No. 87: 
+Content: conf.getLong(DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_KEY,DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_KEY. Inferred value: "dfs.heartbeat.interval"
+Parameter: DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_DEFAULT
+Callsite No. 88: 
+Content: conf.getInt(DFS_NAMENODE_HANDLER_COUNT_KEY,DFS_NAMENODE_HANDLER_COUNT_DEFAULT)
+Parameter: DFS_NAMENODE_HANDLER_COUNT_KEY. Inferred value: "dfs.namenode.handler.count"
+Parameter: DFS_NAMENODE_HANDLER_COUNT_DEFAULT
+Callsite No. 89: 
+Content: conf.getTrimmed(DFS_DATANODE_ADDRESS_KEY,DFS_DATANODE_ADDRESS_DEFAULT)
+Parameter: DFS_DATANODE_ADDRESS_KEY. Inferred value: "dfs.datanode.address"
+Parameter: DFS_DATANODE_ADDRESS_DEFAULT
+Callsite No. 90: 
+Content: conf.getLong(DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_EXPIRY_MS_KEY,DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_EXPIRY_MS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_EXPIRY_MS_KEY. Inferred value: "dfs.client.read.shortcircuit.streams.cache.expiry.ms"
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_EXPIRY_MS_DEFAULT
+Callsite No. 91: 
+Content: conf.getTrimmedStrings(DFSConfigKeys.DFS_CLIENT_LOCAL_INTERFACES)
+Parameter: DFSConfigKeys.DFS_CLIENT_LOCAL_INTERFACES. Inferred value: "dfs.client.local.interfaces"
+Callsite No. 92: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_NAMENODE_NAME_DIR_RESTORE_KEY,DFSConfigKeys.DFS_NAMENODE_NAME_DIR_RESTORE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_NAME_DIR_RESTORE_KEY. Inferred value: "dfs.namenode.name.dir.restore"
+Parameter: DFSConfigKeys.DFS_NAMENODE_NAME_DIR_RESTORE_DEFAULT
+Callsite No. 93: 
+Content: conf.getInt(DFS_SHORT_CIRCUIT_SHARED_MEMORY_WATCHER_INTERRUPT_CHECK_MS,DFS_SHORT_CIRCUIT_SHARED_MEMORY_WATCHER_INTERRUPT_CHECK_MS_DEFAULT)
+Parameter: DFS_SHORT_CIRCUIT_SHARED_MEMORY_WATCHER_INTERRUPT_CHECK_MS. Inferred value: "dfs.short.circuit.shared.memory.watcher.interrupt.check.ms"
+Parameter: DFS_SHORT_CIRCUIT_SHARED_MEMORY_WATCHER_INTERRUPT_CHECK_MS_DEFAULT
+Callsite No. 94: 
+Content: otherNnConf.get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY)
+Parameter: DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY. Inferred value: "dfs.namenode.kerberos.principal"
+Callsite No. 95: 
+Content: getProxy()
+Callsite No. 96: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_CHECKED_VOLUMES_MINIMUM_KEY,DFSConfigKeys.DFS_NAMENODE_CHECKED_VOLUMES_MINIMUM_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_CHECKED_VOLUMES_MINIMUM_KEY. Inferred value: "dfs.namenode.resource.checked.volumes.minimum"
+Parameter: DFSConfigKeys.DFS_NAMENODE_CHECKED_VOLUMES_MINIMUM_DEFAULT
+Callsite No. 97: 
+Content: conf.get(DFSConfigKeys.DFS_METRICS_SESSION_ID_KEY)
+Parameter: DFSConfigKeys.DFS_METRICS_SESSION_ID_KEY. Inferred value: "dfs.metrics.session-id"
+Callsite No. 98: 
+Content: conf.getInt(DFS_NAMENODE_REPLICATION_MIN_KEY,DFS_NAMENODE_REPLICATION_MIN_DEFAULT)
+Parameter: DFS_NAMENODE_REPLICATION_MIN_KEY. Inferred value: "dfs.namenode.replication.min"
+Parameter: DFS_NAMENODE_REPLICATION_MIN_DEFAULT
+Callsite No. 99: 
+Content: conf.get(DFS_CLIENT_CACHE_READAHEAD)
+Parameter: DFS_CLIENT_CACHE_READAHEAD. Inferred value: "dfs.client.cache.readahead"
+Callsite No. 100: 
+Content: conf.get(key)
+Parameter: key
+Callsite No. 101: 
+Content: conf.getLong(DFSConfigKeys.DFS_NAMENODE_CHECKPOINT_PERIOD_KEY,DFSConfigKeys.DFS_NAMENODE_CHECKPOINT_PERIOD_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_CHECKPOINT_PERIOD_KEY. Inferred value: "dfs.namenode.checkpoint.period"
+Parameter: DFSConfigKeys.DFS_NAMENODE_CHECKPOINT_PERIOD_DEFAULT
+Callsite No. 102: 
+Content: getAuthority()
+Callsite No. 103: 
+Content: config.get(DFS_DATANODE_DNS_INTERFACE_KEY,DFS_DATANODE_DNS_INTERFACE_DEFAULT)
+Parameter: DFS_DATANODE_DNS_INTERFACE_KEY. Inferred value: "dfs.datanode.dns.interface"
+Parameter: DFS_DATANODE_DNS_INTERFACE_DEFAULT. Inferred value: "default"
+Callsite No. 104: 
+Content: conf.get(DFS_DATANODE_DATA_DIR_PERMISSION_KEY,DFS_DATANODE_DATA_DIR_PERMISSION_DEFAULT)
+Parameter: DFS_DATANODE_DATA_DIR_PERMISSION_KEY. Inferred value: "dfs.datanode.data.dir.perm"
+Parameter: DFS_DATANODE_DATA_DIR_PERMISSION_DEFAULT. Inferred value: "700"
+Callsite No. 105: 
+Content: getClasses(getPrefixedName(CONF_SERVICES))
+Parameter: getPrefixedName(CONF_SERVICES)
+Callsite No. 106: 
+Content: conf.getTrimmedStringCollection(DFS_DATANODE_DATA_DIR_KEY)
+Parameter: DFS_DATANODE_DATA_DIR_KEY. Inferred value: "dfs.datanode.data.dir"
+Callsite No. 107: 
+Content: conf.getInt(DFSConfigKeys.DFS_DATANODE_BALANCE_MAX_NUM_CONCURRENT_MOVES_KEY,DFSConfigKeys.DFS_DATANODE_BALANCE_MAX_NUM_CONCURRENT_MOVES_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_BALANCE_MAX_NUM_CONCURRENT_MOVES_KEY. Inferred value: "dfs.datanode.balance.max.concurrent.moves"
+Parameter: DFSConfigKeys.DFS_DATANODE_BALANCE_MAX_NUM_CONCURRENT_MOVES_DEFAULT
+Callsite No. 108: 
+Content: conf.getBoolean(DFS_NAMENODE_AUDIT_LOG_TOKEN_TRACKING_ID_KEY,DFS_NAMENODE_AUDIT_LOG_TOKEN_TRACKING_ID_DEFAULT)
+Parameter: DFS_NAMENODE_AUDIT_LOG_TOKEN_TRACKING_ID_KEY. Inferred value: "dfs.namenode.audit.log.token.tracking.id"
+Parameter: DFS_NAMENODE_AUDIT_LOG_TOKEN_TRACKING_ID_DEFAULT
+Callsite No. 109: 
+Content: conf.get(addKeySuffixes(key,nameserviceId,nnId))
+Parameter: addKeySuffixes(key, nameserviceId, nnId)
+Callsite No. 110: 
+Content: conf.get(DFSConfigKeys.DFS_JOURNALNODE_HTTP_ADDRESS_KEY,DFSConfigKeys.DFS_JOURNALNODE_HTTP_ADDRESS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_JOURNALNODE_HTTP_ADDRESS_KEY. Inferred value: "dfs.journalnode.http-address"
+Parameter: DFSConfigKeys.DFS_JOURNALNODE_HTTP_ADDRESS_DEFAULT
+Callsite No. 111: 
+Content: conf.getTrimmed(DFSConfigKeys.DFS_ENCRYPTION_KEY_PROVIDER_URI,"")
+Parameter: DFSConfigKeys.DFS_ENCRYPTION_KEY_PROVIDER_URI. Inferred value: "dfs.encryption.key.provider.uri"
+Parameter: "". Inferred value: ""
+Callsite No. 112: 
+Content: getPort()
+Callsite No. 113: 
+Content: conf.getInt(DFSConfigKeys.DFS_HA_LOGROLL_RPC_TIMEOUT_KEY,DFSConfigKeys.DFS_HA_LOGROLL_RPC_TIMEOUT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_HA_LOGROLL_RPC_TIMEOUT_KEY. Inferred value: "dfs.ha.log-roll.rpc.timeout"
+Parameter: DFSConfigKeys.DFS_HA_LOGROLL_RPC_TIMEOUT_DEFAULT
+Callsite No. 114: 
+Content: conf.getLong(DFSConfigKeys.DFS_BALANCER_MOVEDWINWIDTH_KEY,DFSConfigKeys.DFS_BALANCER_MOVEDWINWIDTH_DEFAULT)
+Parameter: DFSConfigKeys.DFS_BALANCER_MOVEDWINWIDTH_KEY. Inferred value: "dfs.balancer.movedWinWidth"
+Parameter: DFSConfigKeys.DFS_BALANCER_MOVEDWINWIDTH_DEFAULT
+Callsite No. 115: 
+Content: get(property)
+Parameter: property
+Callsite No. 116: 
+Content: conf.getLong(DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_INTERVAL_KEY,DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_INTERVAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_INTERVAL_KEY. Inferred value: "dfs.namenode.stale.datanode.interval"
+Parameter: DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_INTERVAL_DEFAULT
+Callsite No. 117: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_REPLICATION_MAX_STREAMS_KEY,DFSConfigKeys.DFS_NAMENODE_REPLICATION_MAX_STREAMS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_REPLICATION_MAX_STREAMS_KEY. Inferred value: "dfs.namenode.replication.max-streams"
+Parameter: DFSConfigKeys.DFS_NAMENODE_REPLICATION_MAX_STREAMS_DEFAULT
+Callsite No. 118: 
+Content: conf.getClass(DFSConfigKeys.DFS_DATANODE_RAM_DISK_REPLICA_TRACKER_KEY,DFSConfigKeys.DFS_DATANODE_RAM_DISK_REPLICA_TRACKER_DEFAULT,RamDiskReplicaTracker.class)
+Parameter: DFSConfigKeys.DFS_DATANODE_RAM_DISK_REPLICA_TRACKER_KEY. Inferred value: "dfs.datanode.ram.disk.replica.tracker"
+Parameter: DFSConfigKeys.DFS_DATANODE_RAM_DISK_REPLICA_TRACKER_DEFAULT
+Parameter: RamDiskReplicaTracker.class
+Callsite No. 119: 
+Content: conf.get(DFSConfigKeys.DFS_SECONDARY_NAMENODE_KERBEROS_PRINCIPAL_KEY)
+Parameter: DFSConfigKeys.DFS_SECONDARY_NAMENODE_KERBEROS_PRINCIPAL_KEY. Inferred value: "dfs.secondary.namenode.kerberos.principal"
+Callsite No. 120: 
+Content: config.getInt(DFS_CLIENT_FAILOVER_MAX_ATTEMPTS_KEY,DFS_CLIENT_FAILOVER_MAX_ATTEMPTS_DEFAULT)
+Parameter: DFS_CLIENT_FAILOVER_MAX_ATTEMPTS_KEY. Inferred value: "dfs.client.failover.max.attempts"
+Parameter: DFS_CLIENT_FAILOVER_MAX_ATTEMPTS_DEFAULT
+Callsite No. 121: 
+Content: getInt(DFSConfigKeys.DFS_NAMENODE_HTTP_PORT_KEY,DFSConfigKeys.DFS_NAMENODE_HTTP_PORT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_HTTP_PORT_KEY. Inferred value: "dfs.http.port"
+Parameter: DFSConfigKeys.DFS_NAMENODE_HTTP_PORT_DEFAULT
+Callsite No. 122: 
+Content: getProxy()
+Callsite No. 123: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_CLIENT_USE_LEGACY_BLOCKREADERLOCAL,DFSConfigKeys.DFS_CLIENT_USE_LEGACY_BLOCKREADERLOCAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_USE_LEGACY_BLOCKREADERLOCAL. Inferred value: "dfs.client.use.legacy.blockreader.local"
+Parameter: DFSConfigKeys.DFS_CLIENT_USE_LEGACY_BLOCKREADERLOCAL_DEFAULT
+Callsite No. 124: 
+Content: conf.getBoolean(DFS_DATATRANSFER_CLIENT_VARIABLEWHITELIST_ENABLE,false)
+Parameter: DFS_DATATRANSFER_CLIENT_VARIABLEWHITELIST_ENABLE. Inferred value: "dfs.datatransfer.client.variablewhitelist.enable"
+Parameter: false
+Callsite No. 125: 
+Content: getLong(DFS_DATANODE_CACHE_REVOCATION_POLLING_MS,DFS_DATANODE_CACHE_REVOCATION_POLLING_MS_DEFAULT)
+Parameter: DFS_DATANODE_CACHE_REVOCATION_POLLING_MS. Inferred value: "dfs.datanode.cache.revocation.polling.ms"
+Parameter: DFS_DATANODE_CACHE_REVOCATION_POLLING_MS_DEFAULT
+Callsite No. 126: 
+Content: conf.getInt(DFSConfigKeys.DFS_DATANODE_LAZY_WRITER_INTERVAL_SEC,DFSConfigKeys.DFS_DATANODE_LAZY_WRITER_INTERVAL_DEFAULT_SEC)
+Parameter: DFSConfigKeys.DFS_DATANODE_LAZY_WRITER_INTERVAL_SEC. Inferred value: "dfs.datanode.lazywriter.interval.sec"
+Parameter: DFSConfigKeys.DFS_DATANODE_LAZY_WRITER_INTERVAL_DEFAULT_SEC
+Callsite No. 127: 
+Content: conf.getBoolean(DFS_DATATRANSFER_SERVER_VARIABLEWHITELIST_ENABLE,false)
+Parameter: DFS_DATATRANSFER_SERVER_VARIABLEWHITELIST_ENABLE. Inferred value: "dfs.datatransfer.server.variablewhitelist.enable"
+Parameter: false
+Callsite No. 128: 
+Content: conf.getInt(DFS_BYTES_PER_CHECKSUM_KEY,DFS_BYTES_PER_CHECKSUM_DEFAULT)
+Parameter: DFS_BYTES_PER_CHECKSUM_KEY. Inferred value: "dfs.bytes-per-checksum"
+Parameter: DFS_BYTES_PER_CHECKSUM_DEFAULT
+Callsite No. 129: 
+Content: getLong(FS_CACHE_PURGE_TIMEOUT,60)
+Parameter: FS_CACHE_PURGE_TIMEOUT. Inferred value: "filesystem.cache.purge.timeout"
+Parameter: 60
+Callsite No. 130: 
+Content: conf.getInt(DFSConfigKeys.DFS_CLIENT_FILE_BLOCK_STORAGE_LOCATIONS_TIMEOUT_MS,DFSConfigKeys.DFS_CLIENT_FILE_BLOCK_STORAGE_LOCATIONS_TIMEOUT_MS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_FILE_BLOCK_STORAGE_LOCATIONS_TIMEOUT_MS. Inferred value: "dfs.client.file-block-storage-locations.timeout.millis"
+Parameter: DFSConfigKeys.DFS_CLIENT_FILE_BLOCK_STORAGE_LOCATIONS_TIMEOUT_MS_DEFAULT
+Callsite No. 131: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_DATANODE_SYNC_BEHIND_WRITES_IN_BACKGROUND_KEY,DFSConfigKeys.DFS_DATANODE_SYNC_BEHIND_WRITES_IN_BACKGROUND_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_SYNC_BEHIND_WRITES_IN_BACKGROUND_KEY. Inferred value: "dfs.datanode.sync.behind.writes.in.background"
+Parameter: DFSConfigKeys.DFS_DATANODE_SYNC_BEHIND_WRITES_IN_BACKGROUND_DEFAULT
+Callsite No. 132: 
+Content: conf.getInt(DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_SIZE,DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_SIZE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_SIZE. Inferred value: "dfs.client.mmap.cache.size"
+Parameter: DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_SIZE_DEFAULT
+Callsite No. 133: 
+Content: sslConf.get("ssl.server.truststore.location")
+Parameter: "ssl.server.truststore.location". Inferred value: "ssl.server.truststore.location"
+Callsite No. 134: 
+Content: conf.getFloat(DFS_NAMENODE_SAFEMODE_THRESHOLD_PCT_KEY,DFS_NAMENODE_SAFEMODE_THRESHOLD_PCT_DEFAULT)
+Parameter: DFS_NAMENODE_SAFEMODE_THRESHOLD_PCT_KEY. Inferred value: "dfs.namenode.safemode.threshold-pct"
+Parameter: DFS_NAMENODE_SAFEMODE_THRESHOLD_PCT_DEFAULT
+Callsite No. 135: 
+Content: conf.get(DFS_ADMIN,"")
+Parameter: DFS_ADMIN. Inferred value: "dfs.cluster.administrators"
+Parameter: " ". Inferred value: " "
+Callsite No. 136: 
+Content: get(property)
+Parameter: property
+Callsite No. 137: 
+Content: conf.getTrimmed(DFS_DATANODE_HTTPS_ADDRESS_KEY,DFS_DATANODE_HTTPS_ADDRESS_DEFAULT)
+Parameter: DFS_DATANODE_HTTPS_ADDRESS_KEY. Inferred value: "dfs.datanode.https.address"
+Parameter: DFS_DATANODE_HTTPS_ADDRESS_DEFAULT
+Callsite No. 138: 
+Content: conf.getTrimmed(BN_SERVICE_RPC_ADDRESS_KEY)
+Parameter: BN_SERVICE_RPC_ADDRESS_KEY. Inferred value: "dfs.namenode.backup.dnrpc-address"
+Callsite No. 139: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_CLIENT_USE_LEGACY_BLOCKREADERLOCAL,DFSConfigKeys.DFS_CLIENT_USE_LEGACY_BLOCKREADERLOCAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_USE_LEGACY_BLOCKREADERLOCAL. Inferred value: "dfs.client.use.legacy.blockreader.local"
+Parameter: DFSConfigKeys.DFS_CLIENT_USE_LEGACY_BLOCKREADERLOCAL_DEFAULT
+Callsite No. 140: 
+Content: conf.getTrimmed(BN_ADDRESS_NAME_KEY,BN_ADDRESS_DEFAULT)
+Parameter: BN_ADDRESS_NAME_KEY. Inferred value: "dfs.namenode.backup.address"
+Parameter: BN_ADDRESS_DEFAULT. Inferred value: "localhost:50100"
+Callsite No. 141: 
+Content: conf.getLong(DFS_DATATRANSFER_CLIENT_VARIABLEWHITELIST_CACHE_SECS,3600)
+Parameter: DFS_DATATRANSFER_CLIENT_VARIABLEWHITELIST_CACHE_SECS. Inferred value: "dfs.datatransfer.client.variablewhitelist.cache.secs"
+Parameter: 3600
+Callsite No. 142: 
+Content: conf.getInt(DFSConfigKeys.DFS_QJOURNAL_PREPARE_RECOVERY_TIMEOUT_KEY,DFSConfigKeys.DFS_QJOURNAL_PREPARE_RECOVERY_TIMEOUT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_QJOURNAL_PREPARE_RECOVERY_TIMEOUT_KEY. Inferred value: "dfs.qjournal.prepare-recovery.timeout.ms"
+Parameter: DFSConfigKeys.DFS_QJOURNAL_PREPARE_RECOVERY_TIMEOUT_DEFAULT
+Callsite No. 143: 
+Content: conf.getLong(DFS_NAMENODE_RESOURCE_CHECK_INTERVAL_KEY,DFS_NAMENODE_RESOURCE_CHECK_INTERVAL_DEFAULT)
+Parameter: DFS_NAMENODE_RESOURCE_CHECK_INTERVAL_KEY. Inferred value: "dfs.namenode.resource.check.interval"
+Parameter: DFS_NAMENODE_RESOURCE_CHECK_INTERVAL_DEFAULT
+Callsite No. 144: 
+Content: conf.getLong(DFS_CACHEREPORT_INTERVAL_MSEC_KEY,DFS_CACHEREPORT_INTERVAL_MSEC_DEFAULT)
+Parameter: DFS_CACHEREPORT_INTERVAL_MSEC_KEY. Inferred value: "dfs.cachereport.intervalMsec"
+Parameter: DFS_CACHEREPORT_INTERVAL_MSEC_DEFAULT
+Callsite No. 145: 
+Content: conf.get(DFS_DATATRANSFER_CLIENT_FIXEDWHITELIST_FILE,fixedFile)
+Parameter: DFS_DATATRANSFER_CLIENT_FIXEDWHITELIST_FILE. Inferred value: "dfs.datatransfer.client.fixedwhitelist.file"
+Parameter: fixedFile
+Callsite No. 146: 
+Content: conf.get(DFSConfigKeys.DFS_SECONDARY_NAMENODE_KERBEROS_PRINCIPAL_KEY)
+Parameter: DFSConfigKeys.DFS_SECONDARY_NAMENODE_KERBEROS_PRINCIPAL_KEY. Inferred value: "dfs.secondary.namenode.kerberos.principal"
+Callsite No. 147: 
+Content: conf.get(DFSConfigKeys.DFS_JOURNALNODE_EDITS_DIR_KEY,DFSConfigKeys.DFS_JOURNALNODE_EDITS_DIR_DEFAULT)
+Parameter: DFSConfigKeys.DFS_JOURNALNODE_EDITS_DIR_KEY. Inferred value: "dfs.journalnode.edits.dir"
+Parameter: DFSConfigKeys.DFS_JOURNALNODE_EDITS_DIR_DEFAULT. Inferred value: "/tmp/hadoop/dfs/journalnode/"
+Callsite No. 148: 
+Content: conf.getBoolean(DFS_CLIENT_CACHE_DROP_BEHIND_WRITES,false)
+Parameter: DFS_CLIENT_CACHE_DROP_BEHIND_WRITES. Inferred value: "dfs.client.cache.drop.behind.writes"
+Parameter: false
+Callsite No. 149: 
+Content: conf.getInt(DFS_BYTES_PER_CHECKSUM_KEY,DFS_BYTES_PER_CHECKSUM_DEFAULT)
+Parameter: DFS_BYTES_PER_CHECKSUM_KEY. Inferred value: "dfs.bytes-per-checksum"
+Parameter: DFS_BYTES_PER_CHECKSUM_DEFAULT
+Callsite No. 150: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_REPLICATION_WORK_MULTIPLIER_PER_ITERATION,DFSConfigKeys.DFS_NAMENODE_REPLICATION_WORK_MULTIPLIER_PER_ITERATION_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_REPLICATION_WORK_MULTIPLIER_PER_ITERATION. Inferred value: "dfs.namenode.replication.work.multiplier.per.iteration"
+Parameter: DFSConfigKeys.DFS_NAMENODE_REPLICATION_WORK_MULTIPLIER_PER_ITERATION_DEFAULT
+Callsite No. 151: 
+Content: conf.getClass(configKey,null,FailoverProxyProvider.class)
+Parameter: configKey
+Parameter: null
+Parameter: FailoverProxyProvider.class
+Callsite No. 152: 
+Content: getInt(DFSConfigKeys.DFS_NAMENODE_HTTPS_PORT_KEY,DFSConfigKeys.DFS_NAMENODE_HTTPS_PORT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_HTTPS_PORT_KEY. Inferred value: "dfs.https.port"
+Parameter: DFSConfigKeys.DFS_NAMENODE_HTTPS_PORT_DEFAULT
+Callsite No. 153: 
+Content: getEmptier()
+Callsite No. 154: 
+Content: conf.getTrimmed(DFS_DATANODE_IPC_ADDRESS_KEY)
+Parameter: DFS_DATANODE_IPC_ADDRESS_KEY. Inferred value: "dfs.datanode.ipc.address"
+Callsite No. 155: 
+Content: conf.getLong(DFSConfigKeys.DFS_CLIENT_MMAP_RETRY_TIMEOUT_MS,DFSConfigKeys.DFS_CLIENT_MMAP_RETRY_TIMEOUT_MS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_MMAP_RETRY_TIMEOUT_MS. Inferred value: "dfs.client.mmap.retry.timeout.ms"
+Parameter: DFSConfigKeys.DFS_CLIENT_MMAP_RETRY_TIMEOUT_MS_DEFAULT
+Callsite No. 156: 
+Content: conf.getTrimmed(DFS_NAMENODE_SERVICE_RPC_ADDRESS_KEY)
+Parameter: DFS_NAMENODE_SERVICE_RPC_ADDRESS_KEY. Inferred value: "dfs.namenode.servicerpc-address"
+Callsite No. 157: 
+Content: conf.get(key)
+Parameter: key
+Callsite No. 158: 
+Content: conf.getInt(DFSConfigKeys.DFS_DATANODE_DIRECTORYSCAN_THREADS_KEY,DFSConfigKeys.DFS_DATANODE_DIRECTORYSCAN_THREADS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_DIRECTORYSCAN_THREADS_KEY. Inferred value: "dfs.datanode.directoryscan.threads"
+Parameter: DFSConfigKeys.DFS_DATANODE_DIRECTORYSCAN_THREADS_DEFAULT
+Callsite No. 159: 
+Content: conf.get(DFS_ENCRYPT_DATA_TRANSFER_CIPHER_SUITES_KEY)
+Parameter: DFS_ENCRYPT_DATA_TRANSFER_CIPHER_SUITES_KEY. Inferred value: "dfs.encrypt.data.transfer.cipher.suites"
+Callsite No. 160: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_DATANODE_BLOCK_PINNING_ENABLED,DFSConfigKeys.DFS_DATANODE_BLOCK_PINNING_ENABLED_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_BLOCK_PINNING_ENABLED. Inferred value: "dfs.datanode.block-pinning.enabled"
+Parameter: DFSConfigKeys.DFS_DATANODE_BLOCK_PINNING_ENABLED_DEFAULT
+Callsite No. 161: 
+Content: conf.getInt(DFSConfigKeys.DFS_DATANODE_SOCKET_REUSE_KEEPALIVE_KEY,DFSConfigKeys.DFS_DATANODE_SOCKET_REUSE_KEEPALIVE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_SOCKET_REUSE_KEEPALIVE_KEY. Inferred value: "dfs.datanode.socket.reuse.keepalive"
+Parameter: DFSConfigKeys.DFS_DATANODE_SOCKET_REUSE_KEEPALIVE_DEFAULT
+Callsite No. 162: 
+Content: config.get(entry.getKey())
+Parameter: entry.getKey()
+Callsite No. 163: 
+Content: conf.getClass(INTERNAL_VOLUME_SCANNER_SCAN_RESULT_HANDLER,ScanResultHandler.class)
+Parameter: INTERNAL_VOLUME_SCANNER_SCAN_RESULT_HANDLER. Inferred value: "internal.volume.scanner.scan.result.handler"
+Parameter: ScanResultHandler.class
+Callsite No. 164: 
+Content: conf.get(DFSConfigKeys.DFS_HOSTS,"")
+Parameter: DFSConfigKeys.DFS_HOSTS. Inferred value: "dfs.hosts"
+Parameter: "". Inferred value: ""
+Callsite No. 165: 
+Content: conf.get(DFSConfigKeys.DFS_PERMISSIONS_SUPERUSERGROUP_KEY,DFSConfigKeys.DFS_PERMISSIONS_SUPERUSERGROUP_DEFAULT)
+Parameter: DFSConfigKeys.DFS_PERMISSIONS_SUPERUSERGROUP_KEY. Inferred value: "dfs.permissions.superusergroup"
+Parameter: DFSConfigKeys.DFS_PERMISSIONS_SUPERUSERGROUP_DEFAULT. Inferred value: "supergroup"
+Callsite No. 166: 
+Content: cE.getTrimmedStringCollection(propertyName)
+Parameter: propertyName
+Callsite No. 167: 
+Content: conf.get(addrKey)
+Parameter: addrKey
+Callsite No. 168: 
+Content: conf.get(DFSConfigKeys.DFS_DATANODE_DATA_DIR_PERMISSION_KEY,DFSConfigKeys.DFS_DATANODE_DATA_DIR_PERMISSION_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_DATA_DIR_PERMISSION_KEY. Inferred value: "dfs.datanode.data.dir.perm"
+Parameter: DFSConfigKeys.DFS_DATANODE_DATA_DIR_PERMISSION_DEFAULT. Inferred value: "700"
+Callsite No. 169: 
+Content: conf.getLong(DFS_CLIENT_WRITE_EXCLUDE_NODES_CACHE_EXPIRY_INTERVAL,DFS_CLIENT_WRITE_EXCLUDE_NODES_CACHE_EXPIRY_INTERVAL_DEFAULT)
+Parameter: DFS_CLIENT_WRITE_EXCLUDE_NODES_CACHE_EXPIRY_INTERVAL. Inferred value: "dfs.client.write.exclude.nodes.cache.expiry.interval.millis"
+Parameter: DFS_CLIENT_WRITE_EXCLUDE_NODES_CACHE_EXPIRY_INTERVAL_DEFAULT
+Callsite No. 170: 
+Content: NetUtils.getHostPortString(addr)
+Parameter: addr
+Callsite No. 171: 
+Content: conf.getLong(DFSConfigKeys.DFS_BLOCK_ACCESS_KEY_UPDATE_INTERVAL_KEY,DFSConfigKeys.DFS_BLOCK_ACCESS_KEY_UPDATE_INTERVAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_BLOCK_ACCESS_KEY_UPDATE_INTERVAL_KEY. Inferred value: "dfs.block.access.key.update.interval"
+Parameter: DFSConfigKeys.DFS_BLOCK_ACCESS_KEY_UPDATE_INTERVAL_DEFAULT
+Callsite No. 172: 
+Content: getInt(DFSConfigKeys.DFS_NAMENODE_HTTP_PORT_KEY,DFSConfigKeys.DFS_NAMENODE_HTTP_PORT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_HTTP_PORT_KEY. Inferred value: "dfs.http.port"
+Parameter: DFSConfigKeys.DFS_NAMENODE_HTTP_PORT_DEFAULT
+Callsite No. 173: 
+Content: conf.get(DFSConfigKeys.DFS_CHECKSUM_TYPE_KEY,DFSConfigKeys.DFS_CHECKSUM_TYPE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CHECKSUM_TYPE_KEY. Inferred value: "dfs.checksum.type"
+Parameter: DFSConfigKeys.DFS_CHECKSUM_TYPE_DEFAULT. Inferred value: "CRC32C"
+Callsite No. 174: 
+Content: conf.getLong(DFS_DATANODE_AVAILABLE_SPACE_VOLUME_CHOOSING_POLICY_BALANCED_SPACE_THRESHOLD_KEY,DFS_DATANODE_AVAILABLE_SPACE_VOLUME_CHOOSING_POLICY_BALANCED_SPACE_THRESHOLD_DEFAULT)
+Parameter: DFS_DATANODE_AVAILABLE_SPACE_VOLUME_CHOOSING_POLICY_BALANCED_SPACE_THRESHOLD_KEY. Inferred value: "dfs.datanode.available-space-volume-choosing-policy.balanced-space-threshold"
+Parameter: DFS_DATANODE_AVAILABLE_SPACE_VOLUME_CHOOSING_POLICY_BALANCED_SPACE_THRESHOLD_DEFAULT
+Callsite No. 175: 
+Content: conf.getLong(DFS_NAMENODE_RETRY_CACHE_EXPIRYTIME_MILLIS_KEY,DFS_NAMENODE_RETRY_CACHE_EXPIRYTIME_MILLIS_DEFAULT)
+Parameter: DFS_NAMENODE_RETRY_CACHE_EXPIRYTIME_MILLIS_KEY. Inferred value: "dfs.namenode.retrycache.expirytime.millis"
+Parameter: DFS_NAMENODE_RETRY_CACHE_EXPIRYTIME_MILLIS_DEFAULT
+Callsite No. 176: 
+Content: conf.getLong(DFSConfigKeys.DFS_DATANODE_BALANCE_BANDWIDTHPERSEC_KEY,DFSConfigKeys.DFS_DATANODE_BALANCE_BANDWIDTHPERSEC_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_BALANCE_BANDWIDTHPERSEC_KEY. Inferred value: "dfs.datanode.balance.bandwidthPerSec"
+Parameter: DFSConfigKeys.DFS_DATANODE_BALANCE_BANDWIDTHPERSEC_DEFAULT
+Callsite No. 177: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_HDFS_BLOCKS_METADATA_ENABLED,DFSConfigKeys.DFS_HDFS_BLOCKS_METADATA_ENABLED_DEFAULT)
+Parameter: DFSConfigKeys.DFS_HDFS_BLOCKS_METADATA_ENABLED. Inferred value: "dfs.datanode.hdfs-blocks-metadata.enabled"
+Parameter: DFSConfigKeys.DFS_HDFS_BLOCKS_METADATA_ENABLED_DEFAULT
+Callsite No. 178: 
+Content: conf.get(SERVICE_NAME_KEY+serviceName)
+Parameter: SERVICE_NAME_KEY + serviceName
+Callsite No. 179: 
+Content: conf.getInt(DFSConfigKeys.DFS_QJOURNAL_WRITE_TXNS_TIMEOUT_KEY,DFSConfigKeys.DFS_QJOURNAL_WRITE_TXNS_TIMEOUT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_QJOURNAL_WRITE_TXNS_TIMEOUT_KEY. Inferred value: "dfs.qjournal.write-txns.timeout.ms"
+Parameter: DFSConfigKeys.DFS_QJOURNAL_WRITE_TXNS_TIMEOUT_DEFAULT
+Callsite No. 180: 
+Content: conf.getInt(DFSConfigKeys.DFS_HTTP_CLIENT_FAILOVER_SLEEPTIME_BASE_KEY,DFSConfigKeys.DFS_HTTP_CLIENT_FAILOVER_SLEEPTIME_BASE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_HTTP_CLIENT_FAILOVER_SLEEPTIME_BASE_KEY. Inferred value: "dfs.http.client.failover.sleep.base.millis"
+Parameter: DFSConfigKeys.DFS_HTTP_CLIENT_FAILOVER_SLEEPTIME_BASE_DEFAULT
+Callsite No. 181: 
+Content: conf.getLongBytes(DFS_BLOCK_SIZE_KEY,DFS_BLOCK_SIZE_DEFAULT)
+Parameter: DFS_BLOCK_SIZE_KEY. Inferred value: "dfs.blocksize"
+Parameter: DFS_BLOCK_SIZE_DEFAULT
+Callsite No. 182: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_CLIENT_USE_LEGACY_BLOCKREADER,DFSConfigKeys.DFS_CLIENT_USE_LEGACY_BLOCKREADER_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_USE_LEGACY_BLOCKREADER. Inferred value: "dfs.client.use.legacy.blockreader"
+Parameter: DFSConfigKeys.DFS_CLIENT_USE_LEGACY_BLOCKREADER_DEFAULT
+Callsite No. 183: 
+Content: target.get(entry.getKey())
+Parameter: entry.getKey()
+Callsite No. 184: 
+Content: conf.getInt(DFS_CLIENT_WRITE_PACKET_SIZE_KEY,DFS_CLIENT_WRITE_PACKET_SIZE_DEFAULT)
+Parameter: DFS_CLIENT_WRITE_PACKET_SIZE_KEY. Inferred value: "dfs.client-write-packet-size"
+Parameter: DFS_CLIENT_WRITE_PACKET_SIZE_DEFAULT
+Callsite No. 185: 
+Content: conf.get(DFSConfigKeys.DFS_SECONDARY_NAMENODE_KERBEROS_PRINCIPAL_KEY)
+Parameter: DFSConfigKeys.DFS_SECONDARY_NAMENODE_KERBEROS_PRINCIPAL_KEY. Inferred value: "dfs.secondary.namenode.kerberos.principal"
+Callsite No. 186: 
+Content: confForNn.get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY)
+Parameter: DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY. Inferred value: "dfs.namenode.kerberos.principal"
+Callsite No. 187: 
+Content: this.conf.getInt(DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_ON_SOCKET_TIMEOUTS_KEY,DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_ON_SOCKET_TIMEOUTS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_ON_SOCKET_TIMEOUTS_KEY. Inferred value: "dfs.client.failover.connection.retries.on.timeouts"
+Parameter: DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_ON_SOCKET_TIMEOUTS_DEFAULT
+Callsite No. 188: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_SKIP_CHECKSUM_KEY,DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_SKIP_CHECKSUM_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_SKIP_CHECKSUM_KEY. Inferred value: "dfs.client.read.shortcircuit.skip.checksum"
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_SKIP_CHECKSUM_DEFAULT
+Callsite No. 189: 
+Content: conf.getInt(DFSConfigKeys.DFS_DATANODE_SOCKET_WRITE_TIMEOUT_KEY,HdfsServerConstants.WRITE_TIMEOUT)
+Parameter: DFSConfigKeys.DFS_DATANODE_SOCKET_WRITE_TIMEOUT_KEY. Inferred value: "dfs.datanode.socket.write.timeout"
+Parameter: HdfsServerConstants.WRITE_TIMEOUT
+Callsite No. 190: 
+Content: conf.getLong(DFS_NAMENODE_CHECKPOINT_PERIOD_KEY,DFS_NAMENODE_CHECKPOINT_PERIOD_DEFAULT)
+Parameter: DFS_NAMENODE_CHECKPOINT_PERIOD_KEY. Inferred value: "dfs.namenode.checkpoint.period"
+Parameter: DFS_NAMENODE_CHECKPOINT_PERIOD_DEFAULT
+Callsite No. 191: 
+Content: conf.getLong(DFS_NAMENODE_ACCESSTIME_PRECISION_KEY,DFS_NAMENODE_ACCESSTIME_PRECISION_DEFAULT)
+Parameter: DFS_NAMENODE_ACCESSTIME_PRECISION_KEY. Inferred value: "dfs.namenode.accesstime.precision"
+Parameter: DFS_NAMENODE_ACCESSTIME_PRECISION_DEFAULT
+Callsite No. 192: 
+Content: conf.getLong(DFSConfigKeys.DFS_NAMENODE_MIN_BLOCK_SIZE_KEY,DFSConfigKeys.DFS_NAMENODE_MIN_BLOCK_SIZE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_MIN_BLOCK_SIZE_KEY. Inferred value: "dfs.namenode.fs-limits.min-block-size"
+Parameter: DFSConfigKeys.DFS_NAMENODE_MIN_BLOCK_SIZE_DEFAULT
+Callsite No. 193: 
+Content: conf.getTrimmedStringCollection(DFSConfigKeys.DFS_NAMESERVICES)
+Parameter: DFSConfigKeys.DFS_NAMESERVICES. Inferred value: "dfs.nameservices"
+Callsite No. 194: 
+Content: conf.get(DFSUtil.getSpnegoKeytabKey(conf,DFSConfigKeys.DFS_NAMENODE_KEYTAB_FILE_KEY))
+Parameter: DFSUtil.getSpnegoKeytabKey(conf,
+        DFSConfigKeys.DFS_NAMENODE_KEYTAB_FILE_KEY)
+Callsite No. 195: 
+Content: conf.getFloat(DFS_NAMENODE_EDIT_LOG_AUTOROLL_MULTIPLIER_THRESHOLD,DFS_NAMENODE_EDIT_LOG_AUTOROLL_MULTIPLIER_THRESHOLD_DEFAULT)
+Parameter: DFS_NAMENODE_EDIT_LOG_AUTOROLL_MULTIPLIER_THRESHOLD. Inferred value: "dfs.namenode.edit.log.autoroll.multiplier.threshold"
+Parameter: DFS_NAMENODE_EDIT_LOG_AUTOROLL_MULTIPLIER_THRESHOLD_DEFAULT
+Callsite No. 196: 
+Content: conf.getLong(DFSConfigKeys.DFS_CLIENT_SLOW_IO_WARNING_THRESHOLD_KEY,DFSConfigKeys.DFS_CLIENT_SLOW_IO_WARNING_THRESHOLD_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_SLOW_IO_WARNING_THRESHOLD_KEY. Inferred value: "dfs.client.slow.io.warning.threshold.ms"
+Parameter: DFSConfigKeys.DFS_CLIENT_SLOW_IO_WARNING_THRESHOLD_DEFAULT
+Callsite No. 197: 
+Content: conf.getInts(DFSConfigKeys.DFS_METRICS_PERCENTILES_INTERVALS_KEY)
+Parameter: DFSConfigKeys.DFS_METRICS_PERCENTILES_INTERVALS_KEY. Inferred value: "dfs.metrics.percentiles.intervals"
+Callsite No. 198: 
+Content: conf.get(NfsConfigKeys.NFS_HTTP_ADDRESS_KEY,NfsConfigKeys.NFS_HTTP_ADDRESS_DEFAULT)
+Parameter: NfsConfigKeys.NFS_HTTP_ADDRESS_KEY. Inferred value: "nfs.http.address"
+Parameter: NfsConfigKeys.NFS_HTTP_ADDRESS_DEFAULT
+Callsite No. 199: 
+Content: conf.getInt(DFSConfigKeys.DFS_IMAGE_TRANSFER_TIMEOUT_KEY,DFSConfigKeys.DFS_IMAGE_TRANSFER_TIMEOUT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_IMAGE_TRANSFER_TIMEOUT_KEY. Inferred value: "dfs.image.transfer.timeout"
+Parameter: DFSConfigKeys.DFS_IMAGE_TRANSFER_TIMEOUT_DEFAULT
+Callsite No. 200: 
+Content: conf.getLong(DFS_DATANODE_XCEIVER_STOP_TIMEOUT_MILLIS_KEY,DFS_DATANODE_XCEIVER_STOP_TIMEOUT_MILLIS_DEFAULT)
+Parameter: DFS_DATANODE_XCEIVER_STOP_TIMEOUT_MILLIS_KEY. Inferred value: "dfs.datanode.xceiver.stop.timeout.millis"
+Parameter: DFS_DATANODE_XCEIVER_STOP_TIMEOUT_MILLIS_DEFAULT
+Callsite No. 201: 
+Content: conf.getInt(DFS_NAMENODE_SAFEMODE_MIN_DATANODES_KEY,DFS_NAMENODE_SAFEMODE_MIN_DATANODES_DEFAULT)
+Parameter: DFS_NAMENODE_SAFEMODE_MIN_DATANODES_KEY. Inferred value: "dfs.namenode.safemode.min.datanodes"
+Parameter: DFS_NAMENODE_SAFEMODE_MIN_DATANODES_DEFAULT
+Callsite No. 202: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_DATANODE_USE_DN_HOSTNAME,DFSConfigKeys.DFS_DATANODE_USE_DN_HOSTNAME_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_USE_DN_HOSTNAME. Inferred value: "dfs.datanode.use.datanode.hostname"
+Parameter: DFSConfigKeys.DFS_DATANODE_USE_DN_HOSTNAME_DEFAULT
+Callsite No. 203: 
+Content: conf.get(DFS_DATANODE_MIN_SUPPORTED_NAMENODE_VERSION_KEY,DFS_DATANODE_MIN_SUPPORTED_NAMENODE_VERSION_DEFAULT)
+Parameter: DFS_DATANODE_MIN_SUPPORTED_NAMENODE_VERSION_KEY. Inferred value: "dfs.datanode.min.supported.namenode.version"
+Parameter: DFS_DATANODE_MIN_SUPPORTED_NAMENODE_VERSION_DEFAULT. Inferred value: "2.1.0-beta"
+Callsite No. 204: 
+Content: conf.get(DFSConfigKeys.DFS_ADMIN,"")
+Parameter: DFSConfigKeys.DFS_ADMIN. Inferred value: "dfs.cluster.administrators"
+Parameter: " ". Inferred value: " "
+Callsite No. 205: 
+Content: conf.getInt(DFS_NAMENODE_EDIT_LOG_AUTOROLL_CHECK_INTERVAL_MS,DFS_NAMENODE_EDIT_LOG_AUTOROLL_CHECK_INTERVAL_MS_DEFAULT)
+Parameter: DFS_NAMENODE_EDIT_LOG_AUTOROLL_CHECK_INTERVAL_MS. Inferred value: "dfs.namenode.edit.log.autoroll.check.interval.ms"
+Parameter: DFS_NAMENODE_EDIT_LOG_AUTOROLL_CHECK_INTERVAL_MS_DEFAULT
+Callsite No. 206: 
+Content: conf.getTrimmedStringCollection(DFS_NAMENODE_SHARED_EDITS_DIR_KEY)
+Parameter: DFS_NAMENODE_SHARED_EDITS_DIR_KEY. Inferred value: "dfs.namenode.shared.edits.dir"
+Callsite No. 207: 
+Content: conf.get(DFSConfigKeys.NET_TOPOLOGY_SCRIPT_FILE_NAME_KEY)
+Parameter: DFSConfigKeys.NET_TOPOLOGY_SCRIPT_FILE_NAME_KEY
+Callsite No. 208: 
+Content: conf.getBoolean(FILE_SYSTEM_SERVICE_CREATED,false)
+Parameter: FILE_SYSTEM_SERVICE_CREATED. Inferred value: "FileSystemAccessService.created"
+Parameter: false
+Callsite No. 209: 
+Content: conf.get(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY)
+Parameter: CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY
+Callsite No. 210: 
+Content: conf.get(DFSConfigKeys.DFS_DATA_ENCRYPTION_ALGORITHM_KEY)
+Parameter: DFSConfigKeys.DFS_DATA_ENCRYPTION_ALGORITHM_KEY. Inferred value: "dfs.encrypt.data.transfer.algorithm"
+Callsite No. 211: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_REJECT_UNRESOLVED_DN_TOPOLOGY_MAPPING_KEY,DFSConfigKeys.DFS_REJECT_UNRESOLVED_DN_TOPOLOGY_MAPPING_DEFAULT)
+Parameter: DFSConfigKeys.DFS_REJECT_UNRESOLVED_DN_TOPOLOGY_MAPPING_KEY. Inferred value: "dfs.namenode.reject-unresolved-dn-topology-mapping"
+Parameter: DFSConfigKeys.DFS_REJECT_UNRESOLVED_DN_TOPOLOGY_MAPPING_DEFAULT
+Callsite No. 212: 
+Content: conf.getInt(DFSConfigKeys.DFS_HA_LOGROLL_PERIOD_KEY,DFSConfigKeys.DFS_HA_LOGROLL_PERIOD_DEFAULT)
+Parameter: DFSConfigKeys.DFS_HA_LOGROLL_PERIOD_KEY. Inferred value: "dfs.ha.log-roll.period"
+Parameter: DFSConfigKeys.DFS_HA_LOGROLL_PERIOD_DEFAULT
+Callsite No. 213: 
+Content: conf.get(DFSConfigKeys.DFS_USER_HOME_DIR_PREFIX_KEY,DFSConfigKeys.DFS_USER_HOME_DIR_PREFIX_DEFAULT)
+Parameter: DFSConfigKeys.DFS_USER_HOME_DIR_PREFIX_KEY. Inferred value: "dfs.user.home.dir.prefix"
+Parameter: DFSConfigKeys.DFS_USER_HOME_DIR_PREFIX_DEFAULT. Inferred value: "/user"
+Callsite No. 214: 
+Content: conf.getLong(key,defVal)
+Parameter: key
+Parameter: defVal
+Callsite No. 215: 
+Content: conf.get(DFSConfigKeys.DFS_METRICS_SESSION_ID_KEY)
+Parameter: DFSConfigKeys.DFS_METRICS_SESSION_ID_KEY. Inferred value: "dfs.metrics.session-id"
+Callsite No. 216: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_KEY,DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_KEY. Inferred value: "dfs.client.read.shortcircuit"
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_DEFAULT
+Callsite No. 217: 
+Content: conf.getTrimmed(DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTP_ADDRESS_KEY,DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTP_ADDRESS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTP_ADDRESS_KEY. Inferred value: "dfs.namenode.secondary.http-address"
+Parameter: DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTP_ADDRESS_DEFAULT. Inferred value: "0.0.0.0:50090"
+Callsite No. 218: 
+Content: conf.get(HADOOP_HTTP_STATIC_USER,DEFAULT_HADOOP_HTTP_STATIC_USER)
+Parameter: HADOOP_HTTP_STATIC_USER
+Parameter: DEFAULT_HADOOP_HTTP_STATIC_USER
+Callsite No. 219: 
+Content: getHostName()
+Callsite No. 220: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_REPLICATION_INTERVAL_KEY,DFSConfigKeys.DFS_NAMENODE_REPLICATION_INTERVAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_REPLICATION_INTERVAL_KEY. Inferred value: "dfs.namenode.replication.interval"
+Parameter: DFSConfigKeys.DFS_NAMENODE_REPLICATION_INTERVAL_DEFAULT
+Callsite No. 221: 
+Content: conf.get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY,"")
+Parameter: DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY. Inferred value: "dfs.namenode.kerberos.principal"
+Parameter: "". Inferred value: ""
+Callsite No. 222: 
+Content: conf.getInt(DFS_CLIENT_BLOCK_WRITE_LOCATEFOLLOWINGBLOCK_RETRIES_KEY,DFS_CLIENT_BLOCK_WRITE_LOCATEFOLLOWINGBLOCK_RETRIES_DEFAULT)
+Parameter: DFS_CLIENT_BLOCK_WRITE_LOCATEFOLLOWINGBLOCK_RETRIES_KEY. Inferred value: "dfs.client.block.write.locateFollowingBlock.retries"
+Parameter: DFS_CLIENT_BLOCK_WRITE_LOCATEFOLLOWINGBLOCK_RETRIES_DEFAULT
+Callsite No. 223: 
+Content: conf.getBoolean(CommonConfigurationKeys.HADOOP_SSL_ENABLED_KEY,CommonConfigurationKeys.HADOOP_SSL_ENABLED_DEFAULT)
+Parameter: CommonConfigurationKeys.HADOOP_SSL_ENABLED_KEY
+Parameter: CommonConfigurationKeys.HADOOP_SSL_ENABLED_DEFAULT
+Callsite No. 224: 
+Content: conf.getLong(DFSConfigKeys.DFS_DATANODE_SLOW_IO_WARNING_THRESHOLD_KEY,DFSConfigKeys.DFS_DATANODE_SLOW_IO_WARNING_THRESHOLD_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_SLOW_IO_WARNING_THRESHOLD_KEY. Inferred value: "dfs.datanode.slow.io.warning.threshold.ms"
+Parameter: DFSConfigKeys.DFS_DATANODE_SLOW_IO_WARNING_THRESHOLD_DEFAULT
+Callsite No. 225: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_NAME_CACHE_THRESHOLD_KEY,DFSConfigKeys.DFS_NAMENODE_NAME_CACHE_THRESHOLD_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_NAME_CACHE_THRESHOLD_KEY. Inferred value: "dfs.namenode.name.cache.threshold"
+Parameter: DFSConfigKeys.DFS_NAMENODE_NAME_CACHE_THRESHOLD_DEFAULT
+Callsite No. 226: 
+Content: conf.getTrimmedStringCollection(DFSConfigKeys.DFS_INTERNAL_NAMESERVICES_KEY)
+Parameter: DFSConfigKeys.DFS_INTERNAL_NAMESERVICES_KEY. Inferred value: "dfs.internal.nameservices"
+Callsite No. 227: 
+Content: getValByRegex("httpfs\\.proxyuser\\.")
+Parameter: "httpfs\\.proxyuser\\.". Inferred value: "httpfs\\.proxyuser\\."
+Callsite No. 228: 
+Content: conf.get(DFS_CLIENT_CACHE_DROP_BEHIND_WRITES)
+Parameter: DFS_CLIENT_CACHE_DROP_BEHIND_WRITES. Inferred value: "dfs.client.cache.drop.behind.writes"
+Callsite No. 229: 
+Content: conf.getTrimmedStringCollection(propertyName)
+Parameter: propertyName
+Callsite No. 230: 
+Content: conf.getLong(DFSConfigKeys.DFS_IMAGE_TRANSFER_RATE_KEY,DFSConfigKeys.DFS_IMAGE_TRANSFER_RATE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_IMAGE_TRANSFER_RATE_KEY. Inferred value: "dfs.image.transfer.bandwidthPerSec"
+Parameter: DFSConfigKeys.DFS_IMAGE_TRANSFER_RATE_DEFAULT
+Callsite No. 231: 
+Content: conf.get(entry.getKey())
+Parameter: entry.getKey()
+Callsite No. 232: 
+Content: conf.getBoolean(DFS_STORAGE_POLICY_ENABLED_KEY,DFS_STORAGE_POLICY_ENABLED_DEFAULT)
+Parameter: DFS_STORAGE_POLICY_ENABLED_KEY. Inferred value: "dfs.storage.policy.enabled"
+Parameter: DFS_STORAGE_POLICY_ENABLED_DEFAULT
+Callsite No. 233: 
+Content: conf.getLong(DFSConfigKeys.DFS_NAMENODE_STARTUP_DELAY_BLOCK_DELETION_SEC_KEY,DFSConfigKeys.DFS_NAMENODE_STARTUP_DELAY_BLOCK_DELETION_SEC_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_STARTUP_DELAY_BLOCK_DELETION_SEC_KEY. Inferred value: "dfs.namenode.startup.delay.block.deletion.sec"
+Parameter: DFSConfigKeys.DFS_NAMENODE_STARTUP_DELAY_BLOCK_DELETION_SEC_DEFAULT
+Callsite No. 234: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_NUM_CHECKPOINTS_RETAINED_KEY,DFSConfigKeys.DFS_NAMENODE_NUM_CHECKPOINTS_RETAINED_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_NUM_CHECKPOINTS_RETAINED_KEY. Inferred value: "dfs.namenode.num.checkpoints.retained"
+Parameter: DFSConfigKeys.DFS_NAMENODE_NUM_CHECKPOINTS_RETAINED_DEFAULT
+Callsite No. 235: 
+Content: conf.getTrimmed(DFSConfigKeys.DFS_DATANODE_HTTPS_ADDRESS_KEY,DFSConfigKeys.DFS_DATANODE_HTTPS_ADDRESS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_HTTPS_ADDRESS_KEY. Inferred value: "dfs.datanode.https.address"
+Parameter: DFSConfigKeys.DFS_DATANODE_HTTPS_ADDRESS_DEFAULT
+Callsite No. 236: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_MAX_OP_SIZE_KEY,DFSConfigKeys.DFS_NAMENODE_MAX_OP_SIZE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_MAX_OP_SIZE_KEY. Inferred value: "dfs.namenode.max.op.size"
+Parameter: DFSConfigKeys.DFS_NAMENODE_MAX_OP_SIZE_DEFAULT
+Callsite No. 237: 
+Content: conf.getLongBytes(DFSConfigKeys.DFS_BLOCK_SIZE_KEY,DFSConfigKeys.DFS_BLOCK_SIZE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_BLOCK_SIZE_KEY. Inferred value: "dfs.blocksize"
+Parameter: DFSConfigKeys.DFS_BLOCK_SIZE_DEFAULT
+Callsite No. 238: 
+Content: conf.get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY,"")
+Parameter: DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY. Inferred value: "dfs.namenode.kerberos.principal"
+Parameter: "". Inferred value: ""
+Callsite No. 239: 
+Content: getAuthority()
+Callsite No. 240: 
+Content: conf.getLong(DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_TIMEOUT_MS,DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_TIMEOUT_MS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_TIMEOUT_MS. Inferred value: "dfs.client.mmap.cache.timeout.ms"
+Parameter: DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_TIMEOUT_MS_DEFAULT
+Callsite No. 241: 
+Content: conf.get("mapreduce.task.attempt.id","NONMAPREDUCE")
+Parameter: "mapreduce.task.attempt.id". Inferred value: "mapreduce.task.attempt.id"
+Parameter: "NONMAPREDUCE". Inferred value: "NONMAPREDUCE"
+Callsite No. 242: 
+Content: NetUtils.getHostPortString(addr)
+Parameter: addr
+Callsite No. 243: 
+Content: conf.getLong(DFSConfigKeys.DFS_DATANODE_READAHEAD_BYTES_KEY,DFSConfigKeys.DFS_DATANODE_READAHEAD_BYTES_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_READAHEAD_BYTES_KEY. Inferred value: "dfs.datanode.readahead.bytes"
+Parameter: DFSConfigKeys.DFS_DATANODE_READAHEAD_BYTES_DEFAULT
+Callsite No. 244: 
+Content: conf.getFloat(DFS_NAMENODE_REPL_QUEUE_THRESHOLD_PCT_KEY,(float)threshold)
+Parameter: DFS_NAMENODE_REPL_QUEUE_THRESHOLD_PCT_KEY. Inferred value: "dfs.namenode.replqueue.threshold-pct"
+Parameter: (float) threshold
+Callsite No. 245: 
+Content: conf.getInt(DFS_NAMENODE_CHECKPOINT_MAX_RETRIES_KEY,DFS_NAMENODE_CHECKPOINT_MAX_RETRIES_DEFAULT)
+Parameter: DFS_NAMENODE_CHECKPOINT_MAX_RETRIES_KEY. Inferred value: "dfs.namenode.checkpoint.max-retries"
+Parameter: DFS_NAMENODE_CHECKPOINT_MAX_RETRIES_DEFAULT
+Callsite No. 246: 
+Content: conf.getLong(DFS_NAMENODE_ACCESSTIME_PRECISION_KEY,DFS_NAMENODE_ACCESSTIME_PRECISION_DEFAULT)
+Parameter: DFS_NAMENODE_ACCESSTIME_PRECISION_KEY. Inferred value: "dfs.namenode.accesstime.precision"
+Parameter: DFS_NAMENODE_ACCESSTIME_PRECISION_DEFAULT
+Callsite No. 247: 
+Content: conf.getLong(DFS_NAMENODE_DELEGATION_TOKEN_MAX_LIFETIME_KEY,DFS_NAMENODE_DELEGATION_TOKEN_MAX_LIFETIME_DEFAULT)
+Parameter: DFS_NAMENODE_DELEGATION_TOKEN_MAX_LIFETIME_KEY. Inferred value: "dfs.namenode.delegation.token.max-lifetime"
+Parameter: DFS_NAMENODE_DELEGATION_TOKEN_MAX_LIFETIME_DEFAULT
+Callsite No. 248: 
+Content: getProxy()
+Callsite No. 249: 
+Content: conf.getTrimmed(DFSConfigKeys.DFS_NAMENODE_HTTPS_BIND_HOST_KEY)
+Parameter: DFSConfigKeys.DFS_NAMENODE_HTTPS_BIND_HOST_KEY. Inferred value: "dfs.namenode.https-bind-host"
+Callsite No. 250: 
+Content: conf.getLong(DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_KEY,DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_KEY. Inferred value: "dfs.heartbeat.interval"
+Parameter: DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_DEFAULT
+Callsite No. 251: 
+Content: conf.getLongBytes(DFS_BLOCK_SIZE_KEY,DFS_BLOCK_SIZE_DEFAULT)
+Parameter: DFS_BLOCK_SIZE_KEY. Inferred value: "dfs.blocksize"
+Parameter: DFS_BLOCK_SIZE_DEFAULT
+Callsite No. 252: 
+Content: conf.getInt(DFSConfigKeys.DFS_CLIENT_RETRY_INTERVAL_GET_LAST_BLOCK_LENGTH,DFSConfigKeys.DFS_CLIENT_RETRY_INTERVAL_GET_LAST_BLOCK_LENGTH_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_RETRY_INTERVAL_GET_LAST_BLOCK_LENGTH. Inferred value: "dfs.client.retry.interval-ms.get-last-block-length"
+Parameter: DFSConfigKeys.DFS_CLIENT_RETRY_INTERVAL_GET_LAST_BLOCK_LENGTH_DEFAULT
+Callsite No. 253: 
+Content: conf.getInt(DFS_DATANODE_DIRECTORYSCAN_INTERVAL_KEY,DFS_DATANODE_DIRECTORYSCAN_INTERVAL_DEFAULT)
+Parameter: DFS_DATANODE_DIRECTORYSCAN_INTERVAL_KEY. Inferred value: "dfs.datanode.directoryscan.interval"
+Parameter: DFS_DATANODE_DIRECTORYSCAN_INTERVAL_DEFAULT
+Callsite No. 254: 
+Content: confForNn.get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY)
+Parameter: DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY. Inferred value: "dfs.namenode.kerberos.principal"
+Callsite No. 255: 
+Content: conf.getInt(DFSConfigKeys.DFS_DATANODE_BALANCE_MAX_NUM_CONCURRENT_MOVES_KEY,DFSConfigKeys.DFS_DATANODE_BALANCE_MAX_NUM_CONCURRENT_MOVES_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_BALANCE_MAX_NUM_CONCURRENT_MOVES_KEY. Inferred value: "dfs.datanode.balance.max.concurrent.moves"
+Parameter: DFSConfigKeys.DFS_DATANODE_BALANCE_MAX_NUM_CONCURRENT_MOVES_DEFAULT
+Callsite No. 256: 
+Content: get(HTTPFS_FS_USER)
+Parameter: HTTPFS_FS_USER. Inferred value: "httpfs.fs.user"
+Callsite No. 257: 
+Content: conf.getBoolean(DFS_HA_AUTO_FAILOVER_ENABLED_KEY,DFS_HA_AUTO_FAILOVER_ENABLED_DEFAULT)
+Parameter: DFS_HA_AUTO_FAILOVER_ENABLED_KEY. Inferred value: "dfs.ha.automatic-failover.enabled"
+Parameter: DFS_HA_AUTO_FAILOVER_ENABLED_DEFAULT
+Callsite No. 258: 
+Content: conf.getLong(DFS_CLIENT_CACHE_READAHEAD,0)
+Parameter: DFS_CLIENT_CACHE_READAHEAD. Inferred value: "dfs.client.cache.readahead"
+Parameter: 0
+Callsite No. 259: 
+Content: conf.get(DFS_PERMISSIONS_SUPERUSERGROUP_KEY,DFS_PERMISSIONS_SUPERUSERGROUP_DEFAULT)
+Parameter: DFS_PERMISSIONS_SUPERUSERGROUP_KEY. Inferred value: "dfs.permissions.superusergroup"
+Parameter: DFS_PERMISSIONS_SUPERUSERGROUP_DEFAULT. Inferred value: "supergroup"
+Callsite No. 260: 
+Content: conf.getLong(DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_EXPIRY_MS_KEY,DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_EXPIRY_MS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_EXPIRY_MS_KEY. Inferred value: "dfs.client.read.shortcircuit.streams.cache.expiry.ms"
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_EXPIRY_MS_DEFAULT
+Callsite No. 261: 
+Content: conf.get(DFSConfigKeys.DFS_HTTP_POLICY_KEY)
+Parameter: DFSConfigKeys.DFS_HTTP_POLICY_KEY. Inferred value: "dfs.http.policy"
+Callsite No. 262: 
+Content: conf.getInt(DFS_NAMENODE_SAFEMODE_EXTENSION_KEY,0)
+Parameter: DFS_NAMENODE_SAFEMODE_EXTENSION_KEY. Inferred value: "dfs.namenode.safemode.extension"
+Parameter: 0
+Callsite No. 263: 
+Content: conf.getTrimmedStringCollection(DFS_NAMESERVICES)
+Parameter: DFS_NAMESERVICES. Inferred value: "dfs.nameservices"
+Callsite No. 264: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_DATANODE_DROP_CACHE_BEHIND_READS_KEY,DFSConfigKeys.DFS_DATANODE_DROP_CACHE_BEHIND_READS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_DROP_CACHE_BEHIND_READS_KEY. Inferred value: "dfs.datanode.drop.cache.behind.reads"
+Parameter: DFSConfigKeys.DFS_DATANODE_DROP_CACHE_BEHIND_READS_DEFAULT
+Callsite No. 265: 
+Content: conf.getBoolean(CommonConfigurationKeys.HADOOP_SECURITY_AUTHORIZATION,false)
+Parameter: CommonConfigurationKeys.HADOOP_SECURITY_AUTHORIZATION
+Parameter: false
+Callsite No. 266: 
+Content: conf.get(DFS_CHECKSUM_TYPE_KEY,DFS_CHECKSUM_TYPE_DEFAULT)
+Parameter: DFS_CHECKSUM_TYPE_KEY. Inferred value: "dfs.checksum.type"
+Parameter: DFS_CHECKSUM_TYPE_DEFAULT. Inferred value: "CRC32C"
+Callsite No. 267: 
+Content: conf.getLong(DFSConfigKeys.DFS_CLIENT_SHORT_CIRCUIT_REPLICA_STALE_THRESHOLD_MS,DFSConfigKeys.DFS_CLIENT_SHORT_CIRCUIT_REPLICA_STALE_THRESHOLD_MS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_SHORT_CIRCUIT_REPLICA_STALE_THRESHOLD_MS. Inferred value: "dfs.client.short.circuit.replica.stale.threshold.ms"
+Parameter: DFSConfigKeys.DFS_CLIENT_SHORT_CIRCUIT_REPLICA_STALE_THRESHOLD_MS_DEFAULT
+Callsite No. 268: 
+Content: conf.get(DFSConfigKeys.DFS_SECONDARY_NAMENODE_KERBEROS_PRINCIPAL_KEY)
+Parameter: DFSConfigKeys.DFS_SECONDARY_NAMENODE_KERBEROS_PRINCIPAL_KEY. Inferred value: "dfs.secondary.namenode.kerberos.principal"
+Callsite No. 269: 
+Content: conf.getLong(DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_INTERVAL_KEY,DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_INTERVAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_INTERVAL_KEY. Inferred value: "dfs.namenode.stale.datanode.interval"
+Parameter: DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_INTERVAL_DEFAULT
+Callsite No. 270: 
+Content: this.conf.getInt(DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_KEY,DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_KEY. Inferred value: "dfs.client.failover.connection.retries"
+Parameter: DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_DEFAULT
+Callsite No. 271: 
+Content: getInt("httpfs.buffer.size",4096)
+Parameter: "httpfs.buffer.size". Inferred value: "httpfs.buffer.size"
+Parameter: 4096
+Callsite No. 272: 
+Content: conf.getBoolean(DFS_NAMENODE_SUPPORT_ALLOW_FORMAT_KEY,DFS_NAMENODE_SUPPORT_ALLOW_FORMAT_DEFAULT)
+Parameter: DFS_NAMENODE_SUPPORT_ALLOW_FORMAT_KEY. Inferred value: "dfs.namenode.support.allow.format"
+Parameter: DFS_NAMENODE_SUPPORT_ALLOW_FORMAT_DEFAULT
+Callsite No. 273: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_EDITS_DIR_MINIMUM_KEY,DFSConfigKeys.DFS_NAMENODE_EDITS_DIR_MINIMUM_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_EDITS_DIR_MINIMUM_KEY. Inferred value: "dfs.namenode.edits.dir.minimum"
+Parameter: DFSConfigKeys.DFS_NAMENODE_EDITS_DIR_MINIMUM_DEFAULT
+Callsite No. 274: 
+Content: conf.get(DFSConfigKeys.DFS_HOSTS_EXCLUDE,"")
+Parameter: DFSConfigKeys.DFS_HOSTS_EXCLUDE. Inferred value: "dfs.hosts.exclude"
+Parameter: "". Inferred value: ""
+Callsite No. 275: 
+Content: conf.get(DFSConfigKeys.DFS_SERVER_HTTPS_KEYSTORE_RESOURCE_KEY,DFSConfigKeys.DFS_SERVER_HTTPS_KEYSTORE_RESOURCE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_SERVER_HTTPS_KEYSTORE_RESOURCE_KEY. Inferred value: "dfs.https.server.keystore.resource"
+Parameter: DFSConfigKeys.DFS_SERVER_HTTPS_KEYSTORE_RESOURCE_DEFAULT. Inferred value: "ssl-server.xml"
+Callsite No. 276: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_ENCRYPT_DATA_TRANSFER_KEY,DFSConfigKeys.DFS_ENCRYPT_DATA_TRANSFER_DEFAULT)
+Parameter: DFSConfigKeys.DFS_ENCRYPT_DATA_TRANSFER_KEY. Inferred value: "dfs.encrypt.data.transfer"
+Parameter: DFSConfigKeys.DFS_ENCRYPT_DATA_TRANSFER_DEFAULT
+Callsite No. 277: 
+Content: conf.getLong(DFS_DATATRANSFER_SERVER_VARIABLEWHITELIST_CACHE_SECS,3600)
+Parameter: DFS_DATATRANSFER_SERVER_VARIABLEWHITELIST_CACHE_SECS. Inferred value: "dfs.datatransfer.server.variablewhitelist.cache.secs"
+Parameter: 3600
+Callsite No. 278: 
+Content: conf.getLong(DFS_BLOCKREPORT_INITIAL_DELAY_KEY,DFS_BLOCKREPORT_INITIAL_DELAY_DEFAULT)
+Parameter: DFS_BLOCKREPORT_INITIAL_DELAY_KEY. Inferred value: "dfs.blockreport.initialDelay"
+Parameter: DFS_BLOCKREPORT_INITIAL_DELAY_DEFAULT
+Callsite No. 279: 
+Content: conf.getInt(DFS_CLIENT_RETRY_WINDOW_BASE,3000)
+Parameter: DFS_CLIENT_RETRY_WINDOW_BASE. Inferred value: "dfs.client.retry.window.base"
+Parameter: 3000
+Callsite No. 280: 
+Content: conf.getInt(DFSConfigKeys.DFS_QJOURNAL_QUEUE_SIZE_LIMIT_KEY,DFSConfigKeys.DFS_QJOURNAL_QUEUE_SIZE_LIMIT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_QJOURNAL_QUEUE_SIZE_LIMIT_KEY. Inferred value: "dfs.qjournal.queued-edits.limit.mb"
+Parameter: DFSConfigKeys.DFS_QJOURNAL_QUEUE_SIZE_LIMIT_DEFAULT
+Callsite No. 281: 
+Content: conf.getLong(DFS_NAMENODE_CHECKPOINT_CHECK_PERIOD_KEY,DFS_NAMENODE_CHECKPOINT_CHECK_PERIOD_DEFAULT)
+Parameter: DFS_NAMENODE_CHECKPOINT_CHECK_PERIOD_KEY. Inferred value: "dfs.namenode.checkpoint.check.period"
+Parameter: DFS_NAMENODE_CHECKPOINT_CHECK_PERIOD_DEFAULT
+Callsite No. 282: 
+Content: getProxy()
+Callsite No. 283: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_WEBHDFS_ENABLED_KEY,DFSConfigKeys.DFS_WEBHDFS_ENABLED_DEFAULT)
+Parameter: DFSConfigKeys.DFS_WEBHDFS_ENABLED_KEY. Inferred value: "dfs.webhdfs.enabled"
+Parameter: DFSConfigKeys.DFS_WEBHDFS_ENABLED_DEFAULT
+Callsite No. 284: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_NAMENODE_REPLICATION_CONSIDERLOAD_KEY,true)
+Parameter: DFSConfigKeys.DFS_NAMENODE_REPLICATION_CONSIDERLOAD_KEY. Inferred value: "dfs.namenode.replication.considerLoad"
+Parameter: true
+Callsite No. 285: 
+Content: getInt(DFSConfigKeys.DFS_DATANODE_BLOCK_ID_LAYOUT_UPGRADE_THREADS_KEY,DFSConfigKeys.DFS_DATANODE_BLOCK_ID_LAYOUT_UPGRADE_THREADS)
+Parameter: DFSConfigKeys.DFS_DATANODE_BLOCK_ID_LAYOUT_UPGRADE_THREADS_KEY. Inferred value: "dfs.datanode.block.id.layout.upgrade.threads"
+Parameter: DFSConfigKeys.DFS_DATANODE_BLOCK_ID_LAYOUT_UPGRADE_THREADS
+Callsite No. 286: 
+Content: conf.getInt(DFS_CLIENT_FAILOVER_SLEEPTIME_MAX_KEY,DFS_CLIENT_FAILOVER_SLEEPTIME_MAX_DEFAULT)
+Parameter: DFS_CLIENT_FAILOVER_SLEEPTIME_MAX_KEY. Inferred value: "dfs.client.failover.sleep.max.millis"
+Parameter: DFS_CLIENT_FAILOVER_SLEEPTIME_MAX_DEFAULT
+Callsite No. 287: 
+Content: getInt(DFSConfigKeys.DFS_NAMENODE_HTTPS_PORT_KEY,DFSConfigKeys.DFS_NAMENODE_HTTPS_PORT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_HTTPS_PORT_KEY. Inferred value: "dfs.https.port"
+Parameter: DFSConfigKeys.DFS_NAMENODE_HTTPS_PORT_DEFAULT
+Callsite No. 288: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_MAX_XATTR_SIZE_KEY,DFSConfigKeys.DFS_NAMENODE_MAX_XATTR_SIZE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_MAX_XATTR_SIZE_KEY. Inferred value: "dfs.namenode.fs-limits.max-xattr-size"
+Parameter: DFSConfigKeys.DFS_NAMENODE_MAX_XATTR_SIZE_DEFAULT
+Callsite No. 289: 
+Content: conf.getInt(DFSConfigKeys.DFS_REPLICATION_MAX_KEY,DFSConfigKeys.DFS_REPLICATION_MAX_DEFAULT)
+Parameter: DFSConfigKeys.DFS_REPLICATION_MAX_KEY. Inferred value: "dfs.replication.max"
+Parameter: DFSConfigKeys.DFS_REPLICATION_MAX_DEFAULT
+Callsite No. 290: 
+Content: conf.getTrimmedStrings(DFSConfigKeys.DFS_DATANODE_DATA_DIR_KEY)
+Parameter: DFSConfigKeys.DFS_DATANODE_DATA_DIR_KEY. Inferred value: "dfs.datanode.data.dir"
+Callsite No. 291: 
+Content: conf.getInt(DFS_CLIENT_BLOCK_WRITE_RETRIES_KEY,DFS_CLIENT_BLOCK_WRITE_RETRIES_DEFAULT)
+Parameter: DFS_CLIENT_BLOCK_WRITE_RETRIES_KEY. Inferred value: "dfs.client.block.write.retries"
+Parameter: DFS_CLIENT_BLOCK_WRITE_RETRIES_DEFAULT
+Callsite No. 292: 
+Content: conf.getLongBytes(DFS_BLOCK_SIZE_KEY,DFS_BLOCK_SIZE_DEFAULT)
+Parameter: DFS_BLOCK_SIZE_KEY. Inferred value: "dfs.blocksize"
+Parameter: DFS_BLOCK_SIZE_DEFAULT
+Callsite No. 293: 
+Content: conf.get(DFS_NAMENODE_LEGACY_OIV_IMAGE_DIR_KEY)
+Parameter: DFS_NAMENODE_LEGACY_OIV_IMAGE_DIR_KEY. Inferred value: "dfs.namenode.legacy-oiv-image.dir"
+Callsite No. 294: 
+Content: conf.getLong(DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_TIMEOUT_MS,DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_TIMEOUT_MS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_TIMEOUT_MS. Inferred value: "dfs.client.mmap.cache.timeout.ms"
+Parameter: DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_TIMEOUT_MS_DEFAULT
+Callsite No. 295: 
+Content: conf.getBoolean(DFSConfigKeys.NNTOP_ENABLED_KEY,DFSConfigKeys.NNTOP_ENABLED_DEFAULT)
+Parameter: DFSConfigKeys.NNTOP_ENABLED_KEY. Inferred value: "dfs.namenode.top.enabled"
+Parameter: DFSConfigKeys.NNTOP_ENABLED_DEFAULT
+Callsite No. 296: 
+Content: )
+Callsite No. 297: 
+Content: conf.getInts(DFSConfigKeys.DFS_METRICS_PERCENTILES_INTERVALS_KEY)
+Parameter: DFSConfigKeys.DFS_METRICS_PERCENTILES_INTERVALS_KEY. Inferred value: "dfs.metrics.percentiles.intervals"
+Callsite No. 298: 
+Content: getInt(FS_CACHE_PURGE_FREQUENCY,60)
+Parameter: FS_CACHE_PURGE_FREQUENCY. Inferred value: "filesystem.cache.purge.frequency"
+Parameter: 60
+Callsite No. 299: 
+Content: config.getInt(DFS_CLIENT_FAILOVER_SLEEPTIME_MAX_KEY,DFS_CLIENT_FAILOVER_SLEEPTIME_MAX_DEFAULT)
+Parameter: DFS_CLIENT_FAILOVER_SLEEPTIME_MAX_KEY. Inferred value: "dfs.client.failover.sleep.max.millis"
+Parameter: DFS_CLIENT_FAILOVER_SLEEPTIME_MAX_DEFAULT
+Callsite No. 300: 
+Content: conf.get(concatSuffixes(key,nsId))
+Parameter: concatSuffixes(key, nsId)
+Callsite No. 301: 
+Content: conf.getBoolean(DFS_PERMISSIONS_ENABLED_KEY,DFS_PERMISSIONS_ENABLED_DEFAULT)
+Parameter: DFS_PERMISSIONS_ENABLED_KEY. Inferred value: "dfs.permissions.enabled"
+Parameter: DFS_PERMISSIONS_ENABLED_DEFAULT
+Callsite No. 302: 
+Content: conf.getLong(DFS_CLIENT_SOCKET_CACHE_EXPIRY_MSEC_KEY,DFS_CLIENT_SOCKET_CACHE_EXPIRY_MSEC_DEFAULT)
+Parameter: DFS_CLIENT_SOCKET_CACHE_EXPIRY_MSEC_KEY. Inferred value: "dfs.client.socketcache.expiryMsec"
+Parameter: DFS_CLIENT_SOCKET_CACHE_EXPIRY_MSEC_DEFAULT
+Callsite No. 303: 
+Content: )
+Callsite No. 304: 
+Content: conf.getInt(DFSConfigKeys.DFS_HA_TAILEDITS_PERIOD_KEY,DFSConfigKeys.DFS_HA_TAILEDITS_PERIOD_DEFAULT)
+Parameter: DFSConfigKeys.DFS_HA_TAILEDITS_PERIOD_KEY. Inferred value: "dfs.ha.tail-edits.period"
+Parameter: DFSConfigKeys.DFS_HA_TAILEDITS_PERIOD_DEFAULT
+Callsite No. 305: 
+Content: get(HTTPFS_FS_USER)
+Parameter: HTTPFS_FS_USER. Inferred value: "httpfs.fs.user"
+Callsite No. 306: 
+Content: conf.getLong(DFS_MAX_NUM_BLOCKS_TO_LOG_KEY,DFS_MAX_NUM_BLOCKS_TO_LOG_DEFAULT)
+Parameter: DFS_MAX_NUM_BLOCKS_TO_LOG_KEY. Inferred value: "dfs.namenode.max-num-blocks-to-log"
+Parameter: DFS_MAX_NUM_BLOCKS_TO_LOG_DEFAULT
+Callsite No. 307: 
+Content: conf.getInt(DFSConfigKeys.DFS_DEFAULT_MAX_CORRUPT_FILES_RETURNED_KEY,DFSConfigKeys.DFS_DEFAULT_MAX_CORRUPT_FILES_RETURNED)
+Parameter: DFSConfigKeys.DFS_DEFAULT_MAX_CORRUPT_FILES_RETURNED_KEY. Inferred value: "dfs.corruptfilesreturned.max"
+Parameter: DFSConfigKeys.DFS_DEFAULT_MAX_CORRUPT_FILES_RETURNED
+Callsite No. 308: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_INTERVAL_KEY,DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_INTERVAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_INTERVAL_KEY. Inferred value: "dfs.namenode.decommission.interval"
+Parameter: DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_INTERVAL_DEFAULT
+Callsite No. 309: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_NAMENODE_AVOID_STALE_DATANODE_FOR_WRITE_KEY,DFSConfigKeys.DFS_NAMENODE_AVOID_STALE_DATANODE_FOR_WRITE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_AVOID_STALE_DATANODE_FOR_WRITE_KEY. Inferred value: "dfs.namenode.avoid.write.stale.datanode"
+Parameter: DFSConfigKeys.DFS_NAMENODE_AVOID_STALE_DATANODE_FOR_WRITE_DEFAULT
+Callsite No. 310: 
+Content: conf.getInt(DFS_NAMENODE_SERVICE_HANDLER_COUNT_KEY,DFS_NAMENODE_SERVICE_HANDLER_COUNT_DEFAULT)
+Parameter: DFS_NAMENODE_SERVICE_HANDLER_COUNT_KEY. Inferred value: "dfs.namenode.service.handler.count"
+Parameter: DFS_NAMENODE_SERVICE_HANDLER_COUNT_DEFAULT
+Callsite No. 311: 
+Content: conf.getBoolean(DFS_ENCRYPT_DATA_TRANSFER_KEY,DFS_ENCRYPT_DATA_TRANSFER_DEFAULT)
+Parameter: DFS_ENCRYPT_DATA_TRANSFER_KEY. Inferred value: "dfs.encrypt.data.transfer"
+Parameter: DFS_ENCRYPT_DATA_TRANSFER_DEFAULT
+Callsite No. 312: 
+Content: conf.getLong(DFSConfigKeys.DFS_MAX_NUM_BLOCKS_TO_LOG_KEY,DFSConfigKeys.DFS_MAX_NUM_BLOCKS_TO_LOG_DEFAULT)
+Parameter: DFSConfigKeys.DFS_MAX_NUM_BLOCKS_TO_LOG_KEY. Inferred value: "dfs.namenode.max-num-blocks-to-log"
+Parameter: DFSConfigKeys.DFS_MAX_NUM_BLOCKS_TO_LOG_DEFAULT
+Callsite No. 313: 
+Content: conf.getInt(DFSConfigKeys.DFS_REPLICATION_KEY,DFSConfigKeys.DFS_REPLICATION_DEFAULT)
+Parameter: DFSConfigKeys.DFS_REPLICATION_KEY. Inferred value: "dfs.replication"
+Parameter: DFSConfigKeys.DFS_REPLICATION_DEFAULT
+Callsite No. 314: 
+Content: conf.get(DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTP_ADDRESS_KEY,DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTP_ADDRESS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTP_ADDRESS_KEY. Inferred value: "dfs.namenode.secondary.http-address"
+Parameter: DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTP_ADDRESS_DEFAULT. Inferred value: "0.0.0.0:50090"
+Callsite No. 315: 
+Content: conf.getInt(DFSConfigKeys.DFS_CLIENT_FILE_BLOCK_STORAGE_LOCATIONS_NUM_THREADS,DFSConfigKeys.DFS_CLIENT_FILE_BLOCK_STORAGE_LOCATIONS_NUM_THREADS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_FILE_BLOCK_STORAGE_LOCATIONS_NUM_THREADS. Inferred value: "dfs.client.file-block-storage-locations.num-threads"
+Parameter: DFSConfigKeys.DFS_CLIENT_FILE_BLOCK_STORAGE_LOCATIONS_NUM_THREADS_DEFAULT
+Callsite No. 316: 
+Content: conf.getInt(CommonConfigurationKeysPublic.IO_FILE_BUFFER_SIZE_KEY,CommonConfigurationKeysPublic.IO_FILE_BUFFER_SIZE_DEFAULT)
+Parameter: CommonConfigurationKeysPublic.IO_FILE_BUFFER_SIZE_KEY
+Parameter: CommonConfigurationKeysPublic.IO_FILE_BUFFER_SIZE_DEFAULT
+Callsite No. 317: 
+Content: conf.getBoolean(DFS_ENCRYPT_DATA_TRANSFER_KEY,DFS_ENCRYPT_DATA_TRANSFER_DEFAULT)
+Parameter: DFS_ENCRYPT_DATA_TRANSFER_KEY. Inferred value: "dfs.encrypt.data.transfer"
+Parameter: DFS_ENCRYPT_DATA_TRANSFER_DEFAULT
+Callsite No. 318: 
+Content: conf.getInt(DFSConfigKeys.DFS_MOVER_MOVERTHREADS_KEY,DFSConfigKeys.DFS_MOVER_MOVERTHREADS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_MOVER_MOVERTHREADS_KEY. Inferred value: "dfs.mover.moverThreads"
+Parameter: DFSConfigKeys.DFS_MOVER_MOVERTHREADS_DEFAULT
+Callsite No. 319: 
+Content: conf.getLong(DFSConfigKeys.DFS_BLOCK_ACCESS_TOKEN_LIFETIME_KEY,DFSConfigKeys.DFS_BLOCK_ACCESS_TOKEN_LIFETIME_DEFAULT)
+Parameter: DFSConfigKeys.DFS_BLOCK_ACCESS_TOKEN_LIFETIME_KEY. Inferred value: "dfs.block.access.token.lifetime"
+Parameter: DFSConfigKeys.DFS_BLOCK_ACCESS_TOKEN_LIFETIME_DEFAULT
+Callsite No. 320: 
+Content: conf.getLong(DFSConfigKeys.DFS_DATANODE_DU_RESERVED_KEY,DFSConfigKeys.DFS_DATANODE_DU_RESERVED_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_DU_RESERVED_KEY. Inferred value: "dfs.datanode.du.reserved"
+Parameter: DFSConfigKeys.DFS_DATANODE_DU_RESERVED_DEFAULT
+Callsite No. 321: 
+Content: conf.getLong(DFS_NAMENODE_CHECKPOINT_TXNS_KEY,DFS_NAMENODE_CHECKPOINT_TXNS_DEFAULT)
+Parameter: DFS_NAMENODE_CHECKPOINT_TXNS_KEY. Inferred value: "dfs.namenode.checkpoint.txns"
+Parameter: DFS_NAMENODE_CHECKPOINT_TXNS_DEFAULT
+Callsite No. 322: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_BLOCK_ACCESS_TOKEN_ENABLE_KEY,DFSConfigKeys.DFS_BLOCK_ACCESS_TOKEN_ENABLE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_BLOCK_ACCESS_TOKEN_ENABLE_KEY. Inferred value: "dfs.block.access.token.enable"
+Parameter: DFSConfigKeys.DFS_BLOCK_ACCESS_TOKEN_ENABLE_DEFAULT
+Callsite No. 323: 
+Content: conf.get(DFSConfigKeys.DFS_WEBHDFS_AUTHENTICATION_FILTER_KEY,DFSConfigKeys.DFS_WEBHDFS_AUTHENTICATION_FILTER_DEFAULT)
+Parameter: DFSConfigKeys.DFS_WEBHDFS_AUTHENTICATION_FILTER_KEY. Inferred value: "dfs.web.authentication.filter"
+Parameter: DFSConfigKeys.DFS_WEBHDFS_AUTHENTICATION_FILTER_DEFAULT
+Callsite No. 324: 
+Content: conf.getInt(DFS_CLIENT_CACHED_CONN_RETRY_KEY,DFS_CLIENT_CACHED_CONN_RETRY_DEFAULT)
+Parameter: DFS_CLIENT_CACHED_CONN_RETRY_KEY. Inferred value: "dfs.client.cached.conn.retry"
+Parameter: DFS_CLIENT_CACHED_CONN_RETRY_DEFAULT
+Callsite No. 325: 
+Content: conf.get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY,"")
+Parameter: DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY. Inferred value: "dfs.namenode.kerberos.principal"
+Parameter: "". Inferred value: ""
+Callsite No. 326: 
+Content: getProxy()
+Callsite No. 327: 
+Content: conf.getBoolean("dfs.namenode.fslock.fair",true)
+Parameter: "dfs.namenode.fslock.fair". Inferred value: "dfs.namenode.fslock.fair"
+Parameter: true
+Callsite No. 328: 
+Content: conf.get(DFSConfigKeys.DFS_IMAGE_COMPRESSION_CODEC_KEY,DFSConfigKeys.DFS_IMAGE_COMPRESSION_CODEC_DEFAULT)
+Parameter: DFSConfigKeys.DFS_IMAGE_COMPRESSION_CODEC_KEY. Inferred value: "dfs.image.compression.codec"
+Parameter: DFSConfigKeys.DFS_IMAGE_COMPRESSION_CODEC_DEFAULT. Inferred value: "org.apache.hadoop.io.compress.DefaultCodec"
+Callsite No. 329: 
+Content: conf.getInt(DFS_REPLICATION_KEY,DFS_REPLICATION_DEFAULT)
+Parameter: DFS_REPLICATION_KEY. Inferred value: "dfs.replication"
+Parameter: DFS_REPLICATION_DEFAULT
+Callsite No. 330: 
+Content: conf.get(DFSConfigKeys.DFS_WEBHDFS_USER_PATTERN_KEY,DFSConfigKeys.DFS_WEBHDFS_USER_PATTERN_DEFAULT)
+Parameter: DFSConfigKeys.DFS_WEBHDFS_USER_PATTERN_KEY. Inferred value: "dfs.webhdfs.user.provider.user.pattern"
+Parameter: DFSConfigKeys.DFS_WEBHDFS_USER_PATTERN_DEFAULT. Inferred value: "^[A-Za-z_][A-Za-z0-9._-]*[$]?$"
+Callsite No. 331: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_CLIENT_DOMAIN_SOCKET_DATA_TRAFFIC,DFSConfigKeys.DFS_CLIENT_DOMAIN_SOCKET_DATA_TRAFFIC_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_DOMAIN_SOCKET_DATA_TRAFFIC. Inferred value: "dfs.client.domain.socket.data.traffic"
+Parameter: DFSConfigKeys.DFS_CLIENT_DOMAIN_SOCKET_DATA_TRAFFIC_DEFAULT
+Callsite No. 332: 
+Content: getHostName()
+Callsite No. 333: 
+Content: get(getPrefixedName(CONF_STARTUP_STATUS),Status.NORMAL.toString())
+Parameter: getPrefixedName(CONF_STARTUP_STATUS)
+Parameter: Status.NORMAL.toString()
+Callsite No. 334: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_MAX_DIRECTORY_ITEMS_KEY,DFSConfigKeys.DFS_NAMENODE_MAX_DIRECTORY_ITEMS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_MAX_DIRECTORY_ITEMS_KEY. Inferred value: "dfs.namenode.fs-limits.max-directory-items"
+Parameter: DFSConfigKeys.DFS_NAMENODE_MAX_DIRECTORY_ITEMS_DEFAULT
+Callsite No. 335: 
+Content: conf.get(DFS_DATA_TRANSFER_PROTECTION_KEY)
+Parameter: DFS_DATA_TRANSFER_PROTECTION_KEY. Inferred value: "dfs.data.transfer.protection"
+Callsite No. 336: 
+Content: conf.getLong(DFS_DATANODE_SCAN_PERIOD_HOURS_KEY,DFS_DATANODE_SCAN_PERIOD_HOURS_DEFAULT)
+Parameter: DFS_DATANODE_SCAN_PERIOD_HOURS_KEY. Inferred value: "dfs.datanode.scan.period.hours"
+Parameter: DFS_DATANODE_SCAN_PERIOD_HOURS_DEFAULT
+Callsite No. 337: 
+Content: conf.get(HADOOP_USER_GROUP_METRICS_PERCENTILES_INTERVALS)
+Parameter: HADOOP_USER_GROUP_METRICS_PERCENTILES_INTERVALS
+Callsite No. 338: 
+Content: conf.getInstances(DFS_DATANODE_PLUGINS_KEY,ServicePlugin.class)
+Parameter: DFS_DATANODE_PLUGINS_KEY. Inferred value: "dfs.datanode.plugins"
+Parameter: ServicePlugin.class
+Callsite No. 339: 
+Content: getProxy()
+Callsite No. 340: 
+Content: conf.getTrimmedStrings(DFSConfigKeys.DFS_BLOCK_LOCAL_PATH_ACCESS_USER_KEY)
+Parameter: DFSConfigKeys.DFS_BLOCK_LOCAL_PATH_ACCESS_USER_KEY. Inferred value: "dfs.block.local-path-access.user"
+Callsite No. 341: 
+Content: conf.getInt(DFS_CLIENT_WRITE_PACKET_SIZE_KEY,DFS_CLIENT_WRITE_PACKET_SIZE_DEFAULT)
+Parameter: DFS_CLIENT_WRITE_PACKET_SIZE_KEY. Inferred value: "dfs.client-write-packet-size"
+Parameter: DFS_CLIENT_WRITE_PACKET_SIZE_DEFAULT
+Callsite No. 342: 
+Content: conf.getInt(DFS_REPLICATION_KEY,DFS_REPLICATION_DEFAULT)
+Parameter: DFS_REPLICATION_KEY. Inferred value: "dfs.replication"
+Parameter: DFS_REPLICATION_DEFAULT
+Callsite No. 343: 
+Content: conf.getInt(DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_SIZE,DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_SIZE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_SIZE. Inferred value: "dfs.client.mmap.cache.size"
+Parameter: DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_SIZE_DEFAULT
+Callsite No. 344: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_MINIMUM_INTERVAL_KEY,DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_MINIMUM_INTERVAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_MINIMUM_INTERVAL_KEY. Inferred value: "dfs.namenode.stale.datanode.minimum.interval"
+Parameter: DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_MINIMUM_INTERVAL_DEFAULT
+Callsite No. 345: 
+Content: conf.getInt(DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_COUNT_LIMIT_KEY,DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_COUNT_LIMIT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_COUNT_LIMIT_KEY. Inferred value: "dfs.client.write.byte-array-manager.count-limit"
+Parameter: DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_COUNT_LIMIT_DEFAULT
+Callsite No. 346: 
+Content: conf.getInt(DFS_DATANODE_NETWORK_COUNTS_CACHE_MAX_SIZE_KEY,DFS_DATANODE_NETWORK_COUNTS_CACHE_MAX_SIZE_DEFAULT)
+Parameter: DFS_DATANODE_NETWORK_COUNTS_CACHE_MAX_SIZE_KEY. Inferred value: "dfs.datanode.network.counts.cache.max.size"
+Parameter: DFS_DATANODE_NETWORK_COUNTS_CACHE_MAX_SIZE_DEFAULT
+Callsite No. 347: 
+Content: conf.getTrimmed(DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTPS_ADDRESS_KEY,DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTPS_ADDRESS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTPS_ADDRESS_KEY. Inferred value: "dfs.namenode.secondary.https-address"
+Parameter: DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTPS_ADDRESS_DEFAULT. Inferred value: "0.0.0.0:50091"
+Callsite No. 348: 
+Content: conf.getLong(FS_TRASH_INTERVAL_KEY,FS_TRASH_INTERVAL_DEFAULT)
+Parameter: FS_TRASH_INTERVAL_KEY
+Parameter: FS_TRASH_INTERVAL_DEFAULT
+Callsite No. 349: 
+Content: conf.getTrimmedStringCollection(key)
+Parameter: key
+Callsite No. 350: 
+Content: conf.getFloat(DFSConfigKeys.DFS_NAMENODE_USE_STALE_DATANODE_FOR_WRITE_RATIO_KEY,DFSConfigKeys.DFS_NAMENODE_USE_STALE_DATANODE_FOR_WRITE_RATIO_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_USE_STALE_DATANODE_FOR_WRITE_RATIO_KEY. Inferred value: "dfs.namenode.write.stale.datanode.ratio"
+Parameter: DFSConfigKeys.DFS_NAMENODE_USE_STALE_DATANODE_FOR_WRITE_RATIO_DEFAULT
+Callsite No. 351: 
+Content: conf.get(DFS_DATANODE_STARTUP_KEY,StartupOption.REGULAR.toString())
+Parameter: DFS_DATANODE_STARTUP_KEY. Inferred value: "dfs.datanode.startup"
+Parameter: StartupOption.REGULAR.toString()
+Callsite No. 352: 
+Content: conf.get(DFSConfigKeys.DFS_CLIENT_CONTEXT,DFSConfigKeys.DFS_CLIENT_CONTEXT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_CONTEXT. Inferred value: "dfs.client.context"
+Parameter: DFSConfigKeys.DFS_CLIENT_CONTEXT_DEFAULT. Inferred value: "default"
+Callsite No. 353: 
+Content: config.getInt(DFS_CLIENT_FAILOVER_SLEEPTIME_BASE_KEY,DFS_CLIENT_FAILOVER_SLEEPTIME_BASE_DEFAULT)
+Parameter: DFS_CLIENT_FAILOVER_SLEEPTIME_BASE_KEY. Inferred value: "dfs.client.failover.sleep.base.millis"
+Parameter: DFS_CLIENT_FAILOVER_SLEEPTIME_BASE_DEFAULT
+Callsite No. 354: 
+Content: getProxy()
+Callsite No. 355: 
+Content: conf.getTrimmedStringCollection(DFSConfigKeys.DFS_NAMENODE_CHECKPOINT_DIR_KEY)
+Parameter: DFSConfigKeys.DFS_NAMENODE_CHECKPOINT_DIR_KEY. Inferred value: "dfs.namenode.checkpoint.dir"
+Callsite No. 356: 
+Content: conf.get(DFS_DATATRANSFER_SERVER_VARIABLEWHITELIST_FILE,VARIABLEWHITELIST_DEFAULT_LOCATION)
+Parameter: DFS_DATATRANSFER_SERVER_VARIABLEWHITELIST_FILE. Inferred value: "dfs.datatransfer.server.variablewhitelist.file"
+Parameter: VARIABLEWHITELIST_DEFAULT_LOCATION. Inferred value: "/etc/hadoop/whitelist"
+Callsite No. 357: 
+Content: conf.getFloat(DFS_NAMENODE_PATH_BASED_CACHE_BLOCK_MAP_ALLOCATION_PERCENT,DFS_NAMENODE_PATH_BASED_CACHE_BLOCK_MAP_ALLOCATION_PERCENT_DEFAULT)
+Parameter: DFS_NAMENODE_PATH_BASED_CACHE_BLOCK_MAP_ALLOCATION_PERCENT. Inferred value: "dfs.namenode.path.based.cache.block.map.allocation.percent"
+Parameter: DFS_NAMENODE_PATH_BASED_CACHE_BLOCK_MAP_ALLOCATION_PERCENT_DEFAULT
+Callsite No. 358: 
+Content: conf.getPassword(alias)
+Parameter: alias
+Callsite No. 359: 
+Content: getProxy()
+Callsite No. 360: 
+Content: conf.getTrimmed(DFS_DATANODE_HTTPS_ADDRESS_KEY,DFS_DATANODE_HTTPS_ADDRESS_DEFAULT)
+Parameter: DFS_DATANODE_HTTPS_ADDRESS_KEY. Inferred value: "dfs.datanode.https.address"
+Parameter: DFS_DATANODE_HTTPS_ADDRESS_DEFAULT
+Callsite No. 361: 
+Content: conf.get(DFS_ADMIN,"")
+Parameter: DFS_ADMIN. Inferred value: "dfs.cluster.administrators"
+Parameter: " ". Inferred value: " "
+Callsite No. 362: 
+Content: conf.getInt(DFS_CLIENT_SOCKET_TIMEOUT_KEY,HdfsServerConstants.READ_TIMEOUT)
+Parameter: DFS_CLIENT_SOCKET_TIMEOUT_KEY. Inferred value: "dfs.client.socket-timeout"
+Parameter: HdfsServerConstants.READ_TIMEOUT
+Callsite No. 363: 
+Content: conf.getInt(DFSConfigKeys.DFS_QJOURNAL_ACCEPT_RECOVERY_TIMEOUT_KEY,DFSConfigKeys.DFS_QJOURNAL_ACCEPT_RECOVERY_TIMEOUT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_QJOURNAL_ACCEPT_RECOVERY_TIMEOUT_KEY. Inferred value: "dfs.qjournal.accept-recovery.timeout.ms"
+Parameter: DFSConfigKeys.DFS_QJOURNAL_ACCEPT_RECOVERY_TIMEOUT_DEFAULT
+Callsite No. 364: 
+Content: conf.getLong(DFS_NAMENODE_PATH_BASED_CACHE_REFRESH_INTERVAL_MS,DFS_NAMENODE_PATH_BASED_CACHE_REFRESH_INTERVAL_MS_DEFAULT)
+Parameter: DFS_NAMENODE_PATH_BASED_CACHE_REFRESH_INTERVAL_MS. Inferred value: "dfs.namenode.path.based.cache.refresh.interval.ms"
+Parameter: DFS_NAMENODE_PATH_BASED_CACHE_REFRESH_INTERVAL_MS_DEFAULT
+Callsite No. 365: 
+Content: conf.getTrimmed(DFSConfigKeys.DFS_ENCRYPTION_KEY_PROVIDER_URI,"")
+Parameter: DFSConfigKeys.DFS_ENCRYPTION_KEY_PROVIDER_URI. Inferred value: "dfs.encryption.key.provider.uri"
+Parameter: "". Inferred value: ""
+Callsite No. 366: 
+Content: conf.getLong(FS_TRASH_INTERVAL_KEY,FS_TRASH_INTERVAL_DEFAULT)
+Parameter: FS_TRASH_INTERVAL_KEY
+Parameter: FS_TRASH_INTERVAL_DEFAULT
+Callsite No. 367: 
+Content: conf.getLong(DFS_NAMENODE_CHECKPOINT_TXNS_KEY,DFS_NAMENODE_CHECKPOINT_TXNS_DEFAULT)
+Parameter: DFS_NAMENODE_CHECKPOINT_TXNS_KEY. Inferred value: "dfs.namenode.checkpoint.txns"
+Parameter: DFS_NAMENODE_CHECKPOINT_TXNS_DEFAULT
+Callsite No. 368: 
+Content: conf.getLong(DFSConfigKeys.DFS_NAMENODE_DU_RESERVED_KEY,DFSConfigKeys.DFS_NAMENODE_DU_RESERVED_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_DU_RESERVED_KEY. Inferred value: "dfs.namenode.resource.du.reserved"
+Parameter: DFSConfigKeys.DFS_NAMENODE_DU_RESERVED_DEFAULT
+Callsite No. 369: 
+Content: conf.getInt(DFSConfigKeys.DFS_HTTP_CLIENT_FAILOVER_MAX_ATTEMPTS_KEY,DFSConfigKeys.DFS_HTTP_CLIENT_FAILOVER_MAX_ATTEMPTS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_HTTP_CLIENT_FAILOVER_MAX_ATTEMPTS_KEY. Inferred value: "dfs.http.client.failover.max.attempts"
+Parameter: DFSConfigKeys.DFS_HTTP_CLIENT_FAILOVER_MAX_ATTEMPTS_DEFAULT
+Callsite No. 370: 
+Content: conf.get(DFSConfigKeys.DFS_METRICS_SESSION_ID_KEY)
+Parameter: DFSConfigKeys.DFS_METRICS_SESSION_ID_KEY. Inferred value: "dfs.metrics.session-id"
+Callsite No. 371: 
+Content: conf.getLong(DFSConfigKeys.DFS_NAMENODE_MAX_BLOCKS_PER_FILE_KEY,DFSConfigKeys.DFS_NAMENODE_MAX_BLOCKS_PER_FILE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_MAX_BLOCKS_PER_FILE_KEY. Inferred value: "dfs.namenode.fs-limits.max-blocks-per-file"
+Parameter: DFSConfigKeys.DFS_NAMENODE_MAX_BLOCKS_PER_FILE_DEFAULT
+Callsite No. 372: 
+Content: conf.getInt(DFS_CLIENT_FAILOVER_MAX_ATTEMPTS_KEY,DFS_CLIENT_FAILOVER_MAX_ATTEMPTS_DEFAULT)
+Parameter: DFS_CLIENT_FAILOVER_MAX_ATTEMPTS_KEY. Inferred value: "dfs.client.failover.max.attempts"
+Parameter: DFS_CLIENT_FAILOVER_MAX_ATTEMPTS_DEFAULT
+Callsite No. 373: 
+Content: conf.getInt(DFSConfigKeys.DFS_MOVER_RETRY_MAX_ATTEMPTS_KEY,DFSConfigKeys.DFS_MOVER_RETRY_MAX_ATTEMPTS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_MOVER_RETRY_MAX_ATTEMPTS_KEY. Inferred value: "dfs.mover.retry.max.attempts"
+Parameter: DFSConfigKeys.DFS_MOVER_RETRY_MAX_ATTEMPTS_DEFAULT
+Callsite No. 374: 
+Content: conf.getInt(DFSConfigKeys.DFS_QJOURNAL_FINALIZE_SEGMENT_TIMEOUT_KEY,DFSConfigKeys.DFS_QJOURNAL_FINALIZE_SEGMENT_TIMEOUT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_QJOURNAL_FINALIZE_SEGMENT_TIMEOUT_KEY. Inferred value: "dfs.qjournal.finalize-segment.timeout.ms"
+Parameter: DFSConfigKeys.DFS_QJOURNAL_FINALIZE_SEGMENT_TIMEOUT_DEFAULT
+Callsite No. 375: 
+Content: sslConf.get("ssl.server.keystore.location")
+Parameter: "ssl.server.keystore.location". Inferred value: "ssl.server.keystore.location"
+Callsite No. 376: 
+Content: conf.getInt(DFSConfigKeys.DFS_BLOCK_INVALIDATE_LIMIT_KEY,blockInvalidateLimit)
+Parameter: DFSConfigKeys.DFS_BLOCK_INVALIDATE_LIMIT_KEY. Inferred value: "dfs.block.invalidate.limit"
+Parameter: blockInvalidateLimit
+Callsite No. 377: 
+Content: conf.get(DFS_DATATRANSFER_CLIENT_VARIABLEWHITELIST_FILE,variableFile)
+Parameter: DFS_DATATRANSFER_CLIENT_VARIABLEWHITELIST_FILE. Inferred value: "dfs.datatransfer.client.variablewhitelist.file"
+Parameter: variableFile
+Callsite No. 378: 
+Content: sslConf.get("ssl.server.keystore.type","jks")
+Parameter: "ssl.server.keystore.type". Inferred value: "ssl.server.keystore.type"
+Parameter: "jks". Inferred value: "jks"
+Callsite No. 379: 
+Content: get(0)
+Parameter: 0
+Callsite No. 380: 
+Content: conf.getLong(DFSConfigKeys.DFS_DFSCLIENT_HEDGED_READ_THRESHOLD_MILLIS,DFSConfigKeys.DEFAULT_DFSCLIENT_HEDGED_READ_THRESHOLD_MILLIS)
+Parameter: DFSConfigKeys.DFS_DFSCLIENT_HEDGED_READ_THRESHOLD_MILLIS. Inferred value: "dfs.client.hedged.read.threshold.millis"
+Parameter: DFSConfigKeys.DEFAULT_DFSCLIENT_HEDGED_READ_THRESHOLD_MILLIS
+Callsite No. 381: 
+Content: conf.get(DFSConfigKeys.DFS_DATANODE_HTTP_ADDRESS_KEY,"")
+Parameter: DFSConfigKeys.DFS_DATANODE_HTTP_ADDRESS_KEY. Inferred value: "dfs.datanode.http.address"
+Parameter: "". Inferred value: ""
+Callsite No. 382: 
+Content: conf.getInt(DFSConfigKeys.DFS_SHORT_CIRCUIT_SHARED_MEMORY_WATCHER_INTERRUPT_CHECK_MS,DFSConfigKeys.DFS_SHORT_CIRCUIT_SHARED_MEMORY_WATCHER_INTERRUPT_CHECK_MS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_SHORT_CIRCUIT_SHARED_MEMORY_WATCHER_INTERRUPT_CHECK_MS. Inferred value: "dfs.short.circuit.shared.memory.watcher.interrupt.check.ms"
+Parameter: DFSConfigKeys.DFS_SHORT_CIRCUIT_SHARED_MEMORY_WATCHER_INTERRUPT_CHECK_MS_DEFAULT
+Callsite No. 383: 
+Content: conf.getTrimmed(DFS_DATANODE_HTTP_ADDRESS_KEY,null)
+Parameter: DFS_DATANODE_HTTP_ADDRESS_KEY. Inferred value: "dfs.datanode.http.address"
+Parameter: null
+Callsite No. 384: 
+Content: conf.getTrimmed(DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTP_ADDRESS_KEY,DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTP_ADDRESS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTP_ADDRESS_KEY. Inferred value: "dfs.namenode.secondary.http-address"
+Parameter: DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTP_ADDRESS_DEFAULT. Inferred value: "0.0.0.0:50090"
+Callsite No. 385: 
+Content: conf.getLong(DFSConfigKeys.DFS_NAMENODE_BLOCKS_PER_POSTPONEDBLOCKS_RESCAN_KEY,DFSConfigKeys.DFS_NAMENODE_BLOCKS_PER_POSTPONEDBLOCKS_RESCAN_KEY_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_BLOCKS_PER_POSTPONEDBLOCKS_RESCAN_KEY. Inferred value: "dfs.namenode.blocks.per.postponedblocks.rescan"
+Parameter: DFSConfigKeys.DFS_NAMENODE_BLOCKS_PER_POSTPONEDBLOCKS_RESCAN_KEY_DEFAULT
+Callsite No. 386: 
+Content: conf.get(DFSConfigKeys.DFS_DATANODE_KERBEROS_PRINCIPAL_KEY,"")
+Parameter: DFSConfigKeys.DFS_DATANODE_KERBEROS_PRINCIPAL_KEY. Inferred value: "dfs.datanode.kerberos.principal"
+Parameter: "". Inferred value: ""
+Callsite No. 387: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_CLIENT_WRITE_REPLACE_DATANODE_ON_FAILURE_BEST_EFFORT_KEY,DFSConfigKeys.DFS_CLIENT_WRITE_REPLACE_DATANODE_ON_FAILURE_BEST_EFFORT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_WRITE_REPLACE_DATANODE_ON_FAILURE_BEST_EFFORT_KEY. Inferred value: "dfs.client.block.write.replace-datanode-on-failure.best-effort"
+Parameter: DFSConfigKeys.DFS_CLIENT_WRITE_REPLACE_DATANODE_ON_FAILURE_BEST_EFFORT_DEFAULT
+Callsite No. 388: 
+Content: conf.get(DFS_HA_NAMENODE_ID_KEY)
+Parameter: DFS_HA_NAMENODE_ID_KEY. Inferred value: "dfs.ha.namenode.id"
+Callsite No. 389: 
+Content: conf.getInt(DFS_NAMENODE_LIST_CACHE_DIRECTIVES_NUM_RESPONSES,DFS_NAMENODE_LIST_CACHE_DIRECTIVES_NUM_RESPONSES_DEFAULT)
+Parameter: DFS_NAMENODE_LIST_CACHE_DIRECTIVES_NUM_RESPONSES. Inferred value: "dfs.namenode.list.cache.directives.num.responses"
+Parameter: DFS_NAMENODE_LIST_CACHE_DIRECTIVES_NUM_RESPONSES_DEFAULT
+Callsite No. 390: 
+Content: conf.get(DFSConfigKeys.DFS_WEB_AUTHENTICATION_KERBEROS_KEYTAB_KEY)
+Parameter: DFSConfigKeys.DFS_WEB_AUTHENTICATION_KERBEROS_KEYTAB_KEY. Inferred value: "dfs.web.authentication.kerberos.keytab"
+Callsite No. 391: 
+Content: getInt(DFSConfigKeys.DFS_NAMENODE_HTTP_PORT_KEY,DFSConfigKeys.DFS_NAMENODE_HTTP_PORT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_HTTP_PORT_KEY. Inferred value: "dfs.http.port"
+Parameter: DFSConfigKeys.DFS_NAMENODE_HTTP_PORT_DEFAULT
+Callsite No. 392: 
+Content: conf.getTrimmedStrings(DFSConfigKeys.NNTOP_WINDOWS_MINUTES_KEY,DFSConfigKeys.NNTOP_WINDOWS_MINUTES_DEFAULT)
+Parameter: DFSConfigKeys.NNTOP_WINDOWS_MINUTES_KEY. Inferred value: "dfs.namenode.top.windows.minutes"
+Parameter: DFSConfigKeys.NNTOP_WINDOWS_MINUTES_DEFAULT
+Callsite No. 393: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_MAX_COMPONENT_LENGTH_KEY,DFSConfigKeys.DFS_NAMENODE_MAX_COMPONENT_LENGTH_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_MAX_COMPONENT_LENGTH_KEY. Inferred value: "dfs.namenode.fs-limits.max-component-length"
+Parameter: DFSConfigKeys.DFS_NAMENODE_MAX_COMPONENT_LENGTH_DEFAULT
+Callsite No. 394: 
+Content: conf.getLong(DFSConfigKeys.DFS_CLIENT_MMAP_RETRY_TIMEOUT_MS,DFSConfigKeys.DFS_CLIENT_MMAP_RETRY_TIMEOUT_MS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_MMAP_RETRY_TIMEOUT_MS. Inferred value: "dfs.client.mmap.retry.timeout.ms"
+Parameter: DFSConfigKeys.DFS_CLIENT_MMAP_RETRY_TIMEOUT_MS_DEFAULT
+Callsite No. 395: 
+Content: conf.get(DFSConfigKeys.DFS_HOSTS,"")
+Parameter: DFSConfigKeys.DFS_HOSTS. Inferred value: "dfs.hosts"
+Parameter: "". Inferred value: ""
+Callsite No. 396: 
+Content: getProxy()
+Callsite No. 397: 
+Content: getLongBytes(DFSConfigKeys.DFS_BLOCK_SIZE_KEY,DFSConfigKeys.DFS_BLOCK_SIZE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_BLOCK_SIZE_KEY. Inferred value: "dfs.blocksize"
+Parameter: DFSConfigKeys.DFS_BLOCK_SIZE_DEFAULT
+Callsite No. 398: 
+Content: conf.getBoolean(DFS_HA_STANDBY_CHECKPOINTS_KEY,DFS_HA_STANDBY_CHECKPOINTS_DEFAULT)
+Parameter: DFS_HA_STANDBY_CHECKPOINTS_KEY. Inferred value: "dfs.ha.standby.checkpoints"
+Parameter: DFS_HA_STANDBY_CHECKPOINTS_DEFAULT
+Callsite No. 399: 
+Content: conf.getInt(DFSConfigKeys.DFS_HTTP_CLIENT_RETRY_MAX_ATTEMPTS_KEY,DFSConfigKeys.DFS_HTTP_CLIENT_RETRY_MAX_ATTEMPTS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_HTTP_CLIENT_RETRY_MAX_ATTEMPTS_KEY. Inferred value: "dfs.http.client.retry.max.attempts"
+Parameter: DFSConfigKeys.DFS_HTTP_CLIENT_RETRY_MAX_ATTEMPTS_DEFAULT
+Callsite No. 400: 
+Content: conf.getBoolean(DFS_CLIENT_HTTPS_NEED_AUTH_KEY,DFS_CLIENT_HTTPS_NEED_AUTH_DEFAULT)
+Parameter: DFS_CLIENT_HTTPS_NEED_AUTH_KEY. Inferred value: "dfs.client.https.need-auth"
+Parameter: DFS_CLIENT_HTTPS_NEED_AUTH_DEFAULT
+Callsite No. 401: 
+Content: conf.getLong(DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_KEY,DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_KEY. Inferred value: "dfs.heartbeat.interval"
+Parameter: DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_DEFAULT
+Callsite No. 402: 
+Content: conf.get(DFSConfigKeys.DFS_HOSTS_EXCLUDE,"")
+Parameter: DFSConfigKeys.DFS_HOSTS_EXCLUDE. Inferred value: "dfs.hosts.exclude"
+Parameter: "". Inferred value: ""
+Callsite No. 403: 
+Content: conf.get(DFSConfigKeys.DFS_NAMESERVICES)
+Parameter: DFSConfigKeys.DFS_NAMESERVICES. Inferred value: "dfs.nameservices"
+Callsite No. 404: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_DATANODE_DUPLICATE_REPLICA_DELETION,DFSConfigKeys.DFS_DATANODE_DUPLICATE_REPLICA_DELETION_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_DUPLICATE_REPLICA_DELETION. Inferred value: "dfs.datanode.duplicate.replica.deletion"
+Parameter: DFSConfigKeys.DFS_DATANODE_DUPLICATE_REPLICA_DELETION_DEFAULT
+Callsite No. 405: 
+Content: conf.getLong(DFS_CLIENT_READ_PREFETCH_SIZE_KEY,10*defaultBlockSize)
+Parameter: DFS_CLIENT_READ_PREFETCH_SIZE_KEY. Inferred value: "dfs.client.read.prefetch.size"
+Parameter: 10 * defaultBlockSize
+Callsite No. 406: 
+Content: conf.getTrimmedStringCollection(DFSConfigKeys.DFS_NAMESERVICES)
+Parameter: DFSConfigKeys.DFS_NAMESERVICES. Inferred value: "dfs.nameservices"
+Callsite No. 407: 
+Content: conf.get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY)
+Parameter: DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY. Inferred value: "dfs.namenode.kerberos.principal"
+Callsite No. 408: 
+Content: conf.getBoolean(DFS_DATANODE_SYNCONCLOSE_KEY,DFS_DATANODE_SYNCONCLOSE_DEFAULT)
+Parameter: DFS_DATANODE_SYNCONCLOSE_KEY. Inferred value: "dfs.datanode.synconclose"
+Parameter: DFS_DATANODE_SYNCONCLOSE_DEFAULT
+Callsite No. 409: 
+Content: conf.get("fs.default.name",def_uri)
+Parameter: "fs.default.name". Inferred value: "fs.default.name"
+Parameter: def_uri. Inferred value: "hdfs://localhost:9000"
+Callsite No. 410: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_DATANODE_DROP_CACHE_BEHIND_WRITES_KEY,DFSConfigKeys.DFS_DATANODE_DROP_CACHE_BEHIND_WRITES_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_DROP_CACHE_BEHIND_WRITES_KEY. Inferred value: "dfs.datanode.drop.cache.behind.writes"
+Parameter: DFSConfigKeys.DFS_DATANODE_DROP_CACHE_BEHIND_WRITES_DEFAULT
+Callsite No. 411: 
+Content: conf.getInt(DFSConfigKeys.DFS_QJOURNAL_START_SEGMENT_TIMEOUT_KEY,DFSConfigKeys.DFS_QJOURNAL_START_SEGMENT_TIMEOUT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_QJOURNAL_START_SEGMENT_TIMEOUT_KEY. Inferred value: "dfs.qjournal.start-segment.timeout.ms"
+Parameter: DFSConfigKeys.DFS_QJOURNAL_START_SEGMENT_TIMEOUT_DEFAULT
+Callsite No. 412: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_HEARTBEAT_RECHECK_INTERVAL_KEY,DFSConfigKeys.DFS_NAMENODE_HEARTBEAT_RECHECK_INTERVAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_HEARTBEAT_RECHECK_INTERVAL_KEY. Inferred value: "dfs.namenode.heartbeat.recheck-interval"
+Parameter: DFSConfigKeys.DFS_NAMENODE_HEARTBEAT_RECHECK_INTERVAL_DEFAULT
+Callsite No. 413: 
+Content: conf.getInt(DFSConfigKeys.DFS_QJOURNAL_GET_JOURNAL_STATE_TIMEOUT_KEY,DFSConfigKeys.DFS_QJOURNAL_GET_JOURNAL_STATE_TIMEOUT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_QJOURNAL_GET_JOURNAL_STATE_TIMEOUT_KEY. Inferred value: "dfs.qjournal.get-journal-state.timeout.ms"
+Parameter: DFSConfigKeys.DFS_QJOURNAL_GET_JOURNAL_STATE_TIMEOUT_DEFAULT
+Callsite No. 414: 
+Content: conf.getBoolean(DFS_NAMENODE_DELEGATION_TOKEN_ALWAYS_USE_KEY,DFS_NAMENODE_DELEGATION_TOKEN_ALWAYS_USE_DEFAULT)
+Parameter: DFS_NAMENODE_DELEGATION_TOKEN_ALWAYS_USE_KEY. Inferred value: "dfs.namenode.delegation.token.always-use"
+Parameter: DFS_NAMENODE_DELEGATION_TOKEN_ALWAYS_USE_DEFAULT
+Callsite No. 415: 
+Content: conf.get(DFSConfigKeys.DFS_JOURNALNODE_HTTPS_ADDRESS_KEY,DFSConfigKeys.DFS_JOURNALNODE_HTTPS_ADDRESS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_JOURNALNODE_HTTPS_ADDRESS_KEY. Inferred value: "dfs.journalnode.https-address"
+Parameter: DFSConfigKeys.DFS_JOURNALNODE_HTTPS_ADDRESS_DEFAULT
+Callsite No. 416: 
+Content: conf.getInt(DFSConfigKeys.NNTOP_NUM_USERS_KEY,DFSConfigKeys.NNTOP_NUM_USERS_DEFAULT)
+Parameter: DFSConfigKeys.NNTOP_NUM_USERS_KEY. Inferred value: "dfs.namenode.top.num.users"
+Parameter: DFSConfigKeys.NNTOP_NUM_USERS_DEFAULT
+Callsite No. 417: 
+Content: getInt(CONF_TIMERS_SIZE,10)
+Parameter: CONF_TIMERS_SIZE. Inferred value: "timers.size"
+Parameter: 10
+Callsite No. 418: 
+Content: conf.getLong(DFS_CLIENT_DATANODE_RESTART_TIMEOUT_KEY,DFS_CLIENT_DATANODE_RESTART_TIMEOUT_DEFAULT)
+Parameter: DFS_CLIENT_DATANODE_RESTART_TIMEOUT_KEY. Inferred value: "dfs.client.datanode-restart.timeout"
+Parameter: DFS_CLIENT_DATANODE_RESTART_TIMEOUT_DEFAULT
+Callsite No. 419: 
+Content: conf.getInt(CommonConfigurationKeysPublic.IO_FILE_BUFFER_SIZE_KEY,CommonConfigurationKeysPublic.IO_FILE_BUFFER_SIZE_DEFAULT)
+Parameter: CommonConfigurationKeysPublic.IO_FILE_BUFFER_SIZE_KEY
+Parameter: CommonConfigurationKeysPublic.IO_FILE_BUFFER_SIZE_DEFAULT
+Callsite No. 420: 
+Content: conf.getInt(DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_COUNT_THRESHOLD_KEY,DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_COUNT_THRESHOLD_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_COUNT_THRESHOLD_KEY. Inferred value: "dfs.client.write.byte-array-manager.count-threshold"
+Parameter: DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_COUNT_THRESHOLD_DEFAULT
+Callsite No. 421: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_DATANODE_USE_DN_HOSTNAME,DFSConfigKeys.DFS_DATANODE_USE_DN_HOSTNAME_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_USE_DN_HOSTNAME. Inferred value: "dfs.datanode.use.datanode.hostname"
+Parameter: DFSConfigKeys.DFS_DATANODE_USE_DN_HOSTNAME_DEFAULT
+Callsite No. 422: 
+Content: conf.getTrimmed(DFSConfigKeys.DFS_DATANODE_IPC_ADDRESS_KEY,DFSConfigKeys.DFS_DATANODE_IPC_ADDRESS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_IPC_ADDRESS_KEY. Inferred value: "dfs.datanode.ipc.address"
+Parameter: DFSConfigKeys.DFS_DATANODE_IPC_ADDRESS_DEFAULT
+Callsite No. 423: 
+Content: conf.getInt(DFS_CLIENT_MAX_BLOCK_ACQUIRE_FAILURES_KEY,DFS_CLIENT_MAX_BLOCK_ACQUIRE_FAILURES_DEFAULT)
+Parameter: DFS_CLIENT_MAX_BLOCK_ACQUIRE_FAILURES_KEY. Inferred value: "dfs.client.max.block.acquire.failures"
+Parameter: DFS_CLIENT_MAX_BLOCK_ACQUIRE_FAILURES_DEFAULT
+Callsite No. 424: 
+Content: conf.get(serviceAddrKey)
+Parameter: serviceAddrKey
+Callsite No. 425: 
+Content: getProxy()
+Callsite No. 426: 
+Content: conf.getInt(DFS_DATANODE_SOCKET_WRITE_TIMEOUT_KEY,HdfsServerConstants.WRITE_TIMEOUT)
+Parameter: DFS_DATANODE_SOCKET_WRITE_TIMEOUT_KEY. Inferred value: "dfs.datanode.socket.write.timeout"
+Parameter: HdfsServerConstants.WRITE_TIMEOUT
+Callsite No. 427: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_KEY,DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_KEY. Inferred value: "dfs.client.read.shortcircuit"
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_DEFAULT
+Callsite No. 428: 
+Content: conf.getInt(DFSConfigKeys.DFS_DATANODE_MAX_RECEIVER_THREADS_KEY,DFSConfigKeys.DFS_DATANODE_MAX_RECEIVER_THREADS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_MAX_RECEIVER_THREADS_KEY. Inferred value: "dfs.datanode.max.transfer.threads"
+Parameter: DFSConfigKeys.DFS_DATANODE_MAX_RECEIVER_THREADS_DEFAULT
+Callsite No. 429: 
+Content: conf.getClass(DFSConfigKeys.DFS_TRUSTEDCHANNEL_RESOLVER_CLASS,TrustedChannelResolver.class,TrustedChannelResolver.class)
+Parameter: DFSConfigKeys.DFS_TRUSTEDCHANNEL_RESOLVER_CLASS. Inferred value: "dfs.trustedchannel.resolver.class"
+Parameter: TrustedChannelResolver.class
+Parameter: TrustedChannelResolver.class
+Callsite No. 430: 
+Content: conf.get("hadoop.hdfs.configuration.version","UNSPECIFIED")
+Parameter: "hadoop.hdfs.configuration.version". Inferred value: "hadoop.hdfs.configuration.version"
+Parameter: "UNSPECIFIED". Inferred value: "UNSPECIFIED"
+Callsite No. 431: 
+Content: conf.getTrimmed(DFSConfigKeys.DFS_DATANODE_HTTPS_ADDRESS_KEY,infoHost+":"+DFSConfigKeys.DFS_DATANODE_HTTPS_DEFAULT_PORT)
+Parameter: DFSConfigKeys.DFS_DATANODE_HTTPS_ADDRESS_KEY. Inferred value: "dfs.datanode.https.address"
+Parameter: infoHost + ":"
+              + DFSConfigKeys.DFS_DATANODE_HTTPS_DEFAULT_PORT
+Callsite No. 432: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_REPLICATION_MIN_KEY,DFSConfigKeys.DFS_NAMENODE_REPLICATION_MIN_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_REPLICATION_MIN_KEY. Inferred value: "dfs.namenode.replication.min"
+Parameter: DFSConfigKeys.DFS_NAMENODE_REPLICATION_MIN_DEFAULT
+Callsite No. 433: 
+Content: conf.getBoolean(CommonConfigurationKeys.HADOOP_SECURITY_AUTHORIZATION,false)
+Parameter: CommonConfigurationKeys.HADOOP_SECURITY_AUTHORIZATION
+Parameter: false
+Callsite No. 434: 
+Content: conf.getLong(DFSConfigKeys.DFS_NAMENODE_CHECKPOINT_TXNS_KEY,DFSConfigKeys.DFS_NAMENODE_CHECKPOINT_TXNS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_CHECKPOINT_TXNS_KEY. Inferred value: "dfs.namenode.checkpoint.txns"
+Parameter: DFSConfigKeys.DFS_NAMENODE_CHECKPOINT_TXNS_DEFAULT
+Callsite No. 435: 
+Content: conf.getInt(DFS_CLIENT_SOCKET_CACHE_CAPACITY_KEY,DFS_CLIENT_SOCKET_CACHE_CAPACITY_DEFAULT)
+Parameter: DFS_CLIENT_SOCKET_CACHE_CAPACITY_KEY. Inferred value: "dfs.client.socketcache.capacity"
+Parameter: DFS_CLIENT_SOCKET_CACHE_CAPACITY_DEFAULT
+Callsite No. 436: 
+Content: conf.getInt(DFSConfigKeys.DFS_BLOCK_MISREPLICATION_PROCESSING_LIMIT,DFSConfigKeys.DFS_BLOCK_MISREPLICATION_PROCESSING_LIMIT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_BLOCK_MISREPLICATION_PROCESSING_LIMIT. Inferred value: "dfs.block.misreplication.processing.limit"
+Parameter: DFSConfigKeys.DFS_BLOCK_MISREPLICATION_PROCESSING_LIMIT_DEFAULT
+Callsite No. 437: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_REPLICATION_STREAMS_HARD_LIMIT_KEY,DFSConfigKeys.DFS_NAMENODE_REPLICATION_STREAMS_HARD_LIMIT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_REPLICATION_STREAMS_HARD_LIMIT_KEY. Inferred value: "dfs.namenode.replication.max-streams-hard-limit"
+Parameter: DFSConfigKeys.DFS_NAMENODE_REPLICATION_STREAMS_HARD_LIMIT_DEFAULT
+Callsite No. 438: 
+Content: conf.get(DFS_DATA_ENCRYPTION_ALGORITHM_KEY)
+Parameter: DFS_DATA_ENCRYPTION_ALGORITHM_KEY. Inferred value: "dfs.encrypt.data.transfer.algorithm"
+Callsite No. 439: 
+Content: conf.getLong(DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_INTERVAL_KEY,DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_INTERVAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_INTERVAL_KEY. Inferred value: "dfs.namenode.stale.datanode.interval"
+Parameter: DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_INTERVAL_DEFAULT
+Callsite No. 440: 
+Content: conf.getBoolean(CommonConfigurationKeys.IPC_CLIENT_FALLBACK_TO_SIMPLE_AUTH_ALLOWED_KEY,CommonConfigurationKeys.IPC_CLIENT_FALLBACK_TO_SIMPLE_AUTH_ALLOWED_DEFAULT)
+Parameter: CommonConfigurationKeys.IPC_CLIENT_FALLBACK_TO_SIMPLE_AUTH_ALLOWED_KEY
+Parameter: CommonConfigurationKeys.IPC_CLIENT_FALLBACK_TO_SIMPLE_AUTH_ALLOWED_DEFAULT
+Callsite No. 441: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_DATANODE_SYNC_BEHIND_WRITES_KEY,DFSConfigKeys.DFS_DATANODE_SYNC_BEHIND_WRITES_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_SYNC_BEHIND_WRITES_KEY. Inferred value: "dfs.datanode.sync.behind.writes"
+Parameter: DFSConfigKeys.DFS_DATANODE_SYNC_BEHIND_WRITES_DEFAULT
+Callsite No. 442: 
+Content: conf.getLong(DFSConfigKeys.DFS_NAMENODE_REPLICATION_INTERVAL_KEY,DFSConfigKeys.DFS_NAMENODE_REPLICATION_INTERVAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_REPLICATION_INTERVAL_KEY. Inferred value: "dfs.namenode.replication.interval"
+Parameter: DFSConfigKeys.DFS_NAMENODE_REPLICATION_INTERVAL_DEFAULT
+Callsite No. 443: 
+Content: conf.getInt(DFSConfigKeys.DFS_DATANODE_DIRECTORYSCAN_INTERVAL_KEY,DFSConfigKeys.DFS_DATANODE_DIRECTORYSCAN_INTERVAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_DIRECTORYSCAN_INTERVAL_KEY. Inferred value: "dfs.datanode.directoryscan.interval"
+Parameter: DFSConfigKeys.DFS_DATANODE_DIRECTORYSCAN_INTERVAL_DEFAULT
+Callsite No. 444: 
+Content: conf.getLong(DFS_BLOCKREPORT_INTERVAL_MSEC_KEY,DFS_BLOCKREPORT_INTERVAL_MSEC_DEFAULT)
+Parameter: DFS_BLOCKREPORT_INTERVAL_MSEC_KEY. Inferred value: "dfs.blockreport.intervalMsec"
+Parameter: DFS_BLOCKREPORT_INTERVAL_MSEC_DEFAULT
+Callsite No. 445: 
+Content: conf.getTrimmed(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY)
+Parameter: CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY
+Callsite No. 446: 
+Content: sslConf.get("ssl.server.truststore.type","jks")
+Parameter: "ssl.server.truststore.type". Inferred value: "ssl.server.truststore.type"
+Parameter: "jks". Inferred value: "jks"
+Callsite No. 447: 
+Content: conf.getClass(DFS_DATA_TRANSFER_SASL_PROPS_RESOLVER_CLASS_KEY,resolverClass,SaslPropertiesResolver.class)
+Parameter: DFS_DATA_TRANSFER_SASL_PROPS_RESOLVER_CLASS_KEY. Inferred value: "dfs.data.transfer.saslproperties.resolver.class"
+Parameter: resolverClass
+Parameter: SaslPropertiesResolver.class
+Callsite No. 448: 
+Content: conf.get(DFSConfigKeys.DFS_CLIENT_WRITE_REPLACE_DATANODE_ON_FAILURE_POLICY_KEY,DFSConfigKeys.DFS_CLIENT_WRITE_REPLACE_DATANODE_ON_FAILURE_POLICY_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_WRITE_REPLACE_DATANODE_ON_FAILURE_POLICY_KEY. Inferred value: "dfs.client.block.write.replace-datanode-on-failure.policy"
+Parameter: DFSConfigKeys.DFS_CLIENT_WRITE_REPLACE_DATANODE_ON_FAILURE_POLICY_DEFAULT. Inferred value: "DEFAULT"
+Callsite No. 449: 
+Content: conf.get(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY)
+Parameter: CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY
+Callsite No. 450: 
+Content: getClasses(getPrefixedName(CONF_SERVICES_EXT))
+Parameter: getPrefixedName(CONF_SERVICES_EXT)
+Callsite No. 451: 
+Content: conf.getTrimmed(DFS_NAMENODE_RPC_BIND_HOST_KEY)
+Parameter: DFS_NAMENODE_RPC_BIND_HOST_KEY. Inferred value: "dfs.namenode.rpc-bind-host"
+Callsite No. 452: 
+Content: conf.get(DFS_CLIENT_CACHE_DROP_BEHIND_READS)
+Parameter: DFS_CLIENT_CACHE_DROP_BEHIND_READS. Inferred value: "dfs.client.cache.drop.behind.reads"
+Callsite No. 453: 
+Content: conf.getInt(DFSConfigKeys.DFS_QJOURNAL_SELECT_INPUT_STREAMS_TIMEOUT_KEY,DFSConfigKeys.DFS_QJOURNAL_SELECT_INPUT_STREAMS_TIMEOUT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_QJOURNAL_SELECT_INPUT_STREAMS_TIMEOUT_KEY. Inferred value: "dfs.qjournal.select-input-streams.timeout.ms"
+Parameter: DFSConfigKeys.DFS_QJOURNAL_SELECT_INPUT_STREAMS_TIMEOUT_DEFAULT
+Callsite No. 454: 
+Content: conf.getClass(key,null,JournalManager.class)
+Parameter: key
+Parameter: null
+Parameter: JournalManager.class
+Callsite No. 455: 
+Content: conf.getTrimmedStringCollection(DFSConfigKeys.DFS_NAMENODE_CHECKPOINT_EDITS_DIR_KEY)
+Parameter: DFSConfigKeys.DFS_NAMENODE_CHECKPOINT_EDITS_DIR_KEY. Inferred value: "dfs.namenode.checkpoint.edits.dir"
+Callsite No. 456: 
+Content: getHostName()
+Callsite No. 457: 
+Content: conf.getTrimmed(DFSConfigKeys.DFS_DATANODE_ADDRESS_KEY,DFSConfigKeys.DFS_DATANODE_ADDRESS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_ADDRESS_KEY. Inferred value: "dfs.datanode.address"
+Parameter: DFSConfigKeys.DFS_DATANODE_ADDRESS_DEFAULT
+Callsite No. 458: 
+Content: conf.getInt(DFSConfigKeys.DFS_CLIENT_TEST_DROP_NAMENODE_RESPONSE_NUM_KEY,DFSConfigKeys.DFS_CLIENT_TEST_DROP_NAMENODE_RESPONSE_NUM_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_TEST_DROP_NAMENODE_RESPONSE_NUM_KEY. Inferred value: "dfs.client.test.drop.namenode.response.number"
+Parameter: DFSConfigKeys.DFS_CLIENT_TEST_DROP_NAMENODE_RESPONSE_NUM_DEFAULT
+Callsite No. 459: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_BLOCKS_PER_INTERVAL_KEY,DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_BLOCKS_PER_INTERVAL_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_BLOCKS_PER_INTERVAL_KEY. Inferred value: "dfs.namenode.decommission.blocks.per.interval"
+Parameter: DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_BLOCKS_PER_INTERVAL_DEFAULT
+Callsite No. 460: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_PERMISSIONS_ENABLED_KEY,DFSConfigKeys.DFS_PERMISSIONS_ENABLED_DEFAULT)
+Parameter: DFSConfigKeys.DFS_PERMISSIONS_ENABLED_KEY. Inferred value: "dfs.permissions.enabled"
+Parameter: DFSConfigKeys.DFS_PERMISSIONS_ENABLED_DEFAULT
+Callsite No. 461: 
+Content: conf.getLong(DFSConfigKeys.DFS_NAMENODE_NUM_EXTRA_EDITS_RETAINED_KEY,DFSConfigKeys.DFS_NAMENODE_NUM_EXTRA_EDITS_RETAINED_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_NUM_EXTRA_EDITS_RETAINED_KEY. Inferred value: "dfs.namenode.num.extra.edits.retained"
+Parameter: DFSConfigKeys.DFS_NAMENODE_NUM_EXTRA_EDITS_RETAINED_DEFAULT
+Callsite No. 462: 
+Content: conf.getTrimmedStrings(DFS_DATANODE_SHARED_FILE_DESCRIPTOR_PATHS)
+Parameter: DFS_DATANODE_SHARED_FILE_DESCRIPTOR_PATHS. Inferred value: "dfs.datanode.shared.file.descriptor.paths"
+Callsite No. 463: 
+Content: conf.getInt(DFS_CLIENT_FAILOVER_SLEEPTIME_BASE_KEY,DFS_CLIENT_FAILOVER_SLEEPTIME_BASE_DEFAULT)
+Parameter: DFS_CLIENT_FAILOVER_SLEEPTIME_BASE_KEY. Inferred value: "dfs.client.failover.sleep.base.millis"
+Parameter: DFS_CLIENT_FAILOVER_SLEEPTIME_BASE_DEFAULT
+Callsite No. 464: 
+Content: conf.getInt(DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_BUFFER_SIZE_KEY,DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_BUFFER_SIZE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_BUFFER_SIZE_KEY. Inferred value: "dfs.client.read.shortcircuit.buffer.size"
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_BUFFER_SIZE_DEFAULT
+Callsite No. 465: 
+Content: conf.getInt(DFS_NAMENODE_LAZY_PERSIST_FILE_SCRUB_INTERVAL_SEC,DFS_NAMENODE_LAZY_PERSIST_FILE_SCRUB_INTERVAL_SEC_DEFAULT)
+Parameter: DFS_NAMENODE_LAZY_PERSIST_FILE_SCRUB_INTERVAL_SEC. Inferred value: "dfs.namenode.lazypersist.file.scrub.interval.sec"
+Parameter: DFS_NAMENODE_LAZY_PERSIST_FILE_SCRUB_INTERVAL_SEC_DEFAULT
+Callsite No. 466: 
+Content: conf.getInt(DFSConfigKeys.DFS_HTTP_CLIENT_FAILOVER_SLEEPTIME_MAX_KEY,DFSConfigKeys.DFS_HTTP_CLIENT_FAILOVER_SLEEPTIME_MAX_DEFAULT)
+Parameter: DFSConfigKeys.DFS_HTTP_CLIENT_FAILOVER_SLEEPTIME_MAX_KEY. Inferred value: "dfs.http.client.failover.sleep.max.millis"
+Parameter: DFSConfigKeys.DFS_HTTP_CLIENT_FAILOVER_SLEEPTIME_MAX_DEFAULT
+Callsite No. 467: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_CLIENT_MMAP_ENABLED,DFSConfigKeys.DFS_CLIENT_MMAP_ENABLED_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_MMAP_ENABLED. Inferred value: "dfs.client.mmap.enabled"
+Parameter: DFSConfigKeys.DFS_CLIENT_MMAP_ENABLED_DEFAULT
+Callsite No. 468: 
+Content: get("dfs.datanode.info.port")
+Parameter: "dfs.datanode.info.port". Inferred value: "dfs.datanode.info.port"
+Callsite No. 469: 
+Content: conf.getInt(DFSConfigKeys.DFS_DFSCLIENT_HEDGED_READ_THREADPOOL_SIZE,DFSConfigKeys.DEFAULT_DFSCLIENT_HEDGED_READ_THREADPOOL_SIZE)
+Parameter: DFSConfigKeys.DFS_DFSCLIENT_HEDGED_READ_THREADPOOL_SIZE. Inferred value: "dfs.client.hedged.read.threadpool.size"
+Parameter: DFSConfigKeys.DEFAULT_DFSCLIENT_HEDGED_READ_THREADPOOL_SIZE
+Callsite No. 470: 
+Content: getProxy()
+Callsite No. 471: 
+Content: conf.getBoolean(DFS_CLIENT_USE_DN_HOSTNAME,DFS_CLIENT_USE_DN_HOSTNAME_DEFAULT)
+Parameter: DFS_CLIENT_USE_DN_HOSTNAME. Inferred value: "dfs.client.use.datanode.hostname"
+Parameter: DFS_CLIENT_USE_DN_HOSTNAME_DEFAULT
+Callsite No. 472: 
+Content: conf.getBoolean(DFS_NAMENODE_ENABLE_RETRY_CACHE_KEY,DFS_NAMENODE_ENABLE_RETRY_CACHE_DEFAULT)
+Parameter: DFS_NAMENODE_ENABLE_RETRY_CACHE_KEY. Inferred value: "dfs.namenode.enable.retrycache"
+Parameter: DFS_NAMENODE_ENABLE_RETRY_CACHE_DEFAULT
+Callsite No. 473: 
+Content: conf.getLong(DFSConfigKeys.DFS_MOVER_MOVEDWINWIDTH_KEY,DFSConfigKeys.DFS_MOVER_MOVEDWINWIDTH_DEFAULT)
+Parameter: DFSConfigKeys.DFS_MOVER_MOVEDWINWIDTH_KEY. Inferred value: "dfs.mover.movedWinWidth"
+Parameter: DFSConfigKeys.DFS_MOVER_MOVEDWINWIDTH_DEFAULT
+Callsite No. 474: 
+Content: conf.get(DFS_NAMENODE_RPC_ADDRESS_KEY)
+Parameter: DFS_NAMENODE_RPC_ADDRESS_KEY. Inferred value: "dfs.namenode.rpc-address"
+Callsite No. 475: 
+Content: conf.get(DFS_DATATRANSFER_SERVER_FIXEDWHITELIST_FILE,FIXEDWHITELIST_DEFAULT_LOCATION)
+Parameter: DFS_DATATRANSFER_SERVER_FIXEDWHITELIST_FILE. Inferred value: "dfs.datatransfer.server.fixedwhitelist.file"
+Parameter: FIXEDWHITELIST_DEFAULT_LOCATION. Inferred value: "/etc/hadoop/fixedwhitelist"
+Callsite No. 476: 
+Content: conf.getLong(DFSConfigKeys.DFS_CLIENT_SHORT_CIRCUIT_REPLICA_STALE_THRESHOLD_MS,DFSConfigKeys.DFS_CLIENT_SHORT_CIRCUIT_REPLICA_STALE_THRESHOLD_MS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_SHORT_CIRCUIT_REPLICA_STALE_THRESHOLD_MS. Inferred value: "dfs.client.short.circuit.replica.stale.threshold.ms"
+Parameter: DFSConfigKeys.DFS_CLIENT_SHORT_CIRCUIT_REPLICA_STALE_THRESHOLD_MS_DEFAULT
+Callsite No. 477: 
+Content: conf.get(DFS_NAMENODE_BACKUP_HTTP_ADDRESS_KEY,DFS_NAMENODE_BACKUP_HTTP_ADDRESS_DEFAULT)
+Parameter: DFS_NAMENODE_BACKUP_HTTP_ADDRESS_KEY. Inferred value: "dfs.namenode.backup.http-address"
+Parameter: DFS_NAMENODE_BACKUP_HTTP_ADDRESS_DEFAULT. Inferred value: "0.0.0.0:50105"
+Callsite No. 478: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_NAMENODE_AUDIT_LOG_TOKEN_TRACKING_ID_KEY,DFSConfigKeys.DFS_NAMENODE_AUDIT_LOG_TOKEN_TRACKING_ID_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_AUDIT_LOG_TOKEN_TRACKING_ID_KEY. Inferred value: "dfs.namenode.audit.log.token.tracking.id"
+Parameter: DFSConfigKeys.DFS_NAMENODE_AUDIT_LOG_TOKEN_TRACKING_ID_DEFAULT
+Callsite No. 479: 
+Content: conf.get("hadoop.common.configuration.version","UNSPECIFIED")
+Parameter: "hadoop.common.configuration.version". Inferred value: "hadoop.common.configuration.version"
+Parameter: "UNSPECIFIED". Inferred value: "UNSPECIFIED"
+Callsite No. 480: 
+Content: conf.get(configKey)
+Parameter: configKey
+Callsite No. 481: 
+Content: conf.get(DFSConfigKeys.NNTOP_NUM_USERS_KEY)
+Parameter: DFSConfigKeys.NNTOP_NUM_USERS_KEY. Inferred value: "dfs.namenode.top.num.users"
+Callsite No. 482: 
+Content: conf.get(key,defaultVal)
+Parameter: key
+Parameter: defaultVal
+Callsite No. 483: 
+Content: get(getPrefixedName(CONF_ADMIN_GROUP),"admin")
+Parameter: getPrefixedName(CONF_ADMIN_GROUP)
+Parameter: "admin". Inferred value: "admin"
+Callsite No. 484: 
+Content: conf.getInt(DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_SIZE_KEY,DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_SIZE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_SIZE_KEY. Inferred value: "dfs.client.read.shortcircuit.streams.cache.size"
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_SIZE_DEFAULT
+Callsite No. 485: 
+Content: get(DFS_DATANODE_IPC_ADDRESS_KEY)
+Parameter: DFS_DATANODE_IPC_ADDRESS_KEY. Inferred value: "dfs.datanode.ipc.address"
+Callsite No. 486: 
+Content: config.get(DFS_DATANODE_HOST_NAME_KEY)
+Parameter: DFS_DATANODE_HOST_NAME_KEY. Inferred value: "dfs.datanode.hostname"
+Callsite No. 487: 
+Content: conf.get(DFSConfigKeys.DFS_WEB_AUTHENTICATION_KERBEROS_PRINCIPAL_KEY)
+Parameter: DFSConfigKeys.DFS_WEB_AUTHENTICATION_KERBEROS_PRINCIPAL_KEY. Inferred value: "dfs.web.authentication.kerberos.principal"
+Callsite No. 488: 
+Content: getInt("httpfs.buffer.size",4096)
+Parameter: "httpfs.buffer.size". Inferred value: "httpfs.buffer.size"
+Parameter: 4096
+Callsite No. 489: 
+Content: conf.getInt(DFSConfigKeys.DFS_BALANCER_DISPATCHERTHREADS_KEY,DFSConfigKeys.DFS_BALANCER_DISPATCHERTHREADS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_BALANCER_DISPATCHERTHREADS_KEY. Inferred value: "dfs.balancer.dispatcherThreads"
+Parameter: DFSConfigKeys.DFS_BALANCER_DISPATCHERTHREADS_DEFAULT
+Callsite No. 490: 
+Content: conf.getInt(DFS_DATANODE_SOCKET_WRITE_TIMEOUT_KEY,HdfsServerConstants.WRITE_TIMEOUT)
+Parameter: DFS_DATANODE_SOCKET_WRITE_TIMEOUT_KEY. Inferred value: "dfs.datanode.socket.write.timeout"
+Parameter: HdfsServerConstants.WRITE_TIMEOUT
+Callsite No. 491: 
+Content: conf.getFloat(DFS_NAMENODE_RETRY_CACHE_HEAP_PERCENT_KEY,DFS_NAMENODE_RETRY_CACHE_HEAP_PERCENT_DEFAULT)
+Parameter: DFS_NAMENODE_RETRY_CACHE_HEAP_PERCENT_KEY. Inferred value: "dfs.namenode.retrycache.heap.percent"
+Parameter: DFS_NAMENODE_RETRY_CACHE_HEAP_PERCENT_DEFAULT
+Callsite No. 492: 
+Content: conf.getInt(DFSConfigKeys.DFS_BALANCER_MOVERTHREADS_KEY,DFSConfigKeys.DFS_BALANCER_MOVERTHREADS_DEFAULT)
+Parameter: DFSConfigKeys.DFS_BALANCER_MOVERTHREADS_KEY. Inferred value: "dfs.balancer.moverThreads"
+Parameter: DFSConfigKeys.DFS_BALANCER_MOVERTHREADS_DEFAULT
+Callsite No. 493: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_KEY,DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_KEY. Inferred value: "dfs.client.read.shortcircuit"
+Parameter: DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_DEFAULT
+Callsite No. 494: 
+Content: getTrimmedStringCollection(NAME_NODE_WHITELIST)
+Parameter: NAME_NODE_WHITELIST. Inferred value: "name.node.whitelist"
+Callsite No. 495: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_PIPELINE_ECN_ENABLED,DFSConfigKeys.DFS_PIPELINE_ECN_ENABLED_DEFAULT)
+Parameter: DFSConfigKeys.DFS_PIPELINE_ECN_ENABLED. Inferred value: "dfs.pipeline.ecn"
+Parameter: DFSConfigKeys.DFS_PIPELINE_ECN_ENABLED_DEFAULT
+Callsite No. 496: 
+Content: conf.get(DFS_METRICS_PERCENTILES_INTERVALS_KEY)
+Parameter: DFS_METRICS_PERCENTILES_INTERVALS_KEY. Inferred value: "dfs.metrics.percentiles.intervals"
+Callsite No. 497: 
+Content: conf.getFloat(DFSConfigKeys.DFS_DATANODE_RAM_DISK_LOW_WATERMARK_PERCENT,DFSConfigKeys.DFS_DATANODE_RAM_DISK_LOW_WATERMARK_PERCENT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_RAM_DISK_LOW_WATERMARK_PERCENT. Inferred value: "dfs.datanode.ram.disk.low.watermark.percent"
+Parameter: DFSConfigKeys.DFS_DATANODE_RAM_DISK_LOW_WATERMARK_PERCENT_DEFAULT
+Callsite No. 498: 
+Content: conf.get(configKey)
+Parameter: configKey
+Callsite No. 499: 
+Content: conf.getBoolean(IGNORE_SECURE_PORTS_FOR_TESTING_KEY,IGNORE_SECURE_PORTS_FOR_TESTING_DEFAULT)
+Parameter: IGNORE_SECURE_PORTS_FOR_TESTING_KEY. Inferred value: "ignore.secure.ports.for.testing"
+Parameter: IGNORE_SECURE_PORTS_FOR_TESTING_DEFAULT
+Callsite No. 500: 
+Content: get(HADOOP_CONF_DIR,getServer().getConfigDir())
+Parameter: HADOOP_CONF_DIR. Inferred value: "config.dir"
+Parameter: getServer().getConfigDir()
+Callsite No. 501: 
+Content: conf.get(DFS_ENCRYPT_DATA_TRANSFER_CIPHER_SUITES_KEY)
+Parameter: DFS_ENCRYPT_DATA_TRANSFER_CIPHER_SUITES_KEY. Inferred value: "dfs.encrypt.data.transfer.cipher.suites"
+Callsite No. 502: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_HTTPS_ENABLE_KEY,DFSConfigKeys.DFS_HTTPS_ENABLE_DEFAULT)
+Parameter: DFSConfigKeys.DFS_HTTPS_ENABLE_KEY. Inferred value: "dfs.https.enable"
+Parameter: DFSConfigKeys.DFS_HTTPS_ENABLE_DEFAULT
+Callsite No. 503: 
+Content: conf.getInt(DFS_REPLICATION_KEY,DFS_REPLICATION_DEFAULT)
+Parameter: DFS_REPLICATION_KEY. Inferred value: "dfs.replication"
+Parameter: DFS_REPLICATION_DEFAULT
+Callsite No. 504: 
+Content: conf.getClass(DFSConfigKeys.DFS_DATANODE_FSDATASET_VOLUME_CHOOSING_POLICY_KEY,RoundRobinVolumeChoosingPolicy.class,VolumeChoosingPolicy.class)
+Parameter: DFSConfigKeys.DFS_DATANODE_FSDATASET_VOLUME_CHOOSING_POLICY_KEY. Inferred value: "dfs.datanode.fsdataset.volume.choosing.policy"
+Parameter: RoundRobinVolumeChoosingPolicy.class
+Parameter: VolumeChoosingPolicy.class
+Callsite No. 505: 
+Content: conf.getBoolean(DFS_NAMENODE_AUDIT_LOG_ASYNC_KEY,DFS_NAMENODE_AUDIT_LOG_ASYNC_DEFAULT)
+Parameter: DFS_NAMENODE_AUDIT_LOG_ASYNC_KEY. Inferred value: "dfs.namenode.audit.log.async"
+Parameter: DFS_NAMENODE_AUDIT_LOG_ASYNC_DEFAULT
+Callsite No. 506: 
+Content: conf.getInt(DFSConfigKeys.DFS_CONTENT_SUMMARY_LIMIT_KEY,DFSConfigKeys.DFS_CONTENT_SUMMARY_LIMIT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CONTENT_SUMMARY_LIMIT_KEY. Inferred value: "dfs.content-summary.limit"
+Parameter: DFSConfigKeys.DFS_CONTENT_SUMMARY_LIMIT_DEFAULT
+Callsite No. 507: 
+Content: conf.get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY,"")
+Parameter: DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY. Inferred value: "dfs.namenode.kerberos.principal"
+Parameter: "". Inferred value: ""
+Callsite No. 508: 
+Content: conf.getInt(DFSConfigKeys.DFS_HA_ZKFC_PORT_KEY,DFSConfigKeys.DFS_HA_ZKFC_PORT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_HA_ZKFC_PORT_KEY. Inferred value: "dfs.ha.zkfc.port"
+Parameter: DFSConfigKeys.DFS_HA_ZKFC_PORT_DEFAULT
+Callsite No. 509: 
+Content: conf.get(DFSUtil.addKeySuffixes(key,suffixes))
+Parameter: DFSUtil.addKeySuffixes(key, suffixes)
+Callsite No. 510: 
+Content: conf.getClass(DFSConfigKeys.DFS_DATANODE_FSDATASET_FACTORY_KEY,FsDatasetFactory.class,Factory.class)
+Parameter: DFSConfigKeys.DFS_DATANODE_FSDATASET_FACTORY_KEY. Inferred value: "dfs.datanode.fsdataset.factory"
+Parameter: FsDatasetFactory.class
+Parameter: Factory.class
+Callsite No. 511: 
+Content: conf.getClass(DFSConfigKeys.DFS_BLOCK_REPLICATOR_CLASSNAME_KEY,DFSConfigKeys.DFS_BLOCK_REPLICATOR_CLASSNAME_DEFAULT,BlockPlacementPolicy.class)
+Parameter: DFSConfigKeys.DFS_BLOCK_REPLICATOR_CLASSNAME_KEY. Inferred value: "dfs.block.replicator.classname"
+Parameter: DFSConfigKeys.DFS_BLOCK_REPLICATOR_CLASSNAME_DEFAULT
+Parameter: BlockPlacementPolicy.class
+Callsite No. 512: 
+Content: conf.getLong(DFSConfigKeys.DFS_DATANODE_RAM_DISK_LOW_WATERMARK_BYTES,DFSConfigKeys.DFS_DATANODE_RAM_DISK_LOW_WATERMARK_BYTES_DEFAULT)
+Parameter: DFSConfigKeys.DFS_DATANODE_RAM_DISK_LOW_WATERMARK_BYTES. Inferred value: "dfs.datanode.ram.disk.low.watermark.bytes"
+Parameter: DFSConfigKeys.DFS_DATANODE_RAM_DISK_LOW_WATERMARK_BYTES_DEFAULT
+Callsite No. 513: 
+Content: conf.getInts(DFSConfigKeys.DFS_METRICS_PERCENTILES_INTERVALS_KEY)
+Parameter: DFSConfigKeys.DFS_METRICS_PERCENTILES_INTERVALS_KEY. Inferred value: "dfs.metrics.percentiles.intervals"
+Callsite No. 514: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_NAMENODE_EDITS_NOEDITLOGCHANNELFLUSH,DFSConfigKeys.DFS_NAMENODE_EDITS_NOEDITLOGCHANNELFLUSH_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_EDITS_NOEDITLOGCHANNELFLUSH. Inferred value: "dfs.namenode.edits.noeditlogchannelflush"
+Parameter: DFSConfigKeys.DFS_NAMENODE_EDITS_NOEDITLOGCHANNELFLUSH_DEFAULT
+Callsite No. 515: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_TOLERATE_HEARTBEAT_MULTIPLIER_KEY,DFSConfigKeys.DFS_NAMENODE_TOLERATE_HEARTBEAT_MULTIPLIER_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_TOLERATE_HEARTBEAT_MULTIPLIER_KEY. Inferred value: "dfs.namenode.tolerate.heartbeat.multiplier"
+Parameter: DFSConfigKeys.DFS_NAMENODE_TOLERATE_HEARTBEAT_MULTIPLIER_DEFAULT
+Callsite No. 516: 
+Content: conf.getInt(DFS_DATANODE_HANDLER_COUNT_KEY,DFS_DATANODE_HANDLER_COUNT_DEFAULT)
+Parameter: DFS_DATANODE_HANDLER_COUNT_KEY. Inferred value: "dfs.datanode.handler.count"
+Parameter: DFS_DATANODE_HANDLER_COUNT_DEFAULT
+Callsite No. 517: 
+Content: conf.getLong(DFS_DATANODE_MAX_LOCKED_MEMORY_KEY,DFS_DATANODE_MAX_LOCKED_MEMORY_DEFAULT)
+Parameter: DFS_DATANODE_MAX_LOCKED_MEMORY_KEY. Inferred value: "dfs.datanode.max.locked.memory"
+Parameter: DFS_DATANODE_MAX_LOCKED_MEMORY_DEFAULT
+Callsite No. 518: 
+Content: conf.getInt(DFSConfigKeys.DFS_LIST_LIMIT,DFSConfigKeys.DFS_LIST_LIMIT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_LIST_LIMIT. Inferred value: "dfs.ls.limit"
+Parameter: DFSConfigKeys.DFS_LIST_LIMIT_DEFAULT
+Callsite No. 519: 
+Content: sslConf.getBoolean(DFS_CLIENT_HTTPS_NEED_AUTH_KEY,DFS_CLIENT_HTTPS_NEED_AUTH_DEFAULT)
+Parameter: DFS_CLIENT_HTTPS_NEED_AUTH_KEY. Inferred value: "dfs.client.https.need-auth"
+Parameter: DFS_CLIENT_HTTPS_NEED_AUTH_DEFAULT
+Callsite No. 520: 
+Content: conf.getLong(DFS_NAMENODE_MAX_OBJECTS_KEY,DFS_NAMENODE_MAX_OBJECTS_DEFAULT)
+Parameter: DFS_NAMENODE_MAX_OBJECTS_KEY. Inferred value: "dfs.namenode.max.objects"
+Parameter: DFS_NAMENODE_MAX_OBJECTS_DEFAULT
+Callsite No. 521: 
+Content: conf.getTrimmed(DFS_DATANODE_HTTP_ADDRESS_KEY,DFS_DATANODE_HTTP_ADDRESS_DEFAULT)
+Parameter: DFS_DATANODE_HTTP_ADDRESS_KEY. Inferred value: "dfs.datanode.http.address"
+Parameter: DFS_DATANODE_HTTP_ADDRESS_DEFAULT
+Callsite No. 522: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_MAX_CONCURRENT_TRACKED_NODES,DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_MAX_CONCURRENT_TRACKED_NODES_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_MAX_CONCURRENT_TRACKED_NODES. Inferred value: "dfs.namenode.decommission.max.concurrent.tracked.nodes"
+Parameter: DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_MAX_CONCURRENT_TRACKED_NODES_DEFAULT
+Callsite No. 523: 
+Content: conf.getInt(DFS_ENCRYPT_DATA_TRANSFER_CIPHER_KEY_BITLENGTH_KEY,DFS_ENCRYPT_DATA_TRANSFER_CIPHER_KEY_BITLENGTH_DEFAULT)
+Parameter: DFS_ENCRYPT_DATA_TRANSFER_CIPHER_KEY_BITLENGTH_KEY. Inferred value: "dfs.encrypt.data.transfer.cipher.key.bitlength"
+Parameter: DFS_ENCRYPT_DATA_TRANSFER_CIPHER_KEY_BITLENGTH_DEFAULT
+Callsite No. 524: 
+Content: conf.get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY,"")
+Parameter: DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY. Inferred value: "dfs.namenode.kerberos.principal"
+Parameter: "". Inferred value: ""
+Callsite No. 525: 
+Content: 1000
+Callsite No. 526: 
+Content: this.conf.getInt(DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_KEY,DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_KEY. Inferred value: "dfs.client.failover.connection.retries"
+Parameter: DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_DEFAULT
+Callsite No. 527: 
+Content: conf.get(DFSConfigKeys.DFS_PERMISSIONS_SUPERUSERGROUP_KEY,DFSConfigKeys.DFS_PERMISSIONS_SUPERUSERGROUP_DEFAULT)
+Parameter: DFSConfigKeys.DFS_PERMISSIONS_SUPERUSERGROUP_KEY. Inferred value: "dfs.permissions.superusergroup"
+Parameter: DFSConfigKeys.DFS_PERMISSIONS_SUPERUSERGROUP_DEFAULT. Inferred value: "supergroup"
+Callsite No. 528: 
+Content: conf.getFloat(DFSConfigKeys.DFS_NAMENODE_INVALIDATE_WORK_PCT_PER_ITERATION,DFSConfigKeys.DFS_NAMENODE_INVALIDATE_WORK_PCT_PER_ITERATION_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_INVALIDATE_WORK_PCT_PER_ITERATION. Inferred value: "dfs.namenode.invalidate.work.pct.per.iteration"
+Parameter: DFSConfigKeys.DFS_NAMENODE_INVALIDATE_WORK_PCT_PER_ITERATION_DEFAULT
+Callsite No. 529: 
+Content: conf.getInt(DFSConfigKeys.DFS_NAMENODE_REPLICATION_MIN_KEY,DFSConfigKeys.DFS_NAMENODE_REPLICATION_MIN_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_REPLICATION_MIN_KEY. Inferred value: "dfs.namenode.replication.min"
+Parameter: DFSConfigKeys.DFS_NAMENODE_REPLICATION_MIN_DEFAULT
+Callsite No. 530: 
+Content: conf.get(DFSConfigKeys.NNTOP_WINDOWS_MINUTES_KEY)
+Parameter: DFSConfigKeys.NNTOP_WINDOWS_MINUTES_KEY. Inferred value: "dfs.namenode.top.windows.minutes"
+Callsite No. 531: 
+Content: conf.getTrimmed(DFS_NAMENODE_HTTP_BIND_HOST_KEY)
+Parameter: DFS_NAMENODE_HTTP_BIND_HOST_KEY. Inferred value: "dfs.namenode.http-bind-host"
+Callsite No. 532: 
+Content: conf.getLong(DFS_BLOCK_SCANNER_VOLUME_BYTES_PER_SECOND,DFS_BLOCK_SCANNER_VOLUME_BYTES_PER_SECOND_DEFAULT)
+Parameter: DFS_BLOCK_SCANNER_VOLUME_BYTES_PER_SECOND. Inferred value: "dfs.block.scanner.volume.bytes.per.second"
+Parameter: DFS_BLOCK_SCANNER_VOLUME_BYTES_PER_SECOND_DEFAULT
+Callsite No. 533: 
+Content: conf.get(DFS_CLIENT_CONTEXT,DFS_CLIENT_CONTEXT_DEFAULT)
+Parameter: DFS_CLIENT_CONTEXT. Inferred value: "dfs.client.context"
+Parameter: DFS_CLIENT_CONTEXT_DEFAULT. Inferred value: "default"
+Callsite No. 534: 
+Content: conf.get(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY)
+Parameter: CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY
+Callsite No. 535: 
+Content: conf.getInt(DFSConfigKeys.DFS_REPLICATION_KEY,DFSConfigKeys.DFS_REPLICATION_DEFAULT)
+Parameter: DFSConfigKeys.DFS_REPLICATION_KEY. Inferred value: "dfs.replication"
+Parameter: DFSConfigKeys.DFS_REPLICATION_DEFAULT
+Callsite No. 536: 
+Content: conf.getTrimmed(DFSConfigKeys.DFS_ENCRYPTION_KEY_PROVIDER_URI,"")
+Parameter: DFSConfigKeys.DFS_ENCRYPTION_KEY_PROVIDER_URI. Inferred value: "dfs.encryption.key.provider.uri"
+Parameter: "". Inferred value: ""
+Callsite No. 537: 
+Content: conf.get(deprecatedKey)
+Parameter: deprecatedKey. Inferred value: "dfs.namenode.decommission.nodes.per.interval"
+Callsite No. 538: 
+Content: conf.get(DFSConfigKeys.DFS_NAMENODE_LEGACY_OIV_IMAGE_DIR_KEY)
+Parameter: DFSConfigKeys.DFS_NAMENODE_LEGACY_OIV_IMAGE_DIR_KEY. Inferred value: "dfs.namenode.legacy-oiv-image.dir"
+Callsite No. 539: 
+Content: conf.getBoolean(DFS_CLIENT_CACHE_DROP_BEHIND_READS,false)
+Parameter: DFS_CLIENT_CACHE_DROP_BEHIND_READS. Inferred value: "dfs.client.cache.drop.behind.reads"
+Parameter: false
+Callsite No. 540: 
+Content: conf.getInstances(DFS_NAMENODE_PLUGINS_KEY,ServicePlugin.class)
+Parameter: DFS_NAMENODE_PLUGINS_KEY. Inferred value: "dfs.namenode.plugins"
+Parameter: ServicePlugin.class
+Callsite No. 541: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_NAMENODE_AVOID_STALE_DATANODE_FOR_READ_KEY,DFSConfigKeys.DFS_NAMENODE_AVOID_STALE_DATANODE_FOR_READ_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_AVOID_STALE_DATANODE_FOR_READ_KEY. Inferred value: "dfs.namenode.avoid.read.stale.datanode"
+Parameter: DFSConfigKeys.DFS_NAMENODE_AVOID_STALE_DATANODE_FOR_READ_DEFAULT
+Callsite No. 542: 
+Content: conf.getInt(DFSConfigKeys.NNTOP_BUCKETS_PER_WINDOW_KEY,DFSConfigKeys.NNTOP_BUCKETS_PER_WINDOW_DEFAULT)
+Parameter: DFSConfigKeys.NNTOP_BUCKETS_PER_WINDOW_KEY. Inferred value: "dfs.namenode.top.window.num.buckets"
+Parameter: DFSConfigKeys.NNTOP_BUCKETS_PER_WINDOW_DEFAULT
+Callsite No. 543: 
+Content: conf.getLong(DFSConfigKeys.DFS_CLIENT_KEY_PROVIDER_CACHE_EXPIRY_MS,DFSConfigKeys.DFS_CLIENT_KEY_PROVIDER_CACHE_EXPIRY_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_KEY_PROVIDER_CACHE_EXPIRY_MS. Inferred value: "dfs.client.key.provider.cache.expiry"
+Parameter: DFSConfigKeys.DFS_CLIENT_KEY_PROVIDER_CACHE_EXPIRY_DEFAULT
+Callsite No. 544: 
+Content: conf.get(DFS_NAMESERVICE_ID)
+Parameter: DFS_NAMESERVICE_ID. Inferred value: "dfs.nameservice.id"
+Callsite No. 545: 
+Content: conf.getClass(DFSConfigKeys.NET_TOPOLOGY_NODE_SWITCH_MAPPING_IMPL_KEY,ScriptBasedMapping.class,DNSToSwitchMapping.class)
+Parameter: DFSConfigKeys.NET_TOPOLOGY_NODE_SWITCH_MAPPING_IMPL_KEY
+Parameter: ScriptBasedMapping.class
+Parameter: DNSToSwitchMapping.class
+Callsite No. 546: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_ENABLED_KEY,DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_ENABLED_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_ENABLED_KEY. Inferred value: "dfs.client.write.byte-array-manager.enabled"
+Parameter: DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_ENABLED_DEFAULT
+Callsite No. 547: 
+Content: conf.getClass(DFS_NAMENODE_INODE_ATTRIBUTES_PROVIDER_KEY,null,INodeAttributeProvider.class)
+Parameter: DFS_NAMENODE_INODE_ATTRIBUTES_PROVIDER_KEY. Inferred value: "dfs.namenode.inode.attributes.provider.class"
+Parameter: null
+Parameter: INodeAttributeProvider.class
+Callsite No. 548: 
+Content: conf.get(name)
+Parameter: name
+Callsite No. 549: 
+Content: conf.getInt(IO_FILE_BUFFER_SIZE_KEY,IO_FILE_BUFFER_SIZE_DEFAULT)
+Parameter: IO_FILE_BUFFER_SIZE_KEY
+Parameter: IO_FILE_BUFFER_SIZE_DEFAULT
+Callsite No. 550: 
+Content: getInt(CONF_THREADS,5)
+Parameter: CONF_THREADS. Inferred value: "threads"
+Parameter: 5
+Callsite No. 551: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_NAMENODE_XATTRS_ENABLED_KEY,DFSConfigKeys.DFS_NAMENODE_XATTRS_ENABLED_DEFAULT)
+Parameter: DFSConfigKeys.DFS_NAMENODE_XATTRS_ENABLED_KEY. Inferred value: "dfs.namenode.xattrs.enabled"
+Parameter: DFSConfigKeys.DFS_NAMENODE_XATTRS_ENABLED_DEFAULT
+Callsite No. 552: 
+Content: conf.get(DFSConfigKeys.DFS_METRICS_SESSION_ID_KEY)
+Parameter: DFSConfigKeys.DFS_METRICS_SESSION_ID_KEY. Inferred value: "dfs.metrics.session-id"
+Callsite No. 553: 
+Content: conf.getInt(DFSConfigKeys.DFS_CLIENT_WRITE_MAX_PACKETS_IN_FLIGHT_KEY,DFSConfigKeys.DFS_CLIENT_WRITE_MAX_PACKETS_IN_FLIGHT_DEFAULT)
+Parameter: DFSConfigKeys.DFS_CLIENT_WRITE_MAX_PACKETS_IN_FLIGHT_KEY. Inferred value: "dfs.client.write.max-packets-in-flight"
+Parameter: DFSConfigKeys.DFS_CLIENT_WRITE_MAX_PACKETS_IN_FLIGHT_DEFAULT
+Callsite No. 554: 
+Content: conf.get(DFSConfigKeys.DFS_HA_NAMENODE_ID_KEY)
+Parameter: DFSConfigKeys.DFS_HA_NAMENODE_ID_KEY. Inferred value: "dfs.ha.namenode.id"
+Callsite No. 555: 
+Content: 1000
+Callsite No. 556: 
+Content: getProxy()
+Callsite No. 557: 
+Content: getHostName()
+Callsite No. 558: 
+Content: conf.getLong(DFS_DATANODE_RESTART_REPLICA_EXPIRY_KEY,DFS_DATANODE_RESTART_REPLICA_EXPIRY_DEFAULT)
+Parameter: DFS_DATANODE_RESTART_REPLICA_EXPIRY_KEY. Inferred value: "dfs.datanode.restart.replica.expiration"
+Parameter: DFS_DATANODE_RESTART_REPLICA_EXPIRY_DEFAULT
+Callsite No. 559: 
+Content: conf.getTrimmed(BN_HTTP_ADDRESS_NAME_KEY,BN_HTTP_ADDRESS_DEFAULT)
+Parameter: BN_HTTP_ADDRESS_NAME_KEY. Inferred value: "dfs.namenode.backup.http-address"
+Parameter: BN_HTTP_ADDRESS_DEFAULT. Inferred value: "0.0.0.0:50105"
+Callsite No. 560: 
+Content: conf.getBoolean(DFSConfigKeys.DFS_SUPPORT_APPEND_KEY,DFSConfigKeys.DFS_SUPPORT_APPEND_DEFAULT)
+Parameter: DFSConfigKeys.DFS_SUPPORT_APPEND_KEY. Inferred value: "dfs.support.append"
+Parameter: DFSConfigKeys.DFS_SUPPORT_APPEND_DEFAULT
+Callsite No. 561: 
+Content: getPort()
+Callsite No. 562: 
+Content: conf.get(key)
+Parameter: key
+[INFO] Callsite information analysis finished.
+=======================================================================================
+[INFO] Start printing ORP information to file.
+[INFO] ORP information is extracted and written successfully.
+[INFO] Exiting.
+成功构建 (总时间: 76 分钟 51 秒)

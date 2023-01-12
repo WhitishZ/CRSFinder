@@ -1,0 +1,1395 @@
+Found callsite[0] in File: org.apache.hadoop.yarn.client.AHSProxy.java LineNum: 53 Method name: getProxy(protocol, rmAddress, conf)
+Inferred parameter values: 
+
+Found callsite[1] in File: org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl.java LineNum: 116 Method name: localConf.getClassByName(getProtoClassName(protocol))
+Inferred parameter values: 
+
+Found callsite[2] in File: org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter.java LineNum: 91 Method name: conf.get(YarnConfiguration.APPLICATION_HISTORY_STORE)
+Inferred parameter values: yarn.timeline-service.generic-application-history.store-class, 
+
+Found callsite[3] in File: org.apache.hadoop.yarn.server.sharedcachemanager.ClientProtocolService.java LineNum: 82 Method name: conf.get(YarnConfiguration.SHARED_CACHE_ROOT,            YarnConfiguration.DEFAULT_SHARED_CACHE_ROOT)
+Inferred parameter values: yarn.sharedcache.root-dir, /sharedcache, 
+
+Found callsite[4] in File: org.apache.hadoop.yarn.server.sharedcachemanager.store.InMemorySCMStore.java LineNum: 436 Method name: conf.getInt(YarnConfiguration.IN_MEMORY_STALENESS_PERIOD_MINS,            YarnConfiguration.DEFAULT_IN_MEMORY_STALENESS_PERIOD_MINS)
+Inferred parameter values: yarn.sharedcache.store.in-memory.staleness-period-mins, 
+
+Found callsite[5] in File: org.apache.hadoop.yarn.server.nodemanager.LocalDirsHandlerService.java LineNum: 137 Method name: conf.getBoolean(        YarnConfiguration.NM_DISK_HEALTH_CHECK_ENABLE, true)
+Inferred parameter values: yarn.nodemanager.disk-health-checker.enable, 
+
+Found callsite[6] in File: org.apache.hadoop.yarn.util.timeline.TimelineUtils.java LineNum: 95 Method name: conf.getSocketAddr(          YarnConfiguration.TIMELINE_SERVICE_WEBAPP_ADDRESS,          YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_ADDRESS,          YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_PORT)
+Inferred parameter values: yarn.timeline-service.webapp.address, 
+
+Found callsite[7] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService.java LineNum: 750 Method name: conf.getInt(        YarnConfiguration.NM_LOCALIZER_FETCH_THREAD_COUNT,        YarnConfiguration.DEFAULT_NM_LOCALIZER_FETCH_THREAD_COUNT)
+Inferred parameter values: yarn.nodemanager.localizer.fetch.thread-count, 
+
+Found callsite[8] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.AbstractCSQueue.java LineNum: 262 Method name: getAcls(getQueuePath())
+Inferred parameter values: 
+
+Found callsite[9] in File: org.apache.hadoop.yarn.server.sharedcachemanager.CleanerTask.java LineNum: 78 Method name: conf.getLong(YarnConfiguration.SCM_CLEANER_RESOURCE_SLEEP_MS,              YarnConfiguration.DEFAULT_SCM_CLEANER_RESOURCE_SLEEP_MS)
+Inferred parameter values: yarn.sharedcache.cleaner.resource-sleep-ms, 
+
+Found callsite[10] in File: org.apache.hadoop.yarn.server.timeline.security.TimelineDelegationTokenSecretManagerService.java LineNum: 101 Method name: conf.getClass(YarnConfiguration.TIMELINE_SERVICE_STATE_STORE_CLASS,            LeveldbTimelineStateStore.class,            TimelineStateStore.class)
+Inferred parameter values: yarn.timeline-service.state-store-class, 
+
+Found callsite[11] in File: org.apache.hadoop.yarn.server.sharedcachemanager.ClientProtocolService.java LineNum: 104 Method name: conf.getInt(YarnConfiguration.SCM_CLIENT_SERVER_THREAD_COUNT,                YarnConfiguration.DEFAULT_SCM_CLIENT_SERVER_THREAD_COUNT)
+Inferred parameter values: yarn.sharedcache.client-server.thread-count, 
+
+Found callsite[12] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.AbstractCSQueue.java LineNum: 261 Method name: getState(getQueuePath())
+Inferred parameter values: 
+
+Found callsite[13] in File: org.apache.hadoop.yarn.server.applicationhistoryservice.ApplicationHistoryManagerImpl.java LineNum: 65 Method name: WebAppUtils.getAHSWebAppURLWithoutScheme(conf)
+Inferred parameter values: 
+
+Found callsite[14] in File: org.apache.hadoop.yarn.client.api.impl.YarnClientImpl.java LineNum: 368 Method name: getHostName()
+Inferred parameter values: 
+
+Found callsite[15] in File: org.apache.hadoop.yarn.server.nodemanager.util.CgroupsLCEResourcesHandler.java LineNum: 371 Method name: conf.getInt(YarnConfiguration.NM_VCORES,              YarnConfiguration.DEFAULT_NM_VCORES)
+Inferred parameter values: yarn.nodemanager.resource.cpu-vcores, 
+
+Found callsite[16] in File: org.apache.hadoop.yarn.server.resourcemanager.security.DelegationTokenRenewer.java LineNum: 146 Method name: conf.getInt(        YarnConfiguration.RM_DELEGATION_TOKEN_RENEWER_THREAD_COUNT,        YarnConfiguration.DEFAULT_RM_DELEGATION_TOKEN_RENEWER_THREAD_COUNT)
+Inferred parameter values: yarn.resourcemanager.delegation-token-renewer.thread-count, 
+
+Found callsite[17] in File: org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilterInitializer.java LineNum: 78 Method name: conf.get(HttpServer2.BIND_ADDRESS)
+Inferred parameter values: 
+
+Found callsite[18] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService.java LineNum: 365 Method name: conf.getBoolean(        CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,         false)
+Inferred parameter values: 
+
+Found callsite[19] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler.java LineNum: 215 Method name: conf.getInt(            YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_MB,            YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_MB)
+Inferred parameter values: yarn.scheduler.minimum-allocation-mb, 
+
+Found callsite[20] in File: org.apache.hadoop.yarn.server.resourcemanager.monitor.capacity.ProportionalCapacityPreemptionPolicy.java LineNum: 168 Method name: config.getLong(MONITORING_INTERVAL, 3000)
+Inferred parameter values: yarn.resourcemanager.monitor.capacity.preemption.monitoring_interval, 
+
+Found callsite[21] in File: org.apache.hadoop.yarn.conf.HAUtil.java LineNum: 92 Method name: conf.getTrimmedStringCollection(YarnConfiguration.RM_HA_IDS)
+Inferred parameter values: yarn.resourcemanager.ha.rm-ids, 
+
+Found callsite[22] in File: org.apache.hadoop.yarn.server.resourcemanager.AdminService.java LineNum: 147 Method name: conf.get(YarnConfiguration.YARN_ADMIN_ACL,          YarnConfiguration.DEFAULT_YARN_ADMIN_ACL)
+Inferred parameter values: yarn.admin.acl, *, 
+
+Found callsite[23] in File: org.apache.hadoop.yarn.webapp.log.AggregatedLogsBlock.java LineNum: 82 Method name: conf.getBoolean(YarnConfiguration.LOG_AGGREGATION_ENABLED,        YarnConfiguration.DEFAULT_LOG_AGGREGATION_ENABLED)
+Inferred parameter values: yarn.log-aggregation-enable, 
+
+Found callsite[24] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.java LineNum: 394 Method name: conf.getSocketAddr(        YarnConfiguration.NM_BIND_HOST,        YarnConfiguration.NM_ADDRESS,        YarnConfiguration.DEFAULT_NM_ADDRESS,        YarnConfiguration.DEFAULT_NM_PORT)
+Inferred parameter values: yarn.nodemanager.bind-host, yarn.nodemanager.address, 
+
+Found callsite[25] in File: org.apache.hadoop.yarn.server.nodemanager.LinuxContainerExecutor.java LineNum: 76 Method name: conf         .getInt(YarnConfiguration.NM_CONTAINER_EXECUTOR_SCHED_PRIORITY,          YarnConfiguration.DEFAULT_NM_CONTAINER_EXECUTOR_SCHED_PRIORITY)
+Inferred parameter values: yarn.nodemanager.container-executor.os.sched.priority.adjustment, 
+
+Found callsite[26] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 1321 Method name: this.conf.getLocalityDelayRackMs()
+Inferred parameter values: 
+
+Found callsite[27] in File: org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore.java LineNum: 125 Method name: conf.getBoolean(YarnConfiguration.YARN_INTERMEDIATE_DATA_ENCRYPTION,          YarnConfiguration.DEFAULT_YARN_INTERMEDIATE_DATA_ENCRYPTION)
+Inferred parameter values: yarn.intermediate-data-encryption.enable, 
+
+Found callsite[28] in File: org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl.java LineNum: 154 Method name: conf.getInt(          YarnConfiguration.TIMELINE_SERVICE_CLIENT_MAX_RETRIES,          YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_MAX_RETRIES)
+Inferred parameter values: yarn.timeline-service.client.max-retries, 
+
+Found callsite[29] in File: org.apache.hadoop.registry.server.services.MicroZookeeperService.java LineNum: 135 Method name: conf.getInt(KEY_ZKSERVICE_TICK_TIME,        ZooKeeperServer.DEFAULT_TICK_TIME)
+Inferred parameter values: 
+
+Found callsite[30] in File: org.apache.hadoop.yarn.server.security.BaseContainerTokenSecretManager.java LineNum: 63 Method name: conf.getInt(YarnConfiguration.RM_CONTAINER_ALLOC_EXPIRY_INTERVAL_MS,          YarnConfiguration.DEFAULT_RM_CONTAINER_ALLOC_EXPIRY_INTERVAL_MS)
+Inferred parameter values: yarn.resourcemanager.rm.container-allocation.expiry-interval-ms, 
+
+Found callsite[31] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 267 Method name: conf.get(YarnConfiguration.TIMELINE_SERVICE_WEBAPP_HTTPS_ADDRESS,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_HTTPS_ADDRESS)
+Inferred parameter values: yarn.timeline-service.webapp.https.address, 
+
+Found callsite[32] in File: org.apache.hadoop.yarn.client.RMProxy.java LineNum: 207 Method name: conf.getLong(          YarnConfiguration.CLIENT_FAILOVER_SLEEPTIME_MAX_MS,          rmConnectionRetryIntervalMS)
+Inferred parameter values: yarn.client.failover-sleep-max-ms, 
+
+Found callsite[33] in File: org.apache.hadoop.yarn.server.nodemanager.ContainerExecutor.java LineNum: 350 Method name: conf.getInt(                      YarnConfiguration.NM_RESOURCE_PERCENTAGE_PHYSICAL_CPU_LIMIT,                      YarnConfiguration.DEFAULT_NM_RESOURCE_PERCENTAGE_PHYSICAL_CPU_LIMIT)
+Inferred parameter values: yarn.nodemanager.resource.percentage-physical-cpu-limit, 
+
+Found callsite[34] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.java LineNum: 241 Method name: conf.getLong(YarnConfiguration.NM_PROCESS_KILL_WAIT_MS,            YarnConfiguration.DEFAULT_NM_PROCESS_KILL_WAIT_MS)
+Inferred parameter values: yarn.nodemanager.process-kill-wait.ms, 
+
+Found callsite[35] in File: org.apache.hadoop.yarn.server.resourcemanager.recovery.ZKRMStateStore.java LineNum: 236 Method name: conf.getLong(YarnConfiguration.RM_ZK_RETRY_INTERVAL_MS,              YarnConfiguration.DEFAULT_RM_ZK_RETRY_INTERVAL_MS)
+Inferred parameter values: yarn.resourcemanager.zk-retry-interval-ms, 
+
+Found callsite[36] in File: org.apache.hadoop.yarn.nodelabels.FileSystemNodeLabelsStore.java LineNum: 104 Method name: confCopy.get(YarnConfiguration.FS_NODE_LABELS_STORE_RETRY_POLICY_SPEC,            YarnConfiguration.DEFAULT_FS_NODE_LABELS_STORE_RETRY_POLICY_SPEC)
+Inferred parameter values: yarn.node-labels.fs-store.retry-policy-spec, 2000, 500, 
+
+Found callsite[37] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.java LineNum: 427 Method name: conf.getBoolean(        CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,         false)
+Inferred parameter values: 
+
+Found callsite[38] in File: org.apache.hadoop.yarn.webapp.log.AggregatedLogsBlock.java LineNum: 90 Method name: conf.get(        YarnConfiguration.NM_REMOTE_APP_LOG_DIR,        YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR)
+Inferred parameter values: yarn.nodemanager.remote-app-log-dir, /tmp/logs, 
+
+Found callsite[39] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.QueuePlacementPolicy.java LineNum: 131 Method name: conf.getBoolean(        FairSchedulerConfiguration.USER_AS_DEFAULT_QUEUE,        FairSchedulerConfiguration.DEFAULT_USER_AS_DEFAULT_QUEUE)
+Inferred parameter values: yarn.scheduler.fair.user-as-default-queue, 
+
+Found callsite[40] in File: org.apache.hadoop.yarn.server.sharedcachemanager.store.InMemorySCMStore.java LineNum: 189 Method name: conf.get(YarnConfiguration.SHARED_CACHE_ROOT,            YarnConfiguration.DEFAULT_SHARED_CACHE_ROOT)
+Inferred parameter values: yarn.sharedcache.root-dir, /sharedcache, 
+
+Found callsite[41] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.AppLogAggregatorImpl.java LineNum: 151 Method name: conf.getInt(NM_LOG_AGGREGATION_NUM_LOG_FILES_SIZE_PER_APP,            DEFAULT_NM_LOG_AGGREGATION_NUM_LOG_FILES_SIZE_PER_APP)
+Inferred parameter values: yarn.nodemanager.log-aggregation.num-log-files-per-app, 
+
+Found callsite[42] in File: org.apache.hadoop.yarn.applications.distributedshell.Client.java LineNum: 833 Method name: conf.getBoolean(YarnConfiguration.TIMELINE_SERVICE_ENABLED,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ENABLED)
+Inferred parameter values: yarn.timeline-service.enabled, 
+
+Found callsite[43] in File: org.apache.hadoop.yarn.server.resourcemanager.metrics.SystemMetricsPublisher.java LineNum: 204 Method name: conf.getInt(                YarnConfiguration.RM_SYSTEM_METRICS_PUBLISHER_DISPATCHER_POOL_SIZE,                YarnConfiguration.DEFAULT_RM_SYSTEM_METRICS_PUBLISHER_DISPATCHER_POOL_SIZE)
+Inferred parameter values: yarn.resourcemanager.system-metrics-publisher.dispatcher.pool-size, 
+
+Found callsite[44] in File: org.apache.hadoop.yarn.server.nodemanager.util.CgroupsLCEResourcesHandler.java LineNum: 106 Method name: conf.getBoolean(YarnConfiguration.            NM_LINUX_CONTAINER_CGROUPS_MOUNT, false)
+Inferred parameter values: yarn.nodemanager.linux-container-executor.cgroups.mount, 
+
+Found callsite[45] in File: org.apache.hadoop.yarn.security.AdminACLsManager.java LineNum: 66 Method name: conf.get(          YarnConfiguration.YARN_ADMIN_ACL,          YarnConfiguration.DEFAULT_YARN_ADMIN_ACL)
+Inferred parameter values: yarn.admin.acl, *, 
+
+Found callsite[46] in File: org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStoreFactory.java LineNum: 31 Method name: conf.getClass(YarnConfiguration.RM_STORE,            MemoryRMStateStore.class, RMStateStore.class)
+Inferred parameter values: yarn.resourcemanager.store.class, 
+
+Found callsite[47] in File: org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM.java LineNum: 73 Method name: conf.getLong(YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS,            YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS)
+Inferred parameter values: yarn.nm.liveness-monitor.expiry-interval-ms, 
+
+Found callsite[48] in File: org.apache.hadoop.yarn.server.resourcemanager.reservation.AbstractReservationSystem.java LineNum: 385 Method name: conf.getClassByName(agentClassName)
+Inferred parameter values: 
+
+Found callsite[49] in File: org.apache.hadoop.yarn.factory.providers.RpcFactoryProvider.java LineNum: 46 Method name: conf.get(        YarnConfiguration.IPC_SERVER_FACTORY_CLASS,        YarnConfiguration.DEFAULT_IPC_SERVER_FACTORY_CLASS)
+Inferred parameter values: yarn.ipc.server.factory.class, org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl, 
+
+Found callsite[50] in File: org.apache.hadoop.yarn.server.nodemanager.ContainerExecutor.java LineNum: 325 Method name: conf           .getInt(YarnConfiguration.NM_CONTAINER_EXECUTOR_SCHED_PRIORITY,           YarnConfiguration.DEFAULT_NM_CONTAINER_EXECUTOR_SCHED_PRIORITY)
+Inferred parameter values: yarn.nodemanager.container-executor.os.sched.priority.adjustment, 
+
+Found callsite[51] in File: org.apache.hadoop.yarn.util.timeline.TimelineUtils.java LineNum: 90 Method name: conf.getSocketAddr(          YarnConfiguration.TIMELINE_SERVICE_WEBAPP_HTTPS_ADDRESS,          YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_HTTPS_ADDRESS,          YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_HTTPS_PORT)
+Inferred parameter values: yarn.timeline-service.webapp.https.address, 
+
+Found callsite[52] in File: org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore.java LineNum: 279 Method name: conf.getLong(          YarnConfiguration.TIMELINE_SERVICE_LEVELDB_TTL_INTERVAL_MS,          YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_TTL_INTERVAL_MS)
+Inferred parameter values: yarn.timeline-service.leveldb-timeline-store.ttl-interval-ms, 
+
+Found callsite[53] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 87 Method name: conf.get(YarnConfiguration.RM_WEBAPP_HTTPS_ADDRESS,          YarnConfiguration.DEFAULT_RM_WEBAPP_HTTPS_ADDRESS)
+Inferred parameter values: yarn.resourcemanager.webapp.https.address, 
+
+Found callsite[54] in File: org.apache.hadoop.yarn.util.ProcfsBasedProcessTree.java LineNum: 157 Method name: conf.getBoolean(YarnConfiguration.PROCFS_USE_SMAPS_BASED_RSS_ENABLED,            YarnConfiguration.DEFAULT_PROCFS_USE_SMAPS_BASED_RSS_ENABLED)
+Inferred parameter values: yarn.nodemanager.container-monitor.procfs-tree.smaps-based-rss.enabled, 
+
+Found callsite[55] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.java LineNum: 514 Method name: conf.getBoolean(YarnConfiguration.RM_RESERVATION_SYSTEM_ENABLE,          YarnConfiguration.DEFAULT_RM_RESERVATION_SYSTEM_ENABLE)
+Inferred parameter values: yarn.resourcemanager.reservation-system.enable, 
+
+Found callsite[56] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.java LineNum: 165 Method name: conf.getInt(      YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_MB,      YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_MB)
+Inferred parameter values: yarn.scheduler.maximum-allocation-mb, 
+
+Found callsite[57] in File: org.apache.hadoop.yarn.server.sharedcachemanager.store.InMemorySCMStore.java LineNum: 462 Method name: conf.getInt(YarnConfiguration.IN_MEMORY_CHECK_PERIOD_MINS,            YarnConfiguration.DEFAULT_IN_MEMORY_CHECK_PERIOD_MINS)
+Inferred parameter values: yarn.sharedcache.store.in-memory.check-period-mins, 
+
+Found callsite[58] in File: org.apache.hadoop.yarn.server.sharedcachemanager.CleanerService.java LineNum: 149 Method name: conf.get(YarnConfiguration.SHARED_CACHE_ROOT,            YarnConfiguration.DEFAULT_SHARED_CACHE_ROOT)
+Inferred parameter values: yarn.sharedcache.root-dir, /sharedcache, 
+
+Found callsite[59] in File: org.apache.hadoop.yarn.server.nodemanager.NodeHealthScriptRunner.java LineNum: 215 Method name: conf.getStrings(YarnConfiguration.NM_HEALTH_CHECK_SCRIPT_OPTS,        new String[] {})
+Inferred parameter values: yarn.nodemanager.health-checker.script.opts, 
+
+Found callsite[60] in File: org.apache.hadoop.yarn.conf.HAUtil.java LineNum: 69 Method name: conf.getBoolean(YarnConfiguration.AUTO_FAILOVER_EMBEDDED,        YarnConfiguration.DEFAULT_AUTO_FAILOVER_EMBEDDED)
+Inferred parameter values: yarn.resourcemanager.ha.automatic-failover.embedded, 
+
+Found callsite[61] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch.java LineNum: 713 Method name: conf.get(YarnConfiguration.NM_ENV_WHITELIST, YarnConfiguration.DEFAULT_NM_ENV_WHITELIST)
+Inferred parameter values: yarn.nodemanager.env-whitelist, 
+
+Found callsite[62] in File: org.apache.hadoop.yarn.server.applicationhistoryservice.ApplicationHistoryServer.java LineNum: 187 Method name: conf.get(YarnConfiguration.APPLICATION_HISTORY_STORE)
+Inferred parameter values: yarn.timeline-service.generic-application-history.store-class, 
+
+Found callsite[63] in File: org.apache.hadoop.yarn.server.sharedcachemanager.webapp.SCMWebServer.java LineNum: 58 Method name: conf.get(YarnConfiguration.SCM_WEBAPP_ADDRESS,        YarnConfiguration.DEFAULT_SCM_WEBAPP_ADDRESS)
+Inferred parameter values: yarn.sharedcache.webapp.address, 
+
+Found callsite[64] in File: org.apache.hadoop.yarn.server.resourcemanager.ClientRMService.java LineNum: 222 Method name: conf.getInt(YarnConfiguration.RM_CLIENT_THREAD_COUNT,                 YarnConfiguration.DEFAULT_RM_CLIENT_THREAD_COUNT)
+Inferred parameter values: yarn.resourcemanager.client.thread-count, 
+
+Found callsite[65] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 352 Method name: sslConf.get("ssl.server.keystore.type", "jks")
+Inferred parameter values: ssl.server.keystore.type, jks, 
+
+Found callsite[66] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.sharedcache.SharedCacheUploader.java LineNum: 172 Method name: conf.getInt(YarnConfiguration.SHARED_CACHE_NM_UPLOADER_REPLICATION_FACTOR,              YarnConfiguration.DEFAULT_SHARED_CACHE_NM_UPLOADER_REPLICATION_FACTOR)
+Inferred parameter values: yarn.sharedcache.nm.uploader.replication.factor, 
+
+Found callsite[67] in File: org.apache.hadoop.yarn.event.AsyncDispatcher.java LineNum: 118 Method name: conf.getBoolean(Dispatcher.DISPATCHER_EXIT_ON_ERROR_KEY,          Dispatcher.DEFAULT_DISPATCHER_EXIT_ON_ERROR)
+Inferred parameter values: yarn.dispatcher.exit-on-error, 
+
+Found callsite[68] in File: org.apache.hadoop.yarn.applications.distributedshell.Client.java LineNum: 608 Method name: conf.getBoolean(YarnConfiguration.IS_MINI_YARN_CLUSTER, false)
+Inferred parameter values: yarn.is.minicluster, 
+
+Found callsite[69] in File: org.apache.hadoop.yarn.webapp.WebApps.java LineNum: 249 Method name: conf.get(spnegoKeytabKey)
+Inferred parameter values: 
+
+Found callsite[70] in File: org.apache.hadoop.yarn.applications.distributedshell.Client.java LineNum: 672 Method name: conf.get(YarnConfiguration.RM_PRINCIPAL)
+Inferred parameter values: yarn.resourcemanager.principal, 
+
+Found callsite[71] in File: org.apache.hadoop.yarn.factory.providers.RpcFactoryProvider.java LineNum: 53 Method name: conf.get(        YarnConfiguration.IPC_CLIENT_FACTORY_CLASS,        YarnConfiguration.DEFAULT_IPC_CLIENT_FACTORY_CLASS)
+Inferred parameter values: yarn.ipc.client.factory.class, org.apache.hadoop.yarn.factories.impl.pb.RpcClientFactoryPBImpl, 
+
+Found callsite[72] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.AppLogAggregatorImpl.java LineNum: 159 Method name: conf.getLong(      YarnConfiguration        .NM_LOG_AGGREGATION_ROLL_MONITORING_INTERVAL_SECONDS,      YarnConfiguration        .DEFAULT_NM_LOG_AGGREGATION_ROLL_MONITORING_INTERVAL_SECONDS)
+Inferred parameter values: yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds, 
+
+Found callsite[73] in File: org.apache.hadoop.yarn.server.resourcemanager.security.DelegationTokenRenewer.java LineNum: 130 Method name: conf.getBoolean(YarnConfiguration.LOG_AGGREGATION_ENABLED,            YarnConfiguration.DEFAULT_LOG_AGGREGATION_ENABLED)
+Inferred parameter values: yarn.log-aggregation-enable, 
+
+Found callsite[74] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.java LineNum: 301 Method name: conf.get(YarnConfiguration.RM_RESERVATION_SYSTEM_CLASS,            AbstractReservationSystem.getDefaultReservationSystem(scheduler))
+Inferred parameter values: yarn.resourcemanager.reservation-system.class, 
+
+Found callsite[75] in File: org.apache.hadoop.yarn.server.resourcemanager.security.DelegationTokenRenewer.java LineNum: 770 Method name: conf.getLong(              YarnConfiguration.RM_DELAYED_DELEGATION_TOKEN_REMOVAL_INTERVAL_MS,              YarnConfiguration.DEFAULT_RM_DELAYED_DELEGATION_TOKEN_REMOVAL_INTERVAL_MS)
+Inferred parameter values: yarn.resourcemanager.delayed.delegation-token.removal-interval-ms, 
+
+Found callsite[76] in File: org.apache.hadoop.yarn.server.webproxy.WebAppProxy.java LineNum: 59 Method name: conf.get(CommonConfigurationKeys.HADOOP_SECURITY_AUTHENTICATION)
+Inferred parameter values: 
+
+Found callsite[77] in File: org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore.java LineNum: 214 Method name: conf.get(YarnConfiguration.TIMELINE_SERVICE_LEVELDB_PATH)
+Inferred parameter values: yarn.timeline-service.leveldb-timeline-store.path, 
+
+Found callsite[78] in File: org.apache.hadoop.yarn.server.resourcemanager.monitor.capacity.ProportionalCapacityPreemptionPolicy.java LineNum: 170 Method name: config.getFloat(TOTAL_PREEMPTION_PER_ROUND, (float) 0.1)
+Inferred parameter values: yarn.resourcemanager.monitor.capacity.preemption.total_preemption_per_round, 
+
+Found callsite[79] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch.java LineNum: 720 Method name: conf.get(      YarnConfiguration.NM_ADMIN_USER_ENV,      YarnConfiguration.DEFAULT_NM_ADMIN_USER_ENV)
+Inferred parameter values: yarn.nodemanager.admin-env, MALLOC_ARENA_MAX=$MALLOC_ARENA_MAX, 
+
+Found callsite[80] in File: org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore.java LineNum: 119 Method name: conf.getInt(YarnConfiguration.FS_RM_STATE_STORE_NUM_RETRIES,            YarnConfiguration.DEFAULT_FS_RM_STATE_STORE_NUM_RETRIES)
+Inferred parameter values: yarn.resourcemanager.fs.state-store.num-retries, 
+
+Found callsite[81] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService.java LineNum: 165 Method name: conf.getInt(YarnConfiguration.RM_RESOURCE_TRACKER_CLIENT_THREAD_COUNT,               YarnConfiguration.DEFAULT_RM_RESOURCE_TRACKER_CLIENT_THREAD_COUNT)
+Inferred parameter values: yarn.resourcemanager.resource-tracker.client.thread-count, 
+
+Found callsite[82] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.java LineNum: 370 Method name: conf.getLong(YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS,        YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS)
+Inferred parameter values: yarn.nm.liveness-monitor.expiry-interval-ms, 
+
+Found callsite[83] in File: org.apache.hadoop.yarn.server.nodemanager.ContainerExecutor.java LineNum: 334 Method name: conf            .getBoolean(                YarnConfiguration.NM_WINDOWS_CONTAINER_MEMORY_LIMIT_ENABLED,                YarnConfiguration.DEFAULT_NM_WINDOWS_CONTAINER_MEMORY_LIMIT_ENABLED)
+Inferred parameter values: yarn.nodemanager.windows-container.memory-limit.enabled, 
+
+Found callsite[84] in File: org.apache.hadoop.yarn.server.resourcemanager.security.DelegationTokenRenewer.java LineNum: 136 Method name: conf.getLong(RM_SYSTEM_CREDENTIALS_VALID_TIME_REMAINING,          DEFAULT_RM_SYSTEM_CREDENTIALS_VALID_TIME_REMAINING)
+Inferred parameter values: yarn.resourcemanager.system-credentials.valid-time-remaining, 
+
+Found callsite[85] in File: org.apache.hadoop.yarn.server.resourcemanager.security.QueueACLsManager.java LineNum: 40 Method name: conf.getBoolean(YarnConfiguration.YARN_ACL_ENABLE,        YarnConfiguration.DEFAULT_YARN_ACL_ENABLE)
+Inferred parameter values: yarn.acl.enable, 
+
+Found callsite[86] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.NonAggregatingLogHandler.java LineNum: 206 Method name: conf.getInt(            YarnConfiguration.NM_LOG_DELETION_THREADS_COUNT,            YarnConfiguration.DEFAULT_NM_LOG_DELETE_THREAD_COUNT)
+Inferred parameter values: yarn.nodemanager.log.deletion-threads-count, 
+
+Found callsite[87] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.QueueMetrics.java LineNum: 192 Method name: conf.get(YarnConfiguration.RM_METRICS_RUNTIME_BUCKETS,		        YarnConfiguration.DEFAULT_RM_METRICS_RUNTIME_BUCKETS)
+Inferred parameter values: yarn.resourcemanager.metrics.runtime.buckets, 60,300,1440, 
+
+Found callsite[88] in File: org.apache.hadoop.yarn.conf.HAUtil.java LineNum: 251 Method name: conf.getTrimmed(confKey)
+Inferred parameter values: 
+
+Found callsite[89] in File: org.apache.hadoop.yarn.server.resourcemanager.recovery.ZKRMStateStore.java LineNum: 216 Method name: conf.get(YarnConfiguration.RM_ZK_ADDRESS)
+Inferred parameter values: yarn.resourcemanager.zk-address, 
+
+Found callsite[90] in File: org.apache.hadoop.yarn.logaggregation.AggregatedLogFormat.java LineNum: 397 Method name: conf.get(              YarnConfiguration.NM_LOG_AGG_COMPRESSION_TYPE,              YarnConfiguration.DEFAULT_NM_LOG_AGG_COMPRESSION_TYPE)
+Inferred parameter values: yarn.nodemanager.log-aggregation.compression-type, none, 
+
+Found callsite[91] in File: org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilterInitializer.java LineNum: 67 Method name: conf.get(propName)
+Inferred parameter values: 
+
+Found callsite[92] in File: org.apache.hadoop.yarn.server.resourcemanager.EmbeddedElectorService.java LineNum: 89 Method name: conf.getInt(        CommonConfigurationKeys.HA_FC_ELECTOR_ZK_OP_RETRIES_KEY,        CommonConfigurationKeys.HA_FC_ELECTOR_ZK_OP_RETRIES_DEFAULT)
+Inferred parameter values: 
+
+Found callsite[93] in File: org.apache.hadoop.yarn.conf.YarnConfiguration.java LineNum: 1827 Method name: conf.get(YarnConfiguration.RM_CLUSTER_ID)
+Inferred parameter values: yarn.resourcemanager.cluster-id, 
+
+Found callsite[94] in File: org.apache.hadoop.yarn.server.nodemanager.DockerContainerExecutor.java LineNum: 99 Method name: get(CommonConfigurationKeys.HADOOP_SECURITY_AUTHENTICATION)
+Inferred parameter values: 
+
+Found callsite[95] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.sharedcache.SharedCacheUploadService.java LineNum: 93 Method name: conf.getSocketAddr(YarnConfiguration.SCM_UPLOADER_SERVER_ADDRESS,            YarnConfiguration.DEFAULT_SCM_UPLOADER_SERVER_ADDRESS,            YarnConfiguration.DEFAULT_SCM_UPLOADER_SERVER_PORT)
+Inferred parameter values: yarn.sharedcache.uploader.server.address, 
+
+Found callsite[96] in File: org.apache.hadoop.yarn.server.nodemanager.DeletionService.java LineNum: 119 Method name: conf.getInt(YarnConfiguration.NM_DELETE_THREAD_COUNT,          YarnConfiguration.DEFAULT_NM_DELETE_THREAD_COUNT)
+Inferred parameter values: yarn.nodemanager.delete.thread-count, 
+
+Found callsite[97] in File: org.apache.hadoop.yarn.server.nodemanager.LocalDirsHandlerService.java LineNum: 108 Method name: conf.getTrimmedStrings(YarnConfiguration.NM_LOG_DIRS)
+Inferred parameter values: yarn.nodemanager.log-dirs, 
+
+Found callsite[98] in File: org.apache.hadoop.yarn.logaggregation.AggregatedLogDeletionService.java LineNum: 229 Method name: conf.getBoolean(YarnConfiguration.LOG_AGGREGATION_ENABLED,        YarnConfiguration.DEFAULT_LOG_AGGREGATION_ENABLED)
+Inferred parameter values: yarn.log-aggregation-enable, 
+
+Found callsite[99] in File: org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC.java LineNum: 48 Method name: getClient(protocol, 1,        addr, conf)
+Inferred parameter values: 
+
+Found callsite[100] in File: org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore.java LineNum: 238 Method name: conf.getBoolean(YarnConfiguration.TIMELINE_SERVICE_TTL_ENABLE, true)
+Inferred parameter values: yarn.timeline-service.ttl-enable, 
+
+Found callsite[101] in File: org.apache.hadoop.yarn.client.RMProxy.java LineNum: 161 Method name: conf.getClass(YarnConfiguration.CLIENT_FAILOVER_PROXY_PROVIDER,            defaultProviderClass, RMFailoverProxyProvider.class)
+Inferred parameter values: yarn.client.failover-proxy-provider, 
+
+Found callsite[102] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.AbstractCSQueue.java LineNum: 291 Method name: getReservationContinueLook()
+Inferred parameter values: 
+
+Found callsite[103] in File: org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.java LineNum: 148 Method name: conf.getInt(            YarnConfiguration.NM_VCORES, YarnConfiguration.DEFAULT_NM_VCORES)
+Inferred parameter values: yarn.nodemanager.resource.cpu-vcores, 
+
+Found callsite[104] in File: org.apache.hadoop.yarn.client.api.async.impl.NMClientAsyncImpl.java LineNum: 104 Method name: conf.getInt(        YarnConfiguration.NM_CLIENT_ASYNC_THREAD_POOL_MAX_SIZE,        YarnConfiguration.DEFAULT_NM_CLIENT_ASYNC_THREAD_POOL_MAX_SIZE)
+Inferred parameter values: yarn.client.nodemanager-client-async.thread-pool-max-size, 
+
+Found callsite[105] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.AbstractCSQueue.java LineNum: 237 Method name: getAccessibleNodeLabels(getQueuePath())
+Inferred parameter values: 
+
+Found callsite[106] in File: org.apache.hadoop.yarn.server.applicationhistoryservice.ApplicationHistoryServer.java LineNum: 232 Method name: conf.getBoolean(YarnConfiguration          .TIMELINE_SERVICE_HTTP_CROSS_ORIGIN_ENABLED, YarnConfiguration              .TIMELINE_SERVICE_HTTP_CROSS_ORIGIN_ENABLED_DEFAULT)
+Inferred parameter values: yarn.timeline-service.http-cross-origin.enabled, 
+
+Found callsite[107] in File: org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter.java LineNum: 133 Method name: conf.get(YarnConfiguration.APPLICATION_HISTORY_STORE,                  NullApplicationHistoryStore.class.getName())
+Inferred parameter values: yarn.timeline-service.generic-application-history.store-class, 
+
+Found callsite[108] in File: org.apache.hadoop.yarn.server.nodemanager.DockerContainerExecutor.java LineNum: 103 Method name: get(YarnConfiguration.NM_DOCKER_CONTAINER_EXECUTOR_EXEC_NAME,      YarnConfiguration.NM_DEFAULT_DOCKER_CONTAINER_EXECUTOR_EXEC_NAME)
+Inferred parameter values: yarn.nodemanager.docker-container-executor.exec-name, /usr/bin/docker, 
+
+Found callsite[109] in File: org.apache.hadoop.yarn.server.nodemanager.LocalDirsHandlerService.java LineNum: 103 Method name: conf              .getTrimmedStrings(YarnConfiguration.NM_LOCAL_DIRS)
+Inferred parameter values: yarn.nodemanager.local-dirs, 
+
+Found callsite[110] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.java LineNum: 654 Method name: conf.getBoolean(Dispatcher.DISPATCHER_EXIT_ON_ERROR_KEY,            Dispatcher.DEFAULT_DISPATCHER_EXIT_ON_ERROR)
+Inferred parameter values: yarn.dispatcher.exit-on-error, 
+
+Found callsite[111] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch.java LineNum: 691 Method name: conf.get(            YarnConfiguration.NM_USER_HOME_DIR,             YarnConfiguration.DEFAULT_NM_USER_HOME_DIR            )
+Inferred parameter values: yarn.nodemanager.user-home-dir, /home/, 
+
+Found callsite[112] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.AbstractYarnScheduler.java LineNum: 117 Method name: conf.getInt(YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS,          YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS)
+Inferred parameter values: yarn.nm.liveness-monitor.expiry-interval-ms, 
+
+Found callsite[113] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.java LineNum: 609 Method name: conf.getInstances(            YarnConfiguration.RM_SCHEDULER_MONITOR_POLICIES,            SchedulingEditPolicy.class)
+Inferred parameter values: yarn.resourcemanager.scheduler.monitor.policies, 
+
+Found callsite[114] in File: org.apache.hadoop.yarn.client.RMProxy.java LineNum: 178 Method name: conf.getLong(            YarnConfiguration.RESOURCEMANAGER_CONNECT_RETRY_INTERVAL_MS,            YarnConfiguration                .DEFAULT_RESOURCEMANAGER_CONNECT_RETRY_INTERVAL_MS)
+Inferred parameter values: yarn.resourcemanager.connect.retry-interval.ms, 
+
+Found callsite[115] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 184 Method name: conf.getSocketAddr(              rmId == null                  ? YarnConfiguration.RM_WEBAPP_HTTPS_ADDRESS                  : HAUtil.addSuffix(                  YarnConfiguration.RM_WEBAPP_HTTPS_ADDRESS, rmId),              YarnConfiguration.DEFAULT_RM_WEBAPP_HTTPS_ADDRESS,              YarnConfiguration.DEFAULT_RM_WEBAPP_HTTPS_PORT)
+Inferred parameter values: 
+
+Found callsite[116] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.java LineNum: 1256 Method name: conf.getSocketAddr(YarnConfiguration.RM_ADDRESS,      YarnConfiguration.DEFAULT_RM_ADDRESS, YarnConfiguration.DEFAULT_RM_PORT)
+Inferred parameter values: yarn.resourcemanager.address, 
+
+Found callsite[117] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.java LineNum: 180 Method name: conf.getInt(      YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_VCORES,      YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_VCORES)
+Inferred parameter values: yarn.scheduler.minimum-allocation-vcores, 
+
+Found callsite[118] in File: org.apache.hadoop.yarn.client.ServerProxy.java LineNum: 55 Method name: conf.getLong(connectRetryIntervalStr, defRetryInterval)
+Inferred parameter values: 
+
+Found callsite[119] in File: org.apache.hadoop.yarn.logaggregation.AggregatedLogDeletionService.java LineNum: 205 Method name: conf        .getLong(            YarnConfiguration.LOG_AGGREGATION_RETAIN_CHECK_INTERVAL_SECONDS,            YarnConfiguration.DEFAULT_LOG_AGGREGATION_RETAIN_CHECK_INTERVAL_SECONDS)
+Inferred parameter values: yarn.log-aggregation.retain-check-interval-seconds, 
+
+Found callsite[120] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 98 Method name: conf.get(YarnConfiguration.PROXY_ADDRESS)
+Inferred parameter values: yarn.web-proxy.address, 
+
+Found callsite[121] in File: org.apache.hadoop.yarn.server.resourcemanager.NodesListManager.java LineNum: 206 Method name: conf.get(YarnConfiguration.DEFAULT_RM_NODES_EXCLUDE_FILE_PATH)
+Inferred parameter values: , 
+
+Found callsite[122] in File: org.apache.hadoop.yarn.server.resourcemanager.NodesListManager.java LineNum: 98 Method name: conf.get(YarnConfiguration.RM_NODES_EXCLUDE_FILE_PATH,             YarnConfiguration.DEFAULT_RM_NODES_EXCLUDE_FILE_PATH)
+Inferred parameter values: yarn.resourcemanager.nodes.exclude-path, , 
+
+Found callsite[123] in File: org.apache.hadoop.yarn.server.timeline.webapp.CrossOriginFilterInitializer.java LineNum: 43 Method name: conf.getValByRegex(PREFIX)
+Inferred parameter values: yarn.timeline-service.http-cross-origin., 
+
+Found callsite[124] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 1328 Method name: this.conf.getPreemptionInterval()
+Inferred parameter values: 
+
+Found callsite[125] in File: org.apache.hadoop.yarn.server.sharedcachemanager.ClientProtocolService.java LineNum: 89 Method name: conf.getSocketAddr(YarnConfiguration.SCM_CLIENT_SERVER_ADDRESS,        YarnConfiguration.DEFAULT_SCM_CLIENT_SERVER_ADDRESS,        YarnConfiguration.DEFAULT_SCM_CLIENT_SERVER_PORT)
+Inferred parameter values: yarn.sharedcache.client-server.address, 
+
+Found callsite[126] in File: org.apache.hadoop.yarn.server.nodemanager.LinuxContainerExecutor.java LineNum: 162 Method name: conf.get(YarnConfiguration.NM_LINUX_CONTAINER_EXECUTOR_PATH, defaultPath)
+Inferred parameter values: yarn.nodemanager.linux-container-executor.path, 
+
+Found callsite[127] in File: org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl.java LineNum: 166 Method name: conf.getInt(        YarnConfiguration.TIMELINE_SERVICE_CLIENT_MAX_RETRIES,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_MAX_RETRIES)
+Inferred parameter values: yarn.timeline-service.client.max-retries, 
+
+Found callsite[128] in File: org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.java LineNum: 142 Method name: conf.getFloat(            YarnConfiguration.NM_VMEM_PMEM_RATIO,             YarnConfiguration.DEFAULT_NM_VMEM_PMEM_RATIO)
+Inferred parameter values: yarn.nodemanager.vmem-pmem-ratio, 
+
+Found callsite[129] in File: org.apache.hadoop.yarn.server.applicationhistoryservice.FileSystemApplicationHistoryStore.java LineNum: 122 Method name: conf.get("hadoop.tmp.dir")
+Inferred parameter values: hadoop.tmp.dir, 
+
+Found callsite[130] in File: org.apache.hadoop.yarn.server.applicationhistoryservice.ApplicationHistoryClientService.java LineNum: 95 Method name: conf.getInt(            YarnConfiguration.TIMELINE_SERVICE_HANDLER_THREAD_COUNT,            YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_THREAD_COUNT)
+Inferred parameter values: yarn.timeline-service.handler-thread-count, 
+
+Found callsite[131] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService.java LineNum: 245 Method name: conf.getLong(YarnConfiguration.NM_LOCALIZER_CACHE_TARGET_SIZE_MB, YarnConfiguration.DEFAULT_NM_LOCALIZER_CACHE_TARGET_SIZE_MB)
+Inferred parameter values: yarn.nodemanager.localizer.cache.target-size-mb, 
+
+Found callsite[132] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 1320 Method name: this.conf.getLocalityDelayNodeMs()
+Inferred parameter values: 
+
+Found callsite[133] in File: org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter.java LineNum: 114 Method name: conf            .getInt(              YarnConfiguration.RM_HISTORY_WRITER_MULTI_THREADED_DISPATCHER_POOL_SIZE,              YarnConfiguration.DEFAULT_RM_HISTORY_WRITER_MULTI_THREADED_DISPATCHER_POOL_SIZE)
+Inferred parameter values: yarn.resourcemanager.history-writer.multi-threaded-dispatcher.pool-size, 
+
+Found callsite[134] in File: org.apache.hadoop.yarn.server.resourcemanager.security.RMContainerTokenSecretManager.java LineNum: 75 Method name: conf.getLong(YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS,            YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS)
+Inferred parameter values: yarn.nm.liveness-monitor.expiry-interval-ms, 
+
+Found callsite[135] in File: org.apache.hadoop.registry.client.impl.zk.RegistrySecurity.java LineNum: 690 Method name: configuration.getAppConfigurationEntry(context)
+Inferred parameter values: 
+
+Found callsite[136] in File: org.apache.hadoop.yarn.server.nodemanager.ContainerExecutor.java LineNum: 322 Method name: conf.get(YarnConfiguration.NM_CONTAINER_EXECUTOR_SCHED_PRIORITY)
+Inferred parameter values: yarn.nodemanager.container-executor.os.sched.priority.adjustment, 
+
+Found callsite[137] in File: org.apache.hadoop.yarn.server.nodemanager.NodeHealthScriptRunner.java LineNum: 210 Method name: conf.getLong(YarnConfiguration.NM_HEALTH_CHECK_INTERVAL_MS,        YarnConfiguration.DEFAULT_NM_HEALTH_CHECK_INTERVAL_MS)
+Inferred parameter values: yarn.nodemanager.health-checker.interval-ms, 
+
+Found callsite[138] in File: org.apache.hadoop.yarn.server.resourcemanager.metrics.SystemMetricsPublisher.java LineNum: 80 Method name: conf.getBoolean(YarnConfiguration.RM_SYSTEM_METRICS_PUBLISHER_ENABLED,            YarnConfiguration.DEFAULT_RM_SYSTEM_METRICS_PUBLISHER_ENABLED)
+Inferred parameter values: yarn.resourcemanager.system-metrics-publisher.enabled, 
+
+Found callsite[139] in File: org.apache.hadoop.yarn.server.nodemanager.LinuxContainerExecutor.java LineNum: 74 Method name: conf.get(YarnConfiguration.NM_CONTAINER_EXECUTOR_SCHED_PRIORITY)
+Inferred parameter values: yarn.nodemanager.container-executor.os.sched.priority.adjustment, 
+
+Found callsite[140] in File: org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter.java LineNum: 90 Method name: conf.get(YarnConfiguration.APPLICATION_HISTORY_STORE)
+Inferred parameter values: yarn.timeline-service.generic-application-history.store-class, 
+
+Found callsite[141] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 1312 Method name: this.conf.getMinimumAllocation()
+Inferred parameter values: 
+
+Found callsite[142] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 1319 Method name: this.conf.getLocalityThresholdRack()
+Inferred parameter values: 
+
+Found callsite[143] in File: org.apache.hadoop.yarn.client.api.impl.YarnClientImpl.java LineNum: 145 Method name: conf.getLong(YarnConfiguration.YARN_CLIENT_APPLICATION_CLIENT_PROTOCOL_POLL_INTERVAL_MS,          YarnConfiguration.DEFAULT_YARN_CLIENT_APPLICATION_CLIENT_PROTOCOL_POLL_INTERVAL_MS)
+Inferred parameter values: yarn.client.application-client-protocol.poll-interval-ms, 
+
+Found callsite[144] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 270 Method name: conf.get(YarnConfiguration.TIMELINE_SERVICE_WEBAPP_ADDRESS,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_ADDRESS)
+Inferred parameter values: yarn.timeline-service.webapp.address, 
+
+Found callsite[145] in File: org.apache.hadoop.yarn.client.api.impl.YarnClientImpl.java LineNum: 362 Method name: conf.get(YarnConfiguration.RM_PRINCIPAL)
+Inferred parameter values: yarn.resourcemanager.principal, 
+
+Found callsite[146] in File: org.apache.hadoop.yarn.server.resourcemanager.NodesListManager.java LineNum: 204 Method name: conf.get(YarnConfiguration.DEFAULT_RM_NODES_INCLUDE_FILE_PATH)
+Inferred parameter values: , 
+
+Found callsite[147] in File: org.apache.hadoop.yarn.server.resourcemanager.NodesListManager.java LineNum: 115 Method name: yarnConf.get(YarnConfiguration.RM_NODES_INCLUDE_FILE_PATH,              YarnConfiguration.DEFAULT_RM_NODES_INCLUDE_FILE_PATH)
+Inferred parameter values: yarn.resourcemanager.nodes.include-path, , 
+
+Found callsite[148] in File: org.apache.hadoop.yarn.server.MiniYARNCluster.java LineNum: 524 Method name: config.getBoolean(          YarnConfiguration.YARN_MINICLUSTER_CONTROL_RESOURCE_MONITORING,          YarnConfiguration.              DEFAULT_YARN_MINICLUSTER_CONTROL_RESOURCE_MONITORING)
+Inferred parameter values: yarn.minicluster.control-resource-monitoring, 
+
+Found callsite[149] in File: org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService.java LineNum: 147 Method name: conf.getBoolean(        CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,         false)
+Inferred parameter values: 
+
+Found callsite[150] in File: org.apache.hadoop.yarn.server.resourcemanager.security.AMRMTokenSecretManager.java LineNum: 85 Method name: conf          .getLong(            YarnConfiguration.RM_AMRM_TOKEN_MASTER_KEY_ROLLING_INTERVAL_SECS,            YarnConfiguration.DEFAULT_RM_AMRM_TOKEN_MASTER_KEY_ROLLING_INTERVAL_SECS)
+Inferred parameter values: yarn.resourcemanager.am-rm-tokens.master-key-rolling-interval-secs, 
+
+Found callsite[151] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService.java LineNum: 133 Method name: conf.getLong(YarnConfiguration.RM_NM_HEARTBEAT_INTERVAL_MS,            YarnConfiguration.DEFAULT_RM_NM_HEARTBEAT_INTERVAL_MS)
+Inferred parameter values: yarn.resourcemanager.nodemanagers.heartbeat-interval-ms, 
+
+Found callsite[152] in File: org.apache.hadoop.yarn.server.resourcemanager.reservation.AbstractReservationSystem.java LineNum: 188 Method name: conf.getClassByName(planFollowerPolicyClassName)
+Inferred parameter values: 
+
+Found callsite[153] in File: org.apache.hadoop.yarn.server.resourcemanager.RMSecretManagerService.java LineNum: 136 Method name: conf.getLong(YarnConfiguration.RM_DELEGATION_TOKEN_RENEW_INTERVAL_KEY,            YarnConfiguration.RM_DELEGATION_TOKEN_RENEW_INTERVAL_DEFAULT)
+Inferred parameter values: yarn.resourcemanager.delegation.token.renew-interval, 
+
+Found callsite[154] in File: org.apache.hadoop.yarn.factory.providers.RecordFactoryProvider.java LineNum: 49 Method name: conf.get(        YarnConfiguration.IPC_RECORD_FACTORY_CLASS,        YarnConfiguration.DEFAULT_IPC_RECORD_FACTORY_CLASS)
+Inferred parameter values: yarn.ipc.record.factory.class, org.apache.hadoop.yarn.factories.impl.pb.RecordFactoryPBImpl, 
+
+Found callsite[155] in File: org.apache.hadoop.yarn.server.resourcemanager.AdminService.java LineNum: 175 Method name: conf.getBoolean(        CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,        false)
+Inferred parameter values: 
+
+Found callsite[156] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.java LineNum: 183 Method name: conf.getInt(      YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_VCORES,      YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_VCORES)
+Inferred parameter values: yarn.scheduler.maximum-allocation-vcores, 
+
+Found callsite[157] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 160 Method name: conf.getSocketAddr(YarnConfiguration.RM_WEBAPP_HTTPS_ADDRESS,              YarnConfiguration.DEFAULT_RM_WEBAPP_HTTPS_ADDRESS,              YarnConfiguration.DEFAULT_RM_WEBAPP_HTTPS_PORT)
+Inferred parameter values: yarn.resourcemanager.webapp.https.address, 
+
+Found callsite[158] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.AppLogAggregatorImpl.java LineNum: 165 Method name: conf.getBoolean(NM_LOG_AGGREGATION_DEBUG_ENABLED,          DEFAULT_NM_LOG_AGGREGATION_DEBUG_ENABLED)
+Inferred parameter values: yarn.nodemanager.log-aggregation.debug-enabled, 
+
+Found callsite[159] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.java LineNum: 606 Method name: conf.getBoolean(YarnConfiguration.RM_SCHEDULER_ENABLE_MONITORS,          YarnConfiguration.DEFAULT_RM_SCHEDULER_ENABLE_MONITORS)
+Inferred parameter values: yarn.resourcemanager.scheduler.monitor.enable, 
+
+Found callsite[160] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.NewAppWeightBooster.java LineNum: 43 Method name: conf.getFloat("mapred.newjobweightbooster.factor",          DEFAULT_FACTOR)
+Inferred parameter values: mapred.newjobweightbooster.factor, 
+
+Found callsite[161] in File: org.apache.hadoop.yarn.server.resourcemanager.recovery.LeveldbRMStateStore.java LineNum: 121 Method name: conf.get(YarnConfiguration.RM_LEVELDB_STORE_PATH)
+Inferred parameter values: yarn.resourcemanager.leveldb-state-store.path, 
+
+Found callsite[162] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 1318 Method name: this.conf.getLocalityThresholdNode()
+Inferred parameter values: 
+
+Found callsite[163] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler.java LineNum: 222 Method name: conf.getInt(            YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_VCORES,            YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_VCORES)
+Inferred parameter values: yarn.scheduler.maximum-allocation-vcores, 
+
+Found callsite[164] in File: org.apache.hadoop.yarn.ipc.YarnRPC.java LineNum: 61 Method name: conf.get(YarnConfiguration.IPC_RPC_IMPL)
+Inferred parameter values: yarn.ipc.rpc.class, 
+
+Found callsite[165] in File: org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.java LineNum: 386 Method name: conf.getInt(YarnConfiguration.RM_AM_MAX_ATTEMPTS,        YarnConfiguration.DEFAULT_RM_AM_MAX_ATTEMPTS)
+Inferred parameter values: yarn.resourcemanager.am.max-attempts, 
+
+Found callsite[166] in File: org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter.java LineNum: 126 Method name: conf.getClass(YarnConfiguration.APPLICATION_HISTORY_STORE,              NullApplicationHistoryStore.class,              ApplicationHistoryStore.class)
+Inferred parameter values: yarn.timeline-service.generic-application-history.store-class, 
+
+Found callsite[167] in File: org.apache.hadoop.yarn.server.nodemanager.NodeManager.java LineNum: 142 Method name: conf.getBoolean(        YarnConfiguration.NM_RECOVERY_ENABLED,        YarnConfiguration.DEFAULT_NM_RECOVERY_ENABLED)
+Inferred parameter values: yarn.nodemanager.recovery.enabled, 
+
+Found callsite[168] in File: org.apache.hadoop.yarn.conf.YarnConfiguration.java LineNum: 1820 Method name: conf        .get(YARN_HTTP_POLICY_KEY,            YARN_HTTP_POLICY_DEFAULT)
+Inferred parameter values: yarn.http.policy, 
+
+Found callsite[169] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService.java LineNum: 361 Method name: conf.getInt(YarnConfiguration.NM_LOCALIZER_CLIENT_THREAD_COUNT,             YarnConfiguration.DEFAULT_NM_LOCALIZER_CLIENT_THREAD_COUNT)
+Inferred parameter values: yarn.nodemanager.localizer.client.thread-count, 
+
+Found callsite[170] in File: org.apache.hadoop.yarn.server.resourcemanager.EmbeddedElectorService.java LineNum: 79 Method name: conf.get(YarnConfiguration.AUTO_FAILOVER_ZK_BASE_PATH,        YarnConfiguration.DEFAULT_AUTO_FAILOVER_ZK_BASE_PATH)
+Inferred parameter values: yarn.resourcemanager.ha.automatic-failover.zk-base-path, /yarn-leader-election, 
+
+Found callsite[171] in File: org.apache.hadoop.yarn.server.nodemanager.WindowsSecureContainerExecutor.java LineNum: 571 Method name: conf.get(        YarnConfiguration.NM_WINDOWS_SECURE_CONTAINER_GROUP)
+Inferred parameter values: yarn.nodemanager.windows-secure-container-executor.group, 
+
+Found callsite[172] in File: org.apache.hadoop.yarn.server.nodemanager.LinuxContainerExecutor.java LineNum: 80 Method name: conf.get(        YarnConfiguration.NM_NONSECURE_MODE_LOCAL_USER_KEY,        YarnConfiguration.DEFAULT_NM_NONSECURE_MODE_LOCAL_USER)
+Inferred parameter values: yarn.nodemanager.linux-container-executor.nonsecure-mode.local-user, nobody, 
+
+Found callsite[173] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.AllocationFileLoaderService.java LineNum: 172 Method name: conf.get(FairSchedulerConfiguration.ALLOCATION_FILE,        FairSchedulerConfiguration.DEFAULT_ALLOCATION_FILE)
+Inferred parameter values: yarn.scheduler.fair.allocation.file, fair-scheduler.xml, 
+
+Found callsite[174] in File: org.apache.hadoop.yarn.server.webproxy.WebAppProxyServer.java LineNum: 83 Method name: conf.getSocketAddr(YarnConfiguration.PROXY_ADDRESS,      YarnConfiguration.DEFAULT_PROXY_ADDRESS,      YarnConfiguration.DEFAULT_PROXY_PORT)
+Inferred parameter values: yarn.web-proxy.address, 
+
+Found callsite[175] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl.java LineNum: 120 Method name: conf.getLong(        YarnConfiguration.NM_PMEM_MB,        YarnConfiguration.DEFAULT_NM_PMEM_MB)
+Inferred parameter values: yarn.nodemanager.resource.memory-mb, 
+
+Found callsite[176] in File: org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore.java LineNum: 181 Method name: conf.getLong(        YarnConfiguration.TIMELINE_SERVICE_TTL_MS,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_TTL_MS)
+Inferred parameter values: yarn.timeline-service.ttl-ms, 
+
+Found callsite[177] in File: org.apache.hadoop.yarn.server.nodemanager.NodeManager.java LineNum: 147 Method name: conf.get(YarnConfiguration.NM_RECOVERY_DIR)
+Inferred parameter values: yarn.nodemanager.recovery.dir, 
+
+Found callsite[178] in File: org.apache.hadoop.yarn.security.YarnAuthorizationProvider.java LineNum: 51 Method name: conf.getClass(YarnConfiguration.YARN_AUTHORIZATION_PROVIDER,              ConfiguredYarnAuthorizer.class)
+Inferred parameter values: yarn.authorization-provider, 
+
+Found callsite[179] in File: org.apache.hadoop.registry.client.impl.zk.CuratorService.java LineNum: 238 Method name: conf.getInt(KEY_REGISTRY_ZK_RETRY_INTERVAL,        DEFAULT_ZK_RETRY_INTERVAL)
+Inferred parameter values: 
+
+Found callsite[180] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.java LineNum: 362 Method name: this.conf.getMaximumAllocation()
+Inferred parameter values: 
+
+Found callsite[181] in File: org.apache.hadoop.yarn.server.sharedcachemanager.SharedCacheManager.java LineNum: 104 Method name: conf.getClass(            YarnConfiguration.SCM_STORE_CLASS,            defaultStoreClass, SCMStore.class)
+Inferred parameter values: yarn.sharedcache.store.class, 
+
+Found callsite[182] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerImpl.java LineNum: 496 Method name: daemonConf.getFloat(          YarnConfiguration.NM_VMEM_PMEM_RATIO,          YarnConfiguration.DEFAULT_NM_VMEM_PMEM_RATIO)
+Inferred parameter values: yarn.nodemanager.vmem-pmem-ratio, 
+
+Found callsite[183] in File: org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter.java LineNum: 92 Method name: conf.get(YarnConfiguration.APPLICATION_HISTORY_STORE)
+Inferred parameter values: yarn.timeline-service.generic-application-history.store-class, 
+
+Found callsite[184] in File: org.apache.hadoop.yarn.server.MiniYARNCluster.java LineNum: 223 Method name: conf.getInt(YarnConfiguration.RM_ZK_TIMEOUT_MS,        YarnConfiguration.DEFAULT_RM_ZK_TIMEOUT_MS)
+Inferred parameter values: yarn.resourcemanager.zk-timeout-ms, 
+
+Found callsite[185] in File: org.apache.hadoop.yarn.server.resourcemanager.reservation.AbstractReservationSystem.java LineNum: 363 Method name: conf.getClassByName(plannerClassName)
+Inferred parameter values: 
+
+Found callsite[186] in File: org.apache.hadoop.yarn.server.nodemanager.util.CgroupsLCEResourcesHandler.java LineNum: 123 Method name: conf          .getBoolean(            YarnConfiguration.NM_LINUX_CONTAINER_CGROUPS_STRICT_RESOURCE_USAGE,            YarnConfiguration.DEFAULT_NM_LINUX_CONTAINER_CGROUPS_STRICT_RESOURCE_USAGE)
+Inferred parameter values: yarn.nodemanager.linux-container-executor.cgroups.strict-resource-usage, 
+
+Found callsite[187] in File: org.apache.hadoop.yarn.server.webproxy.WebAppProxy.java LineNum: 74 Method name: conf.get(YarnConfiguration.PROXY_ADDRESS)
+Inferred parameter values: yarn.web-proxy.address, 
+
+Found callsite[188] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.LocalCacheDirectoryManager.java LineNum: 65 Method name: conf.getInt(YarnConfiguration.NM_LOCAL_CACHE_MAX_FILES_PER_DIRECTORY,          YarnConfiguration.DEFAULT_NM_LOCAL_CACHE_MAX_FILES_PER_DIRECTORY)
+Inferred parameter values: yarn.nodemanager.local-cache.max-files-per-directory, 
+
+Found callsite[189] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.java LineNum: 361 Method name: conf.getInt(YarnConfiguration.RM_AM_MAX_ATTEMPTS,        YarnConfiguration.DEFAULT_RM_AM_MAX_ATTEMPTS)
+Inferred parameter values: yarn.resourcemanager.am.max-attempts, 
+
+Found callsite[190] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 226 Method name: conf.getInt(      YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_VCORES,      YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_VCORES)
+Inferred parameter values: yarn.scheduler.maximum-allocation-vcores, 
+
+Found callsite[191] in File: org.apache.hadoop.yarn.nodelabels.FileSystemNodeLabelsStore.java LineNum: 81 Method name: conf.get(YarnConfiguration.FS_NODE_LABELS_STORE_ROOT_DIR,            getDefaultFSNodeLabelsRootDir())
+Inferred parameter values: yarn.node-labels.fs-store.root-dir, 
+
+Found callsite[192] in File: org.apache.hadoop.yarn.server.nodemanager.ContainerExecutor.java LineNum: 341 Method name: conf.getBoolean(            YarnConfiguration.NM_WINDOWS_CONTAINER_CPU_LIMIT_ENABLED,            YarnConfiguration.DEFAULT_NM_WINDOWS_CONTAINER_CPU_LIMIT_ENABLED)
+Inferred parameter values: yarn.nodemanager.windows-container.cpu-limit.enabled, 
+
+Found callsite[193] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl.java LineNum: 101 Method name: conf.getClass(YarnConfiguration.NM_CONTAINER_MON_RESOURCE_CALCULATOR, null,            ResourceCalculatorPlugin.class)
+Inferred parameter values: yarn.nodemanager.container-monitor.resource-calculator.class, 
+
+Found callsite[194] in File: org.apache.hadoop.registry.server.services.MicroZookeeperService.java LineNum: 198 Method name: conf.getTrimmed(KEY_REGISTRY_ZKSERVICE_JAAS_CONTEXT)
+Inferred parameter values: 
+
+Found callsite[195] in File: org.apache.hadoop.yarn.server.applicationhistoryservice.ApplicationHistoryServer.java LineNum: 189 Method name: conf.get(YarnConfiguration.APPLICATION_HISTORY_STORE)
+Inferred parameter values: yarn.timeline-service.generic-application-history.store-class, 
+
+Found callsite[196] in File: org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore.java LineNum: 122 Method name: conf.getLong(YarnConfiguration.FS_RM_STATE_STORE_RETRY_INTERVAL_MS,                YarnConfiguration.DEFAULT_FS_RM_STATE_STORE_RETRY_INTERVAL_MS)
+Inferred parameter values: yarn.resourcemanager.fs.state-store.retry-interval-ms, 
+
+Found callsite[197] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService.java LineNum: 144 Method name: conf.getInt(    	YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_VCORES,    	YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_VCORES)
+Inferred parameter values: yarn.scheduler.minimum-allocation-vcores, 
+
+Found callsite[198] in File: org.apache.hadoop.yarn.server.resourcemanager.AdminService.java LineNum: 141 Method name: conf.get(YarnConfiguration.RM_HA_ID)
+Inferred parameter values: yarn.resourcemanager.ha.id, 
+
+Found callsite[199] in File: org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore.java LineNum: 137 Method name: conf.get(YarnConfiguration.FS_RM_STATE_STORE_RETRY_POLICY_SPEC,          YarnConfiguration.DEFAULT_FS_RM_STATE_STORE_RETRY_POLICY_SPEC)
+Inferred parameter values: yarn.resourcemanager.fs.state-store.retry-policy-spec, 2000, 500, 
+
+Found callsite[200] in File: org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore.java LineNum: 1282 Method name: conf.getInt(        YarnConfiguration.TIMELINE_SERVICE_LEVELDB_START_TIME_READ_CACHE_SIZE,        YarnConfiguration.            DEFAULT_TIMELINE_SERVICE_LEVELDB_START_TIME_READ_CACHE_SIZE)
+Inferred parameter values: yarn.timeline-service.leveldb-timeline-store.start-time-read-cache-size, 
+
+Found callsite[201] in File: org.apache.hadoop.yarn.factories.impl.pb.RecordFactoryPBImpl.java LineNum: 56 Method name: localConf.getClassByName(getPBImplClassName(clazz))
+Inferred parameter values: 
+
+Found callsite[202] in File: org.apache.hadoop.yarn.conf.HAUtil.java LineNum: 285 Method name: conf.getTrimmed(hostNameConfKey)
+Inferred parameter values: 
+
+Found callsite[203] in File: org.apache.hadoop.yarn.client.api.impl.YarnClientImpl.java LineNum: 153 Method name: conf.getLong(        YarnConfiguration.YARN_CLIENT_APP_SUBMISSION_POLL_INTERVAL_MS,        YarnConfiguration.DEFAULT_YARN_CLIENT_APPLICATION_CLIENT_PROTOCOL_POLL_INTERVAL_MS)
+Inferred parameter values: yarn.client.app-submission.poll-interval, 
+
+Found callsite[204] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 1332 Method name: this.conf.getUpdateInterval()
+Inferred parameter values: 
+
+Found callsite[205] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 1313 Method name: this.conf.getMaximumAllocation()
+Inferred parameter values: 
+
+Found callsite[206] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 141 Method name: getResolvedRMWebAppURLWithoutScheme(conf)
+Inferred parameter values: 
+
+Found callsite[207] in File: org.apache.hadoop.yarn.server.sharedcachemanager.store.SCMStore.java LineNum: 208 Method name: conf.getClass(            YarnConfiguration.SCM_APP_CHECKER_CLASS, defaultCheckerClass,            AppChecker.class)
+Inferred parameter values: yarn.sharedcache.app-checker.class, 
+
+Found callsite[208] in File: org.apache.hadoop.yarn.server.resourcemanager.NodesListManager.java LineNum: 75 Method name: conf.get(YarnConfiguration.RM_NODES_INCLUDE_FILE_PATH,          YarnConfiguration.DEFAULT_RM_NODES_INCLUDE_FILE_PATH)
+Inferred parameter values: yarn.resourcemanager.nodes.include-path, , 
+
+Found callsite[209] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.LogAggregationService.java LineNum: 125 Method name: conf.get(YarnConfiguration.NM_REMOTE_APP_LOG_DIR_SUFFIX,            YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR_SUFFIX)
+Inferred parameter values: yarn.nodemanager.remote-app-log-dir-suffix, logs, 
+
+Found callsite[210] in File: org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore.java LineNum: 112 Method name: conf.get(YarnConfiguration.FS_RM_STATE_STORE_URI)
+Inferred parameter values: yarn.resourcemanager.fs.state-store.uri, 
+
+Found callsite[211] in File: org.apache.hadoop.yarn.server.applicationhistoryservice.ApplicationHistoryServer.java LineNum: 296 Method name: conf.getSocketAddr(YarnConfiguration.TIMELINE_SERVICE_ADDRESS,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ADDRESS,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_PORT)
+Inferred parameter values: yarn.timeline-service.address, 
+
+Found callsite[212] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 1330 Method name: this.conf.getUsePortForNodeName()
+Inferred parameter values: 
+
+Found callsite[213] in File: org.apache.hadoop.yarn.server.resourcemanager.NodesListManager.java LineNum: 96 Method name: conf.get(YarnConfiguration.RM_NODES_INCLUDE_FILE_PATH,         YarnConfiguration.DEFAULT_RM_NODES_INCLUDE_FILE_PATH)
+Inferred parameter values: yarn.resourcemanager.nodes.include-path, , 
+
+Found callsite[214] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl.java LineNum: 114 Method name: conf.getBoolean(YarnConfiguration.NM_CONTAINER_METRICS_ENABLE,            YarnConfiguration.DEFAULT_NM_CONTAINER_METRICS_ENABLE)
+Inferred parameter values: yarn.nodemanager.container-metrics.enable, 
+
+Found callsite[215] in File: org.apache.hadoop.yarn.server.MiniYARNCluster.java LineNum: 511 Method name: config.getInt(          YarnConfiguration.YARN_MINICLUSTER_NM_PMEM_MB,          YarnConfiguration.DEFAULT_YARN_MINICLUSTER_NM_PMEM_MB)
+Inferred parameter values: yarn.nodemanager.resource.memory-mb, 
+
+Found callsite[216] in File: org.apache.hadoop.yarn.server.nodemanager.util.CgroupsLCEResourcesHandler.java LineNum: 111 Method name: conf.getLong(        YarnConfiguration.NM_LINUX_CONTAINER_CGROUPS_DELETE_TIMEOUT,        YarnConfiguration.DEFAULT_NM_LINUX_CONTAINER_CGROUPS_DELETE_TIMEOUT)
+Inferred parameter values: yarn.nodemanager.linux-container-executor.cgroups.delete-timeout-ms, 
+
+Found callsite[217] in File: org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService.java LineNum: 143 Method name: serverConf.getInt(YarnConfiguration.RM_SCHEDULER_CLIENT_THREAD_COUNT,               YarnConfiguration.DEFAULT_RM_SCHEDULER_CLIENT_THREAD_COUNT)
+Inferred parameter values: yarn.resourcemanager.scheduler.client.thread-count, 
+
+Found callsite[218] in File: org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC.java LineNum: 65 Method name: getServer(protocol,         instance, addr, conf, secretManager, numHandlers, portRangeConfig)
+Inferred parameter values: 
+
+Found callsite[219] in File: org.apache.hadoop.yarn.server.sharedcachemanager.SharedCacheUploaderService.java LineNum: 81 Method name: conf.getInt(YarnConfiguration.SCM_UPLOADER_SERVER_THREAD_COUNT,                YarnConfiguration.DEFAULT_SCM_UPLOADER_SERVER_THREAD_COUNT)
+Inferred parameter values: yarn.sharedcache.uploader.server.thread-count, 
+
+Found callsite[220] in File: org.apache.hadoop.yarn.server.MiniYARNCluster.java LineNum: 218 Method name: conf.getBoolean(        YarnConfiguration.YARN_MINICLUSTER_FIXED_PORTS,        YarnConfiguration.DEFAULT_YARN_MINICLUSTER_FIXED_PORTS)
+Inferred parameter values: yarn.minicluster.fixed.ports, 
+
+Found callsite[221] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService.java LineNum: 247 Method name: conf.getLong(YarnConfiguration.NM_LOCALIZER_CACHE_CLEANUP_INTERVAL_MS, YarnConfiguration.DEFAULT_NM_LOCALIZER_CACHE_CLEANUP_INTERVAL_MS)
+Inferred parameter values: yarn.nodemanager.localizer.cache.cleanup.interval-ms, 
+
+Found callsite[222] in File: org.apache.hadoop.yarn.server.nodemanager.NodeManager.java LineNum: 170 Method name: conf.get(YarnConfiguration.NM_RECOVERY_DIR)
+Inferred parameter values: yarn.nodemanager.recovery.dir, 
+
+Found callsite[223] in File: org.apache.hadoop.yarn.client.ServerProxy.java LineNum: 53 Method name: conf.getLong(maxWaitTimeStr, defMaxWaitTime)
+Inferred parameter values: 
+
+Found callsite[224] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.java LineNum: 366 Method name: this.conf.getMaximumAllocation()
+Inferred parameter values: 
+
+Found callsite[225] in File: org.apache.hadoop.registry.client.impl.zk.CuratorService.java LineNum: 232 Method name: conf.getInt(KEY_REGISTRY_ZK_SESSION_TIMEOUT,        DEFAULT_ZK_SESSION_TIMEOUT)
+Inferred parameter values: 
+
+Found callsite[226] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 126 Method name: conf.get(YarnConfiguration.PROXY_ADDRESS)
+Inferred parameter values: yarn.web-proxy.address, 
+
+Found callsite[227] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService.java LineNum: 125 Method name: conf.getSocketAddr(        YarnConfiguration.RM_BIND_HOST,        YarnConfiguration.RM_RESOURCE_TRACKER_ADDRESS,        YarnConfiguration.DEFAULT_RM_RESOURCE_TRACKER_ADDRESS,        YarnConfiguration.DEFAULT_RM_RESOURCE_TRACKER_PORT)
+Inferred parameter values: yarn.resourcemanager.bind-host, yarn.resourcemanager.resource-tracker.address, 
+
+Found callsite[228] in File: org.apache.hadoop.yarn.server.timeline.security.TimelineDelegationTokenSecretManagerService.java LineNum: 63 Method name: conf.getLong(YarnConfiguration.TIMELINE_DELEGATION_KEY_UPDATE_INTERVAL,            YarnConfiguration.DEFAULT_TIMELINE_DELEGATION_KEY_UPDATE_INTERVAL)
+Inferred parameter values: yarn.timeline-service.delegation.key.update-interval, 
+
+Found callsite[229] in File: org.apache.hadoop.yarn.client.api.impl.SharedCacheClientImpl.java LineNum: 68 Method name: conf.getSocketAddr(YarnConfiguration.SCM_CLIENT_SERVER_ADDRESS,        YarnConfiguration.DEFAULT_SCM_CLIENT_SERVER_ADDRESS,        YarnConfiguration.DEFAULT_SCM_CLIENT_SERVER_PORT)
+Inferred parameter values: yarn.sharedcache.client-server.address, 
+
+Found callsite[230] in File: org.apache.hadoop.yarn.server.nodemanager.util.CgroupsLCEResourcesHandler.java LineNum: 104 Method name: conf.get(YarnConfiguration.            NM_LINUX_CONTAINER_CGROUPS_HIERARCHY, "/hadoop-yarn")
+Inferred parameter values: yarn.nodemanager.linux-container-executor.cgroups.hierarchy, /hadoop-yarn, 
+
+Found callsite[231] in File: org.apache.hadoop.yarn.logaggregation.LogCLIHelpers.java LineNum: 51 Method name: get(        YarnConfiguration.NM_REMOTE_APP_LOG_DIR,        YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR)
+Inferred parameter values: yarn.nodemanager.remote-app-log-dir, /tmp/logs, 
+
+Found callsite[232] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 355 Method name: sslConf.get("ssl.server.truststore.type", "jks")
+Inferred parameter values: ssl.server.truststore.type, jks, 
+
+Found callsite[233] in File: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter.java LineNum: 74 Method name: null
+Inferred parameter values: 
+
+Found callsite[234] in File: org.apache.hadoop.yarn.server.resourcemanager.reservation.AbstractReservationSystem.java LineNum: 180 Method name: conf.get(YarnConfiguration.RM_RESERVATION_SYSTEM_PLAN_FOLLOWER,            getDefaultPlanFollower())
+Inferred parameter values: yarn.resourcemanager.reservation-system.plan.follower, 
+
+Found callsite[235] in File: org.apache.hadoop.yarn.server.nodemanager.webapp.NMController.java LineNum: 93 Method name: nmConf.get(YarnConfiguration.YARN_LOG_SERVER_URL)
+Inferred parameter values: yarn.log.server.url, 
+
+Found callsite[236] in File: org.apache.hadoop.yarn.server.nodemanager.LocalDirsHandlerService.java LineNum: 139 Method name: conf.getFloat(        YarnConfiguration.NM_MIN_HEALTHY_DISKS_FRACTION,        YarnConfiguration.DEFAULT_NM_MIN_HEALTHY_DISKS_FRACTION)
+Inferred parameter values: yarn.nodemanager.disk-health-checker.min-healthy-disks, 
+
+Found callsite[237] in File: org.apache.hadoop.registry.client.impl.zk.CuratorService.java LineNum: 236 Method name: conf.getInt(KEY_REGISTRY_ZK_RETRY_TIMES,        DEFAULT_ZK_RETRY_TIMES)
+Inferred parameter values: 
+
+Found callsite[238] in File: org.apache.hadoop.registry.server.services.MicroZookeeperService.java LineNum: 137 Method name: conf.getTrimmed(        KEY_ZKSERVICE_DIR, "")
+Inferred parameter values: , 
+
+Found callsite[239] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService.java LineNum: 148 Method name: conf.get(        YarnConfiguration.RM_NODEMANAGER_MINIMUM_VERSION,        YarnConfiguration.DEFAULT_RM_NODEMANAGER_MINIMUM_VERSION)
+Inferred parameter values: yarn.resourcemanager.nodemanager.minimum.version, NONE, 
+
+Found callsite[240] in File: org.apache.hadoop.yarn.server.resourcemanager.RMZKUtils.java LineNum: 61 Method name: conf.get(YarnConfiguration.RM_ZK_AUTH)
+Inferred parameter values: yarn.resourcemanager.zk-auth, 
+
+Found callsite[241] in File: org.apache.hadoop.yarn.server.timeline.security.TimelineAuthenticationFilterInitializer.java LineNum: 83 Method name: conf.get(name)
+Inferred parameter values: 
+
+Found callsite[242] in File: org.apache.hadoop.yarn.server.nodemanager.LinuxContainerExecutor.java LineNum: 84 Method name: conf.get(YarnConfiguration.NM_NONSECURE_MODE_USER_PATTERN_KEY,            YarnConfiguration.DEFAULT_NM_NONSECURE_MODE_USER_PATTERN)
+Inferred parameter values: yarn.nodemanager.linux-container-executor.nonsecure-mode.user-pattern, ^[_.A-Za-z0-9][-@_.A-Za-z0-9]{0,255}?[$]?$, 
+
+Found callsite[243] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.AbstractCSQueue.java LineNum: 100 Method name: getEnableUserMetrics()
+Inferred parameter values: 
+
+Found callsite[244] in File: org.apache.hadoop.yarn.server.resourcemanager.NodesListManager.java LineNum: 77 Method name: conf.get(YarnConfiguration.RM_NODES_EXCLUDE_FILE_PATH,          YarnConfiguration.DEFAULT_RM_NODES_EXCLUDE_FILE_PATH)
+Inferred parameter values: yarn.resourcemanager.nodes.exclude-path, , 
+
+Found callsite[245] in File: org.apache.hadoop.registry.client.impl.zk.RegistrySecurity.java LineNum: 192 Method name: conf.getTrimmed(KEY_REGISTRY_CLIENT_AUTH,        REGISTRY_CLIENT_AUTH_ANONYMOUS)
+Inferred parameter values: hadoop.registry.client.auth, , 
+
+Found callsite[246] in File: org.apache.hadoop.yarn.server.timeline.security.TimelineDelegationTokenSecretManagerService.java LineNum: 66 Method name: conf.getLong(YarnConfiguration.TIMELINE_DELEGATION_TOKEN_MAX_LIFETIME,            YarnConfiguration.DEFAULT_TIMELINE_DELEGATION_TOKEN_MAX_LIFETIME)
+Inferred parameter values: yarn.timeline-service.delegation.token.max-lifetime, 
+
+Found callsite[247] in File: org.apache.hadoop.yarn.server.resourcemanager.EmbeddedElectorService.java LineNum: 83 Method name: conf.getLong(YarnConfiguration.RM_ZK_TIMEOUT_MS,        YarnConfiguration.DEFAULT_RM_ZK_TIMEOUT_MS)
+Inferred parameter values: yarn.resourcemanager.zk-timeout-ms, 
+
+Found callsite[248] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 136 Method name: getResolvedRemoteRMWebAppURLWithoutScheme(conf)
+Inferred parameter values: 
+
+Found callsite[249] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 1314 Method name: this.conf.getIncrementAllocation()
+Inferred parameter values: 
+
+Found callsite[250] in File: org.apache.hadoop.yarn.server.nodemanager.util.NodeManagerHardwareUtils.java LineNum: 76 Method name: conf.getInt(          YarnConfiguration.NM_RESOURCE_PERCENTAGE_PHYSICAL_CPU_LIMIT,          YarnConfiguration.DEFAULT_NM_RESOURCE_PERCENTAGE_PHYSICAL_CPU_LIMIT)
+Inferred parameter values: yarn.nodemanager.resource.percentage-physical-cpu-limit, 
+
+Found callsite[251] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl.java LineNum: 124 Method name: conf.getLong(        YarnConfiguration.NM_VCORES,        YarnConfiguration.DEFAULT_NM_VCORES)
+Inferred parameter values: yarn.nodemanager.resource.cpu-vcores, 
+
+Found callsite[252] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.sharedcache.SharedCacheUploadService.java LineNum: 68 Method name: conf.getBoolean(YarnConfiguration.SHARED_CACHE_ENABLED,        YarnConfiguration.DEFAULT_SHARED_CACHE_ENABLED)
+Inferred parameter values: yarn.sharedcache.enabled, 
+
+Found callsite[253] in File: org.apache.hadoop.yarn.conf.HAUtil.java LineNum: 53 Method name: conf.getBoolean(YarnConfiguration.RM_HA_ENABLED,        YarnConfiguration.DEFAULT_RM_HA_ENABLED)
+Inferred parameter values: yarn.resourcemanager.ha.enabled, 
+
+Found callsite[254] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler.java LineNum: 225 Method name: conf.getBoolean(        YarnConfiguration.RM_SCHEDULER_INCLUDE_PORT_IN_NODE_NAME,        YarnConfiguration.DEFAULT_RM_SCHEDULER_USE_PORT_FOR_NODE_NAME)
+Inferred parameter values: yarn.scheduler.include-port-in-node-name, 
+
+Found callsite[255] in File: org.apache.hadoop.yarn.server.nodemanager.NodeManager.java LineNum: 196 Method name: conf.getBoolean(YarnConfiguration            .RM_WORK_PRESERVING_RECOVERY_ENABLED,        YarnConfiguration.DEFAULT_RM_WORK_PRESERVING_RECOVERY_ENABLED)
+Inferred parameter values: yarn.resourcemanager.work-preserving-recovery.enabled, 
+
+Found callsite[256] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService.java LineNum: 169 Method name: conf.getBoolean(        CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,         false)
+Inferred parameter values: 
+
+Found callsite[257] in File: org.apache.hadoop.yarn.logaggregation.AggregatedLogDeletionService.java LineNum: 234 Method name: conf.getLong(        YarnConfiguration.LOG_AGGREGATION_RETAIN_SECONDS,        YarnConfiguration.DEFAULT_LOG_AGGREGATION_RETAIN_SECONDS)
+Inferred parameter values: yarn.log-aggregation.retain-seconds, 
+
+Found callsite[258] in File: org.apache.hadoop.yarn.webapp.WebApps.java LineNum: 248 Method name: conf.get(spnegoPrincipalKey)
+Inferred parameter values: 
+
+Found callsite[259] in File: org.apache.hadoop.yarn.server.resourcemanager.RMAppManager.java LineNum: 94 Method name: conf.getInt(          YarnConfiguration.RM_STATE_STORE_MAX_COMPLETED_APPLICATIONS,          YarnConfiguration.DEFAULT_RM_STATE_STORE_MAX_COMPLETED_APPLICATIONS)
+Inferred parameter values: yarn.resourcemanager.state-store.max-completed-applications, 
+
+Found callsite[260] in File: org.apache.hadoop.yarn.conf.HAUtil.java LineNum: 184 Method name: conf.get(key)
+Inferred parameter values: 
+
+Found callsite[261] in File: org.apache.hadoop.yarn.server.nodemanager.NodeHealthScriptRunner.java LineNum: 212 Method name: conf.getLong(        YarnConfiguration.NM_HEALTH_CHECK_SCRIPT_TIMEOUT_MS,        YarnConfiguration.DEFAULT_NM_HEALTH_CHECK_SCRIPT_TIMEOUT_MS)
+Inferred parameter values: yarn.nodemanager.health-checker.script.timeout-ms, 
+
+Found callsite[262] in File: org.apache.hadoop.yarn.server.nodemanager.LocalDirsHandlerService.java LineNum: 133 Method name: conf.getLong(        YarnConfiguration.NM_DISK_HEALTH_CHECK_INTERVAL_MS,        YarnConfiguration.DEFAULT_NM_DISK_HEALTH_CHECK_INTERVAL_MS)
+Inferred parameter values: yarn.nodemanager.disk-health-checker.interval-ms, 
+
+Found callsite[263] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService.java LineNum: 141 Method name: conf.getInt(    	YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_MB,    	YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_MB)
+Inferred parameter values: yarn.scheduler.minimum-allocation-mb, 
+
+Found callsite[264] in File: org.apache.hadoop.yarn.server.nodemanager.NodeHealthScriptRunner.java LineNum: 209 Method name: conf.get(YarnConfiguration.NM_HEALTH_CHECK_SCRIPT_PATH)
+Inferred parameter values: yarn.nodemanager.health-checker.script.path, 
+
+Found callsite[265] in File: org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl.java LineNum: 83 Method name: localConf            .getClassByName(getPbServiceImplClassName(protocol))
+Inferred parameter values: 
+
+Found callsite[266] in File: org.apache.hadoop.registry.client.impl.zk.CuratorService.java LineNum: 234 Method name: conf.getInt(KEY_REGISTRY_ZK_CONNECTION_TIMEOUT,        DEFAULT_ZK_CONNECTION_TIMEOUT)
+Inferred parameter values: 
+
+Found callsite[267] in File: org.apache.hadoop.yarn.security.AdminACLsManager.java LineNum: 77 Method name: conf.getBoolean(YarnConfiguration.YARN_ACL_ENABLE,        YarnConfiguration.DEFAULT_YARN_ACL_ENABLE)
+Inferred parameter values: yarn.acl.enable, 
+
+Found callsite[268] in File: org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore.java LineNum: 196 Method name: conf.getLong(        YarnConfiguration.TIMELINE_SERVICE_LEVELDB_START_TIME_READ_CACHE_SIZE,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_START_TIME_READ_CACHE_SIZE)
+Inferred parameter values: yarn.timeline-service.leveldb-timeline-store.start-time-read-cache-size, 
+
+Found callsite[269] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.java LineNum: 1243 Method name: conf.getLong(YarnConfiguration.RM_WORK_PRESERVING_RECOVERY_SCHEDULING_WAIT_MS,            YarnConfiguration.DEFAULT_RM_WORK_PRESERVING_RECOVERY_SCHEDULING_WAIT_MS)
+Inferred parameter values: yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms, 
+
+Found callsite[270] in File: org.apache.hadoop.yarn.util.RackResolver.java LineNum: 53 Method name: conf.getClass(        CommonConfigurationKeysPublic.NET_TOPOLOGY_NODE_SWITCH_MAPPING_IMPL_KEY,         ScriptBasedMapping.class,        DNSToSwitchMapping.class)
+Inferred parameter values: 
+
+Found callsite[271] in File: org.apache.hadoop.registry.server.services.MicroZookeeperService.java LineNum: 139 Method name: conf.getTrimmed(KEY_ZKSERVICE_HOST, DEFAULT_ZKSERVICE_HOST)
+Inferred parameter values: 
+
+Found callsite[272] in File: org.apache.hadoop.yarn.client.api.impl.YarnClientImpl.java LineNum: 158 Method name: conf.getBoolean(YarnConfiguration.APPLICATION_HISTORY_ENABLED,      YarnConfiguration.DEFAULT_APPLICATION_HISTORY_ENABLED)
+Inferred parameter values: yarn.timeline-service.generic-application-history.enabled, 
+
+Found callsite[273] in File: org.apache.hadoop.yarn.server.timeline.security.TimelineAuthenticationFilterInitializer.java LineNum: 93 Method name: conf.get(name)
+Inferred parameter values: 
+
+Found callsite[274] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.NonAggregatingLogHandler.java LineNum: 87 Method name: conf.getLong(YarnConfiguration.NM_LOG_RETAIN_SECONDS,                YarnConfiguration.DEFAULT_NM_LOG_RETAIN_SECONDS)
+Inferred parameter values: yarn.nodemanager.log.retain-seconds, 
+
+Found callsite[275] in File: org.apache.hadoop.yarn.server.sharedcachemanager.CleanerTask.java LineNum: 74 Method name: conf.get(YarnConfiguration.SHARED_CACHE_ROOT,              YarnConfiguration.DEFAULT_SHARED_CACHE_ROOT)
+Inferred parameter values: yarn.sharedcache.root-dir, /sharedcache, 
+
+Found callsite[276] in File: org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy.java LineNum: 74 Method name: conf.getInt(YarnConfiguration.NM_CLIENT_MAX_NM_PROXIES,            YarnConfiguration.DEFAULT_NM_CLIENT_MAX_NM_PROXIES)
+Inferred parameter values: yarn.client.max-cached-nodemanagers-proxies, 
+
+Found callsite[277] in File: org.apache.hadoop.yarn.server.applicationhistoryservice.ApplicationHistoryClientService.java LineNum: 81 Method name: conf.getSocketAddr(        YarnConfiguration.TIMELINE_SERVICE_BIND_HOST,        YarnConfiguration.TIMELINE_SERVICE_ADDRESS,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ADDRESS,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_PORT)
+Inferred parameter values: yarn.timeline-service.bind-host, yarn.timeline-service.address, 
+
+Found callsite[278] in File: org.apache.hadoop.yarn.server.sharedcachemanager.CleanerService.java LineNum: 178 Method name: conf.get(YarnConfiguration.SHARED_CACHE_ROOT,              YarnConfiguration.DEFAULT_SHARED_CACHE_ROOT)
+Inferred parameter values: yarn.sharedcache.root-dir, /sharedcache, 
+
+Found callsite[279] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch.java LineNum: 127 Method name: conf.getLong(YarnConfiguration.NM_PROCESS_KILL_WAIT_MS,            YarnConfiguration.DEFAULT_NM_PROCESS_KILL_WAIT_MS)
+Inferred parameter values: yarn.nodemanager.process-kill-wait.ms, 
+
+Found callsite[280] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 1327 Method name: this.conf.getSizeBasedWeight()
+Inferred parameter values: 
+
+Found callsite[281] in File: org.apache.hadoop.yarn.client.RMProxy.java LineNum: 140 Method name: getProxy(protocol, rmAddress, conf)
+Inferred parameter values: 
+
+Found callsite[282] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 1317 Method name: this.conf.getContinuousSchedulingSleepMs()
+Inferred parameter values: 
+
+Found callsite[283] in File: org.apache.hadoop.yarn.server.applicationhistoryservice.ApplicationHistoryServer.java LineNum: 188 Method name: conf.get(YarnConfiguration.APPLICATION_HISTORY_STORE)
+Inferred parameter values: yarn.timeline-service.generic-application-history.store-class, 
+
+Found callsite[284] in File: org.apache.hadoop.yarn.client.api.impl.YarnClientImpl.java LineNum: 151 Method name: conf.get(YarnConfiguration.YARN_CLIENT_APP_SUBMISSION_POLL_INTERVAL_MS)
+Inferred parameter values: yarn.client.app-submission.poll-interval, 
+
+Found callsite[285] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl.java LineNum: 97 Method name: conf.getLong(YarnConfiguration.NM_CONTAINER_MON_INTERVAL_MS,            YarnConfiguration.DEFAULT_NM_CONTAINER_MON_INTERVAL_MS)
+Inferred parameter values: yarn.nodemanager.container-monitor.interval-ms, 
+
+Found callsite[286] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices.java LineNum: 106 Method name: conf.get(YarnConfiguration.NM_RECOVERY_DIR)
+Inferred parameter values: yarn.nodemanager.recovery.dir, 
+
+Found callsite[287] in File: org.apache.hadoop.registry.server.services.MicroZookeeperService.java LineNum: 134 Method name: conf.getInt(KEY_ZKSERVICE_PORT, 0)
+Inferred parameter values: 
+
+Found callsite[288] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 1326 Method name: this.conf.getMaxAssign()
+Inferred parameter values: 
+
+Found callsite[289] in File: org.apache.hadoop.yarn.server.resourcemanager.monitor.capacity.ProportionalCapacityPreemptionPolicy.java LineNum: 164 Method name: config.getDouble(MAX_IGNORED_OVER_CAPACITY, 0.1)
+Inferred parameter values: yarn.resourcemanager.monitor.capacity.preemption.max_ignored_over_capacity, 
+
+Found callsite[290] in File: org.apache.hadoop.yarn.server.resourcemanager.RMSecretManagerService.java LineNum: 130 Method name: conf.getLong(YarnConfiguration.RM_DELEGATION_KEY_UPDATE_INTERVAL_KEY,            YarnConfiguration.RM_DELEGATION_KEY_UPDATE_INTERVAL_DEFAULT)
+Inferred parameter values: yarn.resourcemanager.delegation.key.update-interval, 
+
+Found callsite[291] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.java LineNum: 423 Method name: conf.getInt(YarnConfiguration.NM_CONTAINER_MGR_THREAD_COUNT,                 YarnConfiguration.DEFAULT_NM_CONTAINER_MGR_THREAD_COUNT)
+Inferred parameter values: yarn.nodemanager.container-manager.thread-count, 
+
+Found callsite[292] in File: org.apache.hadoop.yarn.server.resourcemanager.security.DelegationTokenRenewer.java LineNum: 127 Method name: conf.getBoolean(YarnConfiguration.RM_PROXY_USER_PRIVILEGES_ENABLED,          YarnConfiguration.DEFAULT_RM_PROXY_USER_PRIVILEGES_ENABLED)
+Inferred parameter values: yarn.resourcemanager.proxy-user-privileges.enabled, 
+
+Found callsite[293] in File: org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore.java LineNum: 201 Method name: conf.getLong(        YarnConfiguration.TIMELINE_SERVICE_LEVELDB_START_TIME_WRITE_CACHE_SIZE,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_START_TIME_WRITE_CACHE_SIZE)
+Inferred parameter values: yarn.timeline-service.leveldb-timeline-store.start-time-write-cache-size, 
+
+Found callsite[294] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.java LineNum: 430 Method name: conf.getBoolean(          YarnConfiguration.RECOVERY_ENABLED,          YarnConfiguration.DEFAULT_RM_RECOVERY_ENABLED)
+Inferred parameter values: yarn.resourcemanager.recovery.enabled, 
+
+Found callsite[295] in File: org.apache.hadoop.yarn.client.cli.RMAdminCLI.java LineNum: 620 Method name: conf.get(YarnConfiguration.RM_PRINCIPAL, "")
+Inferred parameter values: yarn.resourcemanager.principal, , 
+
+Found callsite[296] in File: org.apache.hadoop.yarn.conf.HAUtil.java LineNum: 171 Method name: conf.getStringCollection(YarnConfiguration.RM_HA_IDS)
+Inferred parameter values: yarn.resourcemanager.ha.rm-ids, 
+
+Found callsite[297] in File: org.apache.hadoop.yarn.server.timeline.security.TimelineAuthenticationFilterInitializer.java LineNum: 108 Method name: conf.get(HttpServer2.BIND_ADDRESS)
+Inferred parameter values: 
+
+Found callsite[298] in File: org.apache.hadoop.yarn.server.nodemanager.LocalDirsHandlerService.java LineNum: 95 Method name: conf.getFloat(            YarnConfiguration.NM_MAX_PER_DISK_UTILIZATION_PERCENTAGE,            YarnConfiguration.DEFAULT_NM_MAX_PER_DISK_UTILIZATION_PERCENTAGE)
+Inferred parameter values: yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage, 
+
+Found callsite[299] in File: org.apache.hadoop.yarn.server.nodemanager.NodeHealthScriptRunner.java LineNum: 330 Method name: conf.get(YarnConfiguration.NM_HEALTH_CHECK_SCRIPT_PATH)
+Inferred parameter values: yarn.nodemanager.health-checker.script.path, 
+
+Found callsite[300] in File: org.apache.hadoop.yarn.server.applicationhistoryservice.ApplicationHistoryClientService.java LineNum: 100 Method name: conf.getBoolean(        CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION, false)
+Inferred parameter values: 
+
+Found callsite[301] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 193 Method name: conf.getSocketAddr(              rmId == null                  ? YarnConfiguration.RM_WEBAPP_ADDRESS                  : HAUtil.addSuffix(                  YarnConfiguration.RM_WEBAPP_ADDRESS, rmId),              YarnConfiguration.DEFAULT_RM_WEBAPP_ADDRESS,              YarnConfiguration.DEFAULT_RM_WEBAPP_PORT)
+Inferred parameter values: 
+
+Found callsite[302] in File: org.apache.hadoop.yarn.conf.HAUtil.java LineNum: 118 Method name: conf          .getTrimmedStringCollection(YarnConfiguration.RM_HA_IDS)
+Inferred parameter values: yarn.resourcemanager.ha.rm-ids, 
+
+Found callsite[303] in File: org.apache.hadoop.yarn.server.sharedcachemanager.SharedCacheUploaderService.java LineNum: 67 Method name: conf.getSocketAddr(YarnConfiguration.SCM_UPLOADER_SERVER_ADDRESS,        YarnConfiguration.DEFAULT_SCM_UPLOADER_SERVER_ADDRESS,        YarnConfiguration.DEFAULT_SCM_UPLOADER_SERVER_PORT)
+Inferred parameter values: yarn.sharedcache.uploader.server.address, 
+
+Found callsite[304] in File: org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.AMLivelinessMonitor.java LineNum: 46 Method name: conf.getInt(YarnConfiguration.RM_AM_EXPIRY_INTERVAL_MS,            YarnConfiguration.DEFAULT_RM_AM_EXPIRY_INTERVAL_MS)
+Inferred parameter values: yarn.am.liveness-monitor.expiry-interval-ms, 
+
+Found callsite[305] in File: org.apache.hadoop.yarn.server.resourcemanager.monitor.capacity.ProportionalCapacityPreemptionPolicy.java LineNum: 167 Method name: config.getLong(WAIT_TIME_BEFORE_KILL, 15000)
+Inferred parameter values: yarn.resourcemanager.monitor.capacity.preemption.max_wait_before_kill, 
+
+Found callsite[306] in File: org.apache.hadoop.yarn.client.api.impl.YarnClientImpl.java LineNum: 165 Method name: conf.getBoolean(YarnConfiguration.TIMELINE_SERVICE_ENABLED,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ENABLED)
+Inferred parameter values: yarn.timeline-service.enabled, 
+
+Found callsite[307] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 90 Method name: conf.get(YarnConfiguration.RM_WEBAPP_ADDRESS,          YarnConfiguration.DEFAULT_RM_WEBAPP_ADDRESS)
+Inferred parameter values: yarn.resourcemanager.webapp.address, 
+
+Found callsite[308] in File: org.apache.hadoop.yarn.server.resourcemanager.AdminService.java LineNum: 132 Method name: conf.getSocketAddr(        YarnConfiguration.RM_BIND_HOST,        YarnConfiguration.RM_ADMIN_ADDRESS,        YarnConfiguration.DEFAULT_RM_ADMIN_ADDRESS,        YarnConfiguration.DEFAULT_RM_ADMIN_PORT)
+Inferred parameter values: yarn.resourcemanager.bind-host, yarn.resourcemanager.admin.address, 
+
+Found callsite[309] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 350 Method name: sslConf.get("ssl.server.keystore.location")
+Inferred parameter values: ssl.server.keystore.location, 
+
+Found callsite[310] in File: org.apache.hadoop.yarn.conf.HAUtil.java LineNum: 283 Method name: conf.getTrimmed(rpcAddressConfKey)
+Inferred parameter values: 
+
+Found callsite[311] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 241 Method name: conf.getTrimmed(hostProperty)
+Inferred parameter values: 
+
+Found callsite[312] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.java LineNum: 239 Method name: conf.getLong(YarnConfiguration.NM_SLEEP_DELAY_BEFORE_SIGKILL_MS,            YarnConfiguration.DEFAULT_NM_SLEEP_DELAY_BEFORE_SIGKILL_MS)
+Inferred parameter values: yarn.nodemanager.sleep-delay-before-sigkill.ms, 
+
+Found callsite[313] in File: org.apache.hadoop.yarn.client.RMProxy.java LineNum: 174 Method name: conf.getLong(            YarnConfiguration.RESOURCEMANAGER_CONNECT_MAX_WAIT_MS,            YarnConfiguration.DEFAULT_RESOURCEMANAGER_CONNECT_MAX_WAIT_MS)
+Inferred parameter values: yarn.resourcemanager.connect.max-wait.ms, 
+
+Found callsite[314] in File: org.apache.hadoop.yarn.webapp.WebApps.java LineNum: 249 Method name: null
+Inferred parameter values: 
+
+Found callsite[315] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.java LineNum: 907 Method name: conf.get(authTypeKey, "")
+Inferred parameter values: hadoop.http.authentication.type, , 
+
+Found callsite[316] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl.java LineNum: 117 Method name: conf.getLong(YarnConfiguration.NM_CONTAINER_METRICS_PERIOD_MS,            YarnConfiguration.DEFAULT_NM_CONTAINER_METRICS_PERIOD_MS)
+Inferred parameter values: yarn.nodemanager.container-metrics.period-ms, 
+
+Found callsite[317] in File: org.apache.hadoop.yarn.server.nodemanager.LocalDirsHandlerService.java LineNum: 99 Method name: conf.getLong(YarnConfiguration.NM_MIN_PER_DISK_FREE_SPACE_MB,            YarnConfiguration.DEFAULT_NM_MIN_PER_DISK_FREE_SPACE_MB)
+Inferred parameter values: yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb, 
+
+Found callsite[318] in File: org.apache.hadoop.yarn.server.resourcemanager.recovery.ZKRMStateStore.java LineNum: 229 Method name: conf.getInt(YarnConfiguration.RM_ZK_TIMEOUT_MS,            YarnConfiguration.DEFAULT_RM_ZK_TIMEOUT_MS)
+Inferred parameter values: yarn.resourcemanager.zk-timeout-ms, 
+
+Found callsite[319] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.java LineNum: 437 Method name: conf.get(YarnConfiguration.NM_BIND_HOST)
+Inferred parameter values: yarn.nodemanager.bind-host, 
+
+Found callsite[320] in File: org.apache.hadoop.yarn.nodelabels.CommonNodeLabelsManager.java LineNum: 211 Method name: conf.getBoolean(YarnConfiguration.NODE_LABELS_ENABLED,            YarnConfiguration.DEFAULT_NODE_LABELS_ENABLED)
+Inferred parameter values: yarn.node-labels.enabled, 
+
+Found callsite[321] in File: org.apache.hadoop.yarn.client.RMProxy.java LineNum: 203 Method name: conf.getLong(          YarnConfiguration.CLIENT_FAILOVER_SLEEPTIME_BASE_MS,          rmConnectionRetryIntervalMS)
+Inferred parameter values: yarn.client.failover-sleep-base-ms, 
+
+Found callsite[322] in File: org.apache.hadoop.yarn.conf.HAUtil.java LineNum: 96 Method name: conf.get(YarnConfiguration.RM_HA_IDS)
+Inferred parameter values: yarn.resourcemanager.ha.rm-ids, 
+
+Found callsite[323] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.java LineNum: 243 Method name: SHUTDOWN_CLEANUP_SLOP_MS
+Inferred parameter values: 
+
+Found callsite[324] in File: org.apache.hadoop.yarn.server.resourcemanager.EmbeddedElectorService.java LineNum: 68 Method name: conf.get(YarnConfiguration.RM_ZK_ADDRESS)
+Inferred parameter values: yarn.resourcemanager.zk-address, 
+
+Found callsite[325] in File: org.apache.hadoop.yarn.server.sharedcache.SharedCacheUtil.java LineNum: 42 Method name: conf.getInt(YarnConfiguration.SHARED_CACHE_NESTED_LEVEL,            YarnConfiguration.DEFAULT_SHARED_CACHE_NESTED_LEVEL)
+Inferred parameter values: yarn.sharedcache.nested-level, 
+
+Found callsite[326] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl.java LineNum: 107 Method name: conf.getClass(YarnConfiguration.NM_CONTAINER_MON_PROCESS_TREE, null,            ResourceCalculatorProcessTree.class)
+Inferred parameter values: yarn.nodemanager.container-monitor.process-tree.class, 
+
+Found callsite[327] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices.java LineNum: 110 Method name: conf.getStringCollection(        YarnConfiguration.NM_AUX_SERVICES)
+Inferred parameter values: yarn.nodemanager.aux-services, 
+
+Found callsite[328] in File: org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore.java LineNum: 277 Method name: conf.getLong(YarnConfiguration.TIMELINE_SERVICE_TTL_MS,          YarnConfiguration.DEFAULT_TIMELINE_SERVICE_TTL_MS)
+Inferred parameter values: yarn.timeline-service.ttl-ms, 
+
+Found callsite[329] in File: org.apache.hadoop.yarn.server.applicationhistoryservice.ApplicationHistoryManagerOnTimelineStore.java LineNum: 93 Method name: WebAppUtils.getAHSWebAppURLWithoutScheme(conf)
+Inferred parameter values: 
+
+Found callsite[330] in File: org.apache.hadoop.yarn.server.resourcemanager.AdminService.java LineNum: 171 Method name: conf.getInt(YarnConfiguration.RM_ADMIN_CLIENT_THREAD_COUNT,            YarnConfiguration.DEFAULT_RM_ADMIN_CLIENT_THREAD_COUNT)
+Inferred parameter values: yarn.resourcemanager.admin.client.thread-count, 
+
+Found callsite[331] in File: org.apache.hadoop.yarn.client.api.impl.YarnClientImpl.java LineNum: 174 Method name: conf.getBoolean(        YarnConfiguration.TIMELINE_SERVICE_CLIENT_BEST_EFFORT,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_BEST_EFFORT)
+Inferred parameter values: yarn.timeline-service.client.best-effort, 
+
+Found callsite[332] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices.java LineNum: 102 Method name: conf.getBoolean(        YarnConfiguration.NM_RECOVERY_ENABLED,        YarnConfiguration.DEFAULT_NM_RECOVERY_ENABLED)
+Inferred parameter values: yarn.nodemanager.recovery.enabled, 
+
+Found callsite[333] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices.java LineNum: 121 Method name: conf.getClass(              String.format(YarnConfiguration.NM_AUX_SERVICE_FMT, sName), null,              AuxiliaryService.class)
+Inferred parameter values: 
+
+Found callsite[334] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 208 Method name: conf.getInt(      YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_MB,      YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_MB)
+Inferred parameter values: yarn.scheduler.maximum-allocation-mb, 
+
+Found callsite[335] in File: org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.java LineNum: 166 Method name: conf.getLong(YARN_NODEMANAGER_DURATION_TO_TRACK_STOPPED_CONTAINERS,          600000)
+Inferred parameter values: yarn.nodemanager.duration-to-track-stopped-containers, 
+
+Found callsite[336] in File: org.apache.hadoop.registry.client.impl.zk.CuratorService.java LineNum: 141 Method name: conf.getTrimmed(KEY_REGISTRY_ZK_ROOT,        DEFAULT_ZK_REGISTRY_ROOT)
+Inferred parameter values: 
+
+Found callsite[337] in File: org.apache.hadoop.yarn.server.MiniYARNCluster.java LineNum: 234 Method name: conf.get(YarnConfiguration.RM_HA_IDS)
+Inferred parameter values: yarn.resourcemanager.ha.rm-ids, 
+
+Found callsite[338] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler.java LineNum: 219 Method name: conf.getInt(            YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_MB,            YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_MB)
+Inferred parameter values: yarn.scheduler.maximum-allocation-mb, 
+
+Found callsite[339] in File: org.apache.hadoop.yarn.logaggregation.AggregatedLogDeletionService.java LineNum: 71 Method name: conf.get(YarnConfiguration.NM_REMOTE_APP_LOG_DIR,            YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR)
+Inferred parameter values: yarn.nodemanager.remote-app-log-dir, /tmp/logs, 
+
+Found callsite[340] in File: org.apache.hadoop.yarn.server.applicationhistoryservice.ApplicationHistoryServer.java LineNum: 201 Method name: conf.getClass(        YarnConfiguration.TIMELINE_SERVICE_STORE, LeveldbTimelineStore.class,        TimelineStore.class)
+Inferred parameter values: yarn.timeline-service.store-class, 
+
+Found callsite[341] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 165 Method name: conf.getSocketAddr(YarnConfiguration.RM_WEBAPP_ADDRESS,              YarnConfiguration.DEFAULT_RM_WEBAPP_ADDRESS,              YarnConfiguration.DEFAULT_RM_WEBAPP_PORT)
+Inferred parameter values: yarn.resourcemanager.webapp.address, 
+
+Found callsite[342] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.sharedcache.SharedCacheUploadService.java LineNum: 72 Method name: conf.getInt(YarnConfiguration.SHARED_CACHE_NM_UPLOADER_THREAD_COUNT,              YarnConfiguration.DEFAULT_SHARED_CACHE_NM_UPLOADER_THREAD_COUNT)
+Inferred parameter values: yarn.sharedcache.nm.uploader.thread-count, 
+
+Found callsite[343] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 260 Method name: conf.get(YarnConfiguration.NM_WEBAPP_ADDRESS,        YarnConfiguration.DEFAULT_NM_WEBAPP_ADDRESS)
+Inferred parameter values: yarn.nodemanager.webapp.address, 
+
+Found callsite[344] in File: org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher.java LineNum: 71 Method name: conf.getInt(YarnConfiguration.RM_NODEMANAGER_CONNECT_RETIRES,            YarnConfiguration.DEFAULT_RM_NODEMANAGER_CONNECT_RETIRES)
+Inferred parameter values: yarn.resourcemanager.nodemanager-connect-retries, 
+
+Found callsite[345] in File: org.apache.hadoop.yarn.logaggregation.LogAggregationUtils.java LineNum: 99 Method name: conf.get(YarnConfiguration.NM_REMOTE_APP_LOG_DIR_SUFFIX,        YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR_SUFFIX)
+Inferred parameter values: yarn.nodemanager.remote-app-log-dir-suffix, logs, 
+
+Found callsite[346] in File: org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM.java LineNum: 60 Method name: this.conf.getLong(        YarnConfiguration.RM_NMTOKEN_MASTER_KEY_ROLLING_INTERVAL_SECS,        YarnConfiguration.DEFAULT_RM_NMTOKEN_MASTER_KEY_ROLLING_INTERVAL_SECS)
+Inferred parameter values: yarn.resourcemanager.nm-tokens.master-key-rolling-interval-secs, 
+
+Found callsite[347] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.AbstractCSQueue.java LineNum: 256 Method name: getMaximumAllocationPerQueue(            getQueuePath())
+Inferred parameter values: 
+
+Found callsite[348] in File: org.apache.hadoop.yarn.client.api.impl.YarnClientImpl.java LineNum: 148 Method name: conf.getLong(YarnConfiguration.YARN_CLIENT_APPLICATION_CLIENT_PROTOCOL_POLL_TIMEOUT_MS,            YarnConfiguration.DEFAULT_YARN_CLIENT_APPLICATION_CLIENT_PROTOCOL_POLL_TIMEOUT_MS)
+Inferred parameter values: yarn.client.application-client-protocol.poll-timeout-ms, 
+
+Found callsite[349] in File: org.apache.hadoop.yarn.FileSystemBasedConfigurationProvider.java LineNum: 74 Method name: bootstrapConf.get(YarnConfiguration.FS_BASED_RM_CONF_STORE,            YarnConfiguration.DEFAULT_FS_BASED_RM_CONF_STORE)
+Inferred parameter values: yarn.resourcemanager.configuration.file-system-based-store, /yarn/conf, 
+
+Found callsite[350] in File: org.apache.hadoop.yarn.server.applicationhistoryservice.ApplicationHistoryManagerImpl.java LineNum: 85 Method name: conf.getClass(      YarnConfiguration.APPLICATION_HISTORY_STORE,      FileSystemApplicationHistoryStore.class,      ApplicationHistoryStore.class)
+Inferred parameter values: yarn.timeline-service.generic-application-history.store-class, 
+
+Found callsite[351] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService.java LineNum: 210 Method name: conf.getInt(YarnConfiguration.NM_LOCAL_CACHE_MAX_FILES_PER_DIRECTORY,          YarnConfiguration.DEFAULT_NM_LOCAL_CACHE_MAX_FILES_PER_DIRECTORY)
+Inferred parameter values: yarn.nodemanager.local-cache.max-files-per-directory, 
+
+Found callsite[352] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 369 Method name: conf.getPassword(alias)
+Inferred parameter values: 
+
+Found callsite[353] in File: org.apache.hadoop.yarn.server.timeline.security.TimelineDelegationTokenSecretManagerService.java LineNum: 69 Method name: conf.getLong(YarnConfiguration.TIMELINE_DELEGATION_TOKEN_RENEW_INTERVAL,            YarnConfiguration.DEFAULT_TIMELINE_DELEGATION_TOKEN_RENEW_INTERVAL)
+Inferred parameter values: yarn.timeline-service.delegation.token.renew-interval, 
+
+Found callsite[354] in File: org.apache.hadoop.yarn.webapp.WebApps.java LineNum: 242 Method name: conf.get(              YarnConfiguration.YARN_ADMIN_ACL,               YarnConfiguration.DEFAULT_YARN_ADMIN_ACL)
+Inferred parameter values: yarn.admin.acl, *, 
+
+Found callsite[355] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 1325 Method name: this.conf.getAssignMultiple()
+Inferred parameter values: 
+
+Found callsite[356] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 223 Method name: conf.getInt(      YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_VCORES,      YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_VCORES)
+Inferred parameter values: yarn.scheduler.minimum-allocation-vcores, 
+
+Found callsite[357] in File: org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl.java LineNum: 291 Method name: conf.get(          YarnConfiguration.TIMELINE_SERVICE_WEBAPP_ADDRESS,          YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_ADDRESS)
+Inferred parameter values: yarn.timeline-service.webapp.address, 
+
+Found callsite[358] in File: org.apache.hadoop.yarn.factories.impl.pb.RpcClientFactoryPBImpl.java LineNum: 65 Method name: localConf.getClassByName(getPBImplClassName(protocol))
+Inferred parameter values: 
+
+Found callsite[359] in File: org.apache.hadoop.yarn.server.nodemanager.recovery.NMLeveldbStateStoreService.java LineNum: 951 Method name: conf.get(YarnConfiguration.NM_RECOVERY_DIR)
+Inferred parameter values: yarn.nodemanager.recovery.dir, 
+
+Found callsite[360] in File: org.apache.hadoop.yarn.conf.HAUtil.java LineNum: 58 Method name: conf.getBoolean(YarnConfiguration.AUTO_FAILOVER_ENABLED,        YarnConfiguration.DEFAULT_AUTO_FAILOVER_ENABLED)
+Inferred parameter values: yarn.resourcemanager.ha.automatic-failover.enabled, 
+
+Found callsite[361] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.java LineNum: 373 Method name: conf.getLong(YarnConfiguration.RM_NM_HEARTBEAT_INTERVAL_MS,            YarnConfiguration.DEFAULT_RM_NM_HEARTBEAT_INTERVAL_MS)
+Inferred parameter values: yarn.resourcemanager.nodemanagers.heartbeat-interval-ms, 
+
+Found callsite[362] in File: org.apache.hadoop.registry.server.services.MicroZookeeperService.java LineNum: 205 Method name: conf.get(KEY_ZKSERVICE_ALLOW_FAILED_SASL_CLIENTS,            "true")
+Inferred parameter values: true, 
+
+Found callsite[363] in File: org.apache.hadoop.yarn.server.nodemanager.NodeManager.java LineNum: 213 Method name: conf.getClass(YarnConfiguration.NM_CONTAINER_EXECUTOR,          DefaultContainerExecutor.class, ContainerExecutor.class)
+Inferred parameter values: yarn.nodemanager.container-executor.class, 
+
+Found callsite[364] in File: org.apache.hadoop.yarn.server.nodemanager.DeletionService.java LineNum: 121 Method name: conf.getInt(YarnConfiguration.DEBUG_NM_DELETE_DELAY_SEC, 0)
+Inferred parameter values: yarn.nodemanager.delete.debug-delay-sec, 
+
+Found callsite[365] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler.java LineNum: 256 Method name: conf.getInt(      YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_MB,      YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_MB)
+Inferred parameter values: yarn.scheduler.minimum-allocation-mb, 
+
+Found callsite[366] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.java LineNum: 438 Method name: conf.getTrimmed(YarnConfiguration.NM_ADDRESS)
+Inferred parameter values: yarn.nodemanager.address, 
+
+Found callsite[367] in File: org.apache.hadoop.yarn.client.api.impl.AHSClientImpl.java LineNum: 66 Method name: conf.getSocketAddr(YarnConfiguration.TIMELINE_SERVICE_ADDRESS,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ADDRESS,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_PORT)
+Inferred parameter values: yarn.timeline-service.address, 
+
+Found callsite[368] in File: org.apache.hadoop.yarn.server.applicationhistoryservice.ApplicationHistoryServer.java LineNum: 225 Method name: conf.get("hadoop.http.filter.initializers")
+Inferred parameter values: hadoop.http.filter.initializers, 
+
+Found callsite[369] in File: org.apache.hadoop.yarn.conf.ConfigurationProviderFactory.java LineNum: 53 Method name: bootstrapConf.getClass(            YarnConfiguration.RM_CONFIGURATION_PROVIDER_CLASS,            defaultProviderClass, ConfigurationProvider.class)
+Inferred parameter values: yarn.resourcemanager.configuration.provider-class, 
+
+Found callsite[370] in File: org.apache.hadoop.yarn.server.nodemanager.LinuxContainerExecutor.java LineNum: 86 Method name: conf.getBoolean(      YarnConfiguration.NM_NONSECURE_MODE_LIMIT_USERS,      YarnConfiguration.DEFAULT_NM_NONSECURE_MODE_LIMIT_USERS)
+Inferred parameter values: yarn.nodemanager.linux-container-executor.nonsecure-mode.limit-users, 
+
+Found callsite[371] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.java LineNum: 162 Method name: conf.getInt(      YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_MB,      YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_MB)
+Inferred parameter values: yarn.scheduler.minimum-allocation-mb, 
+
+Found callsite[372] in File: org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl.java LineNum: 161 Method name: conf.getLong(                  YarnConfiguration.TIMELINE_SERVICE_CLIENT_RETRY_INTERVAL_MS,                  YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_RETRY_INTERVAL_MS)
+Inferred parameter values: yarn.timeline-service.client.retry-interval-ms, 
+
+Found callsite[373] in File: org.apache.hadoop.yarn.client.RMProxy.java LineNum: 211 Method name: conf.getInt(          YarnConfiguration.CLIENT_FAILOVER_MAX_ATTEMPTS, -1)
+Inferred parameter values: yarn.client.failover-max-attempts, 
+
+Found callsite[374] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch.java LineNum: 124 Method name: conf.getLong(YarnConfiguration.NM_SLEEP_DELAY_BEFORE_SIGKILL_MS,            YarnConfiguration.DEFAULT_NM_SLEEP_DELAY_BEFORE_SIGKILL_MS)
+Inferred parameter values: yarn.nodemanager.sleep-delay-before-sigkill.ms, 
+
+Found callsite[375] in File: org.apache.hadoop.yarn.server.sharedcachemanager.SCMAdminProtocolService.java LineNum: 76 Method name: conf.getSocketAddr(YarnConfiguration.SCM_ADMIN_ADDRESS,        YarnConfiguration.DEFAULT_SCM_ADMIN_ADDRESS,        YarnConfiguration.DEFAULT_SCM_ADMIN_PORT)
+Inferred parameter values: yarn.sharedcache.admin.address, 
+
+Found callsite[376] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 257 Method name: conf.get(YarnConfiguration.NM_WEBAPP_HTTPS_ADDRESS,        YarnConfiguration.DEFAULT_NM_WEBAPP_HTTPS_ADDRESS)
+Inferred parameter values: yarn.nodemanager.webapp.https.address, 
+
+Found callsite[377] in File: org.apache.hadoop.yarn.server.MiniYARNCluster.java LineNum: 221 Method name: conf.getBoolean(YarnConfiguration.YARN_MINICLUSTER_USE_RPC,        YarnConfiguration.DEFAULT_YARN_MINICLUSTER_USE_RPC)
+Inferred parameter values: yarn.minicluster.use-rpc, 
+
+Found callsite[378] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.java LineNum: 439 Method name: conf.getBoolean(              YarnConfiguration.RM_WORK_PRESERVING_RECOVERY_ENABLED,              YarnConfiguration.DEFAULT_RM_WORK_PRESERVING_RECOVERY_ENABLED)
+Inferred parameter values: yarn.resourcemanager.work-preserving-recovery.enabled, 
+
+Found callsite[379] in File: org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore.java LineNum: 186 Method name: conf.getLong(        YarnConfiguration.TIMELINE_SERVICE_LEVELDB_TTL_INTERVAL_MS,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_TTL_INTERVAL_MS)
+Inferred parameter values: yarn.timeline-service.leveldb-timeline-store.ttl-interval-ms, 
+
+Found callsite[380] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.sharedcache.SharedCacheUploader.java LineNum: 108 Method name: conf.get(YarnConfiguration.SHARED_CACHE_ROOT,            YarnConfiguration.DEFAULT_SHARED_CACHE_ROOT)
+Inferred parameter values: yarn.sharedcache.root-dir, /sharedcache, 
+
+Found callsite[381] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl.java LineNum: 136 Method name: conf.getFloat(YarnConfiguration.NM_VMEM_PMEM_RATIO,        YarnConfiguration.DEFAULT_NM_VMEM_PMEM_RATIO)
+Inferred parameter values: yarn.nodemanager.vmem-pmem-ratio, 
+
+Found callsite[382] in File: org.apache.hadoop.yarn.server.resourcemanager.monitor.capacity.ProportionalCapacityPreemptionPolicy.java LineNum: 171 Method name: config.getBoolean(OBSERVE_ONLY, false)
+Inferred parameter values: yarn.resourcemanager.monitor.capacity.preemption.observe_only, 
+
+Found callsite[383] in File: org.apache.hadoop.yarn.server.webproxy.WebAppProxy.java LineNum: 86 Method name: conf.get(YarnConfiguration.YARN_ADMIN_ACL,         YarnConfiguration.DEFAULT_YARN_ADMIN_ACL)
+Inferred parameter values: yarn.admin.acl, *, 
+
+Found callsite[384] in File: org.apache.hadoop.yarn.server.resourcemanager.security.RMContainerTokenSecretManager.java LineNum: 63 Method name: conf.getLong(            YarnConfiguration.RM_CONTAINER_TOKEN_MASTER_KEY_ROLLING_INTERVAL_SECS,            YarnConfiguration.DEFAULT_RM_CONTAINER_TOKEN_MASTER_KEY_ROLLING_INTERVAL_SECS)
+Inferred parameter values: yarn.resourcemanager.container-tokens.master-key-rolling-interval-secs, 
+
+Found callsite[385] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 353 Method name: sslConf.get("ssl.server.truststore.location")
+Inferred parameter values: ssl.server.truststore.location, 
+
+Found callsite[386] in File: org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher.java LineNum: 58 Method name: conf.getInt(        YarnConfiguration.RM_AMLAUNCHER_THREAD_COUNT,        YarnConfiguration.DEFAULT_RM_AMLAUNCHER_THREAD_COUNT)
+Inferred parameter values: yarn.resourcemanager.amlauncher.thread-count, 
+
+Found callsite[387] in File: org.apache.hadoop.yarn.client.api.impl.YarnClientImpl.java LineNum: 365 Method name: conf.getSocketAddr(          YarnConfiguration.RM_ADDRESS,          YarnConfiguration.DEFAULT_RM_ADDRESS,          YarnConfiguration.DEFAULT_RM_PORT)
+Inferred parameter values: yarn.resourcemanager.address, 
+
+Found callsite[388] in File: org.apache.hadoop.yarn.client.cli.ClusterCLI.java LineNum: 127 Method name: getClusterNodeLabels()
+Inferred parameter values: 
+
+Found callsite[389] in File: org.apache.hadoop.yarn.logaggregation.LogCLIHelpers.java LineNum: 136 Method name: get(        YarnConfiguration.NM_REMOTE_APP_LOG_DIR,        YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR)
+Inferred parameter values: yarn.nodemanager.remote-app-log-dir, /tmp/logs, 
+
+Found callsite[390] in File: org.apache.hadoop.registry.client.impl.zk.CuratorService.java LineNum: 240 Method name: conf.getInt(KEY_REGISTRY_ZK_RETRY_CEILING,        DEFAULT_ZK_RETRY_CEILING)
+Inferred parameter values: 
+
+Found callsite[391] in File: org.apache.hadoop.yarn.server.resourcemanager.webapp.RMWebServices.java LineNum: 1124 Method name: conf.get(CommonConfigurationKeys.HADOOP_HTTP_STATIC_USER,          CommonConfigurationKeys.DEFAULT_HADOOP_HTTP_STATIC_USER)
+Inferred parameter values: 
+
+Found callsite[392] in File: org.apache.hadoop.yarn.conf.HAUtil.java LineNum: 180 Method name: conf.getTrimmed(YarnConfiguration.RM_HA_ID)
+Inferred parameter values: yarn.resourcemanager.ha.id, 
+
+Found callsite[393] in File: org.apache.hadoop.yarn.server.sharedcachemanager.store.InMemorySCMStore.java LineNum: 449 Method name: conf.getInt(YarnConfiguration.IN_MEMORY_INITIAL_DELAY_MINS,            YarnConfiguration.DEFAULT_IN_MEMORY_INITIAL_DELAY_MINS)
+Inferred parameter values: yarn.sharedcache.store.in-memory.initial-delay-mins, 
+
+Found callsite[394] in File: org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl.java LineNum: 608 Method name: conf.getBoolean(YarnConfiguration.TIMELINE_SERVICE_ENABLED, false)
+Inferred parameter values: yarn.timeline-service.enabled, 
+
+Found callsite[395] in File: org.apache.hadoop.yarn.server.resourcemanager.recovery.ZKRMStateStore.java LineNum: 226 Method name: conf.get(YarnConfiguration.ZK_RM_STATE_STORE_PARENT_PATH,            YarnConfiguration.DEFAULT_ZK_RM_STATE_STORE_PARENT_PATH)
+Inferred parameter values: yarn.resourcemanager.zk-state-store.parent-path, /rmstore, 
+
+Found callsite[396] in File: org.apache.hadoop.yarn.server.resourcemanager.recovery.ZKRMStateStore.java LineNum: 223 Method name: conf.getInt(YarnConfiguration.RM_ZK_NUM_RETRIES,            YarnConfiguration.DEFAULT_ZK_RM_NUM_RETRIES)
+Inferred parameter values: yarn.resourcemanager.zk-num-retries, 
+
+Found callsite[397] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 1324 Method name: this.conf.getPreemptionUtilizationThreshold()
+Inferred parameter values: 
+
+Found callsite[398] in File: org.apache.hadoop.yarn.server.resourcemanager.NMLivelinessMonitor.java LineNum: 41 Method name: conf.getInt(YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS,            YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS)
+Inferred parameter values: yarn.nm.liveness-monitor.expiry-interval-ms, 
+
+Found callsite[399] in File: org.apache.hadoop.yarn.server.nodemanager.ContainerExecutor.java LineNum: 345 Method name: conf.getInt(YarnConfiguration.NM_VCORES,              YarnConfiguration.DEFAULT_NM_VCORES)
+Inferred parameter values: yarn.nodemanager.resource.cpu-vcores, 
+
+Found callsite[400] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.LogAggregationService.java LineNum: 122 Method name: conf.get(YarnConfiguration.NM_REMOTE_APP_LOG_DIR,            YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR)
+Inferred parameter values: yarn.nodemanager.remote-app-log-dir, /tmp/logs, 
+
+Found callsite[401] in File: org.apache.hadoop.yarn.server.nodemanager.DockerContainerExecutor.java LineNum: 156 Method name: get(YarnConfiguration.NM_DOCKER_CONTAINER_EXECUTOR_EXEC_NAME,        YarnConfiguration.NM_DEFAULT_DOCKER_CONTAINER_EXECUTOR_EXEC_NAME)
+Inferred parameter values: yarn.nodemanager.docker-container-executor.exec-name, /usr/bin/docker, 
+
+Found callsite[402] in File: org.apache.hadoop.yarn.server.resourcemanager.security.DelegationTokenRenewer.java LineNum: 133 Method name: conf.getInt(YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS,            YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS)
+Inferred parameter values: yarn.nm.liveness-monitor.expiry-interval-ms, 
+
+Found callsite[403] in File: org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagementProtocolPBClientImpl.java LineNum: 75 Method name: conf.getInt(NM_COMMAND_TIMEOUT, DEFAULT_COMMAND_TIMEOUT)
+Inferred parameter values: yarn.rpc.nm-command-timeout, 
+
+Found callsite[404] in File: org.apache.hadoop.yarn.webapp.util.WebAppUtils.java LineNum: 82 Method name: getRMWebAppURLWithoutScheme(conf)
+Inferred parameter values: 
+
+Found callsite[405] in File: org.apache.hadoop.yarn.applications.distributedshell.Client.java LineNum: 598 Method name: conf.getStrings(        YarnConfiguration.YARN_APPLICATION_CLASSPATH,        YarnConfiguration.DEFAULT_YARN_CROSS_PLATFORM_APPLICATION_CLASSPATH)
+Inferred parameter values: yarn.application.classpath, 
+
+Found callsite[406] in File: org.apache.hadoop.yarn.server.applicationhistoryservice.FileSystemApplicationHistoryStore.java LineNum: 121 Method name: conf.get(YarnConfiguration.FS_APPLICATION_HISTORY_STORE_URI,            conf.get("hadoop.tmp.dir") + "/yarn/timeline/generic-history")
+Inferred parameter values: yarn.timeline-service.generic-application-history.fs-history-store.uri, /yarn/timeline/generic-history, 
+
+Found callsite[407] in File: org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter.java LineNum: 88 Method name: conf.getBoolean(YarnConfiguration.APPLICATION_HISTORY_ENABLED,          YarnConfiguration.DEFAULT_APPLICATION_HISTORY_ENABLED)
+Inferred parameter values: yarn.timeline-service.generic-application-history.enabled, 
+
+Found callsite[408] in File: org.apache.hadoop.yarn.applications.distributedshell.ApplicationMaster.java LineNum: 628 Method name: conf.getBoolean(YarnConfiguration.TIMELINE_SERVICE_ENABLED,              YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ENABLED)
+Inferred parameter values: yarn.timeline-service.enabled, 
+
+Found callsite[409] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.QueuePlacementPolicy.java LineNum: 128 Method name: conf.getBoolean(        FairSchedulerConfiguration.ALLOW_UNDECLARED_POOLS,        FairSchedulerConfiguration.DEFAULT_ALLOW_UNDECLARED_POOLS)
+Inferred parameter values: yarn.scheduler.fair.allow-undeclared-pools, 
+
+Found callsite[410] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue.java LineNum: 87 Method name: getNonLabeledQueueCapacity(getQueuePath())
+Inferred parameter values: 
+
+Found callsite[411] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 1322 Method name: this.conf.getPreemptionEnabled()
+Inferred parameter values: 
+
+Found callsite[412] in File: org.apache.hadoop.yarn.server.sharedcachemanager.CleanerService.java LineNum: 195 Method name: conf.getInt(YarnConfiguration.SCM_CLEANER_INITIAL_DELAY_MINS,            YarnConfiguration.DEFAULT_SCM_CLEANER_INITIAL_DELAY_MINS)
+Inferred parameter values: yarn.sharedcache.cleaner.initial-delay-mins, 
+
+Found callsite[413] in File: org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.java LineNum: 155 Method name: conf.getInt(YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS,            YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS)
+Inferred parameter values: yarn.nm.liveness-monitor.expiry-interval-ms, 
+
+Found callsite[414] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler.java LineNum: 259 Method name: conf.getInt(      YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_MB,      YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_MB)
+Inferred parameter values: yarn.scheduler.maximum-allocation-mb, 
+
+Found callsite[415] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ReservationQueue.java LineNum: 47 Method name: getMaximumSystemApplications()
+Inferred parameter values: 
+
+Found callsite[416] in File: org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl.java LineNum: 286 Method name: conf.get(              YarnConfiguration.TIMELINE_SERVICE_WEBAPP_HTTPS_ADDRESS,              YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_HTTPS_ADDRESS)
+Inferred parameter values: yarn.timeline-service.webapp.https.address, 
+
+Found callsite[417] in File: org.apache.hadoop.yarn.server.resourcemanager.NodesListManager.java LineNum: 118 Method name: yarnConf.get(YarnConfiguration.RM_NODES_EXCLUDE_FILE_PATH,              YarnConfiguration.DEFAULT_RM_NODES_EXCLUDE_FILE_PATH)
+Inferred parameter values: yarn.resourcemanager.nodes.exclude-path, , 
+
+Found callsite[418] in File: org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.java LineNum: 139 Method name: conf.getInt(            YarnConfiguration.NM_PMEM_MB, YarnConfiguration.DEFAULT_NM_PMEM_MB)
+Inferred parameter values: yarn.nodemanager.resource.memory-mb, 
+
+Found callsite[419] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.java LineNum: 935 Method name: conf.get(filterInitializerConfKey)
+Inferred parameter values: hadoop.http.filter.initializers, 
+
+Found callsite[420] in File: org.apache.hadoop.yarn.server.webapp.AppBlock.java LineNum: 127 Method name: conf.getBoolean(YarnConfiguration.RM_WEBAPP_UI_ACTIONS_ENABLED,          YarnConfiguration.DEFAULT_RM_WEBAPP_UI_ACTIONS_ENABLED)
+Inferred parameter values: yarn.resourcemanager.webapp.ui-actions.enabled, 
+
+Found callsite[421] in File: org.apache.hadoop.yarn.client.ClientRMProxy.java LineNum: 161 Method name: conf.getSocketAddr(address,      defaultAddr, defaultPort)
+Inferred parameter values: 
+
+Found callsite[422] in File: org.apache.hadoop.yarn.ipc.YarnRPC.java LineNum: 60 Method name: conf.get(YarnConfiguration.IPC_RPC_IMPL)
+Inferred parameter values: yarn.ipc.rpc.class, 
+
+Found callsite[423] in File: org.apache.hadoop.yarn.server.nodemanager.LinuxContainerExecutor.java LineNum: 70 Method name: conf.getClass(YarnConfiguration.NM_LINUX_CONTAINER_RESOURCES_HANDLER,              DefaultLCEResourcesHandler.class, LCEResourcesHandler.class)
+Inferred parameter values: yarn.nodemanager.linux-container-executor.resources-handler.class, 
+
+Found callsite[424] in File: org.apache.hadoop.yarn.server.nodemanager.util.CgroupsLCEResourcesHandler.java LineNum: 115 Method name: conf.getLong(YarnConfiguration.NM_LINUX_CONTAINER_CGROUPS_DELETE_DELAY,            YarnConfiguration.DEFAULT_NM_LINUX_CONTAINER_CGROUPS_DELETE_DELAY)
+Inferred parameter values: yarn.nodemanager.linux-container-executor.cgroups.delete-delay-ms, 
+
+Found callsite[425] in File: org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.java LineNum: 158 Method name: conf.get(        YarnConfiguration.NM_RESOURCEMANAGER_MINIMUM_VERSION,        YarnConfiguration.DEFAULT_NM_RESOURCEMANAGER_MINIMUM_VERSION)
+Inferred parameter values: yarn.nodemanager.resourcemanager.minimum.version, NONE, 
+
+Found callsite[426] in File: org.apache.hadoop.yarn.server.resourcemanager.ClientRMService.java LineNum: 256 Method name: conf.getSocketAddr(            YarnConfiguration.RM_BIND_HOST,            YarnConfiguration.RM_ADDRESS,            YarnConfiguration.DEFAULT_RM_ADDRESS,            YarnConfiguration.DEFAULT_RM_PORT)
+Inferred parameter values: yarn.resourcemanager.bind-host, yarn.resourcemanager.address, 
+
+Found callsite[427] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.java LineNum: 889 Method name: conf.getClasses(filterInitializerConfKey)
+Inferred parameter values: hadoop.http.filter.initializers, 
+
+Found callsite[428] in File: org.apache.hadoop.yarn.server.nodemanager.util.CgroupsLCEResourcesHandler.java LineNum: 108 Method name: conf.get(YarnConfiguration.            NM_LINUX_CONTAINER_CGROUPS_MOUNT_PATH, null)
+Inferred parameter values: yarn.nodemanager.linux-container-executor.cgroups.mount-path, 
+
+Found callsite[429] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 1329 Method name: this.conf.getWaitTimeBeforeKill()
+Inferred parameter values: 
+
+Found callsite[430] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.NewAppWeightBooster.java LineNum: 45 Method name: conf.getLong("mapred.newjobweightbooster.duration",          DEFAULT_DURATION)
+Inferred parameter values: mapred.newjobweightbooster.duration, 
+
+Found callsite[431] in File: org.apache.hadoop.yarn.server.resourcemanager.reservation.AbstractReservationSystem.java LineNum: 407 Method name: conf.getClassByName(admissionPolicyClassName)
+Inferred parameter values: 
+
+Found callsite[432] in File: org.apache.hadoop.yarn.server.resourcemanager.RMSecretManagerService.java LineNum: 133 Method name: conf.getLong(YarnConfiguration.RM_DELEGATION_TOKEN_MAX_LIFETIME_KEY,            YarnConfiguration.RM_DELEGATION_TOKEN_MAX_LIFETIME_DEFAULT)
+Inferred parameter values: yarn.resourcemanager.delegation.token.max-lifetime, 
+
+Found callsite[433] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.AbstractYarnScheduler.java LineNum: 120 Method name: conf.getLong(YarnConfiguration.RM_WORK_PRESERVING_RECOVERY_SCHEDULING_WAIT_MS,          YarnConfiguration.DEFAULT_RM_WORK_PRESERVING_RECOVERY_SCHEDULING_WAIT_MS)
+Inferred parameter values: yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms, 
+
+Found callsite[434] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl.java LineNum: 145 Method name: conf.getBoolean(YarnConfiguration.NM_VMEM_CHECK_ENABLED,        YarnConfiguration.DEFAULT_NM_VMEM_CHECK_ENABLED)
+Inferred parameter values: yarn.nodemanager.vmem-check-enabled, 
+
+Found callsite[435] in File: org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl.java LineNum: 169 Method name: conf.getLong(        YarnConfiguration.TIMELINE_SERVICE_CLIENT_RETRY_INTERVAL_MS,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_RETRY_INTERVAL_MS)
+Inferred parameter values: yarn.timeline-service.client.retry-interval-ms, 
+
+Found callsite[436] in File: org.apache.hadoop.yarn.security.ConfiguredYarnAuthorizer.java LineNum: 49 Method name: conf.get(YarnConfiguration.YARN_ADMIN_ACL,          YarnConfiguration.DEFAULT_YARN_ADMIN_ACL)
+Inferred parameter values: yarn.admin.acl, *, 
+
+Found callsite[437] in File: org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore.java LineNum: 209 Method name: conf.getLong(        YarnConfiguration.TIMELINE_SERVICE_LEVELDB_READ_CACHE_SIZE,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_READ_CACHE_SIZE)
+Inferred parameter values: yarn.timeline-service.leveldb-timeline-store.read-cache-size, 
+
+Found callsite[438] in File: org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService.java LineNum: 128 Method name: conf.getSocketAddr(        YarnConfiguration.RM_BIND_HOST,        YarnConfiguration.RM_SCHEDULER_ADDRESS,        YarnConfiguration.DEFAULT_RM_SCHEDULER_ADDRESS,        YarnConfiguration.DEFAULT_RM_SCHEDULER_PORT)
+Inferred parameter values: yarn.resourcemanager.bind-host, yarn.resourcemanager.scheduler.address, 
+
+Found callsite[439] in File: org.apache.hadoop.yarn.server.resourcemanager.metrics.SystemMetricsPublisher.java LineNum: 78 Method name: conf.getBoolean(YarnConfiguration.TIMELINE_SERVICE_ENABLED,            YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ENABLED)
+Inferred parameter values: yarn.timeline-service.enabled, 
+
+Found callsite[440] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.java LineNum: 281 Method name: conf.get(YarnConfiguration.RM_SCHEDULER,        YarnConfiguration.DEFAULT_RM_SCHEDULER)
+Inferred parameter values: yarn.resourcemanager.scheduler.class, org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler, 
+
+Found callsite[441] in File: org.apache.hadoop.yarn.server.resourcemanager.RMZKUtils.java LineNum: 45 Method name: conf.get(YarnConfiguration.RM_ZK_ACL,            YarnConfiguration.DEFAULT_RM_ZK_ACL)
+Inferred parameter values: yarn.resourcemanager.zk-acl, world:anyone:rwcda, 
+
+Found callsite[442] in File: org.apache.hadoop.yarn.server.sharedcachemanager.SCMAdminProtocolService.java LineNum: 89 Method name: conf.getInt(YarnConfiguration.SCM_ADMIN_CLIENT_THREAD_COUNT,                YarnConfiguration.DEFAULT_SCM_ADMIN_CLIENT_THREAD_COUNT)
+Inferred parameter values: yarn.sharedcache.admin.thread-count, 
+
+Found callsite[443] in File: org.apache.hadoop.yarn.server.applicationhistoryservice.ApplicationHistoryClientService.java LineNum: 87 Method name: conf.getInt(        YarnConfiguration.TIMELINE_SERVICE_HANDLER_THREAD_COUNT,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_THREAD_COUNT)
+Inferred parameter values: yarn.timeline-service.handler-thread-count, 
+
+Found callsite[444] in File: org.apache.hadoop.yarn.server.nodemanager.webapp.NMController.java LineNum: 91 Method name: nmConf.getBoolean(YarnConfiguration.LOG_AGGREGATION_ENABLED,            YarnConfiguration.DEFAULT_LOG_AGGREGATION_ENABLED)
+Inferred parameter values: yarn.log-aggregation-enable, 
+
+Found callsite[445] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl.java LineNum: 143 Method name: conf.getBoolean(YarnConfiguration.NM_PMEM_CHECK_ENABLED,        YarnConfiguration.DEFAULT_NM_PMEM_CHECK_ENABLED)
+Inferred parameter values: yarn.nodemanager.pmem-check-enabled, 
+
+Found callsite[446] in File: org.apache.hadoop.yarn.server.resourcemanager.monitor.capacity.ProportionalCapacityPreemptionPolicy.java LineNum: 166 Method name: config.getDouble(NATURAL_TERMINATION_FACTOR, 0.2)
+Inferred parameter values: yarn.resourcemanager.monitor.capacity.preemption.natural_termination_factor, 
+
+Found callsite[447] in File: org.apache.hadoop.yarn.server.sharedcachemanager.CleanerService.java LineNum: 208 Method name: conf.getInt(YarnConfiguration.SCM_CLEANER_PERIOD_MINS,            YarnConfiguration.DEFAULT_SCM_CLEANER_PERIOD_MINS)
+Inferred parameter values: yarn.sharedcache.cleaner.period-mins, 
+
+Found callsite[448] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.java LineNum: 358 Method name: conf.getBoolean(YarnConfiguration.LOG_AGGREGATION_ENABLED,        YarnConfiguration.DEFAULT_LOG_AGGREGATION_ENABLED)
+Inferred parameter values: yarn.log-aggregation-enable, 
+
+Found callsite[449] in File: org.apache.hadoop.yarn.server.resourcemanager.security.AMRMTokenSecretManager.java LineNum: 92 Method name: conf.getLong(YarnConfiguration.RM_AM_EXPIRY_INTERVAL_MS,            YarnConfiguration.DEFAULT_RM_AM_EXPIRY_INTERVAL_MS)
+Inferred parameter values: yarn.am.liveness-monitor.expiry-interval-ms, 
+
+Found callsite[450] in File: org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService.java LineNum: 248 Method name: conf.getSocketAddr(        YarnConfiguration.NM_BIND_HOST,        YarnConfiguration.NM_LOCALIZER_ADDRESS,        YarnConfiguration.DEFAULT_NM_LOCALIZER_ADDRESS,        YarnConfiguration.DEFAULT_NM_LOCALIZER_PORT)
+Inferred parameter values: yarn.nodemanager.bind-host, yarn.nodemanager.localizer.address, 
+
+Found callsite[451] in File: org.apache.hadoop.yarn.LocalConfigurationProvider.java LineNum: 43 Method name: bootstrapConf.getConfResourceAsInputStream(name)
+Inferred parameter values: 
+
+Found callsite[452] in File: org.apache.hadoop.yarn.server.resourcemanager.rmcontainer.ContainerAllocationExpirer.java LineNum: 42 Method name: conf.getInt(            YarnConfiguration.RM_CONTAINER_ALLOC_EXPIRY_INTERVAL_MS,            YarnConfiguration.DEFAULT_RM_CONTAINER_ALLOC_EXPIRY_INTERVAL_MS)
+Inferred parameter values: yarn.resourcemanager.rm.container-allocation.expiry-interval-ms, 
+
+Found callsite[453] in File: org.apache.hadoop.yarn.server.resourcemanager.RMAppManager.java LineNum: 90 Method name: conf.getInt(        YarnConfiguration.RM_MAX_COMPLETED_APPLICATIONS,        YarnConfiguration.DEFAULT_RM_MAX_COMPLETED_APPLICATIONS)
+Inferred parameter values: yarn.resourcemanager.max-completed-applications, 
+
+Found callsite[454] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.AbstractCSQueue.java LineNum: 239 Method name: getDefaultNodeLabelExpression(getQueuePath())
+Inferred parameter values: 
+
+Found callsite[455] in File: org.apache.hadoop.yarn.server.resourcemanager.reservation.AbstractReservationSystem.java LineNum: 136 Method name: conf.getTimeDuration(            YarnConfiguration.RM_RESERVATION_SYSTEM_PLAN_FOLLOWER_TIME_STEP,            YarnConfiguration.DEFAULT_RM_RESERVATION_SYSTEM_PLAN_FOLLOWER_TIME_STEP,            TimeUnit.MILLISECONDS)
+Inferred parameter values: yarn.resourcemanager.reservation-system.planfollower.time-step, 
+
+Found callsite[456] in File: org.apache.hadoop.yarn.server.resourcemanager.ClientRMService.java LineNum: 226 Method name: conf.getBoolean(        CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,         false)
+Inferred parameter values: 
+
+Found callsite[457] in File: org.apache.hadoop.yarn.sharedcache.SharedCacheChecksumFactory.java LineNum: 67 Method name: conf.getClass(YarnConfiguration.SHARED_CACHE_CHECKSUM_ALGO_IMPL,        defaultAlgorithm, SharedCacheChecksum.class)
+Inferred parameter values: yarn.sharedcache.checksum.algo.impl, 
+
+Found callsite[458] in File: org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore.java LineNum: 191 Method name: conf.getLong(        YarnConfiguration.TIMELINE_SERVICE_LEVELDB_READ_CACHE_SIZE,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_READ_CACHE_SIZE)
+Inferred parameter values: yarn.timeline-service.leveldb-timeline-store.read-cache-size, 
+
+Found callsite[459] in File: org.apache.hadoop.yarn.server.timeline.security.TimelineDelegationTokenSecretManagerService.java LineNum: 56 Method name: conf.getBoolean(YarnConfiguration.TIMELINE_SERVICE_RECOVERY_ENABLED,        YarnConfiguration.DEFAULT_TIMELINE_SERVICE_RECOVERY_ENABLED)
+Inferred parameter values: yarn.timeline-service.recovery.enabled, 
+
+Found callsite[460] in File: org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore.java LineNum: 1290 Method name: conf.getInt(        YarnConfiguration.TIMELINE_SERVICE_LEVELDB_START_TIME_WRITE_CACHE_SIZE,        YarnConfiguration.            DEFAULT_TIMELINE_SERVICE_LEVELDB_START_TIME_WRITE_CACHE_SIZE)
+Inferred parameter values: yarn.timeline-service.leveldb-timeline-store.start-time-write-cache-size, 
+
+Found callsite[461] in File: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.java LineNum: 205 Method name: conf.getInt(      YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_MB,      YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_MB)
+Inferred parameter values: yarn.scheduler.minimum-allocation-mb, 
+
+Found callsite[462] in File: org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.java LineNum: 881 Method name: conf.getBoolean(          YarnConfiguration.RM_WEBAPP_DELEGATION_TOKEN_AUTH_FILTER,          YarnConfiguration.DEFAULT_RM_WEBAPP_DELEGATION_TOKEN_AUTH_FILTER)
+Inferred parameter values: yarn.resourcemanager.webapp.delegation-token-auth-filter.enabled, 
+
+Found callsite[463] in File: org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.java LineNum: 241 Method name: conf.getBoolean(YarnConfiguration.LOG_AGGREGATION_ENABLED,        YarnConfiguration.DEFAULT_LOG_AGGREGATION_ENABLED)
+Inferred parameter values: yarn.log-aggregation-enable, 
+
+Found callsite[464] in File: org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilterInitializer.java LineNum: 71 Method name: conf.get(propName)
+Inferred parameter values: 
+

@@ -1,0 +1,1686 @@
+Found callsite[0] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 191 Method name: getPort()
+Inferred parameter values: 
+
+Found callsite[1] in File: org.apache.hadoop.fs.http.client.HttpFSFileSystem.java LineNum: 343 Method name: getClass("httpfs.authenticator.class",            KerberosDelegationTokenAuthenticator.class,            DelegationTokenAuthenticator.class)
+Inferred parameter values: httpfs.authenticator.class, 
+
+Found callsite[2] in File: org.apache.hadoop.hdfs.server.namenode.NameNodeHttpServer.java LineNum: 106 Method name: conf.getTrimmed(        DFSConfigKeys.DFS_NAMENODE_HTTPS_ADDRESS_KEY,        DFSConfigKeys.DFS_NAMENODE_HTTPS_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.namenode.https-address, 
+
+Found callsite[3] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 477 Method name: conf.getInt(          DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_SIZE_KEY,          DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_SIZE_DEFAULT)
+Inferred parameter values: dfs.client.read.shortcircuit.streams.cache.size, 
+
+Found callsite[4] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 505 Method name: conf.getLong(          DFSConfigKeys.DFS_CLIENT_SLOW_IO_WARNING_THRESHOLD_KEY,          DFSConfigKeys.DFS_CLIENT_SLOW_IO_WARNING_THRESHOLD_DEFAULT)
+Inferred parameter values: dfs.client.slow.io.warning.threshold.ms, 
+
+Found callsite[5] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 452 Method name: conf.getTrimmed(          DFSConfigKeys.DFS_DOMAIN_SOCKET_PATH_KEY,          DFSConfigKeys.DFS_DOMAIN_SOCKET_PATH_DEFAULT)
+Inferred parameter values: dfs.domain.socket.path, , 
+
+Found callsite[6] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 925 Method name: conf.getStringCollection(DFS_NAMENODE_AUDIT_LOGGERS_KEY)
+Inferred parameter values: dfs.namenode.audit.loggers, 
+
+Found callsite[7] in File: org.apache.hadoop.hdfs.server.namenode.NameNode.java LineNum: 390 Method name: conf.get(FS_DEFAULT_NAME_KEY)
+Inferred parameter values: 
+
+Found callsite[8] in File: org.apache.hadoop.hdfs.server.namenode.NameNode.java LineNum: 1357 Method name: conf.get(DFS_NAMENODE_STARTUP_KEY,                                          StartupOption.REGULAR.toString())
+Inferred parameter values: dfs.namenode.startup, 
+
+Found callsite[9] in File: org.apache.hadoop.hdfs.HAUtil.java LineNum: 91 Method name: conf.get(DFS_NAMENODE_SHARED_EDITS_DIR_KEY)
+Inferred parameter values: dfs.namenode.shared.edits.dir, 
+
+Found callsite[10] in File: org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl.java LineNum: 268 Method name: conf.getInt(DFSConfigKeys.DFS_DATANODE_FAILED_VOLUMES_TOLERATED_KEY,                  DFSConfigKeys.DFS_DATANODE_FAILED_VOLUMES_TOLERATED_DEFAULT)
+Inferred parameter values: dfs.datanode.failed.volumes.tolerated, 
+
+Found callsite[11] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 498 Method name: conf.getInt(          DFSConfigKeys.DFS_SHORT_CIRCUIT_SHARED_MEMORY_WATCHER_INTERRUPT_CHECK_MS,          DFSConfigKeys.DFS_SHORT_CIRCUIT_SHARED_MEMORY_WATCHER_INTERRUPT_CHECK_MS_DEFAULT)
+Inferred parameter values: dfs.short.circuit.shared.memory.watcher.interrupt.check.ms, 
+
+Found callsite[12] in File: org.apache.hadoop.hdfs.server.namenode.FSImageCompression.java LineNum: 78 Method name: conf.getBoolean(      DFSConfigKeys.DFS_IMAGE_COMPRESS_KEY,      DFSConfigKeys.DFS_IMAGE_COMPRESS_DEFAULT)
+Inferred parameter values: dfs.image.compress, 
+
+Found callsite[13] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 230 Method name: conf.getInt(        DFSConfigKeys.DFS_NAMENODE_HEARTBEAT_RECHECK_INTERVAL_KEY,         DFSConfigKeys.DFS_NAMENODE_HEARTBEAT_RECHECK_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.namenode.heartbeat.recheck-interval, 
+
+Found callsite[14] in File: org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetCache.java LineNum: 237 Method name: getLong(        DFS_DATANODE_CACHE_REVOCATION_TIMEOUT_MS,        DFS_DATANODE_CACHE_REVOCATION_TIMEOUT_MS_DEFAULT)
+Inferred parameter values: dfs.datanode.cache.revocation.timeout.ms, 
+
+Found callsite[15] in File: org.apache.hadoop.hdfs.server.namenode.FSDirectory.java LineNum: 275 Method name: conf.getInt(        DFSConfigKeys.DFS_NAMENODE_MAX_XATTRS_PER_INODE_KEY,        DFSConfigKeys.DFS_NAMENODE_MAX_XATTRS_PER_INODE_DEFAULT)
+Inferred parameter values: dfs.namenode.fs-limits.max-xattrs-per-inode, 
+
+Found callsite[16] in File: org.apache.hadoop.hdfs.server.namenode.DfsServlet.java LineNum: 81 Method name: getProxy()
+Inferred parameter values: 
+
+Found callsite[17] in File: org.apache.hadoop.hdfs.server.namenode.NameNode.java LineNum: 519 Method name: conf.getTrimmed(DFS_NAMENODE_SERVICE_RPC_BIND_HOST_KEY)
+Inferred parameter values: dfs.namenode.servicerpc-bind-host, 
+
+Found callsite[18] in File: org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsVolumeImpl.java LineNum: 134 Method name: getInt(        DFSConfigKeys.DFS_DATANODE_FSDATASETCACHE_MAX_THREADS_PER_VOLUME_KEY,        DFSConfigKeys.DFS_DATANODE_FSDATASETCACHE_MAX_THREADS_PER_VOLUME_DEFAULT)
+Inferred parameter values: dfs.datanode.fsdatasetcache.max.threads.per.volume, 
+
+Found callsite[19] in File: org.apache.hadoop.hdfs.web.WebHdfsFileSystem.java LineNum: 1126 Method name: getInt(DFSConfigKeys.DFS_REPLICATION_KEY,        DFSConfigKeys.DFS_REPLICATION_DEFAULT)
+Inferred parameter values: dfs.replication, 
+
+Found callsite[20] in File: org.apache.hadoop.hdfs.tools.GetConf.java LineNum: 174 Method name: getTrimmed(key)
+Inferred parameter values: 
+
+Found callsite[21] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 446 Method name: conf.getBoolean(          DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_KEY,          DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_DEFAULT)
+Inferred parameter values: dfs.client.read.shortcircuit, 
+
+Found callsite[22] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.java LineNum: 288 Method name: conf.getInt(      DFSConfigKeys.DFS_NAMENODE_REPLICATION_PENDING_TIMEOUT_SEC_KEY,      DFSConfigKeys.DFS_NAMENODE_REPLICATION_PENDING_TIMEOUT_SEC_DEFAULT)
+Inferred parameter values: dfs.namenode.replication.pending.timeout-sec, 
+
+Found callsite[23] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 741 Method name: config.get(DFS_DATANODE_DNS_NAMESERVER_KEY,                     DFS_DATANODE_DNS_NAMESERVER_DEFAULT)
+Inferred parameter values: dfs.datanode.dns.nameserver, default, 
+
+Found callsite[24] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1692 Method name: conf.get(spnegoUserNameKey)
+Inferred parameter values: 
+
+Found callsite[25] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 200 Method name: getPort()
+Inferred parameter values: 
+
+Found callsite[26] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 227 Method name: conf.getLong(        DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_KEY,        DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.heartbeat.interval, 
+
+Found callsite[27] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 164 Method name: conf.getLong(DFS_HEARTBEAT_INTERVAL_KEY,        DFS_HEARTBEAT_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.heartbeat.interval, 
+
+Found callsite[28] in File: org.apache.hadoop.hdfs.server.namenode.NameNodeResourceChecker.java LineNum: 116 Method name: conf        .getTrimmedStringCollection(DFSConfigKeys.DFS_NAMENODE_CHECKED_VOLUMES_KEY)
+Inferred parameter values: dfs.namenode.resource.checked.volumes, 
+
+Found callsite[29] in File: org.apache.hadoop.hdfs.server.namenode.CacheManager.java LineNum: 195 Method name: conf.getInt(        DFS_NAMENODE_LIST_CACHE_POOLS_NUM_RESPONSES,        DFS_NAMENODE_LIST_CACHE_POOLS_NUM_RESPONSES_DEFAULT)
+Inferred parameter values: dfs.namenode.list.cache.pools.num.responses, 
+
+Found callsite[30] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 795 Method name: conf.getBoolean(DFS_SUPPORT_APPEND_KEY, DFS_SUPPORT_APPEND_DEFAULT)
+Inferred parameter values: dfs.support.append, 
+
+Found callsite[31] in File: org.apache.hadoop.hdfs.qjournal.server.JournalNodeRpcServer.java LineNum: 84 Method name: confCopy.getBoolean(      CommonConfigurationKeys.HADOOP_SECURITY_AUTHORIZATION, false)
+Inferred parameter values: 
+
+Found callsite[32] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 251 Method name: conf.getBoolean(        DFSConfigKeys.DFS_NAMENODE_AVOID_STALE_DATANODE_FOR_WRITE_KEY,        DFSConfigKeys.DFS_NAMENODE_AVOID_STALE_DATANODE_FOR_WRITE_DEFAULT)
+Inferred parameter values: dfs.namenode.avoid.write.stale.datanode, 
+
+Found callsite[33] in File: org.apache.hadoop.hdfs.server.datanode.fsdataset.AvailableSpaceVolumeChoosingPolicy.java LineNum: 66 Method name: conf.getFloat(        DFS_DATANODE_AVAILABLE_SPACE_VOLUME_CHOOSING_POLICY_BALANCED_SPACE_PREFERENCE_FRACTION_KEY,        DFS_DATANODE_AVAILABLE_SPACE_VOLUME_CHOOSING_POLICY_BALANCED_SPACE_PREFERENCE_FRACTION_DEFAULT)
+Inferred parameter values: dfs.datanode.available-space-volume-choosing-policy.balanced-space-preference-fraction, 
+
+Found callsite[34] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 396 Method name: conf.getBoolean(        DFSConfigKeys.DFS_PERMISSIONS_ENABLED_KEY,        DFSConfigKeys.DFS_PERMISSIONS_ENABLED_DEFAULT)
+Inferred parameter values: dfs.permissions.enabled, 
+
+Found callsite[35] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 6603 Method name: conf.getLong(        DFS_NAMENODE_DELEGATION_KEY_UPDATE_INTERVAL_KEY,        DFS_NAMENODE_DELEGATION_KEY_UPDATE_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.namenode.delegation.key.update-interval, 
+
+Found callsite[36] in File: org.apache.hadoop.hdfs.protocol.datatransfer.sasl.DataTransferSaslUtil.java LineNum: 189 Method name: conf.getClass(      HADOOP_SECURITY_SASL_PROPS_RESOLVER_CLASS,      SaslPropertiesResolver.class, SaslPropertiesResolver.class)
+Inferred parameter values: 
+
+Found callsite[37] in File: org.apache.hadoop.lib.service.hadoop.FileSystemAccessService.java LineNum: 361 Method name: conf.getBoolean(FILE_SYSTEM_SERVICE_CREATED, false)
+Inferred parameter values: FileSystemAccessService.created, 
+
+Found callsite[38] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 391 Method name: conf.getLong(            DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_COUNT_RESET_TIME_PERIOD_MS_KEY,            DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_COUNT_RESET_TIME_PERIOD_MS_DEFAULT)
+Inferred parameter values: dfs.client.write.byte-array-manager.count-reset-time-period-ms, 
+
+Found callsite[39] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1377 Method name: conf.get(key)
+Inferred parameter values: 
+
+Found callsite[40] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1232 Method name: conf.get(addKeySuffixes(key, nameserviceId))
+Inferred parameter values: 
+
+Found callsite[41] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 906 Method name: conf.getBoolean(DFSConfigKeys.DFS_CLIENT_DOMAIN_SOCKET_DATA_TRAFFIC,              DFSConfigKeys.DFS_CLIENT_DOMAIN_SOCKET_DATA_TRAFFIC_DEFAULT)
+Inferred parameter values: dfs.client.domain.socket.data.traffic, 
+
+Found callsite[42] in File: org.apache.hadoop.hdfs.qjournal.client.QuorumJournalManager.java LineNum: 139 Method name: conf.getInt(        DFSConfigKeys.DFS_QJOURNAL_NEW_EPOCH_TIMEOUT_KEY,        DFSConfigKeys.DFS_QJOURNAL_NEW_EPOCH_TIMEOUT_DEFAULT)
+Inferred parameter values: dfs.qjournal.new-epoch.timeout.ms, 
+
+Found callsite[43] in File: org.apache.hadoop.hdfs.protocol.datatransfer.ReplaceDatanodeOnFailure.java LineNum: 166 Method name: conf.getBoolean(        DFSConfigKeys.DFS_CLIENT_WRITE_REPLACE_DATANODE_ON_FAILURE_ENABLE_KEY,        DFSConfigKeys.DFS_CLIENT_WRITE_REPLACE_DATANODE_ON_FAILURE_ENABLE_DEFAULT)
+Inferred parameter values: dfs.client.block.write.replace-datanode-on-failure.enable, 
+
+Found callsite[44] in File: org.apache.hadoop.fs.http.server.FSOperations.java LineNum: 783 Method name: getInt("httpfs.buffer.size", 4096)
+Inferred parameter values: httpfs.buffer.size, 
+
+Found callsite[45] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 242 Method name: conf.getBoolean(        DFSConfigKeys.DFS_NAMENODE_DATANODE_REGISTRATION_IP_HOSTNAME_CHECK_KEY,        DFSConfigKeys.DFS_NAMENODE_DATANODE_REGISTRATION_IP_HOSTNAME_CHECK_DEFAULT)
+Inferred parameter values: dfs.namenode.datanode.registration.ip-hostname-check, 
+
+Found callsite[46] in File: org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.java LineNum: 224 Method name: conf.get(DFSConfigKeys.DFS_METRICS_SESSION_ID_KEY)
+Inferred parameter values: dfs.metrics.session-id, 
+
+Found callsite[47] in File: org.apache.hadoop.hdfs.NameNodeProxies.java LineNum: 240 Method name: config.getInt(          DFS_CLIENT_RETRY_MAX_ATTEMPTS_KEY,          DFS_CLIENT_RETRY_MAX_ATTEMPTS_DEFAULT)
+Inferred parameter values: dfs.client.retry.max.attempts, 
+
+Found callsite[48] in File: org.apache.hadoop.hdfs.tools.DFSHAAdmin.java LineNum: 70 Method name: conf.get(        DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY, "")
+Inferred parameter values: dfs.namenode.kerberos.principal, , 
+
+Found callsite[49] in File: org.apache.hadoop.hdfs.HAUtil.java LineNum: 108 Method name: conf.getTrimmed(DFS_HA_NAMENODE_ID_KEY)
+Inferred parameter values: dfs.ha.namenode.id, 
+
+Found callsite[50] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 264 Method name: conf.getLong(        DFSConfigKeys.DFS_NAMENODE_PATH_BASED_CACHE_RETRY_INTERVAL_MS,        DFSConfigKeys.DFS_NAMENODE_PATH_BASED_CACHE_RETRY_INTERVAL_MS_DEFAULT)
+Inferred parameter values: dfs.namenode.path.based.cache.retry.interval.ms, 
+
+Found callsite[51] in File: org.apache.hadoop.hdfs.qjournal.server.JournalNodeRpcServer.java LineNum: 107 Method name: conf.get(        DFSConfigKeys.DFS_JOURNALNODE_RPC_ADDRESS_KEY,        DFSConfigKeys.DFS_JOURNALNODE_RPC_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.journalnode.rpc-address, 
+
+Found callsite[52] in File: org.apache.hadoop.hdfs.HAUtil.java LineNum: 200 Method name: conf.getBoolean("dfs.ha.allow.stale.reads", false)
+Inferred parameter values: dfs.ha.allow.stale.reads, 
+
+Found callsite[53] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 433 Method name: conf.getInt(          DFSConfigKeys.DFS_CLIENT_RETRY_TIMES_GET_LAST_BLOCK_LENGTH,          DFSConfigKeys.DFS_CLIENT_RETRY_TIMES_GET_LAST_BLOCK_LENGTH_DEFAULT)
+Inferred parameter values: dfs.client.retry.times.get-last-block-length, 
+
+Found callsite[54] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 923 Method name: conf.getTrimmed(DFSConfigKeys.DFS_DOMAIN_SOCKET_PATH_KEY,            DFSConfigKeys.DFS_DOMAIN_SOCKET_PATH_DEFAULT)
+Inferred parameter values: dfs.domain.socket.path, , 
+
+Found callsite[55] in File: org.apache.hadoop.hdfs.server.namenode.NameNode.java LineNum: 1057 Method name: conf.get(DFSConfigKeys.DFS_NAMENODE_SHARED_EDITS_DIR_KEY)
+Inferred parameter values: dfs.namenode.shared.edits.dir, 
+
+Found callsite[56] in File: org.apache.hadoop.hdfs.nfs.nfs3.Nfs3Metrics.java LineNum: 105 Method name: conf        .getInts(NfsConfigKeys.NFS_METRICS_PERCENTILES_INTERVALS_KEY)
+Inferred parameter values: nfs.metrics.percentiles.intervals, 
+
+Found callsite[57] in File: org.apache.hadoop.hdfs.server.balancer.Balancer.java LineNum: 571 Method name: conf.getLong(DFSConfigKeys.DFS_NAMENODE_REPLICATION_INTERVAL_KEY,            DFSConfigKeys.DFS_NAMENODE_REPLICATION_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.namenode.replication.interval, 
+
+Found callsite[58] in File: org.apache.hadoop.hdfs.server.namenode.FSDirectory.java LineNum: 231 Method name: conf.getBoolean(        DFSConfigKeys.DFS_NAMENODE_ACLS_ENABLED_KEY,        DFSConfigKeys.DFS_NAMENODE_ACLS_ENABLED_DEFAULT)
+Inferred parameter values: dfs.namenode.acls.enabled, 
+
+Found callsite[59] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.java LineNum: 90 Method name: conf.getLong(        DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_KEY,        DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.heartbeat.interval, 
+
+Found callsite[60] in File: org.apache.hadoop.hdfs.tools.DFSAdmin.java LineNum: 1290 Method name: conf.get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY, "")
+Inferred parameter values: dfs.namenode.kerberos.principal, , 
+
+Found callsite[61] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 6608 Method name: conf.getLong(DFS_NAMENODE_DELEGATION_TOKEN_RENEW_INTERVAL_KEY,            DFS_NAMENODE_DELEGATION_TOKEN_RENEW_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.namenode.delegation.token.renew-interval, 
+
+Found callsite[62] in File: org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics.java LineNum: 66 Method name: conf.get(DFSConfigKeys.NNTOP_BUCKETS_PER_WINDOW_KEY)
+Inferred parameter values: dfs.namenode.top.window.num.buckets, 
+
+Found callsite[63] in File: org.apache.hadoop.hdfs.server.namenode.FSDirectory.java LineNum: 257 Method name: conf.getBoolean(DFS_QUOTA_BY_STORAGETYPE_ENABLED_KEY,                        DFS_QUOTA_BY_STORAGETYPE_ENABLED_DEFAULT)
+Inferred parameter values: dfs.quota.by.storage.type.enabled, 
+
+Found callsite[64] in File: org.apache.hadoop.hdfs.server.namenode.NameNodeHttpServer.java LineNum: 187 Method name: conf      .get(DFSConfigKeys.DFS_WEB_AUTHENTICATION_SIMPLE_ANONYMOUS_ALLOWED)
+Inferred parameter values: dfs.web.authentication.simple.anonymous.allowed, 
+
+Found callsite[65] in File: org.apache.hadoop.hdfs.NameNodeProxies.java LineNum: 422 Method name: getProxy()
+Inferred parameter values: 
+
+Found callsite[66] in File: org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager.java LineNum: 76 Method name: conf.getInt(        DFSConfigKeys.DFS_NAMENODE_MAX_EXTRA_EDITS_SEGMENTS_RETAINED_KEY,        DFSConfigKeys.DFS_NAMENODE_MAX_EXTRA_EDITS_SEGMENTS_RETAINED_DEFAULT)
+Inferred parameter values: dfs.namenode.max.extra.edits.segments.retained, 
+
+Found callsite[67] in File: org.apache.hadoop.hdfs.tools.DFSAdmin.java LineNum: 1356 Method name: getProxy()
+Inferred parameter values: 
+
+Found callsite[68] in File: org.apache.hadoop.hdfs.qjournal.server.JournalNode.java LineNum: 106 Method name: conf.get(DFSConfigKeys.DFS_JOURNALNODE_EDITS_DIR_KEY,        DFSConfigKeys.DFS_JOURNALNODE_EDITS_DIR_DEFAULT)
+Inferred parameter values: dfs.journalnode.edits.dir, /tmp/hadoop/dfs/journalnode/, 
+
+Found callsite[69] in File: org.apache.hadoop.hdfs.server.namenode.NameNodeHttpServer.java LineNum: 72 Method name: conf.get(          DFSConfigKeys.DFS_WEBHDFS_USER_PATTERN_KEY,          DFSConfigKeys.DFS_WEBHDFS_USER_PATTERN_DEFAULT)
+Inferred parameter values: dfs.webhdfs.user.provider.user.pattern, ^[A-Za-z_][A-Za-z0-9._-]*[$]?$, 
+
+Found callsite[70] in File: org.apache.hadoop.hdfs.server.namenode.TransferFsImage.java LineNum: 273 Method name: conf.getInt(          DFSConfigKeys.DFS_IMAGE_TRANSFER_CHUNKSIZE_KEY,          DFSConfigKeys.DFS_IMAGE_TRANSFER_CHUNKSIZE_DEFAULT)
+Inferred parameter values: dfs.image.transfer.chunksize, 
+
+Found callsite[71] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 142 Method name: conf.getLong(DFS_BLOCKREPORT_SPLIT_THRESHOLD_KEY,                                            DFS_BLOCKREPORT_SPLIT_THRESHOLD_DEFAULT)
+Inferred parameter values: dfs.blockreport.split.threshold, 
+
+Found callsite[72] in File: org.apache.hadoop.hdfs.server.namenode.NameNode.java LineNum: 1531 Method name: conf.get(DFS_NAMENODE_RPC_ADDRESS_KEY)
+Inferred parameter values: dfs.namenode.rpc-address, 
+
+Found callsite[73] in File: org.apache.hadoop.hdfs.server.namenode.NameNode.java LineNum: 580 Method name: conf.getTrimmed(DFS_NAMENODE_HTTP_ADDRESS_KEY, DFS_NAMENODE_HTTP_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.namenode.http-address, 
+
+Found callsite[74] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.java LineNum: 383 Method name: conf.get(        DFSConfigKeys.DFS_DATA_ENCRYPTION_ALGORITHM_KEY)
+Inferred parameter values: dfs.encrypt.data.transfer.algorithm, 
+
+Found callsite[75] in File: org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.java LineNum: 388 Method name: conf.get(        DFSConfigKeys.DFS_NAMENODE_MIN_SUPPORTED_DATANODE_VERSION_KEY,        DFSConfigKeys.DFS_NAMENODE_MIN_SUPPORTED_DATANODE_VERSION_DEFAULT)
+Inferred parameter values: dfs.namenode.min.supported.datanode.version, 2.1.0-beta, 
+
+Found callsite[76] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 424 Method name: conf.getBoolean(          DFSConfigKeys.DFS_HDFS_BLOCKS_METADATA_ENABLED,           DFSConfigKeys.DFS_HDFS_BLOCKS_METADATA_ENABLED_DEFAULT)
+Inferred parameter values: dfs.datanode.hdfs-blocks-metadata.enabled, 
+
+Found callsite[77] in File: org.apache.hadoop.fs.http.server.HttpFSServerWebApp.java LineNum: 104 Method name: get(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY)
+Inferred parameter values: 
+
+Found callsite[78] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 115 Method name: conf.getBoolean(        DFS_DATANODE_TRANSFERTO_ALLOWED_KEY,        DFS_DATANODE_TRANSFERTO_ALLOWED_DEFAULT)
+Inferred parameter values: dfs.datanode.transferTo.allowed, 
+
+Found callsite[79] in File: org.apache.hadoop.hdfs.server.namenode.EncryptionZoneManager.java LineNum: 108 Method name: conf.getInt(        DFSConfigKeys.DFS_NAMENODE_LIST_ENCRYPTION_ZONES_NUM_RESPONSES,        DFSConfigKeys.DFS_NAMENODE_LIST_ENCRYPTION_ZONES_NUM_RESPONSES_DEFAULT    )
+Inferred parameter values: dfs.namenode.list.encryption.zones.num.responses, 
+
+Found callsite[80] in File: org.apache.hadoop.hdfs.server.namenode.ha.IPFailoverProxyProvider.java LineNum: 76 Method name: this.conf.getInt(        DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_ON_SOCKET_TIMEOUTS_KEY,        DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_ON_SOCKET_TIMEOUTS_DEFAULT)
+Inferred parameter values: dfs.client.failover.connection.retries.on.timeouts, 
+
+Found callsite[81] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 351 Method name: conf.getInt(          DFS_CLIENT_RETRY_MAX_ATTEMPTS_KEY,          DFS_CLIENT_RETRY_MAX_ATTEMPTS_DEFAULT)
+Inferred parameter values: dfs.client.retry.max.attempts, 
+
+Found callsite[82] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 193 Method name: conf.getTrimmed(DFSConfigKeys.DFS_DATANODE_HTTP_ADDRESS_KEY,              DFSConfigKeys.DFS_DATANODE_HTTP_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.datanode.http.address, 
+
+Found callsite[83] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 373 Method name: conf.getInt(DFS_CLIENT_WRITE_PACKET_SIZE_KEY,          DFS_CLIENT_WRITE_PACKET_SIZE_DEFAULT)
+Inferred parameter values: dfs.client-write-packet-size, 
+
+Found callsite[84] in File: org.apache.hadoop.hdfs.server.balancer.Balancer.java LineNum: 227 Method name: conf.getInt(        DFSConfigKeys.DFS_DATANODE_BALANCE_MAX_NUM_CONCURRENT_MOVES_KEY,        DFSConfigKeys.DFS_DATANODE_BALANCE_MAX_NUM_CONCURRENT_MOVES_DEFAULT)
+Inferred parameter values: dfs.datanode.balance.max.concurrent.moves, 
+
+Found callsite[85] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 370 Method name: conf.getInt(DFS_CLIENT_SOCKET_TIMEOUT_KEY,          HdfsServerConstants.READ_TIMEOUT)
+Inferred parameter values: dfs.client.socket-timeout, 
+
+Found callsite[86] in File: org.apache.hadoop.hdfs.server.balancer.Balancer.java LineNum: 569 Method name: conf.getLong(DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_KEY,            DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.heartbeat.interval, 
+
+Found callsite[87] in File: org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.java LineNum: 226 Method name: conf.getInt(DFS_NAMENODE_HANDLER_COUNT_KEY,                   DFS_NAMENODE_HANDLER_COUNT_DEFAULT)
+Inferred parameter values: dfs.namenode.handler.count, 
+
+Found callsite[88] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 2880 Method name: conf.getTrimmed(DFS_DATANODE_ADDRESS_KEY, DFS_DATANODE_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.datanode.address, 
+
+Found callsite[89] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 480 Method name: conf.getLong(          DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_EXPIRY_MS_KEY,          DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_EXPIRY_MS_DEFAULT)
+Inferred parameter values: dfs.client.read.shortcircuit.streams.cache.expiry.ms, 
+
+Found callsite[90] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 685 Method name: conf.getTrimmedStrings(DFSConfigKeys.DFS_CLIENT_LOCAL_INTERFACES)
+Inferred parameter values: dfs.client.local.interfaces, 
+
+Found callsite[91] in File: org.apache.hadoop.hdfs.server.namenode.FSImage.java LineNum: 141 Method name: conf.getBoolean(DFSConfigKeys.DFS_NAMENODE_NAME_DIR_RESTORE_KEY,                       DFSConfigKeys.DFS_NAMENODE_NAME_DIR_RESTORE_DEFAULT)
+Inferred parameter values: dfs.namenode.name.dir.restore, 
+
+Found callsite[92] in File: org.apache.hadoop.hdfs.server.datanode.ShortCircuitRegistry.java LineNum: 160 Method name: conf.getInt(          DFS_SHORT_CIRCUIT_SHARED_MEMORY_WATCHER_INTERRUPT_CHECK_MS,          DFS_SHORT_CIRCUIT_SHARED_MEMORY_WATCHER_INTERRUPT_CHECK_MS_DEFAULT)
+Inferred parameter values: dfs.short.circuit.shared.memory.watcher.interrupt.check.ms, 
+
+Found callsite[93] in File: org.apache.hadoop.hdfs.server.namenode.ImageServlet.java LineNum: 257 Method name: otherNnConf          .get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY)
+Inferred parameter values: dfs.namenode.kerberos.principal, 
+
+Found callsite[94] in File: org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB.java LineNum: 109 Method name: getProxy()
+Inferred parameter values: 
+
+Found callsite[95] in File: org.apache.hadoop.hdfs.server.namenode.NameNodeResourceChecker.java LineNum: 144 Method name: conf.getInt(        DFSConfigKeys.DFS_NAMENODE_CHECKED_VOLUMES_MINIMUM_KEY,        DFSConfigKeys.DFS_NAMENODE_CHECKED_VOLUMES_MINIMUM_DEFAULT)
+Inferred parameter values: dfs.namenode.resource.checked.volumes.minimum, 
+
+Found callsite[96] in File: org.apache.hadoop.hdfs.nfs.nfs3.Nfs3Metrics.java LineNum: 100 Method name: conf.get(DFSConfigKeys.DFS_METRICS_SESSION_ID_KEY)
+Inferred parameter values: dfs.metrics.session-id, 
+
+Found callsite[97] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 5164 Method name: conf.getInt(DFS_NAMENODE_REPLICATION_MIN_KEY,                                          DFS_NAMENODE_REPLICATION_MIN_DEFAULT)
+Inferred parameter values: dfs.namenode.replication.min, 
+
+Found callsite[98] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 695 Method name: conf.get(DFS_CLIENT_CACHE_READAHEAD)
+Inferred parameter values: dfs.client.cache.readahead, 
+
+Found callsite[99] in File: org.apache.hadoop.hdfs.server.namenode.CheckpointConf.java LineNum: 67 Method name: conf.get(key)
+Inferred parameter values: 
+
+Found callsite[100] in File: org.apache.hadoop.hdfs.server.namenode.FSImage.java LineNum: 801 Method name: conf.getLong(        DFSConfigKeys.DFS_NAMENODE_CHECKPOINT_PERIOD_KEY,         DFSConfigKeys.DFS_NAMENODE_CHECKPOINT_PERIOD_DEFAULT)
+Inferred parameter values: dfs.namenode.checkpoint.period, 
+
+Found callsite[101] in File: org.apache.hadoop.lib.service.hadoop.FileSystemAccessService.java LineNum: 331 Method name: getAuthority()
+Inferred parameter values: 
+
+Found callsite[102] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 739 Method name: config.get(DFS_DATANODE_DNS_INTERFACE_KEY,                     DFS_DATANODE_DNS_INTERFACE_DEFAULT)
+Inferred parameter values: dfs.datanode.dns.interface, default, 
+
+Found callsite[103] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 2364 Method name: conf.get(DFS_DATANODE_DATA_DIR_PERMISSION_KEY,                 DFS_DATANODE_DATA_DIR_PERMISSION_DEFAULT)
+Inferred parameter values: dfs.datanode.data.dir.perm, 700, 
+
+Found callsite[104] in File: org.apache.hadoop.lib.server.Server.java LineNum: 548 Method name: getClasses(getPrefixedName(CONF_SERVICES))
+Inferred parameter values: 
+
+Found callsite[105] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 2265 Method name: conf.getTrimmedStringCollection(DFS_DATANODE_DATA_DIR_KEY)
+Inferred parameter values: dfs.datanode.data.dir, 
+
+Found callsite[106] in File: org.apache.hadoop.hdfs.server.mover.Mover.java LineNum: 124 Method name: conf.getInt(        DFSConfigKeys.DFS_DATANODE_BALANCE_MAX_NUM_CONCURRENT_MOVES_KEY,        DFSConfigKeys.DFS_DATANODE_BALANCE_MAX_NUM_CONCURRENT_MOVES_DEFAULT)
+Inferred parameter values: dfs.datanode.balance.max.concurrent.moves, 
+
+Found callsite[107] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 6611 Method name: conf.getBoolean(DFS_NAMENODE_AUDIT_LOG_TOKEN_TRACKING_ID_KEY,            DFS_NAMENODE_AUDIT_LOG_TOKEN_TRACKING_ID_DEFAULT)
+Inferred parameter values: dfs.namenode.audit.log.token.tracking.id, 
+
+Found callsite[108] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1227 Method name: conf.get(addKeySuffixes(key, nameserviceId, nnId))
+Inferred parameter values: 
+
+Found callsite[109] in File: org.apache.hadoop.hdfs.qjournal.server.JournalNodeHttpServer.java LineNum: 105 Method name: conf.get(DFSConfigKeys.DFS_JOURNALNODE_HTTP_ADDRESS_KEY,        DFSConfigKeys.DFS_JOURNALNODE_HTTP_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.journalnode.http-address, 
+
+Found callsite[110] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1900 Method name: conf.getTrimmed(        DFSConfigKeys.DFS_ENCRYPTION_KEY_PROVIDER_URI, "")
+Inferred parameter values: dfs.encryption.key.provider.uri, , 
+
+Found callsite[111] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 194 Method name: getPort()
+Inferred parameter values: 
+
+Found callsite[112] in File: org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.java LineNum: 138 Method name: conf.getInt(          DFSConfigKeys.DFS_HA_LOGROLL_RPC_TIMEOUT_KEY,          DFSConfigKeys.DFS_HA_LOGROLL_RPC_TIMEOUT_DEFAULT)
+Inferred parameter values: dfs.ha.log-roll.rpc.timeout, 
+
+Found callsite[113] in File: org.apache.hadoop.hdfs.server.balancer.Balancer.java LineNum: 218 Method name: conf.getLong(        DFSConfigKeys.DFS_BALANCER_MOVEDWINWIDTH_KEY,        DFSConfigKeys.DFS_BALANCER_MOVEDWINWIDTH_DEFAULT)
+Inferred parameter values: dfs.balancer.movedWinWidth, 
+
+Found callsite[114] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 458 Method name: get(property)
+Inferred parameter values: 
+
+Found callsite[115] in File: org.apache.hadoop.hdfs.server.blockmanagement.HeartbeatManager.java LineNum: 74 Method name: conf.getLong(        DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_INTERVAL_KEY,        DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.namenode.stale.datanode.interval, 
+
+Found callsite[116] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.java LineNum: 322 Method name: conf.getInt(DFSConfigKeys.DFS_NAMENODE_REPLICATION_MAX_STREAMS_KEY,            DFSConfigKeys.DFS_NAMENODE_REPLICATION_MAX_STREAMS_DEFAULT)
+Inferred parameter values: dfs.namenode.replication.max-streams, 
+
+Found callsite[117] in File: org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.RamDiskReplicaTracker.java LineNum: 184 Method name: conf.getClass(        DFSConfigKeys.DFS_DATANODE_RAM_DISK_REPLICA_TRACKER_KEY,        DFSConfigKeys.DFS_DATANODE_RAM_DISK_REPLICA_TRACKER_DEFAULT,        RamDiskReplicaTracker.class)
+Inferred parameter values: dfs.datanode.ram.disk.replica.tracker, 
+
+Found callsite[118] in File: org.apache.hadoop.hdfs.qjournal.server.GetJournalEditServlet.java LineNum: 105 Method name: conf.get(DFSConfigKeys.DFS_SECONDARY_NAMENODE_KERBEROS_PRINCIPAL_KEY)
+Inferred parameter values: dfs.secondary.namenode.kerberos.principal, 
+
+Found callsite[119] in File: org.apache.hadoop.hdfs.NameNodeProxies.java LineNum: 237 Method name: config.getInt(          DFS_CLIENT_FAILOVER_MAX_ATTEMPTS_KEY,          DFS_CLIENT_FAILOVER_MAX_ATTEMPTS_DEFAULT)
+Inferred parameter values: dfs.client.failover.max.attempts, 
+
+Found callsite[120] in File: org.apache.hadoop.fs.http.client.HttpFSFileSystem.java LineNum: 372 Method name: getInt(DFSConfigKeys.DFS_NAMENODE_HTTP_PORT_KEY,        DFSConfigKeys.DFS_NAMENODE_HTTP_PORT_DEFAULT)
+Inferred parameter values: dfs.http.port, 
+
+Found callsite[121] in File: org.apache.hadoop.hdfs.tools.DFSAdmin.java LineNum: 1268 Method name: getProxy()
+Inferred parameter values: 
+
+Found callsite[122] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 443 Method name: conf.getBoolean(          DFSConfigKeys.DFS_CLIENT_USE_LEGACY_BLOCKREADERLOCAL,          DFSConfigKeys.DFS_CLIENT_USE_LEGACY_BLOCKREADERLOCAL_DEFAULT)
+Inferred parameter values: dfs.client.use.legacy.blockreader.local, 
+
+Found callsite[123] in File: org.apache.hadoop.hdfs.protocol.datatransfer.WhitelistBasedTrustedChannelResolver.java LineNum: 99 Method name: conf.getBoolean(DFS_DATATRANSFER_CLIENT_VARIABLEWHITELIST_ENABLE, false)
+Inferred parameter values: dfs.datatransfer.client.variablewhitelist.enable, 
+
+Found callsite[124] in File: org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetCache.java LineNum: 240 Method name: getLong(        DFS_DATANODE_CACHE_REVOCATION_POLLING_MS,        DFS_DATANODE_CACHE_REVOCATION_POLLING_MS_DEFAULT)
+Inferred parameter values: dfs.datanode.cache.revocation.polling.ms, 
+
+Found callsite[125] in File: org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl.java LineNum: 2776 Method name: conf.getInt(          DFSConfigKeys.DFS_DATANODE_LAZY_WRITER_INTERVAL_SEC,          DFSConfigKeys.DFS_DATANODE_LAZY_WRITER_INTERVAL_DEFAULT_SEC)
+Inferred parameter values: dfs.datanode.lazywriter.interval.sec, 
+
+Found callsite[126] in File: org.apache.hadoop.hdfs.protocol.datatransfer.WhitelistBasedTrustedChannelResolver.java LineNum: 87 Method name: conf.getBoolean(DFS_DATATRANSFER_SERVER_VARIABLEWHITELIST_ENABLE, false)
+Inferred parameter values: dfs.datatransfer.server.variablewhitelist.enable, 
+
+Found callsite[127] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 547 Method name: conf.getInt(DFS_BYTES_PER_CHECKSUM_KEY,          DFS_BYTES_PER_CHECKSUM_DEFAULT)
+Inferred parameter values: dfs.bytes-per-checksum, 
+
+Found callsite[128] in File: org.apache.hadoop.lib.service.hadoop.FileSystemAccessService.java LineNum: 231 Method name: getLong(FS_CACHE_PURGE_TIMEOUT, 60)
+Inferred parameter values: filesystem.cache.purge.timeout, 
+
+Found callsite[129] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 430 Method name: conf.getInt(          DFSConfigKeys.DFS_CLIENT_FILE_BLOCK_STORAGE_LOCATIONS_TIMEOUT_MS,          DFSConfigKeys.DFS_CLIENT_FILE_BLOCK_STORAGE_LOCATIONS_TIMEOUT_MS_DEFAULT)
+Inferred parameter values: dfs.client.file-block-storage-locations.timeout.millis, 
+
+Found callsite[130] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 131 Method name: conf.getBoolean(        DFSConfigKeys.DFS_DATANODE_SYNC_BEHIND_WRITES_IN_BACKGROUND_KEY,        DFSConfigKeys.DFS_DATANODE_SYNC_BEHIND_WRITES_IN_BACKGROUND_DEFAULT)
+Inferred parameter values: dfs.datanode.sync.behind.writes.in.background, 
+
+Found callsite[131] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 486 Method name: conf.getInt(          DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_SIZE,          DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_SIZE_DEFAULT)
+Inferred parameter values: dfs.client.mmap.cache.size, 
+
+Found callsite[132] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1651 Method name: sslConf.get("ssl.server.truststore.location")
+Inferred parameter values: ssl.server.truststore.location, 
+
+Found callsite[133] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 5155 Method name: conf.getFloat(DFS_NAMENODE_SAFEMODE_THRESHOLD_PCT_KEY,          DFS_NAMENODE_SAFEMODE_THRESHOLD_PCT_DEFAULT)
+Inferred parameter values: dfs.namenode.safemode.threshold-pct, 
+
+Found callsite[134] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1684 Method name: conf.get(DFS_ADMIN, " ")
+Inferred parameter values: dfs.cluster.administrators,  , 
+
+Found callsite[135] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 462 Method name: get(property)
+Inferred parameter values: 
+
+Found callsite[136] in File: org.apache.hadoop.hdfs.server.datanode.web.DatanodeHttpServer.java LineNum: 219 Method name: conf.getTrimmed(DFS_DATANODE_HTTPS_ADDRESS_KEY,                             DFS_DATANODE_HTTPS_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.datanode.https.address, 
+
+Found callsite[137] in File: org.apache.hadoop.hdfs.server.namenode.BackupNode.java LineNum: 103 Method name: conf.getTrimmed(BN_SERVICE_RPC_ADDRESS_KEY)
+Inferred parameter values: dfs.namenode.backup.dnrpc-address, 
+
+Found callsite[138] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 928 Method name: conf.getBoolean(DFSConfigKeys.DFS_CLIENT_USE_LEGACY_BLOCKREADERLOCAL,          DFSConfigKeys.DFS_CLIENT_USE_LEGACY_BLOCKREADERLOCAL_DEFAULT)
+Inferred parameter values: dfs.client.use.legacy.blockreader.local, 
+
+Found callsite[139] in File: org.apache.hadoop.hdfs.server.namenode.BackupNode.java LineNum: 97 Method name: conf.getTrimmed(BN_ADDRESS_NAME_KEY, BN_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.namenode.backup.address, localhost:50100, 
+
+Found callsite[140] in File: org.apache.hadoop.hdfs.protocol.datatransfer.WhitelistBasedTrustedChannelResolver.java LineNum: 102 Method name: conf.getLong(DFS_DATATRANSFER_CLIENT_VARIABLEWHITELIST_CACHE_SECS,3600)
+Inferred parameter values: dfs.datatransfer.client.variablewhitelist.cache.secs, 
+
+Found callsite[141] in File: org.apache.hadoop.hdfs.qjournal.client.QuorumJournalManager.java LineNum: 124 Method name: conf.getInt(        DFSConfigKeys.DFS_QJOURNAL_PREPARE_RECOVERY_TIMEOUT_KEY,        DFSConfigKeys.DFS_QJOURNAL_PREPARE_RECOVERY_TIMEOUT_DEFAULT)
+Inferred parameter values: dfs.qjournal.prepare-recovery.timeout.ms, 
+
+Found callsite[142] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 733 Method name: conf.getLong(          DFS_NAMENODE_RESOURCE_CHECK_INTERVAL_KEY,          DFS_NAMENODE_RESOURCE_CHECK_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.namenode.resource.check.interval, 
+
+Found callsite[143] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 144 Method name: conf.getLong(DFS_CACHEREPORT_INTERVAL_MSEC_KEY,        DFS_CACHEREPORT_INTERVAL_MSEC_DEFAULT)
+Inferred parameter values: dfs.cachereport.intervalMsec, 
+
+Found callsite[144] in File: org.apache.hadoop.hdfs.protocol.datatransfer.WhitelistBasedTrustedChannelResolver.java LineNum: 96 Method name: conf.get(DFS_DATATRANSFER_CLIENT_FIXEDWHITELIST_FILE, fixedFile)
+Inferred parameter values: dfs.datatransfer.client.fixedwhitelist.file, 
+
+Found callsite[145] in File: org.apache.hadoop.hdfs.qjournal.server.GetJournalEditServlet.java LineNum: 96 Method name: conf              .get(DFSConfigKeys.DFS_SECONDARY_NAMENODE_KERBEROS_PRINCIPAL_KEY)
+Inferred parameter values: dfs.secondary.namenode.kerberos.principal, 
+
+Found callsite[146] in File: org.apache.hadoop.hdfs.qjournal.server.JournalNode.java LineNum: 231 Method name: conf.get(DFSConfigKeys.DFS_JOURNALNODE_EDITS_DIR_KEY,        DFSConfigKeys.DFS_JOURNALNODE_EDITS_DIR_DEFAULT)
+Inferred parameter values: dfs.journalnode.edits.dir, /tmp/hadoop/dfs/journalnode/, 
+
+Found callsite[147] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 698 Method name: conf.getBoolean(DFS_CLIENT_CACHE_DROP_BEHIND_WRITES, false)
+Inferred parameter values: dfs.client.cache.drop.behind.writes, 
+
+Found callsite[148] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 778 Method name: conf.getInt(DFS_BYTES_PER_CHECKSUM_KEY, DFS_BYTES_PER_CHECKSUM_DEFAULT)
+Inferred parameter values: dfs.bytes-per-checksum, 
+
+Found callsite[149] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1566 Method name: conf.getInt(            DFSConfigKeys.DFS_NAMENODE_REPLICATION_WORK_MULTIPLIER_PER_ITERATION,            DFSConfigKeys.DFS_NAMENODE_REPLICATION_WORK_MULTIPLIER_PER_ITERATION_DEFAULT)
+Inferred parameter values: dfs.namenode.replication.work.multiplier.per.iteration, 
+
+Found callsite[150] in File: org.apache.hadoop.hdfs.NameNodeProxies.java LineNum: 464 Method name: conf          .getClass(configKey, null, FailoverProxyProvider.class)
+Inferred parameter values: 
+
+Found callsite[151] in File: org.apache.hadoop.hdfs.web.HsftpFileSystem.java LineNum: 67 Method name: getInt(DFSConfigKeys.DFS_NAMENODE_HTTPS_PORT_KEY,                            DFSConfigKeys.DFS_NAMENODE_HTTPS_PORT_DEFAULT)
+Inferred parameter values: dfs.https.port, 
+
+Found callsite[152] in File: org.apache.hadoop.hdfs.server.namenode.NameNode.java LineNum: 738 Method name: getEmptier()
+Inferred parameter values: 
+
+Found callsite[153] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 784 Method name: conf.getTrimmed(DFS_DATANODE_IPC_ADDRESS_KEY)
+Inferred parameter values: dfs.datanode.ipc.address, 
+
+Found callsite[154] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 492 Method name: conf.getLong(          DFSConfigKeys.DFS_CLIENT_MMAP_RETRY_TIMEOUT_MS,          DFSConfigKeys.DFS_CLIENT_MMAP_RETRY_TIMEOUT_MS_DEFAULT)
+Inferred parameter values: dfs.client.mmap.retry.timeout.ms, 
+
+Found callsite[155] in File: org.apache.hadoop.hdfs.server.namenode.NameNode.java LineNum: 452 Method name: conf.getTrimmed(DFS_NAMENODE_SERVICE_RPC_ADDRESS_KEY)
+Inferred parameter values: dfs.namenode.servicerpc-address, 
+
+Found callsite[156] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1035 Method name: conf.get(key)
+Inferred parameter values: 
+
+Found callsite[157] in File: org.apache.hadoop.hdfs.server.datanode.DirectoryScanner.java LineNum: 319 Method name: conf.getInt(DFSConfigKeys.DFS_DATANODE_DIRECTORYSCAN_THREADS_KEY,                    DFSConfigKeys.DFS_DATANODE_DIRECTORYSCAN_THREADS_DEFAULT)
+Inferred parameter values: dfs.datanode.directoryscan.threads, 
+
+Found callsite[158] in File: org.apache.hadoop.hdfs.protocol.datatransfer.sasl.DataTransferSaslUtil.java LineNum: 262 Method name: conf.get(DFS_ENCRYPT_DATA_TRANSFER_CIPHER_SUITES_KEY)
+Inferred parameter values: dfs.encrypt.data.transfer.cipher.suites, 
+
+Found callsite[159] in File: org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl.java LineNum: 320 Method name: conf.getBoolean(      DFSConfigKeys.DFS_DATANODE_BLOCK_PINNING_ENABLED,      DFSConfigKeys.DFS_DATANODE_BLOCK_PINNING_ENABLED_DEFAULT)
+Inferred parameter values: dfs.datanode.block-pinning.enabled, 
+
+Found callsite[160] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 109 Method name: conf.getInt(        DFSConfigKeys.DFS_DATANODE_SOCKET_REUSE_KEEPALIVE_KEY,        DFSConfigKeys.DFS_DATANODE_SOCKET_REUSE_KEEPALIVE_DEFAULT)
+Inferred parameter values: dfs.datanode.socket.reuse.keepalive, 
+
+Found callsite[161] in File: org.apache.hadoop.lib.server.Server.java LineNum: 501 Method name: config.get(entry.getKey())
+Inferred parameter values: 
+
+Found callsite[162] in File: org.apache.hadoop.hdfs.server.datanode.BlockScanner.java LineNum: 160 Method name: conf.getClass(INTERNAL_VOLUME_SCANNER_SCAN_RESULT_HANDLER,                          ScanResultHandler.class)
+Inferred parameter values: internal.volume.scanner.scan.result.handler, 
+
+Found callsite[163] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 202 Method name: conf.get(DFSConfigKeys.DFS_HOSTS, "")
+Inferred parameter values: dfs.hosts, , 
+
+Found callsite[164] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 394 Method name: conf.get(DFSConfigKeys.DFS_PERMISSIONS_SUPERUSERGROUP_KEY,        DFSConfigKeys.DFS_PERMISSIONS_SUPERUSERGROUP_DEFAULT)
+Inferred parameter values: dfs.permissions.superusergroup, supergroup, 
+
+Found callsite[165] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 1385 Method name: cE.getTrimmedStringCollection(propertyName)
+Inferred parameter values: 
+
+Found callsite[166] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1480 Method name: conf.get(addrKey)
+Inferred parameter values: 
+
+Found callsite[167] in File: org.apache.hadoop.hdfs.server.datanode.DataStorage.java LineNum: 496 Method name: conf.get(        DFSConfigKeys.DFS_DATANODE_DATA_DIR_PERMISSION_KEY,        DFSConfigKeys.DFS_DATANODE_DATA_DIR_PERMISSION_DEFAULT)
+Inferred parameter values: dfs.datanode.data.dir.perm, 700, 
+
+Found callsite[168] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 408 Method name: conf.getLong(          DFS_CLIENT_WRITE_EXCLUDE_NODES_CACHE_EXPIRY_INTERVAL,          DFS_CLIENT_WRITE_EXCLUDE_NODES_CACHE_EXPIRY_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.client.write.exclude.nodes.cache.expiry.interval.millis, 
+
+Found callsite[169] in File: org.apache.hadoop.hdfs.qjournal.server.JournalNodeHttpServer.java LineNum: 101 Method name: NetUtils.getHostPortString(addr)
+Inferred parameter values: 
+
+Found callsite[170] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.java LineNum: 377 Method name: conf.getLong(        DFSConfigKeys.DFS_BLOCK_ACCESS_KEY_UPDATE_INTERVAL_KEY,         DFSConfigKeys.DFS_BLOCK_ACCESS_KEY_UPDATE_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.block.access.key.update.interval, 
+
+Found callsite[171] in File: org.apache.hadoop.hdfs.web.HftpFileSystem.java LineNum: 126 Method name: getInt(DFSConfigKeys.DFS_NAMENODE_HTTP_PORT_KEY,        DFSConfigKeys.DFS_NAMENODE_HTTP_PORT_DEFAULT)
+Inferred parameter values: dfs.http.port, 
+
+Found callsite[172] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 531 Method name: conf.get(          DFSConfigKeys.DFS_CHECKSUM_TYPE_KEY,          DFSConfigKeys.DFS_CHECKSUM_TYPE_DEFAULT)
+Inferred parameter values: dfs.checksum.type, CRC32C, 
+
+Found callsite[173] in File: org.apache.hadoop.hdfs.server.datanode.fsdataset.AvailableSpaceVolumeChoosingPolicy.java LineNum: 63 Method name: conf.getLong(        DFS_DATANODE_AVAILABLE_SPACE_VOLUME_CHOOSING_POLICY_BALANCED_SPACE_THRESHOLD_KEY,        DFS_DATANODE_AVAILABLE_SPACE_VOLUME_CHOOSING_POLICY_BALANCED_SPACE_THRESHOLD_DEFAULT)
+Inferred parameter values: dfs.datanode.available-space-volume-choosing-policy.balanced-space-threshold, 
+
+Found callsite[174] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 910 Method name: conf.getLong(          DFS_NAMENODE_RETRY_CACHE_EXPIRYTIME_MILLIS_KEY,          DFS_NAMENODE_RETRY_CACHE_EXPIRYTIME_MILLIS_DEFAULT)
+Inferred parameter values: dfs.namenode.retrycache.expirytime.millis, 
+
+Found callsite[175] in File: org.apache.hadoop.hdfs.server.datanode.DataXceiverServer.java LineNum: 124 Method name: conf.getLong(DFSConfigKeys.DFS_DATANODE_BALANCE_BANDWIDTHPERSEC_KEY,            DFSConfigKeys.DFS_DATANODE_BALANCE_BANDWIDTHPERSEC_DEFAULT)
+Inferred parameter values: dfs.datanode.balance.bandwidthPerSec, 
+
+Found callsite[176] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 391 Method name: conf.getBoolean(        DFSConfigKeys.DFS_HDFS_BLOCKS_METADATA_ENABLED,         DFSConfigKeys.DFS_HDFS_BLOCKS_METADATA_ENABLED_DEFAULT)
+Inferred parameter values: dfs.datanode.hdfs-blocks-metadata.enabled, 
+
+Found callsite[177] in File: org.apache.hadoop.hdfs.security.token.delegation.DelegationTokenSelector.java LineNum: 58 Method name: conf.get(SERVICE_NAME_KEY + serviceName)
+Inferred parameter values: 
+
+Found callsite[178] in File: org.apache.hadoop.hdfs.qjournal.client.QuorumJournalManager.java LineNum: 142 Method name: conf.getInt(        DFSConfigKeys.DFS_QJOURNAL_WRITE_TXNS_TIMEOUT_KEY,        DFSConfigKeys.DFS_QJOURNAL_WRITE_TXNS_TIMEOUT_DEFAULT)
+Inferred parameter values: dfs.qjournal.write-txns.timeout.ms, 
+
+Found callsite[179] in File: org.apache.hadoop.hdfs.web.WebHdfsFileSystem.java LineNum: 187 Method name: conf.getInt(          DFSConfigKeys.DFS_HTTP_CLIENT_FAILOVER_SLEEPTIME_BASE_KEY,          DFSConfigKeys.DFS_HTTP_CLIENT_FAILOVER_SLEEPTIME_BASE_DEFAULT)
+Inferred parameter values: dfs.http.client.failover.sleep.base.millis, 
+
+Found callsite[180] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 777 Method name: conf.getLongBytes(DFS_BLOCK_SIZE_KEY, DFS_BLOCK_SIZE_DEFAULT)
+Inferred parameter values: dfs.blocksize, 
+
+Found callsite[181] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 440 Method name: conf.getBoolean(          DFSConfigKeys.DFS_CLIENT_USE_LEGACY_BLOCKREADER,          DFSConfigKeys.DFS_CLIENT_USE_LEGACY_BLOCKREADER_DEFAULT)
+Inferred parameter values: dfs.client.use.legacy.blockreader, 
+
+Found callsite[182] in File: org.apache.hadoop.lib.util.ConfigurationUtils.java LineNum: 70 Method name: target.get(entry.getKey())
+Inferred parameter values: 
+
+Found callsite[183] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 779 Method name: conf.getInt(DFS_CLIENT_WRITE_PACKET_SIZE_KEY, DFS_CLIENT_WRITE_PACKET_SIZE_DEFAULT)
+Inferred parameter values: dfs.client-write-packet-size, 
+
+Found callsite[184] in File: org.apache.hadoop.hdfs.server.namenode.ImageServlet.java LineNum: 248 Method name: conf.get(DFSConfigKeys.DFS_SECONDARY_NAMENODE_KERBEROS_PRINCIPAL_KEY)
+Inferred parameter values: dfs.secondary.namenode.kerberos.principal, 
+
+Found callsite[185] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 709 Method name: confForNn              .get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY)
+Inferred parameter values: dfs.namenode.kerberos.principal, 
+
+Found callsite[186] in File: org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider.java LineNum: 78 Method name: this.conf.getInt(        DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_ON_SOCKET_TIMEOUTS_KEY,        DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_ON_SOCKET_TIMEOUTS_DEFAULT)
+Inferred parameter values: dfs.client.failover.connection.retries.on.timeouts, 
+
+Found callsite[187] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 471 Method name: conf.getBoolean(          DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_SKIP_CHECKSUM_KEY,          DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_SKIP_CHECKSUM_DEFAULT)
+Inferred parameter values: dfs.client.read.shortcircuit.skip.checksum, 
+
+Found callsite[188] in File: org.apache.hadoop.hdfs.server.datanode.SecureDataNodeStarter.java LineNum: 95 Method name: conf.getInt(        DFSConfigKeys.DFS_DATANODE_SOCKET_WRITE_TIMEOUT_KEY,        HdfsServerConstants.WRITE_TIMEOUT)
+Inferred parameter values: dfs.datanode.socket.write.timeout, 
+
+Found callsite[189] in File: org.apache.hadoop.hdfs.server.namenode.CheckpointConf.java LineNum: 53 Method name: conf.getLong(DFS_NAMENODE_CHECKPOINT_PERIOD_KEY,                                     DFS_NAMENODE_CHECKPOINT_PERIOD_DEFAULT)
+Inferred parameter values: dfs.namenode.checkpoint.period, 
+
+Found callsite[190] in File: org.apache.hadoop.hdfs.server.namenode.FSDirectory.java LineNum: 248 Method name: conf.getLong(        DFS_NAMENODE_ACCESSTIME_PRECISION_KEY,        DFS_NAMENODE_ACCESSTIME_PRECISION_DEFAULT)
+Inferred parameter values: dfs.namenode.accesstime.precision, 
+
+Found callsite[191] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 789 Method name: conf.getLong(DFSConfigKeys.DFS_NAMENODE_MIN_BLOCK_SIZE_KEY,          DFSConfigKeys.DFS_NAMENODE_MIN_BLOCK_SIZE_DEFAULT)
+Inferred parameter values: dfs.namenode.fs-limits.min-block-size, 
+
+Found callsite[192] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 857 Method name: conf.getTrimmedStringCollection              (DFSConfigKeys.DFS_NAMESERVICES)
+Inferred parameter values: dfs.nameservices, 
+
+Found callsite[193] in File: org.apache.hadoop.hdfs.server.namenode.NameNodeHttpServer.java LineNum: 175 Method name: conf.get(DFSUtil.getSpnegoKeytabKey(conf,        DFSConfigKeys.DFS_NAMENODE_KEYTAB_FILE_KEY))
+Inferred parameter values: 
+
+Found callsite[194] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 804 Method name: conf.getFloat(              DFS_NAMENODE_EDIT_LOG_AUTOROLL_MULTIPLIER_THRESHOLD,              DFS_NAMENODE_EDIT_LOG_AUTOROLL_MULTIPLIER_THRESHOLD_DEFAULT)
+Inferred parameter values: dfs.namenode.edit.log.autoroll.multiplier.threshold, 
+
+Found callsite[195] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 147 Method name: conf.getLong(        DFSConfigKeys.DFS_CLIENT_SLOW_IO_WARNING_THRESHOLD_KEY,        DFSConfigKeys.DFS_CLIENT_SLOW_IO_WARNING_THRESHOLD_DEFAULT)
+Inferred parameter values: dfs.client.slow.io.warning.threshold.ms, 
+
+Found callsite[196] in File: org.apache.hadoop.hdfs.qjournal.client.IPCLoggerChannelMetrics.java LineNum: 66 Method name: conf.getInts(DFSConfigKeys.DFS_METRICS_PERCENTILES_INTERVALS_KEY)
+Inferred parameter values: dfs.metrics.percentiles.intervals, 
+
+Found callsite[197] in File: org.apache.hadoop.hdfs.nfs.nfs3.Nfs3HttpServer.java LineNum: 106 Method name: conf.get(NfsConfigKeys.NFS_HTTP_ADDRESS_KEY,        NfsConfigKeys.NFS_HTTP_ADDRESS_DEFAULT)
+Inferred parameter values: nfs.http.address, 
+
+Found callsite[198] in File: org.apache.hadoop.hdfs.server.namenode.TransferFsImage.java LineNum: 441 Method name: conf.getInt(DFSConfigKeys.DFS_IMAGE_TRANSFER_TIMEOUT_KEY,          DFSConfigKeys.DFS_IMAGE_TRANSFER_TIMEOUT_DEFAULT)
+Inferred parameter values: dfs.image.transfer.timeout, 
+
+Found callsite[199] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 185 Method name: conf.getLong(        DFS_DATANODE_XCEIVER_STOP_TIMEOUT_MILLIS_KEY,        DFS_DATANODE_XCEIVER_STOP_TIMEOUT_MILLIS_DEFAULT)
+Inferred parameter values: dfs.datanode.xceiver.stop.timeout.millis, 
+
+Found callsite[200] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 5160 Method name: conf.getInt(        DFS_NAMENODE_SAFEMODE_MIN_DATANODES_KEY,        DFS_NAMENODE_SAFEMODE_MIN_DATANODES_DEFAULT)
+Inferred parameter values: dfs.namenode.safemode.min.datanodes, 
+
+Found callsite[201] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 388 Method name: conf.getBoolean(        DFSConfigKeys.DFS_DATANODE_USE_DN_HOSTNAME,        DFSConfigKeys.DFS_DATANODE_USE_DN_HOSTNAME_DEFAULT)
+Inferred parameter values: dfs.datanode.use.datanode.hostname, 
+
+Found callsite[202] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 172 Method name: conf.get(DFS_DATANODE_MIN_SUPPORTED_NAMENODE_VERSION_KEY,        DFS_DATANODE_MIN_SUPPORTED_NAMENODE_VERSION_DEFAULT)
+Inferred parameter values: dfs.datanode.min.supported.namenode.version, 2.1.0-beta, 
+
+Found callsite[203] in File: org.apache.hadoop.hdfs.tools.DFSZKFailoverController.java LineNum: 144 Method name: conf.get(DFSConfigKeys.DFS_ADMIN, " ")
+Inferred parameter values: dfs.cluster.administrators,  , 
+
+Found callsite[204] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 810 Method name: conf.getInt(          DFS_NAMENODE_EDIT_LOG_AUTOROLL_CHECK_INTERVAL_MS,          DFS_NAMENODE_EDIT_LOG_AUTOROLL_CHECK_INTERVAL_MS_DEFAULT)
+Inferred parameter values: dfs.namenode.edit.log.autoroll.check.interval.ms, 
+
+Found callsite[205] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 1470 Method name: conf.getTrimmedStringCollection(        DFS_NAMENODE_SHARED_EDITS_DIR_KEY)
+Inferred parameter values: dfs.namenode.shared.edits.dir, 
+
+Found callsite[206] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.java LineNum: 329 Method name: conf.get(DFSConfigKeys.NET_TOPOLOGY_SCRIPT_FILE_NAME_KEY)
+Inferred parameter values: 
+
+Found callsite[207] in File: org.apache.hadoop.lib.service.hadoop.FileSystemAccessService.java LineNum: 320 Method name: conf.getBoolean(FILE_SYSTEM_SERVICE_CREATED, false)
+Inferred parameter values: FileSystemAccessService.created, 
+
+Found callsite[208] in File: org.apache.hadoop.lib.service.hadoop.FileSystemAccessService.java LineNum: 330 Method name: conf.get(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY)
+Inferred parameter values: 
+
+Found callsite[209] in File: org.apache.hadoop.hdfs.server.balancer.KeyManager.java LineNum: 71 Method name: conf.get(          DFSConfigKeys.DFS_DATA_ENCRYPTION_ALGORITHM_KEY)
+Inferred parameter values: dfs.encrypt.data.transfer.algorithm, 
+
+Found callsite[210] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 212 Method name: conf.getBoolean(        DFSConfigKeys.DFS_REJECT_UNRESOLVED_DN_TOPOLOGY_MAPPING_KEY,        DFSConfigKeys.DFS_REJECT_UNRESOLVED_DN_TOPOLOGY_MAPPING_DEFAULT)
+Inferred parameter values: dfs.namenode.reject-unresolved-dn-topology-mapping, 
+
+Found callsite[211] in File: org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.java LineNum: 110 Method name: conf.getInt(DFSConfigKeys.DFS_HA_LOGROLL_PERIOD_KEY,        DFSConfigKeys.DFS_HA_LOGROLL_PERIOD_DEFAULT)
+Inferred parameter values: dfs.ha.log-roll.period, 
+
+Found callsite[212] in File: org.apache.hadoop.hdfs.DistributedFileSystem.java LineNum: 145 Method name: conf.get(        DFSConfigKeys.DFS_USER_HOME_DIR_PREFIX_KEY,        DFSConfigKeys.DFS_USER_HOME_DIR_PREFIX_DEFAULT)
+Inferred parameter values: dfs.user.home.dir.prefix, /user, 
+
+Found callsite[213] in File: org.apache.hadoop.hdfs.server.datanode.BlockScanner.java LineNum: 112 Method name: conf.getLong(key, defVal)
+Inferred parameter values: 
+
+Found callsite[214] in File: org.apache.hadoop.hdfs.server.datanode.metrics.DataNodeMetrics.java LineNum: 176 Method name: conf.get(DFSConfigKeys.DFS_METRICS_SESSION_ID_KEY)
+Inferred parameter values: dfs.metrics.session-id, 
+
+Found callsite[215] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 926 Method name: conf.getBoolean(DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_KEY,            DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_DEFAULT)
+Inferred parameter values: dfs.client.read.shortcircuit, 
+
+Found callsite[216] in File: org.apache.hadoop.hdfs.server.namenode.ImageServlet.java LineNum: 250 Method name: conf.getTrimmed(DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTP_ADDRESS_KEY,          DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTP_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.namenode.secondary.http-address, 0.0.0.0:50090, 
+
+Found callsite[217] in File: org.apache.hadoop.hdfs.server.common.JspHelper.java LineNum: 177 Method name: conf.get(        HADOOP_HTTP_STATIC_USER, DEFAULT_HADOOP_HTTP_STATIC_USER)
+Inferred parameter values: 
+
+Found callsite[218] in File: org.apache.hadoop.hdfs.server.namenode.ImageServlet.java LineNum: 236 Method name: getHostName()
+Inferred parameter values: 
+
+Found callsite[219] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.java LineNum: 336 Method name: conf.getInt(DFSConfigKeys.DFS_NAMENODE_REPLICATION_INTERVAL_KEY,                   DFSConfigKeys.DFS_NAMENODE_REPLICATION_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.namenode.replication.interval, 
+
+Found callsite[220] in File: org.apache.hadoop.hdfs.tools.DFSAdmin.java LineNum: 1487 Method name: conf.get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY, "")
+Inferred parameter values: dfs.namenode.kerberos.principal, , 
+
+Found callsite[221] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 418 Method name: conf.getInt(          DFS_CLIENT_BLOCK_WRITE_LOCATEFOLLOWINGBLOCK_RETRIES_KEY,          DFS_CLIENT_BLOCK_WRITE_LOCATEFOLLOWINGBLOCK_RETRIES_DEFAULT)
+Inferred parameter values: dfs.client.block.write.locateFollowingBlock.retries, 
+
+Found callsite[222] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1612 Method name: conf.getBoolean(          CommonConfigurationKeys.HADOOP_SSL_ENABLED_KEY,          CommonConfigurationKeys.HADOOP_SSL_ENABLED_DEFAULT)
+Inferred parameter values: 
+
+Found callsite[223] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 150 Method name: conf.getLong(        DFSConfigKeys.DFS_DATANODE_SLOW_IO_WARNING_THRESHOLD_KEY,        DFSConfigKeys.DFS_DATANODE_SLOW_IO_WARNING_THRESHOLD_DEFAULT)
+Inferred parameter values: dfs.datanode.slow.io.warning.threshold.ms, 
+
+Found callsite[224] in File: org.apache.hadoop.hdfs.server.namenode.FSDirectory.java LineNum: 291 Method name: conf.getInt(        DFSConfigKeys.DFS_NAMENODE_NAME_CACHE_THRESHOLD_KEY,        DFSConfigKeys.DFS_NAMENODE_NAME_CACHE_THRESHOLD_DEFAULT)
+Inferred parameter values: dfs.namenode.name.cache.threshold, 
+
+Found callsite[225] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 853 Method name: conf.getTrimmedStringCollection            (DFSConfigKeys.DFS_INTERNAL_NAMESERVICES_KEY)
+Inferred parameter values: dfs.internal.nameservices, 
+
+Found callsite[226] in File: org.apache.hadoop.fs.http.server.HttpFSAuthenticationFilter.java LineNum: 100 Method name: getValByRegex("httpfs\\.proxyuser\\.")
+Inferred parameter values: httpfs\\.proxyuser\\., 
+
+Found callsite[227] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 697 Method name: conf.get(DFS_CLIENT_CACHE_DROP_BEHIND_WRITES)
+Inferred parameter values: dfs.client.cache.drop.behind.writes, 
+
+Found callsite[228] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 1374 Method name: conf.getTrimmedStringCollection(propertyName)
+Inferred parameter values: 
+
+Found callsite[229] in File: org.apache.hadoop.hdfs.server.namenode.ImageServlet.java LineNum: 215 Method name: conf.getLong(DFSConfigKeys.DFS_IMAGE_TRANSFER_RATE_KEY,                   DFSConfigKeys.DFS_IMAGE_TRANSFER_RATE_DEFAULT)
+Inferred parameter values: dfs.image.transfer.bandwidthPerSec, 
+
+Found callsite[230] in File: org.apache.hadoop.lib.util.ConfigurationUtils.java LineNum: 84 Method name: conf.get(entry.getKey())
+Inferred parameter values: 
+
+Found callsite[231] in File: org.apache.hadoop.hdfs.server.namenode.FSDirectory.java LineNum: 253 Method name: conf.getBoolean(DFS_STORAGE_POLICY_ENABLED_KEY,                        DFS_STORAGE_POLICY_ENABLED_DEFAULT)
+Inferred parameter values: dfs.storage.policy.enabled, 
+
+Found callsite[232] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.java LineNum: 274 Method name: conf.getLong(        DFSConfigKeys.DFS_NAMENODE_STARTUP_DELAY_BLOCK_DELETION_SEC_KEY,        DFSConfigKeys.DFS_NAMENODE_STARTUP_DELAY_BLOCK_DELETION_SEC_DEFAULT)
+Inferred parameter values: dfs.namenode.startup.delay.block.deletion.sec, 
+
+Found callsite[233] in File: org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager.java LineNum: 70 Method name: conf.getInt(        DFSConfigKeys.DFS_NAMENODE_NUM_CHECKPOINTS_RETAINED_KEY,        DFSConfigKeys.DFS_NAMENODE_NUM_CHECKPOINTS_RETAINED_DEFAULT)
+Inferred parameter values: dfs.namenode.num.checkpoints.retained, 
+
+Found callsite[234] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 196 Method name: conf.getTrimmed(DFSConfigKeys.DFS_DATANODE_HTTPS_ADDRESS_KEY,            DFSConfigKeys.DFS_DATANODE_HTTPS_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.datanode.https.address, 
+
+Found callsite[235] in File: org.apache.hadoop.hdfs.server.namenode.FSImage.java LineNum: 659 Method name: conf.getInt(DFSConfigKeys.DFS_NAMENODE_MAX_OP_SIZE_KEY,        DFSConfigKeys.DFS_NAMENODE_MAX_OP_SIZE_DEFAULT)
+Inferred parameter values: dfs.namenode.max.op.size, 
+
+Found callsite[236] in File: org.apache.hadoop.hdfs.server.datanode.DataXceiverServer.java LineNum: 119 Method name: conf.getLongBytes(DFSConfigKeys.DFS_BLOCK_SIZE_KEY,        DFSConfigKeys.DFS_BLOCK_SIZE_DEFAULT)
+Inferred parameter values: dfs.blocksize, 
+
+Found callsite[237] in File: org.apache.hadoop.hdfs.tools.GetGroups.java LineNum: 72 Method name: conf.get(        DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY, "")
+Inferred parameter values: dfs.namenode.kerberos.principal, , 
+
+Found callsite[238] in File: org.apache.hadoop.lib.service.hadoop.FileSystemAccessService.java LineNum: 366 Method name: getAuthority()
+Inferred parameter values: 
+
+Found callsite[239] in File: org.apache.hadoop.hdfs.shortcircuit.ShortCircuitCache.java LineNum: 352 Method name: conf.getLong(DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_TIMEOUT_MS,            DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_TIMEOUT_MS_DEFAULT)
+Inferred parameter values: dfs.client.mmap.cache.timeout.ms, 
+
+Found callsite[240] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 403 Method name: conf.get("mapreduce.task.attempt.id", "NONMAPREDUCE")
+Inferred parameter values: mapreduce.task.attempt.id, NONMAPREDUCE, 
+
+Found callsite[241] in File: org.apache.hadoop.hdfs.nfs.nfs3.Nfs3HttpServer.java LineNum: 102 Method name: NetUtils.getHostPortString(addr)
+Inferred parameter values: 
+
+Found callsite[242] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 122 Method name: conf.getLong(        DFSConfigKeys.DFS_DATANODE_READAHEAD_BYTES_KEY,        DFSConfigKeys.DFS_DATANODE_READAHEAD_BYTES_DEFAULT)
+Inferred parameter values: dfs.datanode.readahead.bytes, 
+
+Found callsite[243] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 5173 Method name: conf.getFloat(DFS_NAMENODE_REPL_QUEUE_THRESHOLD_PCT_KEY,                      (float) threshold)
+Inferred parameter values: dfs.namenode.replqueue.threshold-pct, 
+
+Found callsite[244] in File: org.apache.hadoop.hdfs.server.namenode.CheckpointConf.java LineNum: 57 Method name: conf.getInt(DFS_NAMENODE_CHECKPOINT_MAX_RETRIES_KEY,                                  DFS_NAMENODE_CHECKPOINT_MAX_RETRIES_DEFAULT)
+Inferred parameter values: dfs.namenode.checkpoint.max-retries, 
+
+Found callsite[245] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 793 Method name: conf.getLong(DFS_NAMENODE_ACCESSTIME_PRECISION_KEY,          DFS_NAMENODE_ACCESSTIME_PRECISION_DEFAULT)
+Inferred parameter values: dfs.namenode.accesstime.precision, 
+
+Found callsite[246] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 6606 Method name: conf.getLong(DFS_NAMENODE_DELEGATION_TOKEN_MAX_LIFETIME_KEY,            DFS_NAMENODE_DELEGATION_TOKEN_MAX_LIFETIME_DEFAULT)
+Inferred parameter values: dfs.namenode.delegation.token.max-lifetime, 
+
+Found callsite[247] in File: org.apache.hadoop.hdfs.tools.DFSAdmin.java LineNum: 1395 Method name: getProxy()
+Inferred parameter values: 
+
+Found callsite[248] in File: org.apache.hadoop.hdfs.server.namenode.NameNodeHttpServer.java LineNum: 115 Method name: conf.getTrimmed(DFSConfigKeys.DFS_NAMENODE_HTTPS_BIND_HOST_KEY)
+Inferred parameter values: dfs.namenode.https-bind-host, 
+
+Found callsite[249] in File: org.apache.hadoop.hdfs.server.mover.Mover.java LineNum: 547 Method name: conf.getLong(DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_KEY,            DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.heartbeat.interval, 
+
+Found callsite[250] in File: org.apache.hadoop.hdfs.web.resources.BlockSizeParam.java LineNum: 58 Method name: conf.getLongBytes(DFS_BLOCK_SIZE_KEY, DFS_BLOCK_SIZE_DEFAULT)
+Inferred parameter values: dfs.blocksize, 
+
+Found callsite[251] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 436 Method name: conf.getInt(        DFSConfigKeys.DFS_CLIENT_RETRY_INTERVAL_GET_LAST_BLOCK_LENGTH,        DFSConfigKeys.DFS_CLIENT_RETRY_INTERVAL_GET_LAST_BLOCK_LENGTH_DEFAULT)
+Inferred parameter values: dfs.client.retry.interval-ms.get-last-block-length, 
+
+Found callsite[252] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 866 Method name: conf.getInt(DFS_DATANODE_DIRECTORYSCAN_INTERVAL_KEY,                     DFS_DATANODE_DIRECTORYSCAN_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.datanode.directoryscan.interval, 
+
+Found callsite[253] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 717 Method name: confForNn            .get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY)
+Inferred parameter values: dfs.namenode.kerberos.principal, 
+
+Found callsite[254] in File: org.apache.hadoop.hdfs.server.datanode.DataXceiverServer.java LineNum: 126 Method name: conf.getInt(DFSConfigKeys.DFS_DATANODE_BALANCE_MAX_NUM_CONCURRENT_MOVES_KEY,            DFSConfigKeys.DFS_DATANODE_BALANCE_MAX_NUM_CONCURRENT_MOVES_DEFAULT)
+Inferred parameter values: dfs.datanode.balance.max.concurrent.moves, 
+
+Found callsite[255] in File: org.apache.hadoop.lib.service.hadoop.FileSystemAccessService.java LineNum: 298 Method name: get(HTTPFS_FS_USER)
+Inferred parameter values: httpfs.fs.user, 
+
+Found callsite[256] in File: org.apache.hadoop.hdfs.server.namenode.NameNode.java LineNum: 1809 Method name: conf.getBoolean(DFS_HA_AUTO_FAILOVER_ENABLED_KEY,        DFS_HA_AUTO_FAILOVER_ENABLED_DEFAULT)
+Inferred parameter values: dfs.ha.automatic-failover.enabled, 
+
+Found callsite[257] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 696 Method name: conf.getLong(DFS_CLIENT_CACHE_READAHEAD, 0)
+Inferred parameter values: dfs.client.cache.readahead, 
+
+Found callsite[258] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 742 Method name: conf.get(DFS_PERMISSIONS_SUPERUSERGROUP_KEY,                                  DFS_PERMISSIONS_SUPERUSERGROUP_DEFAULT)
+Inferred parameter values: dfs.permissions.superusergroup, supergroup, 
+
+Found callsite[259] in File: org.apache.hadoop.hdfs.shortcircuit.ShortCircuitCache.java LineNum: 348 Method name: conf.getLong(DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_EXPIRY_MS_KEY,            DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_EXPIRY_MS_DEFAULT)
+Inferred parameter values: dfs.client.read.shortcircuit.streams.cache.expiry.ms, 
+
+Found callsite[260] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1607 Method name: conf.get(DFSConfigKeys.DFS_HTTP_POLICY_KEY)
+Inferred parameter values: dfs.http.policy, 
+
+Found callsite[261] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 5163 Method name: conf.getInt(DFS_NAMENODE_SAFEMODE_EXTENSION_KEY, 0)
+Inferred parameter values: dfs.namenode.safemode.extension, 
+
+Found callsite[262] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 547 Method name: conf.getTrimmedStringCollection(DFS_NAMESERVICES)
+Inferred parameter values: dfs.nameservices, 
+
+Found callsite[263] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 134 Method name: conf.getBoolean(        DFSConfigKeys.DFS_DATANODE_DROP_CACHE_BEHIND_READS_KEY,        DFSConfigKeys.DFS_DATANODE_DROP_CACHE_BEHIND_READS_DEFAULT)
+Inferred parameter values: dfs.datanode.drop.cache.behind.reads, 
+
+Found callsite[264] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 820 Method name: conf.getBoolean(        CommonConfigurationKeys.HADOOP_SECURITY_AUTHORIZATION, false)
+Inferred parameter values: 
+
+Found callsite[265] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 767 Method name: conf.get(DFS_CHECKSUM_TYPE_KEY, DFS_CHECKSUM_TYPE_DEFAULT)
+Inferred parameter values: dfs.checksum.type, CRC32C, 
+
+Found callsite[266] in File: org.apache.hadoop.hdfs.shortcircuit.ShortCircuitCache.java LineNum: 356 Method name: conf.getLong(DFSConfigKeys.DFS_CLIENT_SHORT_CIRCUIT_REPLICA_STALE_THRESHOLD_MS,            DFSConfigKeys.DFS_CLIENT_SHORT_CIRCUIT_REPLICA_STALE_THRESHOLD_MS_DEFAULT)
+Inferred parameter values: dfs.client.short.circuit.replica.stale.threshold.ms, 
+
+Found callsite[267] in File: org.apache.hadoop.hdfs.server.namenode.ImageServlet.java LineNum: 239 Method name: conf              .get(DFSConfigKeys.DFS_SECONDARY_NAMENODE_KERBEROS_PRINCIPAL_KEY)
+Inferred parameter values: dfs.secondary.namenode.kerberos.principal, 
+
+Found callsite[268] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.java LineNum: 96 Method name: conf.getLong(        DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_INTERVAL_KEY,         DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.namenode.stale.datanode.interval, 
+
+Found callsite[269] in File: org.apache.hadoop.hdfs.server.namenode.ha.IPFailoverProxyProvider.java LineNum: 69 Method name: this.conf.getInt(        DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_KEY,        DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_DEFAULT)
+Inferred parameter values: dfs.client.failover.connection.retries, 
+
+Found callsite[270] in File: org.apache.hadoop.fs.http.server.FSOperations.java LineNum: 357 Method name: getInt("httpfs.buffer.size", 4096)
+Inferred parameter values: httpfs.buffer.size, 
+
+Found callsite[271] in File: org.apache.hadoop.hdfs.server.namenode.NameNode.java LineNum: 1001 Method name: conf.getBoolean(DFS_NAMENODE_SUPPORT_ALLOW_FORMAT_KEY,         DFS_NAMENODE_SUPPORT_ALLOW_FORMAT_DEFAULT)
+Inferred parameter values: dfs.namenode.support.allow.format, 
+
+Found callsite[272] in File: org.apache.hadoop.hdfs.server.namenode.FSEditLog.java LineNum: 265 Method name: conf.getInt(        DFSConfigKeys.DFS_NAMENODE_EDITS_DIR_MINIMUM_KEY,        DFSConfigKeys.DFS_NAMENODE_EDITS_DIR_MINIMUM_DEFAULT)
+Inferred parameter values: dfs.namenode.edits.dir.minimum, 
+
+Found callsite[273] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 203 Method name: conf.get(DFSConfigKeys.DFS_HOSTS_EXCLUDE, "")
+Inferred parameter values: dfs.hosts.exclude, , 
+
+Found callsite[274] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1662 Method name: conf.get(        DFSConfigKeys.DFS_SERVER_HTTPS_KEYSTORE_RESOURCE_KEY,        DFSConfigKeys.DFS_SERVER_HTTPS_KEYSTORE_RESOURCE_DEFAULT)
+Inferred parameter values: dfs.https.server.keystore.resource, ssl-server.xml, 
+
+Found callsite[275] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.java LineNum: 340 Method name: conf.getBoolean(DFSConfigKeys.DFS_ENCRYPT_DATA_TRANSFER_KEY,            DFSConfigKeys.DFS_ENCRYPT_DATA_TRANSFER_DEFAULT)
+Inferred parameter values: dfs.encrypt.data.transfer, 
+
+Found callsite[276] in File: org.apache.hadoop.hdfs.protocol.datatransfer.WhitelistBasedTrustedChannelResolver.java LineNum: 91 Method name: conf.getLong(DFS_DATATRANSFER_SERVER_VARIABLEWHITELIST_CACHE_SECS,3600)
+Inferred parameter values: dfs.datatransfer.server.variablewhitelist.cache.secs, 
+
+Found callsite[277] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 154 Method name: conf.getLong(        DFS_BLOCKREPORT_INITIAL_DELAY_KEY,        DFS_BLOCKREPORT_INITIAL_DELAY_DEFAULT)
+Inferred parameter values: dfs.blockreport.initialDelay, 
+
+Found callsite[278] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 413 Method name: conf.getInt(DFS_CLIENT_RETRY_WINDOW_BASE, 3000)
+Inferred parameter values: dfs.client.retry.window.base, 
+
+Found callsite[279] in File: org.apache.hadoop.hdfs.qjournal.client.IPCLoggerChannel.java LineNum: 169 Method name: conf.getInt(        DFSConfigKeys.DFS_QJOURNAL_QUEUE_SIZE_LIMIT_KEY,        DFSConfigKeys.DFS_QJOURNAL_QUEUE_SIZE_LIMIT_DEFAULT)
+Inferred parameter values: dfs.qjournal.queued-edits.limit.mb, 
+
+Found callsite[280] in File: org.apache.hadoop.hdfs.server.namenode.CheckpointConf.java LineNum: 49 Method name: conf.getLong(        DFS_NAMENODE_CHECKPOINT_CHECK_PERIOD_KEY,        DFS_NAMENODE_CHECKPOINT_CHECK_PERIOD_DEFAULT)
+Inferred parameter values: dfs.namenode.checkpoint.check.period, 
+
+Found callsite[281] in File: org.apache.hadoop.hdfs.server.namenode.BackupNode.java LineNum: 308 Method name: getProxy()
+Inferred parameter values: 
+
+Found callsite[282] in File: org.apache.hadoop.hdfs.web.WebHdfsFileSystem.java LineNum: 215 Method name: conf.getBoolean(DFSConfigKeys.DFS_WEBHDFS_ENABLED_KEY,        DFSConfigKeys.DFS_WEBHDFS_ENABLED_DEFAULT)
+Inferred parameter values: dfs.webhdfs.enabled, 
+
+Found callsite[283] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.java LineNum: 85 Method name: conf.getBoolean(        DFSConfigKeys.DFS_NAMENODE_REPLICATION_CONSIDERLOAD_KEY, true)
+Inferred parameter values: dfs.namenode.replication.considerLoad, 
+
+Found callsite[284] in File: org.apache.hadoop.hdfs.server.datanode.DataStorage.java LineNum: 1033 Method name: getInt(        DFSConfigKeys.DFS_DATANODE_BLOCK_ID_LAYOUT_UPGRADE_THREADS_KEY,        DFSConfigKeys.DFS_DATANODE_BLOCK_ID_LAYOUT_UPGRADE_THREADS)
+Inferred parameter values: dfs.datanode.block.id.layout.upgrade.threads, 
+
+Found callsite[285] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 357 Method name: conf.getInt(          DFS_CLIENT_FAILOVER_SLEEPTIME_MAX_KEY,          DFS_CLIENT_FAILOVER_SLEEPTIME_MAX_DEFAULT)
+Inferred parameter values: dfs.client.failover.sleep.max.millis, 
+
+Found callsite[286] in File: org.apache.hadoop.hdfs.web.SWebHdfsFileSystem.java LineNum: 48 Method name: getInt(DFSConfigKeys.DFS_NAMENODE_HTTPS_PORT_KEY,        DFSConfigKeys.DFS_NAMENODE_HTTPS_PORT_DEFAULT)
+Inferred parameter values: dfs.https.port, 
+
+Found callsite[287] in File: org.apache.hadoop.hdfs.server.namenode.FSDirectory.java LineNum: 239 Method name: conf.getInt(        DFSConfigKeys.DFS_NAMENODE_MAX_XATTR_SIZE_KEY,        DFSConfigKeys.DFS_NAMENODE_MAX_XATTR_SIZE_DEFAULT)
+Inferred parameter values: dfs.namenode.fs-limits.max-xattr-size, 
+
+Found callsite[288] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.java LineNum: 300 Method name: conf.getInt(DFSConfigKeys.DFS_REPLICATION_MAX_KEY,                                  DFSConfigKeys.DFS_REPLICATION_MAX_DEFAULT)
+Inferred parameter values: dfs.replication.max, 
+
+Found callsite[289] in File: org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl.java LineNum: 271 Method name: conf.getTrimmedStrings(DFSConfigKeys.DFS_DATANODE_DATA_DIR_KEY)
+Inferred parameter values: dfs.datanode.data.dir, 
+
+Found callsite[290] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 416 Method name: conf.getInt(DFS_CLIENT_BLOCK_WRITE_RETRIES_KEY,          DFS_CLIENT_BLOCK_WRITE_RETRIES_DEFAULT)
+Inferred parameter values: dfs.client.block.write.retries, 
+
+Found callsite[291] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 399 Method name: conf.getLongBytes(DFS_BLOCK_SIZE_KEY,          DFS_BLOCK_SIZE_DEFAULT)
+Inferred parameter values: dfs.blocksize, 
+
+Found callsite[292] in File: org.apache.hadoop.hdfs.server.namenode.CheckpointConf.java LineNum: 59 Method name: conf.get(DFS_NAMENODE_LEGACY_OIV_IMAGE_DIR_KEY)
+Inferred parameter values: dfs.namenode.legacy-oiv-image.dir, 
+
+Found callsite[293] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 489 Method name: conf.getLong(          DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_TIMEOUT_MS,          DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_TIMEOUT_MS_DEFAULT)
+Inferred parameter values: dfs.client.mmap.cache.timeout.ms, 
+
+Found callsite[294] in File: org.apache.hadoop.hdfs.server.namenode.top.TopConf.java LineNum: 49 Method name: conf.getBoolean(DFSConfigKeys.NNTOP_ENABLED_KEY,        DFSConfigKeys.NNTOP_ENABLED_DEFAULT)
+Inferred parameter values: dfs.namenode.top.enabled, 
+
+Found callsite[295] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 929 Method name: )
+Inferred parameter values: 
+
+Found callsite[296] in File: org.apache.hadoop.hdfs.server.datanode.metrics.DataNodeMetrics.java LineNum: 185 Method name: conf.getInts(DFSConfigKeys.DFS_METRICS_PERCENTILES_INTERVALS_KEY)
+Inferred parameter values: dfs.metrics.percentiles.intervals, 
+
+Found callsite[297] in File: org.apache.hadoop.lib.service.hadoop.FileSystemAccessService.java LineNum: 230 Method name: getInt(FS_CACHE_PURGE_FREQUENCY, 60)
+Inferred parameter values: filesystem.cache.purge.frequency, 
+
+Found callsite[298] in File: org.apache.hadoop.hdfs.NameNodeProxies.java LineNum: 234 Method name: config.getInt(          DFS_CLIENT_FAILOVER_SLEEPTIME_MAX_KEY,          DFS_CLIENT_FAILOVER_SLEEPTIME_MAX_DEFAULT)
+Inferred parameter values: dfs.client.failover.sleep.max.millis, 
+
+Found callsite[299] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1017 Method name: conf.get(concatSuffixes(key, nsId))
+Inferred parameter values: 
+
+Found callsite[300] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 744 Method name: conf.getBoolean(DFS_PERMISSIONS_ENABLED_KEY,                                                 DFS_PERMISSIONS_ENABLED_DEFAULT)
+Inferred parameter values: dfs.permissions.enabled, 
+
+Found callsite[301] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 406 Method name: conf.getLong(DFS_CLIENT_SOCKET_CACHE_EXPIRY_MSEC_KEY,          DFS_CLIENT_SOCKET_CACHE_EXPIRY_MSEC_DEFAULT)
+Inferred parameter values: dfs.client.socketcache.expiryMsec, 
+
+Found callsite[302] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 809 Method name: )
+Inferred parameter values: 
+
+Found callsite[303] in File: org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.java LineNum: 124 Method name: conf.getInt(DFSConfigKeys.DFS_HA_TAILEDITS_PERIOD_KEY,        DFSConfigKeys.DFS_HA_TAILEDITS_PERIOD_DEFAULT)
+Inferred parameter values: dfs.ha.tail-edits.period, 
+
+Found callsite[304] in File: org.apache.hadoop.lib.service.hadoop.FileSystemAccessService.java LineNum: 297 Method name: get(HTTPFS_FS_USER)
+Inferred parameter values: httpfs.fs.user, 
+
+Found callsite[305] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 383 Method name: conf.getLong(DFS_MAX_NUM_BLOCKS_TO_LOG_KEY,        DFS_MAX_NUM_BLOCKS_TO_LOG_DEFAULT)
+Inferred parameter values: dfs.namenode.max-num-blocks-to-log, 
+
+Found callsite[306] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.java LineNum: 294 Method name: conf.getInt(      DFSConfigKeys.DFS_DEFAULT_MAX_CORRUPT_FILES_RETURNED_KEY,      DFSConfigKeys.DFS_DEFAULT_MAX_CORRUPT_FILES_RETURNED)
+Inferred parameter values: dfs.corruptfilesreturned.max, 
+
+Found callsite[307] in File: org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager.java LineNum: 134 Method name: conf.getInt(DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_INTERVAL_KEY,            DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.namenode.decommission.interval, 
+
+Found callsite[308] in File: org.apache.hadoop.hdfs.server.blockmanagement.HeartbeatManager.java LineNum: 68 Method name: conf.getBoolean(        DFSConfigKeys.DFS_NAMENODE_AVOID_STALE_DATANODE_FOR_WRITE_KEY,        DFSConfigKeys.DFS_NAMENODE_AVOID_STALE_DATANODE_FOR_WRITE_DEFAULT)
+Inferred parameter values: dfs.namenode.avoid.write.stale.datanode, 
+
+Found callsite[309] in File: org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.java LineNum: 295 Method name: conf.getInt(DFS_NAMENODE_SERVICE_HANDLER_COUNT_KEY,                    DFS_NAMENODE_SERVICE_HANDLER_COUNT_DEFAULT)
+Inferred parameter values: dfs.namenode.service.handler.count, 
+
+Found callsite[310] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 175 Method name: conf.getBoolean(DFS_ENCRYPT_DATA_TRANSFER_KEY,        DFS_ENCRYPT_DATA_TRANSFER_DEFAULT)
+Inferred parameter values: dfs.encrypt.data.transfer, 
+
+Found callsite[311] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.java LineNum: 344 Method name: conf.getLong(DFSConfigKeys.DFS_MAX_NUM_BLOCKS_TO_LOG_KEY,            DFSConfigKeys.DFS_MAX_NUM_BLOCKS_TO_LOG_DEFAULT)
+Inferred parameter values: dfs.namenode.max-num-blocks-to-log, 
+
+Found callsite[312] in File: org.apache.hadoop.hdfs.server.namenode.NamenodeFsck.java LineNum: 878 Method name: conf.getInt(DFSConfigKeys.DFS_REPLICATION_KEY,                                             DFSConfigKeys.DFS_REPLICATION_DEFAULT)
+Inferred parameter values: dfs.replication, 
+
+Found callsite[313] in File: org.apache.hadoop.hdfs.qjournal.server.GetJournalEditServlet.java LineNum: 107 Method name: conf.get(DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTP_ADDRESS_KEY,          DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTP_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.namenode.secondary.http-address, 0.0.0.0:50090, 
+
+Found callsite[314] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 427 Method name: conf.getInt(          DFSConfigKeys.DFS_CLIENT_FILE_BLOCK_STORAGE_LOCATIONS_NUM_THREADS,          DFSConfigKeys.DFS_CLIENT_FILE_BLOCK_STORAGE_LOCATIONS_NUM_THREADS_DEFAULT)
+Inferred parameter values: dfs.client.file-block-storage-locations.num-threads, 
+
+Found callsite[315] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 366 Method name: conf.getInt(          CommonConfigurationKeysPublic.IO_FILE_BUFFER_SIZE_KEY,          CommonConfigurationKeysPublic.IO_FILE_BUFFER_SIZE_DEFAULT)
+Inferred parameter values: 
+
+Found callsite[316] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 782 Method name: conf.getBoolean(DFS_ENCRYPT_DATA_TRANSFER_KEY, DFS_ENCRYPT_DATA_TRANSFER_DEFAULT)
+Inferred parameter values: dfs.encrypt.data.transfer, 
+
+Found callsite[317] in File: org.apache.hadoop.hdfs.server.mover.Mover.java LineNum: 121 Method name: conf.getInt(        DFSConfigKeys.DFS_MOVER_MOVERTHREADS_KEY,        DFSConfigKeys.DFS_MOVER_MOVERTHREADS_DEFAULT)
+Inferred parameter values: dfs.mover.moverThreads, 
+
+Found callsite[318] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.java LineNum: 380 Method name: conf.getLong(        DFSConfigKeys.DFS_BLOCK_ACCESS_TOKEN_LIFETIME_KEY,         DFSConfigKeys.DFS_BLOCK_ACCESS_TOKEN_LIFETIME_DEFAULT)
+Inferred parameter values: dfs.block.access.token.lifetime, 
+
+Found callsite[319] in File: org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsVolumeImpl.java LineNum: 113 Method name: conf.getLong(        DFSConfigKeys.DFS_DATANODE_DU_RESERVED_KEY,        DFSConfigKeys.DFS_DATANODE_DU_RESERVED_DEFAULT)
+Inferred parameter values: dfs.datanode.du.reserved, 
+
+Found callsite[320] in File: org.apache.hadoop.hdfs.server.namenode.CheckpointConf.java LineNum: 55 Method name: conf.getLong(DFS_NAMENODE_CHECKPOINT_TXNS_KEY,                                   DFS_NAMENODE_CHECKPOINT_TXNS_DEFAULT)
+Inferred parameter values: dfs.namenode.checkpoint.txns, 
+
+Found callsite[321] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.java LineNum: 362 Method name: conf.getBoolean(        DFSConfigKeys.DFS_BLOCK_ACCESS_TOKEN_ENABLE_KEY,         DFSConfigKeys.DFS_BLOCK_ACCESS_TOKEN_ENABLE_DEFAULT)
+Inferred parameter values: dfs.block.access.token.enable, 
+
+Found callsite[322] in File: org.apache.hadoop.hdfs.server.namenode.NameNodeHttpServer.java LineNum: 77 Method name: conf.get(          DFSConfigKeys.DFS_WEBHDFS_AUTHENTICATION_FILTER_KEY,          DFSConfigKeys.DFS_WEBHDFS_AUTHENTICATION_FILTER_DEFAULT)
+Inferred parameter values: dfs.web.authentication.filter, 
+
+Found callsite[323] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 414 Method name: conf.getInt(DFS_CLIENT_CACHED_CONN_RETRY_KEY,          DFS_CLIENT_CACHED_CONN_RETRY_DEFAULT)
+Inferred parameter values: dfs.client.cached.conn.retry, 
+
+Found callsite[324] in File: org.apache.hadoop.hdfs.tools.DFSAdmin.java LineNum: 1335 Method name: conf.get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY, "")
+Inferred parameter values: dfs.namenode.kerberos.principal, , 
+
+Found callsite[325] in File: org.apache.hadoop.hdfs.server.balancer.NameNodeConnector.java LineNum: 129 Method name: getProxy()
+Inferred parameter values: 
+
+Found callsite[326] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 725 Method name: conf.getBoolean("dfs.namenode.fslock.fair", true)
+Inferred parameter values: dfs.namenode.fslock.fair, 
+
+Found callsite[327] in File: org.apache.hadoop.hdfs.server.namenode.FSImageCompression.java LineNum: 86 Method name: conf.get(      DFSConfigKeys.DFS_IMAGE_COMPRESSION_CODEC_KEY,      DFSConfigKeys.DFS_IMAGE_COMPRESSION_CODEC_DEFAULT)
+Inferred parameter values: dfs.image.compression.codec, org.apache.hadoop.io.compress.DefaultCodec, 
+
+Found callsite[328] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 401 Method name: conf.getInt(          DFS_REPLICATION_KEY, DFS_REPLICATION_DEFAULT)
+Inferred parameter values: dfs.replication, 
+
+Found callsite[329] in File: org.apache.hadoop.hdfs.web.WebHdfsFileSystem.java LineNum: 150 Method name: conf.get(        DFSConfigKeys.DFS_WEBHDFS_USER_PATTERN_KEY,        DFSConfigKeys.DFS_WEBHDFS_USER_PATTERN_DEFAULT)
+Inferred parameter values: dfs.webhdfs.user.provider.user.pattern, ^[A-Za-z_][A-Za-z0-9._-]*[$]?$, 
+
+Found callsite[330] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 449 Method name: conf.getBoolean(          DFSConfigKeys.DFS_CLIENT_DOMAIN_SOCKET_DATA_TRAFFIC,          DFSConfigKeys.DFS_CLIENT_DOMAIN_SOCKET_DATA_TRAFFIC_DEFAULT)
+Inferred parameter values: dfs.client.domain.socket.data.traffic, 
+
+Found callsite[331] in File: org.apache.hadoop.hdfs.server.namenode.ha.StandbyCheckpointer.java LineNum: 115 Method name: getHostName()
+Inferred parameter values: 
+
+Found callsite[332] in File: org.apache.hadoop.lib.server.Server.java LineNum: 383 Method name: get(getPrefixedName(CONF_STARTUP_STATUS), Status.NORMAL.toString())
+Inferred parameter values: 
+
+Found callsite[333] in File: org.apache.hadoop.hdfs.server.namenode.FSDirectory.java LineNum: 272 Method name: conf.getInt(        DFSConfigKeys.DFS_NAMENODE_MAX_DIRECTORY_ITEMS_KEY,        DFSConfigKeys.DFS_NAMENODE_MAX_DIRECTORY_ITEMS_DEFAULT)
+Inferred parameter values: dfs.namenode.fs-limits.max-directory-items, 
+
+Found callsite[334] in File: org.apache.hadoop.hdfs.protocol.datatransfer.sasl.DataTransferSaslUtil.java LineNum: 181 Method name: conf.get(DFS_DATA_TRANSFER_PROTECTION_KEY)
+Inferred parameter values: dfs.data.transfer.protection, 
+
+Found callsite[335] in File: org.apache.hadoop.hdfs.server.datanode.BlockScanner.java LineNum: 134 Method name: conf.getLong(                  DFS_DATANODE_SCAN_PERIOD_HOURS_KEY,                  DFS_DATANODE_SCAN_PERIOD_HOURS_DEFAULT)
+Inferred parameter values: dfs.datanode.scan.period.hours, 
+
+Found callsite[336] in File: org.apache.hadoop.hdfs.server.namenode.NameNode.java LineNum: 623 Method name: conf.get(HADOOP_USER_GROUP_METRICS_PERCENTILES_INTERVALS)
+Inferred parameter values: 
+
+Found callsite[337] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 770 Method name: conf.getInstances(DFS_DATANODE_PLUGINS_KEY, ServicePlugin.class)
+Inferred parameter values: dfs.datanode.plugins, 
+
+Found callsite[338] in File: org.apache.hadoop.hdfs.tools.GetGroups.java LineNum: 88 Method name: getProxy()
+Inferred parameter values: 
+
+Found callsite[339] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 387 Method name: conf.getTrimmedStrings(DFSConfigKeys.DFS_BLOCK_LOCAL_PATH_ACCESS_USER_KEY)
+Inferred parameter values: dfs.block.local-path-access.user, 
+
+Found callsite[340] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 119 Method name: conf.getInt(DFS_CLIENT_WRITE_PACKET_SIZE_KEY,         DFS_CLIENT_WRITE_PACKET_SIZE_DEFAULT)
+Inferred parameter values: dfs.client-write-packet-size, 
+
+Found callsite[341] in File: org.apache.hadoop.hdfs.web.resources.ReplicationParam.java LineNum: 58 Method name: conf.getInt(DFS_REPLICATION_KEY, DFS_REPLICATION_DEFAULT)
+Inferred parameter values: dfs.replication, 
+
+Found callsite[342] in File: org.apache.hadoop.hdfs.shortcircuit.ShortCircuitCache.java LineNum: 350 Method name: conf.getInt(DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_SIZE,            DFSConfigKeys.DFS_CLIENT_MMAP_CACHE_SIZE_DEFAULT)
+Inferred parameter values: dfs.client.mmap.cache.size, 
+
+Found callsite[343] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 287 Method name: conf.getInt(        DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_MINIMUM_INTERVAL_KEY,        DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_MINIMUM_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.namenode.stale.datanode.minimum.interval, 
+
+Found callsite[344] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 388 Method name: conf.getInt(            DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_COUNT_LIMIT_KEY,            DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_COUNT_LIMIT_DEFAULT)
+Inferred parameter values: dfs.client.write.byte-array-manager.count-limit, 
+
+Found callsite[345] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 434 Method name: conf.getInt(DFS_DATANODE_NETWORK_COUNTS_CACHE_MAX_SIZE_KEY,            DFS_DATANODE_NETWORK_COUNTS_CACHE_MAX_SIZE_DEFAULT)
+Inferred parameter values: dfs.datanode.network.counts.cache.max.size, 
+
+Found callsite[346] in File: org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.java LineNum: 256 Method name: conf.getTrimmed(        DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTPS_ADDRESS_KEY,        DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTPS_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.namenode.secondary.https-address, 0.0.0.0:50091, 
+
+Found callsite[347] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 783 Method name: conf.getLong(FS_TRASH_INTERVAL_KEY, FS_TRASH_INTERVAL_DEFAULT)
+Inferred parameter values: 
+
+Found callsite[348] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 573 Method name: conf.getTrimmedStringCollection(key)
+Inferred parameter values: 
+
+Found callsite[349] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 255 Method name: conf.getFloat(        DFSConfigKeys.DFS_NAMENODE_USE_STALE_DATANODE_FOR_WRITE_RATIO_KEY,        DFSConfigKeys.DFS_NAMENODE_USE_STALE_DATANODE_FOR_WRITE_RATIO_DEFAULT)
+Inferred parameter values: dfs.namenode.write.stale.datanode.ratio, 
+
+Found callsite[350] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 2447 Method name: conf.get(DFS_DATANODE_STARTUP_KEY,                            StartupOption.REGULAR.toString())
+Inferred parameter values: dfs.datanode.startup, 
+
+Found callsite[351] in File: org.apache.hadoop.hdfs.ClientContext.java LineNum: 176 Method name: conf.get(DFSConfigKeys.DFS_CLIENT_CONTEXT,        DFSConfigKeys.DFS_CLIENT_CONTEXT_DEFAULT)
+Inferred parameter values: dfs.client.context, default, 
+
+Found callsite[352] in File: org.apache.hadoop.hdfs.NameNodeProxies.java LineNum: 231 Method name: config.getInt(          DFS_CLIENT_FAILOVER_SLEEPTIME_BASE_KEY,          DFS_CLIENT_FAILOVER_SLEEPTIME_BASE_DEFAULT)
+Inferred parameter values: dfs.client.failover.sleep.base.millis, 
+
+Found callsite[353] in File: org.apache.hadoop.hdfs.server.balancer.NameNodeConnector.java LineNum: 131 Method name: getProxy()
+Inferred parameter values: 
+
+Found callsite[354] in File: org.apache.hadoop.hdfs.server.namenode.FSImage.java LineNum: 1419 Method name: conf.getTrimmedStringCollection(        DFSConfigKeys.DFS_NAMENODE_CHECKPOINT_DIR_KEY)
+Inferred parameter values: dfs.namenode.checkpoint.dir, 
+
+Found callsite[355] in File: org.apache.hadoop.hdfs.protocol.datatransfer.WhitelistBasedTrustedChannelResolver.java LineNum: 88 Method name: conf.get(DFS_DATATRANSFER_SERVER_VARIABLEWHITELIST_FILE,          VARIABLEWHITELIST_DEFAULT_LOCATION)
+Inferred parameter values: dfs.datatransfer.server.variablewhitelist.file, /etc/hadoop/whitelist, 
+
+Found callsite[356] in File: org.apache.hadoop.hdfs.server.namenode.CacheManager.java LineNum: 204 Method name: conf.getFloat(          DFS_NAMENODE_PATH_BASED_CACHE_BLOCK_MAP_ALLOCATION_PERCENT,          DFS_NAMENODE_PATH_BASED_CACHE_BLOCK_MAP_ALLOCATION_PERCENT_DEFAULT)
+Inferred parameter values: dfs.namenode.path.based.cache.block.map.allocation.percent, 
+
+Found callsite[357] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1732 Method name: conf.getPassword(alias)
+Inferred parameter values: 
+
+Found callsite[358] in File: org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider.java LineNum: 125 Method name: getProxy()
+Inferred parameter values: 
+
+Found callsite[359] in File: org.apache.hadoop.hdfs.server.datanode.web.DatanodeHttpServer.java LineNum: 190 Method name: conf.getTrimmed(        DFS_DATANODE_HTTPS_ADDRESS_KEY, DFS_DATANODE_HTTPS_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.datanode.https.address, 
+
+Found callsite[360] in File: org.apache.hadoop.hdfs.server.datanode.web.DatanodeHttpServer.java LineNum: 88 Method name: conf.get(DFS_ADMIN, " ")
+Inferred parameter values: dfs.cluster.administrators,  , 
+
+Found callsite[361] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 105 Method name: conf.getInt(DFS_CLIENT_SOCKET_TIMEOUT_KEY,        HdfsServerConstants.READ_TIMEOUT)
+Inferred parameter values: dfs.client.socket-timeout, 
+
+Found callsite[362] in File: org.apache.hadoop.hdfs.qjournal.client.QuorumJournalManager.java LineNum: 127 Method name: conf.getInt(        DFSConfigKeys.DFS_QJOURNAL_ACCEPT_RECOVERY_TIMEOUT_KEY,        DFSConfigKeys.DFS_QJOURNAL_ACCEPT_RECOVERY_TIMEOUT_DEFAULT)
+Inferred parameter values: dfs.qjournal.accept-recovery.timeout.ms, 
+
+Found callsite[363] in File: org.apache.hadoop.hdfs.server.namenode.CacheManager.java LineNum: 201 Method name: conf.getLong(        DFS_NAMENODE_PATH_BASED_CACHE_REFRESH_INTERVAL_MS,        DFS_NAMENODE_PATH_BASED_CACHE_REFRESH_INTERVAL_MS_DEFAULT)
+Inferred parameter values: dfs.namenode.path.based.cache.refresh.interval.ms, 
+
+Found callsite[364] in File: org.apache.hadoop.hdfs.KeyProviderCache.java LineNum: 84 Method name: conf.getTrimmed(DFSConfigKeys.DFS_ENCRYPTION_KEY_PROVIDER_URI, "")
+Inferred parameter values: dfs.encryption.key.provider.uri, , 
+
+Found callsite[365] in File: org.apache.hadoop.hdfs.server.namenode.NameNode.java LineNum: 720 Method name: conf.getLong(FS_TRASH_INTERVAL_KEY, FS_TRASH_INTERVAL_DEFAULT)
+Inferred parameter values: 
+
+Found callsite[366] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 807 Method name: conf.getLong(              DFS_NAMENODE_CHECKPOINT_TXNS_KEY,              DFS_NAMENODE_CHECKPOINT_TXNS_DEFAULT)
+Inferred parameter values: dfs.namenode.checkpoint.txns, 
+
+Found callsite[367] in File: org.apache.hadoop.hdfs.server.namenode.NameNodeResourceChecker.java LineNum: 113 Method name: conf.getLong(DFSConfigKeys.DFS_NAMENODE_DU_RESERVED_KEY,        DFSConfigKeys.DFS_NAMENODE_DU_RESERVED_DEFAULT)
+Inferred parameter values: dfs.namenode.resource.du.reserved, 
+
+Found callsite[368] in File: org.apache.hadoop.hdfs.web.WebHdfsFileSystem.java LineNum: 181 Method name: conf.getInt(          DFSConfigKeys.DFS_HTTP_CLIENT_FAILOVER_MAX_ATTEMPTS_KEY,          DFSConfigKeys.DFS_HTTP_CLIENT_FAILOVER_MAX_ATTEMPTS_DEFAULT)
+Inferred parameter values: dfs.http.client.failover.max.attempts, 
+
+Found callsite[369] in File: org.apache.hadoop.hdfs.qjournal.server.JournalNode.java LineNum: 140 Method name: conf.get(DFSConfigKeys.DFS_METRICS_SESSION_ID_KEY)
+Inferred parameter values: dfs.metrics.session-id, 
+
+Found callsite[370] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 791 Method name: conf.getLong(DFSConfigKeys.DFS_NAMENODE_MAX_BLOCKS_PER_FILE_KEY,          DFSConfigKeys.DFS_NAMENODE_MAX_BLOCKS_PER_FILE_DEFAULT)
+Inferred parameter values: dfs.namenode.fs-limits.max-blocks-per-file, 
+
+Found callsite[371] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 348 Method name: conf.getInt(          DFS_CLIENT_FAILOVER_MAX_ATTEMPTS_KEY,          DFS_CLIENT_FAILOVER_MAX_ATTEMPTS_DEFAULT)
+Inferred parameter values: dfs.client.failover.max.attempts, 
+
+Found callsite[372] in File: org.apache.hadoop.hdfs.server.mover.Mover.java LineNum: 127 Method name: conf.getInt(        DFSConfigKeys.DFS_MOVER_RETRY_MAX_ATTEMPTS_KEY,        DFSConfigKeys.DFS_MOVER_RETRY_MAX_ATTEMPTS_DEFAULT)
+Inferred parameter values: dfs.mover.retry.max.attempts, 
+
+Found callsite[373] in File: org.apache.hadoop.hdfs.qjournal.client.QuorumJournalManager.java LineNum: 130 Method name: conf.getInt(        DFSConfigKeys.DFS_QJOURNAL_FINALIZE_SEGMENT_TIMEOUT_KEY,        DFSConfigKeys.DFS_QJOURNAL_FINALIZE_SEGMENT_TIMEOUT_DEFAULT)
+Inferred parameter values: dfs.qjournal.finalize-segment.timeout.ms, 
+
+Found callsite[374] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1648 Method name: sslConf.get("ssl.server.keystore.location")
+Inferred parameter values: ssl.server.keystore.location, 
+
+Found callsite[375] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 237 Method name: conf.getInt(        DFSConfigKeys.DFS_BLOCK_INVALIDATE_LIMIT_KEY, blockInvalidateLimit)
+Inferred parameter values: dfs.block.invalidate.limit, 
+
+Found callsite[376] in File: org.apache.hadoop.hdfs.protocol.datatransfer.WhitelistBasedTrustedChannelResolver.java LineNum: 100 Method name: conf.get(DFS_DATATRANSFER_CLIENT_VARIABLEWHITELIST_FILE,variableFile)
+Inferred parameter values: dfs.datatransfer.client.variablewhitelist.file, 
+
+Found callsite[377] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1650 Method name: sslConf.get("ssl.server.keystore.type", "jks")
+Inferred parameter values: ssl.server.keystore.type, jks, 
+
+Found callsite[378] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 375 Method name: get(0)
+Inferred parameter values: 
+
+Found callsite[379] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 706 Method name: conf.getLong(        DFSConfigKeys.DFS_DFSCLIENT_HEDGED_READ_THRESHOLD_MILLIS,        DFSConfigKeys.DEFAULT_DFSCLIENT_HEDGED_READ_THRESHOLD_MILLIS)
+Inferred parameter values: dfs.client.hedged.read.threshold.millis, 
+
+Found callsite[380] in File: org.apache.hadoop.hdfs.server.namenode.ClusterJspHelper.java LineNum: 261 Method name: conf.get(DFSConfigKeys.DFS_DATANODE_HTTP_ADDRESS_KEY, "")
+Inferred parameter values: dfs.datanode.http.address, , 
+
+Found callsite[381] in File: org.apache.hadoop.hdfs.shortcircuit.ShortCircuitCache.java LineNum: 358 Method name: conf.getInt(DFSConfigKeys.DFS_SHORT_CIRCUIT_SHARED_MEMORY_WATCHER_INTERRUPT_CHECK_MS,            DFSConfigKeys.DFS_SHORT_CIRCUIT_SHARED_MEMORY_WATCHER_INTERRUPT_CHECK_MS_DEFAULT)
+Inferred parameter values: dfs.short.circuit.shared.memory.watcher.interrupt.check.ms, 
+
+Found callsite[382] in File: org.apache.hadoop.hdfs.server.datanode.web.DatanodeHttpServer.java LineNum: 217 Method name: conf.getTrimmed(DFS_DATANODE_HTTP_ADDRESS_KEY, null)
+Inferred parameter values: dfs.datanode.http.address, 
+
+Found callsite[383] in File: org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.java LineNum: 203 Method name: conf.getTrimmed(        DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTP_ADDRESS_KEY,        DFSConfigKeys.DFS_NAMENODE_SECONDARY_HTTP_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.namenode.secondary.http-address, 0.0.0.0:50090, 
+
+Found callsite[384] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 267 Method name: conf.getLong(        DFSConfigKeys.DFS_NAMENODE_BLOCKS_PER_POSTPONEDBLOCKS_RESCAN_KEY,        DFSConfigKeys.DFS_NAMENODE_BLOCKS_PER_POSTPONEDBLOCKS_RESCAN_KEY_DEFAULT)
+Inferred parameter values: dfs.namenode.blocks.per.postponedblocks.rescan, 
+
+Found callsite[385] in File: org.apache.hadoop.hdfs.tools.DFSAdmin.java LineNum: 1892 Method name: conf.get(DFSConfigKeys.DFS_DATANODE_KERBEROS_PRINCIPAL_KEY, "")
+Inferred parameter values: dfs.datanode.kerberos.principal, , 
+
+Found callsite[386] in File: org.apache.hadoop.hdfs.protocol.datatransfer.ReplaceDatanodeOnFailure.java LineNum: 158 Method name: conf.getBoolean(        DFSConfigKeys.DFS_CLIENT_WRITE_REPLACE_DATANODE_ON_FAILURE_BEST_EFFORT_KEY,        DFSConfigKeys.DFS_CLIENT_WRITE_REPLACE_DATANODE_ON_FAILURE_BEST_EFFORT_DEFAULT)
+Inferred parameter values: dfs.client.block.write.replace-datanode-on-failure.best-effort, 
+
+Found callsite[387] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1334 Method name: conf.get(DFS_HA_NAMENODE_ID_KEY)
+Inferred parameter values: dfs.ha.namenode.id, 
+
+Found callsite[388] in File: org.apache.hadoop.hdfs.server.namenode.CacheManager.java LineNum: 198 Method name: conf.getInt(        DFS_NAMENODE_LIST_CACHE_DIRECTIVES_NUM_RESPONSES,        DFS_NAMENODE_LIST_CACHE_DIRECTIVES_NUM_RESPONSES_DEFAULT)
+Inferred parameter values: dfs.namenode.list.cache.directives.num.responses, 
+
+Found callsite[389] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1587 Method name: conf.get(DFSConfigKeys.DFS_WEB_AUTHENTICATION_KERBEROS_KEYTAB_KEY)
+Inferred parameter values: dfs.web.authentication.kerberos.keytab, 
+
+Found callsite[390] in File: org.apache.hadoop.hdfs.web.WebHdfsFileSystem.java LineNum: 263 Method name: getInt(DFSConfigKeys.DFS_NAMENODE_HTTP_PORT_KEY,        DFSConfigKeys.DFS_NAMENODE_HTTP_PORT_DEFAULT)
+Inferred parameter values: dfs.http.port, 
+
+Found callsite[391] in File: org.apache.hadoop.hdfs.server.namenode.top.TopConf.java LineNum: 51 Method name: conf.getTrimmedStrings(        DFSConfigKeys.NNTOP_WINDOWS_MINUTES_KEY,        DFSConfigKeys.NNTOP_WINDOWS_MINUTES_DEFAULT)
+Inferred parameter values: dfs.namenode.top.windows.minutes, 
+
+Found callsite[392] in File: org.apache.hadoop.hdfs.server.namenode.FSDirectory.java LineNum: 269 Method name: conf.getInt(        DFSConfigKeys.DFS_NAMENODE_MAX_COMPONENT_LENGTH_KEY,        DFSConfigKeys.DFS_NAMENODE_MAX_COMPONENT_LENGTH_DEFAULT)
+Inferred parameter values: dfs.namenode.fs-limits.max-component-length, 
+
+Found callsite[393] in File: org.apache.hadoop.hdfs.shortcircuit.ShortCircuitCache.java LineNum: 354 Method name: conf.getLong(DFSConfigKeys.DFS_CLIENT_MMAP_RETRY_TIMEOUT_MS,            DFSConfigKeys.DFS_CLIENT_MMAP_RETRY_TIMEOUT_MS_DEFAULT)
+Inferred parameter values: dfs.client.mmap.retry.timeout.ms, 
+
+Found callsite[394] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 1029 Method name: conf.get(DFSConfigKeys.DFS_HOSTS, "")
+Inferred parameter values: dfs.hosts, , 
+
+Found callsite[395] in File: org.apache.hadoop.hdfs.tools.DFSAdmin.java LineNum: 1311 Method name: getProxy()
+Inferred parameter values: 
+
+Found callsite[396] in File: org.apache.hadoop.hdfs.web.WebHdfsFileSystem.java LineNum: 1120 Method name: getLongBytes(DFSConfigKeys.DFS_BLOCK_SIZE_KEY,        DFSConfigKeys.DFS_BLOCK_SIZE_DEFAULT)
+Inferred parameter values: dfs.blocksize, 
+
+Found callsite[397] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 800 Method name: conf.getBoolean(          DFS_HA_STANDBY_CHECKPOINTS_KEY, DFS_HA_STANDBY_CHECKPOINTS_DEFAULT)
+Inferred parameter values: dfs.ha.standby.checkpoints, 
+
+Found callsite[398] in File: org.apache.hadoop.hdfs.web.WebHdfsFileSystem.java LineNum: 184 Method name: conf.getInt(          DFSConfigKeys.DFS_HTTP_CLIENT_RETRY_MAX_ATTEMPTS_KEY,          DFSConfigKeys.DFS_HTTP_CLIENT_RETRY_MAX_ATTEMPTS_DEFAULT)
+Inferred parameter values: dfs.http.client.retry.max.attempts, 
+
+Found callsite[399] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1666 Method name: conf.getBoolean(DFS_CLIENT_HTTPS_NEED_AUTH_KEY,        DFS_CLIENT_HTTPS_NEED_AUTH_DEFAULT)
+Inferred parameter values: dfs.client.https.need-auth, 
+
+Found callsite[400] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 282 Method name: conf.getLong(        DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_KEY,        DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.heartbeat.interval, 
+
+Found callsite[401] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 1030 Method name: conf.get(DFSConfigKeys.DFS_HOSTS_EXCLUDE, "")
+Inferred parameter values: dfs.hosts.exclude, , 
+
+Found callsite[402] in File: org.apache.hadoop.hdfs.server.datanode.BlockPoolManager.java LineNum: 152 Method name: conf.get            (DFSConfigKeys.DFS_NAMESERVICES)
+Inferred parameter values: dfs.nameservices, 
+
+Found callsite[403] in File: org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.BlockPoolSlice.java LineNum: 108 Method name: conf.getBoolean(        DFSConfigKeys.DFS_DATANODE_DUPLICATE_REPLICA_DELETION,        DFSConfigKeys.DFS_DATANODE_DUPLICATE_REPLICA_DELETION_DEFAULT)
+Inferred parameter values: dfs.datanode.duplicate.replica.deletion, 
+
+Found callsite[404] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 411 Method name: conf.getLong(DFS_CLIENT_READ_PREFETCH_SIZE_KEY,          10 * defaultBlockSize)
+Inferred parameter values: dfs.client.read.prefetch.size, 
+
+Found callsite[405] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 862 Method name: conf              .getTrimmedStringCollection(DFSConfigKeys.DFS_NAMESERVICES)
+Inferred parameter values: dfs.nameservices, 
+
+Found callsite[406] in File: org.apache.hadoop.hdfs.server.namenode.ImageServlet.java LineNum: 234 Method name: conf        .get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY)
+Inferred parameter values: dfs.namenode.kerberos.principal, 
+
+Found callsite[407] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 169 Method name: conf.getBoolean(DFS_DATANODE_SYNCONCLOSE_KEY,         DFS_DATANODE_SYNCONCLOSE_DEFAULT)
+Inferred parameter values: dfs.datanode.synconclose, 
+
+Found callsite[408] in File: org.apache.hadoop.hdfs.tools.HDFSConcat.java LineNum: 42 Method name: conf.get("fs.default.name", def_uri)
+Inferred parameter values: fs.default.name, hdfs://localhost:9000, 
+
+Found callsite[409] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 125 Method name: conf.getBoolean(        DFSConfigKeys.DFS_DATANODE_DROP_CACHE_BEHIND_WRITES_KEY,        DFSConfigKeys.DFS_DATANODE_DROP_CACHE_BEHIND_WRITES_DEFAULT)
+Inferred parameter values: dfs.datanode.drop.cache.behind.writes, 
+
+Found callsite[410] in File: org.apache.hadoop.hdfs.qjournal.client.QuorumJournalManager.java LineNum: 121 Method name: conf.getInt(        DFSConfigKeys.DFS_QJOURNAL_START_SEGMENT_TIMEOUT_KEY,        DFSConfigKeys.DFS_QJOURNAL_START_SEGMENT_TIMEOUT_DEFAULT)
+Inferred parameter values: dfs.qjournal.start-segment.timeout.ms, 
+
+Found callsite[411] in File: org.apache.hadoop.hdfs.server.blockmanagement.HeartbeatManager.java LineNum: 71 Method name: conf.getInt(        DFSConfigKeys.DFS_NAMENODE_HEARTBEAT_RECHECK_INTERVAL_KEY,        DFSConfigKeys.DFS_NAMENODE_HEARTBEAT_RECHECK_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.namenode.heartbeat.recheck-interval, 
+
+Found callsite[412] in File: org.apache.hadoop.hdfs.qjournal.client.QuorumJournalManager.java LineNum: 136 Method name: conf.getInt(        DFSConfigKeys.DFS_QJOURNAL_GET_JOURNAL_STATE_TIMEOUT_KEY,        DFSConfigKeys.DFS_QJOURNAL_GET_JOURNAL_STATE_TIMEOUT_DEFAULT)
+Inferred parameter values: dfs.qjournal.get-journal-state.timeout.ms, 
+
+Found callsite[413] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 825 Method name: conf.getBoolean(          DFS_NAMENODE_DELEGATION_TOKEN_ALWAYS_USE_KEY,          DFS_NAMENODE_DELEGATION_TOKEN_ALWAYS_USE_DEFAULT)
+Inferred parameter values: dfs.namenode.delegation.token.always-use, 
+
+Found callsite[414] in File: org.apache.hadoop.hdfs.qjournal.server.JournalNodeHttpServer.java LineNum: 54 Method name: conf.get(        DFSConfigKeys.DFS_JOURNALNODE_HTTPS_ADDRESS_KEY,        DFSConfigKeys.DFS_JOURNALNODE_HTTPS_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.journalnode.https-address, 
+
+Found callsite[415] in File: org.apache.hadoop.hdfs.server.namenode.top.window.RollingWindowManager.java LineNum: 161 Method name: conf.getInt(DFSConfigKeys.NNTOP_NUM_USERS_KEY,            DFSConfigKeys.NNTOP_NUM_USERS_DEFAULT)
+Inferred parameter values: dfs.namenode.top.num.users, 
+
+Found callsite[416] in File: org.apache.hadoop.lib.service.instrumentation.InstrumentationService.java LineNum: 67 Method name: getInt(CONF_TIMERS_SIZE, 10)
+Inferred parameter values: timers.size, 
+
+Found callsite[417] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 502 Method name: conf.getLong(          DFS_CLIENT_DATANODE_RESTART_TIMEOUT_KEY,          DFS_CLIENT_DATANODE_RESTART_TIMEOUT_DEFAULT)
+Inferred parameter values: dfs.client.datanode-restart.timeout, 
+
+Found callsite[418] in File: org.apache.hadoop.hdfs.web.resources.BufferSizeParam.java LineNum: 56 Method name: conf.getInt(            CommonConfigurationKeysPublic.IO_FILE_BUFFER_SIZE_KEY,            CommonConfigurationKeysPublic.IO_FILE_BUFFER_SIZE_DEFAULT)
+Inferred parameter values: 
+
+Found callsite[419] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 385 Method name: conf.getInt(            DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_COUNT_THRESHOLD_KEY,            DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_COUNT_THRESHOLD_DEFAULT)
+Inferred parameter values: dfs.client.write.byte-array-manager.count-threshold, 
+
+Found callsite[420] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 137 Method name: conf.getBoolean(        DFSConfigKeys.DFS_DATANODE_USE_DN_HOSTNAME,        DFSConfigKeys.DFS_DATANODE_USE_DN_HOSTNAME_DEFAULT)
+Inferred parameter values: dfs.datanode.use.datanode.hostname, 
+
+Found callsite[421] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 199 Method name: conf.getTrimmed(DFSConfigKeys.DFS_DATANODE_IPC_ADDRESS_KEY,              DFSConfigKeys.DFS_DATANODE_IPC_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.datanode.ipc.address, 
+
+Found callsite[422] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 361 Method name: conf.getInt(          DFS_CLIENT_MAX_BLOCK_ACQUIRE_FAILURES_KEY,          DFS_CLIENT_MAX_BLOCK_ACQUIRE_FAILURES_DEFAULT)
+Inferred parameter values: dfs.client.max.block.acquire.failures, 
+
+Found callsite[423] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1478 Method name: conf.get(serviceAddrKey)
+Inferred parameter values: 
+
+Found callsite[424] in File: org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.java LineNum: 234 Method name: getProxy()
+Inferred parameter values: 
+
+Found callsite[425] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 364 Method name: conf.getInt(DFS_DATANODE_SOCKET_WRITE_TIMEOUT_KEY,          HdfsServerConstants.WRITE_TIMEOUT)
+Inferred parameter values: dfs.datanode.socket.write.timeout, 
+
+Found callsite[426] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 409 Method name: conf.getBoolean(DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_KEY,              DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_DEFAULT)
+Inferred parameter values: dfs.client.read.shortcircuit, 
+
+Found callsite[427] in File: org.apache.hadoop.hdfs.server.datanode.DataXceiverServer.java LineNum: 116 Method name: conf.getInt(DFSConfigKeys.DFS_DATANODE_MAX_RECEIVER_THREADS_KEY,                  DFSConfigKeys.DFS_DATANODE_MAX_RECEIVER_THREADS_DEFAULT)
+Inferred parameter values: dfs.datanode.max.transfer.threads, 
+
+Found callsite[428] in File: org.apache.hadoop.hdfs.protocol.datatransfer.TrustedChannelResolver.java LineNum: 47 Method name: conf.getClass(          DFSConfigKeys.DFS_TRUSTEDCHANNEL_RESOLVER_CLASS,          TrustedChannelResolver.class, TrustedChannelResolver.class)
+Inferred parameter values: dfs.trustedchannel.resolver.class, 
+
+Found callsite[429] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 406 Method name: conf.get("hadoop.hdfs.configuration.version", "UNSPECIFIED")
+Inferred parameter values: hadoop.hdfs.configuration.version, UNSPECIFIED, 
+
+Found callsite[430] in File: org.apache.hadoop.hdfs.server.namenode.NameNodeHttpServer.java LineNum: 130 Method name: conf.getTrimmed(          DFSConfigKeys.DFS_DATANODE_HTTPS_ADDRESS_KEY, infoHost + ":"              + DFSConfigKeys.DFS_DATANODE_HTTPS_DEFAULT_PORT)
+Inferred parameter values: dfs.datanode.https.address, 
+
+Found callsite[431] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.java LineNum: 302 Method name: conf.getInt(DFSConfigKeys.DFS_NAMENODE_REPLICATION_MIN_KEY,                                 DFSConfigKeys.DFS_NAMENODE_REPLICATION_MIN_DEFAULT)
+Inferred parameter values: dfs.namenode.replication.min, 
+
+Found callsite[432] in File: org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.java LineNum: 374 Method name: conf.getBoolean(            CommonConfigurationKeys.HADOOP_SECURITY_AUTHORIZATION, false)
+Inferred parameter values: 
+
+Found callsite[433] in File: org.apache.hadoop.hdfs.server.namenode.FSImage.java LineNum: 804 Method name: conf.getLong(        DFSConfigKeys.DFS_NAMENODE_CHECKPOINT_TXNS_KEY,         DFSConfigKeys.DFS_NAMENODE_CHECKPOINT_TXNS_DEFAULT)
+Inferred parameter values: dfs.namenode.checkpoint.txns, 
+
+Found callsite[434] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 404 Method name: conf.getInt(DFS_CLIENT_SOCKET_CACHE_CAPACITY_KEY,          DFS_CLIENT_SOCKET_CACHE_CAPACITY_DEFAULT)
+Inferred parameter values: dfs.client.socketcache.capacity, 
+
+Found callsite[435] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.java LineNum: 346 Method name: conf.getInt(        DFSConfigKeys.DFS_BLOCK_MISREPLICATION_PROCESSING_LIMIT,        DFSConfigKeys.DFS_BLOCK_MISREPLICATION_PROCESSING_LIMIT_DEFAULT)
+Inferred parameter values: dfs.block.misreplication.processing.limit, 
+
+Found callsite[436] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.java LineNum: 325 Method name: conf.getInt(            DFSConfigKeys.DFS_NAMENODE_REPLICATION_STREAMS_HARD_LIMIT_KEY,            DFSConfigKeys.DFS_NAMENODE_REPLICATION_STREAMS_HARD_LIMIT_DEFAULT)
+Inferred parameter values: dfs.namenode.replication.max-streams-hard-limit, 
+
+Found callsite[437] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 177 Method name: conf.get(DFS_DATA_ENCRYPTION_ALGORITHM_KEY)
+Inferred parameter values: dfs.encrypt.data.transfer.algorithm, 
+
+Found callsite[438] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 274 Method name: conf.getLong(        DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_INTERVAL_KEY,         DFSConfigKeys.DFS_NAMENODE_STALE_DATANODE_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.namenode.stale.datanode.interval, 
+
+Found callsite[439] in File: org.apache.hadoop.hdfs.web.WebHdfsFileSystem.java LineNum: 202 Method name: conf.getBoolean(        CommonConfigurationKeys.IPC_CLIENT_FALLBACK_TO_SIMPLE_AUTH_ALLOWED_KEY,        CommonConfigurationKeys.IPC_CLIENT_FALLBACK_TO_SIMPLE_AUTH_ALLOWED_DEFAULT)
+Inferred parameter values: 
+
+Found callsite[440] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 128 Method name: conf.getBoolean(        DFSConfigKeys.DFS_DATANODE_SYNC_BEHIND_WRITES_KEY,        DFSConfigKeys.DFS_DATANODE_SYNC_BEHIND_WRITES_DEFAULT)
+Inferred parameter values: dfs.datanode.sync.behind.writes, 
+
+Found callsite[441] in File: org.apache.hadoop.hdfs.server.mover.Mover.java LineNum: 549 Method name: conf.getLong(DFSConfigKeys.DFS_NAMENODE_REPLICATION_INTERVAL_KEY,            DFSConfigKeys.DFS_NAMENODE_REPLICATION_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.namenode.replication.interval, 
+
+Found callsite[442] in File: org.apache.hadoop.hdfs.server.datanode.DirectoryScanner.java LineNum: 315 Method name: conf.getInt(DFSConfigKeys.DFS_DATANODE_DIRECTORYSCAN_INTERVAL_KEY,        DFSConfigKeys.DFS_DATANODE_DIRECTORYSCAN_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.datanode.directoryscan.interval, 
+
+Found callsite[443] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 140 Method name: conf.getLong(DFS_BLOCKREPORT_INTERVAL_MSEC_KEY,        DFS_BLOCKREPORT_INTERVAL_MSEC_DEFAULT)
+Inferred parameter values: dfs.blockreport.intervalMsec, 
+
+Found callsite[444] in File: org.apache.hadoop.lib.service.hadoop.FileSystemAccessService.java LineNum: 324 Method name: conf.getTrimmed(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY)
+Inferred parameter values: 
+
+Found callsite[445] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1653 Method name: sslConf.get("ssl.server.truststore.type", "jks")
+Inferred parameter values: ssl.server.truststore.type, jks, 
+
+Found callsite[446] in File: org.apache.hadoop.hdfs.protocol.datatransfer.sasl.DataTransferSaslUtil.java LineNum: 192 Method name: conf.getClass(DFS_DATA_TRANSFER_SASL_PROPS_RESOLVER_CLASS_KEY,      resolverClass, SaslPropertiesResolver.class)
+Inferred parameter values: dfs.data.transfer.saslproperties.resolver.class, 
+
+Found callsite[447] in File: org.apache.hadoop.hdfs.protocol.datatransfer.ReplaceDatanodeOnFailure.java LineNum: 173 Method name: conf.get(        DFSConfigKeys.DFS_CLIENT_WRITE_REPLACE_DATANODE_ON_FAILURE_POLICY_KEY,        DFSConfigKeys.DFS_CLIENT_WRITE_REPLACE_DATANODE_ON_FAILURE_POLICY_DEFAULT)
+Inferred parameter values: dfs.client.block.write.replace-datanode-on-failure.policy, DEFAULT, 
+
+Found callsite[448] in File: org.apache.hadoop.lib.service.hadoop.FileSystemAccessService.java LineNum: 366 Method name: conf.get(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY)
+Inferred parameter values: 
+
+Found callsite[449] in File: org.apache.hadoop.lib.server.Server.java LineNum: 549 Method name: getClasses(getPrefixedName(CONF_SERVICES_EXT))
+Inferred parameter values: 
+
+Found callsite[450] in File: org.apache.hadoop.hdfs.server.namenode.NameNode.java LineNum: 530 Method name: conf.getTrimmed(DFS_NAMENODE_RPC_BIND_HOST_KEY)
+Inferred parameter values: dfs.namenode.rpc-bind-host, 
+
+Found callsite[451] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 693 Method name: conf.get(DFS_CLIENT_CACHE_DROP_BEHIND_READS)
+Inferred parameter values: dfs.client.cache.drop.behind.reads, 
+
+Found callsite[452] in File: org.apache.hadoop.hdfs.qjournal.client.QuorumJournalManager.java LineNum: 133 Method name: conf.getInt(        DFSConfigKeys.DFS_QJOURNAL_SELECT_INPUT_STREAMS_TIMEOUT_KEY,        DFSConfigKeys.DFS_QJOURNAL_SELECT_INPUT_STREAMS_TIMEOUT_DEFAULT)
+Inferred parameter values: dfs.qjournal.select-input-streams.timeout.ms, 
+
+Found callsite[453] in File: org.apache.hadoop.hdfs.server.namenode.FSEditLog.java LineNum: 1606 Method name: conf.getClass(key, null, JournalManager.class)
+Inferred parameter values: 
+
+Found callsite[454] in File: org.apache.hadoop.hdfs.server.namenode.FSImage.java LineNum: 1429 Method name: conf.getTrimmedStringCollection(        DFSConfigKeys.DFS_NAMENODE_CHECKPOINT_EDITS_DIR_KEY)
+Inferred parameter values: dfs.namenode.checkpoint.edits.dir, 
+
+Found callsite[455] in File: org.apache.hadoop.hdfs.server.namenode.ImageServlet.java LineNum: 241 Method name: getHostName()
+Inferred parameter values: 
+
+Found callsite[456] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 190 Method name: conf.getTrimmed(DFSConfigKeys.DFS_DATANODE_ADDRESS_KEY,              DFSConfigKeys.DFS_DATANODE_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.datanode.address, 
+
+Found callsite[457] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 652 Method name: conf.getInt(        DFSConfigKeys.DFS_CLIENT_TEST_DROP_NAMENODE_RESPONSE_NUM_KEY,        DFSConfigKeys.DFS_CLIENT_TEST_DROP_NAMENODE_RESPONSE_NUM_DEFAULT)
+Inferred parameter values: dfs.client.test.drop.namenode.response.number, 
+
+Found callsite[458] in File: org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager.java LineNum: 141 Method name: conf.getInt(        DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_BLOCKS_PER_INTERVAL_KEY,        DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_BLOCKS_PER_INTERVAL_DEFAULT)
+Inferred parameter values: dfs.namenode.decommission.blocks.per.interval, 
+
+Found callsite[459] in File: org.apache.hadoop.hdfs.server.namenode.FSDirectory.java LineNum: 223 Method name: conf.getBoolean(      DFSConfigKeys.DFS_PERMISSIONS_ENABLED_KEY,      DFSConfigKeys.DFS_PERMISSIONS_ENABLED_DEFAULT)
+Inferred parameter values: dfs.permissions.enabled, 
+
+Found callsite[460] in File: org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager.java LineNum: 73 Method name: conf.getLong(        DFSConfigKeys.DFS_NAMENODE_NUM_EXTRA_EDITS_RETAINED_KEY,        DFSConfigKeys.DFS_NAMENODE_NUM_EXTRA_EDITS_RETAINED_DEFAULT)
+Inferred parameter values: dfs.namenode.num.extra.edits.retained, 
+
+Found callsite[461] in File: org.apache.hadoop.hdfs.server.datanode.ShortCircuitRegistry.java LineNum: 169 Method name: conf.getTrimmedStrings(DFS_DATANODE_SHARED_FILE_DESCRIPTOR_PATHS)
+Inferred parameter values: dfs.datanode.shared.file.descriptor.paths, 
+
+Found callsite[462] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 354 Method name: conf.getInt(          DFS_CLIENT_FAILOVER_SLEEPTIME_BASE_KEY,          DFS_CLIENT_FAILOVER_SLEEPTIME_BASE_DEFAULT)
+Inferred parameter values: dfs.client.failover.sleep.base.millis, 
+
+Found callsite[463] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 474 Method name: conf.getInt(          DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_BUFFER_SIZE_KEY,          DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_BUFFER_SIZE_DEFAULT)
+Inferred parameter values: dfs.client.read.shortcircuit.buffer.size, 
+
+Found callsite[464] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 814 Method name: conf.getInt(          DFS_NAMENODE_LAZY_PERSIST_FILE_SCRUB_INTERVAL_SEC,          DFS_NAMENODE_LAZY_PERSIST_FILE_SCRUB_INTERVAL_SEC_DEFAULT)
+Inferred parameter values: dfs.namenode.lazypersist.file.scrub.interval.sec, 
+
+Found callsite[465] in File: org.apache.hadoop.hdfs.web.WebHdfsFileSystem.java LineNum: 190 Method name: conf.getInt(          DFSConfigKeys.DFS_HTTP_CLIENT_FAILOVER_SLEEPTIME_MAX_KEY,          DFSConfigKeys.DFS_HTTP_CLIENT_FAILOVER_SLEEPTIME_MAX_DEFAULT)
+Inferred parameter values: dfs.http.client.failover.sleep.max.millis, 
+
+Found callsite[466] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 483 Method name: conf.getBoolean(          DFSConfigKeys.DFS_CLIENT_MMAP_ENABLED,          DFSConfigKeys.DFS_CLIENT_MMAP_ENABLED_DEFAULT)
+Inferred parameter values: dfs.client.mmap.enabled, 
+
+Found callsite[467] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 2897 Method name: get("dfs.datanode.info.port")
+Inferred parameter values: dfs.datanode.info.port, 
+
+Found callsite[468] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 709 Method name: conf.getInt(        DFSConfigKeys.DFS_DFSCLIENT_HEDGED_READ_THREADPOOL_SIZE,        DFSConfigKeys.DEFAULT_DFSCLIENT_HEDGED_READ_THREADPOOL_SIZE)
+Inferred parameter values: dfs.client.hedged.read.threadpool.size, 
+
+Found callsite[469] in File: org.apache.hadoop.hdfs.server.namenode.ha.BootstrapStandby.java LineNum: 148 Method name: getProxy()
+Inferred parameter values: 
+
+Found callsite[470] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 422 Method name: conf.getBoolean(DFS_CLIENT_USE_DN_HOSTNAME,          DFS_CLIENT_USE_DN_HOSTNAME_DEFAULT)
+Inferred parameter values: dfs.client.use.datanode.hostname, 
+
+Found callsite[471] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 903 Method name: conf.getBoolean(DFS_NAMENODE_ENABLE_RETRY_CACHE_KEY,                                     DFS_NAMENODE_ENABLE_RETRY_CACHE_DEFAULT)
+Inferred parameter values: dfs.namenode.enable.retrycache, 
+
+Found callsite[472] in File: org.apache.hadoop.hdfs.server.mover.Mover.java LineNum: 118 Method name: conf.getLong(        DFSConfigKeys.DFS_MOVER_MOVEDWINWIDTH_KEY,        DFSConfigKeys.DFS_MOVER_MOVEDWINWIDTH_DEFAULT)
+Inferred parameter values: dfs.mover.movedWinWidth, 
+
+Found callsite[473] in File: org.apache.hadoop.hdfs.server.namenode.NameNode.java LineNum: 1529 Method name: conf.get(DFS_NAMENODE_RPC_ADDRESS_KEY)
+Inferred parameter values: dfs.namenode.rpc-address, 
+
+Found callsite[474] in File: org.apache.hadoop.hdfs.protocol.datatransfer.WhitelistBasedTrustedChannelResolver.java LineNum: 82 Method name: conf.get(DFS_DATATRANSFER_SERVER_FIXEDWHITELIST_FILE,        FIXEDWHITELIST_DEFAULT_LOCATION)
+Inferred parameter values: dfs.datatransfer.server.fixedwhitelist.file, /etc/hadoop/fixedwhitelist, 
+
+Found callsite[475] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 495 Method name: conf.getLong(          DFSConfigKeys.DFS_CLIENT_SHORT_CIRCUIT_REPLICA_STALE_THRESHOLD_MS,          DFSConfigKeys.DFS_CLIENT_SHORT_CIRCUIT_REPLICA_STALE_THRESHOLD_MS_DEFAULT)
+Inferred parameter values: dfs.client.short.circuit.replica.stale.threshold.ms, 
+
+Found callsite[476] in File: org.apache.hadoop.hdfs.server.namenode.Checkpointer.java LineNum: 104 Method name: conf.get(DFS_NAMENODE_BACKUP_HTTP_ADDRESS_KEY,                                    DFS_NAMENODE_BACKUP_HTTP_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.namenode.backup.http-address, 0.0.0.0:50105, 
+
+Found callsite[477] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 8214 Method name: conf.getBoolean(          DFSConfigKeys.DFS_NAMENODE_AUDIT_LOG_TOKEN_TRACKING_ID_KEY,          DFSConfigKeys.DFS_NAMENODE_AUDIT_LOG_TOKEN_TRACKING_ID_DEFAULT)
+Inferred parameter values: dfs.namenode.audit.log.token.tracking.id, 
+
+Found callsite[478] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 404 Method name: conf.get("hadoop.common.configuration.version", "UNSPECIFIED")
+Inferred parameter values: hadoop.common.configuration.version, UNSPECIFIED, 
+
+Found callsite[479] in File: org.apache.hadoop.hdfs.HAUtil.java LineNum: 230 Method name: conf.get(configKey)
+Inferred parameter values: 
+
+Found callsite[480] in File: org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics.java LineNum: 68 Method name: conf.get(DFSConfigKeys.NNTOP_NUM_USERS_KEY)
+Inferred parameter values: dfs.namenode.top.num.users, 
+
+Found callsite[481] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1201 Method name: conf.get(key, defaultVal)
+Inferred parameter values: 
+
+Found callsite[482] in File: org.apache.hadoop.fs.http.server.HttpFSServerWebApp.java LineNum: 101 Method name: get(getPrefixedName(CONF_ADMIN_GROUP), "admin")
+Inferred parameter values: admin, 
+
+Found callsite[483] in File: org.apache.hadoop.hdfs.shortcircuit.ShortCircuitCache.java LineNum: 346 Method name: conf.getInt(DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_SIZE_KEY,            DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_STREAMS_CACHE_SIZE_DEFAULT)
+Inferred parameter values: dfs.client.read.shortcircuit.streams.cache.size, 
+
+Found callsite[484] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 2891 Method name: get(DFS_DATANODE_IPC_ADDRESS_KEY)
+Inferred parameter values: dfs.datanode.ipc.address, 
+
+Found callsite[485] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 736 Method name: config.get(DFS_DATANODE_HOST_NAME_KEY)
+Inferred parameter values: dfs.datanode.hostname, 
+
+Found callsite[486] in File: org.apache.hadoop.hdfs.server.namenode.NameNodeHttpServer.java LineNum: 161 Method name: conf        .get(DFSConfigKeys.DFS_WEB_AUTHENTICATION_KERBEROS_PRINCIPAL_KEY)
+Inferred parameter values: dfs.web.authentication.kerberos.principal, 
+
+Found callsite[487] in File: org.apache.hadoop.fs.http.server.FSOperations.java LineNum: 532 Method name: getInt("httpfs.buffer.size", 4096)
+Inferred parameter values: httpfs.buffer.size, 
+
+Found callsite[488] in File: org.apache.hadoop.hdfs.server.balancer.Balancer.java LineNum: 224 Method name: conf.getInt(        DFSConfigKeys.DFS_BALANCER_DISPATCHERTHREADS_KEY,        DFSConfigKeys.DFS_BALANCER_DISPATCHERTHREADS_DEFAULT)
+Inferred parameter values: dfs.balancer.dispatcherThreads, 
+
+Found callsite[489] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 107 Method name: conf.getInt(DFS_DATANODE_SOCKET_WRITE_TIMEOUT_KEY,        HdfsServerConstants.WRITE_TIMEOUT)
+Inferred parameter values: dfs.datanode.socket.write.timeout, 
+
+Found callsite[490] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 907 Method name: conf.getFloat(          DFS_NAMENODE_RETRY_CACHE_HEAP_PERCENT_KEY,          DFS_NAMENODE_RETRY_CACHE_HEAP_PERCENT_DEFAULT)
+Inferred parameter values: dfs.namenode.retrycache.heap.percent, 
+
+Found callsite[491] in File: org.apache.hadoop.hdfs.server.balancer.Balancer.java LineNum: 221 Method name: conf.getInt(        DFSConfigKeys.DFS_BALANCER_MOVERTHREADS_KEY,        DFSConfigKeys.DFS_BALANCER_MOVERTHREADS_DEFAULT)
+Inferred parameter values: dfs.balancer.moverThreads, 
+
+Found callsite[492] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 904 Method name: conf.getBoolean(DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_KEY,              DFSConfigKeys.DFS_CLIENT_READ_SHORTCIRCUIT_DEFAULT)
+Inferred parameter values: dfs.client.read.shortcircuit, 
+
+Found callsite[493] in File: org.apache.hadoop.lib.service.hadoop.FileSystemAccessService.java LineNum: 199 Method name: getTrimmedStringCollection(NAME_NODE_WHITELIST)
+Inferred parameter values: name.node.whitelist, 
+
+Found callsite[494] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 399 Method name: conf.getBoolean(        DFSConfigKeys.DFS_PIPELINE_ECN_ENABLED,        DFSConfigKeys.DFS_PIPELINE_ECN_ENABLED_DEFAULT)
+Inferred parameter values: dfs.pipeline.ecn, 
+
+Found callsite[495] in File: org.apache.hadoop.hdfs.server.namenode.NameNode.java LineNum: 624 Method name: conf.get(DFS_METRICS_PERCENTILES_INTERVALS_KEY)
+Inferred parameter values: dfs.metrics.percentiles.intervals, 
+
+Found callsite[496] in File: org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl.java LineNum: 2779 Method name: conf.getFloat(          DFSConfigKeys.DFS_DATANODE_RAM_DISK_LOW_WATERMARK_PERCENT,          DFSConfigKeys.DFS_DATANODE_RAM_DISK_LOW_WATERMARK_PERCENT_DEFAULT)
+Inferred parameter values: dfs.datanode.ram.disk.low.watermark.percent, 
+
+Found callsite[497] in File: org.apache.hadoop.hdfs.NameNodeProxies.java LineNum: 470 Method name: conf.get(configKey)
+Inferred parameter values: 
+
+Found callsite[498] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 181 Method name: conf.getBoolean(        IGNORE_SECURE_PORTS_FOR_TESTING_KEY,        IGNORE_SECURE_PORTS_FOR_TESTING_DEFAULT)
+Inferred parameter values: ignore.secure.ports.for.testing, 
+
+Found callsite[499] in File: org.apache.hadoop.lib.service.hadoop.FileSystemAccessService.java LineNum: 179 Method name: get(HADOOP_CONF_DIR, getServer().getConfigDir())
+Inferred parameter values: config.dir, 
+
+Found callsite[500] in File: org.apache.hadoop.hdfs.protocol.datatransfer.sasl.SaslDataTransferClient.java LineNum: 458 Method name: conf.get(            DFS_ENCRYPT_DATA_TRANSFER_CIPHER_SUITES_KEY)
+Inferred parameter values: dfs.encrypt.data.transfer.cipher.suites, 
+
+Found callsite[501] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1609 Method name: conf.getBoolean(DFSConfigKeys.DFS_HTTPS_ENABLE_KEY,          DFSConfigKeys.DFS_HTTPS_ENABLE_DEFAULT)
+Inferred parameter values: dfs.https.enable, 
+
+Found callsite[502] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 780 Method name: conf.getInt(DFS_REPLICATION_KEY, DFS_REPLICATION_DEFAULT)
+Inferred parameter values: dfs.replication, 
+
+Found callsite[503] in File: org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl.java LineNum: 298 Method name: conf.getClass(            DFSConfigKeys.DFS_DATANODE_FSDATASET_VOLUME_CHOOSING_POLICY_KEY,            RoundRobinVolumeChoosingPolicy.class,            VolumeChoosingPolicy.class)
+Inferred parameter values: dfs.datanode.fsdataset.volume.choosing.policy, 
+
+Found callsite[504] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 720 Method name: conf.getBoolean(DFS_NAMENODE_AUDIT_LOG_ASYNC_KEY,                        DFS_NAMENODE_AUDIT_LOG_ASYNC_DEFAULT)
+Inferred parameter values: dfs.namenode.audit.log.async, 
+
+Found callsite[505] in File: org.apache.hadoop.hdfs.server.namenode.FSDirectory.java LineNum: 264 Method name: conf.getInt(        DFSConfigKeys.DFS_CONTENT_SUMMARY_LIMIT_KEY,        DFSConfigKeys.DFS_CONTENT_SUMMARY_LIMIT_DEFAULT)
+Inferred parameter values: dfs.content-summary.limit, 
+
+Found callsite[506] in File: org.apache.hadoop.hdfs.tools.DFSAdmin.java LineNum: 1247 Method name: conf.get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY, "")
+Inferred parameter values: dfs.namenode.kerberos.principal, , 
+
+Found callsite[507] in File: org.apache.hadoop.hdfs.tools.DFSZKFailoverController.java LineNum: 112 Method name: conf.getInt(DFSConfigKeys.DFS_HA_ZKFC_PORT_KEY,        DFSConfigKeys.DFS_HA_ZKFC_PORT_DEFAULT)
+Inferred parameter values: dfs.ha.zkfc.port, 
+
+Found callsite[508] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1197 Method name: conf.get(DFSUtil.addKeySuffixes(key, suffixes))
+Inferred parameter values: 
+
+Found callsite[509] in File: org.apache.hadoop.hdfs.server.datanode.fsdataset.FsDatasetSpi.java LineNum: 78 Method name: conf.getClass(          DFSConfigKeys.DFS_DATANODE_FSDATASET_FACTORY_KEY,          FsDatasetFactory.class,          Factory.class)
+Inferred parameter values: dfs.datanode.fsdataset.factory, 
+
+Found callsite[510] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicy.java LineNum: 163 Method name: conf.getClass(        DFSConfigKeys.DFS_BLOCK_REPLICATOR_CLASSNAME_KEY,        DFSConfigKeys.DFS_BLOCK_REPLICATOR_CLASSNAME_DEFAULT,        BlockPlacementPolicy.class)
+Inferred parameter values: dfs.block.replicator.classname, 
+
+Found callsite[511] in File: org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl.java LineNum: 2782 Method name: conf.getLong(          DFSConfigKeys.DFS_DATANODE_RAM_DISK_LOW_WATERMARK_BYTES,          DFSConfigKeys.DFS_DATANODE_RAM_DISK_LOW_WATERMARK_BYTES_DEFAULT)
+Inferred parameter values: dfs.datanode.ram.disk.low.watermark.bytes, 
+
+Found callsite[512] in File: org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeMetrics.java LineNum: 161 Method name: conf.getInts(DFSConfigKeys.DFS_METRICS_PERCENTILES_INTERVALS_KEY)
+Inferred parameter values: dfs.metrics.percentiles.intervals, 
+
+Found callsite[513] in File: org.apache.hadoop.hdfs.server.namenode.EditLogFileOutputStream.java LineNum: 78 Method name: conf.getBoolean(            DFSConfigKeys.DFS_NAMENODE_EDITS_NOEDITLOGCHANNELFLUSH,            DFSConfigKeys.DFS_NAMENODE_EDITS_NOEDITLOGCHANNELFLUSH_DEFAULT)
+Inferred parameter values: dfs.namenode.edits.noeditlogchannelflush, 
+
+Found callsite[514] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.java LineNum: 93 Method name: conf.getInt(        DFSConfigKeys.DFS_NAMENODE_TOLERATE_HEARTBEAT_MULTIPLIER_KEY,        DFSConfigKeys.DFS_NAMENODE_TOLERATE_HEARTBEAT_MULTIPLIER_DEFAULT)
+Inferred parameter values: dfs.namenode.tolerate.heartbeat.multiplier, 
+
+Found callsite[515] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 799 Method name: conf.getInt(DFS_DATANODE_HANDLER_COUNT_KEY,                DFS_DATANODE_HANDLER_COUNT_DEFAULT)
+Inferred parameter values: dfs.datanode.handler.count, 
+
+Found callsite[516] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 189 Method name: conf.getLong(        DFS_DATANODE_MAX_LOCKED_MEMORY_KEY,        DFS_DATANODE_MAX_LOCKED_MEMORY_DEFAULT)
+Inferred parameter values: dfs.datanode.max.locked.memory, 
+
+Found callsite[517] in File: org.apache.hadoop.hdfs.server.namenode.FSDirectory.java LineNum: 260 Method name: conf.getInt(        DFSConfigKeys.DFS_LIST_LIMIT, DFSConfigKeys.DFS_LIST_LIMIT_DEFAULT)
+Inferred parameter values: dfs.ls.limit, 
+
+Found callsite[518] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1645 Method name: sslConf.getBoolean(DFS_CLIENT_HTTPS_NEED_AUTH_KEY,                DFS_CLIENT_HTTPS_NEED_AUTH_DEFAULT)
+Inferred parameter values: dfs.client.https.need-auth, 
+
+Found callsite[519] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 786 Method name: conf.getLong(DFS_NAMENODE_MAX_OBJECTS_KEY,                                        DFS_NAMENODE_MAX_OBJECTS_DEFAULT)
+Inferred parameter values: dfs.namenode.max.objects, 
+
+Found callsite[520] in File: org.apache.hadoop.hdfs.server.datanode.DataNode.java LineNum: 1383 Method name: conf.getTrimmed(DFS_DATANODE_HTTP_ADDRESS_KEY,        DFS_DATANODE_HTTP_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.datanode.http.address, 
+
+Found callsite[521] in File: org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager.java LineNum: 166 Method name: conf.getInt(        DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_MAX_CONCURRENT_TRACKED_NODES,        DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_MAX_CONCURRENT_TRACKED_NODES_DEFAULT)
+Inferred parameter values: dfs.namenode.decommission.max.concurrent.tracked.nodes, 
+
+Found callsite[522] in File: org.apache.hadoop.hdfs.protocol.datatransfer.sasl.DataTransferSaslUtil.java LineNum: 274 Method name: conf.getInt(              DFS_ENCRYPT_DATA_TRANSFER_CIPHER_KEY_BITLENGTH_KEY,              DFS_ENCRYPT_DATA_TRANSFER_CIPHER_KEY_BITLENGTH_DEFAULT)
+Inferred parameter values: dfs.encrypt.data.transfer.cipher.key.bitlength, 
+
+Found callsite[523] in File: org.apache.hadoop.hdfs.tools.DFSAdmin.java LineNum: 1374 Method name: conf.get(DFSConfigKeys.DFS_NAMENODE_KERBEROS_PRINCIPAL_KEY, "")
+Inferred parameter values: dfs.namenode.kerberos.principal, , 
+
+Found callsite[524] in File: org.apache.hadoop.hdfs.server.balancer.Balancer.java LineNum: 572 Method name: 1000
+Inferred parameter values: 
+
+Found callsite[525] in File: org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider.java LineNum: 71 Method name: this.conf.getInt(        DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_KEY,        DFSConfigKeys.DFS_CLIENT_FAILOVER_CONNECTION_RETRIES_DEFAULT)
+Inferred parameter values: dfs.client.failover.connection.retries, 
+
+Found callsite[526] in File: org.apache.hadoop.hdfs.server.namenode.FSDirectory.java LineNum: 228 Method name: conf.get(      DFSConfigKeys.DFS_PERMISSIONS_SUPERUSERGROUP_KEY,      DFSConfigKeys.DFS_PERMISSIONS_SUPERUSERGROUP_DEFAULT)
+Inferred parameter values: dfs.permissions.superusergroup, supergroup, 
+
+Found callsite[527] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1546 Method name: conf.getFloat(        DFSConfigKeys.DFS_NAMENODE_INVALIDATE_WORK_PCT_PER_ITERATION,        DFSConfigKeys.DFS_NAMENODE_INVALIDATE_WORK_PCT_PER_ITERATION_DEFAULT)
+Inferred parameter values: dfs.namenode.invalidate.work.pct.per.iteration, 
+
+Found callsite[528] in File: org.apache.hadoop.hdfs.server.namenode.NamenodeFsck.java LineNum: 880 Method name: conf.getInt(DFSConfigKeys.DFS_NAMENODE_REPLICATION_MIN_KEY,                                            DFSConfigKeys.DFS_NAMENODE_REPLICATION_MIN_DEFAULT)
+Inferred parameter values: dfs.namenode.replication.min, 
+
+Found callsite[529] in File: org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics.java LineNum: 70 Method name: conf.get(DFSConfigKeys.NNTOP_WINDOWS_MINUTES_KEY)
+Inferred parameter values: dfs.namenode.top.windows.minutes, 
+
+Found callsite[530] in File: org.apache.hadoop.hdfs.server.namenode.NameNode.java LineNum: 569 Method name: conf.getTrimmed(DFS_NAMENODE_HTTP_BIND_HOST_KEY)
+Inferred parameter values: dfs.namenode.http-bind-host, 
+
+Found callsite[531] in File: org.apache.hadoop.hdfs.server.datanode.BlockScanner.java LineNum: 148 Method name: conf.getLong(          DFS_BLOCK_SCANNER_VOLUME_BYTES_PER_SECOND,          DFS_BLOCK_SCANNER_VOLUME_BYTES_PER_SECOND_DEFAULT)
+Inferred parameter values: dfs.block.scanner.volume.bytes.per.second, 
+
+Found callsite[532] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 704 Method name: conf.get(DFS_CLIENT_CONTEXT, DFS_CLIENT_CONTEXT_DEFAULT)
+Inferred parameter values: dfs.client.context, default, 
+
+Found callsite[533] in File: org.apache.hadoop.lib.service.hadoop.FileSystemAccessService.java LineNum: 323 Method name: conf.get(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY)
+Inferred parameter values: 
+
+Found callsite[534] in File: org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.java LineNum: 297 Method name: conf.getInt(DFSConfigKeys.DFS_REPLICATION_KEY,                                           DFSConfigKeys.DFS_REPLICATION_DEFAULT)
+Inferred parameter values: dfs.replication, 
+
+Found callsite[535] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1847 Method name: conf.getTrimmed(DFSConfigKeys.DFS_ENCRYPTION_KEY_PROVIDER_URI, "")
+Inferred parameter values: dfs.encryption.key.provider.uri, , 
+
+Found callsite[536] in File: org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager.java LineNum: 153 Method name: conf.get(deprecatedKey)
+Inferred parameter values: dfs.namenode.decommission.nodes.per.interval, 
+
+Found callsite[537] in File: org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.java LineNum: 294 Method name: conf.get(        DFSConfigKeys.DFS_NAMENODE_LEGACY_OIV_IMAGE_DIR_KEY)
+Inferred parameter values: dfs.namenode.legacy-oiv-image.dir, 
+
+Found callsite[538] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 694 Method name: conf.getBoolean(DFS_CLIENT_CACHE_DROP_BEHIND_READS, false)
+Inferred parameter values: dfs.client.cache.drop.behind.reads, 
+
+Found callsite[539] in File: org.apache.hadoop.hdfs.server.namenode.NameNode.java LineNum: 686 Method name: conf.getInstances(DFS_NAMENODE_PLUGINS_KEY,        ServicePlugin.class)
+Inferred parameter values: dfs.namenode.plugins, 
+
+Found callsite[540] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 248 Method name: conf.getBoolean(        DFSConfigKeys.DFS_NAMENODE_AVOID_STALE_DATANODE_FOR_READ_KEY,        DFSConfigKeys.DFS_NAMENODE_AVOID_STALE_DATANODE_FOR_READ_DEFAULT)
+Inferred parameter values: dfs.namenode.avoid.read.stale.datanode, 
+
+Found callsite[541] in File: org.apache.hadoop.hdfs.server.namenode.top.window.RollingWindowManager.java LineNum: 151 Method name: conf.getInt(DFSConfigKeys.NNTOP_BUCKETS_PER_WINDOW_KEY,            DFSConfigKeys.NNTOP_BUCKETS_PER_WINDOW_DEFAULT)
+Inferred parameter values: dfs.namenode.top.window.num.buckets, 
+
+Found callsite[542] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 509 Method name: conf.getLong(          DFSConfigKeys.DFS_CLIENT_KEY_PROVIDER_CACHE_EXPIRY_MS,          DFSConfigKeys.DFS_CLIENT_KEY_PROVIDER_CACHE_EXPIRY_DEFAULT)
+Inferred parameter values: dfs.client.key.provider.cache.expiry, 
+
+Found callsite[543] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 1326 Method name: conf.get(DFS_NAMESERVICE_ID)
+Inferred parameter values: dfs.nameservice.id, 
+
+Found callsite[544] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 209 Method name: conf.getClass(DFSConfigKeys.NET_TOPOLOGY_NODE_SWITCH_MAPPING_IMPL_KEY,             ScriptBasedMapping.class, DNSToSwitchMapping.class)
+Inferred parameter values: 
+
+Found callsite[545] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 379 Method name: conf.getBoolean(          DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_ENABLED_KEY,          DFSConfigKeys.DFS_CLIENT_WRITE_BYTE_ARRAY_MANAGER_ENABLED_DEFAULT)
+Inferred parameter values: dfs.client.write.byte-array-manager.enabled, 
+
+Found callsite[546] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 839 Method name: conf.getClass(          DFS_NAMENODE_INODE_ATTRIBUTES_PROVIDER_KEY,          null, INodeAttributeProvider.class)
+Inferred parameter values: dfs.namenode.inode.attributes.provider.class, 
+
+Found callsite[547] in File: org.apache.hadoop.fs.http.server.HttpFSAuthenticationFilter.java LineNum: 70 Method name: conf.get(name)
+Inferred parameter values: 
+
+Found callsite[548] in File: org.apache.hadoop.hdfs.server.namenode.FSNamesystem.java LineNum: 781 Method name: conf.getInt(IO_FILE_BUFFER_SIZE_KEY, IO_FILE_BUFFER_SIZE_DEFAULT)
+Inferred parameter values: 
+
+Found callsite[549] in File: org.apache.hadoop.lib.service.scheduler.SchedulerService.java LineNum: 57 Method name: getInt(CONF_THREADS, 5)
+Inferred parameter values: threads, 
+
+Found callsite[550] in File: org.apache.hadoop.hdfs.server.namenode.FSDirectory.java LineNum: 235 Method name: conf.getBoolean(        DFSConfigKeys.DFS_NAMENODE_XATTRS_ENABLED_KEY,        DFSConfigKeys.DFS_NAMENODE_XATTRS_ENABLED_DEFAULT)
+Inferred parameter values: dfs.namenode.xattrs.enabled, 
+
+Found callsite[551] in File: org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeMetrics.java LineNum: 154 Method name: conf.get(DFSConfigKeys.DFS_METRICS_SESSION_ID_KEY)
+Inferred parameter values: dfs.metrics.session-id, 
+
+Found callsite[552] in File: org.apache.hadoop.hdfs.DFSClient.java LineNum: 375 Method name: conf.getInt(          DFSConfigKeys.DFS_CLIENT_WRITE_MAX_PACKETS_IN_FLIGHT_KEY,          DFSConfigKeys.DFS_CLIENT_WRITE_MAX_PACKETS_IN_FLIGHT_DEFAULT)
+Inferred parameter values: dfs.client.write.max-packets-in-flight, 
+
+Found callsite[553] in File: org.apache.hadoop.hdfs.HAUtil.java LineNum: 153 Method name: conf.get(DFSConfigKeys.DFS_HA_NAMENODE_ID_KEY)
+Inferred parameter values: dfs.ha.namenode.id, 
+
+Found callsite[554] in File: org.apache.hadoop.hdfs.server.mover.Mover.java LineNum: 550 Method name: 1000
+Inferred parameter values: 
+
+Found callsite[555] in File: org.apache.hadoop.hdfs.server.namenode.ha.IPFailoverProxyProvider.java LineNum: 98 Method name: getProxy()
+Inferred parameter values: 
+
+Found callsite[556] in File: org.apache.hadoop.hdfs.qjournal.server.GetJournalEditServlet.java LineNum: 98 Method name: getHostName()
+Inferred parameter values: 
+
+Found callsite[557] in File: org.apache.hadoop.hdfs.server.datanode.DNConf.java LineNum: 193 Method name: conf.getLong(        DFS_DATANODE_RESTART_REPLICA_EXPIRY_KEY,        DFS_DATANODE_RESTART_REPLICA_EXPIRY_DEFAULT)
+Inferred parameter values: dfs.datanode.restart.replica.expiration, 
+
+Found callsite[558] in File: org.apache.hadoop.hdfs.server.namenode.BackupNode.java LineNum: 125 Method name: conf.getTrimmed(BN_HTTP_ADDRESS_NAME_KEY, BN_HTTP_ADDRESS_DEFAULT)
+Inferred parameter values: dfs.namenode.backup.http-address, 0.0.0.0:50105, 
+
+Found callsite[559] in File: org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.BlockPoolSlice.java LineNum: 122 Method name: conf.getBoolean(        DFSConfigKeys.DFS_SUPPORT_APPEND_KEY,        DFSConfigKeys.DFS_SUPPORT_APPEND_DEFAULT)
+Inferred parameter values: dfs.support.append, 
+
+Found callsite[560] in File: org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.java LineNum: 197 Method name: getPort()
+Inferred parameter values: 
+
+Found callsite[561] in File: org.apache.hadoop.hdfs.DFSUtil.java LineNum: 590 Method name: conf.get(key)
+Inferred parameter values: 
+

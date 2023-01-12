@@ -1,0 +1,1284 @@
+Found callsite[0] in File: org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorReducer.java LineNum: 62 Method name: getLong(UniqValueCount.MAX_NUM_UNIQUE_VALUES, Long.MAX_VALUE)
+Inferred parameter values: mapreduce.aggregate.max.num.unique.values, 
+
+Found callsite[1] in File: org.apache.hadoop.mapreduce.lib.input.CombineFileInputFormat.java LineNum: 160 Method name: getCodec(file)
+Inferred parameter values: 
+
+Found callsite[2] in File: org.apache.hadoop.mapreduce.lib.input.MultipleInputs.java LineNum: 104 Method name: conf.get(DIR_FORMATS)
+Inferred parameter values: mapreduce.input.multipleinputs.dir.formats, 
+
+Found callsite[3] in File: org.apache.hadoop.mapreduce.counters.Limits.java LineNum: 49 Method name: conf.getInt(COUNTER_GROUPS_MAX_KEY, COUNTER_GROUPS_MAX_DEFAULT)
+Inferred parameter values: mapreduce.job.counters.groups.max, 
+
+Found callsite[4] in File: org.apache.hadoop.mapreduce.lib.db.DBConfiguration.java LineNum: 191 Method name: conf.get(DBConfiguration.INPUT_ORDER_BY_PROPERTY)
+Inferred parameter values: mapreduce.jdbc.input.orderby, 
+
+Found callsite[5] in File: org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.java LineNum: 98 Method name: conf.getInt(FILEOUTPUTCOMMITTER_ALGORITHM_VERSION,                    FILEOUTPUTCOMMITTER_ALGORITHM_VERSION_DEFAULT)
+Inferred parameter values: mapreduce.fileoutputcommitter.algorithm.version, 
+
+Found callsite[6] in File: org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor.java LineNum: 175 Method name: conf.getInt(MRJobConfig.MAX_TASK_FAILURES_PER_TRACKER, 3)
+Inferred parameter values: mapreduce.job.maxtaskfailures.per.tracker, 
+
+Found callsite[7] in File: org.apache.hadoop.mapreduce.lib.input.CombineFileRecordReaderWrapper.java LineNum: 82 Method name: conf.get(MRJobConfig.MAP_INPUT_FILE)
+Inferred parameter values: mapreduce.map.input.file, 
+
+Found callsite[8] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 364 Method name: conf.getPattern(JobContext.JAR_UNPACK_PATTERN,           JobConf.UNPACK_JAR_PATTERN_DEFAULT)
+Inferred parameter values: 
+
+Found callsite[9] in File: org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.java LineNum: 291 Method name: getClass(MO_PREFIX + namedOutput + VALUE,      null, Object.class)
+Inferred parameter values: .value, 
+
+Found callsite[10] in File: org.apache.hadoop.mapreduce.lib.db.DBConfiguration.java LineNum: 174 Method name: conf.getStrings(DBConfiguration.INPUT_FIELD_NAMES_PROPERTY)
+Inferred parameter values: mapreduce.jdbc.input.field.names, 
+
+Found callsite[11] in File: org.apache.hadoop.mapreduce.lib.db.DBConfiguration.java LineNum: 211 Method name: conf.get(DBConfiguration.INPUT_COUNT_QUERY)
+Inferred parameter values: mapreduce.jdbc.input.count.query, 
+
+Found callsite[12] in File: org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.java LineNum: 284 Method name: getClass(MO_PREFIX + namedOutput + KEY, null,      Object.class)
+Inferred parameter values: .key, 
+
+Found callsite[13] in File: org.apache.hadoop.mapreduce.lib.output.SequenceFileAsBinaryOutputFormat.java LineNum: 129 Method name: getClass(VALUE_CLASS,       job.getOutputValueClass().asSubclass(Writable.class), Writable.class)
+Inferred parameter values: mapreduce.output.seqbinaryoutputformat.value.class, 
+
+Found callsite[14] in File: org.apache.hadoop.mapreduce.lib.input.TextInputFormat.java LineNum: 48 Method name: get(        "textinputformat.record.delimiter")
+Inferred parameter values: textinputformat.record.delimiter, 
+
+Found callsite[15] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 489 Method name: jobConf.getTrimmedStringCollection(MRJobConfig.JOB_TAGS)
+Inferred parameter values: mapreduce.job.tags, 
+
+Found callsite[16] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 245 Method name: conf.getBoolean(MRJobConfig.MAPREDUCE_JOB_CLASSLOADER, false)
+Inferred parameter values: mapreduce.job.classloader, 
+
+Found callsite[17] in File: org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper.java LineNum: 103 Method name: getClass(MAP_CLASS, Mapper.class)
+Inferred parameter values: mapreduce.mapper.multithreadedmapper.mapclass, 
+
+Found callsite[18] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 336 Method name: conf.getInt(            MRJobConfig.MR_AM_CPU_VCORES, MRJobConfig.DEFAULT_MR_AM_CPU_VCORES            )
+Inferred parameter values: yarn.app.mapreduce.am.resource.cpu-vcores, 
+
+Found callsite[19] in File: org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.java LineNum: 1305 Method name: conf.get(MRJobConfig.MAP_CLASS_ATTR)
+Inferred parameter values: mapreduce.job.map.class, 
+
+Found callsite[20] in File: org.apache.hadoop.mapreduce.filecache.DistributedCache.java LineNum: 437 Method name: conf.getStrings(MRJobConfig.CACHE_FILE_VISIBILITIES)
+Inferred parameter values: mapreduce.job.cache.files.visibilities, 
+
+Found callsite[21] in File: org.apache.hadoop.mapreduce.lib.input.FileInputFormat.java LineNum: 221 Method name: conf.getClass(PATHFILTER_CLASS, null,        PathFilter.class)
+Inferred parameter values: mapreduce.input.pathFilter.class, 
+
+Found callsite[22] in File: org.apache.hadoop.mapreduce.v2.hs.JobHistory.java LineNum: 308 Method name: conf.getLong(          JHAdminConfig.MR_HISTORY_CLEANER_INTERVAL_MS,          JHAdminConfig.DEFAULT_MR_HISTORY_CLEANER_INTERVAL_MS)
+Inferred parameter values: mapreduce.jobhistory.cleaner.interval-ms, 
+
+Found callsite[23] in File: org.apache.hadoop.mapreduce.JobSubmitter.java LineNum: 421 Method name: conf.getStrings(MRJobConfig.JOB_NAMENODES)
+Inferred parameter values: mapreduce.job.hdfs-servers, 
+
+Found callsite[24] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 404 Method name: conf.get(MRJobConfig.MAPRED_REDUCE_ADMIN_JAVA_OPTS,"")
+Inferred parameter values: mapreduce.admin.reduce.child.java.opts, , 
+
+Found callsite[25] in File: org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl.java LineNum: 250 Method name: conf.getInt(        MRJobConfig.MR_AM_CONTAINERLAUNCHER_THREADPOOL_INITIAL_SIZE,        MRJobConfig.DEFAULT_MR_AM_CONTAINERLAUNCHER_THREADPOOL_INITIAL_SIZE)
+Inferred parameter values: yarn.app.mapreduce.am.containerlauncher.threadpool-initial-size, 
+
+Found callsite[26] in File: org.apache.hadoop.mapreduce.v2.app.MRAppMaster.java LineNum: 481 Method name: conf.getClass(              "mapred.output.committer.class", FileOutputCommitter.class,              org.apache.hadoop.mapred.OutputCommitter.class)
+Inferred parameter values: mapred.output.committer.class, 
+
+Found callsite[27] in File: org.apache.hadoop.mapreduce.filecache.DistributedCache.java LineNum: 185 Method name: conf.getStrings(MRJobConfig.CACHE_FILES)
+Inferred parameter values: mapreduce.job.cache.files, 
+
+Found callsite[28] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 445 Method name: conf.getClass(MAPPER_OUTPUT_KEY_CLASS, Object.class)
+Inferred parameter values: mapreduce.chain.mapper.output.key.class, 
+
+Found callsite[29] in File: org.apache.hadoop.mapreduce.lib.map.RegexMapper.java LineNum: 46 Method name: conf.getInt(GROUP, 0)
+Inferred parameter values: mapreduce.mapper.regexmapper..group, 
+
+Found callsite[30] in File: org.apache.hadoop.mapred.Master.java LineNum: 41 Method name: conf.get(MRConfig.FRAMEWORK_NAME, MRConfig.YARN_FRAMEWORK_NAME)
+Inferred parameter values: mapreduce.framework.name, yarn, 
+
+Found callsite[31] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 400 Method name: conf.get(MRJobConfig.MAPRED_MAP_ADMIN_JAVA_OPTS,"")
+Inferred parameter values: mapreduce.admin.map.child.java.opts, , 
+
+Found callsite[32] in File: org.apache.hadoop.mapreduce.filecache.DistributedCache.java LineNum: 314 Method name: conf.get(MRJobConfig.CLASSPATH_FILES)
+Inferred parameter values: mapreduce.job.classpath.files, 
+
+Found callsite[33] in File: org.apache.hadoop.mapreduce.CryptoUtils.java LineNum: 53 Method name: conf.getBoolean(MRJobConfig.MR_ENCRYPTED_INTERMEDIATE_DATA,        MRJobConfig.DEFAULT_MR_ENCRYPTED_INTERMEDIATE_DATA)
+Inferred parameter values: mapreduce.job.encrypted-intermediate-data, 
+
+Found callsite[34] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 416 Method name: conf.get(MRJobConfig.MR_AM_COMMAND_OPTS,        MRJobConfig.DEFAULT_MR_AM_COMMAND_OPTS)
+Inferred parameter values: yarn.app.mapreduce.am.command-opts, -Xmx1024m, 
+
+Found callsite[35] in File: org.apache.hadoop.mapreduce.JobSubmitter.java LineNum: 437 Method name: conf.get(MRJobConfig.MAPREDUCE_APPLICATION_FRAMEWORK_PATH, "")
+Inferred parameter values: mapreduce.application.framework.path, , 
+
+Found callsite[36] in File: org.apache.hadoop.mapreduce.v2.util.MRWebAppUtil.java LineNum: 98 Method name: conf.get(JHAdminConfig.MR_HISTORY_WEBAPP_ADDRESS,          JHAdminConfig.DEFAULT_MR_HISTORY_WEBAPP_ADDRESS)
+Inferred parameter values: mapreduce.jobhistory.webapp.address, 
+
+Found callsite[37] in File: org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.java LineNum: 313 Method name: conf.get(MULTIPLE_OUTPUTS, "")
+Inferred parameter values: mapreduce.multipleoutputs, , 
+
+Found callsite[38] in File: org.apache.hadoop.mapred.QueueManager.java LineNum: 529 Method name: conf.get(DeprecatedQueueConfigurationParser.        MAPRED_QUEUE_NAMES_KEY)
+Inferred parameter values: mapred.queue.names, 
+
+Found callsite[39] in File: org.apache.hadoop.mapreduce.lib.fieldsel.FieldSelectionReducer.java LineNum: 83 Method name: conf.get(FieldSelectionHelper.REDUCE_OUTPUT_KEY_VALUE_SPEC, "0-:")
+Inferred parameter values: mapreduce.fieldsel.reduce.output.key.value.fields.spec, 0-:, 
+
+Found callsite[40] in File: org.apache.hadoop.mapreduce.lib.db.FloatSplitter.java LineNum: 68 Method name: conf.getInt(MRJobConfig.NUM_MAPS, 1)
+Inferred parameter values: mapreduce.job.maps, 
+
+Found callsite[41] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 359 Method name: jobConf.get(MRJobConfig.JAR)
+Inferred parameter values: mapreduce.job.jar, 
+
+Found callsite[42] in File: org.apache.hadoop.mapreduce.JobResourceUploader.java LineNum: 70 Method name: conf.get("tmpfiles")
+Inferred parameter values: tmpfiles, 
+
+Found callsite[43] in File: org.apache.hadoop.mapreduce.filecache.DistributedCache.java LineNum: 214 Method name: conf.getStrings(MRJobConfig.CACHE_LOCALFILES)
+Inferred parameter values: mapreduce.job.cache.local.files, 
+
+Found callsite[44] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 639 Method name: conf.get(MRJobConfig.MAPREDUCE_JOB_LOG4J_PROPERTIES_FILE, "")
+Inferred parameter values: mapreduce.job.log4j-properties-file, , 
+
+Found callsite[45] in File: org.apache.hadoop.mapreduce.lib.db.DBConfiguration.java LineNum: 152 Method name: conf.get(DBConfiguration.URL_PROPERTY)
+Inferred parameter values: mapreduce.jdbc.url, 
+
+Found callsite[46] in File: org.apache.hadoop.mapreduce.lib.input.TaggedInputSplit.java LineNum: 134 Method name: conf.getClassByName(className)
+Inferred parameter values: 
+
+Found callsite[47] in File: org.apache.hadoop.mapred.SkipBadRecords.java LineNum: 290 Method name: conf.getLong(REDUCER_MAX_SKIP_GROUPS, 0)
+Inferred parameter values: 
+
+Found callsite[48] in File: org.apache.hadoop.mapreduce.lib.input.CombineFileRecordReaderWrapper.java LineNum: 78 Method name: conf.getLong(MRJobConfig.MAP_INPUT_PATH, 0L)
+Inferred parameter values: mapreduce.map.input.length, 
+
+Found callsite[49] in File: org.apache.hadoop.mapred.SkipBadRecords.java LineNum: 138 Method name: conf.getBoolean(AUTO_INCR_MAP_PROC_COUNT, true)
+Inferred parameter values: 
+
+Found callsite[50] in File: org.apache.hadoop.filecache.DistributedCache.java LineNum: 222 Method name: conf.get(CACHE_LOCALARCHIVES)
+Inferred parameter values: mapred.cache.localArchives, 
+
+Found callsite[51] in File: org.apache.hadoop.mapreduce.lib.input.MultipleInputs.java LineNum: 60 Method name: conf.get(DIR_FORMATS)
+Inferred parameter values: mapreduce.input.multipleinputs.dir.formats, 
+
+Found callsite[52] in File: org.apache.hadoop.mapreduce.v2.hs.client.HSAdmin.java LineNum: 236 Method name: conf.getSocketAddr(        JHAdminConfig.JHS_ADMIN_ADDRESS,        JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS,        JHAdminConfig.DEFAULT_JHS_ADMIN_PORT)
+Inferred parameter values: mapreduce.jobhistory.admin.address, 
+
+Found callsite[53] in File: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl.java LineNum: 821 Method name: conf.getBoolean(MRJobConfig.MAPREDUCE_JOB_USER_CLASSPATH_FIRST, false)
+Inferred parameter values: mapreduce.job.user.classpath.first, 
+
+Found callsite[54] in File: org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.java LineNum: 116 Method name: conf.get(FileOutputFormat.COMPRESS_CODEC)
+Inferred parameter values: mapreduce.output.fileoutputformat.compress.codec, 
+
+Found callsite[55] in File: org.apache.hadoop.mapreduce.lib.db.DBConfiguration.java LineNum: 241 Method name: conf.get(DBConfiguration.OUTPUT_TABLE_NAME_PROPERTY)
+Inferred parameter values: mapreduce.jdbc.output.table.name, 
+
+Found callsite[56] in File: org.apache.hadoop.mapred.ShuffleHandler.java LineNum: 405 Method name: conf.getInt(SHUFFLE_MAPOUTPUT_META_INFO_CACHE_SIZE,          DEFAULT_SHUFFLE_MAPOUTPUT_META_INFO_CACHE_SIZE)
+Inferred parameter values: mapreduce.shuffle.mapoutput-info.meta.cache.size, 
+
+Found callsite[57] in File: org.apache.hadoop.mapreduce.lib.input.CombineFileInputFormat.java LineNum: 196 Method name: conf.getLong("mapreduce.input.fileinputformat.split.maxsize", 0)
+Inferred parameter values: mapreduce.input.fileinputformat.split.maxsize, 
+
+Found callsite[58] in File: org.apache.hadoop.mapred.QueueManager.java LineNum: 119 Method name: conf.get(      DeprecatedQueueConfigurationParser.MAPRED_QUEUE_NAMES_KEY)
+Inferred parameter values: mapred.queue.names, 
+
+Found callsite[59] in File: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl.java LineNum: 570 Method name: conf.getInt(MRJobConfig.REDUCE_MEMORY_MB,              MRJobConfig.DEFAULT_REDUCE_MEMORY_MB)
+Inferred parameter values: mapreduce.reduce.memory.mb, 
+
+Found callsite[60] in File: org.apache.hadoop.mapreduce.lib.join.CompositeInputFormat.java LineNum: 85 Method name: conf.get(JOIN_EXPR, null)
+Inferred parameter values: mapreduce.join.expr, 
+
+Found callsite[61] in File: org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils.java LineNum: 201 Method name: conf        .get(JHAdminConfig.MR_HISTORY_INTERMEDIATE_DONE_DIR)
+Inferred parameter values: mapreduce.jobhistory.intermediate-done-dir, 
+
+Found callsite[62] in File: org.apache.hadoop.mapred.ClientServiceDelegate.java LineNum: 110 Method name: this.conf.getInt(MRJobConfig.MR_CLIENT_TO_AM_IPC_MAX_RETRIES,            MRJobConfig.DEFAULT_MR_CLIENT_TO_AM_IPC_MAX_RETRIES)
+Inferred parameter values: yarn.app.mapreduce.client-am.ipc.max-retries, 
+
+Found callsite[63] in File: org.apache.hadoop.mapreduce.lib.fieldsel.FieldSelectionMapper.java LineNum: 84 Method name: conf.get(FieldSelectionHelper.MAP_OUTPUT_KEY_VALUE_SPEC, "0-:")
+Inferred parameter values: mapreduce.fieldsel.map.output.key.value.fields.spec, 0-:, 
+
+Found callsite[64] in File: org.apache.hadoop.mapreduce.lib.fieldsel.FieldSelectionReducer.java LineNum: 80 Method name: conf.get(FieldSelectionHelper.DATA_FIELD_SEPERATOR, "\t")
+Inferred parameter values: mapreduce.fieldsel.data.field.separator, \t, 
+
+Found callsite[65] in File: org.apache.hadoop.mapreduce.lib.input.KeyValueLineRecordReader.java LineNum: 59 Method name: conf.get(KEY_VALUE_SEPERATOR, "\t")
+Inferred parameter values: mapreduce.input.keyvaluelinerecordreader.key.value.separator, \t, 
+
+Found callsite[66] in File: org.apache.hadoop.mapred.QueueManager.java LineNum: 539 Method name: conf.getBoolean(MRConfig.MR_ACLS_ENABLED, false)
+Inferred parameter values: mapreduce.cluster.acls.enabled, 
+
+Found callsite[67] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 209 Method name: conf.getStrings(YarnConfiguration.YARN_APPLICATION_CLASSPATH,          crossPlatform              ? YarnConfiguration.DEFAULT_YARN_CROSS_PLATFORM_APPLICATION_CLASSPATH              : YarnConfiguration.DEFAULT_YARN_APPLICATION_CLASSPATH)
+Inferred parameter values: 
+
+Found callsite[68] in File: org.apache.hadoop.mapreduce.v2.hs.server.HSAdminServer.java LineNum: 125 Method name: conf.get(JHAdminConfig.JHS_ADMIN_ACL,        JHAdminConfig.DEFAULT_JHS_ADMIN_ACL)
+Inferred parameter values: mapreduce.jobhistory.admin.acl, *, 
+
+Found callsite[69] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 355 Method name: conf.getBoolean(MRJobConfig.MAPREDUCE_JOB_CLASSLOADER, false)
+Inferred parameter values: mapreduce.job.classloader, 
+
+Found callsite[70] in File: org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFilter.java LineNum: 236 Method name: conf.getInt(FILTER_FREQUENCY, 10)
+Inferred parameter values: 
+
+Found callsite[71] in File: org.apache.hadoop.mapred.IFileInputStream.java LineNum: 83 Method name: conf.getInt(MRConfig.MAPRED_IFILE_READAHEAD_BYTES,        MRConfig.DEFAULT_MAPRED_IFILE_READAHEAD_BYTES)
+Inferred parameter values: mapreduce.ifile.readahead.bytes, 
+
+Found callsite[72] in File: org.apache.hadoop.mapreduce.filecache.DistributedCache.java LineNum: 447 Method name: conf.getStrings(MRJobConfig.CACHE_ARCHIVES_VISIBILITIES)
+Inferred parameter values: mapreduce.job.cache.archives.visibilities, 
+
+Found callsite[73] in File: org.apache.hadoop.mapred.QueueManager.java LineNum: 169 Method name: clusterConf.getBoolean(MRConfig.MR_ACLS_ENABLED, false)
+Inferred parameter values: mapreduce.cluster.acls.enabled, 
+
+Found callsite[74] in File: org.apache.hadoop.mapreduce.security.TokenCache.java LineNum: 132 Method name: conf.get(MRJobConfig.MAPREDUCE_JOB_CREDENTIALS_BINARY)
+Inferred parameter values: mapreduce.job.credentials.binary, 
+
+Found callsite[75] in File: org.apache.hadoop.mapreduce.v2.hs.HistoryServerFileSystemStateStoreService.java LineNum: 84 Method name: conf.get(JHAdminConfig.MR_HS_FS_STATE_STORE_URI)
+Inferred parameter values: mapreduce.jobhistory.recovery.store.fs.uri, 
+
+Found callsite[76] in File: org.apache.hadoop.mapreduce.v2.hs.client.HSAdmin.java LineNum: 61 Method name: conf.get(JHAdminConfig.MR_HISTORY_PRINCIPAL, "")
+Inferred parameter values: mapreduce.jobhistory.principal, , 
+
+Found callsite[77] in File: org.apache.hadoop.mapred.TaskLog.java LineNum: 480 Method name: conf.getLong(JobContext.TASK_USERLOG_LIMIT, 0)
+Inferred parameter values: 
+
+Found callsite[78] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 242 Method name: conf.getBoolean(MRJobConfig.MAPREDUCE_JOB_USER_CLASSPATH_FIRST, false)
+Inferred parameter values: mapreduce.job.user.classpath.first, 
+
+Found callsite[79] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 197 Method name: conf.getBoolean(YarnConfiguration.IS_MINI_YARN_CLUSTER, false)
+Inferred parameter values: 
+
+Found callsite[80] in File: org.apache.hadoop.mapred.Master.java LineNum: 52 Method name: conf.get(MRConfig.FRAMEWORK_NAME, MRConfig.YARN_FRAMEWORK_NAME)
+Inferred parameter values: mapreduce.framework.name, yarn, 
+
+Found callsite[81] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 175 Method name: conf.get(MRJobConfig.MAPREDUCE_APPLICATION_FRAMEWORK_PATH, "")
+Inferred parameter values: mapreduce.application.framework.path, , 
+
+Found callsite[82] in File: org.apache.hadoop.mapreduce.lib.partition.KeyFieldBasedPartitioner.java LineNum: 73 Method name: conf.getInt("num.key.fields.for.partition",0)
+Inferred parameter values: num.key.fields.for.partition, 
+
+Found callsite[83] in File: org.apache.hadoop.mapreduce.filecache.DistributedCache.java LineNum: 243 Method name: conf.getStrings(MRJobConfig.CACHE_ARCHIVES_TIMESTAMPS)
+Inferred parameter values: mapreduce.job.cache.archives.timestamps, 
+
+Found callsite[84] in File: org.apache.hadoop.mapreduce.JobSubmitter.java LineNum: 390 Method name: conf.get("mapreduce.job.credentials.json")
+Inferred parameter values: mapreduce.job.credentials.json, 
+
+Found callsite[85] in File: org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorCombiner.java LineNum: 52 Method name: getLong(UniqValueCount.MAX_NUM_UNIQUE_VALUES, Long.MAX_VALUE)
+Inferred parameter values: mapreduce.aggregate.max.num.unique.values, 
+
+Found callsite[86] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 692 Method name: conf.getLong(MRJobConfig.SHUFFLE_LOG_KB,          MRJobConfig.DEFAULT_SHUFFLE_LOG_KB)
+Inferred parameter values: yarn.app.mapreduce.shuffle.log.limit.kb, 
+
+Found callsite[87] in File: org.apache.hadoop.mapreduce.lib.partition.TotalOrderPartitioner.java LineNum: 111 Method name: conf.getInt(MAX_TRIE_DEPTH, 200)
+Inferred parameter values: mapreduce.totalorderpartitioner.trie.maxdepth, 
+
+Found callsite[88] in File: org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.java LineNum: 476 Method name: getRecordWriter(taskContext)
+Inferred parameter values: 
+
+Found callsite[89] in File: org.apache.hadoop.mapred.JobACLsManager.java LineNum: 68 Method name: conf.get(aclConfigName)
+Inferred parameter values: 
+
+Found callsite[90] in File: org.apache.hadoop.mapred.ShuffleHandler.java LineNum: 338 Method name: conf.getBoolean(SHUFFLE_MANAGE_OS_CACHE,        DEFAULT_SHUFFLE_MANAGE_OS_CACHE)
+Inferred parameter values: mapreduce.shuffle.manage.os.cache, 
+
+Found callsite[91] in File: org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator.java LineNum: 111 Method name: conf.getInt(MRJobConfig.MR_AM_TO_RM_HEARTBEAT_INTERVAL_MS,            MRJobConfig.DEFAULT_MR_AM_TO_RM_HEARTBEAT_INTERVAL_MS)
+Inferred parameter values: yarn.app.mapreduce.am.scheduler.heartbeat.interval-ms, 
+
+Found callsite[92] in File: org.apache.hadoop.mapreduce.JobSubmitter.java LineNum: 202 Method name: conf.get(MRJobConfig.QUEUE_NAME,          JobConf.DEFAULT_QUEUE_NAME)
+Inferred parameter values: mapreduce.job.queuename, default, 
+
+Found callsite[93] in File: org.apache.hadoop.mapreduce.lib.input.FileInputFormat.java LineNum: 136 Method name: getBoolean(INPUT_DIR_RECURSIVE,        false)
+Inferred parameter values: mapreduce.input.fileinputformat.input.dir.recursive, 
+
+Found callsite[94] in File: org.apache.hadoop.mapred.FixedLengthInputFormat.java LineNum: 69 Method name: conf.getInt(FIXED_RECORD_LENGTH, 0)
+Inferred parameter values: fixedlengthinputformat.record.length, 
+
+Found callsite[95] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 821 Method name: jobConf.getInt(prefix + CHAIN_MAPPER_SIZE, 0)
+Inferred parameter values: .size, 
+
+Found callsite[96] in File: org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.java LineNum: 343 Method name: getBoolean(COUNTERS_ENABLED, false)
+Inferred parameter values: mapreduce.multipleoutputs.counters, 
+
+Found callsite[97] in File: org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator.java LineNum: 194 Method name: conf.getFloat(        MRJobConfig.MR_AM_JOB_REDUCE_PREEMPTION_LIMIT,        MRJobConfig.DEFAULT_MR_AM_JOB_REDUCE_PREEMPTION_LIMIT)
+Inferred parameter values: yarn.app.mapreduce.am.job.reduce.preemption.limit, 
+
+Found callsite[98] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 677 Method name: reducerConf.getClass(          REDUCER_OUTPUT_KEY_CLASS, null)
+Inferred parameter values: mapreduce.chain.reducer.output.key.class, 
+
+Found callsite[99] in File: org.apache.hadoop.mapreduce.lib.db.DataDrivenDBInputFormat.java LineNum: 169 Method name: getInt(MRJobConfig.NUM_MAPS, 1)
+Inferred parameter values: mapreduce.job.maps, 
+
+Found callsite[100] in File: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl.java LineNum: 730 Method name: conf.getStringCollection(          MRJobConfig.MAPREDUCE_JOB_SHUFFLE_PROVIDER_SERVICES)
+Inferred parameter values: mapreduce.job.shuffle.provider.services, 
+
+Found callsite[101] in File: org.apache.hadoop.mapreduce.split.JobSplitWriter.java LineNum: 159 Method name: conf.getInt(MRConfig.MAX_BLOCK_LOCATIONS_KEY,          MRConfig.MAX_BLOCK_LOCATIONS_DEFAULT)
+Inferred parameter values: mapreduce.job.max.split.locations, 
+
+Found callsite[102] in File: org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.java LineNum: 148 Method name: getInt(        MRJobConfig.APPLICATION_ATTEMPT_ID, 0)
+Inferred parameter values: mapreduce.job.application.attempt.id, 
+
+Found callsite[103] in File: org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler.java LineNum: 102 Method name: conf.getLong(MRJobConfig.MR_AM_COMMIT_WINDOW_MS,        MRJobConfig.DEFAULT_MR_AM_COMMIT_WINDOW_MS)
+Inferred parameter values: yarn.app.mapreduce.am.job.committer.commit-window, 
+
+Found callsite[104] in File: org.apache.hadoop.mapreduce.v2.hs.client.HSAdmin.java LineNum: 284 Method name: conf.getSocketAddr(        JHAdminConfig.JHS_ADMIN_ADDRESS,        JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS,        JHAdminConfig.DEFAULT_JHS_ADMIN_PORT)
+Inferred parameter values: mapreduce.jobhistory.admin.address, 
+
+Found callsite[105] in File: org.apache.hadoop.mapred.LocatedFileStatusFetcher.java LineNum: 93 Method name: conf.getInt(FileInputFormat.LIST_STATUS_NUM_THREADS,        FileInputFormat.DEFAULT_LIST_STATUS_NUM_THREADS)
+Inferred parameter values: 
+
+Found callsite[106] in File: org.apache.hadoop.mapreduce.v2.util.MRWebAppUtil.java LineNum: 115 Method name: conf.getSocketAddr(          JHAdminConfig.MR_HISTORY_BIND_HOST,          JHAdminConfig.MR_HISTORY_WEBAPP_ADDRESS,          JHAdminConfig.DEFAULT_MR_HISTORY_WEBAPP_ADDRESS,          JHAdminConfig.DEFAULT_MR_HISTORY_WEBAPP_PORT)
+Inferred parameter values: mapreduce.jobhistory.bind-host, mapreduce.jobhistory.webapp.address, 
+
+Found callsite[107] in File: org.apache.hadoop.mapreduce.v2.hs.client.HSAdmin.java LineNum: 268 Method name: conf.getSocketAddr(        JHAdminConfig.JHS_ADMIN_ADDRESS,        JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS,        JHAdminConfig.DEFAULT_JHS_ADMIN_PORT)
+Inferred parameter values: mapreduce.jobhistory.admin.address, 
+
+Found callsite[108] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 833 Method name: jobConf.getClass(prefix        + CHAIN_REDUCER_CLASS, null, Reducer.class)
+Inferred parameter values: .reducer.class, 
+
+Found callsite[109] in File: org.apache.hadoop.mapreduce.v2.hs.HistoryClientService.java LineNum: 131 Method name: conf.getInt(JHAdminConfig.MR_HISTORY_CLIENT_THREAD_COUNT,                JHAdminConfig.DEFAULT_MR_HISTORY_CLIENT_THREAD_COUNT)
+Inferred parameter values: mapreduce.jobhistory.client.thread-count, 
+
+Found callsite[110] in File: org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.java LineNum: 667 Method name: conf.get(JobContext.JOB_NAME, "<missing job name>")
+Inferred parameter values: <missing job name>, 
+
+Found callsite[111] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 697 Method name: previousMapperConf.getClass(          MAPPER_OUTPUT_VALUE_CLASS, null)
+Inferred parameter values: mapreduce.chain.mapper.output.value.class, 
+
+Found callsite[112] in File: org.apache.hadoop.mapreduce.Job.java LineNum: 1463 Method name: conf.get(Job.OUTPUT_FILTER, "FAILED")
+Inferred parameter values: FAILED, 
+
+Found callsite[113] in File: org.apache.hadoop.mapreduce.v2.hs.JobHistoryServer.java LineNum: 186 Method name: conf.getSocketAddr(JHAdminConfig.MR_HISTORY_ADDRESS,      JHAdminConfig.DEFAULT_MR_HISTORY_ADDRESS,      JHAdminConfig.DEFAULT_MR_HISTORY_PORT)
+Inferred parameter values: mapreduce.jobhistory.address, 
+
+Found callsite[114] in File: org.apache.hadoop.mapreduce.lib.input.NLineInputFormat.java LineNum: 159 Method name: getInt(LINES_PER_MAP, 1)
+Inferred parameter values: mapreduce.input.lineinputformat.linespermap, 
+
+Found callsite[115] in File: org.apache.hadoop.mapred.LocalClientProtocolProvider.java LineNum: 36 Method name: conf.get(MRConfig.FRAMEWORK_NAME, MRConfig.LOCAL_FRAMEWORK_NAME)
+Inferred parameter values: mapreduce.framework.name, local, 
+
+Found callsite[116] in File: org.apache.hadoop.mapreduce.v2.app.MRAppMaster.java LineNum: 1553 Method name: conf.getClassLoader()
+Inferred parameter values: 
+
+Found callsite[117] in File: org.apache.hadoop.mapreduce.lib.db.DBConfiguration.java LineNum: 201 Method name: conf.get(DBConfiguration.INPUT_QUERY)
+Inferred parameter values: mapreduce.jdbc.input.query, 
+
+Found callsite[118] in File: org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator.java LineNum: 170 Method name: conf.getLong(MRJobConfig.SPECULATIVE_RETRY_AFTER_SPECULATE,                MRJobConfig.DEFAULT_SPECULATIVE_RETRY_AFTER_SPECULATE)
+Inferred parameter values: mapreduce.job.speculative.retry-after-speculate, 
+
+Found callsite[119] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 554 Method name: conf.getInt(prefix + CHAIN_MAPPER_SIZE, 0)
+Inferred parameter values: .size, 
+
+Found callsite[120] in File: org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator.java LineNum: 191 Method name: conf.getFloat(        MRJobConfig.MR_AM_JOB_REDUCE_RAMPUP_UP_LIMIT,         MRJobConfig.DEFAULT_MR_AM_JOB_REDUCE_RAMP_UP_LIMIT)
+Inferred parameter values: yarn.app.mapreduce.am.job.reduce.rampup.limit, 
+
+Found callsite[121] in File: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl.java LineNum: 566 Method name: conf.getInt(MRJobConfig.MAP_MEMORY_MB,              MRJobConfig.DEFAULT_MAP_MEMORY_MB)
+Inferred parameter values: mapreduce.map.memory.mb, 
+
+Found callsite[122] in File: org.apache.hadoop.mapreduce.v2.app.speculate.ExponentiallySmoothedTaskRuntimeEstimator.java LineNum: 137 Method name: conf.getLong(MRJobConfig.MR_AM_TASK_ESTIMATOR_SMOOTH_LAMBDA_MS,            MRJobConfig.DEFAULT_MR_AM_TASK_ESTIMATOR_SMOOTH_LAMBDA_MS)
+Inferred parameter values: yarn.app.mapreduce.am.job.task.estimator.exponential.smooth.lambda-ms, 
+
+Found callsite[123] in File: org.apache.hadoop.mapred.ClientServiceDelegate.java LineNum: 316 Method name: this.conf.getInt(        MRJobConfig.MR_CLIENT_MAX_RETRIES,        MRJobConfig.DEFAULT_MR_CLIENT_MAX_RETRIES)
+Inferred parameter values: yarn.app.mapreduce.client.max-retries, 
+
+Found callsite[124] in File: org.apache.hadoop.mapreduce.v2.app.MRAppMaster.java LineNum: 463 Method name: conf.get("mapred.output.committer.class")
+Inferred parameter values: mapred.output.committer.class, 
+
+Found callsite[125] in File: org.apache.hadoop.mapreduce.split.JobSplitWriter.java LineNum: 103 Method name: job.getInt(Job.SUBMIT_REPLICATION, 10)
+Inferred parameter values: mapreduce.client.submit.file.replication, 
+
+Found callsite[126] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 416 Method name: conf.get(MRJobConfig.MR_AM_STAGING_DIR,        MRJobConfig.DEFAULT_MR_AM_STAGING_DIR)
+Inferred parameter values: yarn.app.mapreduce.am.staging-dir, /tmp/hadoop-yarn/staging, 
+
+Found callsite[127] in File: org.apache.hadoop.mapred.SkipBadRecords.java LineNum: 251 Method name: conf.getLong(MAPPER_MAX_SKIP_RECORDS, 0)
+Inferred parameter values: 
+
+Found callsite[128] in File: org.apache.hadoop.mapred.ShuffleHandler.java LineNum: 399 Method name: conf.getBoolean(SHUFFLE_CONNECTION_KEEP_ALIVE_ENABLED,          DEFAULT_SHUFFLE_CONNECTION_KEEP_ALIVE_ENABLED)
+Inferred parameter values: mapreduce.shuffle.connection-keep-alive.enable, 
+
+Found callsite[129] in File: org.apache.hadoop.mapreduce.lib.input.FixedLengthInputFormat.java LineNum: 86 Method name: getCodec(file)
+Inferred parameter values: 
+
+Found callsite[130] in File: org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl.java LineNum: 245 Method name: conf.getInt(        MRJobConfig.MR_AM_CONTAINERLAUNCHER_THREAD_COUNT_LIMIT,        MRJobConfig.DEFAULT_MR_AM_CONTAINERLAUNCHER_THREAD_COUNT_LIMIT)
+Inferred parameter values: yarn.app.mapreduce.am.containerlauncher.thread-count-limit, 
+
+Found callsite[131] in File: org.apache.hadoop.mapreduce.counters.Limits.java LineNum: 47 Method name: conf.getInt(COUNTER_NAME_MAX_KEY,          COUNTER_NAME_MAX_DEFAULT)
+Inferred parameter values: mapreduce.job.counters.counter.name.max, 
+
+Found callsite[132] in File: org.apache.hadoop.mapreduce.v2.app.MRAppMaster.java LineNum: 267 Method name: conf.get(MRJobConfig.JOB_NAME, "<missing app name>")
+Inferred parameter values: mapreduce.job.name, <missing app name>, 
+
+Found callsite[133] in File: org.apache.hadoop.mapreduce.v2.app.MRAppMaster.java LineNum: 415 Method name: conf.getBoolean(MRJobConfig.REDUCE_SPECULATIVE, false)
+Inferred parameter values: mapreduce.reduce.speculative, 
+
+Found callsite[134] in File: org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorBaseDescriptor.java LineNum: 164 Method name: conf.get(MRJobConfig.MAP_INPUT_FILE)
+Inferred parameter values: mapreduce.map.input.file, 
+
+Found callsite[135] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 404 Method name: conf.getClass(MAPPER_OUTPUT_VALUE_CLASS,        Object.class)
+Inferred parameter values: mapreduce.chain.mapper.output.value.class, 
+
+Found callsite[136] in File: org.apache.hadoop.mapreduce.v2.hs.JobHistoryServer.java LineNum: 161 Method name: conf.getLong(MRConfig.DELEGATION_TOKEN_RENEW_INTERVAL_KEY,                      MRConfig.DELEGATION_TOKEN_RENEW_INTERVAL_DEFAULT)
+Inferred parameter values: mapreduce.cluster.delegation.token.renew-interval, 
+
+Found callsite[137] in File: org.apache.hadoop.mapreduce.v2.hs.HistoryFileManager.java LineNum: 502 Method name: conf.getLong(        JHAdminConfig.MR_HISTORY_MAX_START_WAIT_TIME,        JHAdminConfig.DEFAULT_MR_HISTORY_MAX_START_WAIT_TIME)
+Inferred parameter values: mapreduce.jobhistory.maximum-start-wait-time-millis, 
+
+Found callsite[138] in File: org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFilter.java LineNum: 131 Method name: conf.get(FILTER_REGEX)
+Inferred parameter values: 
+
+Found callsite[139] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 724 Method name: conf.getBoolean(MRConfig.MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM,          MRConfig.DEFAULT_MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM)
+Inferred parameter values: mapreduce.app-submission.cross-platform, 
+
+Found callsite[140] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 602 Method name: conf.getStrings(key)
+Inferred parameter values: 
+
+Found callsite[141] in File: org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils.java LineNum: 241 Method name: defaultConf.getPropertySources(        CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY)
+Inferred parameter values: 
+
+Found callsite[142] in File: org.apache.hadoop.mapreduce.lib.db.DBConfiguration.java LineNum: 148 Method name: conf.get(DBConfiguration.DRIVER_CLASS_PROPERTY)
+Inferred parameter values: mapreduce.jdbc.driver.class, 
+
+Found callsite[143] in File: org.apache.hadoop.mapreduce.v2.hs.JobHistory.java LineNum: 112 Method name: conf.getClass(        JHAdminConfig.MR_HISTORY_STORAGE, CachedHistoryStorage.class,        HistoryStorage.class)
+Inferred parameter values: mapreduce.jobhistory.store.class, 
+
+Found callsite[144] in File: org.apache.hadoop.mapreduce.lib.input.MultipleInputs.java LineNum: 142 Method name: conf.getClassByName(split[1])
+Inferred parameter values: 
+
+Found callsite[145] in File: org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler.java LineNum: 229 Method name: conf.getInt(MRJobConfig.MR_AM_HISTORY_MAX_UNFLUSHED_COMPLETE_EVENTS,            MRJobConfig.DEFAULT_MR_AM_HISTORY_MAX_UNFLUSHED_COMPLETE_EVENTS)
+Inferred parameter values: yarn.app.mapreduce.am.history.max-unflushed-events, 
+
+Found callsite[146] in File: org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.java LineNum: 675 Method name: conf.get(MRJobConfig.QUEUE_NAME, "default")
+Inferred parameter values: mapreduce.job.queuename, default, 
+
+Found callsite[147] in File: org.apache.hadoop.mapred.DeprecatedQueueConfigurationParser.java LineNum: 50 Method name: conf.getBoolean(MRConfig.MR_ACLS_ENABLED, false)
+Inferred parameter values: mapreduce.cluster.acls.enabled, 
+
+Found callsite[148] in File: org.apache.hadoop.mapreduce.v2.hs.client.HSAdmin.java LineNum: 252 Method name: conf.getSocketAddr(        JHAdminConfig.JHS_ADMIN_ADDRESS,        JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS,        JHAdminConfig.DEFAULT_JHS_ADMIN_PORT)
+Inferred parameter values: mapreduce.jobhistory.admin.address, 
+
+Found callsite[149] in File: org.apache.hadoop.mapreduce.v2.app.JobEndNotifier.java LineNum: 72 Method name: conf.getInt(MRJobConfig.MR_JOB_END_NOTIFICATION_MAX_ATTEMPTS, 1)
+Inferred parameter values: mapreduce.job.end-notification.max.attempts, 
+
+Found callsite[150] in File: org.apache.hadoop.mapreduce.split.SplitMetaInfoReader.java LineNum: 47 Method name: conf.getLong(MRJobConfig.SPLIT_METAINFO_MAXSIZE,        MRJobConfig.DEFAULT_SPLIT_METAINFO_MAXSIZE)
+Inferred parameter values: mapreduce.job.split.metainfo.maxsize, 
+
+Found callsite[151] in File: org.apache.hadoop.mapreduce.v2.app.MRAppMaster.java LineNum: 414 Method name: conf.getBoolean(MRJobConfig.MAP_SPECULATIVE, false)
+Inferred parameter values: mapreduce.map.speculative, 
+
+Found callsite[152] in File: org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.java LineNum: 1363 Method name: conf.getValByRegex(MRJobConfig.WORKFLOW_ADJACENCY_PREFIX_PATTERN)
+Inferred parameter values: ^mapreduce\\.workflow\\.adjacency\\..+, 
+
+Found callsite[153] in File: org.apache.hadoop.mapreduce.Job.java LineNum: 1432 Method name: conf.getInt(      PROGRESS_MONITOR_POLL_INTERVAL_KEY, DEFAULT_MONITOR_POLL_INTERVAL)
+Inferred parameter values: mapreduce.client.progressmonitor.pollinterval, 
+
+Found callsite[154] in File: org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler.java LineNum: 240 Method name: conf.getLong(MRJobConfig.MR_AM_HISTORY_COMPLETE_EVENT_FLUSH_TIMEOUT_MS,            MRJobConfig.DEFAULT_MR_AM_HISTORY_COMPLETE_EVENT_FLUSH_TIMEOUT_MS)
+Inferred parameter values: yarn.app.mapreduce.am.history.complete-event-flush-timeout, 
+
+Found callsite[155] in File: org.apache.hadoop.mapreduce.split.JobSplitWriter.java LineNum: 124 Method name: conf.getInt(MRConfig.MAX_BLOCK_LOCATIONS_KEY,          MRConfig.MAX_BLOCK_LOCATIONS_DEFAULT)
+Inferred parameter values: mapreduce.job.max.split.locations, 
+
+Found callsite[156] in File: org.apache.hadoop.mapred.ShuffleHandler.java LineNum: 344 Method name: conf.getInt(MAX_SHUFFLE_CONNECTIONS,                                         DEFAULT_MAX_SHUFFLE_CONNECTIONS)
+Inferred parameter values: mapreduce.shuffle.max.connections, 
+
+Found callsite[157] in File: org.apache.hadoop.mapreduce.lib.partition.TotalOrderPartitioner.java LineNum: 100 Method name: conf.getBoolean(NATURAL_ORDER, true)
+Inferred parameter values: mapreduce.totalorderpartitioner.naturalorder, 
+
+Found callsite[158] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 331 Method name: conf.getInt(            MRJobConfig.MR_AM_VMEM_MB, MRJobConfig.DEFAULT_MR_AM_VMEM_MB            )
+Inferred parameter values: yarn.app.mapreduce.am.resource.mb, 
+
+Found callsite[159] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 688 Method name: conf.getBoolean(MRJobConfig.REDUCE_SEPARATE_SHUFFLE_LOG,               MRJobConfig.DEFAULT_REDUCE_SEPARATE_SHUFFLE_LOG)
+Inferred parameter values: yarn.app.mapreduce.shuffle.log.separate, 
+
+Found callsite[160] in File: org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator.java LineNum: 173 Method name: conf.getDouble(MRJobConfig.SPECULATIVECAP_RUNNING_TASKS,                MRJobConfig.DEFAULT_SPECULATIVECAP_RUNNING_TASKS)
+Inferred parameter values: mapreduce.job.speculative.speculative-cap-running-tasks, 
+
+Found callsite[161] in File: org.apache.hadoop.mapreduce.v2.app.speculate.StartEndTimesBase.java LineNum: 93 Method name: conf.getFloat(MRJobConfig.SPECULATIVE_SLOWTASK_THRESHOLD,1.0f)
+Inferred parameter values: mapreduce.job.speculative.slowtaskthreshold, 
+
+Found callsite[162] in File: org.apache.hadoop.mapreduce.v2.util.MRWebAppUtil.java LineNum: 109 Method name: conf.getSocketAddr(          JHAdminConfig.MR_HISTORY_BIND_HOST,          JHAdminConfig.MR_HISTORY_WEBAPP_HTTPS_ADDRESS,          JHAdminConfig.DEFAULT_MR_HISTORY_WEBAPP_HTTPS_ADDRESS,          JHAdminConfig.DEFAULT_MR_HISTORY_WEBAPP_HTTPS_PORT)
+Inferred parameter values: mapreduce.jobhistory.bind-host, mapreduce.jobhistory.webapp.https.address, 
+
+Found callsite[163] in File: org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFilter.java LineNum: 175 Method name: conf.getInt(FILTER_FREQUENCY, 10)
+Inferred parameter values: 
+
+Found callsite[164] in File: org.apache.hadoop.mapred.Task.java LineNum: 1301 Method name: conf.getClass(MRConfig.TASK_LOCAL_OUTPUT_CLASS,          MROutputFiles.class, MapOutputFile.class)
+Inferred parameter values: mapreduce.task.local.output.class, 
+
+Found callsite[165] in File: org.apache.hadoop.mapred.lib.TaggedInputSplit.java LineNum: 120 Method name: conf.getClassByName(className)
+Inferred parameter values: 
+
+Found callsite[166] in File: org.apache.hadoop.mapred.ShuffleHandler.java LineNum: 346 Method name: conf.getInt(MAX_SHUFFLE_THREADS,                                        DEFAULT_MAX_SHUFFLE_THREADS)
+Inferred parameter values: mapreduce.shuffle.max.threads, 
+
+Found callsite[167] in File: org.apache.hadoop.mapreduce.JobResourceUploader.java LineNum: 256 Method name: conf.get(MRJobConfig.MAPREDUCE_JOB_LOG4J_PROPERTIES_FILE, "")
+Inferred parameter values: mapreduce.job.log4j-properties-file, , 
+
+Found callsite[168] in File: org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.java LineNum: 708 Method name: conf.getFloat(        MRJobConfig.MAX_ALLOWED_FETCH_FAILURES_FRACTION,        MRJobConfig.DEFAULT_MAX_ALLOWED_FETCH_FAILURES_FRACTION)
+Inferred parameter values: mapreduce.reduce.shuffle.max-fetch-failures-fraction, 
+
+Found callsite[169] in File: org.apache.hadoop.mapreduce.lib.db.DBConfiguration.java LineNum: 182 Method name: conf.get(DBConfiguration.INPUT_CONDITIONS_PROPERTY)
+Inferred parameter values: mapreduce.jdbc.input.conditions, 
+
+Found callsite[170] in File: org.apache.hadoop.mapred.Master.java LineNum: 43 Method name: conf.get(MRConfig.MASTER_USER_NAME)
+Inferred parameter values: mapreduce.jobtracker.kerberos.principal, 
+
+Found callsite[171] in File: org.apache.hadoop.mapreduce.counters.Limits.java LineNum: 50 Method name: conf.getInt(COUNTERS_MAX_KEY, COUNTERS_MAX_DEFAULT)
+Inferred parameter values: mapreduce.job.counters.max, 
+
+Found callsite[172] in File: org.apache.hadoop.mapreduce.lib.join.Parser.java LineNum: 348 Method name: conf.get(MRJobConfig.TASK_ATTEMPT_ID)
+Inferred parameter values: mapreduce.task.attempt.id, 
+
+Found callsite[173] in File: org.apache.hadoop.mapreduce.lib.db.DBConfiguration.java LineNum: 150 Method name: conf.get(DBConfiguration.USERNAME_PROPERTY)
+Inferred parameter values: mapreduce.jdbc.username, 
+
+Found callsite[174] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 479 Method name: jobConf.get(        MRJobConfig.JOB_ACL_MODIFY_JOB,        MRJobConfig.DEFAULT_JOB_ACL_MODIFY_JOB)
+Inferred parameter values: mapreduce.job.acl-modify-job,  , 
+
+Found callsite[175] in File: org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFilter.java LineNum: 300 Method name: conf.getClass(FILTER_CLASS, PercentFilter.class)
+Inferred parameter values: 
+
+Found callsite[176] in File: org.apache.hadoop.mapred.ClientServiceDelegate.java LineNum: 114 Method name: this.conf.getInt(MRJobConfig.MR_CLIENT_TO_AM_IPC_MAX_RETRIES_ON_TIMEOUTS,            MRJobConfig.DEFAULT_MR_CLIENT_TO_AM_IPC_MAX_RETRIES_ON_TIMEOUTS)
+Inferred parameter values: yarn.app.mapreduce.client-am.ipc.max-retries-on-timeouts, 
+
+Found callsite[177] in File: org.apache.hadoop.mapreduce.v2.hs.server.HSAdminServer.java LineNum: 229 Method name: conf.get(JHAdminConfig.JHS_ADMIN_ACL,        JHAdminConfig.DEFAULT_JHS_ADMIN_ACL)
+Inferred parameter values: mapreduce.jobhistory.admin.acl, *, 
+
+Found callsite[178] in File: org.apache.hadoop.mapreduce.v2.app.JobEndNotifier.java LineNum: 85 Method name: conf.get(MRJobConfig.MR_JOB_END_NOTIFICATION_PROXY)
+Inferred parameter values: mapreduce.job.end-notification.proxy, 
+
+Found callsite[179] in File: org.apache.hadoop.mapreduce.JobResourceUploader.java LineNum: 286 Method name: conf.get(MRJobConfig.MAPREDUCE_JOB_LOG4J_PROPERTIES_FILE)
+Inferred parameter values: mapreduce.job.log4j-properties-file, 
+
+Found callsite[180] in File: org.apache.hadoop.mapred.BackupStore.java LineNum: 93 Method name: conf.getFloat(JobContext.REDUCE_MARKRESET_BUFFER_PERCENT, 0f)
+Inferred parameter values: 
+
+Found callsite[181] in File: org.apache.hadoop.mapred.DeprecatedQueueConfigurationParser.java LineNum: 113 Method name: conf.get(key)
+Inferred parameter values: 
+
+Found callsite[182] in File: org.apache.hadoop.mapreduce.lib.partition.KeyFieldBasedComparator.java LineNum: 371 Method name: get(COMPARATOR_OPTIONS)
+Inferred parameter values: mapreduce.partition.keycomparator.options, 
+
+Found callsite[183] in File: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl.java LineNum: 585 Method name: conf.getInt(MRJobConfig.REDUCE_CPU_VCORES,              MRJobConfig.DEFAULT_REDUCE_CPU_VCORES)
+Inferred parameter values: mapreduce.reduce.cpu.vcores, 
+
+Found callsite[184] in File: org.apache.hadoop.mapreduce.filecache.DistributedCache.java LineNum: 172 Method name: conf.getStrings(MRJobConfig.CACHE_ARCHIVES)
+Inferred parameter values: mapreduce.job.cache.archives, 
+
+Found callsite[185] in File: org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils.java LineNum: 280 Method name: conf.get(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY, "")
+Inferred parameter values: , 
+
+Found callsite[186] in File: org.apache.hadoop.mapreduce.v2.hs.JobHistory.java LineNum: 305 Method name: conf.getBoolean(        JHAdminConfig.MR_HISTORY_CLEANER_ENABLE, true)
+Inferred parameter values: mapreduce.jobhistory.cleaner.enable, 
+
+Found callsite[187] in File: org.apache.hadoop.mapreduce.filecache.DistributedCache.java LineNum: 199 Method name: conf                                    .getStrings(MRJobConfig.CACHE_LOCALARCHIVES)
+Inferred parameter values: mapreduce.job.cache.local.archives, 
+
+Found callsite[188] in File: org.apache.hadoop.mapred.SkipBadRecords.java LineNum: 174 Method name: conf.getBoolean(AUTO_INCR_REDUCE_PROC_COUNT, true)
+Inferred parameter values: 
+
+Found callsite[189] in File: org.apache.hadoop.mapreduce.lib.input.MultipleInputs.java LineNum: 109 Method name: conf           .getClassByName(split[1])
+Inferred parameter values: 
+
+Found callsite[190] in File: org.apache.hadoop.mapreduce.lib.partition.KeyFieldBasedComparator.java LineNum: 64 Method name: conf.get(COMPARATOR_OPTIONS)
+Inferred parameter values: mapreduce.partition.keycomparator.options, 
+
+Found callsite[191] in File: org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorJob.java LineNum: 162 Method name: conf.get(ValueAggregatorJobBase.USER_JAR)
+Inferred parameter values: mapreduce.aggregate.user.jar.file, 
+
+Found callsite[192] in File: org.apache.hadoop.mapreduce.v2.util.MRWebAppUtil.java LineNum: 54 Method name: conf.get(JHAdminConfig.MR_HS_HTTP_POLICY,            JHAdminConfig.DEFAULT_MR_HS_HTTP_POLICY)
+Inferred parameter values: mapreduce.jobhistory.http.policy, 
+
+Found callsite[193] in File: org.apache.hadoop.mapreduce.v2.app.MRAppMaster.java LineNum: 274 Method name: conf.getInt(MRJobConfig.NUM_REDUCES, 0)
+Inferred parameter values: mapreduce.job.reduces, 
+
+Found callsite[194] in File: org.apache.hadoop.mapreduce.lib.input.FileInputFormat.java LineNum: 574 Method name: get(INPUT_DIR, "")
+Inferred parameter values: mapreduce.input.fileinputformat.inputdir, , 
+
+Found callsite[195] in File: org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.java LineNum: 120 Method name: conf.getClassByName(name)
+Inferred parameter values: 
+
+Found callsite[196] in File: org.apache.hadoop.mapreduce.v2.hs.HistoryClientService.java LineNum: 135 Method name: conf.getBoolean(        CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,        false)
+Inferred parameter values: 
+
+Found callsite[197] in File: org.apache.hadoop.mapred.DeprecatedQueueConfigurationParser.java LineNum: 81 Method name: conf.get(        toFullPropertyName(name, "state"),        QueueState.RUNNING.getStateName())
+Inferred parameter values: 
+
+Found callsite[198] in File: org.apache.hadoop.mapreduce.task.JobContextImpl.java LineNum: 70 Method name: this.conf.getCredentials()
+Inferred parameter values: 
+
+Found callsite[199] in File: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl.java LineNum: 733 Method name: conf.getStringCollection(            YarnConfiguration.NM_AUX_SERVICES)
+Inferred parameter values: 
+
+Found callsite[200] in File: org.apache.hadoop.mapreduce.v2.util.MRWebAppUtil.java LineNum: 51 Method name: conf.get(            YarnConfiguration.YARN_HTTP_POLICY_KEY,            YarnConfiguration.YARN_HTTP_POLICY_DEFAULT)
+Inferred parameter values: 
+
+Found callsite[201] in File: org.apache.hadoop.mapreduce.v2.hs.JobHistoryServer.java LineNum: 158 Method name: conf.getLong(MRConfig.DELEGATION_TOKEN_MAX_LIFETIME_KEY,                     MRConfig.DELEGATION_TOKEN_MAX_LIFETIME_DEFAULT)
+Inferred parameter values: mapreduce.cluster.delegation.token.max-lifetime, 
+
+Found callsite[202] in File: org.apache.hadoop.mapred.DeprecatedQueueConfigurationParser.java LineNum: 146 Method name: conf.get(            aclKey, "*")
+Inferred parameter values: *, 
+
+Found callsite[203] in File: org.apache.hadoop.mapreduce.lib.input.LineRecordReader.java LineNum: 78 Method name: job.getInt(MAX_LINE_LENGTH, Integer.MAX_VALUE)
+Inferred parameter values: mapreduce.input.linerecordreader.line.maxlength, 
+
+Found callsite[204] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 424 Method name: jobConf.get(MRJobConfig.MR_AM_PROFILE_PARAMS,          MRJobConfig.DEFAULT_TASK_PROFILE_PARAMS)
+Inferred parameter values: yarn.app.mapreduce.am.profile.params, -agentlib:hprof=cpu=samples,heap=sites,force=n,thread=y,verbose=n,file=%s, 
+
+Found callsite[205] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 732 Method name: conf.getBoolean(MRConfig.MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM,            MRConfig.DEFAULT_MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM)
+Inferred parameter values: mapreduce.app-submission.cross-platform, 
+
+Found callsite[206] in File: org.apache.hadoop.mapreduce.lib.input.FileInputFormat.java LineNum: 191 Method name: getLong(SPLIT_MINSIZE, 1L)
+Inferred parameter values: mapreduce.input.fileinputformat.split.minsize, 
+
+Found callsite[207] in File: org.apache.hadoop.mapreduce.lib.output.TextOutputFormat.java LineNum: 120 Method name: conf.get(SEPERATOR, "\t")
+Inferred parameter values: mapreduce.output.textoutputformat.separator, \t, 
+
+Found callsite[208] in File: org.apache.hadoop.mapreduce.lib.join.CompositeInputFormat.java LineNum: 112 Method name: conf.getClass(m.group(0), null, ComposableRecordReader.class)
+Inferred parameter values: 
+
+Found callsite[209] in File: org.apache.hadoop.mapred.ClientCache.java LineNum: 84 Method name: conf.get(JHAdminConfig.MR_HISTORY_ADDRESS)
+Inferred parameter values: mapreduce.jobhistory.address, 
+
+Found callsite[210] in File: org.apache.hadoop.mapred.ShuffleHandler.java LineNum: 352 Method name: conf.getInt(SHUFFLE_BUFFER_SIZE,                                     DEFAULT_SHUFFLE_BUFFER_SIZE)
+Inferred parameter values: mapreduce.shuffle.transfer.buffer.size, 
+
+Found callsite[211] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 692 Method name: previousMapperConf.getClass(          MAPPER_OUTPUT_KEY_CLASS, null)
+Inferred parameter values: mapreduce.chain.mapper.output.key.class, 
+
+Found callsite[212] in File: org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.java LineNum: 711 Method name: conf.getInt(        MRJobConfig.MAX_FETCH_FAILURES_NOTIFICATIONS,        MRJobConfig.DEFAULT_MAX_FETCH_FAILURES_NOTIFICATIONS)
+Inferred parameter values: mapreduce.reduce.shuffle.max-fetch-failures-notifications, 
+
+Found callsite[213] in File: org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils.java LineNum: 220 Method name: conf.get(MRJobConfig.MR_AM_STAGING_DIR,          MRJobConfig.DEFAULT_MR_AM_STAGING_DIR)
+Inferred parameter values: yarn.app.mapreduce.am.staging-dir, /tmp/hadoop-yarn/staging, 
+
+Found callsite[214] in File: org.apache.hadoop.mapred.TaskAttemptListenerImpl.java LineNum: 117 Method name: conf.getInt(MRJobConfig.MR_AM_TASK_LISTENER_THREAD_COUNT,             MRJobConfig.DEFAULT_MR_AM_TASK_LISTENER_THREAD_COUNT)
+Inferred parameter values: yarn.app.mapreduce.am.job.task.listener.thread-count, 
+
+Found callsite[215] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 443 Method name: conf.getClass(MAPPER_INPUT_KEY_CLASS, Object.class)
+Inferred parameter values: mapreduce.chain.mapper.input.key.class, 
+
+Found callsite[216] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 358 Method name: jobConf.get(MRJobConfig.JAR)
+Inferred parameter values: mapreduce.job.jar, 
+
+Found callsite[217] in File: org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.java LineNum: 176 Method name: get(FileOutputFormat.OUTDIR)
+Inferred parameter values: mapreduce.output.fileoutputformat.outputdir, 
+
+Found callsite[218] in File: org.apache.hadoop.mapreduce.lib.input.KeyValueTextInputFormat.java LineNum: 52 Method name: getCodec(file)
+Inferred parameter values: 
+
+Found callsite[219] in File: org.apache.hadoop.mapreduce.lib.db.BigDecimalSplitter.java LineNum: 53 Method name: conf.getInt(MRJobConfig.NUM_MAPS, 1)
+Inferred parameter values: mapreduce.job.maps, 
+
+Found callsite[220] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 507 Method name: jobConf.get(JobContext.RESERVATION_ID)
+Inferred parameter values: 
+
+Found callsite[221] in File: org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor.java LineNum: 177 Method name: conf.getInt(            MRJobConfig.MR_AM_IGNORE_BLACKLISTING_BLACKLISTED_NODE_PERECENT,            MRJobConfig.DEFAULT_MR_AM_IGNORE_BLACKLISTING_BLACKLISTED_NODE_PERCENT)
+Inferred parameter values: yarn.app.mapreduce.am.job.node-blacklisting.ignore-threshold-node-percent, 
+
+Found callsite[222] in File: org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils.java LineNum: 302 Method name: conf.getBoolean(MRJobConfig.MR_AM_CREATE_JH_INTERMEDIATE_BASE_DIR, true)
+Inferred parameter values: yarn.app.mapreduce.am.create-intermediate-jh-base-dir, 
+
+Found callsite[223] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 662 Method name: conf.getInt(MRJobConfig.MR_AM_LOG_BACKUPS,          MRJobConfig.DEFAULT_MR_AM_LOG_BACKUPS)
+Inferred parameter values: yarn.app.mapreduce.am.container.log.backups, 
+
+Found callsite[224] in File: org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator.java LineNum: 126 Method name: conf.getClass(MRJobConfig.MR_AM_TASK_ESTIMATOR,                          LegacyTaskRuntimeEstimator.class,                          TaskRuntimeEstimator.class)
+Inferred parameter values: yarn.app.mapreduce.am.job.task.estimator.class, 
+
+Found callsite[225] in File: org.apache.hadoop.mapreduce.lib.db.DBInputFormat.java LineNum: 260 Method name: getInt(MRJobConfig.NUM_MAPS, 1)
+Inferred parameter values: mapreduce.job.maps, 
+
+Found callsite[226] in File: org.apache.hadoop.mapreduce.v2.hs.JobHistoryServer.java LineNum: 155 Method name: conf.getLong(MRConfig.DELEGATION_KEY_UPDATE_INTERVAL_KEY,                      MRConfig.DELEGATION_KEY_UPDATE_INTERVAL_DEFAULT)
+Inferred parameter values: mapreduce.cluster.delegation.key.update-interval, 
+
+Found callsite[227] in File: org.apache.hadoop.mapred.TaskAttemptListenerImpl.java LineNum: 129 Method name: conf.getInt(MRJobConfig.MR_AM_TASK_LISTENER_THREAD_COUNT,                     MRJobConfig.DEFAULT_MR_AM_TASK_LISTENER_THREAD_COUNT)
+Inferred parameter values: yarn.app.mapreduce.am.job.task.listener.thread-count, 
+
+Found callsite[228] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 690 Method name: conf.getInt(MRJobConfig.SHUFFLE_LOG_BACKUPS,          MRJobConfig.DEFAULT_SHUFFLE_LOG_BACKUPS)
+Inferred parameter values: yarn.app.mapreduce.shuffle.log.backups, 
+
+Found callsite[229] in File: org.apache.hadoop.mapreduce.lib.input.FileInputFormat.java LineNum: 261 Method name: getInt(LIST_STATUS_NUM_THREADS,        DEFAULT_LIST_STATUS_NUM_THREADS)
+Inferred parameter values: mapreduce.input.fileinputformat.list-status.num-threads, 
+
+Found callsite[230] in File: org.apache.hadoop.mapreduce.v2.app.MRAppMaster.java LineNum: 276 Method name: conf.getBoolean("mapred.reducer.new-api", false)
+Inferred parameter values: mapred.reducer.new-api, 
+
+Found callsite[231] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 496 Method name: jobConf.get(JobContext.QUEUE_NAME,        YarnConfiguration.DEFAULT_QUEUE_NAME)
+Inferred parameter values: 
+
+Found callsite[232] in File: org.apache.hadoop.mapred.Task.java LineNum: 1307 Method name: conf.getStrings(MRConfig.STATIC_RESOLUTIONS)
+Inferred parameter values: mapreduce.job.net.static.resolutions, 
+
+Found callsite[233] in File: org.apache.hadoop.mapred.JobACLsManager.java LineNum: 41 Method name: conf.get(MRConfig.MR_ADMINS, " ")
+Inferred parameter values: mapreduce.cluster.administrators,  , 
+
+Found callsite[234] in File: org.apache.hadoop.mapreduce.lib.input.CombineFileInputFormat.java LineNum: 186 Method name: conf.getLong(SPLIT_MINSIZE_PERNODE, 0)
+Inferred parameter values: mapreduce.input.fileinputformat.split.minsize.per.node, 
+
+Found callsite[235] in File: org.apache.hadoop.mapreduce.v2.app.TaskHeartbeatHandler.java LineNum: 90 Method name: conf.getInt(MRJobConfig.TASK_TIMEOUT, 5 * 60 * 1000)
+Inferred parameter values: mapreduce.task.timeout, 
+
+Found callsite[236] in File: org.apache.hadoop.mapred.ShuffleHandler.java LineNum: 355 Method name: conf.getBoolean(SHUFFLE_TRANSFERTO_ALLOWED,         (Shell.WINDOWS)?WINDOWS_DEFAULT_SHUFFLE_TRANSFERTO_ALLOWED:                         DEFAULT_SHUFFLE_TRANSFERTO_ALLOWED)
+Inferred parameter values: mapreduce.shuffle.transferTo.allowed, 
+
+Found callsite[237] in File: org.apache.hadoop.mapreduce.v2.hs.server.HSAdminServer.java LineNum: 103 Method name: conf.getSocketAddr(        JHAdminConfig.MR_HISTORY_BIND_HOST,        JHAdminConfig.JHS_ADMIN_ADDRESS,        JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS,        JHAdminConfig.DEFAULT_JHS_ADMIN_PORT)
+Inferred parameter values: mapreduce.jobhistory.bind-host, mapreduce.jobhistory.admin.address, 
+
+Found callsite[238] in File: org.apache.hadoop.mapreduce.JobSubmitter.java LineNum: 214 Method name: conf.getBoolean(          MRJobConfig.JOB_TOKEN_TRACKING_IDS_ENABLED,          MRJobConfig.DEFAULT_JOB_TOKEN_TRACKING_IDS_ENABLED)
+Inferred parameter values: mapreduce.job.token.tracking.ids.enabled, 
+
+Found callsite[239] in File: org.apache.hadoop.mapreduce.v2.hs.HistoryFileManager.java LineNum: 518 Method name: conf.getInt(        JHAdminConfig.MR_HISTORY_MOVE_THREAD_COUNT,        JHAdminConfig.DEFAULT_MR_HISTORY_MOVE_THREAD_COUNT)
+Inferred parameter values: mapreduce.jobhistory.move.thread-count, 
+
+Found callsite[240] in File: org.apache.hadoop.mapreduce.lib.partition.KeyFieldBasedPartitioner.java LineNum: 70 Method name: conf.get("num.key.fields.for.partition")
+Inferred parameter values: num.key.fields.for.partition, 
+
+Found callsite[241] in File: org.apache.hadoop.mapred.ShuffleHandler.java LineNum: 402 Method name: conf.getInt(SHUFFLE_CONNECTION_KEEP_ALIVE_TIME_OUT,          DEFAULT_SHUFFLE_CONNECTION_KEEP_ALIVE_TIME_OUT)
+Inferred parameter values: mapreduce.shuffle.connection-keep-alive.timeout, 
+
+Found callsite[242] in File: org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor.java LineNum: 172 Method name: conf.getBoolean(MRJobConfig.MR_AM_JOB_NODE_BLACKLISTING_ENABLE, true)
+Inferred parameter values: yarn.app.mapreduce.am.job.node-blacklisting.enable, 
+
+Found callsite[243] in File: org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils.java LineNum: 252 Method name: defaultConf.get(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY)
+Inferred parameter values: 
+
+Found callsite[244] in File: org.apache.hadoop.mapred.ShuffleHandler.java LineNum: 396 Method name: conf.getInt(SUFFLE_SSL_FILE_BUFFER_SIZE_KEY,                                    DEFAULT_SUFFLE_SSL_FILE_BUFFER_SIZE)
+Inferred parameter values: mapreduce.shuffle.ssl.file.buffer.size, 
+
+Found callsite[245] in File: org.apache.hadoop.mapreduce.lib.input.MultipleInputs.java LineNum: 85 Method name: conf.get(DIR_MAPPERS)
+Inferred parameter values: mapreduce.input.multipleinputs.dir.mappers, 
+
+Found callsite[246] in File: org.apache.hadoop.mapreduce.JobResourceUploader.java LineNum: 71 Method name: conf.get("tmpjars")
+Inferred parameter values: tmpjars, 
+
+Found callsite[247] in File: org.apache.hadoop.mapred.SequenceFileInputFilter.java LineNum: 206 Method name: conf.getClass(FILTER_CLASS, PercentFilter.class)
+Inferred parameter values: 
+
+Found callsite[248] in File: org.apache.hadoop.mapreduce.v2.hs.HistoryClientService.java LineNum: 122 Method name: conf.getSocketAddr(        JHAdminConfig.MR_HISTORY_BIND_HOST,        JHAdminConfig.MR_HISTORY_ADDRESS,        JHAdminConfig.DEFAULT_MR_HISTORY_ADDRESS,        JHAdminConfig.DEFAULT_MR_HISTORY_PORT)
+Inferred parameter values: mapreduce.jobhistory.bind-host, mapreduce.jobhistory.address, 
+
+Found callsite[249] in File: org.apache.hadoop.mapreduce.lib.input.FixedLengthInputFormat.java LineNum: 68 Method name: conf.getInt(FIXED_RECORD_LENGTH, 0)
+Inferred parameter values: fixedlengthinputformat.record.length, 
+
+Found callsite[250] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 495 Method name: rConf.getClass(REDUCER_OUTPUT_KEY_CLASS,        Object.class)
+Inferred parameter values: mapreduce.chain.reducer.output.key.class, 
+
+Found callsite[251] in File: org.apache.hadoop.mapred.LocalJobRunner.java LineNum: 472 Method name: conf.get("mapred.output.committer.class")
+Inferred parameter values: mapred.output.committer.class, 
+
+Found callsite[252] in File: org.apache.hadoop.mapred.Master.java LineNum: 46 Method name: conf.get(YarnConfiguration.RM_PRINCIPAL)
+Inferred parameter values: 
+
+Found callsite[253] in File: org.apache.hadoop.mapreduce.lib.db.DBConfiguration.java LineNum: 166 Method name: conf.get(DBConfiguration.INPUT_TABLE_NAME_PROPERTY)
+Inferred parameter values: mapreduce.jdbc.input.table.name, 
+
+Found callsite[254] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 444 Method name: conf.getClass(MAPPER_INPUT_VALUE_CLASS, Object.class)
+Inferred parameter values: mapreduce.chain.mapper.input.value.class, 
+
+Found callsite[255] in File: org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator.java LineNum: 176 Method name: conf.getDouble(MRJobConfig.SPECULATIVECAP_TOTAL_TASKS,                MRJobConfig.DEFAULT_SPECULATIVECAP_TOTAL_TASKS)
+Inferred parameter values: mapreduce.job.speculative.speculative-cap-total-tasks, 
+
+Found callsite[256] in File: org.apache.hadoop.mapreduce.lib.db.DBConfiguration.java LineNum: 249 Method name: conf.getStrings(DBConfiguration.OUTPUT_FIELD_NAMES_PROPERTY)
+Inferred parameter values: mapreduce.jdbc.output.field.names, 
+
+Found callsite[257] in File: org.apache.hadoop.mapred.Master.java LineNum: 58 Method name: conf.getSocketAddr(          YarnConfiguration.RM_ADDRESS,          YarnConfiguration.DEFAULT_RM_ADDRESS,          YarnConfiguration.DEFAULT_RM_PORT)
+Inferred parameter values: 
+
+Found callsite[258] in File: org.apache.hadoop.mapreduce.v2.app.MRAppMaster.java LineNum: 1362 Method name: conf.getBoolean(MRJobConfig.REDUCE_SPECULATIVE, false)
+Inferred parameter values: mapreduce.reduce.speculative, 
+
+Found callsite[259] in File: org.apache.hadoop.mapreduce.lib.input.TextInputFormat.java LineNum: 59 Method name: getCodec(file)
+Inferred parameter values: 
+
+Found callsite[260] in File: org.apache.hadoop.mapreduce.v2.app.MRAppMaster.java LineNum: 278 Method name: conf.getBoolean("mapred.mapper.new-api", false)
+Inferred parameter values: mapred.mapper.new-api, 
+
+Found callsite[261] in File: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl.java LineNum: 581 Method name: conf.getInt(MRJobConfig.MAP_CPU_VCORES,              MRJobConfig.DEFAULT_MAP_CPU_VCORES)
+Inferred parameter values: mapreduce.map.cpu.vcores, 
+
+Found callsite[262] in File: org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorJobBase.java LineNum: 69 Method name: conf.get(DESCRIPTOR + "." + i)
+Inferred parameter values: 
+
+Found callsite[263] in File: org.apache.hadoop.mapred.DeprecatedQueueConfigurationParser.java LineNum: 105 Method name: conf.getStrings(MAPRED_QUEUE_NAMES_KEY)
+Inferred parameter values: mapred.queue.names, 
+
+Found callsite[264] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 522 Method name: conf.getBoolean(MRJobConfig.JOB_CANCEL_DELEGATION_TOKEN, true)
+Inferred parameter values: mapreduce.job.complete.cancel.delegation.tokens, 
+
+Found callsite[265] in File: org.apache.hadoop.mapreduce.v2.app.MRAppMaster.java LineNum: 1360 Method name: conf.getBoolean(MRJobConfig.MAP_SPECULATIVE, false)
+Inferred parameter values: mapreduce.map.speculative, 
+
+Found callsite[266] in File: org.apache.hadoop.mapreduce.filecache.DistributedCache.java LineNum: 330 Method name: conf.getStringCollection(                                MRJobConfig.CLASSPATH_FILES)
+Inferred parameter values: mapreduce.job.classpath.files, 
+
+Found callsite[267] in File: org.apache.hadoop.mapreduce.v2.hs.HistoryFileManager.java LineNum: 637 Method name: conf.getInt(        JHAdminConfig.MR_HISTORY_JOBLIST_CACHE_SIZE,        JHAdminConfig.DEFAULT_MR_HISTORY_JOBLIST_CACHE_SIZE)
+Inferred parameter values: mapreduce.jobhistory.joblist.cache.size, 
+
+Found callsite[268] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 409 Method name: conf.get(MRJobConfig.MR_AM_ADMIN_COMMAND_OPTS,        MRJobConfig.DEFAULT_MR_AM_ADMIN_COMMAND_OPTS)
+Inferred parameter values: yarn.app.mapreduce.am.admin-command-opts, , 
+
+Found callsite[269] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 202 Method name: conf.getBoolean(MRConfig.MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM,          MRConfig.DEFAULT_MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM)
+Inferred parameter values: mapreduce.app-submission.cross-platform, 
+
+Found callsite[270] in File: org.apache.hadoop.mapred.JobClient.java LineNum: 899 Method name: conf.getResource(classpathFile)
+Inferred parameter values: null.xml, 
+
+Found callsite[271] in File: org.apache.hadoop.mapreduce.v2.hs.client.HSAdmin.java LineNum: 202 Method name: conf.getSocketAddr(        JHAdminConfig.JHS_ADMIN_ADDRESS,        JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS,        JHAdminConfig.DEFAULT_JHS_ADMIN_PORT)
+Inferred parameter values: mapreduce.jobhistory.admin.address, 
+
+Found callsite[272] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 682 Method name: reducerConf.getClass(          REDUCER_OUTPUT_VALUE_CLASS, null)
+Inferred parameter values: mapreduce.chain.reducer.output.value.class, 
+
+Found callsite[273] in File: org.apache.hadoop.mapreduce.lib.partition.BinaryPartitioner.java LineNum: 121 Method name: conf.getInt(RIGHT_OFFSET_PROPERTY_NAME, -1)
+Inferred parameter values: mapreduce.partition.binarypartitioner.right.offset, 
+
+Found callsite[274] in File: org.apache.hadoop.mapred.LocalJobRunner.java LineNum: 485 Method name: conf.getClass(            "mapred.output.committer.class", FileOutputCommitter.class,            org.apache.hadoop.mapred.OutputCommitter.class)
+Inferred parameter values: mapred.output.committer.class, 
+
+Found callsite[275] in File: org.apache.hadoop.mapred.ShuffleHandler.java LineNum: 676 Method name: conf.getInt(SHUFFLE_PORT_CONFIG_KEY, DEFAULT_SHUFFLE_PORT)
+Inferred parameter values: 
+
+Found callsite[276] in File: org.apache.hadoop.mapred.ShuffleHandler.java LineNum: 632 Method name: conf.getBoolean(MRConfig.SHUFFLE_SSL_ENABLED_KEY,                          MRConfig.SHUFFLE_SSL_ENABLED_DEFAULT)
+Inferred parameter values: mapreduce.shuffle.ssl.enabled, 
+
+Found callsite[277] in File: org.apache.hadoop.mapreduce.v2.app.speculate.ExponentiallySmoothedTaskRuntimeEstimator.java LineNum: 140 Method name: conf.getBoolean(MRJobConfig.MR_AM_TASK_ESTIMATOR_EXPONENTIAL_RATE_ENABLE, true)
+Inferred parameter values: yarn.app.mapreduce.am.job.task.estimator.exponential.smooth.rate, 
+
+Found callsite[278] in File: org.apache.hadoop.mapreduce.lib.partition.BinaryPartitioner.java LineNum: 120 Method name: conf.getInt(LEFT_OFFSET_PROPERTY_NAME, 0)
+Inferred parameter values: mapreduce.partition.binarypartitioner.left.offset, 
+
+Found callsite[279] in File: org.apache.hadoop.mapreduce.lib.jobcontrol.ControlledJob.java LineNum: 322 Method name: conf.getBoolean(CREATE_DIR, false)
+Inferred parameter values: mapreduce.jobcontrol.createdir.ifnotexist, 
+
+Found callsite[280] in File: org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler.java LineNum: 235 Method name: conf.getInt(            MRJobConfig.MR_AM_HISTORY_JOB_COMPLETE_UNFLUSHED_MULTIPLIER,            MRJobConfig.DEFAULT_MR_AM_HISTORY_JOB_COMPLETE_UNFLUSHED_MULTIPLIER)
+Inferred parameter values: yarn.app.mapreduce.am.history.job-complete-unflushed-multiplier, 
+
+Found callsite[281] in File: org.apache.hadoop.mapreduce.filecache.DistributedCache.java LineNum: 384 Method name: conf.getStringCollection(                                MRJobConfig.CLASSPATH_ARCHIVES)
+Inferred parameter values: mapreduce.job.classpath.archives, 
+
+Found callsite[282] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 497 Method name: rConf.getClass(REDUCER_OUTPUT_VALUE_CLASS,        Object.class)
+Inferred parameter values: mapreduce.chain.reducer.output.value.class, 
+
+Found callsite[283] in File: org.apache.hadoop.filecache.DistributedCache.java LineNum: 235 Method name: conf.get(CACHE_LOCALFILES)
+Inferred parameter values: mapred.cache.localFiles, 
+
+Found callsite[284] in File: org.apache.hadoop.mapreduce.v2.hs.JobHistory.java LineNum: 291 Method name: conf.getLong(JHAdminConfig.MR_HISTORY_MAX_AGE_MS,          JHAdminConfig.DEFAULT_MR_HISTORY_MAX_AGE)
+Inferred parameter values: mapreduce.jobhistory.max-age-ms, 
+
+Found callsite[285] in File: org.apache.hadoop.mapreduce.lib.partition.KeyFieldBasedPartitioner.java LineNum: 76 Method name: conf.get(PARTITIONER_OPTIONS)
+Inferred parameter values: mapreduce.partition.keypartitioner.options, 
+
+Found callsite[286] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 398 Method name: conf.get(MRJobConfig.MAP_JAVA_OPTS,"")
+Inferred parameter values: mapreduce.map.java.opts, , 
+
+Found callsite[287] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 823 Method name: jobConf.getClass(prefix          + CHAIN_MAPPER_CLASS + i, null, Mapper.class)
+Inferred parameter values: 
+
+Found callsite[288] in File: org.apache.hadoop.mapreduce.lib.partition.KeyFieldBasedPartitioner.java LineNum: 154 Method name: get(PARTITIONER_OPTIONS)
+Inferred parameter values: mapreduce.partition.keypartitioner.options, 
+
+Found callsite[289] in File: org.apache.hadoop.mapreduce.v2.hs.CachedHistoryStorage.java LineNum: 73 Method name: conf.getInt(        JHAdminConfig.MR_HISTORY_LOADED_JOB_CACHE_SIZE,        JHAdminConfig.DEFAULT_MR_HISTORY_LOADED_JOB_CACHE_SIZE)
+Inferred parameter values: mapreduce.jobhistory.loadedjobs.cache.size, 
+
+Found callsite[290] in File: org.apache.hadoop.mapred.Task.java LineNum: 622 Method name: conf.getInt(        MRConfig.PROGRESS_STATUS_LEN_LIMIT_KEY,        MRConfig.PROGRESS_STATUS_LEN_LIMIT_DEFAULT)
+Inferred parameter values: mapreduce.task.max.status.length, 
+
+Found callsite[291] in File: org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler.java LineNum: 99 Method name: conf.getInt(        MRJobConfig.MR_AM_COMMITTER_CANCEL_TIMEOUT_MS,        MRJobConfig.DEFAULT_MR_AM_COMMITTER_CANCEL_TIMEOUT_MS)
+Inferred parameter values: yarn.app.mapreduce.am.job.committer.cancel-timeout, 
+
+Found callsite[292] in File: org.apache.hadoop.mapreduce.filecache.DistributedCache.java LineNum: 283 Method name: conf.get(MRJobConfig.CACHE_FILES)
+Inferred parameter values: mapreduce.job.cache.files, 
+
+Found callsite[293] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 458 Method name: conf.get(MRJobConfig.MAPRED_ADMIN_USER_SHELL,            MRJobConfig.DEFAULT_SHELL)
+Inferred parameter values: mapreduce.admin.user.shell, /bin/bash, 
+
+Found callsite[294] in File: org.apache.hadoop.mapreduce.JobResourceUploader.java LineNum: 258 Method name: conf.getInt(Job.SUBMIT_REPLICATION, 10)
+Inferred parameter values: mapreduce.client.submit.file.replication, 
+
+Found callsite[295] in File: org.apache.hadoop.mapreduce.lib.map.RegexMapper.java LineNum: 45 Method name: conf.get(PATTERN)
+Inferred parameter values: mapreduce.mapper.regex, 
+
+Found callsite[296] in File: org.apache.hadoop.mapreduce.lib.input.FileInputFormat.java LineNum: 522 Method name: conf.get(INPUT_DIR)
+Inferred parameter values: mapreduce.input.fileinputformat.inputdir, 
+
+Found callsite[297] in File: org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat.java LineNum: 99 Method name: get(FileOutputFormat.COMPRESS_TYPE,                                             CompressionType.RECORD.toString())
+Inferred parameter values: mapreduce.output.fileoutputformat.compress.type, 
+
+Found callsite[298] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 667 Method name: conf.getInt(MRJobConfig.TASK_LOG_BACKUPS,          MRJobConfig.DEFAULT_TASK_LOG_BACKUPS)
+Inferred parameter values: yarn.app.mapreduce.task.container.log.backups, 
+
+Found callsite[299] in File: org.apache.hadoop.mapreduce.lib.db.DBConfiguration.java LineNum: 157 Method name: conf.get(DBConfiguration.PASSWORD_PROPERTY)
+Inferred parameter values: mapreduce.jdbc.password, 
+
+Found callsite[300] in File: org.apache.hadoop.mapred.DeprecatedQueueConfigurationParser.java LineNum: 130 Method name: conf.get(MAPRED_QUEUE_NAMES_KEY)
+Inferred parameter values: mapred.queue.names, 
+
+Found callsite[301] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 525 Method name: conf.getInt(MRJobConfig.MR_AM_MAX_ATTEMPTS,            MRJobConfig.DEFAULT_MR_AM_MAX_ATTEMPTS)
+Inferred parameter values: mapreduce.am.max-attempts, 
+
+Found callsite[302] in File: org.apache.hadoop.mapred.SkipBadRecords.java LineNum: 103 Method name: conf.getInt(ATTEMPTS_TO_START_SKIPPING, 2)
+Inferred parameter values: 
+
+Found callsite[303] in File: org.apache.hadoop.mapreduce.lib.output.SequenceFileAsBinaryOutputFormat.java LineNum: 117 Method name: getClass(KEY_CLASS,      job.getOutputKeyClass().asSubclass(WritableComparable.class),       WritableComparable.class)
+Inferred parameter values: mapreduce.output.seqbinaryoutputformat.key.class, 
+
+Found callsite[304] in File: org.apache.hadoop.mapreduce.v2.hs.JobHistory.java LineNum: 356 Method name: conf.get(MRJobConfig.USER_NAME, "history-user")
+Inferred parameter values: mapreduce.job.user.name, history-user, 
+
+Found callsite[305] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 403 Method name: conf.getClass(MAPPER_OUTPUT_KEY_CLASS, Object.class)
+Inferred parameter values: mapreduce.chain.mapper.output.key.class, 
+
+Found callsite[306] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 470 Method name: conf.get(MRJobConfig.MR_AM_ENV)
+Inferred parameter values: yarn.app.mapreduce.am.env, 
+
+Found callsite[307] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 644 Method name: conf.getLong(MRJobConfig.MR_AM_HARD_KILL_TIMEOUT_MS,                       MRJobConfig.DEFAULT_MR_AM_HARD_KILL_TIMEOUT_MS)
+Inferred parameter values: yarn.app.mapreduce.am.hard-kill-timeout-ms, 
+
+Found callsite[308] in File: org.apache.hadoop.mapreduce.v2.app.JobEndNotifier.java LineNum: 80 Method name: conf.getInt(JobContext.MR_JOB_END_NOTIFICATION_TIMEOUT,        JobContext.DEFAULT_MR_JOB_END_NOTIFICATION_TIMEOUT)
+Inferred parameter values: 
+
+Found callsite[309] in File: org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator.java LineNum: 202 Method name: conf.getInt(MRJobConfig.JOB_RUNNING_REDUCE_LIMIT,        MRJobConfig.DEFAULT_JOB_RUNNING_REDUCE_LIMIT)
+Inferred parameter values: mapreduce.job.running.reduce.limit, 
+
+Found callsite[310] in File: org.apache.hadoop.mapreduce.lib.join.Parser.java LineNum: 544 Method name: conf.getClass(      CompositeInputFormat.JOIN_COMPARATOR, null, WritableComparator.class)
+Inferred parameter values: mapreduce.join.keycomparator, 
+
+Found callsite[311] in File: org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.java LineNum: 1316 Method name: conf.get(MRJobConfig.REDUCE_CLASS_ATTR)
+Inferred parameter values: mapreduce.job.reduce.class, 
+
+Found callsite[312] in File: org.apache.hadoop.mapreduce.Job.java LineNum: 1445 Method name: conf.getInt(      COMPLETION_POLL_INTERVAL_KEY, DEFAULT_COMPLETION_POLL_INTERVAL)
+Inferred parameter values: mapreduce.client.completion.pollinterval, 
+
+Found callsite[313] in File: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl.java LineNum: 654 Method name: conf.get(MRJobConfig.JAR)
+Inferred parameter values: mapreduce.job.jar, 
+
+Found callsite[314] in File: org.apache.hadoop.mapred.JobACLsManager.java LineNum: 46 Method name: conf.getBoolean(MRConfig.MR_ACLS_ENABLED, false)
+Inferred parameter values: mapreduce.cluster.acls.enabled, 
+
+Found callsite[315] in File: org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler.java LineNum: 247 Method name: conf.getBoolean(MRJobConfig.MAPREDUCE_JOB_EMIT_TIMELINE_DATA,        MRJobConfig.DEFAULT_MAPREDUCE_JOB_EMIT_TIMELINE_DATA)
+Inferred parameter values: mapreduce.job.emit-timeline-data, 
+
+Found callsite[316] in File: org.apache.hadoop.mapreduce.JobSubmitter.java LineNum: 381 Method name: conf.get("mapreduce.job.credentials.binary")
+Inferred parameter values: mapreduce.job.credentials.binary, 
+
+Found callsite[317] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 620 Method name: conf.get(          MRJobConfig.REDUCE_LOG_LEVEL,          JobConf.DEFAULT_LOG_LEVEL.toString()      )
+Inferred parameter values: mapreduce.reduce.log.level, 
+
+Found callsite[318] in File: org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.java LineNum: 277 Method name: getClass(MO_PREFIX + namedOutput + FORMAT, null,      OutputFormat.class)
+Inferred parameter values: .format, 
+
+Found callsite[319] in File: org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorJobBase.java LineNum: 65 Method name: conf.getInt(DESCRIPTOR_NUM, 0)
+Inferred parameter values: mapreduce.aggregate.descriptor.num, 
+
+Found callsite[320] in File: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl.java LineNum: 773 Method name: conf.get(            MRJobConfig.MAPRED_ADMIN_USER_SHELL,             MRJobConfig.DEFAULT_SHELL)
+Inferred parameter values: mapreduce.admin.user.shell, /bin/bash, 
+
+Found callsite[321] in File: org.apache.hadoop.mapred.ClientServiceDelegate.java LineNum: 188 Method name: conf.getBoolean(MRJobConfig.JOB_AM_ACCESS_DISABLED, false)
+Inferred parameter values: mapreduce.job.am-access-disabled, 
+
+Found callsite[322] in File: org.apache.hadoop.mapred.TaskAttemptListenerImpl.java LineNum: 135 Method name: conf.getBoolean(          CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,           false)
+Inferred parameter values: 
+
+Found callsite[323] in File: org.apache.hadoop.mapreduce.v2.app.MRAppMaster.java LineNum: 986 Method name: this.conf.get(MRJobConfig.USER_NAME)
+Inferred parameter values: mapreduce.job.user.name, 
+
+Found callsite[324] in File: org.apache.hadoop.mapreduce.v2.app.JobEndNotifier.java LineNum: 83 Method name: conf.get(MRJobConfig.MR_JOB_END_NOTIFICATION_URL)
+Inferred parameter values: mapreduce.job.end-notification.url, 
+
+Found callsite[325] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 654 Method name: jobConf.getClass(prefix + CHAIN_REDUCER_CLASS, null)
+Inferred parameter values: .reducer.class, 
+
+Found callsite[326] in File: org.apache.hadoop.mapred.lib.CombineFileInputFormat.java LineNum: 160 Method name: getCodec(file)
+Inferred parameter values: 
+
+Found callsite[327] in File: org.apache.hadoop.mapreduce.lib.input.MultipleInputs.java LineNum: 131 Method name: conf.get(DIR_MAPPERS)
+Inferred parameter values: mapreduce.input.multipleinputs.dir.mappers, 
+
+Found callsite[328] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 519 Method name: jobConf.get(JobContext.JOB_NAME,        YarnConfiguration.DEFAULT_APPLICATION_NAME)
+Inferred parameter values: 
+
+Found callsite[329] in File: org.apache.hadoop.mapreduce.lib.input.CombineFileInputFormat.java LineNum: 191 Method name: conf.getLong(SPLIT_MINSIZE_PERRACK, 0)
+Inferred parameter values: mapreduce.input.fileinputformat.split.minsize.per.rack, 
+
+Found callsite[330] in File: org.apache.hadoop.mapreduce.v2.hs.client.HSAdmin.java LineNum: 177 Method name: conf.getSocketAddr(        JHAdminConfig.JHS_ADMIN_ADDRESS,        JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS,        JHAdminConfig.DEFAULT_JHS_ADMIN_PORT)
+Inferred parameter values: mapreduce.jobhistory.admin.address, 
+
+Found callsite[331] in File: org.apache.hadoop.mapred.ShuffleHandler.java LineNum: 387 Method name: conf.getInt(SHUFFLE_PORT_CONFIG_KEY, DEFAULT_SHUFFLE_PORT)
+Inferred parameter values: mapreduce.shuffle.port, 
+
+Found callsite[332] in File: org.apache.hadoop.mapred.ShuffleHandler.java LineNum: 341 Method name: conf.getInt(SHUFFLE_READAHEAD_BYTES,        DEFAULT_SHUFFLE_READAHEAD_BYTES)
+Inferred parameter values: mapreduce.shuffle.readahead.bytes, 
+
+Found callsite[333] in File: org.apache.hadoop.mapreduce.v2.app.TaskHeartbeatHandler.java LineNum: 92 Method name: conf.getInt(MRJobConfig.TASK_TIMEOUT_CHECK_INTERVAL_MS, 30 * 1000)
+Inferred parameter values: mapreduce.task.timeout.check-interval-ms, 
+
+Found callsite[334] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 467 Method name: conf.get(MRJobConfig.MR_AM_ADMIN_USER_ENV)
+Inferred parameter values: yarn.app.mapreduce.am.admin.user.env, 
+
+Found callsite[335] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 426 Method name: conf.getClass(MAPPER_INPUT_VALUE_CLASS, Object.class)
+Inferred parameter values: mapreduce.chain.mapper.input.value.class, 
+
+Found callsite[336] in File: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl.java LineNum: 662 Method name: conf.getPattern(JobContext.JAR_UNPACK_PATTERN,             JobConf.UNPACK_JAR_PATTERN_DEFAULT)
+Inferred parameter values: 
+
+Found callsite[337] in File: org.apache.hadoop.mapreduce.lib.partition.KeyFieldBasedComparator.java LineNum: 65 Method name: conf.get(MRJobConfig.MAP_OUTPUT_KEY_FIELD_SEPERATOR,"\t")
+Inferred parameter values: mapreduce.map.output.key.field.separator, \t, 
+
+Found callsite[338] in File: org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator.java LineNum: 167 Method name: conf.getLong(MRJobConfig.SPECULATIVE_RETRY_AFTER_NO_SPECULATE,                MRJobConfig.DEFAULT_SPECULATIVE_RETRY_AFTER_NO_SPECULATE)
+Inferred parameter values: mapreduce.job.speculative.retry-after-no-speculate, 
+
+Found callsite[339] in File: org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl.java LineNum: 787 Method name: conf.get(            MRJobConfig.MAPRED_ADMIN_USER_ENV,             MRJobConfig.DEFAULT_MAPRED_ADMIN_USER_ENV)
+Inferred parameter values: mapreduce.admin.user.env, 
+
+Found callsite[340] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 446 Method name: conf.getClass(MAPPER_OUTPUT_VALUE_CLASS,        Object.class)
+Inferred parameter values: mapreduce.chain.mapper.output.value.class, 
+
+Found callsite[341] in File: org.apache.hadoop.mapreduce.JobResourceUploader.java LineNum: 60 Method name: conf.getInt(Job.SUBMIT_REPLICATION,            Job.DEFAULT_SUBMIT_REPLICATION)
+Inferred parameter values: mapreduce.client.submit.file.replication, 
+
+Found callsite[342] in File: org.apache.hadoop.mapred.Master.java LineNum: 54 Method name: conf.get(MRConfig.MASTER_ADDRESS, "localhost:8012")
+Inferred parameter values: mapreduce.jobtracker.address, localhost:8012, 
+
+Found callsite[343] in File: org.apache.hadoop.mapreduce.lib.db.DBConfiguration.java LineNum: 227 Method name: conf.get(DBConfiguration.INPUT_BOUNDING_QUERY)
+Inferred parameter values: mapred.jdbc.input.bounding.query, 
+
+Found callsite[344] in File: org.apache.hadoop.mapreduce.lib.join.Parser.java LineNum: 304 Method name: conf.getClassByName(sb.toString())
+Inferred parameter values: 
+
+Found callsite[345] in File: org.apache.hadoop.mapreduce.v2.hs.client.HSAdmin.java LineNum: 219 Method name: conf.getSocketAddr(        JHAdminConfig.JHS_ADMIN_ADDRESS,        JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS,        JHAdminConfig.DEFAULT_JHS_ADMIN_PORT)
+Inferred parameter values: mapreduce.jobhistory.admin.address, 
+
+Found callsite[346] in File: org.apache.hadoop.mapred.LineRecordReader.java LineNum: 98 Method name: job.getInt(org.apache.hadoop.mapreduce.lib.input.      LineRecordReader.MAX_LINE_LENGTH, Integer.MAX_VALUE)
+Inferred parameter values: mapreduce.input.linerecordreader.line.maxlength, 
+
+Found callsite[347] in File: org.apache.hadoop.mapred.Merger.java LineNum: 206 Method name: conf.getLong(JobContext.RECORDS_BEFORE_PROGRESS,        10000)
+Inferred parameter values: 
+
+Found callsite[348] in File: org.apache.hadoop.mapred.Task.java LineNum: 1340 Method name: conf.getLong(MRJobConfig.COMBINE_RECORDS_BEFORE_PROGRESS, DEFAULT_COMBINE_RECORDS_BEFORE_PROGRESS)
+Inferred parameter values: mapreduce.task.combine.progress.records, 
+
+Found callsite[349] in File: org.apache.hadoop.mapreduce.lib.db.TextSplitter.java LineNum: 94 Method name: conf.getInt(MRJobConfig.NUM_MAPS, 1)
+Inferred parameter values: mapreduce.job.maps, 
+
+Found callsite[350] in File: org.apache.hadoop.mapreduce.lib.input.CombineFileRecordReaderWrapper.java LineNum: 74 Method name: conf.getLong(MRJobConfig.MAP_INPUT_START, 0L)
+Inferred parameter values: mapreduce.map.input.start, 
+
+Found callsite[351] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 390 Method name: conf.getTrimmedStrings(        MRJobConfig.MAPREDUCE_JOB_CLASSLOADER_SYSTEM_CLASSES)
+Inferred parameter values: mapreduce.job.classloader.system.classes, 
+
+Found callsite[352] in File: org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler.java LineNum: 243 Method name: conf.getInt(            MRJobConfig.MR_AM_HISTORY_USE_BATCHED_FLUSH_QUEUE_SIZE_THRESHOLD,            MRJobConfig.DEFAULT_MR_AM_HISTORY_USE_BATCHED_FLUSH_QUEUE_SIZE_THRESHOLD)
+Inferred parameter values: yarn.app.mapreduce.am.history.use-batched-flush.queue-size.threshold, 
+
+Found callsite[353] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 425 Method name: conf.getClass(MAPPER_INPUT_KEY_CLASS, Object.class)
+Inferred parameter values: mapreduce.chain.mapper.input.key.class, 
+
+Found callsite[354] in File: org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.java LineNum: 84 Method name: getBoolean(      FileOutputFormat.COMPRESS, false)
+Inferred parameter values: mapreduce.output.fileoutputformat.compress, 
+
+Found callsite[355] in File: org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.java LineNum: 294 Method name: get(BASE_OUTPUT_NAME, PART)
+Inferred parameter values: mapreduce.output.basename, part, 
+
+Found callsite[356] in File: org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler.java LineNum: 488 Method name: conf.get(MRJobConfig.QUEUE_NAME, JobConf.DEFAULT_QUEUE_NAME)
+Inferred parameter values: mapreduce.job.queuename, default, 
+
+Found callsite[357] in File: org.apache.hadoop.mapreduce.lib.partition.KeyFieldBasedPartitioner.java LineNum: 68 Method name: conf.get(MRJobConfig.MAP_OUTPUT_KEY_FIELD_SEPERATOR, "\t")
+Inferred parameter values: mapreduce.map.output.key.field.separator, \t, 
+
+Found callsite[358] in File: org.apache.hadoop.mapreduce.lib.output.LazyOutputFormat.java LineNum: 62 Method name: conf.getClass(OUTPUT_FORMAT, null)
+Inferred parameter values: mapreduce.output.lazyoutputformat.outputformat, 
+
+Found callsite[359] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 660 Method name: jobConf.getClass(prefix + CHAIN_REDUCER_CLASS, null)
+Inferred parameter values: .reducer.class, 
+
+Found callsite[360] in File: org.apache.hadoop.mapreduce.filecache.DistributedCache.java LineNum: 269 Method name: conf.get(MRJobConfig.CACHE_ARCHIVES)
+Inferred parameter values: mapreduce.job.cache.archives, 
+
+Found callsite[361] in File: org.apache.hadoop.mapreduce.filecache.DistributedCache.java LineNum: 257 Method name: conf.getStrings(MRJobConfig.CACHE_FILE_TIMESTAMPS)
+Inferred parameter values: mapreduce.job.cache.files.timestamps, 
+
+Found callsite[362] in File: org.apache.hadoop.mapreduce.v2.app.MRAppMaster.java LineNum: 693 Method name: conf.getClass(MRJobConfig.MR_AM_JOB_SPECULATOR,                              DefaultSpeculator.class,                              Speculator.class)
+Inferred parameter values: yarn.app.mapreduce.am.job.speculator.class, 
+
+Found callsite[363] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 658 Method name: conf.getLong(MRJobConfig.MR_AM_LOG_KB,          MRJobConfig.DEFAULT_MR_AM_LOG_KB)
+Inferred parameter values: yarn.app.mapreduce.am.container.log.limit.kb, 
+
+Found callsite[364] in File: org.apache.hadoop.mapred.BackupStore.java LineNum: 104 Method name: conf.getInt(JobContext.REDUCE_MARKRESET_BUFFER_SIZE, 0)
+Inferred parameter values: 
+
+Found callsite[365] in File: org.apache.hadoop.mapred.DeprecatedQueueConfigurationParser.java LineNum: 59 Method name: conf.getStrings(      MAPRED_QUEUE_NAMES_KEY)
+Inferred parameter values: mapred.queue.names, 
+
+Found callsite[366] in File: org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.java LineNum: 334 Method name: getBoolean(SUCCESSFUL_JOB_OUTPUT_DIR_MARKER, true)
+Inferred parameter values: mapreduce.fileoutputcommitter.marksuccessfuljobs, 
+
+Found callsite[367] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 219 Method name: conf.getStrings(MRJobConfig.MAPREDUCE_APPLICATION_CLASSPATH,        crossPlatform ?            StringUtils.getStrings(MRJobConfig.DEFAULT_MAPREDUCE_CROSS_PLATFORM_APPLICATION_CLASSPATH)            : StringUtils.getStrings(MRJobConfig.DEFAULT_MAPREDUCE_APPLICATION_CLASSPATH))
+Inferred parameter values: mapreduce.application.classpath, 
+
+Found callsite[368] in File: org.apache.hadoop.mapreduce.lib.input.MultipleInputs.java LineNum: 136 Method name: conf.get(DIR_MAPPERS)
+Inferred parameter values: mapreduce.input.multipleinputs.dir.mappers, 
+
+Found callsite[369] in File: org.apache.hadoop.mapreduce.lib.input.FileInputFormat.java LineNum: 210 Method name: getLong(SPLIT_MAXSIZE,                                               Long.MAX_VALUE)
+Inferred parameter values: mapreduce.input.fileinputformat.split.maxsize, 
+
+Found callsite[370] in File: org.apache.hadoop.mapreduce.lib.fieldsel.FieldSelectionMapper.java LineNum: 82 Method name: conf.get(FieldSelectionHelper.DATA_FIELD_SEPERATOR, "\t")
+Inferred parameter values: mapreduce.fieldsel.data.field.separator, \t, 
+
+Found callsite[371] in File: org.apache.hadoop.mapreduce.v2.app.webapp.dao.ConfInfo.java LineNum: 50 Method name: jobConf.getPropertySources(entry.getKey())
+Inferred parameter values: 
+
+Found callsite[372] in File: org.apache.hadoop.mapreduce.counters.Limits.java LineNum: 45 Method name: conf.getInt(COUNTER_GROUP_NAME_MAX_KEY,          COUNTER_GROUP_NAME_MAX_DEFAULT)
+Inferred parameter values: mapreduce.job.counters.group.name.max, 
+
+Found callsite[373] in File: org.apache.hadoop.mapreduce.lib.partition.TotalOrderPartitioner.java LineNum: 144 Method name: conf.get(PARTITIONER_PATH, DEFAULT_PATH)
+Inferred parameter values: mapreduce.totalorderpartitioner.path, _partition.lst, 
+
+Found callsite[374] in File: org.apache.hadoop.mapreduce.v2.util.MRWebAppUtil.java LineNum: 95 Method name: conf.get(JHAdminConfig.MR_HISTORY_WEBAPP_HTTPS_ADDRESS,          JHAdminConfig.DEFAULT_MR_HISTORY_WEBAPP_HTTPS_ADDRESS)
+Inferred parameter values: mapreduce.jobhistory.webapp.https.address, 
+
+Found callsite[375] in File: org.apache.hadoop.mapred.LocalJobRunner.java LineNum: 933 Method name: getInt(LOCAL_MAX_REDUCES, 1)
+Inferred parameter values: mapreduce.local.reduce.tasks.maximum, 
+
+Found callsite[376] in File: org.apache.hadoop.mapreduce.v2.app.MRAppMaster.java LineNum: 656 Method name: conf.getInt(                MRJobConfig.MR_ENCRYPTED_INTERMEDIATE_DATA_KEY_SIZE_BITS,                MRJobConfig                        .DEFAULT_MR_ENCRYPTED_INTERMEDIATE_DATA_KEY_SIZE_BITS)
+Inferred parameter values: mapreduce.job.encrypted-intermediate-data-key-size-bits, 
+
+Found callsite[377] in File: org.apache.hadoop.mapreduce.lib.db.DBConfiguration.java LineNum: 261 Method name: conf.getInt(OUTPUT_FIELD_COUNT_PROPERTY, 0)
+Inferred parameter values: mapreduce.jdbc.output.field.count, 
+
+Found callsite[378] in File: org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator.java LineNum: 197 Method name: conf.getInt(        MRJobConfig.MR_JOB_REDUCER_PREEMPT_DELAY_SEC,        MRJobConfig.DEFAULT_MR_JOB_REDUCER_PREEMPT_DELAY_SEC)
+Inferred parameter values: mapreduce.job.reducer.preempt.delay.sec, 
+
+Found callsite[379] in File: org.apache.hadoop.mapreduce.v2.app.JobEndNotifier.java LineNum: 71 Method name: conf.getInt(MRJobConfig.MR_JOB_END_RETRY_ATTEMPTS, 0)
+Inferred parameter values: mapreduce.job.end-notification.retry.attempts, 
+
+Found callsite[380] in File: org.apache.hadoop.mapred.LocalJobRunner.java LineNum: 912 Method name: getInt(LOCAL_MAX_MAPS, 1)
+Inferred parameter values: mapreduce.local.map.tasks.maximum, 
+
+Found callsite[381] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 582 Method name: jobConf.get(confKey, null)
+Inferred parameter values: 
+
+Found callsite[382] in File: org.apache.hadoop.mapreduce.v2.hs.HistoryFileManager.java LineNum: 509 Method name: conf.getLong(JHAdminConfig.MR_HISTORY_MAX_AGE_MS,        JHAdminConfig.DEFAULT_MR_HISTORY_MAX_AGE)
+Inferred parameter values: mapreduce.jobhistory.max-age-ms, 
+
+Found callsite[383] in File: org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator.java LineNum: 188 Method name: conf.getFloat(        MRJobConfig.COMPLETED_MAPS_FOR_REDUCE_SLOWSTART,         DEFAULT_COMPLETED_MAPS_PERCENT_FOR_REDUCE_SLOWSTART)
+Inferred parameter values: mapreduce.job.reduce.slowstart.completedmaps, 
+
+Found callsite[384] in File: org.apache.hadoop.mapreduce.v2.hs.HistoryServerLeveldbStateStoreService.java LineNum: 304 Method name: conf.get(JHAdminConfig.MR_HS_LEVELDB_STATE_STORE_PATH)
+Inferred parameter values: mapreduce.jobhistory.recovery.store.leveldb.path, 
+
+Found callsite[385] in File: org.apache.hadoop.mapreduce.lib.db.DBConfiguration.java LineNum: 156 Method name: conf.get(DBConfiguration.USERNAME_PROPERTY)
+Inferred parameter values: mapreduce.jdbc.username, 
+
+Found callsite[386] in File: org.apache.hadoop.mapreduce.JobResourceUploader.java LineNum: 63 Method name: conf.getBoolean(Job.USED_GENERIC_PARSER, false)
+Inferred parameter values: mapreduce.client.genericoptionsparser.used, 
+
+Found callsite[387] in File: org.apache.hadoop.mapreduce.CryptoUtils.java LineNum: 87 Method name: conf.getInt(MRJobConfig.MR_ENCRYPTED_INTERMEDIATE_DATA_BUFFER_KB,        MRJobConfig.DEFAULT_MR_ENCRYPTED_INTERMEDIATE_DATA_BUFFER_KB)
+Inferred parameter values: mapreduce.job.encrypted-intermediate-data.buffer.kb, 
+
+Found callsite[388] in File: org.apache.hadoop.mapreduce.v2.app.client.MRClientService.java LineNum: 127 Method name: conf.getBoolean(        CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,         false)
+Inferred parameter values: 
+
+Found callsite[389] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 477 Method name: jobConf.get(        MRJobConfig.JOB_ACL_VIEW_JOB, MRJobConfig.DEFAULT_JOB_ACL_VIEW_JOB)
+Inferred parameter values: mapreduce.job.acl-view-job,  , 
+
+Found callsite[390] in File: org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator.java LineNum: 200 Method name: conf.getInt(MRJobConfig.JOB_RUNNING_MAP_LIMIT,        MRJobConfig.DEFAULT_JOB_RUNNING_MAP_LIMIT)
+Inferred parameter values: mapreduce.job.running.map.limit, 
+
+Found callsite[391] in File: org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils.java LineNum: 218 Method name: conf.get(JHAdminConfig.MR_HISTORY_DONE_DIR)
+Inferred parameter values: mapreduce.jobhistory.done-dir, 
+
+Found callsite[392] in File: org.apache.hadoop.mapreduce.v2.hs.HistoryServerStateStoreServiceFactory.java LineNum: 39 Method name: conf.getClass(JHAdminConfig.MR_HS_STATE_STORE, null,          HistoryServerStateStoreService.class)
+Inferred parameter values: mapreduce.jobhistory.recovery.store.class, 
+
+Found callsite[393] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 422 Method name: jobConf.getBoolean(MRJobConfig.MR_AM_PROFILE,        MRJobConfig.DEFAULT_MR_AM_PROFILE)
+Inferred parameter values: yarn.app.mapreduce.am.profile, 
+
+Found callsite[394] in File: org.apache.hadoop.mapreduce.v2.app.MRAppMaster.java LineNum: 1590 Method name: conf.getClassLoader()
+Inferred parameter values: 
+
+Found callsite[395] in File: org.apache.hadoop.mapreduce.v2.app.JobEndNotifier.java LineNum: 75 Method name: conf.getInt(MRJobConfig.MR_JOB_END_RETRY_INTERVAL, 5000)
+Inferred parameter values: mapreduce.job.end-notification.retry.interval, 
+
+Found callsite[396] in File: org.apache.hadoop.mapreduce.lib.db.DBConfiguration.java LineNum: 155 Method name: conf.get(DBConfiguration.URL_PROPERTY)
+Inferred parameter values: mapreduce.jdbc.url, 
+
+Found callsite[397] in File: org.apache.hadoop.mapreduce.v2.hs.JobHistory.java LineNum: 89 Method name: conf.getLong(        JHAdminConfig.MR_HISTORY_MOVE_INTERVAL_MS,        JHAdminConfig.DEFAULT_MR_HISTORY_MOVE_INTERVAL_MS)
+Inferred parameter values: mapreduce.jobhistory.move.interval-ms, 
+
+Found callsite[398] in File: org.apache.hadoop.mapreduce.v2.util.MRWebAppUtil.java LineNum: 132 Method name: conf.get(JHAdminConfig.MR_HISTORY_ADDRESS,        JHAdminConfig.DEFAULT_MR_HISTORY_ADDRESS)
+Inferred parameter values: mapreduce.jobhistory.address, 
+
+Found callsite[399] in File: org.apache.hadoop.mapred.IFile.java LineNum: 354 Method name: conf.getInt("io.file.buffer.size", DEFAULT_BUFFER_SIZE)
+Inferred parameter values: io.file.buffer.size, 
+
+Found callsite[400] in File: org.apache.hadoop.mapreduce.lib.chain.Chain.java LineNum: 580 Method name: jobConf.get(confKey, null)
+Inferred parameter values: 
+
+Found callsite[401] in File: org.apache.hadoop.mapreduce.JobResourceUploader.java LineNum: 72 Method name: conf.get("tmparchives")
+Inferred parameter values: tmparchives, 
+
+Found callsite[402] in File: org.apache.hadoop.mapred.IFileInputStream.java LineNum: 81 Method name: conf.getBoolean(MRConfig.MAPRED_IFILE_READAHEAD,        MRConfig.DEFAULT_MAPRED_IFILE_READAHEAD)
+Inferred parameter values: mapreduce.ifile.readahead, 
+
+Found callsite[403] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 713 Method name: conf.getBoolean(MRConfig.MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM,          MRConfig.DEFAULT_MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM)
+Inferred parameter values: mapreduce.app-submission.cross-platform, 
+
+Found callsite[404] in File: org.apache.hadoop.mapreduce.lib.db.IntegerSplitter.java LineNum: 47 Method name: conf.getInt(MRJobConfig.NUM_MAPS, 1)
+Inferred parameter values: mapreduce.job.maps, 
+
+Found callsite[405] in File: org.apache.hadoop.mapreduce.v2.hs.server.HSAdminServer.java LineNum: 119 Method name: conf.getBoolean(        CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,        false)
+Inferred parameter values: 
+
+Found callsite[406] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 660 Method name: conf.get(          MRJobConfig.MR_AM_LOG_LEVEL, MRJobConfig.DEFAULT_MR_AM_LOG_LEVEL)
+Inferred parameter values: yarn.app.mapreduce.am.log.level, INFO, 
+
+Found callsite[407] in File: org.apache.hadoop.mapreduce.lib.db.DBConfiguration.java LineNum: 231 Method name: conf.getClass(DBConfiguration.INPUT_CLASS_PROPERTY,                         NullDBWritable.class)
+Inferred parameter values: mapreduce.jdbc.input.class, 
+
+Found callsite[408] in File: org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator.java LineNum: 179 Method name: conf.getInt(MRJobConfig.SPECULATIVE_MINIMUM_ALLOWED_TASKS,                MRJobConfig.DEFAULT_SPECULATIVE_MINIMUM_ALLOWED_TASKS)
+Inferred parameter values: mapreduce.job.speculative.minimum-allowed-tasks, 
+
+Found callsite[409] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 502 Method name: jobConf              .get(JobContext.RESERVATION_ID)
+Inferred parameter values: 
+
+Found callsite[410] in File: org.apache.hadoop.mapred.KeyValueLineRecordReader.java LineNum: 63 Method name: job.get("mapreduce.input.keyvaluelinerecordreader.key.value.separator", "\t")
+Inferred parameter values: mapreduce.input.keyvaluelinerecordreader.key.value.separator, \t, 
+
+Found callsite[411] in File: org.apache.hadoop.mapreduce.filecache.DistributedCache.java LineNum: 367 Method name: conf.get(MRJobConfig.CLASSPATH_ARCHIVES)
+Inferred parameter values: mapreduce.job.classpath.archives, 
+
+Found callsite[412] in File: org.apache.hadoop.mapreduce.lib.db.OracleDBRecordReader.java LineNum: 125 Method name: conf.get(SESSION_TIMEZONE_KEY, "GMT")
+Inferred parameter values: oracle.sessionTimeZone, GMT, 
+
+Found callsite[413] in File: org.apache.hadoop.mapred.YARNRunner.java LineNum: 402 Method name: conf.get(MRJobConfig.REDUCE_JAVA_OPTS,"")
+Inferred parameter values: mapreduce.reduce.java.opts, , 
+
+Found callsite[414] in File: org.apache.hadoop.mapreduce.v2.util.MRApps.java LineNum: 615 Method name: conf.get(          MRJobConfig.MAP_LOG_LEVEL,          JobConf.DEFAULT_LOG_LEVEL.toString()      )
+Inferred parameter values: mapreduce.map.log.level, 
+
+Found callsite[415] in File: org.apache.hadoop.mapred.YarnClientProtocolProvider.java LineNum: 33 Method name: conf.get(MRConfig.FRAMEWORK_NAME)
+Inferred parameter values: mapreduce.framework.name, 
+
+Found callsite[416] in File: org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler.java LineNum: 249 Method name: conf.getBoolean(YarnConfiguration.TIMELINE_SERVICE_ENABLED,            YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ENABLED)
+Inferred parameter values: 
+
+Found callsite[417] in File: org.apache.hadoop.mapreduce.v2.hs.HistoryFileManager.java LineNum: 514 Method name: conf.getInt(        JHAdminConfig.MR_HISTORY_DATESTRING_CACHE_SIZE,        JHAdminConfig.DEFAULT_MR_HISTORY_DATESTRING_CACHE_SIZE)
+Inferred parameter values: mapreduce.jobhistory.datestring.cache.size, 
+
+Found callsite[418] in File: org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.java LineNum: 265 Method name: get(MULTIPLE_OUTPUTS, "")
+Inferred parameter values: mapreduce.multipleoutputs, , 
+
+Found callsite[419] in File: org.apache.hadoop.mapreduce.lib.db.DateSplitter.java LineNum: 63 Method name: conf.getInt(MRJobConfig.NUM_MAPS, 1)
+Inferred parameter values: mapreduce.job.maps, 
+
+Found callsite[420] in File: org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils.java LineNum: 204 Method name: conf.get(MRJobConfig.MR_AM_STAGING_DIR,          MRJobConfig.DEFAULT_MR_AM_STAGING_DIR)
+Inferred parameter values: yarn.app.mapreduce.am.staging-dir, /tmp/hadoop-yarn/staging, 
+
+Found callsite[421] in File: org.apache.hadoop.mapred.LineRecordReader.java LineNum: 163 Method name: job.getInt(org.apache.hadoop.mapreduce.lib.input.      LineRecordReader.MAX_LINE_LENGTH, Integer.MAX_VALUE)
+Inferred parameter values: mapreduce.input.linerecordreader.line.maxlength, 
+
+Found callsite[422] in File: org.apache.hadoop.mapred.TaskAttemptListenerImpl.java LineNum: 104 Method name: conf.getLong(MRJobConfig.MR_AM_COMMIT_WINDOW_MS,       MRJobConfig.DEFAULT_MR_AM_COMMIT_WINDOW_MS)
+Inferred parameter values: yarn.app.mapreduce.am.job.committer.commit-window, 
+
+Found callsite[423] in File: org.apache.hadoop.mapred.SkipBadRecords.java LineNum: 205 Method name: conf.get(OUT_PATH)
+Inferred parameter values: 
+
+Found callsite[424] in File: org.apache.hadoop.mapreduce.v2.app.JobEndNotifier.java LineNum: 76 Method name: conf.getInt(MRJobConfig.MR_JOB_END_NOTIFICATION_MAX_RETRY_INTERVAL, 5000)
+Inferred parameter values: mapreduce.job.end-notification.max.retry.interval, 
+
+Found callsite[425] in File: org.apache.hadoop.mapreduce.v2.hs.HistoryServerStateStoreServiceFactory.java LineNum: 35 Method name: conf.getBoolean(        JHAdminConfig.MR_HS_RECOVERY_ENABLE,        JHAdminConfig.DEFAULT_MR_HS_RECOVERY_ENABLE)
+Inferred parameter values: mapreduce.jobhistory.recovery.enable, 
+
+Found callsite[426] in File: org.apache.hadoop.mapreduce.v2.app.client.MRClientService.java LineNum: 122 Method name: conf.getInt(MRJobConfig.MR_AM_JOB_CLIENT_THREAD_COUNT,                 MRJobConfig.DEFAULT_MR_AM_JOB_CLIENT_THREAD_COUNT)
+Inferred parameter values: yarn.app.mapreduce.am.job.client.thread-count, 
+
+Found callsite[427] in File: org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper.java LineNum: 78 Method name: getInt(NUM_THREADS, 10)
+Inferred parameter values: mapreduce.mapper.multithreadedmapper.threads, 
+

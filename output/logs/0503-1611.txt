@@ -1,0 +1,1813 @@
+run:
+[INFO] Start extracting configurations from default conf file.
+[INFO] Configurations extracted. Writing to file.
+[INFO] Configurations from default conf file are extracted and written successfully.
+=======================================================================================
+[INFO] Start loading source file.
+[INFO] Source file is loaded. Starting further anaylsis.
+=======================================================================================
+[INFO] Start extracting all sub classes of main conf class.
+[INFO] All sub classes of main conf class are extracted.
+=======================================================================================
+[INFO] Intersted classes are specified. Start extracting callsites.
+[INFO] Callsite extraction finished.
+[INFO] Number of callsites found: 465
+=======================================================================================
+[INFO] Start analyzing details of callsites.
+Callsite No. 1: 
+Content: getProxy(protocol,rmAddress,conf)
+Parameter: protocol
+Parameter: rmAddress
+Parameter: conf
+Callsite No. 2: 
+Content: localConf.getClassByName(getProtoClassName(protocol))
+Parameter: getProtoClassName(protocol)
+Callsite No. 3: 
+Content: conf.get(YarnConfiguration.APPLICATION_HISTORY_STORE)
+Parameter: YarnConfiguration.APPLICATION_HISTORY_STORE. Inferred value: "yarn.""timeline-service.""generic-application-history.""store-class"
+Callsite No. 4: 
+Content: conf.get(YarnConfiguration.SHARED_CACHE_ROOT,YarnConfiguration.DEFAULT_SHARED_CACHE_ROOT)
+Parameter: YarnConfiguration.SHARED_CACHE_ROOT. Inferred value: "yarn.sharedcache.""root-dir"
+Parameter: YarnConfiguration.DEFAULT_SHARED_CACHE_ROOT. Inferred value: "/sharedcache"
+Callsite No. 5: 
+Content: conf.getInt(YarnConfiguration.IN_MEMORY_STALENESS_PERIOD_MINS,YarnConfiguration.DEFAULT_IN_MEMORY_STALENESS_PERIOD_MINS)
+Parameter: YarnConfiguration.IN_MEMORY_STALENESS_PERIOD_MINS. Inferred value: "yarn.sharedcache.""store.""in-memory.""staleness-period-mins"
+Parameter: YarnConfiguration.DEFAULT_IN_MEMORY_STALENESS_PERIOD_MINS
+Callsite No. 6: 
+Content: conf.getBoolean(YarnConfiguration.NM_DISK_HEALTH_CHECK_ENABLE,true)
+Parameter: YarnConfiguration.NM_DISK_HEALTH_CHECK_ENABLE. Inferred value: "yarn.nodemanager.disk-health-checker.""enable"
+Parameter: true
+Callsite No. 7: 
+Content: conf.getSocketAddr(YarnConfiguration.TIMELINE_SERVICE_WEBAPP_ADDRESS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_ADDRESS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_PORT)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_WEBAPP_ADDRESS. Inferred value: "yarn.""timeline-service.""webapp.address"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_PORT
+Callsite No. 8: 
+Content: conf.getInt(YarnConfiguration.NM_LOCALIZER_FETCH_THREAD_COUNT,YarnConfiguration.DEFAULT_NM_LOCALIZER_FETCH_THREAD_COUNT)
+Parameter: YarnConfiguration.NM_LOCALIZER_FETCH_THREAD_COUNT. Inferred value: "yarn.nodemanager.""localizer.fetch.thread-count"
+Parameter: YarnConfiguration.DEFAULT_NM_LOCALIZER_FETCH_THREAD_COUNT
+Callsite No. 9: 
+Content: getAcls(getQueuePath())
+Parameter: getQueuePath()
+Callsite No. 10: 
+Content: conf.getLong(YarnConfiguration.SCM_CLEANER_RESOURCE_SLEEP_MS,YarnConfiguration.DEFAULT_SCM_CLEANER_RESOURCE_SLEEP_MS)
+Parameter: YarnConfiguration.SCM_CLEANER_RESOURCE_SLEEP_MS. Inferred value: "yarn.sharedcache.""cleaner.""resource-sleep-ms"
+Parameter: YarnConfiguration.DEFAULT_SCM_CLEANER_RESOURCE_SLEEP_MS
+Callsite No. 11: 
+Content: conf.getClass(YarnConfiguration.TIMELINE_SERVICE_STATE_STORE_CLASS,LeveldbTimelineStateStore.class,TimelineStateStore.class)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_STATE_STORE_CLASS. Inferred value: "yarn.""timeline-service.""state-store-class"
+Parameter: LeveldbTimelineStateStore.class
+Parameter: TimelineStateStore.class
+Callsite No. 12: 
+Content: conf.getInt(YarnConfiguration.SCM_CLIENT_SERVER_THREAD_COUNT,YarnConfiguration.DEFAULT_SCM_CLIENT_SERVER_THREAD_COUNT)
+Parameter: YarnConfiguration.SCM_CLIENT_SERVER_THREAD_COUNT. Inferred value: "yarn.sharedcache.""client-server.thread-count"
+Parameter: YarnConfiguration.DEFAULT_SCM_CLIENT_SERVER_THREAD_COUNT
+Callsite No. 13: 
+Content: getState(getQueuePath())
+Parameter: getQueuePath()
+Callsite No. 14: 
+Content: WebAppUtils.getAHSWebAppURLWithoutScheme(conf)
+Parameter: conf
+Callsite No. 15: 
+Content: getHostName()
+Callsite No. 16: 
+Content: conf.getInt(YarnConfiguration.NM_VCORES,YarnConfiguration.DEFAULT_NM_VCORES)
+Parameter: YarnConfiguration.NM_VCORES. Inferred value: "yarn.nodemanager.""resource.cpu-vcores"
+Parameter: YarnConfiguration.DEFAULT_NM_VCORES
+Callsite No. 17: 
+Content: conf.getInt(YarnConfiguration.RM_DELEGATION_TOKEN_RENEWER_THREAD_COUNT,YarnConfiguration.DEFAULT_RM_DELEGATION_TOKEN_RENEWER_THREAD_COUNT)
+Parameter: YarnConfiguration.RM_DELEGATION_TOKEN_RENEWER_THREAD_COUNT. Inferred value: "yarn.resourcemanager.""delegation-token-renewer.thread-count"
+Parameter: YarnConfiguration.DEFAULT_RM_DELEGATION_TOKEN_RENEWER_THREAD_COUNT
+Callsite No. 18: 
+Content: conf.get(HttpServer2.BIND_ADDRESS)
+Parameter: HttpServer2.BIND_ADDRESS
+Callsite No. 19: 
+Content: conf.getBoolean(CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,false)
+Parameter: CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION
+Parameter: false
+Callsite No. 20: 
+Content: conf.getInt(YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_MB,YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_MB)
+Parameter: YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_MB. Inferred value: "yarn.""scheduler.minimum-allocation-mb"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_MB
+Callsite No. 21: 
+Content: config.getLong(MONITORING_INTERVAL,3000)
+Parameter: MONITORING_INTERVAL. Inferred value: "yarn.resourcemanager.monitor.capacity.preemption.monitoring_interval"
+Parameter: 3000
+Callsite No. 22: 
+Content: conf.getTrimmedStringCollection(YarnConfiguration.RM_HA_IDS)
+Parameter: YarnConfiguration.RM_HA_IDS. Inferred value: "yarn.resourcemanager.""ha.""rm-ids"
+Callsite No. 23: 
+Content: conf.get(YarnConfiguration.YARN_ADMIN_ACL,YarnConfiguration.DEFAULT_YARN_ADMIN_ACL)
+Parameter: YarnConfiguration.YARN_ADMIN_ACL. Inferred value: "yarn.""admin.acl"
+Parameter: YarnConfiguration.DEFAULT_YARN_ADMIN_ACL. Inferred value: "*"
+Callsite No. 24: 
+Content: conf.getBoolean(YarnConfiguration.LOG_AGGREGATION_ENABLED,YarnConfiguration.DEFAULT_LOG_AGGREGATION_ENABLED)
+Parameter: YarnConfiguration.LOG_AGGREGATION_ENABLED. Inferred value: "yarn.""log-aggregation-enable"
+Parameter: YarnConfiguration.DEFAULT_LOG_AGGREGATION_ENABLED
+Callsite No. 25: 
+Content: conf.getSocketAddr(YarnConfiguration.NM_BIND_HOST,YarnConfiguration.NM_ADDRESS,YarnConfiguration.DEFAULT_NM_ADDRESS,YarnConfiguration.DEFAULT_NM_PORT)
+Parameter: YarnConfiguration.NM_BIND_HOST. Inferred value: "yarn.nodemanager.""bind-host"
+Parameter: YarnConfiguration.NM_ADDRESS. Inferred value: "yarn.nodemanager.""address"
+Parameter: YarnConfiguration.DEFAULT_NM_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_NM_PORT
+Callsite No. 26: 
+Content: conf.getInt(YarnConfiguration.NM_CONTAINER_EXECUTOR_SCHED_PRIORITY,YarnConfiguration.DEFAULT_NM_CONTAINER_EXECUTOR_SCHED_PRIORITY)
+Parameter: YarnConfiguration.NM_CONTAINER_EXECUTOR_SCHED_PRIORITY. Inferred value: "yarn.nodemanager.""container-executor.os.sched.priority.adjustment"
+Parameter: YarnConfiguration.DEFAULT_NM_CONTAINER_EXECUTOR_SCHED_PRIORITY
+Callsite No. 27: 
+Content: this.conf.getLocalityDelayRackMs()
+Callsite No. 28: 
+Content: conf.getBoolean(YarnConfiguration.YARN_INTERMEDIATE_DATA_ENCRYPTION,YarnConfiguration.DEFAULT_YARN_INTERMEDIATE_DATA_ENCRYPTION)
+Parameter: YarnConfiguration.YARN_INTERMEDIATE_DATA_ENCRYPTION. Inferred value: "yarn.""intermediate-data-encryption.enable"
+Parameter: YarnConfiguration.DEFAULT_YARN_INTERMEDIATE_DATA_ENCRYPTION
+Callsite No. 29: 
+Content: conf.getInt(YarnConfiguration.TIMELINE_SERVICE_CLIENT_MAX_RETRIES,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_MAX_RETRIES)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_CLIENT_MAX_RETRIES. Inferred value: "yarn.""timeline-service.""client.""max-retries"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_MAX_RETRIES
+Callsite No. 30: 
+Content: conf.getInt(KEY_ZKSERVICE_TICK_TIME,ZooKeeperServer.DEFAULT_TICK_TIME)
+Parameter: KEY_ZKSERVICE_TICK_TIME
+Parameter: ZooKeeperServer.DEFAULT_TICK_TIME
+Callsite No. 31: 
+Content: conf.getInt(YarnConfiguration.RM_CONTAINER_ALLOC_EXPIRY_INTERVAL_MS,YarnConfiguration.DEFAULT_RM_CONTAINER_ALLOC_EXPIRY_INTERVAL_MS)
+Parameter: YarnConfiguration.RM_CONTAINER_ALLOC_EXPIRY_INTERVAL_MS. Inferred value: "yarn.resourcemanager.""rm.container-allocation.expiry-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_CONTAINER_ALLOC_EXPIRY_INTERVAL_MS
+Callsite No. 32: 
+Content: conf.get(YarnConfiguration.TIMELINE_SERVICE_WEBAPP_HTTPS_ADDRESS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_HTTPS_ADDRESS)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_WEBAPP_HTTPS_ADDRESS. Inferred value: "yarn.""timeline-service.""webapp.https.address"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_HTTPS_ADDRESS
+Callsite No. 33: 
+Content: conf.getLong(YarnConfiguration.CLIENT_FAILOVER_SLEEPTIME_MAX_MS,rmConnectionRetryIntervalMS)
+Parameter: YarnConfiguration.CLIENT_FAILOVER_SLEEPTIME_MAX_MS. Inferred value: "yarn.""client.failover-""sleep-max-ms"
+Parameter: rmConnectionRetryIntervalMS
+Callsite No. 34: 
+Content: conf.getInt(YarnConfiguration.NM_RESOURCE_PERCENTAGE_PHYSICAL_CPU_LIMIT,YarnConfiguration.DEFAULT_NM_RESOURCE_PERCENTAGE_PHYSICAL_CPU_LIMIT)
+Parameter: YarnConfiguration.NM_RESOURCE_PERCENTAGE_PHYSICAL_CPU_LIMIT. Inferred value: "yarn.nodemanager.""resource.percentage-physical-cpu-limit"
+Parameter: YarnConfiguration.DEFAULT_NM_RESOURCE_PERCENTAGE_PHYSICAL_CPU_LIMIT
+Callsite No. 35: 
+Content: conf.getLong(YarnConfiguration.NM_PROCESS_KILL_WAIT_MS,YarnConfiguration.DEFAULT_NM_PROCESS_KILL_WAIT_MS)
+Parameter: YarnConfiguration.NM_PROCESS_KILL_WAIT_MS. Inferred value: "yarn.nodemanager.""process-kill-wait.ms"
+Parameter: YarnConfiguration.DEFAULT_NM_PROCESS_KILL_WAIT_MS
+Callsite No. 36: 
+Content: conf.getLong(YarnConfiguration.RM_ZK_RETRY_INTERVAL_MS,YarnConfiguration.DEFAULT_RM_ZK_RETRY_INTERVAL_MS)
+Parameter: YarnConfiguration.RM_ZK_RETRY_INTERVAL_MS. Inferred value: "yarn.resourcemanager.""zk-""retry-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_ZK_RETRY_INTERVAL_MS
+Callsite No. 37: 
+Content: confCopy.get(YarnConfiguration.FS_NODE_LABELS_STORE_RETRY_POLICY_SPEC,YarnConfiguration.DEFAULT_FS_NODE_LABELS_STORE_RETRY_POLICY_SPEC)
+Parameter: YarnConfiguration.FS_NODE_LABELS_STORE_RETRY_POLICY_SPEC. Inferred value: "yarn.""node-labels.""fs-store.retry-policy-spec"
+Parameter: YarnConfiguration.DEFAULT_FS_NODE_LABELS_STORE_RETRY_POLICY_SPEC. Inferred value: "2000, 500"
+Callsite No. 38: 
+Content: conf.getBoolean(CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,false)
+Parameter: CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION
+Parameter: false
+Callsite No. 39: 
+Content: conf.get(YarnConfiguration.NM_REMOTE_APP_LOG_DIR,YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR)
+Parameter: YarnConfiguration.NM_REMOTE_APP_LOG_DIR. Inferred value: "yarn.nodemanager.""remote-app-log-dir"
+Parameter: YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR. Inferred value: "/tmp/logs"
+Callsite No. 40: 
+Content: conf.getBoolean(FairSchedulerConfiguration.USER_AS_DEFAULT_QUEUE,FairSchedulerConfiguration.DEFAULT_USER_AS_DEFAULT_QUEUE)
+Parameter: FairSchedulerConfiguration.USER_AS_DEFAULT_QUEUE. Inferred value: "yarn.scheduler.fair.""user-as-default-queue"
+Parameter: FairSchedulerConfiguration.DEFAULT_USER_AS_DEFAULT_QUEUE
+Callsite No. 41: 
+Content: conf.get(YarnConfiguration.SHARED_CACHE_ROOT,YarnConfiguration.DEFAULT_SHARED_CACHE_ROOT)
+Parameter: YarnConfiguration.SHARED_CACHE_ROOT. Inferred value: "yarn.sharedcache.""root-dir"
+Parameter: YarnConfiguration.DEFAULT_SHARED_CACHE_ROOT. Inferred value: "/sharedcache"
+Callsite No. 42: 
+Content: conf.getInt(NM_LOG_AGGREGATION_NUM_LOG_FILES_SIZE_PER_APP,DEFAULT_NM_LOG_AGGREGATION_NUM_LOG_FILES_SIZE_PER_APP)
+Parameter: NM_LOG_AGGREGATION_NUM_LOG_FILES_SIZE_PER_APP. Inferred value: "yarn.nodemanager.""log-aggregation.num-log-files-per-app"
+Parameter: DEFAULT_NM_LOG_AGGREGATION_NUM_LOG_FILES_SIZE_PER_APP
+Callsite No. 43: 
+Content: conf.getBoolean(YarnConfiguration.TIMELINE_SERVICE_ENABLED,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ENABLED)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_ENABLED. Inferred value: "yarn.""timeline-service.""enabled"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ENABLED
+Callsite No. 44: 
+Content: conf.getInt(YarnConfiguration.RM_SYSTEM_METRICS_PUBLISHER_DISPATCHER_POOL_SIZE,YarnConfiguration.DEFAULT_RM_SYSTEM_METRICS_PUBLISHER_DISPATCHER_POOL_SIZE)
+Parameter: YarnConfiguration.RM_SYSTEM_METRICS_PUBLISHER_DISPATCHER_POOL_SIZE. Inferred value: "yarn.resourcemanager.""system-metrics-publisher.dispatcher.pool-size"
+Parameter: YarnConfiguration.DEFAULT_RM_SYSTEM_METRICS_PUBLISHER_DISPATCHER_POOL_SIZE
+Callsite No. 45: 
+Content: conf.getBoolean(YarnConfiguration.NM_LINUX_CONTAINER_CGROUPS_MOUNT,false)
+Parameter: YarnConfiguration.
+            NM_LINUX_CONTAINER_CGROUPS_MOUNT. Inferred value: "yarn.nodemanager.""linux-container-executor.cgroups.mount"
+Parameter: false
+Callsite No. 46: 
+Content: conf.get(YarnConfiguration.YARN_ADMIN_ACL,YarnConfiguration.DEFAULT_YARN_ADMIN_ACL)
+Parameter: YarnConfiguration.YARN_ADMIN_ACL. Inferred value: "yarn.""admin.acl"
+Parameter: YarnConfiguration.DEFAULT_YARN_ADMIN_ACL. Inferred value: "*"
+Callsite No. 47: 
+Content: conf.getClass(YarnConfiguration.RM_STORE,MemoryRMStateStore.class,RMStateStore.class)
+Parameter: YarnConfiguration.RM_STORE. Inferred value: "yarn.resourcemanager.""store.class"
+Parameter: MemoryRMStateStore.class
+Parameter: RMStateStore.class
+Callsite No. 48: 
+Content: conf.getLong(YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS,YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS)
+Parameter: YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS. Inferred value: "yarn.""nm.liveness-monitor.expiry-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS
+Callsite No. 49: 
+Content: conf.getClassByName(agentClassName)
+Parameter: agentClassName
+Callsite No. 50: 
+Content: conf.get(YarnConfiguration.IPC_SERVER_FACTORY_CLASS,YarnConfiguration.DEFAULT_IPC_SERVER_FACTORY_CLASS)
+Parameter: YarnConfiguration.IPC_SERVER_FACTORY_CLASS. Inferred value: "yarn.""ipc.""server.factory.class"
+Parameter: YarnConfiguration.DEFAULT_IPC_SERVER_FACTORY_CLASS. Inferred value: "org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl"
+Callsite No. 51: 
+Content: conf.getInt(YarnConfiguration.NM_CONTAINER_EXECUTOR_SCHED_PRIORITY,YarnConfiguration.DEFAULT_NM_CONTAINER_EXECUTOR_SCHED_PRIORITY)
+Parameter: YarnConfiguration.NM_CONTAINER_EXECUTOR_SCHED_PRIORITY. Inferred value: "yarn.nodemanager.""container-executor.os.sched.priority.adjustment"
+Parameter: YarnConfiguration.DEFAULT_NM_CONTAINER_EXECUTOR_SCHED_PRIORITY
+Callsite No. 52: 
+Content: conf.getSocketAddr(YarnConfiguration.TIMELINE_SERVICE_WEBAPP_HTTPS_ADDRESS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_HTTPS_ADDRESS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_HTTPS_PORT)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_WEBAPP_HTTPS_ADDRESS. Inferred value: "yarn.""timeline-service.""webapp.https.address"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_HTTPS_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_HTTPS_PORT
+Callsite No. 53: 
+Content: conf.getLong(YarnConfiguration.TIMELINE_SERVICE_LEVELDB_TTL_INTERVAL_MS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_TTL_INTERVAL_MS)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_LEVELDB_TTL_INTERVAL_MS. Inferred value: "yarn.""timeline-service.""leveldb-timeline-store.""ttl-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_TTL_INTERVAL_MS
+Callsite No. 54: 
+Content: conf.get(YarnConfiguration.RM_WEBAPP_HTTPS_ADDRESS,YarnConfiguration.DEFAULT_RM_WEBAPP_HTTPS_ADDRESS)
+Parameter: YarnConfiguration.RM_WEBAPP_HTTPS_ADDRESS. Inferred value: "yarn.resourcemanager.""webapp.https.address"
+Parameter: YarnConfiguration.DEFAULT_RM_WEBAPP_HTTPS_ADDRESS
+Callsite No. 55: 
+Content: conf.getBoolean(YarnConfiguration.PROCFS_USE_SMAPS_BASED_RSS_ENABLED,YarnConfiguration.DEFAULT_PROCFS_USE_SMAPS_BASED_RSS_ENABLED)
+Parameter: YarnConfiguration.PROCFS_USE_SMAPS_BASED_RSS_ENABLED. Inferred value: "yarn.nodemanager.""container-monitor.procfs-tree.smaps-based-rss.enabled"
+Parameter: YarnConfiguration.DEFAULT_PROCFS_USE_SMAPS_BASED_RSS_ENABLED
+Callsite No. 56: 
+Content: conf.getBoolean(YarnConfiguration.RM_RESERVATION_SYSTEM_ENABLE,YarnConfiguration.DEFAULT_RM_RESERVATION_SYSTEM_ENABLE)
+Parameter: YarnConfiguration.RM_RESERVATION_SYSTEM_ENABLE. Inferred value: "yarn.resourcemanager.""reservation-system.enable"
+Parameter: YarnConfiguration.DEFAULT_RM_RESERVATION_SYSTEM_ENABLE
+Callsite No. 57: 
+Content: conf.getInt(YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_MB,YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_MB)
+Parameter: YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_MB. Inferred value: "yarn.""scheduler.maximum-allocation-mb"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_MB
+Callsite No. 58: 
+Content: conf.getInt(YarnConfiguration.IN_MEMORY_CHECK_PERIOD_MINS,YarnConfiguration.DEFAULT_IN_MEMORY_CHECK_PERIOD_MINS)
+Parameter: YarnConfiguration.IN_MEMORY_CHECK_PERIOD_MINS. Inferred value: "yarn.sharedcache.""store.""in-memory.""check-period-mins"
+Parameter: YarnConfiguration.DEFAULT_IN_MEMORY_CHECK_PERIOD_MINS
+Callsite No. 59: 
+Content: conf.get(YarnConfiguration.SHARED_CACHE_ROOT,YarnConfiguration.DEFAULT_SHARED_CACHE_ROOT)
+Parameter: YarnConfiguration.SHARED_CACHE_ROOT. Inferred value: "yarn.sharedcache.""root-dir"
+Parameter: YarnConfiguration.DEFAULT_SHARED_CACHE_ROOT. Inferred value: "/sharedcache"
+Callsite No. 60: 
+Content: conf.getStrings(YarnConfiguration.NM_HEALTH_CHECK_SCRIPT_OPTS,newString[]{})
+Parameter: YarnConfiguration.NM_HEALTH_CHECK_SCRIPT_OPTS. Inferred value: "yarn.nodemanager.""health-checker.script.opts"
+Parameter: new String[] {}
+Callsite No. 61: 
+Content: conf.getBoolean(YarnConfiguration.AUTO_FAILOVER_EMBEDDED,YarnConfiguration.DEFAULT_AUTO_FAILOVER_EMBEDDED)
+Parameter: YarnConfiguration.AUTO_FAILOVER_EMBEDDED. Inferred value: "yarn.resourcemanager.""ha.""automatic-failover.""embedded"
+Parameter: YarnConfiguration.DEFAULT_AUTO_FAILOVER_EMBEDDED
+Callsite No. 62: 
+Content: conf.get(YarnConfiguration.NM_ENV_WHITELIST,YarnConfiguration.DEFAULT_NM_ENV_WHITELIST)
+Parameter: YarnConfiguration.NM_ENV_WHITELIST. Inferred value: "yarn.nodemanager.""env-whitelist"
+Parameter: YarnConfiguration.DEFAULT_NM_ENV_WHITELIST
+Callsite No. 63: 
+Content: conf.get(YarnConfiguration.APPLICATION_HISTORY_STORE)
+Parameter: YarnConfiguration.APPLICATION_HISTORY_STORE. Inferred value: "yarn.""timeline-service.""generic-application-history.""store-class"
+Callsite No. 64: 
+Content: conf.get(YarnConfiguration.SCM_WEBAPP_ADDRESS,YarnConfiguration.DEFAULT_SCM_WEBAPP_ADDRESS)
+Parameter: YarnConfiguration.SCM_WEBAPP_ADDRESS. Inferred value: "yarn.sharedcache.""webapp.address"
+Parameter: YarnConfiguration.DEFAULT_SCM_WEBAPP_ADDRESS
+Callsite No. 65: 
+Content: conf.getInt(YarnConfiguration.RM_CLIENT_THREAD_COUNT,YarnConfiguration.DEFAULT_RM_CLIENT_THREAD_COUNT)
+Parameter: YarnConfiguration.RM_CLIENT_THREAD_COUNT. Inferred value: "yarn.resourcemanager.""client.thread-count"
+Parameter: YarnConfiguration.DEFAULT_RM_CLIENT_THREAD_COUNT
+Callsite No. 66: 
+Content: sslConf.get("ssl.server.keystore.type","jks")
+Parameter: "ssl.server.keystore.type". Inferred value: "ssl.server.keystore.type"
+Parameter: "jks". Inferred value: "jks"
+Callsite No. 67: 
+Content: conf.getInt(YarnConfiguration.SHARED_CACHE_NM_UPLOADER_REPLICATION_FACTOR,YarnConfiguration.DEFAULT_SHARED_CACHE_NM_UPLOADER_REPLICATION_FACTOR)
+Parameter: YarnConfiguration.SHARED_CACHE_NM_UPLOADER_REPLICATION_FACTOR. Inferred value: "yarn.sharedcache.""nm.uploader.replication.factor"
+Parameter: YarnConfiguration.DEFAULT_SHARED_CACHE_NM_UPLOADER_REPLICATION_FACTOR
+Callsite No. 68: 
+Content: conf.getBoolean(Dispatcher.DISPATCHER_EXIT_ON_ERROR_KEY,Dispatcher.DEFAULT_DISPATCHER_EXIT_ON_ERROR)
+Parameter: Dispatcher.DISPATCHER_EXIT_ON_ERROR_KEY. Inferred value: "yarn.dispatcher.exit-on-error"
+Parameter: Dispatcher.DEFAULT_DISPATCHER_EXIT_ON_ERROR
+Callsite No. 69: 
+Content: conf.getBoolean(YarnConfiguration.IS_MINI_YARN_CLUSTER,false)
+Parameter: YarnConfiguration.IS_MINI_YARN_CLUSTER. Inferred value: "yarn.""is.minicluster"
+Parameter: false
+Callsite No. 70: 
+Content: conf.get(spnegoKeytabKey)
+Parameter: spnegoKeytabKey
+Callsite No. 71: 
+Content: conf.get(YarnConfiguration.RM_PRINCIPAL)
+Parameter: YarnConfiguration.RM_PRINCIPAL. Inferred value: "yarn.resourcemanager.""principal"
+Callsite No. 72: 
+Content: conf.get(YarnConfiguration.IPC_CLIENT_FACTORY_CLASS,YarnConfiguration.DEFAULT_IPC_CLIENT_FACTORY_CLASS)
+Parameter: YarnConfiguration.IPC_CLIENT_FACTORY_CLASS. Inferred value: "yarn.""ipc.""client.factory.class"
+Parameter: YarnConfiguration.DEFAULT_IPC_CLIENT_FACTORY_CLASS. Inferred value: "org.apache.hadoop.yarn.factories.impl.pb.RpcClientFactoryPBImpl"
+Callsite No. 73: 
+Content: conf.getLong(YarnConfiguration.NM_LOG_AGGREGATION_ROLL_MONITORING_INTERVAL_SECONDS,YarnConfiguration.DEFAULT_NM_LOG_AGGREGATION_ROLL_MONITORING_INTERVAL_SECONDS)
+Parameter: YarnConfiguration
+        .NM_LOG_AGGREGATION_ROLL_MONITORING_INTERVAL_SECONDS. Inferred value: "yarn.nodemanager.""log-aggregation.roll-monitoring-interval-seconds"
+Parameter: YarnConfiguration
+        .DEFAULT_NM_LOG_AGGREGATION_ROLL_MONITORING_INTERVAL_SECONDS
+Callsite No. 74: 
+Content: conf.getBoolean(YarnConfiguration.LOG_AGGREGATION_ENABLED,YarnConfiguration.DEFAULT_LOG_AGGREGATION_ENABLED)
+Parameter: YarnConfiguration.LOG_AGGREGATION_ENABLED. Inferred value: "yarn.""log-aggregation-enable"
+Parameter: YarnConfiguration.DEFAULT_LOG_AGGREGATION_ENABLED
+Callsite No. 75: 
+Content: conf.get(YarnConfiguration.RM_RESERVATION_SYSTEM_CLASS,AbstractReservationSystem.getDefaultReservationSystem(scheduler))
+Parameter: YarnConfiguration.RM_RESERVATION_SYSTEM_CLASS. Inferred value: "yarn.resourcemanager.""reservation-system.class"
+Parameter: AbstractReservationSystem.getDefaultReservationSystem(scheduler)
+Callsite No. 76: 
+Content: conf.getLong(YarnConfiguration.RM_DELAYED_DELEGATION_TOKEN_REMOVAL_INTERVAL_MS,YarnConfiguration.DEFAULT_RM_DELAYED_DELEGATION_TOKEN_REMOVAL_INTERVAL_MS)
+Parameter: YarnConfiguration.RM_DELAYED_DELEGATION_TOKEN_REMOVAL_INTERVAL_MS. Inferred value: "yarn.resourcemanager.""delayed.delegation-token.removal-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_DELAYED_DELEGATION_TOKEN_REMOVAL_INTERVAL_MS
+Callsite No. 77: 
+Content: conf.get(CommonConfigurationKeys.HADOOP_SECURITY_AUTHENTICATION)
+Parameter: CommonConfigurationKeys.HADOOP_SECURITY_AUTHENTICATION
+Callsite No. 78: 
+Content: conf.get(YarnConfiguration.TIMELINE_SERVICE_LEVELDB_PATH)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_LEVELDB_PATH. Inferred value: "yarn.""timeline-service.""leveldb-timeline-store.""path"
+Callsite No. 79: 
+Content: config.getFloat(TOTAL_PREEMPTION_PER_ROUND,(float)0.1)
+Parameter: TOTAL_PREEMPTION_PER_ROUND. Inferred value: "yarn.resourcemanager.monitor.capacity.preemption.total_preemption_per_round"
+Parameter: (float) 0.1
+Callsite No. 80: 
+Content: conf.get(YarnConfiguration.NM_ADMIN_USER_ENV,YarnConfiguration.DEFAULT_NM_ADMIN_USER_ENV)
+Parameter: YarnConfiguration.NM_ADMIN_USER_ENV. Inferred value: "yarn.nodemanager.""admin-env"
+Parameter: YarnConfiguration.DEFAULT_NM_ADMIN_USER_ENV. Inferred value: "MALLOC_ARENA_MAX=$MALLOC_ARENA_MAX"
+Callsite No. 81: 
+Content: conf.getInt(YarnConfiguration.FS_RM_STATE_STORE_NUM_RETRIES,YarnConfiguration.DEFAULT_FS_RM_STATE_STORE_NUM_RETRIES)
+Parameter: YarnConfiguration.FS_RM_STATE_STORE_NUM_RETRIES. Inferred value: "yarn.resourcemanager.""fs.state-store.num-retries"
+Parameter: YarnConfiguration.DEFAULT_FS_RM_STATE_STORE_NUM_RETRIES
+Callsite No. 82: 
+Content: conf.getInt(YarnConfiguration.RM_RESOURCE_TRACKER_CLIENT_THREAD_COUNT,YarnConfiguration.DEFAULT_RM_RESOURCE_TRACKER_CLIENT_THREAD_COUNT)
+Parameter: YarnConfiguration.RM_RESOURCE_TRACKER_CLIENT_THREAD_COUNT. Inferred value: "yarn.resourcemanager.""resource-tracker.client.thread-count"
+Parameter: YarnConfiguration.DEFAULT_RM_RESOURCE_TRACKER_CLIENT_THREAD_COUNT
+Callsite No. 83: 
+Content: conf.getLong(YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS,YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS)
+Parameter: YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS. Inferred value: "yarn.""nm.liveness-monitor.expiry-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS
+Callsite No. 84: 
+Content: conf.getBoolean(YarnConfiguration.NM_WINDOWS_CONTAINER_MEMORY_LIMIT_ENABLED,YarnConfiguration.DEFAULT_NM_WINDOWS_CONTAINER_MEMORY_LIMIT_ENABLED)
+Parameter: YarnConfiguration.NM_WINDOWS_CONTAINER_MEMORY_LIMIT_ENABLED. Inferred value: "yarn.nodemanager.""windows-container.memory-limit.enabled"
+Parameter: YarnConfiguration.DEFAULT_NM_WINDOWS_CONTAINER_MEMORY_LIMIT_ENABLED
+Callsite No. 85: 
+Content: conf.getLong(RM_SYSTEM_CREDENTIALS_VALID_TIME_REMAINING,DEFAULT_RM_SYSTEM_CREDENTIALS_VALID_TIME_REMAINING)
+Parameter: RM_SYSTEM_CREDENTIALS_VALID_TIME_REMAINING. Inferred value: "yarn.resourcemanager.""system-credentials.valid-time-remaining"
+Parameter: DEFAULT_RM_SYSTEM_CREDENTIALS_VALID_TIME_REMAINING
+Callsite No. 86: 
+Content: conf.getBoolean(YarnConfiguration.YARN_ACL_ENABLE,YarnConfiguration.DEFAULT_YARN_ACL_ENABLE)
+Parameter: YarnConfiguration.YARN_ACL_ENABLE. Inferred value: "yarn.""acl.enable"
+Parameter: YarnConfiguration.DEFAULT_YARN_ACL_ENABLE
+Callsite No. 87: 
+Content: conf.getInt(YarnConfiguration.NM_LOG_DELETION_THREADS_COUNT,YarnConfiguration.DEFAULT_NM_LOG_DELETE_THREAD_COUNT)
+Parameter: YarnConfiguration.NM_LOG_DELETION_THREADS_COUNT. Inferred value: "yarn.nodemanager.""log.deletion-threads-count"
+Parameter: YarnConfiguration.DEFAULT_NM_LOG_DELETE_THREAD_COUNT
+Callsite No. 88: 
+Content: conf.get(YarnConfiguration.RM_METRICS_RUNTIME_BUCKETS,YarnConfiguration.DEFAULT_RM_METRICS_RUNTIME_BUCKETS)
+Parameter: YarnConfiguration.RM_METRICS_RUNTIME_BUCKETS. Inferred value: "yarn.resourcemanager.""metrics.runtime.buckets"
+Parameter: YarnConfiguration.DEFAULT_RM_METRICS_RUNTIME_BUCKETS. Inferred value: "60,300,1440"
+Callsite No. 89: 
+Content: conf.getTrimmed(confKey)
+Parameter: confKey
+Callsite No. 90: 
+Content: conf.get(YarnConfiguration.RM_ZK_ADDRESS)
+Parameter: YarnConfiguration.RM_ZK_ADDRESS. Inferred value: "yarn.resourcemanager.""zk-""address"
+Callsite No. 91: 
+Content: conf.get(YarnConfiguration.NM_LOG_AGG_COMPRESSION_TYPE,YarnConfiguration.DEFAULT_NM_LOG_AGG_COMPRESSION_TYPE)
+Parameter: YarnConfiguration.NM_LOG_AGG_COMPRESSION_TYPE. Inferred value: "yarn.nodemanager.""log-aggregation.compression-type"
+Parameter: YarnConfiguration.DEFAULT_NM_LOG_AGG_COMPRESSION_TYPE. Inferred value: "none"
+Callsite No. 92: 
+Content: conf.get(propName)
+Parameter: propName
+Callsite No. 93: 
+Content: conf.getInt(CommonConfigurationKeys.HA_FC_ELECTOR_ZK_OP_RETRIES_KEY,CommonConfigurationKeys.HA_FC_ELECTOR_ZK_OP_RETRIES_DEFAULT)
+Parameter: CommonConfigurationKeys.HA_FC_ELECTOR_ZK_OP_RETRIES_KEY
+Parameter: CommonConfigurationKeys.HA_FC_ELECTOR_ZK_OP_RETRIES_DEFAULT
+Callsite No. 94: 
+Content: conf.get(YarnConfiguration.RM_CLUSTER_ID)
+Parameter: YarnConfiguration.RM_CLUSTER_ID. Inferred value: "yarn.resourcemanager.""cluster-id"
+Callsite No. 95: 
+Content: get(CommonConfigurationKeys.HADOOP_SECURITY_AUTHENTICATION)
+Parameter: CommonConfigurationKeys.HADOOP_SECURITY_AUTHENTICATION
+Callsite No. 96: 
+Content: conf.getSocketAddr(YarnConfiguration.SCM_UPLOADER_SERVER_ADDRESS,YarnConfiguration.DEFAULT_SCM_UPLOADER_SERVER_ADDRESS,YarnConfiguration.DEFAULT_SCM_UPLOADER_SERVER_PORT)
+Parameter: YarnConfiguration.SCM_UPLOADER_SERVER_ADDRESS. Inferred value: "yarn.sharedcache.""uploader.server.address"
+Parameter: YarnConfiguration.DEFAULT_SCM_UPLOADER_SERVER_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_SCM_UPLOADER_SERVER_PORT
+Callsite No. 97: 
+Content: conf.getInt(YarnConfiguration.NM_DELETE_THREAD_COUNT,YarnConfiguration.DEFAULT_NM_DELETE_THREAD_COUNT)
+Parameter: YarnConfiguration.NM_DELETE_THREAD_COUNT. Inferred value: "yarn.nodemanager.""delete.thread-count"
+Parameter: YarnConfiguration.DEFAULT_NM_DELETE_THREAD_COUNT
+Callsite No. 98: 
+Content: conf.getTrimmedStrings(YarnConfiguration.NM_LOG_DIRS)
+Parameter: YarnConfiguration.NM_LOG_DIRS. Inferred value: "yarn.nodemanager.""log-dirs"
+Callsite No. 99: 
+Content: conf.getBoolean(YarnConfiguration.LOG_AGGREGATION_ENABLED,YarnConfiguration.DEFAULT_LOG_AGGREGATION_ENABLED)
+Parameter: YarnConfiguration.LOG_AGGREGATION_ENABLED. Inferred value: "yarn.""log-aggregation-enable"
+Parameter: YarnConfiguration.DEFAULT_LOG_AGGREGATION_ENABLED
+Callsite No. 100: 
+Content: getClient(protocol,1,addr,conf)
+Parameter: protocol
+Parameter: 1
+Parameter: addr
+Parameter: conf
+Callsite No. 101: 
+Content: conf.getBoolean(YarnConfiguration.TIMELINE_SERVICE_TTL_ENABLE,true)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_TTL_ENABLE. Inferred value: "yarn.""timeline-service.""ttl-enable"
+Parameter: true
+Callsite No. 102: 
+Content: conf.getClass(YarnConfiguration.CLIENT_FAILOVER_PROXY_PROVIDER,defaultProviderClass,RMFailoverProxyProvider.class)
+Parameter: YarnConfiguration.CLIENT_FAILOVER_PROXY_PROVIDER. Inferred value: "yarn.""client.failover-""proxy-provider"
+Parameter: defaultProviderClass
+Parameter: RMFailoverProxyProvider.class
+Callsite No. 103: 
+Content: getReservationContinueLook()
+Callsite No. 104: 
+Content: conf.getInt(YarnConfiguration.NM_VCORES,YarnConfiguration.DEFAULT_NM_VCORES)
+Parameter: YarnConfiguration.NM_VCORES. Inferred value: "yarn.nodemanager.""resource.cpu-vcores"
+Parameter: YarnConfiguration.DEFAULT_NM_VCORES
+Callsite No. 105: 
+Content: conf.getInt(YarnConfiguration.NM_CLIENT_ASYNC_THREAD_POOL_MAX_SIZE,YarnConfiguration.DEFAULT_NM_CLIENT_ASYNC_THREAD_POOL_MAX_SIZE)
+Parameter: YarnConfiguration.NM_CLIENT_ASYNC_THREAD_POOL_MAX_SIZE. Inferred value: "yarn.""client.nodemanager-client-async.thread-pool-max-size"
+Parameter: YarnConfiguration.DEFAULT_NM_CLIENT_ASYNC_THREAD_POOL_MAX_SIZE
+Callsite No. 106: 
+Content: getAccessibleNodeLabels(getQueuePath())
+Parameter: getQueuePath()
+Callsite No. 107: 
+Content: conf.getBoolean(YarnConfiguration.TIMELINE_SERVICE_HTTP_CROSS_ORIGIN_ENABLED,YarnConfiguration.TIMELINE_SERVICE_HTTP_CROSS_ORIGIN_ENABLED_DEFAULT)
+Parameter: YarnConfiguration
+          .TIMELINE_SERVICE_HTTP_CROSS_ORIGIN_ENABLED. Inferred value: "yarn.""timeline-service.""http-cross-origin.enabled"
+Parameter: YarnConfiguration
+              .TIMELINE_SERVICE_HTTP_CROSS_ORIGIN_ENABLED_DEFAULT
+Callsite No. 108: 
+Content: conf.get(YarnConfiguration.APPLICATION_HISTORY_STORE,NullApplicationHistoryStore.class.getName())
+Parameter: YarnConfiguration.APPLICATION_HISTORY_STORE. Inferred value: "yarn.""timeline-service.""generic-application-history.""store-class"
+Parameter: NullApplicationHistoryStore.class.getName()
+Callsite No. 109: 
+Content: get(YarnConfiguration.NM_DOCKER_CONTAINER_EXECUTOR_EXEC_NAME,YarnConfiguration.NM_DEFAULT_DOCKER_CONTAINER_EXECUTOR_EXEC_NAME)
+Parameter: YarnConfiguration.NM_DOCKER_CONTAINER_EXECUTOR_EXEC_NAME. Inferred value: "yarn.nodemanager.""docker-container-executor.exec-name"
+Parameter: YarnConfiguration.NM_DEFAULT_DOCKER_CONTAINER_EXECUTOR_EXEC_NAME. Inferred value: "/usr/bin/docker"
+Callsite No. 110: 
+Content: conf.getTrimmedStrings(YarnConfiguration.NM_LOCAL_DIRS)
+Parameter: YarnConfiguration.NM_LOCAL_DIRS. Inferred value: "yarn.nodemanager.""local-dirs"
+Callsite No. 111: 
+Content: conf.getBoolean(Dispatcher.DISPATCHER_EXIT_ON_ERROR_KEY,Dispatcher.DEFAULT_DISPATCHER_EXIT_ON_ERROR)
+Parameter: Dispatcher.DISPATCHER_EXIT_ON_ERROR_KEY. Inferred value: "yarn.dispatcher.exit-on-error"
+Parameter: Dispatcher.DEFAULT_DISPATCHER_EXIT_ON_ERROR
+Callsite No. 112: 
+Content: conf.get(YarnConfiguration.NM_USER_HOME_DIR,YarnConfiguration.DEFAULT_NM_USER_HOME_DIR)
+Parameter: YarnConfiguration.NM_USER_HOME_DIR. Inferred value: "yarn.nodemanager.""user-home-dir"
+Parameter: YarnConfiguration.DEFAULT_NM_USER_HOME_DIR. Inferred value: "/home/"
+Callsite No. 113: 
+Content: conf.getInt(YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS,YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS)
+Parameter: YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS. Inferred value: "yarn.""nm.liveness-monitor.expiry-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS
+Callsite No. 114: 
+Content: conf.getInstances(YarnConfiguration.RM_SCHEDULER_MONITOR_POLICIES,SchedulingEditPolicy.class)
+Parameter: YarnConfiguration.RM_SCHEDULER_MONITOR_POLICIES. Inferred value: "yarn.resourcemanager.""scheduler.monitor.policies"
+Parameter: SchedulingEditPolicy.class
+Callsite No. 115: 
+Content: conf.getLong(YarnConfiguration.RESOURCEMANAGER_CONNECT_RETRY_INTERVAL_MS,YarnConfiguration.DEFAULT_RESOURCEMANAGER_CONNECT_RETRY_INTERVAL_MS)
+Parameter: YarnConfiguration.RESOURCEMANAGER_CONNECT_RETRY_INTERVAL_MS. Inferred value: "yarn.resourcemanager.""connect.retry-interval.ms"
+Parameter: YarnConfiguration
+                .DEFAULT_RESOURCEMANAGER_CONNECT_RETRY_INTERVAL_MS
+Callsite No. 116: 
+Content: conf.getSocketAddr(rmId==null?YarnConfiguration.RM_WEBAPP_HTTPS_ADDRESS:HAUtil.addSuffix(YarnConfiguration.RM_WEBAPP_HTTPS_ADDRESS,rmId),YarnConfiguration.DEFAULT_RM_WEBAPP_HTTPS_ADDRESS,YarnConfiguration.DEFAULT_RM_WEBAPP_HTTPS_PORT)
+Parameter: rmId == null
+                  ? YarnConfiguration.RM_WEBAPP_HTTPS_ADDRESS
+                  : HAUtil.addSuffix(
+                  YarnConfiguration.RM_WEBAPP_HTTPS_ADDRESS, rmId)
+Parameter: YarnConfiguration.DEFAULT_RM_WEBAPP_HTTPS_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_RM_WEBAPP_HTTPS_PORT
+Callsite No. 117: 
+Content: conf.getSocketAddr(YarnConfiguration.RM_ADDRESS,YarnConfiguration.DEFAULT_RM_ADDRESS,YarnConfiguration.DEFAULT_RM_PORT)
+Parameter: YarnConfiguration.RM_ADDRESS. Inferred value: "yarn.resourcemanager.""address"
+Parameter: YarnConfiguration.DEFAULT_RM_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_RM_PORT
+Callsite No. 118: 
+Content: conf.getInt(YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_VCORES,YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_VCORES)
+Parameter: YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_VCORES. Inferred value: "yarn.""scheduler.minimum-allocation-vcores"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_VCORES
+Callsite No. 119: 
+Content: conf.getLong(connectRetryIntervalStr,defRetryInterval)
+Parameter: connectRetryIntervalStr
+Parameter: defRetryInterval
+Callsite No. 120: 
+Content: conf.getLong(YarnConfiguration.LOG_AGGREGATION_RETAIN_CHECK_INTERVAL_SECONDS,YarnConfiguration.DEFAULT_LOG_AGGREGATION_RETAIN_CHECK_INTERVAL_SECONDS)
+Parameter: YarnConfiguration.LOG_AGGREGATION_RETAIN_CHECK_INTERVAL_SECONDS. Inferred value: "yarn.""log-aggregation.retain-check-interval-seconds"
+Parameter: YarnConfiguration.DEFAULT_LOG_AGGREGATION_RETAIN_CHECK_INTERVAL_SECONDS
+Callsite No. 121: 
+Content: conf.get(YarnConfiguration.PROXY_ADDRESS)
+Parameter: YarnConfiguration.PROXY_ADDRESS. Inferred value: "yarn.web-proxy.""address"
+Callsite No. 122: 
+Content: conf.get(YarnConfiguration.DEFAULT_RM_NODES_EXCLUDE_FILE_PATH)
+Parameter: YarnConfiguration.DEFAULT_RM_NODES_EXCLUDE_FILE_PATH. Inferred value: ""
+Callsite No. 123: 
+Content: conf.get(YarnConfiguration.RM_NODES_EXCLUDE_FILE_PATH,YarnConfiguration.DEFAULT_RM_NODES_EXCLUDE_FILE_PATH)
+Parameter: YarnConfiguration.RM_NODES_EXCLUDE_FILE_PATH. Inferred value: "yarn.resourcemanager.""nodes.exclude-path"
+Parameter: YarnConfiguration.DEFAULT_RM_NODES_EXCLUDE_FILE_PATH. Inferred value: ""
+Callsite No. 124: 
+Content: conf.getValByRegex(PREFIX)
+Parameter: PREFIX. Inferred value: "yarn.timeline-service.http-cross-origin."
+Callsite No. 125: 
+Content: this.conf.getPreemptionInterval()
+Callsite No. 126: 
+Content: conf.getSocketAddr(YarnConfiguration.SCM_CLIENT_SERVER_ADDRESS,YarnConfiguration.DEFAULT_SCM_CLIENT_SERVER_ADDRESS,YarnConfiguration.DEFAULT_SCM_CLIENT_SERVER_PORT)
+Parameter: YarnConfiguration.SCM_CLIENT_SERVER_ADDRESS. Inferred value: "yarn.sharedcache.""client-server.address"
+Parameter: YarnConfiguration.DEFAULT_SCM_CLIENT_SERVER_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_SCM_CLIENT_SERVER_PORT
+Callsite No. 127: 
+Content: conf.get(YarnConfiguration.NM_LINUX_CONTAINER_EXECUTOR_PATH,defaultPath)
+Parameter: YarnConfiguration.NM_LINUX_CONTAINER_EXECUTOR_PATH. Inferred value: "yarn.nodemanager.""linux-container-executor.path"
+Parameter: defaultPath
+Callsite No. 128: 
+Content: conf.getInt(YarnConfiguration.TIMELINE_SERVICE_CLIENT_MAX_RETRIES,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_MAX_RETRIES)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_CLIENT_MAX_RETRIES. Inferred value: "yarn.""timeline-service.""client.""max-retries"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_MAX_RETRIES
+Callsite No. 129: 
+Content: conf.getFloat(YarnConfiguration.NM_VMEM_PMEM_RATIO,YarnConfiguration.DEFAULT_NM_VMEM_PMEM_RATIO)
+Parameter: YarnConfiguration.NM_VMEM_PMEM_RATIO. Inferred value: "yarn.nodemanager.""vmem-pmem-ratio"
+Parameter: YarnConfiguration.DEFAULT_NM_VMEM_PMEM_RATIO
+Callsite No. 130: 
+Content: conf.get("hadoop.tmp.dir")
+Parameter: "hadoop.tmp.dir". Inferred value: "hadoop.tmp.dir"
+Callsite No. 131: 
+Content: conf.getInt(YarnConfiguration.TIMELINE_SERVICE_HANDLER_THREAD_COUNT,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_THREAD_COUNT)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_HANDLER_THREAD_COUNT. Inferred value: "yarn.""timeline-service.""handler-thread-count"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_THREAD_COUNT
+Callsite No. 132: 
+Content: conf.getLong(YarnConfiguration.NM_LOCALIZER_CACHE_TARGET_SIZE_MB,YarnConfiguration.DEFAULT_NM_LOCALIZER_CACHE_TARGET_SIZE_MB)
+Parameter: YarnConfiguration.NM_LOCALIZER_CACHE_TARGET_SIZE_MB. Inferred value: "yarn.nodemanager.""localizer.cache.target-size-mb"
+Parameter: YarnConfiguration.DEFAULT_NM_LOCALIZER_CACHE_TARGET_SIZE_MB
+Callsite No. 133: 
+Content: this.conf.getLocalityDelayNodeMs()
+Callsite No. 134: 
+Content: conf.getInt(YarnConfiguration.RM_HISTORY_WRITER_MULTI_THREADED_DISPATCHER_POOL_SIZE,YarnConfiguration.DEFAULT_RM_HISTORY_WRITER_MULTI_THREADED_DISPATCHER_POOL_SIZE)
+Parameter: YarnConfiguration.RM_HISTORY_WRITER_MULTI_THREADED_DISPATCHER_POOL_SIZE. Inferred value: "yarn.resourcemanager.""history-writer.multi-threaded-dispatcher.pool-size"
+Parameter: YarnConfiguration.DEFAULT_RM_HISTORY_WRITER_MULTI_THREADED_DISPATCHER_POOL_SIZE
+Callsite No. 135: 
+Content: conf.getLong(YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS,YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS)
+Parameter: YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS. Inferred value: "yarn.""nm.liveness-monitor.expiry-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS
+Callsite No. 136: 
+Content: configuration.getAppConfigurationEntry(context)
+Parameter: context
+Callsite No. 137: 
+Content: conf.get(YarnConfiguration.NM_CONTAINER_EXECUTOR_SCHED_PRIORITY)
+Parameter: YarnConfiguration.NM_CONTAINER_EXECUTOR_SCHED_PRIORITY. Inferred value: "yarn.nodemanager.""container-executor.os.sched.priority.adjustment"
+Callsite No. 138: 
+Content: conf.getLong(YarnConfiguration.NM_HEALTH_CHECK_INTERVAL_MS,YarnConfiguration.DEFAULT_NM_HEALTH_CHECK_INTERVAL_MS)
+Parameter: YarnConfiguration.NM_HEALTH_CHECK_INTERVAL_MS. Inferred value: "yarn.nodemanager.""health-checker.interval-ms"
+Parameter: YarnConfiguration.DEFAULT_NM_HEALTH_CHECK_INTERVAL_MS
+Callsite No. 139: 
+Content: conf.getBoolean(YarnConfiguration.RM_SYSTEM_METRICS_PUBLISHER_ENABLED,YarnConfiguration.DEFAULT_RM_SYSTEM_METRICS_PUBLISHER_ENABLED)
+Parameter: YarnConfiguration.RM_SYSTEM_METRICS_PUBLISHER_ENABLED. Inferred value: "yarn.resourcemanager.""system-metrics-publisher.enabled"
+Parameter: YarnConfiguration.DEFAULT_RM_SYSTEM_METRICS_PUBLISHER_ENABLED
+Callsite No. 140: 
+Content: conf.get(YarnConfiguration.NM_CONTAINER_EXECUTOR_SCHED_PRIORITY)
+Parameter: YarnConfiguration.NM_CONTAINER_EXECUTOR_SCHED_PRIORITY. Inferred value: "yarn.nodemanager.""container-executor.os.sched.priority.adjustment"
+Callsite No. 141: 
+Content: conf.get(YarnConfiguration.APPLICATION_HISTORY_STORE)
+Parameter: YarnConfiguration.APPLICATION_HISTORY_STORE. Inferred value: "yarn.""timeline-service.""generic-application-history.""store-class"
+Callsite No. 142: 
+Content: this.conf.getMinimumAllocation()
+Callsite No. 143: 
+Content: this.conf.getLocalityThresholdRack()
+Callsite No. 144: 
+Content: conf.getLong(YarnConfiguration.YARN_CLIENT_APPLICATION_CLIENT_PROTOCOL_POLL_INTERVAL_MS,YarnConfiguration.DEFAULT_YARN_CLIENT_APPLICATION_CLIENT_PROTOCOL_POLL_INTERVAL_MS)
+Parameter: YarnConfiguration.YARN_CLIENT_APPLICATION_CLIENT_PROTOCOL_POLL_INTERVAL_MS. Inferred value: "yarn.""client.application-client-protocol.poll-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_YARN_CLIENT_APPLICATION_CLIENT_PROTOCOL_POLL_INTERVAL_MS
+Callsite No. 145: 
+Content: conf.get(YarnConfiguration.TIMELINE_SERVICE_WEBAPP_ADDRESS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_ADDRESS)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_WEBAPP_ADDRESS. Inferred value: "yarn.""timeline-service.""webapp.address"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_ADDRESS
+Callsite No. 146: 
+Content: conf.get(YarnConfiguration.RM_PRINCIPAL)
+Parameter: YarnConfiguration.RM_PRINCIPAL. Inferred value: "yarn.resourcemanager.""principal"
+Callsite No. 147: 
+Content: conf.get(YarnConfiguration.DEFAULT_RM_NODES_INCLUDE_FILE_PATH)
+Parameter: YarnConfiguration.DEFAULT_RM_NODES_INCLUDE_FILE_PATH. Inferred value: ""
+Callsite No. 148: 
+Content: yarnConf.get(YarnConfiguration.RM_NODES_INCLUDE_FILE_PATH,YarnConfiguration.DEFAULT_RM_NODES_INCLUDE_FILE_PATH)
+Parameter: YarnConfiguration.RM_NODES_INCLUDE_FILE_PATH. Inferred value: "yarn.resourcemanager.""nodes.include-path"
+Parameter: YarnConfiguration.DEFAULT_RM_NODES_INCLUDE_FILE_PATH. Inferred value: ""
+Callsite No. 149: 
+Content: config.getBoolean(YarnConfiguration.YARN_MINICLUSTER_CONTROL_RESOURCE_MONITORING,YarnConfiguration.DEFAULT_YARN_MINICLUSTER_CONTROL_RESOURCE_MONITORING)
+Parameter: YarnConfiguration.YARN_MINICLUSTER_CONTROL_RESOURCE_MONITORING. Inferred value: "yarn.""minicluster.""control-resource-monitoring"
+Parameter: YarnConfiguration.
+              DEFAULT_YARN_MINICLUSTER_CONTROL_RESOURCE_MONITORING
+Callsite No. 150: 
+Content: conf.getBoolean(CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,false)
+Parameter: CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION
+Parameter: false
+Callsite No. 151: 
+Content: conf.getLong(YarnConfiguration.RM_AMRM_TOKEN_MASTER_KEY_ROLLING_INTERVAL_SECS,YarnConfiguration.DEFAULT_RM_AMRM_TOKEN_MASTER_KEY_ROLLING_INTERVAL_SECS)
+Parameter: YarnConfiguration.RM_AMRM_TOKEN_MASTER_KEY_ROLLING_INTERVAL_SECS. Inferred value: "yarn.resourcemanager.""am-rm-tokens.master-key-rolling-interval-secs"
+Parameter: YarnConfiguration.DEFAULT_RM_AMRM_TOKEN_MASTER_KEY_ROLLING_INTERVAL_SECS
+Callsite No. 152: 
+Content: conf.getLong(YarnConfiguration.RM_NM_HEARTBEAT_INTERVAL_MS,YarnConfiguration.DEFAULT_RM_NM_HEARTBEAT_INTERVAL_MS)
+Parameter: YarnConfiguration.RM_NM_HEARTBEAT_INTERVAL_MS. Inferred value: "yarn.resourcemanager.""nodemanagers.heartbeat-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_NM_HEARTBEAT_INTERVAL_MS
+Callsite No. 153: 
+Content: conf.getClassByName(planFollowerPolicyClassName)
+Parameter: planFollowerPolicyClassName
+Callsite No. 154: 
+Content: conf.getLong(YarnConfiguration.RM_DELEGATION_TOKEN_RENEW_INTERVAL_KEY,YarnConfiguration.RM_DELEGATION_TOKEN_RENEW_INTERVAL_DEFAULT)
+Parameter: YarnConfiguration.RM_DELEGATION_TOKEN_RENEW_INTERVAL_KEY. Inferred value: "yarn.resourcemanager.""delegation.token.renew-interval"
+Parameter: YarnConfiguration.RM_DELEGATION_TOKEN_RENEW_INTERVAL_DEFAULT
+Callsite No. 155: 
+Content: conf.get(YarnConfiguration.IPC_RECORD_FACTORY_CLASS,YarnConfiguration.DEFAULT_IPC_RECORD_FACTORY_CLASS)
+Parameter: YarnConfiguration.IPC_RECORD_FACTORY_CLASS. Inferred value: "yarn.""ipc.""record.factory.class"
+Parameter: YarnConfiguration.DEFAULT_IPC_RECORD_FACTORY_CLASS. Inferred value: "org.apache.hadoop.yarn.factories.impl.pb.RecordFactoryPBImpl"
+Callsite No. 156: 
+Content: conf.getBoolean(CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,false)
+Parameter: CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION
+Parameter: false
+Callsite No. 157: 
+Content: conf.getInt(YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_VCORES,YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_VCORES)
+Parameter: YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_VCORES. Inferred value: "yarn.""scheduler.maximum-allocation-vcores"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_VCORES
+Callsite No. 158: 
+Content: conf.getSocketAddr(YarnConfiguration.RM_WEBAPP_HTTPS_ADDRESS,YarnConfiguration.DEFAULT_RM_WEBAPP_HTTPS_ADDRESS,YarnConfiguration.DEFAULT_RM_WEBAPP_HTTPS_PORT)
+Parameter: YarnConfiguration.RM_WEBAPP_HTTPS_ADDRESS. Inferred value: "yarn.resourcemanager.""webapp.https.address"
+Parameter: YarnConfiguration.DEFAULT_RM_WEBAPP_HTTPS_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_RM_WEBAPP_HTTPS_PORT
+Callsite No. 159: 
+Content: conf.getBoolean(NM_LOG_AGGREGATION_DEBUG_ENABLED,DEFAULT_NM_LOG_AGGREGATION_DEBUG_ENABLED)
+Parameter: NM_LOG_AGGREGATION_DEBUG_ENABLED. Inferred value: "yarn.nodemanager.""log-aggregation.debug-enabled"
+Parameter: DEFAULT_NM_LOG_AGGREGATION_DEBUG_ENABLED
+Callsite No. 160: 
+Content: conf.getBoolean(YarnConfiguration.RM_SCHEDULER_ENABLE_MONITORS,YarnConfiguration.DEFAULT_RM_SCHEDULER_ENABLE_MONITORS)
+Parameter: YarnConfiguration.RM_SCHEDULER_ENABLE_MONITORS. Inferred value: "yarn.resourcemanager.""scheduler.monitor.enable"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_ENABLE_MONITORS
+Callsite No. 161: 
+Content: conf.getFloat("mapred.newjobweightbooster.factor",DEFAULT_FACTOR)
+Parameter: "mapred.newjobweightbooster.factor". Inferred value: "mapred.newjobweightbooster.factor"
+Parameter: DEFAULT_FACTOR
+Callsite No. 162: 
+Content: conf.get(YarnConfiguration.RM_LEVELDB_STORE_PATH)
+Parameter: YarnConfiguration.RM_LEVELDB_STORE_PATH. Inferred value: "yarn.resourcemanager.""leveldb-state-store.path"
+Callsite No. 163: 
+Content: this.conf.getLocalityThresholdNode()
+Callsite No. 164: 
+Content: conf.getInt(YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_VCORES,YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_VCORES)
+Parameter: YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_VCORES. Inferred value: "yarn.""scheduler.maximum-allocation-vcores"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_VCORES
+Callsite No. 165: 
+Content: conf.get(YarnConfiguration.IPC_RPC_IMPL)
+Parameter: YarnConfiguration.IPC_RPC_IMPL. Inferred value: "yarn.""ipc.""rpc.class"
+Callsite No. 166: 
+Content: conf.getInt(YarnConfiguration.RM_AM_MAX_ATTEMPTS,YarnConfiguration.DEFAULT_RM_AM_MAX_ATTEMPTS)
+Parameter: YarnConfiguration.RM_AM_MAX_ATTEMPTS. Inferred value: "yarn.resourcemanager.""am.max-attempts"
+Parameter: YarnConfiguration.DEFAULT_RM_AM_MAX_ATTEMPTS
+Callsite No. 167: 
+Content: conf.getClass(YarnConfiguration.APPLICATION_HISTORY_STORE,NullApplicationHistoryStore.class,ApplicationHistoryStore.class)
+Parameter: YarnConfiguration.APPLICATION_HISTORY_STORE. Inferred value: "yarn.""timeline-service.""generic-application-history.""store-class"
+Parameter: NullApplicationHistoryStore.class
+Parameter: ApplicationHistoryStore.class
+Callsite No. 168: 
+Content: conf.getBoolean(YarnConfiguration.NM_RECOVERY_ENABLED,YarnConfiguration.DEFAULT_NM_RECOVERY_ENABLED)
+Parameter: YarnConfiguration.NM_RECOVERY_ENABLED. Inferred value: "yarn.nodemanager.""recovery.""enabled"
+Parameter: YarnConfiguration.DEFAULT_NM_RECOVERY_ENABLED
+Callsite No. 169: 
+Content: conf.get(YARN_HTTP_POLICY_KEY,YARN_HTTP_POLICY_DEFAULT)
+Parameter: YARN_HTTP_POLICY_KEY. Inferred value: "yarn.""http.policy"
+Parameter: YARN_HTTP_POLICY_DEFAULT
+Callsite No. 170: 
+Content: conf.getInt(YarnConfiguration.NM_LOCALIZER_CLIENT_THREAD_COUNT,YarnConfiguration.DEFAULT_NM_LOCALIZER_CLIENT_THREAD_COUNT)
+Parameter: YarnConfiguration.NM_LOCALIZER_CLIENT_THREAD_COUNT. Inferred value: "yarn.nodemanager.""localizer.client.thread-count"
+Parameter: YarnConfiguration.DEFAULT_NM_LOCALIZER_CLIENT_THREAD_COUNT
+Callsite No. 171: 
+Content: conf.get(YarnConfiguration.AUTO_FAILOVER_ZK_BASE_PATH,YarnConfiguration.DEFAULT_AUTO_FAILOVER_ZK_BASE_PATH)
+Parameter: YarnConfiguration.AUTO_FAILOVER_ZK_BASE_PATH. Inferred value: "yarn.resourcemanager.""ha.""automatic-failover.""zk-base-path"
+Parameter: YarnConfiguration.DEFAULT_AUTO_FAILOVER_ZK_BASE_PATH. Inferred value: "/yarn-leader-election"
+Callsite No. 172: 
+Content: conf.get(YarnConfiguration.NM_WINDOWS_SECURE_CONTAINER_GROUP)
+Parameter: YarnConfiguration.NM_WINDOWS_SECURE_CONTAINER_GROUP. Inferred value: "yarn.nodemanager.""windows-secure-container-executor.group"
+Callsite No. 173: 
+Content: conf.get(YarnConfiguration.NM_NONSECURE_MODE_LOCAL_USER_KEY,YarnConfiguration.DEFAULT_NM_NONSECURE_MODE_LOCAL_USER)
+Parameter: YarnConfiguration.NM_NONSECURE_MODE_LOCAL_USER_KEY. Inferred value: "yarn.nodemanager.""linux-container-executor.nonsecure-mode.local-user"
+Parameter: YarnConfiguration.DEFAULT_NM_NONSECURE_MODE_LOCAL_USER. Inferred value: "nobody"
+Callsite No. 174: 
+Content: conf.get(FairSchedulerConfiguration.ALLOCATION_FILE,FairSchedulerConfiguration.DEFAULT_ALLOCATION_FILE)
+Parameter: FairSchedulerConfiguration.ALLOCATION_FILE. Inferred value: "yarn.scheduler.fair.""allocation.file"
+Parameter: FairSchedulerConfiguration.DEFAULT_ALLOCATION_FILE. Inferred value: "fair-scheduler.xml"
+Callsite No. 175: 
+Content: conf.getSocketAddr(YarnConfiguration.PROXY_ADDRESS,YarnConfiguration.DEFAULT_PROXY_ADDRESS,YarnConfiguration.DEFAULT_PROXY_PORT)
+Parameter: YarnConfiguration.PROXY_ADDRESS. Inferred value: "yarn.web-proxy.""address"
+Parameter: YarnConfiguration.DEFAULT_PROXY_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_PROXY_PORT
+Callsite No. 176: 
+Content: conf.getLong(YarnConfiguration.NM_PMEM_MB,YarnConfiguration.DEFAULT_NM_PMEM_MB)
+Parameter: YarnConfiguration.NM_PMEM_MB. Inferred value: "yarn.nodemanager.""resource.memory-mb"
+Parameter: YarnConfiguration.DEFAULT_NM_PMEM_MB
+Callsite No. 177: 
+Content: conf.getLong(YarnConfiguration.TIMELINE_SERVICE_TTL_MS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_TTL_MS)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_TTL_MS. Inferred value: "yarn.""timeline-service.""ttl-ms"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_TTL_MS
+Callsite No. 178: 
+Content: conf.get(YarnConfiguration.NM_RECOVERY_DIR)
+Parameter: YarnConfiguration.NM_RECOVERY_DIR. Inferred value: "yarn.nodemanager.""recovery.""dir"
+Callsite No. 179: 
+Content: conf.getClass(YarnConfiguration.YARN_AUTHORIZATION_PROVIDER,ConfiguredYarnAuthorizer.class)
+Parameter: YarnConfiguration.YARN_AUTHORIZATION_PROVIDER. Inferred value: "yarn.""authorization-provider"
+Parameter: ConfiguredYarnAuthorizer.class
+Callsite No. 180: 
+Content: conf.getInt(KEY_REGISTRY_ZK_RETRY_INTERVAL,DEFAULT_ZK_RETRY_INTERVAL)
+Parameter: KEY_REGISTRY_ZK_RETRY_INTERVAL
+Parameter: DEFAULT_ZK_RETRY_INTERVAL
+Callsite No. 181: 
+Content: this.conf.getMaximumAllocation()
+Callsite No. 182: 
+Content: conf.getClass(YarnConfiguration.SCM_STORE_CLASS,defaultStoreClass,SCMStore.class)
+Parameter: YarnConfiguration.SCM_STORE_CLASS. Inferred value: "yarn.sharedcache.""store.""class"
+Parameter: defaultStoreClass
+Parameter: SCMStore.class
+Callsite No. 183: 
+Content: daemonConf.getFloat(YarnConfiguration.NM_VMEM_PMEM_RATIO,YarnConfiguration.DEFAULT_NM_VMEM_PMEM_RATIO)
+Parameter: YarnConfiguration.NM_VMEM_PMEM_RATIO. Inferred value: "yarn.nodemanager.""vmem-pmem-ratio"
+Parameter: YarnConfiguration.DEFAULT_NM_VMEM_PMEM_RATIO
+Callsite No. 184: 
+Content: conf.get(YarnConfiguration.APPLICATION_HISTORY_STORE)
+Parameter: YarnConfiguration.APPLICATION_HISTORY_STORE. Inferred value: "yarn.""timeline-service.""generic-application-history.""store-class"
+Callsite No. 185: 
+Content: conf.getInt(YarnConfiguration.RM_ZK_TIMEOUT_MS,YarnConfiguration.DEFAULT_RM_ZK_TIMEOUT_MS)
+Parameter: YarnConfiguration.RM_ZK_TIMEOUT_MS. Inferred value: "yarn.resourcemanager.""zk-""timeout-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_ZK_TIMEOUT_MS
+Callsite No. 186: 
+Content: conf.getClassByName(plannerClassName)
+Parameter: plannerClassName
+Callsite No. 187: 
+Content: conf.getBoolean(YarnConfiguration.NM_LINUX_CONTAINER_CGROUPS_STRICT_RESOURCE_USAGE,YarnConfiguration.DEFAULT_NM_LINUX_CONTAINER_CGROUPS_STRICT_RESOURCE_USAGE)
+Parameter: YarnConfiguration.NM_LINUX_CONTAINER_CGROUPS_STRICT_RESOURCE_USAGE. Inferred value: "yarn.nodemanager.""linux-container-executor.cgroups.strict-resource-usage"
+Parameter: YarnConfiguration.DEFAULT_NM_LINUX_CONTAINER_CGROUPS_STRICT_RESOURCE_USAGE
+Callsite No. 188: 
+Content: conf.get(YarnConfiguration.PROXY_ADDRESS)
+Parameter: YarnConfiguration.PROXY_ADDRESS. Inferred value: "yarn.web-proxy.""address"
+Callsite No. 189: 
+Content: conf.getInt(YarnConfiguration.NM_LOCAL_CACHE_MAX_FILES_PER_DIRECTORY,YarnConfiguration.DEFAULT_NM_LOCAL_CACHE_MAX_FILES_PER_DIRECTORY)
+Parameter: YarnConfiguration.NM_LOCAL_CACHE_MAX_FILES_PER_DIRECTORY. Inferred value: "yarn.nodemanager.""local-cache.max-files-per-directory"
+Parameter: YarnConfiguration.DEFAULT_NM_LOCAL_CACHE_MAX_FILES_PER_DIRECTORY
+Callsite No. 190: 
+Content: conf.getInt(YarnConfiguration.RM_AM_MAX_ATTEMPTS,YarnConfiguration.DEFAULT_RM_AM_MAX_ATTEMPTS)
+Parameter: YarnConfiguration.RM_AM_MAX_ATTEMPTS. Inferred value: "yarn.resourcemanager.""am.max-attempts"
+Parameter: YarnConfiguration.DEFAULT_RM_AM_MAX_ATTEMPTS
+Callsite No. 191: 
+Content: conf.getInt(YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_VCORES,YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_VCORES)
+Parameter: YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_VCORES. Inferred value: "yarn.""scheduler.maximum-allocation-vcores"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_VCORES
+Callsite No. 192: 
+Content: conf.get(YarnConfiguration.FS_NODE_LABELS_STORE_ROOT_DIR,getDefaultFSNodeLabelsRootDir())
+Parameter: YarnConfiguration.FS_NODE_LABELS_STORE_ROOT_DIR. Inferred value: "yarn.""node-labels.""fs-store.root-dir"
+Parameter: getDefaultFSNodeLabelsRootDir()
+Callsite No. 193: 
+Content: conf.getBoolean(YarnConfiguration.NM_WINDOWS_CONTAINER_CPU_LIMIT_ENABLED,YarnConfiguration.DEFAULT_NM_WINDOWS_CONTAINER_CPU_LIMIT_ENABLED)
+Parameter: YarnConfiguration.NM_WINDOWS_CONTAINER_CPU_LIMIT_ENABLED. Inferred value: "yarn.nodemanager.""windows-container.cpu-limit.enabled"
+Parameter: YarnConfiguration.DEFAULT_NM_WINDOWS_CONTAINER_CPU_LIMIT_ENABLED
+Callsite No. 194: 
+Content: conf.getClass(YarnConfiguration.NM_CONTAINER_MON_RESOURCE_CALCULATOR,null,ResourceCalculatorPlugin.class)
+Parameter: YarnConfiguration.NM_CONTAINER_MON_RESOURCE_CALCULATOR. Inferred value: "yarn.nodemanager.""container-monitor.resource-calculator.class"
+Parameter: null
+Parameter: ResourceCalculatorPlugin.class
+Callsite No. 195: 
+Content: conf.getTrimmed(KEY_REGISTRY_ZKSERVICE_JAAS_CONTEXT)
+Parameter: KEY_REGISTRY_ZKSERVICE_JAAS_CONTEXT
+Callsite No. 196: 
+Content: conf.get(YarnConfiguration.APPLICATION_HISTORY_STORE)
+Parameter: YarnConfiguration.APPLICATION_HISTORY_STORE. Inferred value: "yarn.""timeline-service.""generic-application-history.""store-class"
+Callsite No. 197: 
+Content: conf.getLong(YarnConfiguration.FS_RM_STATE_STORE_RETRY_INTERVAL_MS,YarnConfiguration.DEFAULT_FS_RM_STATE_STORE_RETRY_INTERVAL_MS)
+Parameter: YarnConfiguration.FS_RM_STATE_STORE_RETRY_INTERVAL_MS. Inferred value: "yarn.resourcemanager.""fs.state-store.retry-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_FS_RM_STATE_STORE_RETRY_INTERVAL_MS
+Callsite No. 198: 
+Content: conf.getInt(YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_VCORES,YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_VCORES)
+Parameter: YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_VCORES. Inferred value: "yarn.""scheduler.minimum-allocation-vcores"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_VCORES
+Callsite No. 199: 
+Content: conf.get(YarnConfiguration.RM_HA_ID)
+Parameter: YarnConfiguration.RM_HA_ID. Inferred value: "yarn.resourcemanager.""ha.""id"
+Callsite No. 200: 
+Content: conf.get(YarnConfiguration.FS_RM_STATE_STORE_RETRY_POLICY_SPEC,YarnConfiguration.DEFAULT_FS_RM_STATE_STORE_RETRY_POLICY_SPEC)
+Parameter: YarnConfiguration.FS_RM_STATE_STORE_RETRY_POLICY_SPEC. Inferred value: "yarn.resourcemanager.""fs.state-store.retry-policy-spec"
+Parameter: YarnConfiguration.DEFAULT_FS_RM_STATE_STORE_RETRY_POLICY_SPEC. Inferred value: "2000, 500"
+Callsite No. 201: 
+Content: conf.getInt(YarnConfiguration.TIMELINE_SERVICE_LEVELDB_START_TIME_READ_CACHE_SIZE,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_START_TIME_READ_CACHE_SIZE)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_LEVELDB_START_TIME_READ_CACHE_SIZE. Inferred value: "yarn.""timeline-service.""leveldb-timeline-store.""start-time-read-cache-size"
+Parameter: YarnConfiguration.
+            DEFAULT_TIMELINE_SERVICE_LEVELDB_START_TIME_READ_CACHE_SIZE
+Callsite No. 202: 
+Content: localConf.getClassByName(getPBImplClassName(clazz))
+Parameter: getPBImplClassName(clazz)
+Callsite No. 203: 
+Content: conf.getTrimmed(hostNameConfKey)
+Parameter: hostNameConfKey
+Callsite No. 204: 
+Content: conf.getLong(YarnConfiguration.YARN_CLIENT_APP_SUBMISSION_POLL_INTERVAL_MS,YarnConfiguration.DEFAULT_YARN_CLIENT_APPLICATION_CLIENT_PROTOCOL_POLL_INTERVAL_MS)
+Parameter: YarnConfiguration.YARN_CLIENT_APP_SUBMISSION_POLL_INTERVAL_MS. Inferred value: "yarn.""client.app-submission.poll-interval"
+Parameter: YarnConfiguration.DEFAULT_YARN_CLIENT_APPLICATION_CLIENT_PROTOCOL_POLL_INTERVAL_MS
+Callsite No. 205: 
+Content: this.conf.getUpdateInterval()
+Callsite No. 206: 
+Content: this.conf.getMaximumAllocation()
+Callsite No. 207: 
+Content: getResolvedRMWebAppURLWithoutScheme(conf)
+Parameter: conf
+Callsite No. 208: 
+Content: conf.getClass(YarnConfiguration.SCM_APP_CHECKER_CLASS,defaultCheckerClass,AppChecker.class)
+Parameter: YarnConfiguration.SCM_APP_CHECKER_CLASS. Inferred value: "yarn.sharedcache.""app-checker.class"
+Parameter: defaultCheckerClass
+Parameter: AppChecker.class
+Callsite No. 209: 
+Content: conf.get(YarnConfiguration.RM_NODES_INCLUDE_FILE_PATH,YarnConfiguration.DEFAULT_RM_NODES_INCLUDE_FILE_PATH)
+Parameter: YarnConfiguration.RM_NODES_INCLUDE_FILE_PATH. Inferred value: "yarn.resourcemanager.""nodes.include-path"
+Parameter: YarnConfiguration.DEFAULT_RM_NODES_INCLUDE_FILE_PATH. Inferred value: ""
+Callsite No. 210: 
+Content: conf.get(YarnConfiguration.NM_REMOTE_APP_LOG_DIR_SUFFIX,YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR_SUFFIX)
+Parameter: YarnConfiguration.NM_REMOTE_APP_LOG_DIR_SUFFIX. Inferred value: "yarn.nodemanager.""remote-app-log-dir-suffix"
+Parameter: YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR_SUFFIX. Inferred value: "logs"
+Callsite No. 211: 
+Content: conf.get(YarnConfiguration.FS_RM_STATE_STORE_URI)
+Parameter: YarnConfiguration.FS_RM_STATE_STORE_URI. Inferred value: "yarn.resourcemanager.""fs.state-store.uri"
+Callsite No. 212: 
+Content: conf.getSocketAddr(YarnConfiguration.TIMELINE_SERVICE_ADDRESS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ADDRESS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_PORT)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_ADDRESS. Inferred value: "yarn.""timeline-service.""address"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_PORT
+Callsite No. 213: 
+Content: this.conf.getUsePortForNodeName()
+Callsite No. 214: 
+Content: conf.get(YarnConfiguration.RM_NODES_INCLUDE_FILE_PATH,YarnConfiguration.DEFAULT_RM_NODES_INCLUDE_FILE_PATH)
+Parameter: YarnConfiguration.RM_NODES_INCLUDE_FILE_PATH. Inferred value: "yarn.resourcemanager.""nodes.include-path"
+Parameter: YarnConfiguration.DEFAULT_RM_NODES_INCLUDE_FILE_PATH. Inferred value: ""
+Callsite No. 215: 
+Content: conf.getBoolean(YarnConfiguration.NM_CONTAINER_METRICS_ENABLE,YarnConfiguration.DEFAULT_NM_CONTAINER_METRICS_ENABLE)
+Parameter: YarnConfiguration.NM_CONTAINER_METRICS_ENABLE. Inferred value: "yarn.nodemanager.""container-metrics.enable"
+Parameter: YarnConfiguration.DEFAULT_NM_CONTAINER_METRICS_ENABLE
+Callsite No. 216: 
+Content: config.getInt(YarnConfiguration.YARN_MINICLUSTER_NM_PMEM_MB,YarnConfiguration.DEFAULT_YARN_MINICLUSTER_NM_PMEM_MB)
+Parameter: YarnConfiguration.YARN_MINICLUSTER_NM_PMEM_MB. Inferred value: "yarn.nodemanager.""resource.memory-mb"
+Parameter: YarnConfiguration.DEFAULT_YARN_MINICLUSTER_NM_PMEM_MB
+Callsite No. 217: 
+Content: conf.getLong(YarnConfiguration.NM_LINUX_CONTAINER_CGROUPS_DELETE_TIMEOUT,YarnConfiguration.DEFAULT_NM_LINUX_CONTAINER_CGROUPS_DELETE_TIMEOUT)
+Parameter: YarnConfiguration.NM_LINUX_CONTAINER_CGROUPS_DELETE_TIMEOUT. Inferred value: "yarn.nodemanager.""linux-container-executor.cgroups.delete-timeout-ms"
+Parameter: YarnConfiguration.DEFAULT_NM_LINUX_CONTAINER_CGROUPS_DELETE_TIMEOUT
+Callsite No. 218: 
+Content: serverConf.getInt(YarnConfiguration.RM_SCHEDULER_CLIENT_THREAD_COUNT,YarnConfiguration.DEFAULT_RM_SCHEDULER_CLIENT_THREAD_COUNT)
+Parameter: YarnConfiguration.RM_SCHEDULER_CLIENT_THREAD_COUNT. Inferred value: "yarn.resourcemanager.""scheduler.client.thread-count"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_CLIENT_THREAD_COUNT
+Callsite No. 219: 
+Content: getServer(protocol,instance,addr,conf,secretManager,numHandlers,portRangeConfig)
+Parameter: protocol
+Parameter: instance
+Parameter: addr
+Parameter: conf
+Parameter: secretManager
+Parameter: numHandlers
+Parameter: portRangeConfig
+Callsite No. 220: 
+Content: conf.getInt(YarnConfiguration.SCM_UPLOADER_SERVER_THREAD_COUNT,YarnConfiguration.DEFAULT_SCM_UPLOADER_SERVER_THREAD_COUNT)
+Parameter: YarnConfiguration.SCM_UPLOADER_SERVER_THREAD_COUNT. Inferred value: "yarn.sharedcache.""uploader.server.thread-count"
+Parameter: YarnConfiguration.DEFAULT_SCM_UPLOADER_SERVER_THREAD_COUNT
+Callsite No. 221: 
+Content: conf.getBoolean(YarnConfiguration.YARN_MINICLUSTER_FIXED_PORTS,YarnConfiguration.DEFAULT_YARN_MINICLUSTER_FIXED_PORTS)
+Parameter: YarnConfiguration.YARN_MINICLUSTER_FIXED_PORTS. Inferred value: "yarn.""minicluster.""fixed.ports"
+Parameter: YarnConfiguration.DEFAULT_YARN_MINICLUSTER_FIXED_PORTS
+Callsite No. 222: 
+Content: conf.getLong(YarnConfiguration.NM_LOCALIZER_CACHE_CLEANUP_INTERVAL_MS,YarnConfiguration.DEFAULT_NM_LOCALIZER_CACHE_CLEANUP_INTERVAL_MS)
+Parameter: YarnConfiguration.NM_LOCALIZER_CACHE_CLEANUP_INTERVAL_MS. Inferred value: "yarn.nodemanager.""localizer.cache.cleanup.interval-ms"
+Parameter: YarnConfiguration.DEFAULT_NM_LOCALIZER_CACHE_CLEANUP_INTERVAL_MS
+Callsite No. 223: 
+Content: conf.get(YarnConfiguration.NM_RECOVERY_DIR)
+Parameter: YarnConfiguration.NM_RECOVERY_DIR. Inferred value: "yarn.nodemanager.""recovery.""dir"
+Callsite No. 224: 
+Content: conf.getLong(maxWaitTimeStr,defMaxWaitTime)
+Parameter: maxWaitTimeStr
+Parameter: defMaxWaitTime
+Callsite No. 225: 
+Content: this.conf.getMaximumAllocation()
+Callsite No. 226: 
+Content: conf.getInt(KEY_REGISTRY_ZK_SESSION_TIMEOUT,DEFAULT_ZK_SESSION_TIMEOUT)
+Parameter: KEY_REGISTRY_ZK_SESSION_TIMEOUT
+Parameter: DEFAULT_ZK_SESSION_TIMEOUT
+Callsite No. 227: 
+Content: conf.get(YarnConfiguration.PROXY_ADDRESS)
+Parameter: YarnConfiguration.PROXY_ADDRESS. Inferred value: "yarn.web-proxy.""address"
+Callsite No. 228: 
+Content: conf.getSocketAddr(YarnConfiguration.RM_BIND_HOST,YarnConfiguration.RM_RESOURCE_TRACKER_ADDRESS,YarnConfiguration.DEFAULT_RM_RESOURCE_TRACKER_ADDRESS,YarnConfiguration.DEFAULT_RM_RESOURCE_TRACKER_PORT)
+Parameter: YarnConfiguration.RM_BIND_HOST. Inferred value: "yarn.resourcemanager.""bind-host"
+Parameter: YarnConfiguration.RM_RESOURCE_TRACKER_ADDRESS. Inferred value: "yarn.resourcemanager.""resource-tracker.address"
+Parameter: YarnConfiguration.DEFAULT_RM_RESOURCE_TRACKER_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_RM_RESOURCE_TRACKER_PORT
+Callsite No. 229: 
+Content: conf.getLong(YarnConfiguration.TIMELINE_DELEGATION_KEY_UPDATE_INTERVAL,YarnConfiguration.DEFAULT_TIMELINE_DELEGATION_KEY_UPDATE_INTERVAL)
+Parameter: YarnConfiguration.TIMELINE_DELEGATION_KEY_UPDATE_INTERVAL. Inferred value: "yarn.""timeline-service.""delegation.key.update-interval"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_DELEGATION_KEY_UPDATE_INTERVAL
+Callsite No. 230: 
+Content: conf.getSocketAddr(YarnConfiguration.SCM_CLIENT_SERVER_ADDRESS,YarnConfiguration.DEFAULT_SCM_CLIENT_SERVER_ADDRESS,YarnConfiguration.DEFAULT_SCM_CLIENT_SERVER_PORT)
+Parameter: YarnConfiguration.SCM_CLIENT_SERVER_ADDRESS. Inferred value: "yarn.sharedcache.""client-server.address"
+Parameter: YarnConfiguration.DEFAULT_SCM_CLIENT_SERVER_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_SCM_CLIENT_SERVER_PORT
+Callsite No. 231: 
+Content: conf.get(YarnConfiguration.NM_LINUX_CONTAINER_CGROUPS_HIERARCHY,"/hadoop-yarn")
+Parameter: YarnConfiguration.
+            NM_LINUX_CONTAINER_CGROUPS_HIERARCHY. Inferred value: "yarn.nodemanager.""linux-container-executor.cgroups.hierarchy"
+Parameter: "/hadoop-yarn". Inferred value: "/hadoop-yarn"
+Callsite No. 232: 
+Content: get(YarnConfiguration.NM_REMOTE_APP_LOG_DIR,YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR)
+Parameter: YarnConfiguration.NM_REMOTE_APP_LOG_DIR. Inferred value: "yarn.nodemanager.""remote-app-log-dir"
+Parameter: YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR. Inferred value: "/tmp/logs"
+Callsite No. 233: 
+Content: sslConf.get("ssl.server.truststore.type","jks")
+Parameter: "ssl.server.truststore.type". Inferred value: "ssl.server.truststore.type"
+Parameter: "jks". Inferred value: "jks"
+Callsite No. 234: 
+Content: null
+Callsite No. 235: 
+Content: conf.get(YarnConfiguration.RM_RESERVATION_SYSTEM_PLAN_FOLLOWER,getDefaultPlanFollower())
+Parameter: YarnConfiguration.RM_RESERVATION_SYSTEM_PLAN_FOLLOWER. Inferred value: "yarn.resourcemanager.""reservation-system.plan.follower"
+Parameter: getDefaultPlanFollower()
+Callsite No. 236: 
+Content: nmConf.get(YarnConfiguration.YARN_LOG_SERVER_URL)
+Parameter: YarnConfiguration.YARN_LOG_SERVER_URL. Inferred value: "yarn.""log.server.url"
+Callsite No. 237: 
+Content: conf.getFloat(YarnConfiguration.NM_MIN_HEALTHY_DISKS_FRACTION,YarnConfiguration.DEFAULT_NM_MIN_HEALTHY_DISKS_FRACTION)
+Parameter: YarnConfiguration.NM_MIN_HEALTHY_DISKS_FRACTION. Inferred value: "yarn.nodemanager.disk-health-checker.""min-healthy-disks"
+Parameter: YarnConfiguration.DEFAULT_NM_MIN_HEALTHY_DISKS_FRACTION
+Callsite No. 238: 
+Content: conf.getInt(KEY_REGISTRY_ZK_RETRY_TIMES,DEFAULT_ZK_RETRY_TIMES)
+Parameter: KEY_REGISTRY_ZK_RETRY_TIMES
+Parameter: DEFAULT_ZK_RETRY_TIMES
+Callsite No. 239: 
+Content: conf.getTrimmed(KEY_ZKSERVICE_DIR,"")
+Parameter: KEY_ZKSERVICE_DIR
+Parameter: "". Inferred value: ""
+Callsite No. 240: 
+Content: conf.get(YarnConfiguration.RM_NODEMANAGER_MINIMUM_VERSION,YarnConfiguration.DEFAULT_RM_NODEMANAGER_MINIMUM_VERSION)
+Parameter: YarnConfiguration.RM_NODEMANAGER_MINIMUM_VERSION. Inferred value: "yarn.resourcemanager.""nodemanager.minimum.version"
+Parameter: YarnConfiguration.DEFAULT_RM_NODEMANAGER_MINIMUM_VERSION. Inferred value: "NONE"
+Callsite No. 241: 
+Content: conf.get(YarnConfiguration.RM_ZK_AUTH)
+Parameter: YarnConfiguration.RM_ZK_AUTH. Inferred value: "yarn.resourcemanager.""zk-""auth"
+Callsite No. 242: 
+Content: conf.get(name)
+Parameter: name
+Callsite No. 243: 
+Content: conf.get(YarnConfiguration.NM_NONSECURE_MODE_USER_PATTERN_KEY,YarnConfiguration.DEFAULT_NM_NONSECURE_MODE_USER_PATTERN)
+Parameter: YarnConfiguration.NM_NONSECURE_MODE_USER_PATTERN_KEY. Inferred value: "yarn.nodemanager.""linux-container-executor.nonsecure-mode.user-pattern"
+Parameter: YarnConfiguration.DEFAULT_NM_NONSECURE_MODE_USER_PATTERN. Inferred value: "^[_.A-Za-z0-9][-@_.A-Za-z0-9]{0,255}?[$]?$"
+Callsite No. 244: 
+Content: getEnableUserMetrics()
+Callsite No. 245: 
+Content: conf.get(YarnConfiguration.RM_NODES_EXCLUDE_FILE_PATH,YarnConfiguration.DEFAULT_RM_NODES_EXCLUDE_FILE_PATH)
+Parameter: YarnConfiguration.RM_NODES_EXCLUDE_FILE_PATH. Inferred value: "yarn.resourcemanager.""nodes.exclude-path"
+Parameter: YarnConfiguration.DEFAULT_RM_NODES_EXCLUDE_FILE_PATH. Inferred value: ""
+Callsite No. 246: 
+Content: conf.getTrimmed(KEY_REGISTRY_CLIENT_AUTH,REGISTRY_CLIENT_AUTH_ANONYMOUS)
+Parameter: KEY_REGISTRY_CLIENT_AUTH. Inferred value: "hadoop.registry.""client.auth"
+Parameter: REGISTRY_CLIENT_AUTH_ANONYMOUS. Inferred value: ""
+Callsite No. 247: 
+Content: conf.getLong(YarnConfiguration.TIMELINE_DELEGATION_TOKEN_MAX_LIFETIME,YarnConfiguration.DEFAULT_TIMELINE_DELEGATION_TOKEN_MAX_LIFETIME)
+Parameter: YarnConfiguration.TIMELINE_DELEGATION_TOKEN_MAX_LIFETIME. Inferred value: "yarn.""timeline-service.""delegation.token.max-lifetime"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_DELEGATION_TOKEN_MAX_LIFETIME
+Callsite No. 248: 
+Content: conf.getLong(YarnConfiguration.RM_ZK_TIMEOUT_MS,YarnConfiguration.DEFAULT_RM_ZK_TIMEOUT_MS)
+Parameter: YarnConfiguration.RM_ZK_TIMEOUT_MS. Inferred value: "yarn.resourcemanager.""zk-""timeout-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_ZK_TIMEOUT_MS
+Callsite No. 249: 
+Content: getResolvedRemoteRMWebAppURLWithoutScheme(conf)
+Parameter: conf
+Callsite No. 250: 
+Content: this.conf.getIncrementAllocation()
+Callsite No. 251: 
+Content: conf.getInt(YarnConfiguration.NM_RESOURCE_PERCENTAGE_PHYSICAL_CPU_LIMIT,YarnConfiguration.DEFAULT_NM_RESOURCE_PERCENTAGE_PHYSICAL_CPU_LIMIT)
+Parameter: YarnConfiguration.NM_RESOURCE_PERCENTAGE_PHYSICAL_CPU_LIMIT. Inferred value: "yarn.nodemanager.""resource.percentage-physical-cpu-limit"
+Parameter: YarnConfiguration.DEFAULT_NM_RESOURCE_PERCENTAGE_PHYSICAL_CPU_LIMIT
+Callsite No. 252: 
+Content: conf.getLong(YarnConfiguration.NM_VCORES,YarnConfiguration.DEFAULT_NM_VCORES)
+Parameter: YarnConfiguration.NM_VCORES. Inferred value: "yarn.nodemanager.""resource.cpu-vcores"
+Parameter: YarnConfiguration.DEFAULT_NM_VCORES
+Callsite No. 253: 
+Content: conf.getBoolean(YarnConfiguration.SHARED_CACHE_ENABLED,YarnConfiguration.DEFAULT_SHARED_CACHE_ENABLED)
+Parameter: YarnConfiguration.SHARED_CACHE_ENABLED. Inferred value: "yarn.sharedcache.""enabled"
+Parameter: YarnConfiguration.DEFAULT_SHARED_CACHE_ENABLED
+Callsite No. 254: 
+Content: conf.getBoolean(YarnConfiguration.RM_HA_ENABLED,YarnConfiguration.DEFAULT_RM_HA_ENABLED)
+Parameter: YarnConfiguration.RM_HA_ENABLED. Inferred value: "yarn.resourcemanager.""ha.""enabled"
+Parameter: YarnConfiguration.DEFAULT_RM_HA_ENABLED
+Callsite No. 255: 
+Content: conf.getBoolean(YarnConfiguration.RM_SCHEDULER_INCLUDE_PORT_IN_NODE_NAME,YarnConfiguration.DEFAULT_RM_SCHEDULER_USE_PORT_FOR_NODE_NAME)
+Parameter: YarnConfiguration.RM_SCHEDULER_INCLUDE_PORT_IN_NODE_NAME. Inferred value: "yarn.""scheduler.include-port-in-node-name"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_USE_PORT_FOR_NODE_NAME
+Callsite No. 256: 
+Content: conf.getBoolean(YarnConfiguration.RM_WORK_PRESERVING_RECOVERY_ENABLED,YarnConfiguration.DEFAULT_RM_WORK_PRESERVING_RECOVERY_ENABLED)
+Parameter: YarnConfiguration
+            .RM_WORK_PRESERVING_RECOVERY_ENABLED. Inferred value: "yarn.resourcemanager.""work-preserving-recovery.enabled"
+Parameter: YarnConfiguration.DEFAULT_RM_WORK_PRESERVING_RECOVERY_ENABLED
+Callsite No. 257: 
+Content: conf.getBoolean(CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,false)
+Parameter: CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION
+Parameter: false
+Callsite No. 258: 
+Content: conf.getLong(YarnConfiguration.LOG_AGGREGATION_RETAIN_SECONDS,YarnConfiguration.DEFAULT_LOG_AGGREGATION_RETAIN_SECONDS)
+Parameter: YarnConfiguration.LOG_AGGREGATION_RETAIN_SECONDS. Inferred value: "yarn.""log-aggregation.retain-seconds"
+Parameter: YarnConfiguration.DEFAULT_LOG_AGGREGATION_RETAIN_SECONDS
+Callsite No. 259: 
+Content: conf.get(spnegoPrincipalKey)
+Parameter: spnegoPrincipalKey
+Callsite No. 260: 
+Content: conf.getInt(YarnConfiguration.RM_STATE_STORE_MAX_COMPLETED_APPLICATIONS,YarnConfiguration.DEFAULT_RM_STATE_STORE_MAX_COMPLETED_APPLICATIONS)
+Parameter: YarnConfiguration.RM_STATE_STORE_MAX_COMPLETED_APPLICATIONS. Inferred value: "yarn.resourcemanager.""state-store.max-completed-applications"
+Parameter: YarnConfiguration.DEFAULT_RM_STATE_STORE_MAX_COMPLETED_APPLICATIONS
+Callsite No. 261: 
+Content: conf.get(key)
+Parameter: key
+Callsite No. 262: 
+Content: conf.getLong(YarnConfiguration.NM_HEALTH_CHECK_SCRIPT_TIMEOUT_MS,YarnConfiguration.DEFAULT_NM_HEALTH_CHECK_SCRIPT_TIMEOUT_MS)
+Parameter: YarnConfiguration.NM_HEALTH_CHECK_SCRIPT_TIMEOUT_MS. Inferred value: "yarn.nodemanager.""health-checker.script.timeout-ms"
+Parameter: YarnConfiguration.DEFAULT_NM_HEALTH_CHECK_SCRIPT_TIMEOUT_MS
+Callsite No. 263: 
+Content: conf.getLong(YarnConfiguration.NM_DISK_HEALTH_CHECK_INTERVAL_MS,YarnConfiguration.DEFAULT_NM_DISK_HEALTH_CHECK_INTERVAL_MS)
+Parameter: YarnConfiguration.NM_DISK_HEALTH_CHECK_INTERVAL_MS. Inferred value: "yarn.nodemanager.disk-health-checker.""interval-ms"
+Parameter: YarnConfiguration.DEFAULT_NM_DISK_HEALTH_CHECK_INTERVAL_MS
+Callsite No. 264: 
+Content: conf.getInt(YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_MB,YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_MB)
+Parameter: YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_MB. Inferred value: "yarn.""scheduler.minimum-allocation-mb"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_MB
+Callsite No. 265: 
+Content: conf.get(YarnConfiguration.NM_HEALTH_CHECK_SCRIPT_PATH)
+Parameter: YarnConfiguration.NM_HEALTH_CHECK_SCRIPT_PATH. Inferred value: "yarn.nodemanager.""health-checker.script.path"
+Callsite No. 266: 
+Content: localConf.getClassByName(getPbServiceImplClassName(protocol))
+Parameter: getPbServiceImplClassName(protocol)
+Callsite No. 267: 
+Content: conf.getInt(KEY_REGISTRY_ZK_CONNECTION_TIMEOUT,DEFAULT_ZK_CONNECTION_TIMEOUT)
+Parameter: KEY_REGISTRY_ZK_CONNECTION_TIMEOUT
+Parameter: DEFAULT_ZK_CONNECTION_TIMEOUT
+Callsite No. 268: 
+Content: conf.getBoolean(YarnConfiguration.YARN_ACL_ENABLE,YarnConfiguration.DEFAULT_YARN_ACL_ENABLE)
+Parameter: YarnConfiguration.YARN_ACL_ENABLE. Inferred value: "yarn.""acl.enable"
+Parameter: YarnConfiguration.DEFAULT_YARN_ACL_ENABLE
+Callsite No. 269: 
+Content: conf.getLong(YarnConfiguration.TIMELINE_SERVICE_LEVELDB_START_TIME_READ_CACHE_SIZE,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_START_TIME_READ_CACHE_SIZE)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_LEVELDB_START_TIME_READ_CACHE_SIZE. Inferred value: "yarn.""timeline-service.""leveldb-timeline-store.""start-time-read-cache-size"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_START_TIME_READ_CACHE_SIZE
+Callsite No. 270: 
+Content: conf.getLong(YarnConfiguration.RM_WORK_PRESERVING_RECOVERY_SCHEDULING_WAIT_MS,YarnConfiguration.DEFAULT_RM_WORK_PRESERVING_RECOVERY_SCHEDULING_WAIT_MS)
+Parameter: YarnConfiguration.RM_WORK_PRESERVING_RECOVERY_SCHEDULING_WAIT_MS. Inferred value: "yarn.resourcemanager.""work-preserving-recovery.scheduling-wait-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_WORK_PRESERVING_RECOVERY_SCHEDULING_WAIT_MS
+Callsite No. 271: 
+Content: conf.getClass(CommonConfigurationKeysPublic.NET_TOPOLOGY_NODE_SWITCH_MAPPING_IMPL_KEY,ScriptBasedMapping.class,DNSToSwitchMapping.class)
+Parameter: CommonConfigurationKeysPublic.NET_TOPOLOGY_NODE_SWITCH_MAPPING_IMPL_KEY
+Parameter: ScriptBasedMapping.class
+Parameter: DNSToSwitchMapping.class
+Callsite No. 272: 
+Content: conf.getTrimmed(KEY_ZKSERVICE_HOST,DEFAULT_ZKSERVICE_HOST)
+Parameter: KEY_ZKSERVICE_HOST
+Parameter: DEFAULT_ZKSERVICE_HOST
+Callsite No. 273: 
+Content: conf.getBoolean(YarnConfiguration.APPLICATION_HISTORY_ENABLED,YarnConfiguration.DEFAULT_APPLICATION_HISTORY_ENABLED)
+Parameter: YarnConfiguration.APPLICATION_HISTORY_ENABLED. Inferred value: "yarn.""timeline-service.""generic-application-history.""enabled"
+Parameter: YarnConfiguration.DEFAULT_APPLICATION_HISTORY_ENABLED
+Callsite No. 274: 
+Content: conf.get(name)
+Parameter: name
+Callsite No. 275: 
+Content: conf.getLong(YarnConfiguration.NM_LOG_RETAIN_SECONDS,YarnConfiguration.DEFAULT_NM_LOG_RETAIN_SECONDS)
+Parameter: YarnConfiguration.NM_LOG_RETAIN_SECONDS. Inferred value: "yarn.nodemanager.""log.retain-seconds"
+Parameter: YarnConfiguration.DEFAULT_NM_LOG_RETAIN_SECONDS
+Callsite No. 276: 
+Content: conf.get(YarnConfiguration.SHARED_CACHE_ROOT,YarnConfiguration.DEFAULT_SHARED_CACHE_ROOT)
+Parameter: YarnConfiguration.SHARED_CACHE_ROOT. Inferred value: "yarn.sharedcache.""root-dir"
+Parameter: YarnConfiguration.DEFAULT_SHARED_CACHE_ROOT. Inferred value: "/sharedcache"
+Callsite No. 277: 
+Content: conf.getInt(YarnConfiguration.NM_CLIENT_MAX_NM_PROXIES,YarnConfiguration.DEFAULT_NM_CLIENT_MAX_NM_PROXIES)
+Parameter: YarnConfiguration.NM_CLIENT_MAX_NM_PROXIES. Inferred value: "yarn.""client.max-cached-nodemanagers-proxies"
+Parameter: YarnConfiguration.DEFAULT_NM_CLIENT_MAX_NM_PROXIES
+Callsite No. 278: 
+Content: conf.getSocketAddr(YarnConfiguration.TIMELINE_SERVICE_BIND_HOST,YarnConfiguration.TIMELINE_SERVICE_ADDRESS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ADDRESS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_PORT)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_BIND_HOST. Inferred value: "yarn.""timeline-service.""bind-host"
+Parameter: YarnConfiguration.TIMELINE_SERVICE_ADDRESS. Inferred value: "yarn.""timeline-service.""address"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_PORT
+Callsite No. 279: 
+Content: conf.get(YarnConfiguration.SHARED_CACHE_ROOT,YarnConfiguration.DEFAULT_SHARED_CACHE_ROOT)
+Parameter: YarnConfiguration.SHARED_CACHE_ROOT. Inferred value: "yarn.sharedcache.""root-dir"
+Parameter: YarnConfiguration.DEFAULT_SHARED_CACHE_ROOT. Inferred value: "/sharedcache"
+Callsite No. 280: 
+Content: conf.getLong(YarnConfiguration.NM_PROCESS_KILL_WAIT_MS,YarnConfiguration.DEFAULT_NM_PROCESS_KILL_WAIT_MS)
+Parameter: YarnConfiguration.NM_PROCESS_KILL_WAIT_MS. Inferred value: "yarn.nodemanager.""process-kill-wait.ms"
+Parameter: YarnConfiguration.DEFAULT_NM_PROCESS_KILL_WAIT_MS
+Callsite No. 281: 
+Content: this.conf.getSizeBasedWeight()
+Callsite No. 282: 
+Content: getProxy(protocol,rmAddress,conf)
+Parameter: protocol
+Parameter: rmAddress
+Parameter: conf
+Callsite No. 283: 
+Content: this.conf.getContinuousSchedulingSleepMs()
+Callsite No. 284: 
+Content: conf.get(YarnConfiguration.APPLICATION_HISTORY_STORE)
+Parameter: YarnConfiguration.APPLICATION_HISTORY_STORE. Inferred value: "yarn.""timeline-service.""generic-application-history.""store-class"
+Callsite No. 285: 
+Content: conf.get(YarnConfiguration.YARN_CLIENT_APP_SUBMISSION_POLL_INTERVAL_MS)
+Parameter: YarnConfiguration.YARN_CLIENT_APP_SUBMISSION_POLL_INTERVAL_MS. Inferred value: "yarn.""client.app-submission.poll-interval"
+Callsite No. 286: 
+Content: conf.getLong(YarnConfiguration.NM_CONTAINER_MON_INTERVAL_MS,YarnConfiguration.DEFAULT_NM_CONTAINER_MON_INTERVAL_MS)
+Parameter: YarnConfiguration.NM_CONTAINER_MON_INTERVAL_MS. Inferred value: "yarn.nodemanager.""container-monitor.interval-ms"
+Parameter: YarnConfiguration.DEFAULT_NM_CONTAINER_MON_INTERVAL_MS
+Callsite No. 287: 
+Content: conf.get(YarnConfiguration.NM_RECOVERY_DIR)
+Parameter: YarnConfiguration.NM_RECOVERY_DIR. Inferred value: "yarn.nodemanager.""recovery.""dir"
+Callsite No. 288: 
+Content: conf.getInt(KEY_ZKSERVICE_PORT,0)
+Parameter: KEY_ZKSERVICE_PORT
+Parameter: 0
+Callsite No. 289: 
+Content: this.conf.getMaxAssign()
+Callsite No. 290: 
+Content: config.getDouble(MAX_IGNORED_OVER_CAPACITY,0.1)
+Parameter: MAX_IGNORED_OVER_CAPACITY. Inferred value: "yarn.resourcemanager.monitor.capacity.preemption.max_ignored_over_capacity"
+Parameter: 0.1
+Callsite No. 291: 
+Content: conf.getLong(YarnConfiguration.RM_DELEGATION_KEY_UPDATE_INTERVAL_KEY,YarnConfiguration.RM_DELEGATION_KEY_UPDATE_INTERVAL_DEFAULT)
+Parameter: YarnConfiguration.RM_DELEGATION_KEY_UPDATE_INTERVAL_KEY. Inferred value: "yarn.resourcemanager.""delegation.key.update-interval"
+Parameter: YarnConfiguration.RM_DELEGATION_KEY_UPDATE_INTERVAL_DEFAULT
+Callsite No. 292: 
+Content: conf.getInt(YarnConfiguration.NM_CONTAINER_MGR_THREAD_COUNT,YarnConfiguration.DEFAULT_NM_CONTAINER_MGR_THREAD_COUNT)
+Parameter: YarnConfiguration.NM_CONTAINER_MGR_THREAD_COUNT. Inferred value: "yarn.nodemanager.""container-manager.thread-count"
+Parameter: YarnConfiguration.DEFAULT_NM_CONTAINER_MGR_THREAD_COUNT
+Callsite No. 293: 
+Content: conf.getBoolean(YarnConfiguration.RM_PROXY_USER_PRIVILEGES_ENABLED,YarnConfiguration.DEFAULT_RM_PROXY_USER_PRIVILEGES_ENABLED)
+Parameter: YarnConfiguration.RM_PROXY_USER_PRIVILEGES_ENABLED. Inferred value: "yarn.resourcemanager.""proxy-user-privileges.enabled"
+Parameter: YarnConfiguration.DEFAULT_RM_PROXY_USER_PRIVILEGES_ENABLED
+Callsite No. 294: 
+Content: conf.getLong(YarnConfiguration.TIMELINE_SERVICE_LEVELDB_START_TIME_WRITE_CACHE_SIZE,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_START_TIME_WRITE_CACHE_SIZE)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_LEVELDB_START_TIME_WRITE_CACHE_SIZE. Inferred value: "yarn.""timeline-service.""leveldb-timeline-store.""start-time-write-cache-size"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_START_TIME_WRITE_CACHE_SIZE
+Callsite No. 295: 
+Content: conf.getBoolean(YarnConfiguration.RECOVERY_ENABLED,YarnConfiguration.DEFAULT_RM_RECOVERY_ENABLED)
+Parameter: YarnConfiguration.RECOVERY_ENABLED. Inferred value: "yarn.resourcemanager.""recovery.enabled"
+Parameter: YarnConfiguration.DEFAULT_RM_RECOVERY_ENABLED
+Callsite No. 296: 
+Content: conf.get(YarnConfiguration.RM_PRINCIPAL,"")
+Parameter: YarnConfiguration.RM_PRINCIPAL. Inferred value: "yarn.resourcemanager.""principal"
+Parameter: "". Inferred value: ""
+Callsite No. 297: 
+Content: conf.getStringCollection(YarnConfiguration.RM_HA_IDS)
+Parameter: YarnConfiguration.RM_HA_IDS. Inferred value: "yarn.resourcemanager.""ha.""rm-ids"
+Callsite No. 298: 
+Content: conf.get(HttpServer2.BIND_ADDRESS)
+Parameter: HttpServer2.BIND_ADDRESS
+Callsite No. 299: 
+Content: conf.getFloat(YarnConfiguration.NM_MAX_PER_DISK_UTILIZATION_PERCENTAGE,YarnConfiguration.DEFAULT_NM_MAX_PER_DISK_UTILIZATION_PERCENTAGE)
+Parameter: YarnConfiguration.NM_MAX_PER_DISK_UTILIZATION_PERCENTAGE. Inferred value: "yarn.nodemanager.disk-health-checker.""max-disk-utilization-per-disk-percentage"
+Parameter: YarnConfiguration.DEFAULT_NM_MAX_PER_DISK_UTILIZATION_PERCENTAGE
+Callsite No. 300: 
+Content: conf.get(YarnConfiguration.NM_HEALTH_CHECK_SCRIPT_PATH)
+Parameter: YarnConfiguration.NM_HEALTH_CHECK_SCRIPT_PATH. Inferred value: "yarn.nodemanager.""health-checker.script.path"
+Callsite No. 301: 
+Content: conf.getBoolean(CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,false)
+Parameter: CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION
+Parameter: false
+Callsite No. 302: 
+Content: conf.getSocketAddr(rmId==null?YarnConfiguration.RM_WEBAPP_ADDRESS:HAUtil.addSuffix(YarnConfiguration.RM_WEBAPP_ADDRESS,rmId),YarnConfiguration.DEFAULT_RM_WEBAPP_ADDRESS,YarnConfiguration.DEFAULT_RM_WEBAPP_PORT)
+Parameter: rmId == null
+                  ? YarnConfiguration.RM_WEBAPP_ADDRESS
+                  : HAUtil.addSuffix(
+                  YarnConfiguration.RM_WEBAPP_ADDRESS, rmId)
+Parameter: YarnConfiguration.DEFAULT_RM_WEBAPP_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_RM_WEBAPP_PORT
+Callsite No. 303: 
+Content: conf.getTrimmedStringCollection(YarnConfiguration.RM_HA_IDS)
+Parameter: YarnConfiguration.RM_HA_IDS. Inferred value: "yarn.resourcemanager.""ha.""rm-ids"
+Callsite No. 304: 
+Content: conf.getSocketAddr(YarnConfiguration.SCM_UPLOADER_SERVER_ADDRESS,YarnConfiguration.DEFAULT_SCM_UPLOADER_SERVER_ADDRESS,YarnConfiguration.DEFAULT_SCM_UPLOADER_SERVER_PORT)
+Parameter: YarnConfiguration.SCM_UPLOADER_SERVER_ADDRESS. Inferred value: "yarn.sharedcache.""uploader.server.address"
+Parameter: YarnConfiguration.DEFAULT_SCM_UPLOADER_SERVER_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_SCM_UPLOADER_SERVER_PORT
+Callsite No. 305: 
+Content: conf.getInt(YarnConfiguration.RM_AM_EXPIRY_INTERVAL_MS,YarnConfiguration.DEFAULT_RM_AM_EXPIRY_INTERVAL_MS)
+Parameter: YarnConfiguration.RM_AM_EXPIRY_INTERVAL_MS. Inferred value: "yarn.""am.liveness-monitor.expiry-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_AM_EXPIRY_INTERVAL_MS
+Callsite No. 306: 
+Content: config.getLong(WAIT_TIME_BEFORE_KILL,15000)
+Parameter: WAIT_TIME_BEFORE_KILL. Inferred value: "yarn.resourcemanager.monitor.capacity.preemption.max_wait_before_kill"
+Parameter: 15000
+Callsite No. 307: 
+Content: conf.getBoolean(YarnConfiguration.TIMELINE_SERVICE_ENABLED,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ENABLED)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_ENABLED. Inferred value: "yarn.""timeline-service.""enabled"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ENABLED
+Callsite No. 308: 
+Content: conf.get(YarnConfiguration.RM_WEBAPP_ADDRESS,YarnConfiguration.DEFAULT_RM_WEBAPP_ADDRESS)
+Parameter: YarnConfiguration.RM_WEBAPP_ADDRESS. Inferred value: "yarn.resourcemanager.""webapp.address"
+Parameter: YarnConfiguration.DEFAULT_RM_WEBAPP_ADDRESS
+Callsite No. 309: 
+Content: conf.getSocketAddr(YarnConfiguration.RM_BIND_HOST,YarnConfiguration.RM_ADMIN_ADDRESS,YarnConfiguration.DEFAULT_RM_ADMIN_ADDRESS,YarnConfiguration.DEFAULT_RM_ADMIN_PORT)
+Parameter: YarnConfiguration.RM_BIND_HOST. Inferred value: "yarn.resourcemanager.""bind-host"
+Parameter: YarnConfiguration.RM_ADMIN_ADDRESS. Inferred value: "yarn.resourcemanager.""admin.address"
+Parameter: YarnConfiguration.DEFAULT_RM_ADMIN_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_RM_ADMIN_PORT
+Callsite No. 310: 
+Content: sslConf.get("ssl.server.keystore.location")
+Parameter: "ssl.server.keystore.location". Inferred value: "ssl.server.keystore.location"
+Callsite No. 311: 
+Content: conf.getTrimmed(rpcAddressConfKey)
+Parameter: rpcAddressConfKey
+Callsite No. 312: 
+Content: conf.getTrimmed(hostProperty)
+Parameter: hostProperty
+Callsite No. 313: 
+Content: conf.getLong(YarnConfiguration.NM_SLEEP_DELAY_BEFORE_SIGKILL_MS,YarnConfiguration.DEFAULT_NM_SLEEP_DELAY_BEFORE_SIGKILL_MS)
+Parameter: YarnConfiguration.NM_SLEEP_DELAY_BEFORE_SIGKILL_MS. Inferred value: "yarn.nodemanager.""sleep-delay-before-sigkill.ms"
+Parameter: YarnConfiguration.DEFAULT_NM_SLEEP_DELAY_BEFORE_SIGKILL_MS
+Callsite No. 314: 
+Content: conf.getLong(YarnConfiguration.RESOURCEMANAGER_CONNECT_MAX_WAIT_MS,YarnConfiguration.DEFAULT_RESOURCEMANAGER_CONNECT_MAX_WAIT_MS)
+Parameter: YarnConfiguration.RESOURCEMANAGER_CONNECT_MAX_WAIT_MS. Inferred value: "yarn.resourcemanager.""connect.max-wait.ms"
+Parameter: YarnConfiguration.DEFAULT_RESOURCEMANAGER_CONNECT_MAX_WAIT_MS
+Callsite No. 315: 
+Content: null
+Callsite No. 316: 
+Content: conf.get(authTypeKey,"")
+Parameter: authTypeKey. Inferred value: "hadoop.http.authentication.""type"
+Parameter: "". Inferred value: ""
+Callsite No. 317: 
+Content: conf.getLong(YarnConfiguration.NM_CONTAINER_METRICS_PERIOD_MS,YarnConfiguration.DEFAULT_NM_CONTAINER_METRICS_PERIOD_MS)
+Parameter: YarnConfiguration.NM_CONTAINER_METRICS_PERIOD_MS. Inferred value: "yarn.nodemanager.""container-metrics.period-ms"
+Parameter: YarnConfiguration.DEFAULT_NM_CONTAINER_METRICS_PERIOD_MS
+Callsite No. 318: 
+Content: conf.getLong(YarnConfiguration.NM_MIN_PER_DISK_FREE_SPACE_MB,YarnConfiguration.DEFAULT_NM_MIN_PER_DISK_FREE_SPACE_MB)
+Parameter: YarnConfiguration.NM_MIN_PER_DISK_FREE_SPACE_MB. Inferred value: "yarn.nodemanager.disk-health-checker.""min-free-space-per-disk-mb"
+Parameter: YarnConfiguration.DEFAULT_NM_MIN_PER_DISK_FREE_SPACE_MB
+Callsite No. 319: 
+Content: conf.getInt(YarnConfiguration.RM_ZK_TIMEOUT_MS,YarnConfiguration.DEFAULT_RM_ZK_TIMEOUT_MS)
+Parameter: YarnConfiguration.RM_ZK_TIMEOUT_MS. Inferred value: "yarn.resourcemanager.""zk-""timeout-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_ZK_TIMEOUT_MS
+Callsite No. 320: 
+Content: conf.get(YarnConfiguration.NM_BIND_HOST)
+Parameter: YarnConfiguration.NM_BIND_HOST. Inferred value: "yarn.nodemanager.""bind-host"
+Callsite No. 321: 
+Content: conf.getBoolean(YarnConfiguration.NODE_LABELS_ENABLED,YarnConfiguration.DEFAULT_NODE_LABELS_ENABLED)
+Parameter: YarnConfiguration.NODE_LABELS_ENABLED. Inferred value: "yarn.""node-labels.""enabled"
+Parameter: YarnConfiguration.DEFAULT_NODE_LABELS_ENABLED
+Callsite No. 322: 
+Content: conf.getLong(YarnConfiguration.CLIENT_FAILOVER_SLEEPTIME_BASE_MS,rmConnectionRetryIntervalMS)
+Parameter: YarnConfiguration.CLIENT_FAILOVER_SLEEPTIME_BASE_MS. Inferred value: "yarn.""client.failover-""sleep-base-ms"
+Parameter: rmConnectionRetryIntervalMS
+Callsite No. 323: 
+Content: conf.get(YarnConfiguration.RM_HA_IDS)
+Parameter: YarnConfiguration.RM_HA_IDS. Inferred value: "yarn.resourcemanager.""ha.""rm-ids"
+Callsite No. 324: 
+Content: SHUTDOWN_CLEANUP_SLOP_MS
+Callsite No. 325: 
+Content: conf.get(YarnConfiguration.RM_ZK_ADDRESS)
+Parameter: YarnConfiguration.RM_ZK_ADDRESS. Inferred value: "yarn.resourcemanager.""zk-""address"
+Callsite No. 326: 
+Content: conf.getInt(YarnConfiguration.SHARED_CACHE_NESTED_LEVEL,YarnConfiguration.DEFAULT_SHARED_CACHE_NESTED_LEVEL)
+Parameter: YarnConfiguration.SHARED_CACHE_NESTED_LEVEL. Inferred value: "yarn.sharedcache.""nested-level"
+Parameter: YarnConfiguration.DEFAULT_SHARED_CACHE_NESTED_LEVEL
+Callsite No. 327: 
+Content: conf.getClass(YarnConfiguration.NM_CONTAINER_MON_PROCESS_TREE,null,ResourceCalculatorProcessTree.class)
+Parameter: YarnConfiguration.NM_CONTAINER_MON_PROCESS_TREE. Inferred value: "yarn.nodemanager.""container-monitor.process-tree.class"
+Parameter: null
+Parameter: ResourceCalculatorProcessTree.class
+Callsite No. 328: 
+Content: conf.getStringCollection(YarnConfiguration.NM_AUX_SERVICES)
+Parameter: YarnConfiguration.NM_AUX_SERVICES. Inferred value: "yarn.nodemanager.""aux-services"
+Callsite No. 329: 
+Content: conf.getLong(YarnConfiguration.TIMELINE_SERVICE_TTL_MS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_TTL_MS)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_TTL_MS. Inferred value: "yarn.""timeline-service.""ttl-ms"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_TTL_MS
+Callsite No. 330: 
+Content: WebAppUtils.getAHSWebAppURLWithoutScheme(conf)
+Parameter: conf
+Callsite No. 331: 
+Content: conf.getInt(YarnConfiguration.RM_ADMIN_CLIENT_THREAD_COUNT,YarnConfiguration.DEFAULT_RM_ADMIN_CLIENT_THREAD_COUNT)
+Parameter: YarnConfiguration.RM_ADMIN_CLIENT_THREAD_COUNT. Inferred value: "yarn.resourcemanager.""admin.client.thread-count"
+Parameter: YarnConfiguration.DEFAULT_RM_ADMIN_CLIENT_THREAD_COUNT
+Callsite No. 332: 
+Content: conf.getBoolean(YarnConfiguration.TIMELINE_SERVICE_CLIENT_BEST_EFFORT,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_BEST_EFFORT)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_CLIENT_BEST_EFFORT. Inferred value: "yarn.""timeline-service.""client.""best-effort"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_BEST_EFFORT
+Callsite No. 333: 
+Content: conf.getBoolean(YarnConfiguration.NM_RECOVERY_ENABLED,YarnConfiguration.DEFAULT_NM_RECOVERY_ENABLED)
+Parameter: YarnConfiguration.NM_RECOVERY_ENABLED. Inferred value: "yarn.nodemanager.""recovery.""enabled"
+Parameter: YarnConfiguration.DEFAULT_NM_RECOVERY_ENABLED
+Callsite No. 334: 
+Content: conf.getClass(String.format(YarnConfiguration.NM_AUX_SERVICE_FMT,sName),null,AuxiliaryService.class)
+Parameter: String.format(YarnConfiguration.NM_AUX_SERVICE_FMT, sName)
+Parameter: null
+Parameter: AuxiliaryService.class
+Callsite No. 335: 
+Content: conf.getInt(YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_MB,YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_MB)
+Parameter: YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_MB. Inferred value: "yarn.""scheduler.maximum-allocation-mb"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_MB
+Callsite No. 336: 
+Content: conf.getLong(YARN_NODEMANAGER_DURATION_TO_TRACK_STOPPED_CONTAINERS,600000)
+Parameter: YARN_NODEMANAGER_DURATION_TO_TRACK_STOPPED_CONTAINERS. Inferred value: "yarn.nodemanager.""duration-to-track-stopped-containers"
+Parameter: 600000
+Callsite No. 337: 
+Content: conf.getTrimmed(KEY_REGISTRY_ZK_ROOT,DEFAULT_ZK_REGISTRY_ROOT)
+Parameter: KEY_REGISTRY_ZK_ROOT
+Parameter: DEFAULT_ZK_REGISTRY_ROOT
+Callsite No. 338: 
+Content: conf.get(YarnConfiguration.RM_HA_IDS)
+Parameter: YarnConfiguration.RM_HA_IDS. Inferred value: "yarn.resourcemanager.""ha.""rm-ids"
+Callsite No. 339: 
+Content: conf.getInt(YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_MB,YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_MB)
+Parameter: YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_MB. Inferred value: "yarn.""scheduler.maximum-allocation-mb"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_MB
+Callsite No. 340: 
+Content: conf.get(YarnConfiguration.NM_REMOTE_APP_LOG_DIR,YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR)
+Parameter: YarnConfiguration.NM_REMOTE_APP_LOG_DIR. Inferred value: "yarn.nodemanager.""remote-app-log-dir"
+Parameter: YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR. Inferred value: "/tmp/logs"
+Callsite No. 341: 
+Content: conf.getClass(YarnConfiguration.TIMELINE_SERVICE_STORE,LeveldbTimelineStore.class,TimelineStore.class)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_STORE. Inferred value: "yarn.""timeline-service.""store-class"
+Parameter: LeveldbTimelineStore.class
+Parameter: TimelineStore.class
+Callsite No. 342: 
+Content: conf.getSocketAddr(YarnConfiguration.RM_WEBAPP_ADDRESS,YarnConfiguration.DEFAULT_RM_WEBAPP_ADDRESS,YarnConfiguration.DEFAULT_RM_WEBAPP_PORT)
+Parameter: YarnConfiguration.RM_WEBAPP_ADDRESS. Inferred value: "yarn.resourcemanager.""webapp.address"
+Parameter: YarnConfiguration.DEFAULT_RM_WEBAPP_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_RM_WEBAPP_PORT
+Callsite No. 343: 
+Content: conf.getInt(YarnConfiguration.SHARED_CACHE_NM_UPLOADER_THREAD_COUNT,YarnConfiguration.DEFAULT_SHARED_CACHE_NM_UPLOADER_THREAD_COUNT)
+Parameter: YarnConfiguration.SHARED_CACHE_NM_UPLOADER_THREAD_COUNT. Inferred value: "yarn.sharedcache.""nm.uploader.thread-count"
+Parameter: YarnConfiguration.DEFAULT_SHARED_CACHE_NM_UPLOADER_THREAD_COUNT
+Callsite No. 344: 
+Content: conf.get(YarnConfiguration.NM_WEBAPP_ADDRESS,YarnConfiguration.DEFAULT_NM_WEBAPP_ADDRESS)
+Parameter: YarnConfiguration.NM_WEBAPP_ADDRESS. Inferred value: "yarn.nodemanager.""webapp.address"
+Parameter: YarnConfiguration.DEFAULT_NM_WEBAPP_ADDRESS
+Callsite No. 345: 
+Content: conf.getInt(YarnConfiguration.RM_NODEMANAGER_CONNECT_RETIRES,YarnConfiguration.DEFAULT_RM_NODEMANAGER_CONNECT_RETIRES)
+Parameter: YarnConfiguration.RM_NODEMANAGER_CONNECT_RETIRES. Inferred value: "yarn.resourcemanager.""nodemanager-connect-retries"
+Parameter: YarnConfiguration.DEFAULT_RM_NODEMANAGER_CONNECT_RETIRES
+Callsite No. 346: 
+Content: conf.get(YarnConfiguration.NM_REMOTE_APP_LOG_DIR_SUFFIX,YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR_SUFFIX)
+Parameter: YarnConfiguration.NM_REMOTE_APP_LOG_DIR_SUFFIX. Inferred value: "yarn.nodemanager.""remote-app-log-dir-suffix"
+Parameter: YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR_SUFFIX. Inferred value: "logs"
+Callsite No. 347: 
+Content: this.conf.getLong(YarnConfiguration.RM_NMTOKEN_MASTER_KEY_ROLLING_INTERVAL_SECS,YarnConfiguration.DEFAULT_RM_NMTOKEN_MASTER_KEY_ROLLING_INTERVAL_SECS)
+Parameter: YarnConfiguration.RM_NMTOKEN_MASTER_KEY_ROLLING_INTERVAL_SECS. Inferred value: "yarn.resourcemanager.""nm-tokens.master-key-rolling-interval-secs"
+Parameter: YarnConfiguration.DEFAULT_RM_NMTOKEN_MASTER_KEY_ROLLING_INTERVAL_SECS
+Callsite No. 348: 
+Content: getMaximumAllocationPerQueue(getQueuePath())
+Parameter: getQueuePath()
+Callsite No. 349: 
+Content: conf.getLong(YarnConfiguration.YARN_CLIENT_APPLICATION_CLIENT_PROTOCOL_POLL_TIMEOUT_MS,YarnConfiguration.DEFAULT_YARN_CLIENT_APPLICATION_CLIENT_PROTOCOL_POLL_TIMEOUT_MS)
+Parameter: YarnConfiguration.YARN_CLIENT_APPLICATION_CLIENT_PROTOCOL_POLL_TIMEOUT_MS. Inferred value: "yarn.""client.application-client-protocol.poll-timeout-ms"
+Parameter: YarnConfiguration.DEFAULT_YARN_CLIENT_APPLICATION_CLIENT_PROTOCOL_POLL_TIMEOUT_MS
+Callsite No. 350: 
+Content: bootstrapConf.get(YarnConfiguration.FS_BASED_RM_CONF_STORE,YarnConfiguration.DEFAULT_FS_BASED_RM_CONF_STORE)
+Parameter: YarnConfiguration.FS_BASED_RM_CONF_STORE. Inferred value: "yarn.resourcemanager.""configuration.file-system-based-store"
+Parameter: YarnConfiguration.DEFAULT_FS_BASED_RM_CONF_STORE. Inferred value: "/yarn/conf"
+Callsite No. 351: 
+Content: conf.getClass(YarnConfiguration.APPLICATION_HISTORY_STORE,FileSystemApplicationHistoryStore.class,ApplicationHistoryStore.class)
+Parameter: YarnConfiguration.APPLICATION_HISTORY_STORE. Inferred value: "yarn.""timeline-service.""generic-application-history.""store-class"
+Parameter: FileSystemApplicationHistoryStore.class
+Parameter: ApplicationHistoryStore.class
+Callsite No. 352: 
+Content: conf.getInt(YarnConfiguration.NM_LOCAL_CACHE_MAX_FILES_PER_DIRECTORY,YarnConfiguration.DEFAULT_NM_LOCAL_CACHE_MAX_FILES_PER_DIRECTORY)
+Parameter: YarnConfiguration.NM_LOCAL_CACHE_MAX_FILES_PER_DIRECTORY. Inferred value: "yarn.nodemanager.""local-cache.max-files-per-directory"
+Parameter: YarnConfiguration.DEFAULT_NM_LOCAL_CACHE_MAX_FILES_PER_DIRECTORY
+Callsite No. 353: 
+Content: conf.getPassword(alias)
+Parameter: alias
+Callsite No. 354: 
+Content: conf.getLong(YarnConfiguration.TIMELINE_DELEGATION_TOKEN_RENEW_INTERVAL,YarnConfiguration.DEFAULT_TIMELINE_DELEGATION_TOKEN_RENEW_INTERVAL)
+Parameter: YarnConfiguration.TIMELINE_DELEGATION_TOKEN_RENEW_INTERVAL. Inferred value: "yarn.""timeline-service.""delegation.token.renew-interval"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_DELEGATION_TOKEN_RENEW_INTERVAL
+Callsite No. 355: 
+Content: conf.get(YarnConfiguration.YARN_ADMIN_ACL,YarnConfiguration.DEFAULT_YARN_ADMIN_ACL)
+Parameter: YarnConfiguration.YARN_ADMIN_ACL. Inferred value: "yarn.""admin.acl"
+Parameter: YarnConfiguration.DEFAULT_YARN_ADMIN_ACL. Inferred value: "*"
+Callsite No. 356: 
+Content: this.conf.getAssignMultiple()
+Callsite No. 357: 
+Content: conf.getInt(YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_VCORES,YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_VCORES)
+Parameter: YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_VCORES. Inferred value: "yarn.""scheduler.minimum-allocation-vcores"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_VCORES
+Callsite No. 358: 
+Content: conf.get(YarnConfiguration.TIMELINE_SERVICE_WEBAPP_ADDRESS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_ADDRESS)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_WEBAPP_ADDRESS. Inferred value: "yarn.""timeline-service.""webapp.address"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_ADDRESS
+Callsite No. 359: 
+Content: localConf.getClassByName(getPBImplClassName(protocol))
+Parameter: getPBImplClassName(protocol)
+Callsite No. 360: 
+Content: conf.get(YarnConfiguration.NM_RECOVERY_DIR)
+Parameter: YarnConfiguration.NM_RECOVERY_DIR. Inferred value: "yarn.nodemanager.""recovery.""dir"
+Callsite No. 361: 
+Content: conf.getBoolean(YarnConfiguration.AUTO_FAILOVER_ENABLED,YarnConfiguration.DEFAULT_AUTO_FAILOVER_ENABLED)
+Parameter: YarnConfiguration.AUTO_FAILOVER_ENABLED. Inferred value: "yarn.resourcemanager.""ha.""automatic-failover.""enabled"
+Parameter: YarnConfiguration.DEFAULT_AUTO_FAILOVER_ENABLED
+Callsite No. 362: 
+Content: conf.getLong(YarnConfiguration.RM_NM_HEARTBEAT_INTERVAL_MS,YarnConfiguration.DEFAULT_RM_NM_HEARTBEAT_INTERVAL_MS)
+Parameter: YarnConfiguration.RM_NM_HEARTBEAT_INTERVAL_MS. Inferred value: "yarn.resourcemanager.""nodemanagers.heartbeat-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_NM_HEARTBEAT_INTERVAL_MS
+Callsite No. 363: 
+Content: conf.get(KEY_ZKSERVICE_ALLOW_FAILED_SASL_CLIENTS,"true")
+Parameter: KEY_ZKSERVICE_ALLOW_FAILED_SASL_CLIENTS
+Parameter: "true". Inferred value: "true"
+Callsite No. 364: 
+Content: conf.getClass(YarnConfiguration.NM_CONTAINER_EXECUTOR,DefaultContainerExecutor.class,ContainerExecutor.class)
+Parameter: YarnConfiguration.NM_CONTAINER_EXECUTOR. Inferred value: "yarn.nodemanager.""container-executor.class"
+Parameter: DefaultContainerExecutor.class
+Parameter: ContainerExecutor.class
+Callsite No. 365: 
+Content: conf.getInt(YarnConfiguration.DEBUG_NM_DELETE_DELAY_SEC,0)
+Parameter: YarnConfiguration.DEBUG_NM_DELETE_DELAY_SEC. Inferred value: "yarn.nodemanager.""delete.debug-delay-sec"
+Parameter: 0
+Callsite No. 366: 
+Content: conf.getInt(YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_MB,YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_MB)
+Parameter: YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_MB. Inferred value: "yarn.""scheduler.minimum-allocation-mb"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_MB
+Callsite No. 367: 
+Content: conf.getTrimmed(YarnConfiguration.NM_ADDRESS)
+Parameter: YarnConfiguration.NM_ADDRESS. Inferred value: "yarn.nodemanager.""address"
+Callsite No. 368: 
+Content: conf.getSocketAddr(YarnConfiguration.TIMELINE_SERVICE_ADDRESS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ADDRESS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_PORT)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_ADDRESS. Inferred value: "yarn.""timeline-service.""address"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_PORT
+Callsite No. 369: 
+Content: conf.get("hadoop.http.filter.initializers")
+Parameter: "hadoop.http.filter.initializers". Inferred value: "hadoop.http.filter.initializers"
+Callsite No. 370: 
+Content: bootstrapConf.getClass(YarnConfiguration.RM_CONFIGURATION_PROVIDER_CLASS,defaultProviderClass,ConfigurationProvider.class)
+Parameter: YarnConfiguration.RM_CONFIGURATION_PROVIDER_CLASS. Inferred value: "yarn.resourcemanager.""configuration.provider-class"
+Parameter: defaultProviderClass
+Parameter: ConfigurationProvider.class
+Callsite No. 371: 
+Content: conf.getBoolean(YarnConfiguration.NM_NONSECURE_MODE_LIMIT_USERS,YarnConfiguration.DEFAULT_NM_NONSECURE_MODE_LIMIT_USERS)
+Parameter: YarnConfiguration.NM_NONSECURE_MODE_LIMIT_USERS. Inferred value: "yarn.nodemanager.""linux-container-executor.nonsecure-mode.limit-users"
+Parameter: YarnConfiguration.DEFAULT_NM_NONSECURE_MODE_LIMIT_USERS
+Callsite No. 372: 
+Content: conf.getInt(YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_MB,YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_MB)
+Parameter: YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_MB. Inferred value: "yarn.""scheduler.minimum-allocation-mb"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_MB
+Callsite No. 373: 
+Content: conf.getLong(YarnConfiguration.TIMELINE_SERVICE_CLIENT_RETRY_INTERVAL_MS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_RETRY_INTERVAL_MS)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_CLIENT_RETRY_INTERVAL_MS. Inferred value: "yarn.""timeline-service.""client.""retry-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_RETRY_INTERVAL_MS
+Callsite No. 374: 
+Content: conf.getInt(YarnConfiguration.CLIENT_FAILOVER_MAX_ATTEMPTS,-1)
+Parameter: YarnConfiguration.CLIENT_FAILOVER_MAX_ATTEMPTS. Inferred value: "yarn.""client.failover-""max-attempts"
+Parameter: -1
+Callsite No. 375: 
+Content: conf.getLong(YarnConfiguration.NM_SLEEP_DELAY_BEFORE_SIGKILL_MS,YarnConfiguration.DEFAULT_NM_SLEEP_DELAY_BEFORE_SIGKILL_MS)
+Parameter: YarnConfiguration.NM_SLEEP_DELAY_BEFORE_SIGKILL_MS. Inferred value: "yarn.nodemanager.""sleep-delay-before-sigkill.ms"
+Parameter: YarnConfiguration.DEFAULT_NM_SLEEP_DELAY_BEFORE_SIGKILL_MS
+Callsite No. 376: 
+Content: conf.getSocketAddr(YarnConfiguration.SCM_ADMIN_ADDRESS,YarnConfiguration.DEFAULT_SCM_ADMIN_ADDRESS,YarnConfiguration.DEFAULT_SCM_ADMIN_PORT)
+Parameter: YarnConfiguration.SCM_ADMIN_ADDRESS. Inferred value: "yarn.sharedcache.""admin.address"
+Parameter: YarnConfiguration.DEFAULT_SCM_ADMIN_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_SCM_ADMIN_PORT
+Callsite No. 377: 
+Content: conf.get(YarnConfiguration.NM_WEBAPP_HTTPS_ADDRESS,YarnConfiguration.DEFAULT_NM_WEBAPP_HTTPS_ADDRESS)
+Parameter: YarnConfiguration.NM_WEBAPP_HTTPS_ADDRESS. Inferred value: "yarn.nodemanager.""webapp.https.address"
+Parameter: YarnConfiguration.DEFAULT_NM_WEBAPP_HTTPS_ADDRESS
+Callsite No. 378: 
+Content: conf.getBoolean(YarnConfiguration.YARN_MINICLUSTER_USE_RPC,YarnConfiguration.DEFAULT_YARN_MINICLUSTER_USE_RPC)
+Parameter: YarnConfiguration.YARN_MINICLUSTER_USE_RPC. Inferred value: "yarn.""minicluster.""use-rpc"
+Parameter: YarnConfiguration.DEFAULT_YARN_MINICLUSTER_USE_RPC
+Callsite No. 379: 
+Content: conf.getBoolean(YarnConfiguration.RM_WORK_PRESERVING_RECOVERY_ENABLED,YarnConfiguration.DEFAULT_RM_WORK_PRESERVING_RECOVERY_ENABLED)
+Parameter: YarnConfiguration.RM_WORK_PRESERVING_RECOVERY_ENABLED. Inferred value: "yarn.resourcemanager.""work-preserving-recovery.enabled"
+Parameter: YarnConfiguration.DEFAULT_RM_WORK_PRESERVING_RECOVERY_ENABLED
+Callsite No. 380: 
+Content: conf.getLong(YarnConfiguration.TIMELINE_SERVICE_LEVELDB_TTL_INTERVAL_MS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_TTL_INTERVAL_MS)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_LEVELDB_TTL_INTERVAL_MS. Inferred value: "yarn.""timeline-service.""leveldb-timeline-store.""ttl-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_TTL_INTERVAL_MS
+Callsite No. 381: 
+Content: conf.get(YarnConfiguration.SHARED_CACHE_ROOT,YarnConfiguration.DEFAULT_SHARED_CACHE_ROOT)
+Parameter: YarnConfiguration.SHARED_CACHE_ROOT. Inferred value: "yarn.sharedcache.""root-dir"
+Parameter: YarnConfiguration.DEFAULT_SHARED_CACHE_ROOT. Inferred value: "/sharedcache"
+Callsite No. 382: 
+Content: conf.getFloat(YarnConfiguration.NM_VMEM_PMEM_RATIO,YarnConfiguration.DEFAULT_NM_VMEM_PMEM_RATIO)
+Parameter: YarnConfiguration.NM_VMEM_PMEM_RATIO. Inferred value: "yarn.nodemanager.""vmem-pmem-ratio"
+Parameter: YarnConfiguration.DEFAULT_NM_VMEM_PMEM_RATIO
+Callsite No. 383: 
+Content: config.getBoolean(OBSERVE_ONLY,false)
+Parameter: OBSERVE_ONLY. Inferred value: "yarn.resourcemanager.monitor.capacity.preemption.observe_only"
+Parameter: false
+Callsite No. 384: 
+Content: conf.get(YarnConfiguration.YARN_ADMIN_ACL,YarnConfiguration.DEFAULT_YARN_ADMIN_ACL)
+Parameter: YarnConfiguration.YARN_ADMIN_ACL. Inferred value: "yarn.""admin.acl"
+Parameter: YarnConfiguration.DEFAULT_YARN_ADMIN_ACL. Inferred value: "*"
+Callsite No. 385: 
+Content: conf.getLong(YarnConfiguration.RM_CONTAINER_TOKEN_MASTER_KEY_ROLLING_INTERVAL_SECS,YarnConfiguration.DEFAULT_RM_CONTAINER_TOKEN_MASTER_KEY_ROLLING_INTERVAL_SECS)
+Parameter: YarnConfiguration.RM_CONTAINER_TOKEN_MASTER_KEY_ROLLING_INTERVAL_SECS. Inferred value: "yarn.resourcemanager.""container-tokens.master-key-rolling-interval-secs"
+Parameter: YarnConfiguration.DEFAULT_RM_CONTAINER_TOKEN_MASTER_KEY_ROLLING_INTERVAL_SECS
+Callsite No. 386: 
+Content: sslConf.get("ssl.server.truststore.location")
+Parameter: "ssl.server.truststore.location". Inferred value: "ssl.server.truststore.location"
+Callsite No. 387: 
+Content: conf.getInt(YarnConfiguration.RM_AMLAUNCHER_THREAD_COUNT,YarnConfiguration.DEFAULT_RM_AMLAUNCHER_THREAD_COUNT)
+Parameter: YarnConfiguration.RM_AMLAUNCHER_THREAD_COUNT. Inferred value: "yarn.resourcemanager.""amlauncher.thread-count"
+Parameter: YarnConfiguration.DEFAULT_RM_AMLAUNCHER_THREAD_COUNT
+Callsite No. 388: 
+Content: conf.getSocketAddr(YarnConfiguration.RM_ADDRESS,YarnConfiguration.DEFAULT_RM_ADDRESS,YarnConfiguration.DEFAULT_RM_PORT)
+Parameter: YarnConfiguration.RM_ADDRESS. Inferred value: "yarn.resourcemanager.""address"
+Parameter: YarnConfiguration.DEFAULT_RM_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_RM_PORT
+Callsite No. 389: 
+Content: getClusterNodeLabels()
+Callsite No. 390: 
+Content: get(YarnConfiguration.NM_REMOTE_APP_LOG_DIR,YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR)
+Parameter: YarnConfiguration.NM_REMOTE_APP_LOG_DIR. Inferred value: "yarn.nodemanager.""remote-app-log-dir"
+Parameter: YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR. Inferred value: "/tmp/logs"
+Callsite No. 391: 
+Content: conf.getInt(KEY_REGISTRY_ZK_RETRY_CEILING,DEFAULT_ZK_RETRY_CEILING)
+Parameter: KEY_REGISTRY_ZK_RETRY_CEILING
+Parameter: DEFAULT_ZK_RETRY_CEILING
+Callsite No. 392: 
+Content: conf.get(CommonConfigurationKeys.HADOOP_HTTP_STATIC_USER,CommonConfigurationKeys.DEFAULT_HADOOP_HTTP_STATIC_USER)
+Parameter: CommonConfigurationKeys.HADOOP_HTTP_STATIC_USER
+Parameter: CommonConfigurationKeys.DEFAULT_HADOOP_HTTP_STATIC_USER
+Callsite No. 393: 
+Content: conf.getTrimmed(YarnConfiguration.RM_HA_ID)
+Parameter: YarnConfiguration.RM_HA_ID. Inferred value: "yarn.resourcemanager.""ha.""id"
+Callsite No. 394: 
+Content: conf.getInt(YarnConfiguration.IN_MEMORY_INITIAL_DELAY_MINS,YarnConfiguration.DEFAULT_IN_MEMORY_INITIAL_DELAY_MINS)
+Parameter: YarnConfiguration.IN_MEMORY_INITIAL_DELAY_MINS. Inferred value: "yarn.sharedcache.""store.""in-memory.""initial-delay-mins"
+Parameter: YarnConfiguration.DEFAULT_IN_MEMORY_INITIAL_DELAY_MINS
+Callsite No. 395: 
+Content: conf.getBoolean(YarnConfiguration.TIMELINE_SERVICE_ENABLED,false)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_ENABLED. Inferred value: "yarn.""timeline-service.""enabled"
+Parameter: false
+Callsite No. 396: 
+Content: conf.get(YarnConfiguration.ZK_RM_STATE_STORE_PARENT_PATH,YarnConfiguration.DEFAULT_ZK_RM_STATE_STORE_PARENT_PATH)
+Parameter: YarnConfiguration.ZK_RM_STATE_STORE_PARENT_PATH. Inferred value: "yarn.resourcemanager.""zk-state-store.""parent-path"
+Parameter: YarnConfiguration.DEFAULT_ZK_RM_STATE_STORE_PARENT_PATH. Inferred value: "/rmstore"
+Callsite No. 397: 
+Content: conf.getInt(YarnConfiguration.RM_ZK_NUM_RETRIES,YarnConfiguration.DEFAULT_ZK_RM_NUM_RETRIES)
+Parameter: YarnConfiguration.RM_ZK_NUM_RETRIES. Inferred value: "yarn.resourcemanager.""zk-""num-retries"
+Parameter: YarnConfiguration.DEFAULT_ZK_RM_NUM_RETRIES
+Callsite No. 398: 
+Content: this.conf.getPreemptionUtilizationThreshold()
+Callsite No. 399: 
+Content: conf.getInt(YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS,YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS)
+Parameter: YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS. Inferred value: "yarn.""nm.liveness-monitor.expiry-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS
+Callsite No. 400: 
+Content: conf.getInt(YarnConfiguration.NM_VCORES,YarnConfiguration.DEFAULT_NM_VCORES)
+Parameter: YarnConfiguration.NM_VCORES. Inferred value: "yarn.nodemanager.""resource.cpu-vcores"
+Parameter: YarnConfiguration.DEFAULT_NM_VCORES
+Callsite No. 401: 
+Content: conf.get(YarnConfiguration.NM_REMOTE_APP_LOG_DIR,YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR)
+Parameter: YarnConfiguration.NM_REMOTE_APP_LOG_DIR. Inferred value: "yarn.nodemanager.""remote-app-log-dir"
+Parameter: YarnConfiguration.DEFAULT_NM_REMOTE_APP_LOG_DIR. Inferred value: "/tmp/logs"
+Callsite No. 402: 
+Content: get(YarnConfiguration.NM_DOCKER_CONTAINER_EXECUTOR_EXEC_NAME,YarnConfiguration.NM_DEFAULT_DOCKER_CONTAINER_EXECUTOR_EXEC_NAME)
+Parameter: YarnConfiguration.NM_DOCKER_CONTAINER_EXECUTOR_EXEC_NAME. Inferred value: "yarn.nodemanager.""docker-container-executor.exec-name"
+Parameter: YarnConfiguration.NM_DEFAULT_DOCKER_CONTAINER_EXECUTOR_EXEC_NAME. Inferred value: "/usr/bin/docker"
+Callsite No. 403: 
+Content: conf.getInt(YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS,YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS)
+Parameter: YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS. Inferred value: "yarn.""nm.liveness-monitor.expiry-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS
+Callsite No. 404: 
+Content: conf.getInt(NM_COMMAND_TIMEOUT,DEFAULT_COMMAND_TIMEOUT)
+Parameter: NM_COMMAND_TIMEOUT. Inferred value: "yarn.""rpc.nm-command-timeout"
+Parameter: DEFAULT_COMMAND_TIMEOUT
+Callsite No. 405: 
+Content: getRMWebAppURLWithoutScheme(conf)
+Parameter: conf
+Callsite No. 406: 
+Content: conf.getStrings(YarnConfiguration.YARN_APPLICATION_CLASSPATH,YarnConfiguration.DEFAULT_YARN_CROSS_PLATFORM_APPLICATION_CLASSPATH)
+Parameter: YarnConfiguration.YARN_APPLICATION_CLASSPATH. Inferred value: "yarn.""application.classpath"
+Parameter: YarnConfiguration.DEFAULT_YARN_CROSS_PLATFORM_APPLICATION_CLASSPATH
+Callsite No. 407: 
+Content: conf.get(YarnConfiguration.FS_APPLICATION_HISTORY_STORE_URI,conf.get("hadoop.tmp.dir")+"/yarn/timeline/generic-history")
+Parameter: YarnConfiguration.FS_APPLICATION_HISTORY_STORE_URI. Inferred value: "yarn.""timeline-service.""generic-application-history.""fs-history-store.uri"
+Parameter: conf.get("hadoop.tmp.dir") + "/yarn/timeline/generic-history". Inferred value: "/yarn/timeline/generic-history"
+Callsite No. 408: 
+Content: conf.getBoolean(YarnConfiguration.APPLICATION_HISTORY_ENABLED,YarnConfiguration.DEFAULT_APPLICATION_HISTORY_ENABLED)
+Parameter: YarnConfiguration.APPLICATION_HISTORY_ENABLED. Inferred value: "yarn.""timeline-service.""generic-application-history.""enabled"
+Parameter: YarnConfiguration.DEFAULT_APPLICATION_HISTORY_ENABLED
+Callsite No. 409: 
+Content: conf.getBoolean(YarnConfiguration.TIMELINE_SERVICE_ENABLED,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ENABLED)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_ENABLED. Inferred value: "yarn.""timeline-service.""enabled"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ENABLED
+Callsite No. 410: 
+Content: conf.getBoolean(FairSchedulerConfiguration.ALLOW_UNDECLARED_POOLS,FairSchedulerConfiguration.DEFAULT_ALLOW_UNDECLARED_POOLS)
+Parameter: FairSchedulerConfiguration.ALLOW_UNDECLARED_POOLS. Inferred value: "yarn.scheduler.fair.""allow-undeclared-pools"
+Parameter: FairSchedulerConfiguration.DEFAULT_ALLOW_UNDECLARED_POOLS
+Callsite No. 411: 
+Content: getNonLabeledQueueCapacity(getQueuePath())
+Parameter: getQueuePath()
+Callsite No. 412: 
+Content: this.conf.getPreemptionEnabled()
+Callsite No. 413: 
+Content: conf.getInt(YarnConfiguration.SCM_CLEANER_INITIAL_DELAY_MINS,YarnConfiguration.DEFAULT_SCM_CLEANER_INITIAL_DELAY_MINS)
+Parameter: YarnConfiguration.SCM_CLEANER_INITIAL_DELAY_MINS. Inferred value: "yarn.sharedcache.""cleaner.""initial-delay-mins"
+Parameter: YarnConfiguration.DEFAULT_SCM_CLEANER_INITIAL_DELAY_MINS
+Callsite No. 414: 
+Content: conf.getInt(YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS,YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS)
+Parameter: YarnConfiguration.RM_NM_EXPIRY_INTERVAL_MS. Inferred value: "yarn.""nm.liveness-monitor.expiry-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_NM_EXPIRY_INTERVAL_MS
+Callsite No. 415: 
+Content: conf.getInt(YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_MB,YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_MB)
+Parameter: YarnConfiguration.RM_SCHEDULER_MAXIMUM_ALLOCATION_MB. Inferred value: "yarn.""scheduler.maximum-allocation-mb"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_MAXIMUM_ALLOCATION_MB
+Callsite No. 416: 
+Content: getMaximumSystemApplications()
+Callsite No. 417: 
+Content: conf.get(YarnConfiguration.TIMELINE_SERVICE_WEBAPP_HTTPS_ADDRESS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_HTTPS_ADDRESS)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_WEBAPP_HTTPS_ADDRESS. Inferred value: "yarn.""timeline-service.""webapp.https.address"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_WEBAPP_HTTPS_ADDRESS
+Callsite No. 418: 
+Content: yarnConf.get(YarnConfiguration.RM_NODES_EXCLUDE_FILE_PATH,YarnConfiguration.DEFAULT_RM_NODES_EXCLUDE_FILE_PATH)
+Parameter: YarnConfiguration.RM_NODES_EXCLUDE_FILE_PATH. Inferred value: "yarn.resourcemanager.""nodes.exclude-path"
+Parameter: YarnConfiguration.DEFAULT_RM_NODES_EXCLUDE_FILE_PATH. Inferred value: ""
+Callsite No. 419: 
+Content: conf.getInt(YarnConfiguration.NM_PMEM_MB,YarnConfiguration.DEFAULT_NM_PMEM_MB)
+Parameter: YarnConfiguration.NM_PMEM_MB. Inferred value: "yarn.nodemanager.""resource.memory-mb"
+Parameter: YarnConfiguration.DEFAULT_NM_PMEM_MB
+Callsite No. 420: 
+Content: conf.get(filterInitializerConfKey)
+Parameter: filterInitializerConfKey. Inferred value: "hadoop.http.filter.initializers"
+Callsite No. 421: 
+Content: conf.getBoolean(YarnConfiguration.RM_WEBAPP_UI_ACTIONS_ENABLED,YarnConfiguration.DEFAULT_RM_WEBAPP_UI_ACTIONS_ENABLED)
+Parameter: YarnConfiguration.RM_WEBAPP_UI_ACTIONS_ENABLED. Inferred value: "yarn.resourcemanager.""webapp.ui-actions.enabled"
+Parameter: YarnConfiguration.DEFAULT_RM_WEBAPP_UI_ACTIONS_ENABLED
+Callsite No. 422: 
+Content: conf.getSocketAddr(address,defaultAddr,defaultPort)
+Parameter: address
+Parameter: defaultAddr
+Parameter: defaultPort
+Callsite No. 423: 
+Content: conf.get(YarnConfiguration.IPC_RPC_IMPL)
+Parameter: YarnConfiguration.IPC_RPC_IMPL. Inferred value: "yarn.""ipc.""rpc.class"
+Callsite No. 424: 
+Content: conf.getClass(YarnConfiguration.NM_LINUX_CONTAINER_RESOURCES_HANDLER,DefaultLCEResourcesHandler.class,LCEResourcesHandler.class)
+Parameter: YarnConfiguration.NM_LINUX_CONTAINER_RESOURCES_HANDLER. Inferred value: "yarn.nodemanager.""linux-container-executor.resources-handler.class"
+Parameter: DefaultLCEResourcesHandler.class
+Parameter: LCEResourcesHandler.class
+Callsite No. 425: 
+Content: conf.getLong(YarnConfiguration.NM_LINUX_CONTAINER_CGROUPS_DELETE_DELAY,YarnConfiguration.DEFAULT_NM_LINUX_CONTAINER_CGROUPS_DELETE_DELAY)
+Parameter: YarnConfiguration.NM_LINUX_CONTAINER_CGROUPS_DELETE_DELAY. Inferred value: "yarn.nodemanager.""linux-container-executor.cgroups.delete-delay-ms"
+Parameter: YarnConfiguration.DEFAULT_NM_LINUX_CONTAINER_CGROUPS_DELETE_DELAY
+Callsite No. 426: 
+Content: conf.get(YarnConfiguration.NM_RESOURCEMANAGER_MINIMUM_VERSION,YarnConfiguration.DEFAULT_NM_RESOURCEMANAGER_MINIMUM_VERSION)
+Parameter: YarnConfiguration.NM_RESOURCEMANAGER_MINIMUM_VERSION. Inferred value: "yarn.nodemanager.""resourcemanager.minimum.version"
+Parameter: YarnConfiguration.DEFAULT_NM_RESOURCEMANAGER_MINIMUM_VERSION. Inferred value: "NONE"
+Callsite No. 427: 
+Content: conf.getSocketAddr(YarnConfiguration.RM_BIND_HOST,YarnConfiguration.RM_ADDRESS,YarnConfiguration.DEFAULT_RM_ADDRESS,YarnConfiguration.DEFAULT_RM_PORT)
+Parameter: YarnConfiguration.RM_BIND_HOST. Inferred value: "yarn.resourcemanager.""bind-host"
+Parameter: YarnConfiguration.RM_ADDRESS. Inferred value: "yarn.resourcemanager.""address"
+Parameter: YarnConfiguration.DEFAULT_RM_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_RM_PORT
+Callsite No. 428: 
+Content: conf.getClasses(filterInitializerConfKey)
+Parameter: filterInitializerConfKey. Inferred value: "hadoop.http.filter.initializers"
+Callsite No. 429: 
+Content: conf.get(YarnConfiguration.NM_LINUX_CONTAINER_CGROUPS_MOUNT_PATH,null)
+Parameter: YarnConfiguration.
+            NM_LINUX_CONTAINER_CGROUPS_MOUNT_PATH. Inferred value: "yarn.nodemanager.""linux-container-executor.cgroups.mount-path"
+Parameter: null
+Callsite No. 430: 
+Content: this.conf.getWaitTimeBeforeKill()
+Callsite No. 431: 
+Content: conf.getLong("mapred.newjobweightbooster.duration",DEFAULT_DURATION)
+Parameter: "mapred.newjobweightbooster.duration". Inferred value: "mapred.newjobweightbooster.duration"
+Parameter: DEFAULT_DURATION
+Callsite No. 432: 
+Content: conf.getClassByName(admissionPolicyClassName)
+Parameter: admissionPolicyClassName
+Callsite No. 433: 
+Content: conf.getLong(YarnConfiguration.RM_DELEGATION_TOKEN_MAX_LIFETIME_KEY,YarnConfiguration.RM_DELEGATION_TOKEN_MAX_LIFETIME_DEFAULT)
+Parameter: YarnConfiguration.RM_DELEGATION_TOKEN_MAX_LIFETIME_KEY. Inferred value: "yarn.resourcemanager.""delegation.token.max-lifetime"
+Parameter: YarnConfiguration.RM_DELEGATION_TOKEN_MAX_LIFETIME_DEFAULT
+Callsite No. 434: 
+Content: conf.getLong(YarnConfiguration.RM_WORK_PRESERVING_RECOVERY_SCHEDULING_WAIT_MS,YarnConfiguration.DEFAULT_RM_WORK_PRESERVING_RECOVERY_SCHEDULING_WAIT_MS)
+Parameter: YarnConfiguration.RM_WORK_PRESERVING_RECOVERY_SCHEDULING_WAIT_MS. Inferred value: "yarn.resourcemanager.""work-preserving-recovery.scheduling-wait-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_WORK_PRESERVING_RECOVERY_SCHEDULING_WAIT_MS
+Callsite No. 435: 
+Content: conf.getBoolean(YarnConfiguration.NM_VMEM_CHECK_ENABLED,YarnConfiguration.DEFAULT_NM_VMEM_CHECK_ENABLED)
+Parameter: YarnConfiguration.NM_VMEM_CHECK_ENABLED. Inferred value: "yarn.nodemanager.""vmem-check-enabled"
+Parameter: YarnConfiguration.DEFAULT_NM_VMEM_CHECK_ENABLED
+Callsite No. 436: 
+Content: conf.getLong(YarnConfiguration.TIMELINE_SERVICE_CLIENT_RETRY_INTERVAL_MS,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_RETRY_INTERVAL_MS)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_CLIENT_RETRY_INTERVAL_MS. Inferred value: "yarn.""timeline-service.""client.""retry-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_RETRY_INTERVAL_MS
+Callsite No. 437: 
+Content: conf.get(YarnConfiguration.YARN_ADMIN_ACL,YarnConfiguration.DEFAULT_YARN_ADMIN_ACL)
+Parameter: YarnConfiguration.YARN_ADMIN_ACL. Inferred value: "yarn.""admin.acl"
+Parameter: YarnConfiguration.DEFAULT_YARN_ADMIN_ACL. Inferred value: "*"
+Callsite No. 438: 
+Content: conf.getLong(YarnConfiguration.TIMELINE_SERVICE_LEVELDB_READ_CACHE_SIZE,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_READ_CACHE_SIZE)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_LEVELDB_READ_CACHE_SIZE. Inferred value: "yarn.""timeline-service.""leveldb-timeline-store.""read-cache-size"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_READ_CACHE_SIZE
+Callsite No. 439: 
+Content: conf.getSocketAddr(YarnConfiguration.RM_BIND_HOST,YarnConfiguration.RM_SCHEDULER_ADDRESS,YarnConfiguration.DEFAULT_RM_SCHEDULER_ADDRESS,YarnConfiguration.DEFAULT_RM_SCHEDULER_PORT)
+Parameter: YarnConfiguration.RM_BIND_HOST. Inferred value: "yarn.resourcemanager.""bind-host"
+Parameter: YarnConfiguration.RM_SCHEDULER_ADDRESS. Inferred value: "yarn.resourcemanager.""scheduler.address"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_PORT
+Callsite No. 440: 
+Content: conf.getBoolean(YarnConfiguration.TIMELINE_SERVICE_ENABLED,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ENABLED)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_ENABLED. Inferred value: "yarn.""timeline-service.""enabled"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ENABLED
+Callsite No. 441: 
+Content: conf.get(YarnConfiguration.RM_SCHEDULER,YarnConfiguration.DEFAULT_RM_SCHEDULER)
+Parameter: YarnConfiguration.RM_SCHEDULER. Inferred value: "yarn.resourcemanager.""scheduler.class"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER. Inferred value: "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler"
+Callsite No. 442: 
+Content: conf.get(YarnConfiguration.RM_ZK_ACL,YarnConfiguration.DEFAULT_RM_ZK_ACL)
+Parameter: YarnConfiguration.RM_ZK_ACL. Inferred value: "yarn.resourcemanager.""zk-""acl"
+Parameter: YarnConfiguration.DEFAULT_RM_ZK_ACL. Inferred value: "world:anyone:rwcda"
+Callsite No. 443: 
+Content: conf.getInt(YarnConfiguration.SCM_ADMIN_CLIENT_THREAD_COUNT,YarnConfiguration.DEFAULT_SCM_ADMIN_CLIENT_THREAD_COUNT)
+Parameter: YarnConfiguration.SCM_ADMIN_CLIENT_THREAD_COUNT. Inferred value: "yarn.sharedcache.""admin.thread-count"
+Parameter: YarnConfiguration.DEFAULT_SCM_ADMIN_CLIENT_THREAD_COUNT
+Callsite No. 444: 
+Content: conf.getInt(YarnConfiguration.TIMELINE_SERVICE_HANDLER_THREAD_COUNT,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_THREAD_COUNT)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_HANDLER_THREAD_COUNT. Inferred value: "yarn.""timeline-service.""handler-thread-count"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_CLIENT_THREAD_COUNT
+Callsite No. 445: 
+Content: nmConf.getBoolean(YarnConfiguration.LOG_AGGREGATION_ENABLED,YarnConfiguration.DEFAULT_LOG_AGGREGATION_ENABLED)
+Parameter: YarnConfiguration.LOG_AGGREGATION_ENABLED. Inferred value: "yarn.""log-aggregation-enable"
+Parameter: YarnConfiguration.DEFAULT_LOG_AGGREGATION_ENABLED
+Callsite No. 446: 
+Content: conf.getBoolean(YarnConfiguration.NM_PMEM_CHECK_ENABLED,YarnConfiguration.DEFAULT_NM_PMEM_CHECK_ENABLED)
+Parameter: YarnConfiguration.NM_PMEM_CHECK_ENABLED. Inferred value: "yarn.nodemanager.""pmem-check-enabled"
+Parameter: YarnConfiguration.DEFAULT_NM_PMEM_CHECK_ENABLED
+Callsite No. 447: 
+Content: config.getDouble(NATURAL_TERMINATION_FACTOR,0.2)
+Parameter: NATURAL_TERMINATION_FACTOR. Inferred value: "yarn.resourcemanager.monitor.capacity.preemption.natural_termination_factor"
+Parameter: 0.2
+Callsite No. 448: 
+Content: conf.getInt(YarnConfiguration.SCM_CLEANER_PERIOD_MINS,YarnConfiguration.DEFAULT_SCM_CLEANER_PERIOD_MINS)
+Parameter: YarnConfiguration.SCM_CLEANER_PERIOD_MINS. Inferred value: "yarn.sharedcache.""cleaner.""period-mins"
+Parameter: YarnConfiguration.DEFAULT_SCM_CLEANER_PERIOD_MINS
+Callsite No. 449: 
+Content: conf.getBoolean(YarnConfiguration.LOG_AGGREGATION_ENABLED,YarnConfiguration.DEFAULT_LOG_AGGREGATION_ENABLED)
+Parameter: YarnConfiguration.LOG_AGGREGATION_ENABLED. Inferred value: "yarn.""log-aggregation-enable"
+Parameter: YarnConfiguration.DEFAULT_LOG_AGGREGATION_ENABLED
+Callsite No. 450: 
+Content: conf.getLong(YarnConfiguration.RM_AM_EXPIRY_INTERVAL_MS,YarnConfiguration.DEFAULT_RM_AM_EXPIRY_INTERVAL_MS)
+Parameter: YarnConfiguration.RM_AM_EXPIRY_INTERVAL_MS. Inferred value: "yarn.""am.liveness-monitor.expiry-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_AM_EXPIRY_INTERVAL_MS
+Callsite No. 451: 
+Content: conf.getSocketAddr(YarnConfiguration.NM_BIND_HOST,YarnConfiguration.NM_LOCALIZER_ADDRESS,YarnConfiguration.DEFAULT_NM_LOCALIZER_ADDRESS,YarnConfiguration.DEFAULT_NM_LOCALIZER_PORT)
+Parameter: YarnConfiguration.NM_BIND_HOST. Inferred value: "yarn.nodemanager.""bind-host"
+Parameter: YarnConfiguration.NM_LOCALIZER_ADDRESS. Inferred value: "yarn.nodemanager.""localizer.address"
+Parameter: YarnConfiguration.DEFAULT_NM_LOCALIZER_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_NM_LOCALIZER_PORT
+Callsite No. 452: 
+Content: bootstrapConf.getConfResourceAsInputStream(name)
+Parameter: name
+Callsite No. 453: 
+Content: conf.getInt(YarnConfiguration.RM_CONTAINER_ALLOC_EXPIRY_INTERVAL_MS,YarnConfiguration.DEFAULT_RM_CONTAINER_ALLOC_EXPIRY_INTERVAL_MS)
+Parameter: YarnConfiguration.RM_CONTAINER_ALLOC_EXPIRY_INTERVAL_MS. Inferred value: "yarn.resourcemanager.""rm.container-allocation.expiry-interval-ms"
+Parameter: YarnConfiguration.DEFAULT_RM_CONTAINER_ALLOC_EXPIRY_INTERVAL_MS
+Callsite No. 454: 
+Content: conf.getInt(YarnConfiguration.RM_MAX_COMPLETED_APPLICATIONS,YarnConfiguration.DEFAULT_RM_MAX_COMPLETED_APPLICATIONS)
+Parameter: YarnConfiguration.RM_MAX_COMPLETED_APPLICATIONS. Inferred value: "yarn.resourcemanager.""max-completed-applications"
+Parameter: YarnConfiguration.DEFAULT_RM_MAX_COMPLETED_APPLICATIONS
+Callsite No. 455: 
+Content: getDefaultNodeLabelExpression(getQueuePath())
+Parameter: getQueuePath()
+Callsite No. 456: 
+Content: conf.getTimeDuration(YarnConfiguration.RM_RESERVATION_SYSTEM_PLAN_FOLLOWER_TIME_STEP,YarnConfiguration.DEFAULT_RM_RESERVATION_SYSTEM_PLAN_FOLLOWER_TIME_STEP,TimeUnit.MILLISECONDS)
+Parameter: YarnConfiguration.RM_RESERVATION_SYSTEM_PLAN_FOLLOWER_TIME_STEP. Inferred value: "yarn.resourcemanager.""reservation-system.planfollower.time-step"
+Parameter: YarnConfiguration.DEFAULT_RM_RESERVATION_SYSTEM_PLAN_FOLLOWER_TIME_STEP
+Parameter: TimeUnit.MILLISECONDS
+Callsite No. 457: 
+Content: conf.getBoolean(CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,false)
+Parameter: CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION
+Parameter: false
+Callsite No. 458: 
+Content: conf.getClass(YarnConfiguration.SHARED_CACHE_CHECKSUM_ALGO_IMPL,defaultAlgorithm,SharedCacheChecksum.class)
+Parameter: YarnConfiguration.SHARED_CACHE_CHECKSUM_ALGO_IMPL. Inferred value: "yarn.sharedcache.""checksum.algo.impl"
+Parameter: defaultAlgorithm
+Parameter: SharedCacheChecksum.class
+Callsite No. 459: 
+Content: conf.getLong(YarnConfiguration.TIMELINE_SERVICE_LEVELDB_READ_CACHE_SIZE,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_READ_CACHE_SIZE)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_LEVELDB_READ_CACHE_SIZE. Inferred value: "yarn.""timeline-service.""leveldb-timeline-store.""read-cache-size"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_READ_CACHE_SIZE
+Callsite No. 460: 
+Content: conf.getBoolean(YarnConfiguration.TIMELINE_SERVICE_RECOVERY_ENABLED,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_RECOVERY_ENABLED)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_RECOVERY_ENABLED. Inferred value: "yarn.""timeline-service.""recovery.enabled"
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_RECOVERY_ENABLED
+Callsite No. 461: 
+Content: conf.getInt(YarnConfiguration.TIMELINE_SERVICE_LEVELDB_START_TIME_WRITE_CACHE_SIZE,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_LEVELDB_START_TIME_WRITE_CACHE_SIZE)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_LEVELDB_START_TIME_WRITE_CACHE_SIZE. Inferred value: "yarn.""timeline-service.""leveldb-timeline-store.""start-time-write-cache-size"
+Parameter: YarnConfiguration.
+            DEFAULT_TIMELINE_SERVICE_LEVELDB_START_TIME_WRITE_CACHE_SIZE
+Callsite No. 462: 
+Content: conf.getInt(YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_MB,YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_MB)
+Parameter: YarnConfiguration.RM_SCHEDULER_MINIMUM_ALLOCATION_MB. Inferred value: "yarn.""scheduler.minimum-allocation-mb"
+Parameter: YarnConfiguration.DEFAULT_RM_SCHEDULER_MINIMUM_ALLOCATION_MB
+Callsite No. 463: 
+Content: conf.getBoolean(YarnConfiguration.RM_WEBAPP_DELEGATION_TOKEN_AUTH_FILTER,YarnConfiguration.DEFAULT_RM_WEBAPP_DELEGATION_TOKEN_AUTH_FILTER)
+Parameter: YarnConfiguration.RM_WEBAPP_DELEGATION_TOKEN_AUTH_FILTER. Inferred value: "yarn.resourcemanager.""webapp.delegation-token-auth-filter.enabled"
+Parameter: YarnConfiguration.DEFAULT_RM_WEBAPP_DELEGATION_TOKEN_AUTH_FILTER
+Callsite No. 464: 
+Content: conf.getBoolean(YarnConfiguration.LOG_AGGREGATION_ENABLED,YarnConfiguration.DEFAULT_LOG_AGGREGATION_ENABLED)
+Parameter: YarnConfiguration.LOG_AGGREGATION_ENABLED. Inferred value: "yarn.""log-aggregation-enable"
+Parameter: YarnConfiguration.DEFAULT_LOG_AGGREGATION_ENABLED
+Callsite No. 465: 
+Content: conf.get(propName)
+Parameter: propName
+[INFO] Callsite information analysis finished.
+=======================================================================================
+[INFO] Start printing ORP information to file.
+[INFO] ORP information is extracted and written successfully.
+[INFO] Exiting.
+成功构建 (总时间: 85 分钟 15 秒)

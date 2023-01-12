@@ -1,0 +1,1660 @@
+run:
+[INFO] Start extracting configurations from default conf file.
+[INFO] Configurations extracted. Writing to file.
+[INFO] Configurations from default conf file are extracted and written successfully.
+=======================================================================================
+[INFO] Start loading source file.
+[INFO] Source file is loaded. Starting further anaylsis.
+=======================================================================================
+[INFO] Start extracting all sub classes of main conf class.
+[INFO] All sub classes of main conf class are extracted.
+=======================================================================================
+[INFO] Intersted classes are specified. Start extracting callsites.
+[INFO] Callsite extraction finished.
+[INFO] Number of callsites found: 428
+=======================================================================================
+[INFO] Start analyzing details of callsites.
+Callsite No. 1: 
+Content: getLong(UniqValueCount.MAX_NUM_UNIQUE_VALUES,Long.MAX_VALUE)
+Parameter: UniqValueCount.MAX_NUM_UNIQUE_VALUES. Inferred value: "mapreduce.aggregate.max.num.unique.values"
+Parameter: Long.MAX_VALUE
+Callsite No. 2: 
+Content: getCodec(file)
+Parameter: file
+Callsite No. 3: 
+Content: conf.get(DIR_FORMATS)
+Parameter: DIR_FORMATS. Inferred value: "mapreduce.input.multipleinputs.dir.formats"
+Callsite No. 4: 
+Content: conf.getInt(COUNTER_GROUPS_MAX_KEY,COUNTER_GROUPS_MAX_DEFAULT)
+Parameter: COUNTER_GROUPS_MAX_KEY. Inferred value: "mapreduce.job.counters.groups.max"
+Parameter: COUNTER_GROUPS_MAX_DEFAULT
+Callsite No. 5: 
+Content: conf.get(DBConfiguration.INPUT_ORDER_BY_PROPERTY)
+Parameter: DBConfiguration.INPUT_ORDER_BY_PROPERTY. Inferred value: "mapreduce.jdbc.input.orderby"
+Callsite No. 6: 
+Content: conf.getInt(FILEOUTPUTCOMMITTER_ALGORITHM_VERSION,FILEOUTPUTCOMMITTER_ALGORITHM_VERSION_DEFAULT)
+Parameter: FILEOUTPUTCOMMITTER_ALGORITHM_VERSION. Inferred value: "mapreduce.fileoutputcommitter.algorithm.version"
+Parameter: FILEOUTPUTCOMMITTER_ALGORITHM_VERSION_DEFAULT
+Callsite No. 7: 
+Content: conf.getInt(MRJobConfig.MAX_TASK_FAILURES_PER_TRACKER,3)
+Parameter: MRJobConfig.MAX_TASK_FAILURES_PER_TRACKER. Inferred value: "mapreduce.job.maxtaskfailures.per.tracker"
+Parameter: 3
+Callsite No. 8: 
+Content: conf.get(MRJobConfig.MAP_INPUT_FILE)
+Parameter: MRJobConfig.MAP_INPUT_FILE. Inferred value: "mapreduce.map.input.file"
+Callsite No. 9: 
+Content: conf.getPattern(JobContext.JAR_UNPACK_PATTERN,JobConf.UNPACK_JAR_PATTERN_DEFAULT)
+Parameter: JobContext.JAR_UNPACK_PATTERN
+Parameter: JobConf.UNPACK_JAR_PATTERN_DEFAULT
+Callsite No. 10: 
+Content: getClass(MO_PREFIX+namedOutput+VALUE,null,Object.class)
+Parameter: MO_PREFIX + namedOutput + VALUE. Inferred value: ".value"
+Parameter: null
+Parameter: Object.class
+Callsite No. 11: 
+Content: conf.getStrings(DBConfiguration.INPUT_FIELD_NAMES_PROPERTY)
+Parameter: DBConfiguration.INPUT_FIELD_NAMES_PROPERTY. Inferred value: "mapreduce.jdbc.input.field.names"
+Callsite No. 12: 
+Content: conf.get(DBConfiguration.INPUT_COUNT_QUERY)
+Parameter: DBConfiguration.INPUT_COUNT_QUERY. Inferred value: "mapreduce.jdbc.input.count.query"
+Callsite No. 13: 
+Content: getClass(MO_PREFIX+namedOutput+KEY,null,Object.class)
+Parameter: MO_PREFIX + namedOutput + KEY. Inferred value: ".key"
+Parameter: null
+Parameter: Object.class
+Callsite No. 14: 
+Content: getClass(VALUE_CLASS,job.getOutputValueClass().asSubclass(Writable.class),Writable.class)
+Parameter: VALUE_CLASS. Inferred value: "mapreduce.output.seqbinaryoutputformat.value.class"
+Parameter: job.getOutputValueClass().asSubclass(Writable.class)
+Parameter: Writable.class
+Callsite No. 15: 
+Content: get("textinputformat.record.delimiter")
+Parameter: "textinputformat.record.delimiter". Inferred value: "textinputformat.record.delimiter"
+Callsite No. 16: 
+Content: jobConf.getTrimmedStringCollection(MRJobConfig.JOB_TAGS)
+Parameter: MRJobConfig.JOB_TAGS. Inferred value: "mapreduce.job.tags"
+Callsite No. 17: 
+Content: conf.getBoolean(MRJobConfig.MAPREDUCE_JOB_CLASSLOADER,false)
+Parameter: MRJobConfig.MAPREDUCE_JOB_CLASSLOADER. Inferred value: "mapreduce.job.classloader"
+Parameter: false
+Callsite No. 18: 
+Content: getClass(MAP_CLASS,Mapper.class)
+Parameter: MAP_CLASS. Inferred value: "mapreduce.mapper.multithreadedmapper.mapclass"
+Parameter: Mapper.class
+Callsite No. 19: 
+Content: conf.getInt(MRJobConfig.MR_AM_CPU_VCORES,MRJobConfig.DEFAULT_MR_AM_CPU_VCORES)
+Parameter: MRJobConfig.MR_AM_CPU_VCORES. Inferred value: "yarn.app.mapreduce.""am.""resource.cpu-vcores"
+Parameter: MRJobConfig.DEFAULT_MR_AM_CPU_VCORES
+Callsite No. 20: 
+Content: conf.get(MRJobConfig.MAP_CLASS_ATTR)
+Parameter: MRJobConfig.MAP_CLASS_ATTR. Inferred value: "mapreduce.job.map.class"
+Callsite No. 21: 
+Content: conf.getStrings(MRJobConfig.CACHE_FILE_VISIBILITIES)
+Parameter: MRJobConfig.CACHE_FILE_VISIBILITIES. Inferred value: "mapreduce.job.cache.files.visibilities"
+Callsite No. 22: 
+Content: conf.getClass(PATHFILTER_CLASS,null,PathFilter.class)
+Parameter: PATHFILTER_CLASS. Inferred value: "mapreduce.input.pathFilter.class"
+Parameter: null
+Parameter: PathFilter.class
+Callsite No. 23: 
+Content: conf.getLong(JHAdminConfig.MR_HISTORY_CLEANER_INTERVAL_MS,JHAdminConfig.DEFAULT_MR_HISTORY_CLEANER_INTERVAL_MS)
+Parameter: JHAdminConfig.MR_HISTORY_CLEANER_INTERVAL_MS. Inferred value: "mapreduce.jobhistory.""cleaner.interval-ms"
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_CLEANER_INTERVAL_MS
+Callsite No. 24: 
+Content: conf.getStrings(MRJobConfig.JOB_NAMENODES)
+Parameter: MRJobConfig.JOB_NAMENODES. Inferred value: "mapreduce.job.hdfs-servers"
+Callsite No. 25: 
+Content: conf.get(MRJobConfig.MAPRED_REDUCE_ADMIN_JAVA_OPTS,"")
+Parameter: MRJobConfig.MAPRED_REDUCE_ADMIN_JAVA_OPTS. Inferred value: "mapreduce.admin.reduce.child.java.opts"
+Parameter: "". Inferred value: ""
+Callsite No. 26: 
+Content: conf.getInt(MRJobConfig.MR_AM_CONTAINERLAUNCHER_THREADPOOL_INITIAL_SIZE,MRJobConfig.DEFAULT_MR_AM_CONTAINERLAUNCHER_THREADPOOL_INITIAL_SIZE)
+Parameter: MRJobConfig.MR_AM_CONTAINERLAUNCHER_THREADPOOL_INITIAL_SIZE. Inferred value: "yarn.app.mapreduce.""am.""containerlauncher.threadpool-initial-size"
+Parameter: MRJobConfig.DEFAULT_MR_AM_CONTAINERLAUNCHER_THREADPOOL_INITIAL_SIZE
+Callsite No. 27: 
+Content: conf.getClass("mapred.output.committer.class",FileOutputCommitter.class,org.apache.hadoop.mapred.OutputCommitter.class)
+Parameter: "mapred.output.committer.class". Inferred value: "mapred.output.committer.class"
+Parameter: FileOutputCommitter.class
+Parameter: org.apache.hadoop.mapred.OutputCommitter.class
+Callsite No. 28: 
+Content: conf.getStrings(MRJobConfig.CACHE_FILES)
+Parameter: MRJobConfig.CACHE_FILES. Inferred value: "mapreduce.job.cache.files"
+Callsite No. 29: 
+Content: conf.getClass(MAPPER_OUTPUT_KEY_CLASS,Object.class)
+Parameter: MAPPER_OUTPUT_KEY_CLASS. Inferred value: "mapreduce.chain.mapper.output.key.class"
+Parameter: Object.class
+Callsite No. 30: 
+Content: conf.getInt(GROUP,0)
+Parameter: GROUP. Inferred value: "mapreduce.mapper.regexmapper..group"
+Parameter: 0
+Callsite No. 31: 
+Content: conf.get(MRConfig.FRAMEWORK_NAME,MRConfig.YARN_FRAMEWORK_NAME)
+Parameter: MRConfig.FRAMEWORK_NAME. Inferred value: "mapreduce.framework.name"
+Parameter: MRConfig.YARN_FRAMEWORK_NAME. Inferred value: "yarn"
+Callsite No. 32: 
+Content: conf.get(MRJobConfig.MAPRED_MAP_ADMIN_JAVA_OPTS,"")
+Parameter: MRJobConfig.MAPRED_MAP_ADMIN_JAVA_OPTS. Inferred value: "mapreduce.admin.map.child.java.opts"
+Parameter: "". Inferred value: ""
+Callsite No. 33: 
+Content: conf.get(MRJobConfig.CLASSPATH_FILES)
+Parameter: MRJobConfig.CLASSPATH_FILES. Inferred value: "mapreduce.job.classpath.files"
+Callsite No. 34: 
+Content: conf.getBoolean(MRJobConfig.MR_ENCRYPTED_INTERMEDIATE_DATA,MRJobConfig.DEFAULT_MR_ENCRYPTED_INTERMEDIATE_DATA)
+Parameter: MRJobConfig.MR_ENCRYPTED_INTERMEDIATE_DATA. Inferred value: "mapreduce.job.encrypted-intermediate-data"
+Parameter: MRJobConfig.DEFAULT_MR_ENCRYPTED_INTERMEDIATE_DATA
+Callsite No. 35: 
+Content: conf.get(MRJobConfig.MR_AM_COMMAND_OPTS,MRJobConfig.DEFAULT_MR_AM_COMMAND_OPTS)
+Parameter: MRJobConfig.MR_AM_COMMAND_OPTS. Inferred value: "yarn.app.mapreduce.""am.""command-opts"
+Parameter: MRJobConfig.DEFAULT_MR_AM_COMMAND_OPTS. Inferred value: "-Xmx1024m"
+Callsite No. 36: 
+Content: conf.get(MRJobConfig.MAPREDUCE_APPLICATION_FRAMEWORK_PATH,"")
+Parameter: MRJobConfig.MAPREDUCE_APPLICATION_FRAMEWORK_PATH. Inferred value: "mapreduce.application.framework.path"
+Parameter: "". Inferred value: ""
+Callsite No. 37: 
+Content: conf.get(JHAdminConfig.MR_HISTORY_WEBAPP_ADDRESS,JHAdminConfig.DEFAULT_MR_HISTORY_WEBAPP_ADDRESS)
+Parameter: JHAdminConfig.MR_HISTORY_WEBAPP_ADDRESS. Inferred value: "mapreduce.jobhistory.""webapp.address"
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_WEBAPP_ADDRESS
+Callsite No. 38: 
+Content: conf.get(MULTIPLE_OUTPUTS,"")
+Parameter: MULTIPLE_OUTPUTS. Inferred value: "mapreduce.multipleoutputs"
+Parameter: "". Inferred value: ""
+Callsite No. 39: 
+Content: conf.get(DeprecatedQueueConfigurationParser.MAPRED_QUEUE_NAMES_KEY)
+Parameter: DeprecatedQueueConfigurationParser.
+        MAPRED_QUEUE_NAMES_KEY. Inferred value: "mapred.queue.names"
+Callsite No. 40: 
+Content: conf.get(FieldSelectionHelper.REDUCE_OUTPUT_KEY_VALUE_SPEC,"0-:")
+Parameter: FieldSelectionHelper.REDUCE_OUTPUT_KEY_VALUE_SPEC. Inferred value: "mapreduce.fieldsel.reduce.output.key.value.fields.spec"
+Parameter: "0-:". Inferred value: "0-:"
+Callsite No. 41: 
+Content: conf.getInt(MRJobConfig.NUM_MAPS,1)
+Parameter: MRJobConfig.NUM_MAPS. Inferred value: "mapreduce.job.maps"
+Parameter: 1
+Callsite No. 42: 
+Content: jobConf.get(MRJobConfig.JAR)
+Parameter: MRJobConfig.JAR. Inferred value: "mapreduce.job.jar"
+Callsite No. 43: 
+Content: conf.get("tmpfiles")
+Parameter: "tmpfiles". Inferred value: "tmpfiles"
+Callsite No. 44: 
+Content: conf.getStrings(MRJobConfig.CACHE_LOCALFILES)
+Parameter: MRJobConfig.CACHE_LOCALFILES. Inferred value: "mapreduce.job.cache.local.files"
+Callsite No. 45: 
+Content: conf.get(MRJobConfig.MAPREDUCE_JOB_LOG4J_PROPERTIES_FILE,"")
+Parameter: MRJobConfig.MAPREDUCE_JOB_LOG4J_PROPERTIES_FILE. Inferred value: "mapreduce.job.log4j-properties-file"
+Parameter: "". Inferred value: ""
+Callsite No. 46: 
+Content: conf.get(DBConfiguration.URL_PROPERTY)
+Parameter: DBConfiguration.URL_PROPERTY. Inferred value: "mapreduce.jdbc.url"
+Callsite No. 47: 
+Content: conf.getClassByName(className)
+Parameter: className
+Callsite No. 48: 
+Content: conf.getLong(REDUCER_MAX_SKIP_GROUPS,0)
+Parameter: REDUCER_MAX_SKIP_GROUPS
+Parameter: 0
+Callsite No. 49: 
+Content: conf.getLong(MRJobConfig.MAP_INPUT_PATH,0L)
+Parameter: MRJobConfig.MAP_INPUT_PATH. Inferred value: "mapreduce.map.input.length"
+Parameter: 0L
+Callsite No. 50: 
+Content: conf.getBoolean(AUTO_INCR_MAP_PROC_COUNT,true)
+Parameter: AUTO_INCR_MAP_PROC_COUNT
+Parameter: true
+Callsite No. 51: 
+Content: conf.get(CACHE_LOCALARCHIVES)
+Parameter: CACHE_LOCALARCHIVES. Inferred value: "mapred.cache.localArchives"
+Callsite No. 52: 
+Content: conf.get(DIR_FORMATS)
+Parameter: DIR_FORMATS. Inferred value: "mapreduce.input.multipleinputs.dir.formats"
+Callsite No. 53: 
+Content: conf.getSocketAddr(JHAdminConfig.JHS_ADMIN_ADDRESS,JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS,JHAdminConfig.DEFAULT_JHS_ADMIN_PORT)
+Parameter: JHAdminConfig.JHS_ADMIN_ADDRESS. Inferred value: "mapreduce.jobhistory.""admin.address"
+Parameter: JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS
+Parameter: JHAdminConfig.DEFAULT_JHS_ADMIN_PORT
+Callsite No. 54: 
+Content: conf.getBoolean(MRJobConfig.MAPREDUCE_JOB_USER_CLASSPATH_FIRST,false)
+Parameter: MRJobConfig.MAPREDUCE_JOB_USER_CLASSPATH_FIRST. Inferred value: "mapreduce.job.user.classpath.first"
+Parameter: false
+Callsite No. 55: 
+Content: conf.get(FileOutputFormat.COMPRESS_CODEC)
+Parameter: FileOutputFormat.COMPRESS_CODEC. Inferred value: "mapreduce.output.fileoutputformat.compress.codec"
+Callsite No. 56: 
+Content: conf.get(DBConfiguration.OUTPUT_TABLE_NAME_PROPERTY)
+Parameter: DBConfiguration.OUTPUT_TABLE_NAME_PROPERTY. Inferred value: "mapreduce.jdbc.output.table.name"
+Callsite No. 57: 
+Content: conf.getInt(SHUFFLE_MAPOUTPUT_META_INFO_CACHE_SIZE,DEFAULT_SHUFFLE_MAPOUTPUT_META_INFO_CACHE_SIZE)
+Parameter: SHUFFLE_MAPOUTPUT_META_INFO_CACHE_SIZE. Inferred value: "mapreduce.shuffle.mapoutput-info.meta.cache.size"
+Parameter: DEFAULT_SHUFFLE_MAPOUTPUT_META_INFO_CACHE_SIZE
+Callsite No. 58: 
+Content: conf.getLong("mapreduce.input.fileinputformat.split.maxsize",0)
+Parameter: "mapreduce.input.fileinputformat.split.maxsize". Inferred value: "mapreduce.input.fileinputformat.split.maxsize"
+Parameter: 0
+Callsite No. 59: 
+Content: conf.get(DeprecatedQueueConfigurationParser.MAPRED_QUEUE_NAMES_KEY)
+Parameter: DeprecatedQueueConfigurationParser.MAPRED_QUEUE_NAMES_KEY. Inferred value: "mapred.queue.names"
+Callsite No. 60: 
+Content: conf.getInt(MRJobConfig.REDUCE_MEMORY_MB,MRJobConfig.DEFAULT_REDUCE_MEMORY_MB)
+Parameter: MRJobConfig.REDUCE_MEMORY_MB. Inferred value: "mapreduce.reduce.memory.mb"
+Parameter: MRJobConfig.DEFAULT_REDUCE_MEMORY_MB
+Callsite No. 61: 
+Content: conf.get(JOIN_EXPR,null)
+Parameter: JOIN_EXPR. Inferred value: "mapreduce.join.expr"
+Parameter: null
+Callsite No. 62: 
+Content: conf.get(JHAdminConfig.MR_HISTORY_INTERMEDIATE_DONE_DIR)
+Parameter: JHAdminConfig.MR_HISTORY_INTERMEDIATE_DONE_DIR. Inferred value: "mapreduce.jobhistory.""intermediate-done-dir"
+Callsite No. 63: 
+Content: this.conf.getInt(MRJobConfig.MR_CLIENT_TO_AM_IPC_MAX_RETRIES,MRJobConfig.DEFAULT_MR_CLIENT_TO_AM_IPC_MAX_RETRIES)
+Parameter: MRJobConfig.MR_CLIENT_TO_AM_IPC_MAX_RETRIES. Inferred value: "yarn.app.mapreduce.""client-am.ipc.max-retries"
+Parameter: MRJobConfig.DEFAULT_MR_CLIENT_TO_AM_IPC_MAX_RETRIES
+Callsite No. 64: 
+Content: conf.get(FieldSelectionHelper.MAP_OUTPUT_KEY_VALUE_SPEC,"0-:")
+Parameter: FieldSelectionHelper.MAP_OUTPUT_KEY_VALUE_SPEC. Inferred value: "mapreduce.fieldsel.map.output.key.value.fields.spec"
+Parameter: "0-:". Inferred value: "0-:"
+Callsite No. 65: 
+Content: conf.get(FieldSelectionHelper.DATA_FIELD_SEPERATOR,"\t")
+Parameter: FieldSelectionHelper.DATA_FIELD_SEPERATOR. Inferred value: "mapreduce.fieldsel.data.field.separator"
+Parameter: "\t". Inferred value: "\t"
+Callsite No. 66: 
+Content: conf.get(KEY_VALUE_SEPERATOR,"\t")
+Parameter: KEY_VALUE_SEPERATOR. Inferred value: "mapreduce.input.keyvaluelinerecordreader.key.value.separator"
+Parameter: "\t". Inferred value: "\t"
+Callsite No. 67: 
+Content: conf.getBoolean(MRConfig.MR_ACLS_ENABLED,false)
+Parameter: MRConfig.MR_ACLS_ENABLED. Inferred value: "mapreduce.cluster.acls.enabled"
+Parameter: false
+Callsite No. 68: 
+Content: conf.getStrings(YarnConfiguration.YARN_APPLICATION_CLASSPATH,crossPlatform?YarnConfiguration.DEFAULT_YARN_CROSS_PLATFORM_APPLICATION_CLASSPATH:YarnConfiguration.DEFAULT_YARN_APPLICATION_CLASSPATH)
+Parameter: YarnConfiguration.YARN_APPLICATION_CLASSPATH
+Parameter: crossPlatform
+              ? YarnConfiguration.DEFAULT_YARN_CROSS_PLATFORM_APPLICATION_CLASSPATH
+              : YarnConfiguration.DEFAULT_YARN_APPLICATION_CLASSPATH
+Callsite No. 69: 
+Content: conf.get(JHAdminConfig.JHS_ADMIN_ACL,JHAdminConfig.DEFAULT_JHS_ADMIN_ACL)
+Parameter: JHAdminConfig.JHS_ADMIN_ACL. Inferred value: "mapreduce.jobhistory.""admin.acl"
+Parameter: JHAdminConfig.DEFAULT_JHS_ADMIN_ACL. Inferred value: "*"
+Callsite No. 70: 
+Content: conf.getBoolean(MRJobConfig.MAPREDUCE_JOB_CLASSLOADER,false)
+Parameter: MRJobConfig.MAPREDUCE_JOB_CLASSLOADER. Inferred value: "mapreduce.job.classloader"
+Parameter: false
+Callsite No. 71: 
+Content: conf.getInt(FILTER_FREQUENCY,10)
+Parameter: FILTER_FREQUENCY
+Parameter: 10
+Callsite No. 72: 
+Content: conf.getInt(MRConfig.MAPRED_IFILE_READAHEAD_BYTES,MRConfig.DEFAULT_MAPRED_IFILE_READAHEAD_BYTES)
+Parameter: MRConfig.MAPRED_IFILE_READAHEAD_BYTES. Inferred value: "mapreduce.ifile.readahead.bytes"
+Parameter: MRConfig.DEFAULT_MAPRED_IFILE_READAHEAD_BYTES
+Callsite No. 73: 
+Content: conf.getStrings(MRJobConfig.CACHE_ARCHIVES_VISIBILITIES)
+Parameter: MRJobConfig.CACHE_ARCHIVES_VISIBILITIES. Inferred value: "mapreduce.job.cache.archives.visibilities"
+Callsite No. 74: 
+Content: clusterConf.getBoolean(MRConfig.MR_ACLS_ENABLED,false)
+Parameter: MRConfig.MR_ACLS_ENABLED. Inferred value: "mapreduce.cluster.acls.enabled"
+Parameter: false
+Callsite No. 75: 
+Content: conf.get(MRJobConfig.MAPREDUCE_JOB_CREDENTIALS_BINARY)
+Parameter: MRJobConfig.MAPREDUCE_JOB_CREDENTIALS_BINARY. Inferred value: "mapreduce.job.credentials.binary"
+Callsite No. 76: 
+Content: conf.get(JHAdminConfig.MR_HS_FS_STATE_STORE_URI)
+Parameter: JHAdminConfig.MR_HS_FS_STATE_STORE_URI. Inferred value: "mapreduce.jobhistory.""recovery.store.fs.uri"
+Callsite No. 77: 
+Content: conf.get(JHAdminConfig.MR_HISTORY_PRINCIPAL,"")
+Parameter: JHAdminConfig.MR_HISTORY_PRINCIPAL. Inferred value: "mapreduce.jobhistory.""principal"
+Parameter: "". Inferred value: ""
+Callsite No. 78: 
+Content: conf.getLong(JobContext.TASK_USERLOG_LIMIT,0)
+Parameter: JobContext.TASK_USERLOG_LIMIT
+Parameter: 0
+Callsite No. 79: 
+Content: conf.getBoolean(MRJobConfig.MAPREDUCE_JOB_USER_CLASSPATH_FIRST,false)
+Parameter: MRJobConfig.MAPREDUCE_JOB_USER_CLASSPATH_FIRST. Inferred value: "mapreduce.job.user.classpath.first"
+Parameter: false
+Callsite No. 80: 
+Content: conf.getBoolean(YarnConfiguration.IS_MINI_YARN_CLUSTER,false)
+Parameter: YarnConfiguration.IS_MINI_YARN_CLUSTER
+Parameter: false
+Callsite No. 81: 
+Content: conf.get(MRConfig.FRAMEWORK_NAME,MRConfig.YARN_FRAMEWORK_NAME)
+Parameter: MRConfig.FRAMEWORK_NAME. Inferred value: "mapreduce.framework.name"
+Parameter: MRConfig.YARN_FRAMEWORK_NAME. Inferred value: "yarn"
+Callsite No. 82: 
+Content: conf.get(MRJobConfig.MAPREDUCE_APPLICATION_FRAMEWORK_PATH,"")
+Parameter: MRJobConfig.MAPREDUCE_APPLICATION_FRAMEWORK_PATH. Inferred value: "mapreduce.application.framework.path"
+Parameter: "". Inferred value: ""
+Callsite No. 83: 
+Content: conf.getInt("num.key.fields.for.partition",0)
+Parameter: "num.key.fields.for.partition". Inferred value: "num.key.fields.for.partition"
+Parameter: 0
+Callsite No. 84: 
+Content: conf.getStrings(MRJobConfig.CACHE_ARCHIVES_TIMESTAMPS)
+Parameter: MRJobConfig.CACHE_ARCHIVES_TIMESTAMPS. Inferred value: "mapreduce.job.cache.archives.timestamps"
+Callsite No. 85: 
+Content: conf.get("mapreduce.job.credentials.json")
+Parameter: "mapreduce.job.credentials.json". Inferred value: "mapreduce.job.credentials.json"
+Callsite No. 86: 
+Content: getLong(UniqValueCount.MAX_NUM_UNIQUE_VALUES,Long.MAX_VALUE)
+Parameter: UniqValueCount.MAX_NUM_UNIQUE_VALUES. Inferred value: "mapreduce.aggregate.max.num.unique.values"
+Parameter: Long.MAX_VALUE
+Callsite No. 87: 
+Content: conf.getLong(MRJobConfig.SHUFFLE_LOG_KB,MRJobConfig.DEFAULT_SHUFFLE_LOG_KB)
+Parameter: MRJobConfig.SHUFFLE_LOG_KB. Inferred value: "yarn.app.mapreduce.""shuffle.log.limit.kb"
+Parameter: MRJobConfig.DEFAULT_SHUFFLE_LOG_KB
+Callsite No. 88: 
+Content: conf.getInt(MAX_TRIE_DEPTH,200)
+Parameter: MAX_TRIE_DEPTH. Inferred value: "mapreduce.totalorderpartitioner.trie.maxdepth"
+Parameter: 200
+Callsite No. 89: 
+Content: getRecordWriter(taskContext)
+Parameter: taskContext
+Callsite No. 90: 
+Content: conf.get(aclConfigName)
+Parameter: aclConfigName
+Callsite No. 91: 
+Content: conf.getBoolean(SHUFFLE_MANAGE_OS_CACHE,DEFAULT_SHUFFLE_MANAGE_OS_CACHE)
+Parameter: SHUFFLE_MANAGE_OS_CACHE. Inferred value: "mapreduce.shuffle.manage.os.cache"
+Parameter: DEFAULT_SHUFFLE_MANAGE_OS_CACHE
+Callsite No. 92: 
+Content: conf.getInt(MRJobConfig.MR_AM_TO_RM_HEARTBEAT_INTERVAL_MS,MRJobConfig.DEFAULT_MR_AM_TO_RM_HEARTBEAT_INTERVAL_MS)
+Parameter: MRJobConfig.MR_AM_TO_RM_HEARTBEAT_INTERVAL_MS. Inferred value: "yarn.app.mapreduce.""am.""scheduler.heartbeat.interval-ms"
+Parameter: MRJobConfig.DEFAULT_MR_AM_TO_RM_HEARTBEAT_INTERVAL_MS
+Callsite No. 93: 
+Content: conf.get(MRJobConfig.QUEUE_NAME,JobConf.DEFAULT_QUEUE_NAME)
+Parameter: MRJobConfig.QUEUE_NAME. Inferred value: "mapreduce.job.queuename"
+Parameter: JobConf.DEFAULT_QUEUE_NAME. Inferred value: "default"
+Callsite No. 94: 
+Content: getBoolean(INPUT_DIR_RECURSIVE,false)
+Parameter: INPUT_DIR_RECURSIVE. Inferred value: "mapreduce.input.fileinputformat.input.dir.recursive"
+Parameter: false
+Callsite No. 95: 
+Content: conf.getInt(FIXED_RECORD_LENGTH,0)
+Parameter: FIXED_RECORD_LENGTH. Inferred value: "fixedlengthinputformat.record.length"
+Parameter: 0
+Callsite No. 96: 
+Content: jobConf.getInt(prefix+CHAIN_MAPPER_SIZE,0)
+Parameter: prefix + CHAIN_MAPPER_SIZE. Inferred value: ".size"
+Parameter: 0
+Callsite No. 97: 
+Content: getBoolean(COUNTERS_ENABLED,false)
+Parameter: COUNTERS_ENABLED. Inferred value: "mapreduce.multipleoutputs.counters"
+Parameter: false
+Callsite No. 98: 
+Content: conf.getFloat(MRJobConfig.MR_AM_JOB_REDUCE_PREEMPTION_LIMIT,MRJobConfig.DEFAULT_MR_AM_JOB_REDUCE_PREEMPTION_LIMIT)
+Parameter: MRJobConfig.MR_AM_JOB_REDUCE_PREEMPTION_LIMIT. Inferred value: "yarn.app.mapreduce.""am.""job.reduce.preemption.limit"
+Parameter: MRJobConfig.DEFAULT_MR_AM_JOB_REDUCE_PREEMPTION_LIMIT
+Callsite No. 99: 
+Content: reducerConf.getClass(REDUCER_OUTPUT_KEY_CLASS,null)
+Parameter: REDUCER_OUTPUT_KEY_CLASS. Inferred value: "mapreduce.chain.reducer.output.key.class"
+Parameter: null
+Callsite No. 100: 
+Content: getInt(MRJobConfig.NUM_MAPS,1)
+Parameter: MRJobConfig.NUM_MAPS. Inferred value: "mapreduce.job.maps"
+Parameter: 1
+Callsite No. 101: 
+Content: conf.getStringCollection(MRJobConfig.MAPREDUCE_JOB_SHUFFLE_PROVIDER_SERVICES)
+Parameter: MRJobConfig.MAPREDUCE_JOB_SHUFFLE_PROVIDER_SERVICES. Inferred value: "mapreduce.job.shuffle.provider.services"
+Callsite No. 102: 
+Content: conf.getInt(MRConfig.MAX_BLOCK_LOCATIONS_KEY,MRConfig.MAX_BLOCK_LOCATIONS_DEFAULT)
+Parameter: MRConfig.MAX_BLOCK_LOCATIONS_KEY. Inferred value: "mapreduce.job.max.split.locations"
+Parameter: MRConfig.MAX_BLOCK_LOCATIONS_DEFAULT
+Callsite No. 103: 
+Content: getInt(MRJobConfig.APPLICATION_ATTEMPT_ID,0)
+Parameter: MRJobConfig.APPLICATION_ATTEMPT_ID. Inferred value: "mapreduce.job.application.attempt.id"
+Parameter: 0
+Callsite No. 104: 
+Content: conf.getLong(MRJobConfig.MR_AM_COMMIT_WINDOW_MS,MRJobConfig.DEFAULT_MR_AM_COMMIT_WINDOW_MS)
+Parameter: MRJobConfig.MR_AM_COMMIT_WINDOW_MS. Inferred value: "yarn.app.mapreduce.""am.""job.committer.commit-window"
+Parameter: MRJobConfig.DEFAULT_MR_AM_COMMIT_WINDOW_MS
+Callsite No. 105: 
+Content: conf.getSocketAddr(JHAdminConfig.JHS_ADMIN_ADDRESS,JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS,JHAdminConfig.DEFAULT_JHS_ADMIN_PORT)
+Parameter: JHAdminConfig.JHS_ADMIN_ADDRESS. Inferred value: "mapreduce.jobhistory.""admin.address"
+Parameter: JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS
+Parameter: JHAdminConfig.DEFAULT_JHS_ADMIN_PORT
+Callsite No. 106: 
+Content: conf.getInt(FileInputFormat.LIST_STATUS_NUM_THREADS,FileInputFormat.DEFAULT_LIST_STATUS_NUM_THREADS)
+Parameter: FileInputFormat.LIST_STATUS_NUM_THREADS
+Parameter: FileInputFormat.DEFAULT_LIST_STATUS_NUM_THREADS
+Callsite No. 107: 
+Content: conf.getSocketAddr(JHAdminConfig.MR_HISTORY_BIND_HOST,JHAdminConfig.MR_HISTORY_WEBAPP_ADDRESS,JHAdminConfig.DEFAULT_MR_HISTORY_WEBAPP_ADDRESS,JHAdminConfig.DEFAULT_MR_HISTORY_WEBAPP_PORT)
+Parameter: JHAdminConfig.MR_HISTORY_BIND_HOST. Inferred value: "mapreduce.jobhistory.""bind-host"
+Parameter: JHAdminConfig.MR_HISTORY_WEBAPP_ADDRESS. Inferred value: "mapreduce.jobhistory.""webapp.address"
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_WEBAPP_ADDRESS
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_WEBAPP_PORT
+Callsite No. 108: 
+Content: conf.getSocketAddr(JHAdminConfig.JHS_ADMIN_ADDRESS,JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS,JHAdminConfig.DEFAULT_JHS_ADMIN_PORT)
+Parameter: JHAdminConfig.JHS_ADMIN_ADDRESS. Inferred value: "mapreduce.jobhistory.""admin.address"
+Parameter: JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS
+Parameter: JHAdminConfig.DEFAULT_JHS_ADMIN_PORT
+Callsite No. 109: 
+Content: jobConf.getClass(prefix+CHAIN_REDUCER_CLASS,null,Reducer.class)
+Parameter: prefix
+        + CHAIN_REDUCER_CLASS. Inferred value: ".reducer.class"
+Parameter: null
+Parameter: Reducer.class
+Callsite No. 110: 
+Content: conf.getInt(JHAdminConfig.MR_HISTORY_CLIENT_THREAD_COUNT,JHAdminConfig.DEFAULT_MR_HISTORY_CLIENT_THREAD_COUNT)
+Parameter: JHAdminConfig.MR_HISTORY_CLIENT_THREAD_COUNT. Inferred value: "mapreduce.jobhistory.""client.thread-count"
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_CLIENT_THREAD_COUNT
+Callsite No. 111: 
+Content: conf.get(JobContext.JOB_NAME,"<missingjobname>")
+Parameter: JobContext.JOB_NAME
+Parameter: "<missing job name>". Inferred value: "<missing job name>"
+Callsite No. 112: 
+Content: previousMapperConf.getClass(MAPPER_OUTPUT_VALUE_CLASS,null)
+Parameter: MAPPER_OUTPUT_VALUE_CLASS. Inferred value: "mapreduce.chain.mapper.output.value.class"
+Parameter: null
+Callsite No. 113: 
+Content: conf.get(Job.OUTPUT_FILTER,"FAILED")
+Parameter: Job.OUTPUT_FILTER
+Parameter: "FAILED". Inferred value: "FAILED"
+Callsite No. 114: 
+Content: conf.getSocketAddr(JHAdminConfig.MR_HISTORY_ADDRESS,JHAdminConfig.DEFAULT_MR_HISTORY_ADDRESS,JHAdminConfig.DEFAULT_MR_HISTORY_PORT)
+Parameter: JHAdminConfig.MR_HISTORY_ADDRESS. Inferred value: "mapreduce.jobhistory.""address"
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_ADDRESS
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_PORT
+Callsite No. 115: 
+Content: getInt(LINES_PER_MAP,1)
+Parameter: LINES_PER_MAP. Inferred value: "mapreduce.input.lineinputformat.linespermap"
+Parameter: 1
+Callsite No. 116: 
+Content: conf.get(MRConfig.FRAMEWORK_NAME,MRConfig.LOCAL_FRAMEWORK_NAME)
+Parameter: MRConfig.FRAMEWORK_NAME. Inferred value: "mapreduce.framework.name"
+Parameter: MRConfig.LOCAL_FRAMEWORK_NAME. Inferred value: "local"
+Callsite No. 117: 
+Content: conf.getClassLoader()
+Callsite No. 118: 
+Content: conf.get(DBConfiguration.INPUT_QUERY)
+Parameter: DBConfiguration.INPUT_QUERY. Inferred value: "mapreduce.jdbc.input.query"
+Callsite No. 119: 
+Content: conf.getLong(MRJobConfig.SPECULATIVE_RETRY_AFTER_SPECULATE,MRJobConfig.DEFAULT_SPECULATIVE_RETRY_AFTER_SPECULATE)
+Parameter: MRJobConfig.SPECULATIVE_RETRY_AFTER_SPECULATE. Inferred value: "mapreduce.job.speculative.retry-after-speculate"
+Parameter: MRJobConfig.DEFAULT_SPECULATIVE_RETRY_AFTER_SPECULATE
+Callsite No. 120: 
+Content: conf.getInt(prefix+CHAIN_MAPPER_SIZE,0)
+Parameter: prefix + CHAIN_MAPPER_SIZE. Inferred value: ".size"
+Parameter: 0
+Callsite No. 121: 
+Content: conf.getFloat(MRJobConfig.MR_AM_JOB_REDUCE_RAMPUP_UP_LIMIT,MRJobConfig.DEFAULT_MR_AM_JOB_REDUCE_RAMP_UP_LIMIT)
+Parameter: MRJobConfig.MR_AM_JOB_REDUCE_RAMPUP_UP_LIMIT. Inferred value: "yarn.app.mapreduce.""am.""job.reduce.rampup.limit"
+Parameter: MRJobConfig.DEFAULT_MR_AM_JOB_REDUCE_RAMP_UP_LIMIT
+Callsite No. 122: 
+Content: conf.getInt(MRJobConfig.MAP_MEMORY_MB,MRJobConfig.DEFAULT_MAP_MEMORY_MB)
+Parameter: MRJobConfig.MAP_MEMORY_MB. Inferred value: "mapreduce.map.memory.mb"
+Parameter: MRJobConfig.DEFAULT_MAP_MEMORY_MB
+Callsite No. 123: 
+Content: conf.getLong(MRJobConfig.MR_AM_TASK_ESTIMATOR_SMOOTH_LAMBDA_MS,MRJobConfig.DEFAULT_MR_AM_TASK_ESTIMATOR_SMOOTH_LAMBDA_MS)
+Parameter: MRJobConfig.MR_AM_TASK_ESTIMATOR_SMOOTH_LAMBDA_MS. Inferred value: "yarn.app.mapreduce.""am.""job.task.estimator.exponential.smooth.lambda-ms"
+Parameter: MRJobConfig.DEFAULT_MR_AM_TASK_ESTIMATOR_SMOOTH_LAMBDA_MS
+Callsite No. 124: 
+Content: this.conf.getInt(MRJobConfig.MR_CLIENT_MAX_RETRIES,MRJobConfig.DEFAULT_MR_CLIENT_MAX_RETRIES)
+Parameter: MRJobConfig.MR_CLIENT_MAX_RETRIES. Inferred value: "yarn.app.mapreduce.""client.max-retries"
+Parameter: MRJobConfig.DEFAULT_MR_CLIENT_MAX_RETRIES
+Callsite No. 125: 
+Content: conf.get("mapred.output.committer.class")
+Parameter: "mapred.output.committer.class". Inferred value: "mapred.output.committer.class"
+Callsite No. 126: 
+Content: job.getInt(Job.SUBMIT_REPLICATION,10)
+Parameter: Job.SUBMIT_REPLICATION. Inferred value: "mapreduce.client.submit.file.replication"
+Parameter: 10
+Callsite No. 127: 
+Content: conf.get(MRJobConfig.MR_AM_STAGING_DIR,MRJobConfig.DEFAULT_MR_AM_STAGING_DIR)
+Parameter: MRJobConfig.MR_AM_STAGING_DIR. Inferred value: "yarn.app.mapreduce.""am.""staging-dir"
+Parameter: MRJobConfig.DEFAULT_MR_AM_STAGING_DIR. Inferred value: "/tmp/hadoop-yarn/staging"
+Callsite No. 128: 
+Content: conf.getLong(MAPPER_MAX_SKIP_RECORDS,0)
+Parameter: MAPPER_MAX_SKIP_RECORDS
+Parameter: 0
+Callsite No. 129: 
+Content: conf.getBoolean(SHUFFLE_CONNECTION_KEEP_ALIVE_ENABLED,DEFAULT_SHUFFLE_CONNECTION_KEEP_ALIVE_ENABLED)
+Parameter: SHUFFLE_CONNECTION_KEEP_ALIVE_ENABLED. Inferred value: "mapreduce.shuffle.connection-keep-alive.enable"
+Parameter: DEFAULT_SHUFFLE_CONNECTION_KEEP_ALIVE_ENABLED
+Callsite No. 130: 
+Content: getCodec(file)
+Parameter: file
+Callsite No. 131: 
+Content: conf.getInt(MRJobConfig.MR_AM_CONTAINERLAUNCHER_THREAD_COUNT_LIMIT,MRJobConfig.DEFAULT_MR_AM_CONTAINERLAUNCHER_THREAD_COUNT_LIMIT)
+Parameter: MRJobConfig.MR_AM_CONTAINERLAUNCHER_THREAD_COUNT_LIMIT. Inferred value: "yarn.app.mapreduce.""am.""containerlauncher.thread-count-limit"
+Parameter: MRJobConfig.DEFAULT_MR_AM_CONTAINERLAUNCHER_THREAD_COUNT_LIMIT
+Callsite No. 132: 
+Content: conf.getInt(COUNTER_NAME_MAX_KEY,COUNTER_NAME_MAX_DEFAULT)
+Parameter: COUNTER_NAME_MAX_KEY. Inferred value: "mapreduce.job.counters.counter.name.max"
+Parameter: COUNTER_NAME_MAX_DEFAULT
+Callsite No. 133: 
+Content: conf.get(MRJobConfig.JOB_NAME,"<missingappname>")
+Parameter: MRJobConfig.JOB_NAME. Inferred value: "mapreduce.job.name"
+Parameter: "<missing app name>". Inferred value: "<missing app name>"
+Callsite No. 134: 
+Content: conf.getBoolean(MRJobConfig.REDUCE_SPECULATIVE,false)
+Parameter: MRJobConfig.REDUCE_SPECULATIVE. Inferred value: "mapreduce.reduce.speculative"
+Parameter: false
+Callsite No. 135: 
+Content: conf.get(MRJobConfig.MAP_INPUT_FILE)
+Parameter: MRJobConfig.MAP_INPUT_FILE. Inferred value: "mapreduce.map.input.file"
+Callsite No. 136: 
+Content: conf.getClass(MAPPER_OUTPUT_VALUE_CLASS,Object.class)
+Parameter: MAPPER_OUTPUT_VALUE_CLASS. Inferred value: "mapreduce.chain.mapper.output.value.class"
+Parameter: Object.class
+Callsite No. 137: 
+Content: conf.getLong(MRConfig.DELEGATION_TOKEN_RENEW_INTERVAL_KEY,MRConfig.DELEGATION_TOKEN_RENEW_INTERVAL_DEFAULT)
+Parameter: MRConfig.DELEGATION_TOKEN_RENEW_INTERVAL_KEY. Inferred value: "mapreduce.cluster.delegation.token.renew-interval"
+Parameter: MRConfig.DELEGATION_TOKEN_RENEW_INTERVAL_DEFAULT
+Callsite No. 138: 
+Content: conf.getLong(JHAdminConfig.MR_HISTORY_MAX_START_WAIT_TIME,JHAdminConfig.DEFAULT_MR_HISTORY_MAX_START_WAIT_TIME)
+Parameter: JHAdminConfig.MR_HISTORY_MAX_START_WAIT_TIME. Inferred value: "mapreduce.jobhistory.""maximum-start-wait-time-millis"
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_MAX_START_WAIT_TIME
+Callsite No. 139: 
+Content: conf.get(FILTER_REGEX)
+Parameter: FILTER_REGEX
+Callsite No. 140: 
+Content: conf.getBoolean(MRConfig.MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM,MRConfig.DEFAULT_MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM)
+Parameter: MRConfig.MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM. Inferred value: "mapreduce.app-submission.cross-platform"
+Parameter: MRConfig.DEFAULT_MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM
+Callsite No. 141: 
+Content: conf.getStrings(key)
+Parameter: key
+Callsite No. 142: 
+Content: defaultConf.getPropertySources(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY)
+Parameter: CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY
+Callsite No. 143: 
+Content: conf.get(DBConfiguration.DRIVER_CLASS_PROPERTY)
+Parameter: DBConfiguration.DRIVER_CLASS_PROPERTY. Inferred value: "mapreduce.jdbc.driver.class"
+Callsite No. 144: 
+Content: conf.getClass(JHAdminConfig.MR_HISTORY_STORAGE,CachedHistoryStorage.class,HistoryStorage.class)
+Parameter: JHAdminConfig.MR_HISTORY_STORAGE. Inferred value: "mapreduce.jobhistory.""store.class"
+Parameter: CachedHistoryStorage.class
+Parameter: HistoryStorage.class
+Callsite No. 145: 
+Content: conf.getClassByName(split[1])
+Parameter: split[1]
+Callsite No. 146: 
+Content: conf.getInt(MRJobConfig.MR_AM_HISTORY_MAX_UNFLUSHED_COMPLETE_EVENTS,MRJobConfig.DEFAULT_MR_AM_HISTORY_MAX_UNFLUSHED_COMPLETE_EVENTS)
+Parameter: MRJobConfig.MR_AM_HISTORY_MAX_UNFLUSHED_COMPLETE_EVENTS. Inferred value: "yarn.app.mapreduce.""am.""history.max-unflushed-events"
+Parameter: MRJobConfig.DEFAULT_MR_AM_HISTORY_MAX_UNFLUSHED_COMPLETE_EVENTS
+Callsite No. 147: 
+Content: conf.get(MRJobConfig.QUEUE_NAME,"default")
+Parameter: MRJobConfig.QUEUE_NAME. Inferred value: "mapreduce.job.queuename"
+Parameter: "default". Inferred value: "default"
+Callsite No. 148: 
+Content: conf.getBoolean(MRConfig.MR_ACLS_ENABLED,false)
+Parameter: MRConfig.MR_ACLS_ENABLED. Inferred value: "mapreduce.cluster.acls.enabled"
+Parameter: false
+Callsite No. 149: 
+Content: conf.getSocketAddr(JHAdminConfig.JHS_ADMIN_ADDRESS,JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS,JHAdminConfig.DEFAULT_JHS_ADMIN_PORT)
+Parameter: JHAdminConfig.JHS_ADMIN_ADDRESS. Inferred value: "mapreduce.jobhistory.""admin.address"
+Parameter: JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS
+Parameter: JHAdminConfig.DEFAULT_JHS_ADMIN_PORT
+Callsite No. 150: 
+Content: conf.getInt(MRJobConfig.MR_JOB_END_NOTIFICATION_MAX_ATTEMPTS,1)
+Parameter: MRJobConfig.MR_JOB_END_NOTIFICATION_MAX_ATTEMPTS. Inferred value: "mapreduce.job.end-notification.max.attempts"
+Parameter: 1
+Callsite No. 151: 
+Content: conf.getLong(MRJobConfig.SPLIT_METAINFO_MAXSIZE,MRJobConfig.DEFAULT_SPLIT_METAINFO_MAXSIZE)
+Parameter: MRJobConfig.SPLIT_METAINFO_MAXSIZE. Inferred value: "mapreduce.job.split.metainfo.maxsize"
+Parameter: MRJobConfig.DEFAULT_SPLIT_METAINFO_MAXSIZE
+Callsite No. 152: 
+Content: conf.getBoolean(MRJobConfig.MAP_SPECULATIVE,false)
+Parameter: MRJobConfig.MAP_SPECULATIVE. Inferred value: "mapreduce.map.speculative"
+Parameter: false
+Callsite No. 153: 
+Content: conf.getValByRegex(MRJobConfig.WORKFLOW_ADJACENCY_PREFIX_PATTERN)
+Parameter: MRJobConfig.WORKFLOW_ADJACENCY_PREFIX_PATTERN. Inferred value: "^mapreduce\\.workflow\\.adjacency\\..+"
+Callsite No. 154: 
+Content: conf.getInt(PROGRESS_MONITOR_POLL_INTERVAL_KEY,DEFAULT_MONITOR_POLL_INTERVAL)
+Parameter: PROGRESS_MONITOR_POLL_INTERVAL_KEY. Inferred value: "mapreduce.client.progressmonitor.pollinterval"
+Parameter: DEFAULT_MONITOR_POLL_INTERVAL
+Callsite No. 155: 
+Content: conf.getLong(MRJobConfig.MR_AM_HISTORY_COMPLETE_EVENT_FLUSH_TIMEOUT_MS,MRJobConfig.DEFAULT_MR_AM_HISTORY_COMPLETE_EVENT_FLUSH_TIMEOUT_MS)
+Parameter: MRJobConfig.MR_AM_HISTORY_COMPLETE_EVENT_FLUSH_TIMEOUT_MS. Inferred value: "yarn.app.mapreduce.""am.""history.complete-event-flush-timeout"
+Parameter: MRJobConfig.DEFAULT_MR_AM_HISTORY_COMPLETE_EVENT_FLUSH_TIMEOUT_MS
+Callsite No. 156: 
+Content: conf.getInt(MRConfig.MAX_BLOCK_LOCATIONS_KEY,MRConfig.MAX_BLOCK_LOCATIONS_DEFAULT)
+Parameter: MRConfig.MAX_BLOCK_LOCATIONS_KEY. Inferred value: "mapreduce.job.max.split.locations"
+Parameter: MRConfig.MAX_BLOCK_LOCATIONS_DEFAULT
+Callsite No. 157: 
+Content: conf.getInt(MAX_SHUFFLE_CONNECTIONS,DEFAULT_MAX_SHUFFLE_CONNECTIONS)
+Parameter: MAX_SHUFFLE_CONNECTIONS. Inferred value: "mapreduce.shuffle.max.connections"
+Parameter: DEFAULT_MAX_SHUFFLE_CONNECTIONS
+Callsite No. 158: 
+Content: conf.getBoolean(NATURAL_ORDER,true)
+Parameter: NATURAL_ORDER. Inferred value: "mapreduce.totalorderpartitioner.naturalorder"
+Parameter: true
+Callsite No. 159: 
+Content: conf.getInt(MRJobConfig.MR_AM_VMEM_MB,MRJobConfig.DEFAULT_MR_AM_VMEM_MB)
+Parameter: MRJobConfig.MR_AM_VMEM_MB. Inferred value: "yarn.app.mapreduce.""am.""resource.mb"
+Parameter: MRJobConfig.DEFAULT_MR_AM_VMEM_MB
+Callsite No. 160: 
+Content: conf.getBoolean(MRJobConfig.REDUCE_SEPARATE_SHUFFLE_LOG,MRJobConfig.DEFAULT_REDUCE_SEPARATE_SHUFFLE_LOG)
+Parameter: MRJobConfig.REDUCE_SEPARATE_SHUFFLE_LOG. Inferred value: "yarn.app.mapreduce.""shuffle.log.separate"
+Parameter: MRJobConfig.DEFAULT_REDUCE_SEPARATE_SHUFFLE_LOG
+Callsite No. 161: 
+Content: conf.getDouble(MRJobConfig.SPECULATIVECAP_RUNNING_TASKS,MRJobConfig.DEFAULT_SPECULATIVECAP_RUNNING_TASKS)
+Parameter: MRJobConfig.SPECULATIVECAP_RUNNING_TASKS. Inferred value: "mapreduce.job.speculative.speculative-cap-running-tasks"
+Parameter: MRJobConfig.DEFAULT_SPECULATIVECAP_RUNNING_TASKS
+Callsite No. 162: 
+Content: conf.getFloat(MRJobConfig.SPECULATIVE_SLOWTASK_THRESHOLD,1.0f)
+Parameter: MRJobConfig.SPECULATIVE_SLOWTASK_THRESHOLD. Inferred value: "mapreduce.job.speculative.slowtaskthreshold"
+Parameter: 1.0f
+Callsite No. 163: 
+Content: conf.getSocketAddr(JHAdminConfig.MR_HISTORY_BIND_HOST,JHAdminConfig.MR_HISTORY_WEBAPP_HTTPS_ADDRESS,JHAdminConfig.DEFAULT_MR_HISTORY_WEBAPP_HTTPS_ADDRESS,JHAdminConfig.DEFAULT_MR_HISTORY_WEBAPP_HTTPS_PORT)
+Parameter: JHAdminConfig.MR_HISTORY_BIND_HOST. Inferred value: "mapreduce.jobhistory.""bind-host"
+Parameter: JHAdminConfig.MR_HISTORY_WEBAPP_HTTPS_ADDRESS. Inferred value: "mapreduce.jobhistory.""webapp.https.address"
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_WEBAPP_HTTPS_ADDRESS
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_WEBAPP_HTTPS_PORT
+Callsite No. 164: 
+Content: conf.getInt(FILTER_FREQUENCY,10)
+Parameter: FILTER_FREQUENCY
+Parameter: 10
+Callsite No. 165: 
+Content: conf.getClass(MRConfig.TASK_LOCAL_OUTPUT_CLASS,MROutputFiles.class,MapOutputFile.class)
+Parameter: MRConfig.TASK_LOCAL_OUTPUT_CLASS. Inferred value: "mapreduce.task.local.output.class"
+Parameter: MROutputFiles.class
+Parameter: MapOutputFile.class
+Callsite No. 166: 
+Content: conf.getClassByName(className)
+Parameter: className
+Callsite No. 167: 
+Content: conf.getInt(MAX_SHUFFLE_THREADS,DEFAULT_MAX_SHUFFLE_THREADS)
+Parameter: MAX_SHUFFLE_THREADS. Inferred value: "mapreduce.shuffle.max.threads"
+Parameter: DEFAULT_MAX_SHUFFLE_THREADS
+Callsite No. 168: 
+Content: conf.get(MRJobConfig.MAPREDUCE_JOB_LOG4J_PROPERTIES_FILE,"")
+Parameter: MRJobConfig.MAPREDUCE_JOB_LOG4J_PROPERTIES_FILE. Inferred value: "mapreduce.job.log4j-properties-file"
+Parameter: "". Inferred value: ""
+Callsite No. 169: 
+Content: conf.getFloat(MRJobConfig.MAX_ALLOWED_FETCH_FAILURES_FRACTION,MRJobConfig.DEFAULT_MAX_ALLOWED_FETCH_FAILURES_FRACTION)
+Parameter: MRJobConfig.MAX_ALLOWED_FETCH_FAILURES_FRACTION. Inferred value: "mapreduce.reduce.shuffle.max-fetch-failures-fraction"
+Parameter: MRJobConfig.DEFAULT_MAX_ALLOWED_FETCH_FAILURES_FRACTION
+Callsite No. 170: 
+Content: conf.get(DBConfiguration.INPUT_CONDITIONS_PROPERTY)
+Parameter: DBConfiguration.INPUT_CONDITIONS_PROPERTY. Inferred value: "mapreduce.jdbc.input.conditions"
+Callsite No. 171: 
+Content: conf.get(MRConfig.MASTER_USER_NAME)
+Parameter: MRConfig.MASTER_USER_NAME. Inferred value: "mapreduce.jobtracker.kerberos.principal"
+Callsite No. 172: 
+Content: conf.getInt(COUNTERS_MAX_KEY,COUNTERS_MAX_DEFAULT)
+Parameter: COUNTERS_MAX_KEY. Inferred value: "mapreduce.job.counters.max"
+Parameter: COUNTERS_MAX_DEFAULT
+Callsite No. 173: 
+Content: conf.get(MRJobConfig.TASK_ATTEMPT_ID)
+Parameter: MRJobConfig.TASK_ATTEMPT_ID. Inferred value: "mapreduce.task.attempt.id"
+Callsite No. 174: 
+Content: conf.get(DBConfiguration.USERNAME_PROPERTY)
+Parameter: DBConfiguration.USERNAME_PROPERTY. Inferred value: "mapreduce.jdbc.username"
+Callsite No. 175: 
+Content: jobConf.get(MRJobConfig.JOB_ACL_MODIFY_JOB,MRJobConfig.DEFAULT_JOB_ACL_MODIFY_JOB)
+Parameter: MRJobConfig.JOB_ACL_MODIFY_JOB. Inferred value: "mapreduce.job.acl-modify-job"
+Parameter: MRJobConfig.DEFAULT_JOB_ACL_MODIFY_JOB. Inferred value: " "
+Callsite No. 176: 
+Content: conf.getClass(FILTER_CLASS,PercentFilter.class)
+Parameter: FILTER_CLASS
+Parameter: PercentFilter.class
+Callsite No. 177: 
+Content: this.conf.getInt(MRJobConfig.MR_CLIENT_TO_AM_IPC_MAX_RETRIES_ON_TIMEOUTS,MRJobConfig.DEFAULT_MR_CLIENT_TO_AM_IPC_MAX_RETRIES_ON_TIMEOUTS)
+Parameter: MRJobConfig.MR_CLIENT_TO_AM_IPC_MAX_RETRIES_ON_TIMEOUTS. Inferred value: "yarn.app.mapreduce.""client-am.ipc.max-retries-on-timeouts"
+Parameter: MRJobConfig.DEFAULT_MR_CLIENT_TO_AM_IPC_MAX_RETRIES_ON_TIMEOUTS
+Callsite No. 178: 
+Content: conf.get(JHAdminConfig.JHS_ADMIN_ACL,JHAdminConfig.DEFAULT_JHS_ADMIN_ACL)
+Parameter: JHAdminConfig.JHS_ADMIN_ACL. Inferred value: "mapreduce.jobhistory.""admin.acl"
+Parameter: JHAdminConfig.DEFAULT_JHS_ADMIN_ACL. Inferred value: "*"
+Callsite No. 179: 
+Content: conf.get(MRJobConfig.MR_JOB_END_NOTIFICATION_PROXY)
+Parameter: MRJobConfig.MR_JOB_END_NOTIFICATION_PROXY. Inferred value: "mapreduce.job.end-notification.proxy"
+Callsite No. 180: 
+Content: conf.get(MRJobConfig.MAPREDUCE_JOB_LOG4J_PROPERTIES_FILE)
+Parameter: MRJobConfig.MAPREDUCE_JOB_LOG4J_PROPERTIES_FILE. Inferred value: "mapreduce.job.log4j-properties-file"
+Callsite No. 181: 
+Content: conf.getFloat(JobContext.REDUCE_MARKRESET_BUFFER_PERCENT,0f)
+Parameter: JobContext.REDUCE_MARKRESET_BUFFER_PERCENT
+Parameter: 0f
+Callsite No. 182: 
+Content: conf.get(key)
+Parameter: key
+Callsite No. 183: 
+Content: get(COMPARATOR_OPTIONS)
+Parameter: COMPARATOR_OPTIONS. Inferred value: "mapreduce.partition.keycomparator.options"
+Callsite No. 184: 
+Content: conf.getInt(MRJobConfig.REDUCE_CPU_VCORES,MRJobConfig.DEFAULT_REDUCE_CPU_VCORES)
+Parameter: MRJobConfig.REDUCE_CPU_VCORES. Inferred value: "mapreduce.reduce.cpu.vcores"
+Parameter: MRJobConfig.DEFAULT_REDUCE_CPU_VCORES
+Callsite No. 185: 
+Content: conf.getStrings(MRJobConfig.CACHE_ARCHIVES)
+Parameter: MRJobConfig.CACHE_ARCHIVES. Inferred value: "mapreduce.job.cache.archives"
+Callsite No. 186: 
+Content: conf.get(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY,"")
+Parameter: CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY
+Parameter: "". Inferred value: ""
+Callsite No. 187: 
+Content: conf.getBoolean(JHAdminConfig.MR_HISTORY_CLEANER_ENABLE,true)
+Parameter: JHAdminConfig.MR_HISTORY_CLEANER_ENABLE. Inferred value: "mapreduce.jobhistory.""cleaner.enable"
+Parameter: true
+Callsite No. 188: 
+Content: conf.getStrings(MRJobConfig.CACHE_LOCALARCHIVES)
+Parameter: MRJobConfig.CACHE_LOCALARCHIVES. Inferred value: "mapreduce.job.cache.local.archives"
+Callsite No. 189: 
+Content: conf.getBoolean(AUTO_INCR_REDUCE_PROC_COUNT,true)
+Parameter: AUTO_INCR_REDUCE_PROC_COUNT
+Parameter: true
+Callsite No. 190: 
+Content: conf.getClassByName(split[1])
+Parameter: split[1]
+Callsite No. 191: 
+Content: conf.get(COMPARATOR_OPTIONS)
+Parameter: COMPARATOR_OPTIONS. Inferred value: "mapreduce.partition.keycomparator.options"
+Callsite No. 192: 
+Content: conf.get(ValueAggregatorJobBase.USER_JAR)
+Parameter: ValueAggregatorJobBase.USER_JAR. Inferred value: "mapreduce.aggregate.user.jar.file"
+Callsite No. 193: 
+Content: conf.get(JHAdminConfig.MR_HS_HTTP_POLICY,JHAdminConfig.DEFAULT_MR_HS_HTTP_POLICY)
+Parameter: JHAdminConfig.MR_HS_HTTP_POLICY. Inferred value: "mapreduce.jobhistory.""http.policy"
+Parameter: JHAdminConfig.DEFAULT_MR_HS_HTTP_POLICY
+Callsite No. 194: 
+Content: conf.getInt(MRJobConfig.NUM_REDUCES,0)
+Parameter: MRJobConfig.NUM_REDUCES. Inferred value: "mapreduce.job.reduces"
+Parameter: 0
+Callsite No. 195: 
+Content: get(INPUT_DIR,"")
+Parameter: INPUT_DIR. Inferred value: "mapreduce.input.fileinputformat.inputdir"
+Parameter: "". Inferred value: ""
+Callsite No. 196: 
+Content: conf.getClassByName(name)
+Parameter: name
+Callsite No. 197: 
+Content: conf.getBoolean(CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,false)
+Parameter: CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION
+Parameter: false
+Callsite No. 198: 
+Content: conf.get(toFullPropertyName(name,"state"),QueueState.RUNNING.getStateName())
+Parameter: toFullPropertyName(name, "state")
+Parameter: QueueState.RUNNING.getStateName()
+Callsite No. 199: 
+Content: this.conf.getCredentials()
+Callsite No. 200: 
+Content: conf.getStringCollection(YarnConfiguration.NM_AUX_SERVICES)
+Parameter: YarnConfiguration.NM_AUX_SERVICES
+Callsite No. 201: 
+Content: conf.get(YarnConfiguration.YARN_HTTP_POLICY_KEY,YarnConfiguration.YARN_HTTP_POLICY_DEFAULT)
+Parameter: YarnConfiguration.YARN_HTTP_POLICY_KEY
+Parameter: YarnConfiguration.YARN_HTTP_POLICY_DEFAULT
+Callsite No. 202: 
+Content: conf.getLong(MRConfig.DELEGATION_TOKEN_MAX_LIFETIME_KEY,MRConfig.DELEGATION_TOKEN_MAX_LIFETIME_DEFAULT)
+Parameter: MRConfig.DELEGATION_TOKEN_MAX_LIFETIME_KEY. Inferred value: "mapreduce.cluster.delegation.token.max-lifetime"
+Parameter: MRConfig.DELEGATION_TOKEN_MAX_LIFETIME_DEFAULT
+Callsite No. 203: 
+Content: conf.get(aclKey,"*")
+Parameter: aclKey
+Parameter: "*". Inferred value: "*"
+Callsite No. 204: 
+Content: job.getInt(MAX_LINE_LENGTH,Integer.MAX_VALUE)
+Parameter: MAX_LINE_LENGTH. Inferred value: "mapreduce.input.linerecordreader.line.maxlength"
+Parameter: Integer.MAX_VALUE
+Callsite No. 205: 
+Content: jobConf.get(MRJobConfig.MR_AM_PROFILE_PARAMS,MRJobConfig.DEFAULT_TASK_PROFILE_PARAMS)
+Parameter: MRJobConfig.MR_AM_PROFILE_PARAMS. Inferred value: "yarn.app.mapreduce.""am.""profile.params"
+Parameter: MRJobConfig.DEFAULT_TASK_PROFILE_PARAMS. Inferred value: "-agentlib:hprof=cpu=samples,heap=sites,force=n,thread=y,""verbose=n,file=%s"
+Callsite No. 206: 
+Content: conf.getBoolean(MRConfig.MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM,MRConfig.DEFAULT_MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM)
+Parameter: MRConfig.MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM. Inferred value: "mapreduce.app-submission.cross-platform"
+Parameter: MRConfig.DEFAULT_MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM
+Callsite No. 207: 
+Content: getLong(SPLIT_MINSIZE,1L)
+Parameter: SPLIT_MINSIZE. Inferred value: "mapreduce.input.fileinputformat.split.minsize"
+Parameter: 1L
+Callsite No. 208: 
+Content: conf.get(SEPERATOR,"\t")
+Parameter: SEPERATOR. Inferred value: "mapreduce.output.textoutputformat.separator"
+Parameter: "\t". Inferred value: "\t"
+Callsite No. 209: 
+Content: conf.getClass(m.group(0),null,ComposableRecordReader.class)
+Parameter: m.group(0)
+Parameter: null
+Parameter: ComposableRecordReader.class
+Callsite No. 210: 
+Content: conf.get(JHAdminConfig.MR_HISTORY_ADDRESS)
+Parameter: JHAdminConfig.MR_HISTORY_ADDRESS. Inferred value: "mapreduce.jobhistory.""address"
+Callsite No. 211: 
+Content: conf.getInt(SHUFFLE_BUFFER_SIZE,DEFAULT_SHUFFLE_BUFFER_SIZE)
+Parameter: SHUFFLE_BUFFER_SIZE. Inferred value: "mapreduce.shuffle.transfer.buffer.size"
+Parameter: DEFAULT_SHUFFLE_BUFFER_SIZE
+Callsite No. 212: 
+Content: previousMapperConf.getClass(MAPPER_OUTPUT_KEY_CLASS,null)
+Parameter: MAPPER_OUTPUT_KEY_CLASS. Inferred value: "mapreduce.chain.mapper.output.key.class"
+Parameter: null
+Callsite No. 213: 
+Content: conf.getInt(MRJobConfig.MAX_FETCH_FAILURES_NOTIFICATIONS,MRJobConfig.DEFAULT_MAX_FETCH_FAILURES_NOTIFICATIONS)
+Parameter: MRJobConfig.MAX_FETCH_FAILURES_NOTIFICATIONS. Inferred value: "mapreduce.reduce.shuffle.max-fetch-failures-notifications"
+Parameter: MRJobConfig.DEFAULT_MAX_FETCH_FAILURES_NOTIFICATIONS
+Callsite No. 214: 
+Content: conf.get(MRJobConfig.MR_AM_STAGING_DIR,MRJobConfig.DEFAULT_MR_AM_STAGING_DIR)
+Parameter: MRJobConfig.MR_AM_STAGING_DIR. Inferred value: "yarn.app.mapreduce.""am.""staging-dir"
+Parameter: MRJobConfig.DEFAULT_MR_AM_STAGING_DIR. Inferred value: "/tmp/hadoop-yarn/staging"
+Callsite No. 215: 
+Content: conf.getInt(MRJobConfig.MR_AM_TASK_LISTENER_THREAD_COUNT,MRJobConfig.DEFAULT_MR_AM_TASK_LISTENER_THREAD_COUNT)
+Parameter: MRJobConfig.MR_AM_TASK_LISTENER_THREAD_COUNT. Inferred value: "yarn.app.mapreduce.""am.""job.task.listener.thread-count"
+Parameter: MRJobConfig.DEFAULT_MR_AM_TASK_LISTENER_THREAD_COUNT
+Callsite No. 216: 
+Content: conf.getClass(MAPPER_INPUT_KEY_CLASS,Object.class)
+Parameter: MAPPER_INPUT_KEY_CLASS. Inferred value: "mapreduce.chain.mapper.input.key.class"
+Parameter: Object.class
+Callsite No. 217: 
+Content: jobConf.get(MRJobConfig.JAR)
+Parameter: MRJobConfig.JAR. Inferred value: "mapreduce.job.jar"
+Callsite No. 218: 
+Content: get(FileOutputFormat.OUTDIR)
+Parameter: FileOutputFormat.OUTDIR. Inferred value: "mapreduce.output.fileoutputformat.outputdir"
+Callsite No. 219: 
+Content: getCodec(file)
+Parameter: file
+Callsite No. 220: 
+Content: conf.getInt(MRJobConfig.NUM_MAPS,1)
+Parameter: MRJobConfig.NUM_MAPS. Inferred value: "mapreduce.job.maps"
+Parameter: 1
+Callsite No. 221: 
+Content: jobConf.get(JobContext.RESERVATION_ID)
+Parameter: JobContext.RESERVATION_ID
+Callsite No. 222: 
+Content: conf.getInt(MRJobConfig.MR_AM_IGNORE_BLACKLISTING_BLACKLISTED_NODE_PERECENT,MRJobConfig.DEFAULT_MR_AM_IGNORE_BLACKLISTING_BLACKLISTED_NODE_PERCENT)
+Parameter: MRJobConfig.MR_AM_IGNORE_BLACKLISTING_BLACKLISTED_NODE_PERECENT. Inferred value: "yarn.app.mapreduce.""am.""job.node-blacklisting.ignore-threshold-node-percent"
+Parameter: MRJobConfig.DEFAULT_MR_AM_IGNORE_BLACKLISTING_BLACKLISTED_NODE_PERCENT
+Callsite No. 223: 
+Content: conf.getBoolean(MRJobConfig.MR_AM_CREATE_JH_INTERMEDIATE_BASE_DIR,true)
+Parameter: MRJobConfig.MR_AM_CREATE_JH_INTERMEDIATE_BASE_DIR. Inferred value: "yarn.app.mapreduce.""am.""create-intermediate-jh-base-dir"
+Parameter: true
+Callsite No. 224: 
+Content: conf.getInt(MRJobConfig.MR_AM_LOG_BACKUPS,MRJobConfig.DEFAULT_MR_AM_LOG_BACKUPS)
+Parameter: MRJobConfig.MR_AM_LOG_BACKUPS. Inferred value: "yarn.app.mapreduce.""am.""container.log.backups"
+Parameter: MRJobConfig.DEFAULT_MR_AM_LOG_BACKUPS
+Callsite No. 225: 
+Content: conf.getClass(MRJobConfig.MR_AM_TASK_ESTIMATOR,LegacyTaskRuntimeEstimator.class,TaskRuntimeEstimator.class)
+Parameter: MRJobConfig.MR_AM_TASK_ESTIMATOR. Inferred value: "yarn.app.mapreduce.""am.""job.task.estimator.class"
+Parameter: LegacyTaskRuntimeEstimator.class
+Parameter: TaskRuntimeEstimator.class
+Callsite No. 226: 
+Content: getInt(MRJobConfig.NUM_MAPS,1)
+Parameter: MRJobConfig.NUM_MAPS. Inferred value: "mapreduce.job.maps"
+Parameter: 1
+Callsite No. 227: 
+Content: conf.getLong(MRConfig.DELEGATION_KEY_UPDATE_INTERVAL_KEY,MRConfig.DELEGATION_KEY_UPDATE_INTERVAL_DEFAULT)
+Parameter: MRConfig.DELEGATION_KEY_UPDATE_INTERVAL_KEY. Inferred value: "mapreduce.cluster.delegation.key.update-interval"
+Parameter: MRConfig.DELEGATION_KEY_UPDATE_INTERVAL_DEFAULT
+Callsite No. 228: 
+Content: conf.getInt(MRJobConfig.MR_AM_TASK_LISTENER_THREAD_COUNT,MRJobConfig.DEFAULT_MR_AM_TASK_LISTENER_THREAD_COUNT)
+Parameter: MRJobConfig.MR_AM_TASK_LISTENER_THREAD_COUNT. Inferred value: "yarn.app.mapreduce.""am.""job.task.listener.thread-count"
+Parameter: MRJobConfig.DEFAULT_MR_AM_TASK_LISTENER_THREAD_COUNT
+Callsite No. 229: 
+Content: conf.getInt(MRJobConfig.SHUFFLE_LOG_BACKUPS,MRJobConfig.DEFAULT_SHUFFLE_LOG_BACKUPS)
+Parameter: MRJobConfig.SHUFFLE_LOG_BACKUPS. Inferred value: "yarn.app.mapreduce.""shuffle.log.backups"
+Parameter: MRJobConfig.DEFAULT_SHUFFLE_LOG_BACKUPS
+Callsite No. 230: 
+Content: getInt(LIST_STATUS_NUM_THREADS,DEFAULT_LIST_STATUS_NUM_THREADS)
+Parameter: LIST_STATUS_NUM_THREADS. Inferred value: "mapreduce.input.fileinputformat.list-status.num-threads"
+Parameter: DEFAULT_LIST_STATUS_NUM_THREADS
+Callsite No. 231: 
+Content: conf.getBoolean("mapred.reducer.new-api",false)
+Parameter: "mapred.reducer.new-api". Inferred value: "mapred.reducer.new-api"
+Parameter: false
+Callsite No. 232: 
+Content: jobConf.get(JobContext.QUEUE_NAME,YarnConfiguration.DEFAULT_QUEUE_NAME)
+Parameter: JobContext.QUEUE_NAME
+Parameter: YarnConfiguration.DEFAULT_QUEUE_NAME
+Callsite No. 233: 
+Content: conf.getStrings(MRConfig.STATIC_RESOLUTIONS)
+Parameter: MRConfig.STATIC_RESOLUTIONS. Inferred value: "mapreduce.job.net.static.resolutions"
+Callsite No. 234: 
+Content: conf.get(MRConfig.MR_ADMINS,"")
+Parameter: MRConfig.MR_ADMINS. Inferred value: "mapreduce.cluster.administrators"
+Parameter: " ". Inferred value: " "
+Callsite No. 235: 
+Content: conf.getLong(SPLIT_MINSIZE_PERNODE,0)
+Parameter: SPLIT_MINSIZE_PERNODE. Inferred value: "mapreduce.input.fileinputformat.split.minsize.per.node"
+Parameter: 0
+Callsite No. 236: 
+Content: conf.getInt(MRJobConfig.TASK_TIMEOUT,5*60*1000)
+Parameter: MRJobConfig.TASK_TIMEOUT. Inferred value: "mapreduce.task.timeout"
+Parameter: 5 * 60 * 1000
+Callsite No. 237: 
+Content: conf.getBoolean(SHUFFLE_TRANSFERTO_ALLOWED,(Shell.WINDOWS)?WINDOWS_DEFAULT_SHUFFLE_TRANSFERTO_ALLOWED:DEFAULT_SHUFFLE_TRANSFERTO_ALLOWED)
+Parameter: SHUFFLE_TRANSFERTO_ALLOWED. Inferred value: "mapreduce.shuffle.transferTo.allowed"
+Parameter: (Shell.WINDOWS)?WINDOWS_DEFAULT_SHUFFLE_TRANSFERTO_ALLOWED:
+                         DEFAULT_SHUFFLE_TRANSFERTO_ALLOWED
+Callsite No. 238: 
+Content: conf.getSocketAddr(JHAdminConfig.MR_HISTORY_BIND_HOST,JHAdminConfig.JHS_ADMIN_ADDRESS,JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS,JHAdminConfig.DEFAULT_JHS_ADMIN_PORT)
+Parameter: JHAdminConfig.MR_HISTORY_BIND_HOST. Inferred value: "mapreduce.jobhistory.""bind-host"
+Parameter: JHAdminConfig.JHS_ADMIN_ADDRESS. Inferred value: "mapreduce.jobhistory.""admin.address"
+Parameter: JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS
+Parameter: JHAdminConfig.DEFAULT_JHS_ADMIN_PORT
+Callsite No. 239: 
+Content: conf.getBoolean(MRJobConfig.JOB_TOKEN_TRACKING_IDS_ENABLED,MRJobConfig.DEFAULT_JOB_TOKEN_TRACKING_IDS_ENABLED)
+Parameter: MRJobConfig.JOB_TOKEN_TRACKING_IDS_ENABLED. Inferred value: "mapreduce.job.token.tracking.ids.enabled"
+Parameter: MRJobConfig.DEFAULT_JOB_TOKEN_TRACKING_IDS_ENABLED
+Callsite No. 240: 
+Content: conf.getInt(JHAdminConfig.MR_HISTORY_MOVE_THREAD_COUNT,JHAdminConfig.DEFAULT_MR_HISTORY_MOVE_THREAD_COUNT)
+Parameter: JHAdminConfig.MR_HISTORY_MOVE_THREAD_COUNT. Inferred value: "mapreduce.jobhistory.""move.thread-count"
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_MOVE_THREAD_COUNT
+Callsite No. 241: 
+Content: conf.get("num.key.fields.for.partition")
+Parameter: "num.key.fields.for.partition". Inferred value: "num.key.fields.for.partition"
+Callsite No. 242: 
+Content: conf.getInt(SHUFFLE_CONNECTION_KEEP_ALIVE_TIME_OUT,DEFAULT_SHUFFLE_CONNECTION_KEEP_ALIVE_TIME_OUT)
+Parameter: SHUFFLE_CONNECTION_KEEP_ALIVE_TIME_OUT. Inferred value: "mapreduce.shuffle.connection-keep-alive.timeout"
+Parameter: DEFAULT_SHUFFLE_CONNECTION_KEEP_ALIVE_TIME_OUT
+Callsite No. 243: 
+Content: conf.getBoolean(MRJobConfig.MR_AM_JOB_NODE_BLACKLISTING_ENABLE,true)
+Parameter: MRJobConfig.MR_AM_JOB_NODE_BLACKLISTING_ENABLE. Inferred value: "yarn.app.mapreduce.""am.""job.node-blacklisting.enable"
+Parameter: true
+Callsite No. 244: 
+Content: defaultConf.get(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY)
+Parameter: CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY
+Callsite No. 245: 
+Content: conf.getInt(SUFFLE_SSL_FILE_BUFFER_SIZE_KEY,DEFAULT_SUFFLE_SSL_FILE_BUFFER_SIZE)
+Parameter: SUFFLE_SSL_FILE_BUFFER_SIZE_KEY. Inferred value: "mapreduce.shuffle.ssl.file.buffer.size"
+Parameter: DEFAULT_SUFFLE_SSL_FILE_BUFFER_SIZE
+Callsite No. 246: 
+Content: conf.get(DIR_MAPPERS)
+Parameter: DIR_MAPPERS. Inferred value: "mapreduce.input.multipleinputs.dir.mappers"
+Callsite No. 247: 
+Content: conf.get("tmpjars")
+Parameter: "tmpjars". Inferred value: "tmpjars"
+Callsite No. 248: 
+Content: conf.getClass(FILTER_CLASS,PercentFilter.class)
+Parameter: FILTER_CLASS
+Parameter: PercentFilter.class
+Callsite No. 249: 
+Content: conf.getSocketAddr(JHAdminConfig.MR_HISTORY_BIND_HOST,JHAdminConfig.MR_HISTORY_ADDRESS,JHAdminConfig.DEFAULT_MR_HISTORY_ADDRESS,JHAdminConfig.DEFAULT_MR_HISTORY_PORT)
+Parameter: JHAdminConfig.MR_HISTORY_BIND_HOST. Inferred value: "mapreduce.jobhistory.""bind-host"
+Parameter: JHAdminConfig.MR_HISTORY_ADDRESS. Inferred value: "mapreduce.jobhistory.""address"
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_ADDRESS
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_PORT
+Callsite No. 250: 
+Content: conf.getInt(FIXED_RECORD_LENGTH,0)
+Parameter: FIXED_RECORD_LENGTH. Inferred value: "fixedlengthinputformat.record.length"
+Parameter: 0
+Callsite No. 251: 
+Content: rConf.getClass(REDUCER_OUTPUT_KEY_CLASS,Object.class)
+Parameter: REDUCER_OUTPUT_KEY_CLASS. Inferred value: "mapreduce.chain.reducer.output.key.class"
+Parameter: Object.class
+Callsite No. 252: 
+Content: conf.get("mapred.output.committer.class")
+Parameter: "mapred.output.committer.class". Inferred value: "mapred.output.committer.class"
+Callsite No. 253: 
+Content: conf.get(YarnConfiguration.RM_PRINCIPAL)
+Parameter: YarnConfiguration.RM_PRINCIPAL
+Callsite No. 254: 
+Content: conf.get(DBConfiguration.INPUT_TABLE_NAME_PROPERTY)
+Parameter: DBConfiguration.INPUT_TABLE_NAME_PROPERTY. Inferred value: "mapreduce.jdbc.input.table.name"
+Callsite No. 255: 
+Content: conf.getClass(MAPPER_INPUT_VALUE_CLASS,Object.class)
+Parameter: MAPPER_INPUT_VALUE_CLASS. Inferred value: "mapreduce.chain.mapper.input.value.class"
+Parameter: Object.class
+Callsite No. 256: 
+Content: conf.getDouble(MRJobConfig.SPECULATIVECAP_TOTAL_TASKS,MRJobConfig.DEFAULT_SPECULATIVECAP_TOTAL_TASKS)
+Parameter: MRJobConfig.SPECULATIVECAP_TOTAL_TASKS. Inferred value: "mapreduce.job.speculative.speculative-cap-total-tasks"
+Parameter: MRJobConfig.DEFAULT_SPECULATIVECAP_TOTAL_TASKS
+Callsite No. 257: 
+Content: conf.getStrings(DBConfiguration.OUTPUT_FIELD_NAMES_PROPERTY)
+Parameter: DBConfiguration.OUTPUT_FIELD_NAMES_PROPERTY. Inferred value: "mapreduce.jdbc.output.field.names"
+Callsite No. 258: 
+Content: conf.getSocketAddr(YarnConfiguration.RM_ADDRESS,YarnConfiguration.DEFAULT_RM_ADDRESS,YarnConfiguration.DEFAULT_RM_PORT)
+Parameter: YarnConfiguration.RM_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_RM_ADDRESS
+Parameter: YarnConfiguration.DEFAULT_RM_PORT
+Callsite No. 259: 
+Content: conf.getBoolean(MRJobConfig.REDUCE_SPECULATIVE,false)
+Parameter: MRJobConfig.REDUCE_SPECULATIVE. Inferred value: "mapreduce.reduce.speculative"
+Parameter: false
+Callsite No. 260: 
+Content: getCodec(file)
+Parameter: file
+Callsite No. 261: 
+Content: conf.getBoolean("mapred.mapper.new-api",false)
+Parameter: "mapred.mapper.new-api". Inferred value: "mapred.mapper.new-api"
+Parameter: false
+Callsite No. 262: 
+Content: conf.getInt(MRJobConfig.MAP_CPU_VCORES,MRJobConfig.DEFAULT_MAP_CPU_VCORES)
+Parameter: MRJobConfig.MAP_CPU_VCORES. Inferred value: "mapreduce.map.cpu.vcores"
+Parameter: MRJobConfig.DEFAULT_MAP_CPU_VCORES
+Callsite No. 263: 
+Content: conf.get(DESCRIPTOR+"."+i)
+Parameter: DESCRIPTOR + "." + i
+Callsite No. 264: 
+Content: conf.getStrings(MAPRED_QUEUE_NAMES_KEY)
+Parameter: MAPRED_QUEUE_NAMES_KEY. Inferred value: "mapred.queue.names"
+Callsite No. 265: 
+Content: conf.getBoolean(MRJobConfig.JOB_CANCEL_DELEGATION_TOKEN,true)
+Parameter: MRJobConfig.JOB_CANCEL_DELEGATION_TOKEN. Inferred value: "mapreduce.job.complete.cancel.delegation.tokens"
+Parameter: true
+Callsite No. 266: 
+Content: conf.getBoolean(MRJobConfig.MAP_SPECULATIVE,false)
+Parameter: MRJobConfig.MAP_SPECULATIVE. Inferred value: "mapreduce.map.speculative"
+Parameter: false
+Callsite No. 267: 
+Content: conf.getStringCollection(MRJobConfig.CLASSPATH_FILES)
+Parameter: MRJobConfig.CLASSPATH_FILES. Inferred value: "mapreduce.job.classpath.files"
+Callsite No. 268: 
+Content: conf.getInt(JHAdminConfig.MR_HISTORY_JOBLIST_CACHE_SIZE,JHAdminConfig.DEFAULT_MR_HISTORY_JOBLIST_CACHE_SIZE)
+Parameter: JHAdminConfig.MR_HISTORY_JOBLIST_CACHE_SIZE. Inferred value: "mapreduce.jobhistory.""joblist.cache.size"
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_JOBLIST_CACHE_SIZE
+Callsite No. 269: 
+Content: conf.get(MRJobConfig.MR_AM_ADMIN_COMMAND_OPTS,MRJobConfig.DEFAULT_MR_AM_ADMIN_COMMAND_OPTS)
+Parameter: MRJobConfig.MR_AM_ADMIN_COMMAND_OPTS. Inferred value: "yarn.app.mapreduce.""am.""admin-command-opts"
+Parameter: MRJobConfig.DEFAULT_MR_AM_ADMIN_COMMAND_OPTS. Inferred value: ""
+Callsite No. 270: 
+Content: conf.getBoolean(MRConfig.MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM,MRConfig.DEFAULT_MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM)
+Parameter: MRConfig.MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM. Inferred value: "mapreduce.app-submission.cross-platform"
+Parameter: MRConfig.DEFAULT_MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM
+Callsite No. 271: 
+Content: conf.getResource(classpathFile)
+Parameter: classpathFile. Inferred value: null".xml"
+Callsite No. 272: 
+Content: conf.getSocketAddr(JHAdminConfig.JHS_ADMIN_ADDRESS,JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS,JHAdminConfig.DEFAULT_JHS_ADMIN_PORT)
+Parameter: JHAdminConfig.JHS_ADMIN_ADDRESS. Inferred value: "mapreduce.jobhistory.""admin.address"
+Parameter: JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS
+Parameter: JHAdminConfig.DEFAULT_JHS_ADMIN_PORT
+Callsite No. 273: 
+Content: reducerConf.getClass(REDUCER_OUTPUT_VALUE_CLASS,null)
+Parameter: REDUCER_OUTPUT_VALUE_CLASS. Inferred value: "mapreduce.chain.reducer.output.value.class"
+Parameter: null
+Callsite No. 274: 
+Content: conf.getInt(RIGHT_OFFSET_PROPERTY_NAME,-1)
+Parameter: RIGHT_OFFSET_PROPERTY_NAME. Inferred value: "mapreduce.partition.binarypartitioner.right.offset"
+Parameter: -1
+Callsite No. 275: 
+Content: conf.getClass("mapred.output.committer.class",FileOutputCommitter.class,org.apache.hadoop.mapred.OutputCommitter.class)
+Parameter: "mapred.output.committer.class". Inferred value: "mapred.output.committer.class"
+Parameter: FileOutputCommitter.class
+Parameter: org.apache.hadoop.mapred.OutputCommitter.class
+Callsite No. 276: 
+Content: conf.getInt(SHUFFLE_PORT_CONFIG_KEY,DEFAULT_SHUFFLE_PORT)
+Parameter: SHUFFLE_PORT_CONFIG_KEY
+Parameter: DEFAULT_SHUFFLE_PORT
+Callsite No. 277: 
+Content: conf.getBoolean(MRConfig.SHUFFLE_SSL_ENABLED_KEY,MRConfig.SHUFFLE_SSL_ENABLED_DEFAULT)
+Parameter: MRConfig.SHUFFLE_SSL_ENABLED_KEY. Inferred value: "mapreduce.shuffle.ssl.enabled"
+Parameter: MRConfig.SHUFFLE_SSL_ENABLED_DEFAULT
+Callsite No. 278: 
+Content: conf.getBoolean(MRJobConfig.MR_AM_TASK_ESTIMATOR_EXPONENTIAL_RATE_ENABLE,true)
+Parameter: MRJobConfig.MR_AM_TASK_ESTIMATOR_EXPONENTIAL_RATE_ENABLE. Inferred value: "yarn.app.mapreduce.""am.""job.task.estimator.exponential.smooth.rate"
+Parameter: true
+Callsite No. 279: 
+Content: conf.getInt(LEFT_OFFSET_PROPERTY_NAME,0)
+Parameter: LEFT_OFFSET_PROPERTY_NAME. Inferred value: "mapreduce.partition.binarypartitioner.left.offset"
+Parameter: 0
+Callsite No. 280: 
+Content: conf.getBoolean(CREATE_DIR,false)
+Parameter: CREATE_DIR. Inferred value: "mapreduce.jobcontrol.createdir.ifnotexist"
+Parameter: false
+Callsite No. 281: 
+Content: conf.getInt(MRJobConfig.MR_AM_HISTORY_JOB_COMPLETE_UNFLUSHED_MULTIPLIER,MRJobConfig.DEFAULT_MR_AM_HISTORY_JOB_COMPLETE_UNFLUSHED_MULTIPLIER)
+Parameter: MRJobConfig.MR_AM_HISTORY_JOB_COMPLETE_UNFLUSHED_MULTIPLIER. Inferred value: "yarn.app.mapreduce.""am.""history.job-complete-unflushed-multiplier"
+Parameter: MRJobConfig.DEFAULT_MR_AM_HISTORY_JOB_COMPLETE_UNFLUSHED_MULTIPLIER
+Callsite No. 282: 
+Content: conf.getStringCollection(MRJobConfig.CLASSPATH_ARCHIVES)
+Parameter: MRJobConfig.CLASSPATH_ARCHIVES. Inferred value: "mapreduce.job.classpath.archives"
+Callsite No. 283: 
+Content: rConf.getClass(REDUCER_OUTPUT_VALUE_CLASS,Object.class)
+Parameter: REDUCER_OUTPUT_VALUE_CLASS. Inferred value: "mapreduce.chain.reducer.output.value.class"
+Parameter: Object.class
+Callsite No. 284: 
+Content: conf.get(CACHE_LOCALFILES)
+Parameter: CACHE_LOCALFILES. Inferred value: "mapred.cache.localFiles"
+Callsite No. 285: 
+Content: conf.getLong(JHAdminConfig.MR_HISTORY_MAX_AGE_MS,JHAdminConfig.DEFAULT_MR_HISTORY_MAX_AGE)
+Parameter: JHAdminConfig.MR_HISTORY_MAX_AGE_MS. Inferred value: "mapreduce.jobhistory.""max-age-ms"
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_MAX_AGE
+Callsite No. 286: 
+Content: conf.get(PARTITIONER_OPTIONS)
+Parameter: PARTITIONER_OPTIONS. Inferred value: "mapreduce.partition.keypartitioner.options"
+Callsite No. 287: 
+Content: conf.get(MRJobConfig.MAP_JAVA_OPTS,"")
+Parameter: MRJobConfig.MAP_JAVA_OPTS. Inferred value: "mapreduce.map.java.opts"
+Parameter: "". Inferred value: ""
+Callsite No. 288: 
+Content: jobConf.getClass(prefix+CHAIN_MAPPER_CLASS+i,null,Mapper.class)
+Parameter: prefix
+          + CHAIN_MAPPER_CLASS + i
+Parameter: null
+Parameter: Mapper.class
+Callsite No. 289: 
+Content: get(PARTITIONER_OPTIONS)
+Parameter: PARTITIONER_OPTIONS. Inferred value: "mapreduce.partition.keypartitioner.options"
+Callsite No. 290: 
+Content: conf.getInt(JHAdminConfig.MR_HISTORY_LOADED_JOB_CACHE_SIZE,JHAdminConfig.DEFAULT_MR_HISTORY_LOADED_JOB_CACHE_SIZE)
+Parameter: JHAdminConfig.MR_HISTORY_LOADED_JOB_CACHE_SIZE. Inferred value: "mapreduce.jobhistory.""loadedjobs.cache.size"
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_LOADED_JOB_CACHE_SIZE
+Callsite No. 291: 
+Content: conf.getInt(MRConfig.PROGRESS_STATUS_LEN_LIMIT_KEY,MRConfig.PROGRESS_STATUS_LEN_LIMIT_DEFAULT)
+Parameter: MRConfig.PROGRESS_STATUS_LEN_LIMIT_KEY. Inferred value: "mapreduce.task.max.status.length"
+Parameter: MRConfig.PROGRESS_STATUS_LEN_LIMIT_DEFAULT
+Callsite No. 292: 
+Content: conf.getInt(MRJobConfig.MR_AM_COMMITTER_CANCEL_TIMEOUT_MS,MRJobConfig.DEFAULT_MR_AM_COMMITTER_CANCEL_TIMEOUT_MS)
+Parameter: MRJobConfig.MR_AM_COMMITTER_CANCEL_TIMEOUT_MS. Inferred value: "yarn.app.mapreduce.""am.""job.committer.cancel-timeout"
+Parameter: MRJobConfig.DEFAULT_MR_AM_COMMITTER_CANCEL_TIMEOUT_MS
+Callsite No. 293: 
+Content: conf.get(MRJobConfig.CACHE_FILES)
+Parameter: MRJobConfig.CACHE_FILES. Inferred value: "mapreduce.job.cache.files"
+Callsite No. 294: 
+Content: conf.get(MRJobConfig.MAPRED_ADMIN_USER_SHELL,MRJobConfig.DEFAULT_SHELL)
+Parameter: MRJobConfig.MAPRED_ADMIN_USER_SHELL. Inferred value: "mapreduce.admin.user.shell"
+Parameter: MRJobConfig.DEFAULT_SHELL. Inferred value: "/bin/bash"
+Callsite No. 295: 
+Content: conf.getInt(Job.SUBMIT_REPLICATION,10)
+Parameter: Job.SUBMIT_REPLICATION. Inferred value: "mapreduce.client.submit.file.replication"
+Parameter: 10
+Callsite No. 296: 
+Content: conf.get(PATTERN)
+Parameter: PATTERN. Inferred value: "mapreduce.mapper.regex"
+Callsite No. 297: 
+Content: conf.get(INPUT_DIR)
+Parameter: INPUT_DIR. Inferred value: "mapreduce.input.fileinputformat.inputdir"
+Callsite No. 298: 
+Content: get(FileOutputFormat.COMPRESS_TYPE,CompressionType.RECORD.toString())
+Parameter: FileOutputFormat.COMPRESS_TYPE. Inferred value: "mapreduce.output.fileoutputformat.compress.type"
+Parameter: CompressionType.RECORD.toString()
+Callsite No. 299: 
+Content: conf.getInt(MRJobConfig.TASK_LOG_BACKUPS,MRJobConfig.DEFAULT_TASK_LOG_BACKUPS)
+Parameter: MRJobConfig.TASK_LOG_BACKUPS. Inferred value: "yarn.app.mapreduce.""task.container.log.backups"
+Parameter: MRJobConfig.DEFAULT_TASK_LOG_BACKUPS
+Callsite No. 300: 
+Content: conf.get(DBConfiguration.PASSWORD_PROPERTY)
+Parameter: DBConfiguration.PASSWORD_PROPERTY. Inferred value: "mapreduce.jdbc.password"
+Callsite No. 301: 
+Content: conf.get(MAPRED_QUEUE_NAMES_KEY)
+Parameter: MAPRED_QUEUE_NAMES_KEY. Inferred value: "mapred.queue.names"
+Callsite No. 302: 
+Content: conf.getInt(MRJobConfig.MR_AM_MAX_ATTEMPTS,MRJobConfig.DEFAULT_MR_AM_MAX_ATTEMPTS)
+Parameter: MRJobConfig.MR_AM_MAX_ATTEMPTS. Inferred value: "mapreduce.am.max-attempts"
+Parameter: MRJobConfig.DEFAULT_MR_AM_MAX_ATTEMPTS
+Callsite No. 303: 
+Content: conf.getInt(ATTEMPTS_TO_START_SKIPPING,2)
+Parameter: ATTEMPTS_TO_START_SKIPPING
+Parameter: 2
+Callsite No. 304: 
+Content: getClass(KEY_CLASS,job.getOutputKeyClass().asSubclass(WritableComparable.class),WritableComparable.class)
+Parameter: KEY_CLASS. Inferred value: "mapreduce.output.seqbinaryoutputformat.key.class"
+Parameter: job.getOutputKeyClass().asSubclass(WritableComparable.class)
+Parameter: WritableComparable.class
+Callsite No. 305: 
+Content: conf.get(MRJobConfig.USER_NAME,"history-user")
+Parameter: MRJobConfig.USER_NAME. Inferred value: "mapreduce.job.user.name"
+Parameter: "history-user". Inferred value: "history-user"
+Callsite No. 306: 
+Content: conf.getClass(MAPPER_OUTPUT_KEY_CLASS,Object.class)
+Parameter: MAPPER_OUTPUT_KEY_CLASS. Inferred value: "mapreduce.chain.mapper.output.key.class"
+Parameter: Object.class
+Callsite No. 307: 
+Content: conf.get(MRJobConfig.MR_AM_ENV)
+Parameter: MRJobConfig.MR_AM_ENV. Inferred value: "yarn.app.mapreduce.""am.""env"
+Callsite No. 308: 
+Content: conf.getLong(MRJobConfig.MR_AM_HARD_KILL_TIMEOUT_MS,MRJobConfig.DEFAULT_MR_AM_HARD_KILL_TIMEOUT_MS)
+Parameter: MRJobConfig.MR_AM_HARD_KILL_TIMEOUT_MS. Inferred value: "yarn.app.mapreduce.""am.""hard-kill-timeout-ms"
+Parameter: MRJobConfig.DEFAULT_MR_AM_HARD_KILL_TIMEOUT_MS
+Callsite No. 309: 
+Content: conf.getInt(JobContext.MR_JOB_END_NOTIFICATION_TIMEOUT,JobContext.DEFAULT_MR_JOB_END_NOTIFICATION_TIMEOUT)
+Parameter: JobContext.MR_JOB_END_NOTIFICATION_TIMEOUT
+Parameter: JobContext.DEFAULT_MR_JOB_END_NOTIFICATION_TIMEOUT
+Callsite No. 310: 
+Content: conf.getInt(MRJobConfig.JOB_RUNNING_REDUCE_LIMIT,MRJobConfig.DEFAULT_JOB_RUNNING_REDUCE_LIMIT)
+Parameter: MRJobConfig.JOB_RUNNING_REDUCE_LIMIT. Inferred value: "mapreduce.job.running.reduce.limit"
+Parameter: MRJobConfig.DEFAULT_JOB_RUNNING_REDUCE_LIMIT
+Callsite No. 311: 
+Content: conf.getClass(CompositeInputFormat.JOIN_COMPARATOR,null,WritableComparator.class)
+Parameter: CompositeInputFormat.JOIN_COMPARATOR. Inferred value: "mapreduce.join.keycomparator"
+Parameter: null
+Parameter: WritableComparator.class
+Callsite No. 312: 
+Content: conf.get(MRJobConfig.REDUCE_CLASS_ATTR)
+Parameter: MRJobConfig.REDUCE_CLASS_ATTR. Inferred value: "mapreduce.job.reduce.class"
+Callsite No. 313: 
+Content: conf.getInt(COMPLETION_POLL_INTERVAL_KEY,DEFAULT_COMPLETION_POLL_INTERVAL)
+Parameter: COMPLETION_POLL_INTERVAL_KEY. Inferred value: "mapreduce.client.completion.pollinterval"
+Parameter: DEFAULT_COMPLETION_POLL_INTERVAL
+Callsite No. 314: 
+Content: conf.get(MRJobConfig.JAR)
+Parameter: MRJobConfig.JAR. Inferred value: "mapreduce.job.jar"
+Callsite No. 315: 
+Content: conf.getBoolean(MRConfig.MR_ACLS_ENABLED,false)
+Parameter: MRConfig.MR_ACLS_ENABLED. Inferred value: "mapreduce.cluster.acls.enabled"
+Parameter: false
+Callsite No. 316: 
+Content: conf.getBoolean(MRJobConfig.MAPREDUCE_JOB_EMIT_TIMELINE_DATA,MRJobConfig.DEFAULT_MAPREDUCE_JOB_EMIT_TIMELINE_DATA)
+Parameter: MRJobConfig.MAPREDUCE_JOB_EMIT_TIMELINE_DATA. Inferred value: "mapreduce.job.emit-timeline-data"
+Parameter: MRJobConfig.DEFAULT_MAPREDUCE_JOB_EMIT_TIMELINE_DATA
+Callsite No. 317: 
+Content: conf.get("mapreduce.job.credentials.binary")
+Parameter: "mapreduce.job.credentials.binary". Inferred value: "mapreduce.job.credentials.binary"
+Callsite No. 318: 
+Content: conf.get(MRJobConfig.REDUCE_LOG_LEVEL,JobConf.DEFAULT_LOG_LEVEL.toString())
+Parameter: MRJobConfig.REDUCE_LOG_LEVEL. Inferred value: "mapreduce.reduce.log.level"
+Parameter: JobConf.DEFAULT_LOG_LEVEL.toString()
+Callsite No. 319: 
+Content: getClass(MO_PREFIX+namedOutput+FORMAT,null,OutputFormat.class)
+Parameter: MO_PREFIX + namedOutput + FORMAT. Inferred value: ".format"
+Parameter: null
+Parameter: OutputFormat.class
+Callsite No. 320: 
+Content: conf.getInt(DESCRIPTOR_NUM,0)
+Parameter: DESCRIPTOR_NUM. Inferred value: "mapreduce.aggregate.descriptor.num"
+Parameter: 0
+Callsite No. 321: 
+Content: conf.get(MRJobConfig.MAPRED_ADMIN_USER_SHELL,MRJobConfig.DEFAULT_SHELL)
+Parameter: MRJobConfig.MAPRED_ADMIN_USER_SHELL. Inferred value: "mapreduce.admin.user.shell"
+Parameter: MRJobConfig.DEFAULT_SHELL. Inferred value: "/bin/bash"
+Callsite No. 322: 
+Content: conf.getBoolean(MRJobConfig.JOB_AM_ACCESS_DISABLED,false)
+Parameter: MRJobConfig.JOB_AM_ACCESS_DISABLED. Inferred value: "mapreduce.job.am-access-disabled"
+Parameter: false
+Callsite No. 323: 
+Content: conf.getBoolean(CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,false)
+Parameter: CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION
+Parameter: false
+Callsite No. 324: 
+Content: this.conf.get(MRJobConfig.USER_NAME)
+Parameter: MRJobConfig.USER_NAME. Inferred value: "mapreduce.job.user.name"
+Callsite No. 325: 
+Content: conf.get(MRJobConfig.MR_JOB_END_NOTIFICATION_URL)
+Parameter: MRJobConfig.MR_JOB_END_NOTIFICATION_URL. Inferred value: "mapreduce.job.end-notification.url"
+Callsite No. 326: 
+Content: jobConf.getClass(prefix+CHAIN_REDUCER_CLASS,null)
+Parameter: prefix + CHAIN_REDUCER_CLASS. Inferred value: ".reducer.class"
+Parameter: null
+Callsite No. 327: 
+Content: getCodec(file)
+Parameter: file
+Callsite No. 328: 
+Content: conf.get(DIR_MAPPERS)
+Parameter: DIR_MAPPERS. Inferred value: "mapreduce.input.multipleinputs.dir.mappers"
+Callsite No. 329: 
+Content: jobConf.get(JobContext.JOB_NAME,YarnConfiguration.DEFAULT_APPLICATION_NAME)
+Parameter: JobContext.JOB_NAME
+Parameter: YarnConfiguration.DEFAULT_APPLICATION_NAME
+Callsite No. 330: 
+Content: conf.getLong(SPLIT_MINSIZE_PERRACK,0)
+Parameter: SPLIT_MINSIZE_PERRACK. Inferred value: "mapreduce.input.fileinputformat.split.minsize.per.rack"
+Parameter: 0
+Callsite No. 331: 
+Content: conf.getSocketAddr(JHAdminConfig.JHS_ADMIN_ADDRESS,JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS,JHAdminConfig.DEFAULT_JHS_ADMIN_PORT)
+Parameter: JHAdminConfig.JHS_ADMIN_ADDRESS. Inferred value: "mapreduce.jobhistory.""admin.address"
+Parameter: JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS
+Parameter: JHAdminConfig.DEFAULT_JHS_ADMIN_PORT
+Callsite No. 332: 
+Content: conf.getInt(SHUFFLE_PORT_CONFIG_KEY,DEFAULT_SHUFFLE_PORT)
+Parameter: SHUFFLE_PORT_CONFIG_KEY. Inferred value: "mapreduce.shuffle.port"
+Parameter: DEFAULT_SHUFFLE_PORT
+Callsite No. 333: 
+Content: conf.getInt(SHUFFLE_READAHEAD_BYTES,DEFAULT_SHUFFLE_READAHEAD_BYTES)
+Parameter: SHUFFLE_READAHEAD_BYTES. Inferred value: "mapreduce.shuffle.readahead.bytes"
+Parameter: DEFAULT_SHUFFLE_READAHEAD_BYTES
+Callsite No. 334: 
+Content: conf.getInt(MRJobConfig.TASK_TIMEOUT_CHECK_INTERVAL_MS,30*1000)
+Parameter: MRJobConfig.TASK_TIMEOUT_CHECK_INTERVAL_MS. Inferred value: "mapreduce.task.timeout.check-interval-ms"
+Parameter: 30 * 1000
+Callsite No. 335: 
+Content: conf.get(MRJobConfig.MR_AM_ADMIN_USER_ENV)
+Parameter: MRJobConfig.MR_AM_ADMIN_USER_ENV. Inferred value: "yarn.app.mapreduce.""am.""admin.user.env"
+Callsite No. 336: 
+Content: conf.getClass(MAPPER_INPUT_VALUE_CLASS,Object.class)
+Parameter: MAPPER_INPUT_VALUE_CLASS. Inferred value: "mapreduce.chain.mapper.input.value.class"
+Parameter: Object.class
+Callsite No. 337: 
+Content: conf.getPattern(JobContext.JAR_UNPACK_PATTERN,JobConf.UNPACK_JAR_PATTERN_DEFAULT)
+Parameter: JobContext.JAR_UNPACK_PATTERN
+Parameter: JobConf.UNPACK_JAR_PATTERN_DEFAULT
+Callsite No. 338: 
+Content: conf.get(MRJobConfig.MAP_OUTPUT_KEY_FIELD_SEPERATOR,"\t")
+Parameter: MRJobConfig.MAP_OUTPUT_KEY_FIELD_SEPERATOR. Inferred value: "mapreduce.map.output.key.field.separator"
+Parameter: "\t". Inferred value: "\t"
+Callsite No. 339: 
+Content: conf.getLong(MRJobConfig.SPECULATIVE_RETRY_AFTER_NO_SPECULATE,MRJobConfig.DEFAULT_SPECULATIVE_RETRY_AFTER_NO_SPECULATE)
+Parameter: MRJobConfig.SPECULATIVE_RETRY_AFTER_NO_SPECULATE. Inferred value: "mapreduce.job.speculative.retry-after-no-speculate"
+Parameter: MRJobConfig.DEFAULT_SPECULATIVE_RETRY_AFTER_NO_SPECULATE
+Callsite No. 340: 
+Content: conf.get(MRJobConfig.MAPRED_ADMIN_USER_ENV,MRJobConfig.DEFAULT_MAPRED_ADMIN_USER_ENV)
+Parameter: MRJobConfig.MAPRED_ADMIN_USER_ENV. Inferred value: "mapreduce.admin.user.env"
+Parameter: MRJobConfig.DEFAULT_MAPRED_ADMIN_USER_ENV
+Callsite No. 341: 
+Content: conf.getClass(MAPPER_OUTPUT_VALUE_CLASS,Object.class)
+Parameter: MAPPER_OUTPUT_VALUE_CLASS. Inferred value: "mapreduce.chain.mapper.output.value.class"
+Parameter: Object.class
+Callsite No. 342: 
+Content: conf.getInt(Job.SUBMIT_REPLICATION,Job.DEFAULT_SUBMIT_REPLICATION)
+Parameter: Job.SUBMIT_REPLICATION. Inferred value: "mapreduce.client.submit.file.replication"
+Parameter: Job.DEFAULT_SUBMIT_REPLICATION
+Callsite No. 343: 
+Content: conf.get(MRConfig.MASTER_ADDRESS,"localhost:8012")
+Parameter: MRConfig.MASTER_ADDRESS. Inferred value: "mapreduce.jobtracker.address"
+Parameter: "localhost:8012". Inferred value: "localhost:8012"
+Callsite No. 344: 
+Content: conf.get(DBConfiguration.INPUT_BOUNDING_QUERY)
+Parameter: DBConfiguration.INPUT_BOUNDING_QUERY. Inferred value: "mapred.jdbc.input.bounding.query"
+Callsite No. 345: 
+Content: conf.getClassByName(sb.toString())
+Parameter: sb.toString()
+Callsite No. 346: 
+Content: conf.getSocketAddr(JHAdminConfig.JHS_ADMIN_ADDRESS,JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS,JHAdminConfig.DEFAULT_JHS_ADMIN_PORT)
+Parameter: JHAdminConfig.JHS_ADMIN_ADDRESS. Inferred value: "mapreduce.jobhistory.""admin.address"
+Parameter: JHAdminConfig.DEFAULT_JHS_ADMIN_ADDRESS
+Parameter: JHAdminConfig.DEFAULT_JHS_ADMIN_PORT
+Callsite No. 347: 
+Content: job.getInt(org.apache.hadoop.mapreduce.lib.input.LineRecordReader.MAX_LINE_LENGTH,Integer.MAX_VALUE)
+Parameter: org.apache.hadoop.mapreduce.lib.input.
+      LineRecordReader.MAX_LINE_LENGTH. Inferred value: "mapreduce.input.linerecordreader.line.maxlength"
+Parameter: Integer.MAX_VALUE
+Callsite No. 348: 
+Content: conf.getLong(JobContext.RECORDS_BEFORE_PROGRESS,10000)
+Parameter: JobContext.RECORDS_BEFORE_PROGRESS
+Parameter: 10000
+Callsite No. 349: 
+Content: conf.getLong(MRJobConfig.COMBINE_RECORDS_BEFORE_PROGRESS,DEFAULT_COMBINE_RECORDS_BEFORE_PROGRESS)
+Parameter: MRJobConfig.COMBINE_RECORDS_BEFORE_PROGRESS. Inferred value: "mapreduce.task.combine.progress.records"
+Parameter: DEFAULT_COMBINE_RECORDS_BEFORE_PROGRESS
+Callsite No. 350: 
+Content: conf.getInt(MRJobConfig.NUM_MAPS,1)
+Parameter: MRJobConfig.NUM_MAPS. Inferred value: "mapreduce.job.maps"
+Parameter: 1
+Callsite No. 351: 
+Content: conf.getLong(MRJobConfig.MAP_INPUT_START,0L)
+Parameter: MRJobConfig.MAP_INPUT_START. Inferred value: "mapreduce.map.input.start"
+Parameter: 0L
+Callsite No. 352: 
+Content: conf.getTrimmedStrings(MRJobConfig.MAPREDUCE_JOB_CLASSLOADER_SYSTEM_CLASSES)
+Parameter: MRJobConfig.MAPREDUCE_JOB_CLASSLOADER_SYSTEM_CLASSES. Inferred value: "mapreduce.job.classloader.system.classes"
+Callsite No. 353: 
+Content: conf.getInt(MRJobConfig.MR_AM_HISTORY_USE_BATCHED_FLUSH_QUEUE_SIZE_THRESHOLD,MRJobConfig.DEFAULT_MR_AM_HISTORY_USE_BATCHED_FLUSH_QUEUE_SIZE_THRESHOLD)
+Parameter: MRJobConfig.MR_AM_HISTORY_USE_BATCHED_FLUSH_QUEUE_SIZE_THRESHOLD. Inferred value: "yarn.app.mapreduce.""am.""history.use-batched-flush.queue-size.threshold"
+Parameter: MRJobConfig.DEFAULT_MR_AM_HISTORY_USE_BATCHED_FLUSH_QUEUE_SIZE_THRESHOLD
+Callsite No. 354: 
+Content: conf.getClass(MAPPER_INPUT_KEY_CLASS,Object.class)
+Parameter: MAPPER_INPUT_KEY_CLASS. Inferred value: "mapreduce.chain.mapper.input.key.class"
+Parameter: Object.class
+Callsite No. 355: 
+Content: getBoolean(FileOutputFormat.COMPRESS,false)
+Parameter: FileOutputFormat.COMPRESS. Inferred value: "mapreduce.output.fileoutputformat.compress"
+Parameter: false
+Callsite No. 356: 
+Content: get(BASE_OUTPUT_NAME,PART)
+Parameter: BASE_OUTPUT_NAME. Inferred value: "mapreduce.output.basename"
+Parameter: PART. Inferred value: "part"
+Callsite No. 357: 
+Content: conf.get(MRJobConfig.QUEUE_NAME,JobConf.DEFAULT_QUEUE_NAME)
+Parameter: MRJobConfig.QUEUE_NAME. Inferred value: "mapreduce.job.queuename"
+Parameter: JobConf.DEFAULT_QUEUE_NAME. Inferred value: "default"
+Callsite No. 358: 
+Content: conf.get(MRJobConfig.MAP_OUTPUT_KEY_FIELD_SEPERATOR,"\t")
+Parameter: MRJobConfig.MAP_OUTPUT_KEY_FIELD_SEPERATOR. Inferred value: "mapreduce.map.output.key.field.separator"
+Parameter: "\t". Inferred value: "\t"
+Callsite No. 359: 
+Content: conf.getClass(OUTPUT_FORMAT,null)
+Parameter: OUTPUT_FORMAT. Inferred value: "mapreduce.output.lazyoutputformat.outputformat"
+Parameter: null
+Callsite No. 360: 
+Content: jobConf.getClass(prefix+CHAIN_REDUCER_CLASS,null)
+Parameter: prefix + CHAIN_REDUCER_CLASS. Inferred value: ".reducer.class"
+Parameter: null
+Callsite No. 361: 
+Content: conf.get(MRJobConfig.CACHE_ARCHIVES)
+Parameter: MRJobConfig.CACHE_ARCHIVES. Inferred value: "mapreduce.job.cache.archives"
+Callsite No. 362: 
+Content: conf.getStrings(MRJobConfig.CACHE_FILE_TIMESTAMPS)
+Parameter: MRJobConfig.CACHE_FILE_TIMESTAMPS. Inferred value: "mapreduce.job.cache.files.timestamps"
+Callsite No. 363: 
+Content: conf.getClass(MRJobConfig.MR_AM_JOB_SPECULATOR,DefaultSpeculator.class,Speculator.class)
+Parameter: MRJobConfig.MR_AM_JOB_SPECULATOR. Inferred value: "yarn.app.mapreduce.""am.""job.speculator.class"
+Parameter: DefaultSpeculator.class
+Parameter: Speculator.class
+Callsite No. 364: 
+Content: conf.getLong(MRJobConfig.MR_AM_LOG_KB,MRJobConfig.DEFAULT_MR_AM_LOG_KB)
+Parameter: MRJobConfig.MR_AM_LOG_KB. Inferred value: "yarn.app.mapreduce.""am.""container.log.limit.kb"
+Parameter: MRJobConfig.DEFAULT_MR_AM_LOG_KB
+Callsite No. 365: 
+Content: conf.getInt(JobContext.REDUCE_MARKRESET_BUFFER_SIZE,0)
+Parameter: JobContext.REDUCE_MARKRESET_BUFFER_SIZE
+Parameter: 0
+Callsite No. 366: 
+Content: conf.getStrings(MAPRED_QUEUE_NAMES_KEY)
+Parameter: MAPRED_QUEUE_NAMES_KEY. Inferred value: "mapred.queue.names"
+Callsite No. 367: 
+Content: getBoolean(SUCCESSFUL_JOB_OUTPUT_DIR_MARKER,true)
+Parameter: SUCCESSFUL_JOB_OUTPUT_DIR_MARKER. Inferred value: "mapreduce.fileoutputcommitter.marksuccessfuljobs"
+Parameter: true
+Callsite No. 368: 
+Content: conf.getStrings(MRJobConfig.MAPREDUCE_APPLICATION_CLASSPATH,crossPlatform?StringUtils.getStrings(MRJobConfig.DEFAULT_MAPREDUCE_CROSS_PLATFORM_APPLICATION_CLASSPATH):StringUtils.getStrings(MRJobConfig.DEFAULT_MAPREDUCE_APPLICATION_CLASSPATH))
+Parameter: MRJobConfig.MAPREDUCE_APPLICATION_CLASSPATH. Inferred value: "mapreduce.application.classpath"
+Parameter: crossPlatform ?
+            StringUtils.getStrings(MRJobConfig.DEFAULT_MAPREDUCE_CROSS_PLATFORM_APPLICATION_CLASSPATH)
+            : StringUtils.getStrings(MRJobConfig.DEFAULT_MAPREDUCE_APPLICATION_CLASSPATH)
+Callsite No. 369: 
+Content: conf.get(DIR_MAPPERS)
+Parameter: DIR_MAPPERS. Inferred value: "mapreduce.input.multipleinputs.dir.mappers"
+Callsite No. 370: 
+Content: getLong(SPLIT_MAXSIZE,Long.MAX_VALUE)
+Parameter: SPLIT_MAXSIZE. Inferred value: "mapreduce.input.fileinputformat.split.maxsize"
+Parameter: Long.MAX_VALUE
+Callsite No. 371: 
+Content: conf.get(FieldSelectionHelper.DATA_FIELD_SEPERATOR,"\t")
+Parameter: FieldSelectionHelper.DATA_FIELD_SEPERATOR. Inferred value: "mapreduce.fieldsel.data.field.separator"
+Parameter: "\t". Inferred value: "\t"
+Callsite No. 372: 
+Content: jobConf.getPropertySources(entry.getKey())
+Parameter: entry.getKey()
+Callsite No. 373: 
+Content: conf.getInt(COUNTER_GROUP_NAME_MAX_KEY,COUNTER_GROUP_NAME_MAX_DEFAULT)
+Parameter: COUNTER_GROUP_NAME_MAX_KEY. Inferred value: "mapreduce.job.counters.group.name.max"
+Parameter: COUNTER_GROUP_NAME_MAX_DEFAULT
+Callsite No. 374: 
+Content: conf.get(PARTITIONER_PATH,DEFAULT_PATH)
+Parameter: PARTITIONER_PATH. Inferred value: "mapreduce.totalorderpartitioner.path"
+Parameter: DEFAULT_PATH. Inferred value: "_partition.lst"
+Callsite No. 375: 
+Content: conf.get(JHAdminConfig.MR_HISTORY_WEBAPP_HTTPS_ADDRESS,JHAdminConfig.DEFAULT_MR_HISTORY_WEBAPP_HTTPS_ADDRESS)
+Parameter: JHAdminConfig.MR_HISTORY_WEBAPP_HTTPS_ADDRESS. Inferred value: "mapreduce.jobhistory.""webapp.https.address"
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_WEBAPP_HTTPS_ADDRESS
+Callsite No. 376: 
+Content: getInt(LOCAL_MAX_REDUCES,1)
+Parameter: LOCAL_MAX_REDUCES. Inferred value: "mapreduce.local.reduce.tasks.maximum"
+Parameter: 1
+Callsite No. 377: 
+Content: conf.getInt(MRJobConfig.MR_ENCRYPTED_INTERMEDIATE_DATA_KEY_SIZE_BITS,MRJobConfig.DEFAULT_MR_ENCRYPTED_INTERMEDIATE_DATA_KEY_SIZE_BITS)
+Parameter: MRJobConfig.MR_ENCRYPTED_INTERMEDIATE_DATA_KEY_SIZE_BITS. Inferred value: "mapreduce.job.encrypted-intermediate-data-key-size-bits"
+Parameter: MRJobConfig
+                        .DEFAULT_MR_ENCRYPTED_INTERMEDIATE_DATA_KEY_SIZE_BITS
+Callsite No. 378: 
+Content: conf.getInt(OUTPUT_FIELD_COUNT_PROPERTY,0)
+Parameter: OUTPUT_FIELD_COUNT_PROPERTY. Inferred value: "mapreduce.jdbc.output.field.count"
+Parameter: 0
+Callsite No. 379: 
+Content: conf.getInt(MRJobConfig.MR_JOB_REDUCER_PREEMPT_DELAY_SEC,MRJobConfig.DEFAULT_MR_JOB_REDUCER_PREEMPT_DELAY_SEC)
+Parameter: MRJobConfig.MR_JOB_REDUCER_PREEMPT_DELAY_SEC. Inferred value: "mapreduce.job.reducer.preempt.delay.sec"
+Parameter: MRJobConfig.DEFAULT_MR_JOB_REDUCER_PREEMPT_DELAY_SEC
+Callsite No. 380: 
+Content: conf.getInt(MRJobConfig.MR_JOB_END_RETRY_ATTEMPTS,0)
+Parameter: MRJobConfig.MR_JOB_END_RETRY_ATTEMPTS. Inferred value: "mapreduce.job.end-notification.retry.attempts"
+Parameter: 0
+Callsite No. 381: 
+Content: getInt(LOCAL_MAX_MAPS,1)
+Parameter: LOCAL_MAX_MAPS. Inferred value: "mapreduce.local.map.tasks.maximum"
+Parameter: 1
+Callsite No. 382: 
+Content: jobConf.get(confKey,null)
+Parameter: confKey
+Parameter: null
+Callsite No. 383: 
+Content: conf.getLong(JHAdminConfig.MR_HISTORY_MAX_AGE_MS,JHAdminConfig.DEFAULT_MR_HISTORY_MAX_AGE)
+Parameter: JHAdminConfig.MR_HISTORY_MAX_AGE_MS. Inferred value: "mapreduce.jobhistory.""max-age-ms"
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_MAX_AGE
+Callsite No. 384: 
+Content: conf.getFloat(MRJobConfig.COMPLETED_MAPS_FOR_REDUCE_SLOWSTART,DEFAULT_COMPLETED_MAPS_PERCENT_FOR_REDUCE_SLOWSTART)
+Parameter: MRJobConfig.COMPLETED_MAPS_FOR_REDUCE_SLOWSTART. Inferred value: "mapreduce.job.reduce.slowstart.completedmaps"
+Parameter: DEFAULT_COMPLETED_MAPS_PERCENT_FOR_REDUCE_SLOWSTART
+Callsite No. 385: 
+Content: conf.get(JHAdminConfig.MR_HS_LEVELDB_STATE_STORE_PATH)
+Parameter: JHAdminConfig.MR_HS_LEVELDB_STATE_STORE_PATH. Inferred value: "mapreduce.jobhistory.""recovery.store.leveldb.path"
+Callsite No. 386: 
+Content: conf.get(DBConfiguration.USERNAME_PROPERTY)
+Parameter: DBConfiguration.USERNAME_PROPERTY. Inferred value: "mapreduce.jdbc.username"
+Callsite No. 387: 
+Content: conf.getBoolean(Job.USED_GENERIC_PARSER,false)
+Parameter: Job.USED_GENERIC_PARSER. Inferred value: "mapreduce.client.genericoptionsparser.used"
+Parameter: false
+Callsite No. 388: 
+Content: conf.getInt(MRJobConfig.MR_ENCRYPTED_INTERMEDIATE_DATA_BUFFER_KB,MRJobConfig.DEFAULT_MR_ENCRYPTED_INTERMEDIATE_DATA_BUFFER_KB)
+Parameter: MRJobConfig.MR_ENCRYPTED_INTERMEDIATE_DATA_BUFFER_KB. Inferred value: "mapreduce.job.encrypted-intermediate-data.buffer.kb"
+Parameter: MRJobConfig.DEFAULT_MR_ENCRYPTED_INTERMEDIATE_DATA_BUFFER_KB
+Callsite No. 389: 
+Content: conf.getBoolean(CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,false)
+Parameter: CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION
+Parameter: false
+Callsite No. 390: 
+Content: jobConf.get(MRJobConfig.JOB_ACL_VIEW_JOB,MRJobConfig.DEFAULT_JOB_ACL_VIEW_JOB)
+Parameter: MRJobConfig.JOB_ACL_VIEW_JOB. Inferred value: "mapreduce.job.acl-view-job"
+Parameter: MRJobConfig.DEFAULT_JOB_ACL_VIEW_JOB. Inferred value: " "
+Callsite No. 391: 
+Content: conf.getInt(MRJobConfig.JOB_RUNNING_MAP_LIMIT,MRJobConfig.DEFAULT_JOB_RUNNING_MAP_LIMIT)
+Parameter: MRJobConfig.JOB_RUNNING_MAP_LIMIT. Inferred value: "mapreduce.job.running.map.limit"
+Parameter: MRJobConfig.DEFAULT_JOB_RUNNING_MAP_LIMIT
+Callsite No. 392: 
+Content: conf.get(JHAdminConfig.MR_HISTORY_DONE_DIR)
+Parameter: JHAdminConfig.MR_HISTORY_DONE_DIR. Inferred value: "mapreduce.jobhistory.""done-dir"
+Callsite No. 393: 
+Content: conf.getClass(JHAdminConfig.MR_HS_STATE_STORE,null,HistoryServerStateStoreService.class)
+Parameter: JHAdminConfig.MR_HS_STATE_STORE. Inferred value: "mapreduce.jobhistory.""recovery.store.class"
+Parameter: null
+Parameter: HistoryServerStateStoreService.class
+Callsite No. 394: 
+Content: jobConf.getBoolean(MRJobConfig.MR_AM_PROFILE,MRJobConfig.DEFAULT_MR_AM_PROFILE)
+Parameter: MRJobConfig.MR_AM_PROFILE. Inferred value: "yarn.app.mapreduce.""am.""profile"
+Parameter: MRJobConfig.DEFAULT_MR_AM_PROFILE
+Callsite No. 395: 
+Content: conf.getClassLoader()
+Callsite No. 396: 
+Content: conf.getInt(MRJobConfig.MR_JOB_END_RETRY_INTERVAL,5000)
+Parameter: MRJobConfig.MR_JOB_END_RETRY_INTERVAL. Inferred value: "mapreduce.job.end-notification.retry.interval"
+Parameter: 5000
+Callsite No. 397: 
+Content: conf.get(DBConfiguration.URL_PROPERTY)
+Parameter: DBConfiguration.URL_PROPERTY. Inferred value: "mapreduce.jdbc.url"
+Callsite No. 398: 
+Content: conf.getLong(JHAdminConfig.MR_HISTORY_MOVE_INTERVAL_MS,JHAdminConfig.DEFAULT_MR_HISTORY_MOVE_INTERVAL_MS)
+Parameter: JHAdminConfig.MR_HISTORY_MOVE_INTERVAL_MS. Inferred value: "mapreduce.jobhistory.""move.interval-ms"
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_MOVE_INTERVAL_MS
+Callsite No. 399: 
+Content: conf.get(JHAdminConfig.MR_HISTORY_ADDRESS,JHAdminConfig.DEFAULT_MR_HISTORY_ADDRESS)
+Parameter: JHAdminConfig.MR_HISTORY_ADDRESS. Inferred value: "mapreduce.jobhistory.""address"
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_ADDRESS
+Callsite No. 400: 
+Content: conf.getInt("io.file.buffer.size",DEFAULT_BUFFER_SIZE)
+Parameter: "io.file.buffer.size". Inferred value: "io.file.buffer.size"
+Parameter: DEFAULT_BUFFER_SIZE
+Callsite No. 401: 
+Content: jobConf.get(confKey,null)
+Parameter: confKey
+Parameter: null
+Callsite No. 402: 
+Content: conf.get("tmparchives")
+Parameter: "tmparchives". Inferred value: "tmparchives"
+Callsite No. 403: 
+Content: conf.getBoolean(MRConfig.MAPRED_IFILE_READAHEAD,MRConfig.DEFAULT_MAPRED_IFILE_READAHEAD)
+Parameter: MRConfig.MAPRED_IFILE_READAHEAD. Inferred value: "mapreduce.ifile.readahead"
+Parameter: MRConfig.DEFAULT_MAPRED_IFILE_READAHEAD
+Callsite No. 404: 
+Content: conf.getBoolean(MRConfig.MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM,MRConfig.DEFAULT_MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM)
+Parameter: MRConfig.MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM. Inferred value: "mapreduce.app-submission.cross-platform"
+Parameter: MRConfig.DEFAULT_MAPREDUCE_APP_SUBMISSION_CROSS_PLATFORM
+Callsite No. 405: 
+Content: conf.getInt(MRJobConfig.NUM_MAPS,1)
+Parameter: MRJobConfig.NUM_MAPS. Inferred value: "mapreduce.job.maps"
+Parameter: 1
+Callsite No. 406: 
+Content: conf.getBoolean(CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION,false)
+Parameter: CommonConfigurationKeysPublic.HADOOP_SECURITY_AUTHORIZATION
+Parameter: false
+Callsite No. 407: 
+Content: conf.get(MRJobConfig.MR_AM_LOG_LEVEL,MRJobConfig.DEFAULT_MR_AM_LOG_LEVEL)
+Parameter: MRJobConfig.MR_AM_LOG_LEVEL. Inferred value: "yarn.app.mapreduce.""am.""log.level"
+Parameter: MRJobConfig.DEFAULT_MR_AM_LOG_LEVEL. Inferred value: "INFO"
+Callsite No. 408: 
+Content: conf.getClass(DBConfiguration.INPUT_CLASS_PROPERTY,NullDBWritable.class)
+Parameter: DBConfiguration.INPUT_CLASS_PROPERTY. Inferred value: "mapreduce.jdbc.input.class"
+Parameter: NullDBWritable.class
+Callsite No. 409: 
+Content: conf.getInt(MRJobConfig.SPECULATIVE_MINIMUM_ALLOWED_TASKS,MRJobConfig.DEFAULT_SPECULATIVE_MINIMUM_ALLOWED_TASKS)
+Parameter: MRJobConfig.SPECULATIVE_MINIMUM_ALLOWED_TASKS. Inferred value: "mapreduce.job.speculative.minimum-allowed-tasks"
+Parameter: MRJobConfig.DEFAULT_SPECULATIVE_MINIMUM_ALLOWED_TASKS
+Callsite No. 410: 
+Content: jobConf.get(JobContext.RESERVATION_ID)
+Parameter: JobContext.RESERVATION_ID
+Callsite No. 411: 
+Content: job.get("mapreduce.input.keyvaluelinerecordreader.key.value.separator","\t")
+Parameter: "mapreduce.input.keyvaluelinerecordreader.key.value.separator". Inferred value: "mapreduce.input.keyvaluelinerecordreader.key.value.separator"
+Parameter: "\t". Inferred value: "\t"
+Callsite No. 412: 
+Content: conf.get(MRJobConfig.CLASSPATH_ARCHIVES)
+Parameter: MRJobConfig.CLASSPATH_ARCHIVES. Inferred value: "mapreduce.job.classpath.archives"
+Callsite No. 413: 
+Content: conf.get(SESSION_TIMEZONE_KEY,"GMT")
+Parameter: SESSION_TIMEZONE_KEY. Inferred value: "oracle.sessionTimeZone"
+Parameter: "GMT". Inferred value: "GMT"
+Callsite No. 414: 
+Content: conf.get(MRJobConfig.REDUCE_JAVA_OPTS,"")
+Parameter: MRJobConfig.REDUCE_JAVA_OPTS. Inferred value: "mapreduce.reduce.java.opts"
+Parameter: "". Inferred value: ""
+Callsite No. 415: 
+Content: conf.get(MRJobConfig.MAP_LOG_LEVEL,JobConf.DEFAULT_LOG_LEVEL.toString())
+Parameter: MRJobConfig.MAP_LOG_LEVEL. Inferred value: "mapreduce.map.log.level"
+Parameter: JobConf.DEFAULT_LOG_LEVEL.toString()
+Callsite No. 416: 
+Content: conf.get(MRConfig.FRAMEWORK_NAME)
+Parameter: MRConfig.FRAMEWORK_NAME. Inferred value: "mapreduce.framework.name"
+Callsite No. 417: 
+Content: conf.getBoolean(YarnConfiguration.TIMELINE_SERVICE_ENABLED,YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ENABLED)
+Parameter: YarnConfiguration.TIMELINE_SERVICE_ENABLED
+Parameter: YarnConfiguration.DEFAULT_TIMELINE_SERVICE_ENABLED
+Callsite No. 418: 
+Content: conf.getInt(JHAdminConfig.MR_HISTORY_DATESTRING_CACHE_SIZE,JHAdminConfig.DEFAULT_MR_HISTORY_DATESTRING_CACHE_SIZE)
+Parameter: JHAdminConfig.MR_HISTORY_DATESTRING_CACHE_SIZE. Inferred value: "mapreduce.jobhistory.""datestring.cache.size"
+Parameter: JHAdminConfig.DEFAULT_MR_HISTORY_DATESTRING_CACHE_SIZE
+Callsite No. 419: 
+Content: get(MULTIPLE_OUTPUTS,"")
+Parameter: MULTIPLE_OUTPUTS. Inferred value: "mapreduce.multipleoutputs"
+Parameter: "". Inferred value: ""
+Callsite No. 420: 
+Content: conf.getInt(MRJobConfig.NUM_MAPS,1)
+Parameter: MRJobConfig.NUM_MAPS. Inferred value: "mapreduce.job.maps"
+Parameter: 1
+Callsite No. 421: 
+Content: conf.get(MRJobConfig.MR_AM_STAGING_DIR,MRJobConfig.DEFAULT_MR_AM_STAGING_DIR)
+Parameter: MRJobConfig.MR_AM_STAGING_DIR. Inferred value: "yarn.app.mapreduce.""am.""staging-dir"
+Parameter: MRJobConfig.DEFAULT_MR_AM_STAGING_DIR. Inferred value: "/tmp/hadoop-yarn/staging"
+Callsite No. 422: 
+Content: job.getInt(org.apache.hadoop.mapreduce.lib.input.LineRecordReader.MAX_LINE_LENGTH,Integer.MAX_VALUE)
+Parameter: org.apache.hadoop.mapreduce.lib.input.
+      LineRecordReader.MAX_LINE_LENGTH. Inferred value: "mapreduce.input.linerecordreader.line.maxlength"
+Parameter: Integer.MAX_VALUE
+Callsite No. 423: 
+Content: conf.getLong(MRJobConfig.MR_AM_COMMIT_WINDOW_MS,MRJobConfig.DEFAULT_MR_AM_COMMIT_WINDOW_MS)
+Parameter: MRJobConfig.MR_AM_COMMIT_WINDOW_MS. Inferred value: "yarn.app.mapreduce.""am.""job.committer.commit-window"
+Parameter: MRJobConfig.DEFAULT_MR_AM_COMMIT_WINDOW_MS
+Callsite No. 424: 
+Content: conf.get(OUT_PATH)
+Parameter: OUT_PATH
+Callsite No. 425: 
+Content: conf.getInt(MRJobConfig.MR_JOB_END_NOTIFICATION_MAX_RETRY_INTERVAL,5000)
+Parameter: MRJobConfig.MR_JOB_END_NOTIFICATION_MAX_RETRY_INTERVAL. Inferred value: "mapreduce.job.end-notification.max.retry.interval"
+Parameter: 5000
+Callsite No. 426: 
+Content: conf.getBoolean(JHAdminConfig.MR_HS_RECOVERY_ENABLE,JHAdminConfig.DEFAULT_MR_HS_RECOVERY_ENABLE)
+Parameter: JHAdminConfig.MR_HS_RECOVERY_ENABLE. Inferred value: "mapreduce.jobhistory.""recovery.enable"
+Parameter: JHAdminConfig.DEFAULT_MR_HS_RECOVERY_ENABLE
+Callsite No. 427: 
+Content: conf.getInt(MRJobConfig.MR_AM_JOB_CLIENT_THREAD_COUNT,MRJobConfig.DEFAULT_MR_AM_JOB_CLIENT_THREAD_COUNT)
+Parameter: MRJobConfig.MR_AM_JOB_CLIENT_THREAD_COUNT. Inferred value: "yarn.app.mapreduce.""am.""job.client.thread-count"
+Parameter: MRJobConfig.DEFAULT_MR_AM_JOB_CLIENT_THREAD_COUNT
+Callsite No. 428: 
+Content: getInt(NUM_THREADS,10)
+Parameter: NUM_THREADS. Inferred value: "mapreduce.mapper.multithreadedmapper.threads"
+Parameter: 10
+[INFO] Callsite information analysis finished.
+=======================================================================================
+[INFO] Start printing ORP information to file.
+[INFO] ORP information is extracted and written successfully.
+[INFO] Exiting.
+成功构建 (总时间: 39 分钟 16 秒)
